@@ -10,7 +10,7 @@
   "ex:relations": [
     {
       "@type": "Relationship",
-      "relationType": "alternateIdentifier",
+      "relationType": { "@id": "ex:relation/alternateIdentifier" }
       "object": { "@id": "" }
     },
     {
