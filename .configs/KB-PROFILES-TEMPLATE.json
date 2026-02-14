@@ -1,0 +1,14 @@
+{
+  "@id": "",
+  "@type": "DefinedTerm",
+  "profileName": "",
+  "profileDescription": "",
+  "ex:profileType":"",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": { "@id": "" }
+    }
+  ]
+}
