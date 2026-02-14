@@ -5,6 +5,16 @@
   },
   "@graph": [
     {
+      "@id": "ex:DefinedTermSet/Relation",
+      "@type": "DefinedTermSet",
+      "name": "Relations",
+      "hasPart": [
+        { "@type": "DefinedTerm", "name": "alternateIdentifier" },
+        { "@type": "DefinedTerm", "name": "relatedIdentifier" },
+        { "@type": "DefinedTerm", "name": "includedInProfile" }
+      ]
+    },
+    {
       "@id": "ex:DefinedTermSet/BusinessModel",
       "@type": "DefinedTermSet",
       "name": "Business Model",
