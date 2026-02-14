@@ -1,0 +1,32 @@
+{
+  "configName": "KB-PROFILES-EDEN-FIDELIS-TRSP",
+  "sheetUrl": "",
+  "githubRepo": "wimhugo/kb-attributes-eden-fidelis-trsp",
+  "schema": {
+    "@id": "",
+    "@type": "DefinedTerm",
+    "profileName": "",
+    "profileDescription": "",
+    "ex:profileType": "",
+    "ex:relations": [
+      {
+        "@type": "Relationship",
+        "relationType": "relatedIdentifier",
+        "object": {
+          "@id": ""
+        }
+      }
+    ]
+  },
+  "outputDir": "data",
+  "indexFileName": "index_profiles.json",
+  "fileNameColumn": "",
+  "mapping": {
+    "URI": "@id",
+    "Label": "profileName",
+    "Description ": "profileDescription",
+    "ProfileType": "ex:profileType",
+    "URL\r": "ex:relations"
+  },
+  "lastModified": "2026-02-14T13:03:05.922Z"
+}
