@@ -1,0 +1,8 @@
+{
+  "@id": "profile.644301C176",
+  "@type": "DefinedTerm",
+  "profileName": "COAR",
+  "profileDescription": "Next Generation Repositories. ",
+  "ex:profileType": "Source",
+  "ex:relations": "https://ngr.coar-repositories.org/\r"
+}
