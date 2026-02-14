@@ -1,0 +1,10 @@
+{
+  "@id": "att.52A2A122AF",
+  "@type": "DefinedTerm",
+  "name": "Base operations structurally funded",
+  "description": "Base operations structurally funded",
+  "category": "Sustainability|Financial Sustainability|Adequacy of Structural Income|Base operations structurally funded",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}
