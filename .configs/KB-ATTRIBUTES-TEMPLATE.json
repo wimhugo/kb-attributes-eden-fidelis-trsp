@@ -1,0 +1,24 @@
+{
+  "@id": "",
+  "@type": "DefinedTerm",
+  "name": "",
+  "description": "",
+  "category": "",
+  "measurementTechnique": "",
+  "measurementBenchmark":"",
+  "ex:cardinality": ""
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "alternateIdentifier",
+      "object": { "@id": "" }
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": { "@id": "" },
+      "profileBenchmark":"",
+      "ex:profileBenchmarkType":""
+    }    
+  ]
+}
