@@ -1,0 +1,10 @@
+{
+  "@id": "att.42D7C2C3A4",
+  "@type": "DefinedTerm",
+  "name": "Public Statement of Wind-Down",
+  "description": "Public Statement of Wind-Down",
+  "category": "Sustainability|Social Sustainability|Living Will|Public Statement of Wind-Down",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}
