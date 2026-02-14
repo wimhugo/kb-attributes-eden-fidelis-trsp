@@ -1,0 +1,10 @@
+{
+  "@id": "att.608B9C73BB",
+  "@type": "DefinedTerm",
+  "name": "Open Data",
+  "description": "Open Data",
+  "category": "Sustainability|Technical Sustainability|Data Continuity|Open Data",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}
