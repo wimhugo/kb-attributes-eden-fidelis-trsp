@@ -1,0 +1,10 @@
+{
+  "@id": "att.7660700650",
+  "@type": "DefinedTerm",
+  "name": "Compensation Rule",
+  "description": "Compensation Rule",
+  "category": "Sustainability|Financial Sustainability|Revenue|Data is free|Compensation Rule",
+  "measurementTechnique": "Vocabulary",
+  "measurementBenchmark": "CompensationRule: Free|Non-Commercial|Free to Verified Users|Cost Recovery|Commercial Product\r",
+  "ex:cardinality": "1..n"
+}
