@@ -1,0 +1,10 @@
+{
+  "@id": "att.7CBE776C7A",
+  "@type": "DefinedTerm",
+  "name": "Business Model Type",
+  "description": "Business Model Type",
+  "category": "Sustainability|Financial Sustainability|Business Model|Business Model Type",
+  "measurementTechnique": "Vocabulary",
+  "measurementBenchmark": "Business Model: For-Profit|Non-Profit|Non-Profit including R&D|Publicly Funded\r",
+  "ex:cardinality": "0..n"
+}
