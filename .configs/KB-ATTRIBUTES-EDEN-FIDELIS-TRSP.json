@@ -1,0 +1,28 @@
+{
+  "configName": "KB-ATTRIBUTES-EDEN-FIDELIS-TRSP",
+  "sheetUrl": "",
+  "githubRepo": "wimhugo/kb-attributes-eden-fidelis-trsp",
+  "schema": {
+    "@id": "",
+    "@type": "DefinedTerm",
+    "name": "",
+    "description": "",
+    "category": "",
+    "measurementTechnique": "",
+    "measurementBenchmark": "",
+    "ex:cardinality": ""
+  },
+  "outputDir": "test",
+  "indexFileName": "index.json",
+  "fileNameColumn": "",
+  "mapping": {
+    "IRI": "@id",
+    "Attribute_Label": "name",
+    "Attribute_Description": "description",
+    "Attribute_Full_Path": "category",
+    "Attribute_Cardinality": "ex:cardinality",
+    "Attribute_Test": "measurementTechnique",
+    "Attribute_Benchmark\r": "measurementBenchmark"
+  },
+  "lastModified": "2026-02-14T09:41:22.952Z"
+}
