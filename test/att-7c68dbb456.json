@@ -1,0 +1,10 @@
+{
+  "@id": "att.7C68DBB456",
+  "@type": "DefinedTerm",
+  "name": "Governance Description",
+  "description": "Governance Description",
+  "category": "Sustainability|Social Sustainability|Governance|Governance Description",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}
