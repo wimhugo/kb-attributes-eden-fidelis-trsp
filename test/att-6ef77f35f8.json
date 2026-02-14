@@ -1,0 +1,10 @@
+{
+  "@id": "att.6EF77F35F8",
+  "@type": "DefinedTerm",
+  "name": "Revenue Type",
+  "description": "Revenue Type",
+  "category": "Sustainability|Financial Sustainability|Revenue|Source|Revenue Type",
+  "measurementTechnique": "Vocabulary",
+  "measurementBenchmark": "RevenueType: Free|Attribution|Contribution|Use|Crawl|Training|Subscription|Purchase\r",
+  "ex:cardinality": "1.."
+}
