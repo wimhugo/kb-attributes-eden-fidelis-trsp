@@ -1,0 +1,63 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "ex": "https://example.org/vocab/"
+  },
+  "@graph": [
+    {
+      "@id": "ex:DefinedTermSet/BusinessModel",
+      "@type": "DefinedTermSet",
+      "name": "Business Model",
+      "hasPart": [
+        { "@type": "DefinedTerm", "name": "For-Profit" },
+        { "@type": "DefinedTerm", "name": "Non-Profit" },
+        { "@type": "DefinedTerm", "name": "Non-Profit including R&D" },
+        { "@type": "DefinedTerm", "name": "Publicly Funded" }
+      ]
+    },
+    {
+      "@id": "ex:DefinedTermSet/CompensationRule",
+      "@type": "DefinedTermSet",
+      "name": "CompensationRule",
+      "hasPart": [
+        { "@type": "DefinedTerm", "name": "Free" },
+        { "@type": "DefinedTerm", "name": "Non-Commercial" },
+        { "@type": "DefinedTerm", "name": "Free to Verified Users" },
+        { "@type": "DefinedTerm", "name": "Cost Recovery" },
+        { "@type": "DefinedTerm", "name": "Commercial Product" }
+      ]
+    },
+    {
+      "@id": "ex:DefinedTermSet/RevenueType",
+      "@type": "DefinedTermSet",
+      "name": "RevenueType",
+      "hasPart": [
+        { "@type": "DefinedTerm", "name": "Free" },
+        { "@type": "DefinedTerm", "name": "Attribution" },
+        { "@type": "DefinedTerm", "name": "Contribution" },
+        { "@type": "DefinedTerm", "name": "Use" },
+        { "@type": "DefinedTerm", "name": "Crawl" },
+        { "@type": "DefinedTerm", "name": "Training" },
+        { "@type": "DefinedTerm", "name": "Subscription" },
+        { "@type": "DefinedTerm", "name": "Purchase" }
+      ]
+    },
+    {
+      "@id": "ex:DefinedTermSet/RevenueSource",
+      "@type": "DefinedTermSet",
+      "name": "RevenueSource",
+      "hasPart": [
+        { "@type": "DefinedTerm", "name": "Free" },
+        { "@type": "DefinedTerm", "name": "Subscription" },
+        { "@type": "DefinedTerm", "name": "Pay per use" },
+        { "@type": "DefinedTerm", "name": "Membership" },
+        { "@type": "DefinedTerm", "name": "Grants" },
+        { "@type": "DefinedTerm", "name": "Other" }
+      ]
+    },
+
+    {
+      "@id": "Replace this node with graph nodes for attributes"
+    }
+  ]
+}
