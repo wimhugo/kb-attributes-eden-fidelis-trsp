@@ -1,0 +1,10 @@
+{
+  "@id": "att.3AD2ECA374",
+  "@type": "DefinedTerm",
+  "name": "Data is Available",
+  "description": "Data is Available",
+  "category": "Sustainability|Technical Sustainability|Data Continuity|Data is Available",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}
