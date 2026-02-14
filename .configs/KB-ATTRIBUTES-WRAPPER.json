@@ -58,6 +58,9 @@
 
     {
       "@id": "Replace this node with graph nodes for attributes"
+    },
+    {
+      "@id": "Replace this node with graph nodes for profiles"
     }
   ]
 }
