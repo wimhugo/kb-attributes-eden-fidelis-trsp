@@ -1,0 +1,10 @@
+{
+  "@id": "att.1FC6BCD089",
+  "@type": "DefinedTerm",
+  "name": "Periodic Expert/ External Review",
+  "description": "Periodic Expert/ External Review",
+  "category": "Sustainability|Social Sustainability|Expert Guidance|Periodic Expert/ External Review",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}
