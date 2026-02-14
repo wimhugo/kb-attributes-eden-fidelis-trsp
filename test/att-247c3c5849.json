@@ -1,0 +1,10 @@
+{
+  "@id": "att.247C3C5849",
+  "@type": "DefinedTerm",
+  "name": "Stakeholder Representation",
+  "description": "Stakeholder Representation",
+  "category": "Sustainability|Social Sustainability|Governance|Stakeholder Representation",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}
