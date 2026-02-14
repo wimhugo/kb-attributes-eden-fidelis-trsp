@@ -1,0 +1,10 @@
+{
+  "@id": "att.44913AA727",
+  "@type": "DefinedTerm",
+  "name": "Revenue Source",
+  "description": "Revenue Source",
+  "category": "Sustainability|Financial Sustainability|Revenue|Source|Revenue Source",
+  "measurementTechnique": "Vocabulary",
+  "measurementBenchmark": "RevenueSource: Free|Subscription|Pay per use|Membership|Grants|Other\r",
+  "ex:cardinality": "1..n"
+}

@@ -1,0 +1,10 @@
+{
+  "@id": "att.04DC5770C9",
+  "@type": "DefinedTerm",
+  "name": "Documentation on Community Engagement",
+  "description": "Documentation on Community Engagement",
+  "category": "Sustainability|Social Sustainability|Community Engagement|Documentation on Community Engagement",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}

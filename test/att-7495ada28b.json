@@ -1,0 +1,10 @@
+{
+  "@id": "att.7495ADA28B",
+  "@type": "DefinedTerm",
+  "name": "Public Continuity Plan",
+  "description": "Public Continuity Plan",
+  "category": "Sustainability|Social Sustainability|Planning/ Continuity|Public Continuity Plan",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}

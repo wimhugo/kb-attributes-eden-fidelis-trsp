@@ -1,0 +1,10 @@
+{
+  "@id": "att.269758D5A0",
+  "@type": "DefinedTerm",
+  "name": "R&D is Possible",
+  "description": "R&D is Possible",
+  "category": "Sustainability|Financial Sustainability|Adequacy of Structural Income|R&D is Possible",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}

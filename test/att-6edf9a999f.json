@@ -1,0 +1,10 @@
+{
+  "@id": "att.6EDF9A999F",
+  "@type": "DefinedTerm",
+  "name": "Defined and predictable funding regime",
+  "description": "Defined and predictable funding regime",
+  "category": "Sustainability|Financial Sustainability|Adequacy of Structural Income|Defined and predictable funding regime",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}

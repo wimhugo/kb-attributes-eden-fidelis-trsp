@@ -1,0 +1,10 @@
+{
+  "@id": "att.7BCEAFB957",
+  "@type": "DefinedTerm",
+  "name": "No Patents on Source Code",
+  "description": "No Patents on Source Code",
+  "category": "Sustainability|Technical Sustainability|Open Source|No Patents on Source Code",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}

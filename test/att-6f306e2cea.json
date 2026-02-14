@@ -1,0 +1,10 @@
+{
+  "@id": "att.6F306E2CEA",
+  "@type": "DefinedTerm",
+  "name": "Publicly Available Accounts",
+  "description": "Publicly Available Accounts",
+  "category": "Sustainability|Financial Sustainability|Adequacy of Structural Income|Publicly Available Accounts",
+  "measurementTechnique": "Binary|Evidence",
+  "measurementBenchmark": "\r",
+  "ex:cardinality": "0..1"
+}
