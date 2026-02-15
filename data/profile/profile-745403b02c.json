@@ -1,0 +1,17 @@
+{
+  "@id": "profile.745403B02C",
+  "@type": "DefinedTerm",
+  "profileName": "schema.org",
+  "profileDescription": "schema.org",
+  "ex:profileType": "Source",
+  "profileReference": "http://schema.org/\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
