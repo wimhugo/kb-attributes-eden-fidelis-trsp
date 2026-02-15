@@ -1,7 +1,7 @@
 {
   "configName": "KB-PROFILES-EDEN-FIDELIS-TRSP",
   "sheetUrl": "",
-  "uploadedFileUrl": "https://base44.app/api/apps/6990173a3ab11de28f41756e/files/public/6990173a3ab11de28f41756e/188443bd2_L1633AttributesKnowledgeBase-Profiles.csv",
+  "uploadedFileUrl": "https://base44.app/api/apps/6990173a3ab11de28f41756e/files/public/6990173a3ab11de28f41756e/88518148b_L1633AttributesKnowledgeBase-Profiles.csv",
   "dataSourceType": "file",
   "githubRepo": "wimhugo/kb-attributes-eden-fidelis-trsp",
   "schema": {
@@ -32,5 +32,5 @@
     "URL\r": "profileReference",
     "Description": "profileDescription"
   },
-  "lastModified": "2026-02-15T18:49:39.469Z"
+  "lastModified": "2026-02-15T18:56:55.581Z"
 }
