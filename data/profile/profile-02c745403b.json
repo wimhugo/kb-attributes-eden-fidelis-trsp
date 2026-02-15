@@ -1,0 +1,17 @@
+{
+  "@id": "profile.02C745403B",
+  "@type": "DefinedTerm",
+  "profileName": "JISC DPS",
+  "profileDescription": "JISC DPS",
+  "ex:profileType": "Source",
+  "profileReference": "https://www.jisc.ac.uk/digital-preservation-systems-dynamic-purchasing-system-dps\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
