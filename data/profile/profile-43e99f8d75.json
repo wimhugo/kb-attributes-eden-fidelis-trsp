@@ -1,0 +1,17 @@
+{
+  "@id": "profile.43E99F8D75",
+  "@type": "DefinedTerm",
+  "profileName": "SDSBB",
+  "profileDescription": "SDSBB",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.3390/rs16203824 \r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
