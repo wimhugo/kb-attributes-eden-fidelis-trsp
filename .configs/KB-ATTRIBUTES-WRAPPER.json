@@ -5,6 +5,27 @@
   },
   "@graph": [
     {
+      "@id": "ex:DefinedTermSet/AggregationType",
+      "@type": "DefinedTermSet",
+      "name": "AggregationType",
+      "hasPart": [
+        { "@type": "DefinedTerm", "name": "sum" },
+        { "@type": "DefinedTerm", "name": "count" },
+        { "@type": "DefinedTerm", "name": "minimum" },
+        { "@type": "DefinedTerm", "name": "maximum" },
+        { "@type": "DefinedTerm", "name": "average" },
+        { "@type": "DefinedTerm", "name": "median" }, 
+        { "@type": "DefinedTerm", "name": "first" },
+        { "@type": "DefinedTerm", "name": "last" },
+        { "@type": "DefinedTerm", "name": "unique list" },
+        { "@type": "DefinedTerm", "name": "union" },
+        { "@type": "DefinedTerm", "name": "ner" },
+        { "@type": "DefinedTerm", "name": "inherit" },
+        { "@type": "DefinedTerm", "name": "category count" },
+        { "@type": "DefinedTerm", "name": "exists" }
+      ]
+    },    
+    {
       "@id": "ex:DefinedTermSet/Relation",
       "@type": "DefinedTermSet",
       "name": "Relations",
