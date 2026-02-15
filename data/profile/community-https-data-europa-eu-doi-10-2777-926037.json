@@ -1,0 +1,17 @@
+{
+  "@id": ",Community,https://data.europa.eu/doi/10.2777/926037 \r",
+  "@type": "DefinedTerm",
+  "profileName": "",
+  "profileDescription": "",
+  "ex:profileType": "",
+  "profileReference": "",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
