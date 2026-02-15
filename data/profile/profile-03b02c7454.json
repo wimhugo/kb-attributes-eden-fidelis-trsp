@@ -1,0 +1,17 @@
+{
+  "@id": "profile.03B02C7454",
+  "@type": "DefinedTerm",
+  "profileName": "DCAT-AP",
+  "profileDescription": "DCAT-AP",
+  "ex:profileType": "Community",
+  "profileReference": "\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
