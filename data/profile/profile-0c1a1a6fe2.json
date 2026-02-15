@@ -1,0 +1,17 @@
+{
+  "@id": "profile.0C1A1A6FE2",
+  "@type": "DefinedTerm",
+  "profileName": "STATUS",
+  "profileDescription": "STATUS",
+  "ex:profileType": "Source",
+  "profileReference": "https://doi.org/10.1371/journal.pone.0242525 \r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
