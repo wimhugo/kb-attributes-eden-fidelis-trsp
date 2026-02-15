@@ -1,0 +1,17 @@
+{
+  "@id": "profile.4841BDEC9E",
+  "@type": "DefinedTerm",
+  "profileName": "DINI",
+  "profileDescription": "DINI",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.18452/24679\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
