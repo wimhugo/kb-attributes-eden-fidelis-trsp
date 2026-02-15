@@ -1,0 +1,248 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "numberOfItems": 40,
+  "itemListElement": [
+    {
+      "file": "profile-644301c176.json",
+      "id": "profile.644301C176",
+      "type": "DefinedTerm",
+      "name": "profile-644301c176"
+    },
+    {
+      "file": "profile-661b6e0023.json",
+      "id": "profile.661B6E0023",
+      "type": "DefinedTerm",
+      "name": "profile-661b6e0023"
+    },
+    {
+      "file": "source-https-doi-org-10-48440-re3-014.json",
+      "id": ",Source,https://doi.org/10.48440/re3.014 \r",
+      "type": "DefinedTerm",
+      "name": "source-https-doi-org-10-48440-re3-014"
+    },
+    {
+      "file": "profile-09d755cce9.json",
+      "id": "profile.09D755CCE9",
+      "type": "DefinedTerm",
+      "name": "profile-09d755cce9"
+    },
+    {
+      "file": "profile-757212c93c.json",
+      "id": "profile.757212C93C",
+      "type": "DefinedTerm",
+      "name": "profile-757212c93c"
+    },
+    {
+      "file": "profile-1081174e05.json",
+      "id": "profile.1081174E05",
+      "type": "DefinedTerm",
+      "name": "profile-1081174e05"
+    },
+    {
+      "file": "profile-6bf0a22cb5.json",
+      "id": "profile.6BF0A22CB5",
+      "type": "DefinedTerm",
+      "name": "profile-6bf0a22cb5"
+    },
+    {
+      "file": "profile-3fe210c50f.json",
+      "id": "profile.3FE210C50F",
+      "type": "DefinedTerm",
+      "name": "profile-3fe210c50f"
+    },
+    {
+      "file": "profile-697647043e.json",
+      "id": "profile.697647043E",
+      "type": "DefinedTerm",
+      "name": "profile-697647043e"
+    },
+    {
+      "file": "profile-6ebcf639d3.json",
+      "id": "profile.6EBCF639D3",
+      "type": "DefinedTerm",
+      "name": "profile-6ebcf639d3"
+    },
+    {
+      "file": "community-https-data-europa-eu-doi-10-2777-926037.json",
+      "id": ",Community,https://data.europa.eu/doi/10.2777/926037 \r",
+      "type": "DefinedTerm",
+      "name": "community-https-data-europa-eu-doi-10-2777-926037"
+    },
+    {
+      "file": "profile-635c7081b0.json",
+      "id": "profile.635C7081B0",
+      "type": "DefinedTerm",
+      "name": "profile-635c7081b0"
+    },
+    {
+      "file": "profile-6ae564bf52.json",
+      "id": "profile.6AE564BF52",
+      "type": "DefinedTerm",
+      "name": "profile-6ae564bf52"
+    },
+    {
+      "file": "profile-47a2ace9a8.json",
+      "id": "profile.47A2ACE9A8",
+      "type": "DefinedTerm",
+      "name": "profile-47a2ace9a8"
+    },
+    {
+      "file": "profile-74820191f5.json",
+      "id": "profile.74820191F5",
+      "type": "DefinedTerm",
+      "name": "profile-74820191f5"
+    },
+    {
+      "file": "profile-1e05bbe77f.json",
+      "id": "profile.1E05BBE77F",
+      "type": "DefinedTerm",
+      "name": "profile-1e05bbe77f"
+    },
+    {
+      "file": "profile-4aff1332ef.json",
+      "id": "profile.4AFF1332EF",
+      "type": "DefinedTerm",
+      "name": "profile-4aff1332ef"
+    },
+    {
+      "file": "profile-6b38c46111.json",
+      "id": "profile.6B38C46111",
+      "type": "DefinedTerm",
+      "name": "profile-6b38c46111"
+    },
+    {
+      "file": "profile-2b5b8dbb59.json",
+      "id": "profile.2B5B8DBB59",
+      "type": "DefinedTerm",
+      "name": "profile-2b5b8dbb59"
+    },
+    {
+      "file": "profile-76bc362cf1.json",
+      "id": "profile.76BC362CF1",
+      "type": "DefinedTerm",
+      "name": "profile-76bc362cf1"
+    },
+    {
+      "file": "profile-25e02cc352.json",
+      "id": "profile.25E02CC352",
+      "type": "DefinedTerm",
+      "name": "profile-25e02cc352"
+    },
+    {
+      "file": "profile-2bbc8312c3.json",
+      "id": "profile.2BBC8312C3",
+      "type": "DefinedTerm",
+      "name": "profile-2bbc8312c3"
+    },
+    {
+      "file": "profile-546fd5b0d8.json",
+      "id": "profile.546FD5B0D8",
+      "type": "DefinedTerm",
+      "name": "profile-546fd5b0d8"
+    },
+    {
+      "file": "profile-719b779075.json",
+      "id": "profile.719B779075",
+      "type": "DefinedTerm",
+      "name": "profile-719b779075"
+    },
+    {
+      "file": "profile-0c1a1a6fe2.json",
+      "id": "profile.0C1A1A6FE2",
+      "type": "DefinedTerm",
+      "name": "profile-0c1a1a6fe2"
+    },
+    {
+      "file": "profile-43e99f8d75.json",
+      "id": "profile.43E99F8D75",
+      "type": "DefinedTerm",
+      "name": "profile-43e99f8d75"
+    },
+    {
+      "file": "profile-700c58d59c.json",
+      "id": "profile.700C58D59C",
+      "type": "DefinedTerm",
+      "name": "profile-700c58d59c"
+    },
+    {
+      "file": "profile-4841bdec9e.json",
+      "id": "profile.4841BDEC9E",
+      "type": "DefinedTerm",
+      "name": "profile-4841bdec9e"
+    },
+    {
+      "file": "profile-370b8ec563.json",
+      "id": "profile.370B8EC563",
+      "type": "DefinedTerm",
+      "name": "profile-370b8ec563"
+    },
+    {
+      "file": "profile-114f0465c3.json",
+      "id": "profile.114F0465C3",
+      "type": "DefinedTerm",
+      "name": "profile-114f0465c3"
+    },
+    {
+      "file": "profile-1ee89f448d.json",
+      "id": "profile.1EE89F448D",
+      "type": "DefinedTerm",
+      "name": "profile-1ee89f448d"
+    },
+    {
+      "file": "profile-61e7538e10.json",
+      "id": "profile.61E7538E10",
+      "type": "DefinedTerm",
+      "name": "profile-61e7538e10"
+    },
+    {
+      "file": "profile-6c825f4502.json",
+      "id": "profile.6C825F4502",
+      "type": "DefinedTerm",
+      "name": "profile-6c825f4502"
+    },
+    {
+      "file": "profile-3c2d6c1c37.json",
+      "id": "profile.3C2D6C1C37",
+      "type": "DefinedTerm",
+      "name": "profile-3c2d6c1c37"
+    },
+    {
+      "file": "profile-668467ec38.json",
+      "id": "profile.668467EC38",
+      "type": "DefinedTerm",
+      "name": "profile-668467ec38"
+    },
+    {
+      "file": "profile-03c39f30f2.json",
+      "id": "profile.03C39F30F2",
+      "type": "DefinedTerm",
+      "name": "profile-03c39f30f2"
+    },
+    {
+      "file": "profile-02c745403b.json",
+      "id": "profile.02C745403B",
+      "type": "DefinedTerm",
+      "name": "profile-02c745403b"
+    },
+    {
+      "file": "profile-745403b02c.json",
+      "id": "profile.745403B02C",
+      "type": "DefinedTerm",
+      "name": "profile-745403b02c"
+    },
+    {
+      "file": "profile-03b02c7454.json",
+      "id": "profile.03B02C7454",
+      "type": "DefinedTerm",
+      "name": "profile-03b02c7454"
+    },
+    {
+      "file": "profile-4dd6232782.json",
+      "id": "profile.4DD6232782",
+      "type": "DefinedTerm",
+      "name": "profile-4dd6232782"
+    }
+  ],
+  "dateModified": "2026-02-15T18:49:41.279Z"
+}
