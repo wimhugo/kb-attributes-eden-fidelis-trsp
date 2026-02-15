@@ -1,0 +1,17 @@
+{
+  "@id": "profile.47A2ACE9A8",
+  "@type": "DefinedTerm",
+  "profileName": "NDSA",
+  "profileDescription": "NDSA",
+  "ex:profileType": "Source",
+  "profileReference": "https://ndsa.org/publications/levels-of-digital-preservation/\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
