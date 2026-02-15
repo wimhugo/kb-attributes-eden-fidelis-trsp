@@ -1,0 +1,17 @@
+{
+  "@id": "profile.76BC362CF1",
+  "@type": "DefinedTerm",
+  "profileName": "TRUST WG",
+  "profileDescription": "TRUST WG",
+  "ex:profileType": "Source",
+  "profileReference": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
