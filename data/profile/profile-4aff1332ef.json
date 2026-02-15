@@ -1,0 +1,17 @@
+{
+  "@id": "profile.4AFF1332EF",
+  "@type": "DefinedTerm",
+  "profileName": "GORC",
+  "profileDescription": "GORC",
+  "ex:profileType": "Source",
+  "profileReference": "https://doi.org/10.15497/RDA00099\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
