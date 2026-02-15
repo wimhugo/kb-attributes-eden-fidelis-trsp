@@ -1,6 +1,8 @@
 {
   "configName": "KB-ATTRIBUTES-EDEN-FIDELIS-TRSP",
   "sheetUrl": "",
+  "uploadedFileUrl": "https://base44.app/api/apps/6990173a3ab11de28f41756e/files/public/6990173a3ab11de28f41756e/8b62241bf_L1634TestAttributes-GitHubUpload.csv",
+  "dataSourceType": "file",
   "githubRepo": "wimhugo/kb-attributes-eden-fidelis-trsp",
   "schema": {
     "@id": "",
@@ -10,9 +12,33 @@
     "category": "",
     "measurementTechnique": "",
     "measurementBenchmark": "",
-    "ex:cardinality": ""
+    "ex:cardinality": "",
+    "ex:relations": [
+      {
+        "@type": "Relationship",
+        "relationType": {
+          "@id": "ex:relation/alternateIdentifier"
+        },
+        "object": {
+          "@id": ""
+        }
+      },
+      {
+        "@type": "Relationship",
+        "relationType": "includeInProfile",
+        "object": {
+          "@id": ""
+        },
+        "profileClass": "",
+        "profileAttributeIRI": "",
+        "profileAttributeLabel": "",
+        "profileAttributeAggregationType": "",
+        "profileBenchmark": "",
+        "ex:profileBenchmarkType": ""
+      }
+    ]
   },
-  "outputDir": "test",
+  "outputDir": "data/attrib",
   "indexFileName": "index.json",
   "fileNameColumn": "",
   "mapping": {
@@ -24,5 +50,5 @@
     "Attribute_Test": "measurementTechnique",
     "Attribute_Benchmark\r": "measurementBenchmark"
   },
-  "lastModified": "2026-02-14T09:41:22.952Z"
+  "lastModified": "2026-02-15T14:30:43.281Z"
 }
