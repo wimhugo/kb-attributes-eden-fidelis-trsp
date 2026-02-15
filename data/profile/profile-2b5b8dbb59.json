@@ -1,0 +1,17 @@
+{
+  "@id": "profile.2B5B8DBB59",
+  "@type": "DefinedTerm",
+  "profileName": "RISK",
+  "profileDescription": "RISK",
+  "ex:profileType": "Source",
+  "profileReference": "https://doi.org/10.1108/JD-08-2023-0157\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
