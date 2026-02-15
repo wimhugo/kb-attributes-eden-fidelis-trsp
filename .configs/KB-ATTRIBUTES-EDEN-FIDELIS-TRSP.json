@@ -1,7 +1,7 @@
 {
   "configName": "KB-ATTRIBUTES-EDEN-FIDELIS-TRSP",
   "sheetUrl": "",
-  "uploadedFileUrl": "https://base44.app/api/apps/6990173a3ab11de28f41756e/files/public/6990173a3ab11de28f41756e/8b62241bf_L1634TestAttributes-GitHubUpload.csv",
+  "uploadedFileUrl": "https://base44.app/api/apps/6990173a3ab11de28f41756e/files/public/6990173a3ab11de28f41756e/4ab7d95f4_L1634TestAttributes-GitHubUpload.csv",
   "dataSourceType": "file",
   "githubRepo": "wimhugo/kb-attributes-eden-fidelis-trsp",
   "schema": {
@@ -50,5 +50,5 @@
     "Attribute_Test": "measurementTechnique",
     "Attribute_Benchmark\r": "measurementBenchmark"
   },
-  "lastModified": "2026-02-15T14:30:43.281Z"
+  "lastModified": "2026-02-15T14:38:53.681Z"
 }
