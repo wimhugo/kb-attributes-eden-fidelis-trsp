@@ -1,0 +1,17 @@
+{
+  "@id": "profile.61E7538E10",
+  "@type": "DefinedTerm",
+  "profileName": "EDEN",
+  "profileDescription": "EDEN",
+  "ex:profileType": "Community",
+  "profileReference": "https://eden-fidelis.eu/ \r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
