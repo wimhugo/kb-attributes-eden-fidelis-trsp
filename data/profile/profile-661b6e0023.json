@@ -3,8 +3,8 @@
   "@type": "DefinedTerm",
   "profileName": "re3data.org",
   "profileDescription": "re3data.org",
-  "ex:profileType": "",
-  "profileReference": "",
+  "ex:profileType": "Source",
+  "profileReference": "https://doi.org/10.48440/re3.014 \r",
   "ex:relations": [
     {
       "@type": "Relationship",
