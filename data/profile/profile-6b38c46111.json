@@ -1,0 +1,17 @@
+{
+  "@id": "profile.6B38C46111",
+  "@type": "DefinedTerm",
+  "profileName": "CESSDA",
+  "profileDescription": "CESSDA",
+  "ex:profileType": "Source",
+  "profileReference": "https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
