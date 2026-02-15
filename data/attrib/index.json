@@ -1,0 +1,128 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "numberOfItems": 20,
+  "itemListElement": [
+    {
+      "file": "att-7c68dbb456.json",
+      "id": "att.7C68DBB456",
+      "type": "DefinedTerm",
+      "name": "Governance Description"
+    },
+    {
+      "file": "att-247c3c5849.json",
+      "id": "att.247C3C5849",
+      "type": "DefinedTerm",
+      "name": "Stakeholder Representation"
+    },
+    {
+      "file": "att-1fc6bcd089.json",
+      "id": "att.1FC6BCD089",
+      "type": "DefinedTerm",
+      "name": "Periodic Expert/ External Review"
+    },
+    {
+      "file": "att-42d7c2c3a4.json",
+      "id": "att.42D7C2C3A4",
+      "type": "DefinedTerm",
+      "name": "Public Statement of Wind-Down"
+    },
+    {
+      "file": "att-7495ada28b.json",
+      "id": "att.7495ADA28B",
+      "type": "DefinedTerm",
+      "name": "Public Continuity Plan"
+    },
+    {
+      "file": "att-04dc5770c9.json",
+      "id": "att.04DC5770C9",
+      "type": "DefinedTerm",
+      "name": "Documentation on Community Engagement"
+    },
+    {
+      "file": "att-7cbe776c7a.json",
+      "id": "att.7CBE776C7A",
+      "type": "DefinedTerm",
+      "name": "Business Model Type"
+    },
+    {
+      "file": "att-2758ac32b8.json",
+      "id": "att.2758AC32B8",
+      "type": "DefinedTerm",
+      "name": "Justification of Income"
+    },
+    {
+      "file": "att-7660700650.json",
+      "id": "att.7660700650",
+      "type": "DefinedTerm",
+      "name": "Compensation Rule"
+    },
+    {
+      "file": "att-6ef77f35f8.json",
+      "id": "att.6EF77F35F8",
+      "type": "DefinedTerm",
+      "name": "Revenue Type"
+    },
+    {
+      "file": "att-44913aa727.json",
+      "id": "att.44913AA727",
+      "type": "DefinedTerm",
+      "name": "Revenue Source"
+    },
+    {
+      "file": "att-6f306e2cea.json",
+      "id": "att.6F306E2CEA",
+      "type": "DefinedTerm",
+      "name": "Publicly Available Accounts"
+    },
+    {
+      "file": "att-6edf9a999f.json",
+      "id": "att.6EDF9A999F",
+      "type": "DefinedTerm",
+      "name": "Defined and predictable funding regime"
+    },
+    {
+      "file": "att-52a2a122af.json",
+      "id": "att.52A2A122AF",
+      "type": "DefinedTerm",
+      "name": "Base operations structurally funded"
+    },
+    {
+      "file": "att-269758d5a0.json",
+      "id": "att.269758D5A0",
+      "type": "DefinedTerm",
+      "name": "R&D is Possible"
+    },
+    {
+      "file": "att-5cb2fb5b4c.json",
+      "id": "att.5CB2FB5B4C",
+      "type": "DefinedTerm",
+      "name": "Content is available free"
+    },
+    {
+      "file": "att-608b9c73bb.json",
+      "id": "att.608B9C73BB",
+      "type": "DefinedTerm",
+      "name": "Open Data"
+    },
+    {
+      "file": "att-3ad2eca374.json",
+      "id": "att.3AD2ECA374",
+      "type": "DefinedTerm",
+      "name": "Data is Available"
+    },
+    {
+      "file": "att-7bceafb957.json",
+      "id": "att.7BCEAFB957",
+      "type": "DefinedTerm",
+      "name": "No Patents on Source Code"
+    },
+    {
+      "file": "att-792636c88d.json",
+      "id": "att.792636C88D",
+      "type": "DefinedTerm",
+      "name": "Source code is open or available on closure"
+    }
+  ],
+  "dateModified": "2026-02-15T14:00:49.748Z"
+}
