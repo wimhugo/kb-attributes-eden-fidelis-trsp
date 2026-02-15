@@ -1,0 +1,17 @@
+{
+  "@id": "profile.03C39F30F2",
+  "@type": "DefinedTerm",
+  "profileName": "RDA/  WDS IG",
+  "profileDescription": "RDA/  WDS IG",
+  "ex:profileType": "Source",
+  "profileReference": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

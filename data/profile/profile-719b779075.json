@@ -1,0 +1,17 @@
+{
+  "@id": "profile.719B779075",
+  "@type": "DefinedTerm",
+  "profileName": "ISO",
+  "profileDescription": "ISO",
+  "ex:profileType": "Community",
+  "profileReference": "https://www.iso.org/standard/56510.html\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

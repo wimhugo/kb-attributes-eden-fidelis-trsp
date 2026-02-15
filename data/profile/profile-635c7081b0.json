@@ -1,0 +1,17 @@
+{
+  "@id": "profile.635C7081B0",
+  "@type": "DefinedTerm",
+  "profileName": "POSI",
+  "profileDescription": "POSI",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.24343/C34W2H\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

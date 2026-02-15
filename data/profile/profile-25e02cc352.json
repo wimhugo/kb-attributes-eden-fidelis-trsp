@@ -1,0 +1,17 @@
+{
+  "@id": "profile.25E02CC352",
+  "@type": "DefinedTerm",
+  "profileName": "ELIXIR",
+  "profileDescription": "ELIXIR",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.12688/f1000research.9656.2\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

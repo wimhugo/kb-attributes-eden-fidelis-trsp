@@ -1,0 +1,17 @@
+{
+  "@id": "profile.74820191F5",
+  "@type": "DefinedTerm",
+  "profileName": "DPC RAM",
+  "profileDescription": "DPC RAM",
+  "ex:profileType": "Community",
+  "profileReference": "http://doi.org/10.7207/dpcram24-03\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

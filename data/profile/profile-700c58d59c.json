@@ -1,0 +1,17 @@
+{
+  "@id": "profile.700C58D59C",
+  "@type": "DefinedTerm",
+  "profileName": "Gen Repo IG",
+  "profileDescription": "Gen Repo IG",
+  "ex:profileType": "Source",
+  "profileReference": "https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/ \r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

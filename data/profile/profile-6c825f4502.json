@@ -1,0 +1,17 @@
+{
+  "@id": "profile.6C825F4502",
+  "@type": "DefinedTerm",
+  "profileName": "CPP",
+  "profileDescription": "CPP",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.5281/zenodo.17984753 \r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "@id": "profile.697647043E",
+  "@type": "DefinedTerm",
+  "profileName": "CTS",
+  "profileDescription": "CTS",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.5281/zenodo.7051012\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

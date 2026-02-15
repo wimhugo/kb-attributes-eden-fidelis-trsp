@@ -1,0 +1,17 @@
+{
+  "@id": "profile.3FE210C50F",
+  "@type": "DefinedTerm",
+  "profileName": "CTM",
+  "profileDescription": "CTM",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.5281/zenodo.4084763\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

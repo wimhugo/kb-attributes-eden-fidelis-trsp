@@ -1,0 +1,17 @@
+{
+  "@id": "profile.6EBCF639D3",
+  "@type": "DefinedTerm",
+  "profileName": "EOSC PID",
+  "profileDescription": "EOSC PID",
+  "ex:profileType": "",
+  "profileReference": "",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

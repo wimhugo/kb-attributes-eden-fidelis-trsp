@@ -1,0 +1,17 @@
+{
+  "@id": "profile.1E05BBE77F",
+  "@type": "DefinedTerm",
+  "profileName": "DPC CRPS",
+  "profileDescription": "DPC CRPS",
+  "ex:profileType": "Community",
+  "profileReference": "https://www.dpconline.org/digipres/implement-digipres/procurement-toolkit/procurement-toolkit-core-requirements\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}

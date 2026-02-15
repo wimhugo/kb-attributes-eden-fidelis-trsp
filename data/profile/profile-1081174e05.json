@@ -1,0 +1,17 @@
+{
+  "@id": "profile.1081174E05",
+  "@type": "DefinedTerm",
+  "profileName": "TRUST",
+  "profileDescription": "TRUST",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.1038/s41597-020-0486-7\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
