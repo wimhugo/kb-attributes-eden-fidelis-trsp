@@ -1,0 +1,17 @@
+{
+  "@id": "profile.2BBC8312C3",
+  "@type": "DefinedTerm",
+  "profileName": "ERC-HE",
+  "profileDescription": "ERC-HE",
+  "ex:profileType": "Community",
+  "profileReference": "https://www.oapen.org/article/13934224-erc-oa-requirement\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
