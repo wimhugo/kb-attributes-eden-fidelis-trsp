@@ -6,11 +6,11 @@
   "category": "",
   "measurementTechnique": "",
   "measurementBenchmark":"",
-  "ex:cardinality": ""
+  "ex:cardinality": "",
   "ex:relations": [
     {
       "@type": "Relationship",
-      "relationType": { "@id": "ex:relation/alternateIdentifier" }
+      "relationType": { "@id": "ex:relation/alternateIdentifier" },
       "object": { "@id": "" }
     },
     {
