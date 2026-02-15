@@ -1,0 +1,17 @@
+{
+  "@id": "profile.114F0465C3",
+  "@type": "DefinedTerm",
+  "profileName": "nestor",
+  "profileDescription": "nestor",
+  "ex:profileType": "Community",
+  "profileReference": "http://nbn-resolving.de/urn:nbn:de:0008-2010030806 \r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
