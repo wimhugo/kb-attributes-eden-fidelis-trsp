@@ -20,6 +20,7 @@
       "profileClass":"",
       "profileAttributeIRI":"",      
       "profileAttributeLabel":"",
+      "profileAttributeAggregationType":"",
       "profileBenchmark":"",
       "ex:profileBenchmarkType":""
     }    
