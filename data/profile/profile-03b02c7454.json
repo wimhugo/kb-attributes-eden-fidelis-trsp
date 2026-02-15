@@ -4,7 +4,7 @@
   "profileName": "DCAT-AP",
   "profileDescription": "DCAT-AP",
   "ex:profileType": "Community",
-  "profileReference": "\r",
+  "profileReference": "https://interoperable-europe.ec.europa.eu/collection/semic-support-centre/solution/dcat-application-profile-data-portals-europe/release/301\r",
   "ex:relations": [
     {
       "@type": "Relationship",
