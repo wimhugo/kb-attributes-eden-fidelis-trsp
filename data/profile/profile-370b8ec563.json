@@ -1,0 +1,17 @@
+{
+  "@id": "profile.370B8EC563",
+  "@type": "DefinedTerm",
+  "profileName": "TRAC",
+  "profileDescription": "TRAC",
+  "ex:profileType": "Community",
+  "profileReference": "https://www.crl.edu/trac-metrics\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
