@@ -3,8 +3,8 @@
   "@type": "DefinedTerm",
   "profileName": "EOSC PID",
   "profileDescription": "EOSC PID",
-  "ex:profileType": "",
-  "profileReference": "",
+  "ex:profileType": "Community",
+  "profileReference": "https://data.europa.eu/doi/10.2777/926037 \r",
   "ex:relations": [
     {
       "@type": "Relationship",
