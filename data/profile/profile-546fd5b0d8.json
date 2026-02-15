@@ -1,0 +1,17 @@
+{
+  "@id": "profile.546FD5B0D8",
+  "@type": "DefinedTerm",
+  "profileName": "GREI",
+  "profileDescription": "GREI",
+  "ex:profileType": "Source",
+  "profileReference": "https://doi.org/10.5281/zenodo.8350509\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
