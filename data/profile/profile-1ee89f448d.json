@@ -1,0 +1,17 @@
+{
+  "@id": "profile.1EE89F448D",
+  "@type": "DefinedTerm",
+  "profileName": "TRSP",
+  "profileDescription": "TRSP",
+  "ex:profileType": "Standard",
+  "profileReference": "https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
