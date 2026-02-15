@@ -1,0 +1,17 @@
+{
+  "@id": "profile.09D755CCE9",
+  "@type": "DefinedTerm",
+  "profileName": "FAIRsharing",
+  "profileDescription": "FAIRsharing",
+  "ex:profileType": "Source",
+  "profileReference": "https://doi.org/10.5281/zenodo.6875035\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
