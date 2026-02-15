@@ -16,7 +16,9 @@
       "object": {
         "@id": ""
       }
-    },
+    }
+  ],
+  "profiles":[
     {
       "@type": "Relationship",
       "relationType": "includeInProfile",
