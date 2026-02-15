@@ -1,0 +1,17 @@
+{
+  "@id": "profile.661B6E0023",
+  "@type": "DefinedTerm",
+  "profileName": "re3data.org",
+  "profileDescription": "re3data.org",
+  "ex:profileType": "",
+  "profileReference": "",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
