@@ -1,0 +1,17 @@
+{
+  "@id": "profile.4DD6232782",
+  "@type": "DefinedTerm",
+  "profileName": "OPENAIRE",
+  "profileDescription": "OPENAIRE",
+  "ex:profileType": "Community",
+  "profileReference": "https://doi.org/10.5281/zenodo.15534446",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
