@@ -1,0 +1,17 @@
+{
+  "@id": "profile.6BF0A22CB5",
+  "@type": "DefinedTerm",
+  "profileName": "DRAWG",
+  "profileDescription": "DRAWG",
+  "ex:profileType": "Source",
+  "profileReference": "https://doi.org/10.15497/RDA00103\r",
+  "ex:relations": [
+    {
+      "@type": "Relationship",
+      "relationType": "relatedIdentifier",
+      "object": {
+        "@id": ""
+      }
+    }
+  ]
+}
