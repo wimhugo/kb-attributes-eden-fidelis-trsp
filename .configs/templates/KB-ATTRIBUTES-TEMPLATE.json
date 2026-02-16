@@ -24,7 +24,7 @@
       "relationType": "includeInProfile",
       "object": {
         "@id": "",
-        "profileName": ""
+        "name": ""
       },
       "profileClass": "",
       "profileAttributeIRI": "",      
