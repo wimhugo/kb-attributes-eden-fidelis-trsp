@@ -44,6 +44,20 @@
       "profileAttributeAggregationType": "None",
       "profileBenchmark": "",
       "ex:profileBenchmarkType": "None"
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.792636C88D",
+      "profileAttributeLabel": "Source code is open or available on closure",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "",
+      "ex:profileBenchmarkType": "None"
     }
   ]
 }
