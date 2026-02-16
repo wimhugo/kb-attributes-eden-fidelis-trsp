@@ -44,6 +44,22 @@
       "profileAttributeAggregationType": "None",
       "profileBenchmark": "For-Profit|Non-Profit|Non-Profit including R&D|Publicly Funded|Evidence",
       "ex:profileBenchmarkType": "Vocabulary"
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.7CBE776C7A",
+      "profileAttributeLabel": "Business Model Type",
+      "profileAttributeCategory": "Sustainability|Financial Sustainability|Business Model|Business Model Type",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "For-Profit|Non-Profit|Non-Profit including R&D|Publicly Funded|Evidence",
+      "profileBenchmarkIRI": "",
+      "ex:profileBenchmarkType": "Vocabulary"
     }
   ]
 }
