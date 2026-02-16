@@ -44,6 +44,22 @@
       "profileAttributeAggregationType": "None",
       "profileBenchmark": "",
       "ex:profileBenchmarkType": "None"
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.52A2A122AF",
+      "profileAttributeLabel": "Base operations structurally funded",
+      "profileAttributeCategory": "Sustainability|Financial Sustainability|Adequacy of Structural Income|Base operations structurally funded",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "",
+      "profileBenchmarkIRI": "",
+      "ex:profileBenchmarkType": "None"
     }
   ]
 }
