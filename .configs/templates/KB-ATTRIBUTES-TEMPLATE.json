@@ -31,7 +31,8 @@
       "profileAttributeCategory": "",
       "profileAttributeAggregationType": "",
       "profileBenchmark": "",
-      "ex:profileBenchmarkType": ""
+      "ex:profileBenchmarkType": "",
+      "profileBenchmarkIRI": ""
     }
   ]
 }
