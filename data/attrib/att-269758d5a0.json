@@ -44,6 +44,22 @@
       "profileAttributeAggregationType": "None",
       "profileBenchmark": "",
       "ex:profileBenchmarkType": "None"
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.269758D5A0",
+      "profileAttributeLabel": "R&D is Possible",
+      "profileAttributeCategory": "Sustainability|Financial Sustainability|Adequacy of Structural Income|R&D is Possible",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "",
+      "profileBenchmarkIRI": "",
+      "ex:profileBenchmarkType": "None"
     }
   ]
 }

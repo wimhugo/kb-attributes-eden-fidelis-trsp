@@ -44,6 +44,22 @@
       "profileAttributeAggregationType": "None",
       "profileBenchmark": "",
       "ex:profileBenchmarkType": "None"
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.7BCEAFB957",
+      "profileAttributeLabel": "No Patents on Source Code",
+      "profileAttributeCategory": "Sustainability|Technical Sustainability|Open Source|No Patents on Source Code",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "",
+      "profileBenchmarkIRI": "",
+      "ex:profileBenchmarkType": "None"
     }
   ]
 }
