@@ -16,19 +16,24 @@
       "object": {
         "@id": ""
       }
-    },
+    }
+  ],
+  "profiles": [
     {
       "@type": "Relationship",
       "relationType": "includeInProfile",
       "object": {
-        "@id": ""
+        "@id": "",
+        "name": ""
       },
       "profileClass": "",
       "profileAttributeIRI": "",
       "profileAttributeLabel": "",
+      "profileAttributeCategory": "",
       "profileAttributeAggregationType": "",
       "profileBenchmark": "",
-      "ex:profileBenchmarkType": ""
+      "ex:profileBenchmarkType": "",
+      "profileBenchmarkIRI": ""
     }
   ]
 }
