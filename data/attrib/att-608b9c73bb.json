@@ -34,6 +34,22 @@
       "profileBenchmark": "",
       "ex:profileBenchmarkType": "",
       "profileBenchmarkIRI": ""
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.608B9C73BB",
+      "profileAttributeLabel": "Open Data",
+      "profileAttributeCategory": "Sustainability|Technical Sustainability|Data Continuity|Open Data",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "",
+      "profileBenchmarkIRI": "",
+      "ex:profileBenchmarkType": "None"
     }
   ]
 }
