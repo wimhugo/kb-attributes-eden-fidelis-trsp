@@ -30,5 +30,20 @@
       "profileBenchmark": "",
       "ex:profileBenchmarkType": ""
     }
+  ],
+  "profiles": [
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.269758D5A0",
+      "profileAttributeLabel": "R&D is Possible",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "",
+      "ex:profileBenchmarkType": "None"
+    }
   ]
 }
