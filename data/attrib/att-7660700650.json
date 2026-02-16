@@ -16,19 +16,6 @@
       "object": {
         "@id": ""
       }
-    },
-    {
-      "@type": "Relationship",
-      "relationType": "includeInProfile",
-      "object": {
-        "@id": ""
-      },
-      "profileClass": "",
-      "profileAttributeIRI": "",
-      "profileAttributeLabel": "",
-      "profileAttributeAggregationType": "",
-      "profileBenchmark": "",
-      "ex:profileBenchmarkType": ""
     }
   ],
   "profiles": [
@@ -36,30 +23,17 @@
       "@type": "Relationship",
       "relationType": "includeInProfile",
       "object": {
-        "@id": "profile.1EE89F448D"
+        "@id": "",
+        "name": ""
       },
-      "profileClass": "Standard",
-      "profileAttributeIRI": "att.7660700650",
-      "profileAttributeLabel": "Compensation Rule",
-      "profileAttributeAggregationType": "None",
-      "profileBenchmark": "Free|Non-Commercial|Free to Verified Users|Cost Recovery|Commercial Product",
-      "ex:profileBenchmarkType": "Vocabulary"
-    },
-    {
-      "@type": "Relationship",
-      "relationType": "includeInProfile",
-      "object": {
-        "@id": "profile.1EE89F448D",
-        "name": "TRSP"
-      },
-      "profileClass": "Standard",
-      "profileAttributeIRI": "att.7660700650",
-      "profileAttributeLabel": "Compensation Rule",
-      "profileAttributeCategory": "Sustainability|Financial Sustainability|Revenue|Data is free|Compensation Rule",
-      "profileAttributeAggregationType": "None",
-      "profileBenchmark": "Free|Non-Commercial|Free to Verified Users|Cost Recovery|Commercial Product",
-      "profileBenchmarkIRI": "",
-      "ex:profileBenchmarkType": "Vocabulary"
+      "profileClass": "",
+      "profileAttributeIRI": "",
+      "profileAttributeLabel": "",
+      "profileAttributeCategory": "",
+      "profileAttributeAggregationType": "",
+      "profileBenchmark": "",
+      "ex:profileBenchmarkType": "",
+      "profileBenchmarkIRI": ""
     }
   ]
 }
