@@ -23,17 +23,17 @@
       "@type": "Relationship",
       "relationType": "includeInProfile",
       "object": {
-        "@id": "",
-        "name": ""
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
       },
-      "profileClass": "",
-      "profileAttributeIRI": "",
-      "profileAttributeLabel": "",
-      "profileAttributeCategory": "",
-      "profileAttributeAggregationType": "",
-      "profileBenchmark": "",
-      "ex:profileBenchmarkType": "",
-      "profileBenchmarkIRI": ""
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.7BCEAFB957",
+      "profileAttributeLabel": "No Patents on Source Code",
+      "profileAttributeCategory": "Sustainability|Technical Sustainability|Open Source|No Patents on Source Code",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "Evidence URL",
+      "profileBenchmarkIRI": "",
+      "ex:profileBenchmarkType": "Evidence"
     },
     {
       "@type": "Relationship",
