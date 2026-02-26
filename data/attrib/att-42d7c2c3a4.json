@@ -23,17 +23,17 @@
       "@type": "Relationship",
       "relationType": "includeInProfile",
       "object": {
-        "@id": "",
-        "name": ""
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
       },
-      "profileClass": "",
-      "profileAttributeIRI": "",
-      "profileAttributeLabel": "",
-      "profileAttributeCategory": "",
-      "profileAttributeAggregationType": "",
-      "profileBenchmark": "",
-      "ex:profileBenchmarkType": "",
-      "profileBenchmarkIRI": ""
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.42D7C2C3A4",
+      "profileAttributeLabel": "Public Statement of Wind-Down",
+      "profileAttributeCategory": "Sustainability|Social Sustainability|Living Will|Public Statement of Wind-Down",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "Evidence URL",
+      "profileBenchmarkIRI": "",
+      "ex:profileBenchmarkType": "Evidence"
     },
     {
       "@type": "Relationship",
