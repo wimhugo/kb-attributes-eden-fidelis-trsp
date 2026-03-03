@@ -5,6 +5,7 @@
   "description": "",
   "category": "",
   "measurementTechnique": "",
+  "measurementBenchmark":"",
   "ex:cardinality": "",
   "ex:relations": [
     {
