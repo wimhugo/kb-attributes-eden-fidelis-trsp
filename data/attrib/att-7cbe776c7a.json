@@ -7,17 +7,6 @@
   "measurementTechnique": "Vocabulary",
   "measurementBenchmark": "Business Model: For-Profit|Non-Profit|Non-Profit including R&D|Publicly Funded\r",
   "ex:cardinality": "0..n",
-  "ex:relations": [
-    {
-      "@type": "Relationship",
-      "relationType": {
-        "@id": "ex:relation/alternateIdentifier"
-      },
-      "object": {
-        "@id": ""
-      }
-    }
-  ],
   "profiles": [
     {
       "@type": "Relationship",
@@ -42,12 +31,12 @@
         "@id": "profile.1EE89F448D",
         "name": "TRSP"
       },
-      "profileClass": "Standard",
-      "profileAttributeIRI": "att.7CBE776C7A",
-      "profileAttributeLabel": "Business Model Type",
-      "profileAttributeCategory": "Sustainability|Financial Sustainability|Business Model|Business Model Type",
+      "profileClass": "Community",
+      "profileAttributeIRI": "r3d:institutionType",
+      "profileAttributeLabel": "Institution Type",
+      "profileAttributeCategory": "",
       "profileAttributeAggregationType": "None",
-      "profileBenchmark": "For-Profit|Non-Profit|Non-Profit including R&D|Publicly Funded|Evidence",
+      "profileBenchmark": "commercial|non-profit",
       "profileBenchmarkIRI": "",
       "ex:profileBenchmarkType": "Vocabulary"
     }
