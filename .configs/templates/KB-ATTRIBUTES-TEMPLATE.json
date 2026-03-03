@@ -5,7 +5,6 @@
   "description": "",
   "category": "",
   "measurementTechnique": "",
-  "measurementBenchmark": "",
   "ex:cardinality": "",
   "ex:relations": [
     {
@@ -14,7 +13,8 @@
         "@id": "ex:relation/alternateIdentifier"
       },
       "object": {
-        "@id": ""
+        "@id": "",
+        "contextIRI":""
       }
     }
   ],
