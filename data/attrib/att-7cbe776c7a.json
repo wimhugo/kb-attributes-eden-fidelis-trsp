@@ -29,7 +29,7 @@
       "relationType": "includeInProfile",
       "object": {
         "@id": "profile.1EE89F448D",
-        "name": "TRSP"
+        "name": "re3data"
       },
       "profileClass": "Community",
       "profileAttributeIRI": "r3d:institutionType",
