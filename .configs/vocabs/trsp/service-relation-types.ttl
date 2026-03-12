@@ -1,0 +1,13 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+trsp:service-relation-scheme a skos:ConceptScheme ;
+    skos:prefLabel "Service relation types"@en .
+
+trsp:offeredByRepository a skos:Concept ;
+    skos:prefLabel "Service offered by repository"@en ;
+    skos:inScheme trsp:service-relation-scheme .
+
+trsp:usedByRepository a skos:Concept ;
+    skos:prefLabel "Service used by repository"@en ;
+    skos:inScheme trsp:service-relation-scheme .
