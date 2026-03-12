@@ -6,24 +6,30 @@ trsp:profile-type-scheme a skos:ConceptScheme ;
 
 trsp:profileTypeRepository a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Repository"@en ;
+    dct:description "The profile represents the attributes maintained and published by a Repository"@en;
     skos:inScheme trsp:profile-type-scheme .
 
 trsp:profileTypeService a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Service"@en ;
+    dct:description "The profile represents the attributes maintained and published by a Service"@en;
     skos:inScheme trsp:profile-type-scheme .
 
 trsp:profileTypeSource a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Source"@en ;
+    dct:description "The profile represents the attributes published by an authoritative Source, such as a working group or an infrastructure"@en;
     skos:inScheme trsp:profile-type-scheme .
 
 trsp:profileTypeStandard a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Standard"@en ;
+    dct:description "The profile represents the attributes maintained and published as a Standard, for example schema.org or DCAT"@en;
     skos:inScheme trsp:profile-type-scheme .
 
 trsp:profileTypeCommunityProfile a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Community Profile"@en ;
+    dct:description "The profile represents the attributes maintained and published as part of a community profile - for example FIDELIS network"@en;
     skos:inScheme trsp:profile-type-scheme .
 
 trsp:profileTypeUserProfile a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "User Profile"@en ;
+    dct:description "The profile represents the attributes associated with the exepctations or criteria of an individual User"@en;
     skos:inScheme trsp:profile-type-scheme .
