@@ -2,7 +2,7 @@
 
 A repository of attribute definitions and relations, used by the RDA TRSP WG, EOSC EDEN, and EOSC FIDELIS projects.
 
-##Conceptual Model
+## Conceptual Model
 
 The conceptual model is described in detail in a companion document, which can be found here. In summary, the conceptual model covers the following:
 
@@ -14,7 +14,7 @@ The conceptual model is described in detail in a companion document, which can b
   - There can be other sources of Profiles, each with a specific benchmark for each Attribute. This allows one to encode, for example, the benchmarks that will indicate compliance or alignment with a standard (such as ISO), a community profile (such as CoreTrustSeal, CPP, or the FIDELIS network), or a specification (for example compliance with the OpenAIRE quality criteria for repository harvesting).
 - Attributes, moreover, often have more than one stable IRI and definition in the web from well-knowm and established sources. Several Repository or Service attributes havem, for example, definitions in schema.org, DCAT or DCAT-AP, and in Dublin Core. The c oneptual model provides a mechanism for mapping these attributes to one another, and to select or indicate a default IRI that should be used by preference to idnetify the attribute in encodings.
 
-##Structure of the Knowledge Base
+## Structure of the Knowledge Base
 
 
 # Maintaining a Knowledge Base in GitHub using CSV/ Google Sheets as a Source
