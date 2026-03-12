@@ -1,0 +1,34 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+trsp:cardinality-scheme a skos:ConceptScheme ;
+    skos:prefLabel "TRSP cardinality types"@en .
+
+trsp:cardinality0_1
+    a skos:Concept, trsp:CardinalityType ;
+    skos:inScheme trsp:cardinality-scheme ;
+    skos:prefLabel "0..1"@en ;
+    skos:notation "0..1" ;
+    skos:definition "Zero or one value permitted."@en .
+
+trsp:cardinality1_1
+    a skos:Concept, trsp:CardinalityType ;
+    skos:inScheme trsp:cardinality-scheme ;
+    skos:prefLabel "1..1"@en ;
+    skos:notation "1..1" ;
+    skos:definition "Exactly one value required."@en .
+
+trsp:cardinality0_n
+    a skos:Concept, trsp:CardinalityType ;
+    skos:inScheme trsp:cardinality-scheme ;
+    skos:prefLabel "0..n"@en ;
+    skos:notation "0..n" ;
+    skos:definition "Zero or more values permitted."@en .
+
+trsp:cardinality1_n
+    a skos:Concept, trsp:CardinalityType ;
+    skos:inScheme trsp:cardinality-scheme ;
+    skos:prefLabel "1..n"@en ;
+    skos:notation "1..n" ;
+    skos:definition "One or more values required."@en .
