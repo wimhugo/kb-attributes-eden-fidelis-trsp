@@ -1,0 +1,41 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+trsp:measurement-type-scheme a skos:ConceptScheme ;
+    skos:prefLabel "TRSP measurement types"@en .
+
+trsp:measurementTypeNone a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "None - no constraints"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
+
+trsp:measurementTypeBinary a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "Binary"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
+
+trsp:measurementTypeBinaryEvidence a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "Binary with Evidence"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
+
+trsp:measurementTypeVocabulary a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "Vocabulary"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
+
+trsp:measurementTypeRegistry a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "Registry"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
+
+trsp:measurementTypeChecklist a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "Checklist"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
+
+trsp:measurementTypeFormats a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "Formats"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
+
+trsp:measurementTypeStandard a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "Standard"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
+
+trsp:measurementTypeSpecification a skos:Concept, trsp:MeasurementType ;
+    skos:prefLabel "Specification"@en ;
+    skos:inScheme trsp:measurement-type-scheme .
