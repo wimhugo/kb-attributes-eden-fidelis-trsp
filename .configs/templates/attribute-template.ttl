@@ -1,0 +1,12 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+<> a trsp:Attribute, skos:Concept ;
+    skos:prefLabel ""@en ;
+    dct:description ""@en ;
+    dcat:keyword ""@en ;
+    trsp:hasMeasurementType <> ;
+    trsp:benchmark ""@en ;
+    trsp:cardinalityCode <> .
