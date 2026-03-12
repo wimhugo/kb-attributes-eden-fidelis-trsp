@@ -6,8 +6,10 @@ trsp:service-relation-scheme a skos:ConceptScheme ;
 
 trsp:offeredByRepository a skos:Concept ;
     skos:prefLabel "Service offered by repository"@en ;
+    dct:description "Service is offered by a repository to users, for example an OAI-PMH endpoint or a file metadata service"@en ;
     skos:inScheme trsp:service-relation-scheme .
 
 trsp:usedByRepository a skos:Concept ;
     skos:prefLabel "Service used by repository"@en ;
+    dct:description "An external Service is used by a repository to users, for example a file conversion or metadata crosswalks service"@en ;
     skos:inScheme trsp:service-relation-scheme .
