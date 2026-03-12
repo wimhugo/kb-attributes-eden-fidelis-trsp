@@ -12,6 +12,7 @@ The conceptual model is described in detail in a companion document, which can b
   - Repositories and Services can have ***values*** for an attribute, and these values can be obtained in various ways - by manually providing it, by harvesting it from a registry such as re3data or FAIRSharing, by reading it from a FAIRiCAT implementation, or as a formal and automated test result. (To avoid conflicts with reserved terms, we call this property a ***measurement*** rather than a ***value***).
   - Repositories and Services can also have local ***benchmarks*** for a specific attribute, defining the valid values that such a measurement should or must have. These benchmarks and associated properties are captured in a ***profile***, which serves as a validator for the measurement(s) of that attribute for a specific Repository or Service.
   - There can be other sources of Profiles, each with a specific benchmark for each Attribute. This allows one to encode, for example, the benchmarks that will indicate compliance or alignment with a standard (such as ISO), a community profile (such as CoreTrustSeal, CPP, or the FIDELIS network), or a specification (for example compliance with the OpenAIRE quality criteria for repository harvesting).
+  - Measurements and benchmarks must be categhorised as a one of several ***measurement types***, and this determines additional details (such as indicating a vocabulary from which a term must be selected, or a registry that serves as a source of valid IRIs). Custom benchmark defined in a profile often indicate vocabularies or code lists that are not available as machine-readable web resources with term definitions, and for these, the knowledge base 
 - Attributes, moreover, often have more than one stable IRI and definition in the web from well-knowm and established sources. Several Repository or Service attributes havem, for example, definitions in schema.org, DCAT or DCAT-AP, and in Dublin Core. The c oneptual model provides a mechanism for mapping these attributes to one another, and to select or indicate a default IRI that should be used by preference to idnetify the attribute in encodings.
 
 ## Examples of Complexity
@@ -21,7 +22,52 @@ The conceptual model is described in detail in a companion document, which can b
 | Supported PIDs | A summary of harvested metadata could indicate PIDs A, B, C, and D are in use | The repository may indicate that only A, B, and D are accetable, in such a case the repository does not meet its own benchmark | A network such as FIDELIS may require that any of A, B, C, D, and E are acceptable, in which case the repository aligns with the expectations of the FIDELIS network |
 | OAI-PMH Harvester Version  | The repository can confirm the version in use by executing an independent verification test | The repository may not have a specific benchmark for this attribute | OpenAIRE indicates in its profile that this measurement must reflect a specific version |
 
-## Structure of the Knowledge Base
+# Structure of the Knowledge Base
+
+The Knowledge Base contains building blocks for a graph, together with test and example data. The layout of the KB source is indicated below.
+
+trsp-model/
+├── configs/
+│   └── ontology/
+│   │   └── trsp-core.ttl
+│   └── shacl/
+│   │   └── trsp-shapes.ttl
+│   └── templates/
+│   │   └── jsonld/
+│   │       ├── attribute-template.jsonld
+│   │       ├── repository-template.jsonld
+│   │       └── service-template.jsonld
+│   └── vocabs/
+│      └── trsp/
+│      │   ├── profile-types.ttl
+│      │   ├── measurement-types.ttl
+│      │   ├── service-relation-types.ttl
+│      │   ├── identifier-usages.ttl
+│      │   └── cardinalities.ttl
+│      └── re3d/
+├── examples/
+│   ├── example-attributes.jsonld
+│   ├── example-repositories.jsonld
+│   ├── example-services.jsonld
+│   ├── example-profiles.jsonld
+├── data/
+│   ├── attrib/
+│   │   ├── index.json
+│   │   └── <attributeIRI>.jsonld
+│   └──profile/
+│   │   ├── index.json
+│   │   └── <profileIRI>.jsonld
+│   └──service/
+│   │   ├── index.json
+│   │   └── <serviceIRI>.jsonld
+│   └──repository/
+│       ├── index.json
+│       └── <repositoryIRI>.jsonld
+├── test/
+│   ├── index.json
+│   └── <objectIRI>.jsonld
+└── import/
+    └── import-all.ttl
 
 
 # Maintaining a Knowledge Base in GitHub using CSV/ Google Sheets as a Source
