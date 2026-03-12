@@ -26,6 +26,7 @@ The conceptual model is described in detail in a companion document, which can b
 
 The Knowledge Base contains building blocks for a graph, together with test and example data. The layout of the KB source is indicated below.
 
+...
 trsp-model/
 ├── configs/
 │   └── ontology/
@@ -68,7 +69,7 @@ trsp-model/
 │   └── <objectIRI>.jsonld
 └── import/
     └── import-all.ttl
-
+...
 
 # Maintaining a Knowledge Base in GitHub using CSV/ Google Sheets as a Source
 
