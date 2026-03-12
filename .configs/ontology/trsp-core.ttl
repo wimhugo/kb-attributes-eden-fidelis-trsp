@@ -27,9 +27,18 @@ trsp:ServiceRelation a rdfs:Class .
 # Identifier properties
 ############################
 
-trsp:hasExternalIdentifier a rdf:Property .
-trsp:identifierIri a rdf:Property .
-trsp:identifierUsage a rdf:Property .
+trsp:hasExternalIdentifier a rdf:Property ;
+    rdfs:label "has external identifier"@en ;
+    rdfs:domain trsp:Attribute ;
+    rdfs:range trsp:ExternalIdentifier .
+trsp:identifierIri a rdf:Property ;
+    rdfs:label "identifier IRI"@en ;
+    rdfs:domain trsp:ExternalIdentifier ;
+    rdfs:range rdfs:Resource .
+trsp:identifierUsage a rdf:Property ;
+    rdfs:label "identifier usage"@en ;
+    rdfs:domain trsp:ExternalIdentifier ;
+    rdfs:range skos:Concept .
 
 ############################
 # Annotation properties
@@ -44,8 +53,15 @@ trsp:webReference a rdf:Property .
 
 trsp:hasMeasurementType a rdf:Property .
 trsp:benchmark a rdf:Property .
-trsp:cardinalityCode a rdf:Property .
+trsp:cardinalityCode a rdf:Property ;
+    rdfs:label "cardinality code"@en ;
+    rdfs:domain trsp:Attribute ;
+    rdfs:range trsp:CardinalityType .
 trsp:hasApplicableProfile a rdf:Property .
+trsp:hasApplicableProfileAssertion a rdf:Property ;
+    rdfs:label "has applicable profile assertion"@en ;
+    rdfs:domain trsp:Attribute ;
+    rdfs:range trsp:ProfileAssertion .
 
 ############################
 # Profile properties
@@ -71,12 +87,9 @@ trsp:measurementProvenance a rdf:Property .
 trsp:hasServiceRelation a rdf:Property .
 trsp:repository a rdf:Property .
 
-
-
-@prefix trsp: <https://example.org/trsp/> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+############################
+# TRSP properties
+############################
 
 trsp:ProfileAssertion a rdfs:Class ;
     rdfs:label "Profile assertion"@en .
@@ -86,16 +99,6 @@ trsp:ExternalIdentifier a rdfs:Class ;
 
 trsp:CardinalityType a rdfs:Class ;
     rdfs:label "Cardinality type"@en .
-
-trsp:hasApplicableProfileAssertion a rdf:Property ;
-    rdfs:label "has applicable profile assertion"@en ;
-    rdfs:domain trsp:Attribute ;
-    rdfs:range trsp:ProfileAssertion .
-
-trsp:hasExternalIdentifier a rdf:Property ;
-    rdfs:label "has external identifier"@en ;
-    rdfs:domain trsp:Attribute ;
-    rdfs:range trsp:ExternalIdentifier .
 
 trsp:relationType a rdf:Property ;
     rdfs:label "relation type"@en ;
@@ -108,16 +111,6 @@ trsp:object a rdf:Property ;
 trsp:contextIRI a rdf:Property ;
     rdfs:label "context IRI"@en ;
     rdfs:range rdfs:Resource .
-
-trsp:identifierIri a rdf:Property ;
-    rdfs:label "identifier IRI"@en ;
-    rdfs:domain trsp:ExternalIdentifier ;
-    rdfs:range rdfs:Resource .
-
-trsp:identifierUsage a rdf:Property ;
-    rdfs:label "identifier usage"@en ;
-    rdfs:domain trsp:ExternalIdentifier ;
-    rdfs:range skos:Concept .
 
 trsp:cardinalityCode a rdf:Property ;
     rdfs:label "cardinality code"@en ;
@@ -149,10 +142,6 @@ trsp:profileAttributeAggregationType a rdf:Property ;
 
 trsp:profileAttributeValue a rdf:Property ;
     rdfs:label "profile attribute value"@en ;
-    rdfs:domain trsp:ProfileAssertion .
-
-trsp:profileBenchmark a rdf:Property ;
-    rdfs:label "profile benchmark"@en ;
     rdfs:domain trsp:ProfileAssertion .
 
 trsp:profileBenchmarkIRI a rdf:Property ;
