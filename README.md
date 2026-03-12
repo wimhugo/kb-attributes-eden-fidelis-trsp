@@ -18,8 +18,8 @@ The conceptual model is described in detail in a companion document, which can b
 
 | Attribute | Repository Measurement (Value) | Repository Benchmark | Community Benchmark |
 | ----------- | ----------- | ----------- | ----------- |
-| Header | Title | Next | Next |
-| Paragraph | Text | | Next | Next |
+| Supported PIDs | A summary of harvested metadata could indicate PIDs A, B, C, and D are in use | The repository may indicate that only A, B, and D are accetable, in such a case the repository does not meet its own benchmark | A network such as FIDELIS may require that any of A, B, D, D, and E are accetable, in which case the rpository aligns with the expectations of the FIDELIS network |
+| OAI-PMH Harvester Version  | The repository can confirm the version in use by executing an independent verification test | The repository may not have a spedcific benchmark for this attribute | OpenAIRE specifies in its profile that this measurement must reflect a specific version |
 
 ## Structure of the Knowledge Base
 
