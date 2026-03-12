@@ -44,7 +44,7 @@ trsp-model/
 │      │   ├── measurement-types.ttl
 │      │   ├── service-relation-types.ttl
 │      │   ├── identifier-usages.ttl
-│      │   └── cardinalities.ttl
+│      │   └── cardinality-type.ttl
 │      └── re3d/
 ├── examples/
 │   ├── example-attributes.jsonld
