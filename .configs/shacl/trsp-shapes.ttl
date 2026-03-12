@@ -1,0 +1,40 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+#################################
+# Attribute shape
+#################################
+
+trsp:AttributeShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Attribute ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+    ] .
+
+#################################
+# Repository shape
+#################################
+
+trsp:RepositoryShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Repository ;
+    sh:property [
+        sh:path dct:title ;
+        sh:minCount 1 ;
+    ] .
+
+#################################
+# Service shape
+#################################
+
+trsp:ServiceShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Service ;
+    sh:property [
+        sh:path dct:title ;
+        sh:minCount 1 ;
+    ] .
