@@ -45,6 +45,7 @@ trsp:webReference a rdf:Property .
 trsp:hasMeasurementType a rdf:Property .
 trsp:benchmark a rdf:Property .
 trsp:cardinalityCode a rdf:Property .
+trsp:hasApplicableProfile a rdf:Property .
 
 ############################
 # Profile properties
@@ -59,7 +60,7 @@ trsp:hasProfileType a rdf:Property .
 trsp:hasAttributeAssertion a rdf:Property .
 trsp:aboutAttribute a rdf:Property .
 trsp:forProfile a rdf:Property .
-trsp:value a rdf:Property .
+trsp:measurement a rdf:Property .
 trsp:measurementDate a rdf:Property .
 trsp:measurementProvenance a rdf:Property .
 
