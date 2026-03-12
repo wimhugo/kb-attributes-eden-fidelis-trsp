@@ -4,7 +4,7 @@ A repository of attribute definitions and relations, used by the RDA TRSP WG, EO
 
 ## Conceptual Model
 
-The conceptual model is described in detail in a companion document, which can be found here. In summary, the conceptual model covers the following:
+The conceptual model is described in detail in a companion document, which can be found [here](https://docs.google.com/document/d/198cbhUy5cQpYxjHuxGeBCLMDrTM8w1RUA0hzsoAU2qk/edit?usp=sharing). In summary, the conceptual model covers the following:
 
 - It identifies four main entities: **Attributes**, **Profiles**, **Repositories**, and **Services**. Repositories and Services are specialisations of Profiles. Profiles are used to define the relationship between Attributes and Repositories, Services, or other types of Profiles. 
 - It defines a number of properties that are unique to the TRSP encodings, and are used in addition to well-known properties defined by DCAT, schema.org, RDF, SKOS, wikidata, and similar well-knownm vocabularies.
