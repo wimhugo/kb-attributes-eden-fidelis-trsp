@@ -1,0 +1,29 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+trsp:profile-type-scheme a skos:ConceptScheme ;
+    skos:prefLabel "TRSP profile types"@en .
+
+trsp:profileTypeRepository a skos:Concept, trsp:ProfileType ;
+    skos:prefLabel "Repository"@en ;
+    skos:inScheme trsp:profile-type-scheme .
+
+trsp:profileTypeService a skos:Concept, trsp:ProfileType ;
+    skos:prefLabel "Service"@en ;
+    skos:inScheme trsp:profile-type-scheme .
+
+trsp:profileTypeSource a skos:Concept, trsp:ProfileType ;
+    skos:prefLabel "Source"@en ;
+    skos:inScheme trsp:profile-type-scheme .
+
+trsp:profileTypeStandard a skos:Concept, trsp:ProfileType ;
+    skos:prefLabel "Standard"@en ;
+    skos:inScheme trsp:profile-type-scheme .
+
+trsp:profileTypeCommunityProfile a skos:Concept, trsp:ProfileType ;
+    skos:prefLabel "Community Profile"@en ;
+    skos:inScheme trsp:profile-type-scheme .
+
+trsp:profileTypeUserProfile a skos:Concept, trsp:ProfileType ;
+    skos:prefLabel "User Profile"@en ;
+    skos:inScheme trsp:profile-type-scheme .
