@@ -1,0 +1,6 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+<> a trsp:Service ;
+    dct:title ""@en ;
+    trsp:hasProfileType trsp:profileTypeService .
