@@ -10,18 +10,22 @@
 # Core classes
 ############################
 
-trsp:Attribute a rdfs:Class .
-trsp:Repository a rdfs:Class .
-trsp:Service a rdfs:Class .
-trsp:Profile a rdfs:Class .
+trsp:Attribute a rdfs:Class ; rdfs:label "Attribute"@en .
+trsp:Profile a rdfs:Class ; rdfs:label "Profile"@en .
+trsp:Repository a rdfs:Class ; rdfs:subClassOf trsp:Profile ; rdfs:label "Repository"@en .
+trsp:Service a rdfs:Class ; rdfs:subClassOf trsp:Profile ; rdfs:label "Service"@en .
 
-trsp:ProfileType a rdfs:Class .
-trsp:MeasurementType a rdfs:Class .
+trsp:ProfileType a rdfs:Class ; rdfs:label "Profile type"@en .
+trsp:MeasurementType a rdfs:Class ; rdfs:label "Measurement type"@en .
+trsp:RelationshipType a rdfs:Class ; rdfs:label "Relationship type"@en .
+trsp:AggregationType a rdfs:Class ; rdfs:label "Aggregation type"@en .
+trsp:CardinalityType a rdfs:Class ; rdfs:label "Cardinality type"@en .
 
-trsp:ExternalIdentifier a rdfs:Class .
-trsp:AnnotationReference a rdfs:Class .
-trsp:AttributeAssertion a rdfs:Class .
-trsp:ServiceRelation a rdfs:Class .
+trsp:ExternalIdentifier a rdfs:Class ; rdfs:label "External identifier"@en .
+trsp:AnnotationReference a rdfs:Class ; rdfs:label "Annotation reference"@en .
+trsp:AttributeAssertion a rdfs:Class ; rdfs:label "Attribute assertion"@en .
+trsp:ProfileAssertion a rdfs:Class ; rdfs:label "Profile assertion"@en .
+trsp:ServiceRelation a rdfs:Class ; rdfs:label "Service relation"@en .
 
 ############################
 # Identifier properties
@@ -29,35 +33,73 @@ trsp:ServiceRelation a rdfs:Class .
 
 trsp:hasExternalIdentifier a rdf:Property ;
     rdfs:label "has external identifier"@en ;
-    rdfs:domain trsp:Attribute ;
+    rdfs:domain rdfs:Resource ;
     rdfs:range trsp:ExternalIdentifier .
+
 trsp:identifierIri a rdf:Property ;
     rdfs:label "identifier IRI"@en ;
-    rdfs:domain trsp:ExternalIdentifier ;
+    rdfs:domain rdfs:Resource ;
     rdfs:range rdfs:Resource .
+
 trsp:identifierUsage a rdf:Property ;
     rdfs:label "identifier usage"@en ;
     rdfs:domain trsp:ExternalIdentifier ;
     rdfs:range skos:Concept .
 
-############################
-# Annotation properties
-############################
+#####################################
+# Relations and Annotation properties
+# Mostly to external objects
+#####################################
 
-trsp:hasAnnotation a rdf:Property .
-trsp:webReference a rdf:Property .
+trsp:relationType a rdf:Property ;
+    rdfs:label "relation type"@en ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range skos:Concept .
+
+trsp:object a rdf:Property ;
+    rdfs:label "object"@en ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range rdfs:Resource .
+
+trsp:contextIRI a rdf:Property ;
+    rdfs:label "context IRI"@en ;
+    rdfs:domain trsp:ExternalIdentifier ;
+    rdfs:range rdfs:Resource .
+
+trsp:hasAnnotation a rdf:Property ;
+    rdfs:label "has annotation"@en ;
+    rdfs:domain rdfs:Resource ;
+    rdfs:range trsp:AnnotationReference .
+
+trsp:webReference a rdf:Property ;
+    rdfs:label "web reference"@en ;
+    rdfs:domain trsp:AnnotationReference ;
+    rdfs:range rdfs:Resource .
 
 ############################
 # Attribute properties
 ############################
 
-trsp:hasMeasurementType a rdf:Property .
-trsp:benchmark a rdf:Property .
+trsp:hasMeasurementType a rdf:Property ;
+    rdfs:label "has measurement type"@en ;
+    rdfs:domain trsp:Attribute ;
+    rdfs:range trsp:MeasurementType .
+
+trsp:benchmark a rdf:Property ;
+    rdfs:label "benchmark"@en ;
+    rdfs:domain trsp:Attribute .                         ## may have to be broadened, also applies to profiles
+
+#    One of 4 cardinality types, from a vocabulary
 trsp:cardinalityCode a rdf:Property ;
     rdfs:label "cardinality code"@en ;
     rdfs:domain trsp:Attribute ;
     rdfs:range trsp:CardinalityType .
-trsp:hasApplicableProfile a rdf:Property .
+
+trsp:hasApplicableProfile a rdf:Property ;
+    rdfs:label "has applicable profile"@en ;
+    rdfs:domain trsp:Attribute ;
+    rdfs:range trsp:Profile .
+
 trsp:hasApplicableProfileAssertion a rdf:Property ;
     rdfs:label "has applicable profile assertion"@en ;
     rdfs:domain trsp:Attribute ;
@@ -67,86 +109,118 @@ trsp:hasApplicableProfileAssertion a rdf:Property ;
 # Profile properties
 ############################
 
-trsp:hasProfileType a rdf:Property .
+trsp:hasProfileType a rdf:Property ;
+    rdfs:label "has profile type"@en ;
+    rdfs:domain trsp:Profile ;
+    rdfs:range trsp:ProfileType .
 
-############################
-# Attribute measurement
-############################
+trsp:hasAttributeAssertion a rdf:Property ;            ## follow up - not sure
+    rdfs:label "has attribute assertion"@en ;
+    rdfs:domain trsp:Profile ;
+    rdfs:range trsp:AttributeAssertion .
 
-trsp:hasAttributeAssertion a rdf:Property .
-trsp:aboutAttribute a rdf:Property .
-trsp:forProfile a rdf:Property .
-trsp:measurement a rdf:Property .
-trsp:measurementDate a rdf:Property .
-trsp:measurementProvenance a rdf:Property .
 
-############################
-# Service relations
-############################
+####################################################################################
+# Attribute assertion
+# Applies to those repostories and services that measure one or more attributes
+####################################################################################
 
-trsp:hasServiceRelation a rdf:Property .
-trsp:repository a rdf:Property .
+trsp:aboutAttribute a rdf:Property ;                    ## nomenclature change
+    rdfs:label "about attribute"@en ;
+    rdfs:domain trsp:AttributeAssertion ;
+    rdfs:range trsp:Attribute .
 
-############################
-# TRSP properties
-############################
+trsp:forProfile a rdf:Property ;
+    rdfs:label "for profile"@en ;
+    rdfs:domain trsp:AttributeAssertion ;
+    rdfs:range trsp:Profile .
 
-trsp:ProfileAssertion a rdfs:Class ;
-    rdfs:label "Profile assertion"@en .
+####################################################################################
+# Attribute measurement 
+####################################################################################
 
-trsp:ExternalIdentifier a rdfs:Class ;
-    rdfs:label "External identifier"@en .
+## trsp:measurement a rdf:Property .                    ## preferred term
 
-trsp:CardinalityType a rdfs:Class ;
-    rdfs:label "Cardinality type"@en .
+trsp:value a rdf:Property ;
+    rdfs:label "value"@en ;
+    rdfs:domain trsp:AttributeAssertion .
 
-trsp:relationType a rdf:Property ;
-    rdfs:label "relation type"@en ;
-    rdfs:range skos:Concept .
+trsp:measurementDate a rdf:Property ;
+    rdfs:label "measurement date"@en ;
+    rdfs:domain trsp:AttributeAssertion ;
+    rdfs:range xsd:date .
 
-trsp:object a rdf:Property ;
-    rdfs:label "object"@en ;
+trsp:measurementProvenance a rdf:Property ;
+    rdfs:label "measurement provenance"@en ;
+    rdfs:domain trsp:AttributeAssertion ;
     rdfs:range rdfs:Resource .
 
-trsp:contextIRI a rdf:Property ;
-    rdfs:label "context IRI"@en ;
-    rdfs:range rdfs:Resource .
+##########################################################################################
+# Service - Repository relations
+##########################################################################################
 
-trsp:cardinalityCode a rdf:Property ;
-    rdfs:label "cardinality code"@en ;
-    rdfs:domain trsp:Attribute ;
-    rdfs:range trsp:CardinalityType .
+trsp:hasServiceRelation a rdf:Property ;
+    rdfs:label "has service relation"@en ;
+    rdfs:domain trsp:Repository ;
+    rdfs:range trsp:ServiceRelation .
 
+trsp:repository a rdf:Property ;
+    rdfs:label "repository"@en ;
+    rdfs:domain trsp:ServiceRelation ;
+    rdfs:range trsp:Repository .
+
+########################################################################################
+# Profile Assertion Properties
+# Applies to any profile that includes and attribute
+########################################################################################
+
+#    The class (type) of profile
 trsp:profileClass a rdf:Property ;
     rdfs:label "profile class"@en ;
     rdfs:domain trsp:ProfileAssertion ;
-    rdfs:range skos:Concept .
+    rdfs:range skos:Concept .                   ## this value must come from a vocabulary
 
+#    The IRI used by the profile to uniquely identify the attribute
 trsp:profileAttributeIRI a rdf:Property ;
     rdfs:label "profile attribute IRI"@en ;
     rdfs:domain trsp:ProfileAssertion ;
     rdfs:range rdfs:Resource .
 
+#     The label used by the profile to name this attribute
 trsp:profileAttributeLabel a rdf:Property ;
     rdfs:label "profile attribute label"@en ;
     rdfs:domain trsp:ProfileAssertion .
 
+#    The category of the attribute as used in the profile
 trsp:profileAttributeCategory a rdf:Property ;
     rdfs:label "profile attribute category"@en ;
     rdfs:domain trsp:ProfileAssertion .
 
+#    Profile aggregation type - how to process a result obtained from a measurement test for this profile attribute
 trsp:profileAttributeAggregationType a rdf:Property ;
     rdfs:label "profile attribute aggregation type"@en ;
     rdfs:domain trsp:ProfileAssertion ;
     rdfs:range skos:Concept .
 
-trsp:profileAttributeValue a rdf:Property ;
-    rdfs:label "profile attribute value"@en ;
+#    A value/ pointer to a web resource describing the benchmark, a vocabulary IRI, a registry, a REST API returning a value, ...
+trsp:profileBenchmark a rdf:Property ;
+    rdfs:label "profile benchmark"@en ;
     rdfs:domain trsp:ProfileAssertion .
 
+#    A controlled vocabulary describing the benchmark (m easurement) type 
+#    trsp:measurementTypeVocabulary
 trsp:profileBenchmarkIRI a rdf:Property ;
     rdfs:label "profile benchmark IRI"@en ;
     rdfs:domain trsp:ProfileAssertion ;
     rdfs:range rdfs:Resource .
+
+trsp:ExternalIdentifier a rdfs:Class ;
+    rdfs:label "External identifier"@en .
+
+#    Not sure about this one - reused by some properties in the 'Profile' class 
+trsp:profileAttributeValue a rdf:Property ;
+    rdfs:label "profile attribute value"@en ;
+    rdfs:domain trsp:ProfileAssertion .
+
+
 trsp:service a rdf:Property .
-trsp:relationType a rdf:Property .
