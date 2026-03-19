@@ -2,11 +2,11 @@
 
 This document is intended to serve as a record of all external dependencies for the TRSP schema, and can be used ot construct automated curation tasks based on events.
 
-## Triggers##
+## Triggers ##
 
 Triggers are fired when an event occurs in external references. It may be possible to set monitors to detect relevant events, but this is not discussed here.
 
-## re3data Trigger
+## re3data Trigger ##
 
 We make use of the re3data schema in several ways:
 
