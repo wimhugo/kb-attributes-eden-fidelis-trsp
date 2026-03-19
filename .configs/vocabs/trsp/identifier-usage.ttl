@@ -1,1 +1,8 @@
+trsp:identifier-usage-scheme a skos:ConceptScheme ;
+    skos:prefLabel "TRSP identifier usage types"@en .
 
+
+trsp:defaultUsage a skos:Concept ;
+    skos:inScheme trsp:identifier-usage-scheme ;
+    skos:prefLabel "default"@en ;
+    skos:definition "Default use of identifier."@en .
