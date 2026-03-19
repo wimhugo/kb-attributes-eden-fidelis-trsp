@@ -1,0 +1,25 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: dataUploadTypes
+##############################################################
+
+r3d:dataUploadTypes a skos:ConceptScheme ;
+    skos:prefLabel "dataUploadTypes"@en .
+
+r3d:dataUploadTypes/open a skos:Concept ;
+    skos:inScheme r3d:dataUploadTypes ;
+    skos:prefLabel "open"@en ;
+    skos:definition "open"@en .
+
+r3d:dataUploadTypes/restricted a skos:Concept ;
+    skos:inScheme r3d:dataUploadTypes ;
+    skos:prefLabel "restricted"@en ;
+    skos:definition "restricted"@en .
+
+r3d:dataUploadTypes/closed a skos:Concept ;
+    skos:inScheme r3d:dataUploadTypes ;
+    skos:prefLabel "closed"@en ;
+    skos:definition "closed"@en .
