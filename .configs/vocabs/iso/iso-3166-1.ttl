@@ -1,1 +1,2176 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+# Vocabulary: ISO 3166-1 alpha-3
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> a skos:ConceptScheme ;
+    skos:prefLabel "ISO 3166-1 alpha-3 countries"@en ;
+    skos:definition "Controlled vocabulary of ISO 3166-1 alpha-3 country codes."@en ;
+    dct:title "ISO 3166-1 alpha-3 countries"@en .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ABW> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Aruba"@en ;
+    skos:definition "Aruba"@en ;
+    skos:notation "ABW"^^xsd:string ;
+    dct:identifier "AW" ;
+    dct:identifier "533" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AFG> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Afghanistan"@en ;
+    skos:altLabel "Islamic Republic of Afghanistan"@en ;
+    skos:definition "Afghanistan"@en ;
+    skos:notation "AFG"^^xsd:string ;
+    dct:identifier "AF" ;
+    dct:identifier "004" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AGO> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Angola"@en ;
+    skos:altLabel "Republic of Angola"@en ;
+    skos:definition "Angola"@en ;
+    skos:notation "AGO"^^xsd:string ;
+    dct:identifier "AO" ;
+    dct:identifier "024" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AIA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Anguilla"@en ;
+    skos:definition "Anguilla"@en ;
+    skos:notation "AIA"^^xsd:string ;
+    dct:identifier "AI" ;
+    dct:identifier "660" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ALA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Åland Islands"@en ;
+    skos:definition "Åland Islands"@en ;
+    skos:notation "ALA"^^xsd:string ;
+    dct:identifier "AX" ;
+    dct:identifier "248" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ALB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Albania"@en ;
+    skos:altLabel "Republic of Albania"@en ;
+    skos:definition "Albania"@en ;
+    skos:notation "ALB"^^xsd:string ;
+    dct:identifier "AL" ;
+    dct:identifier "008" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AND> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Andorra"@en ;
+    skos:altLabel "Principality of Andorra"@en ;
+    skos:definition "Andorra"@en ;
+    skos:notation "AND"^^xsd:string ;
+    dct:identifier "AD" ;
+    dct:identifier "020" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "United Arab Emirates"@en ;
+    skos:definition "United Arab Emirates"@en ;
+    skos:notation "ARE"^^xsd:string ;
+    dct:identifier "AE" ;
+    dct:identifier "784" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARG> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Argentina"@en ;
+    skos:altLabel "Argentine Republic"@en ;
+    skos:definition "Argentina"@en ;
+    skos:notation "ARG"^^xsd:string ;
+    dct:identifier "AR" ;
+    dct:identifier "032" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Armenia"@en ;
+    skos:altLabel "Republic of Armenia"@en ;
+    skos:definition "Armenia"@en ;
+    skos:notation "ARM"^^xsd:string ;
+    dct:identifier "AM" ;
+    dct:identifier "051" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ASM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "American Samoa"@en ;
+    skos:definition "American Samoa"@en ;
+    skos:notation "ASM"^^xsd:string ;
+    dct:identifier "AS" ;
+    dct:identifier "016" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Antarctica"@en ;
+    skos:definition "Antarctica"@en ;
+    skos:notation "ATA"^^xsd:string ;
+    dct:identifier "AQ" ;
+    dct:identifier "010" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATF> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "French Southern Territories"@en ;
+    skos:definition "French Southern Territories"@en ;
+    skos:notation "ATF"^^xsd:string ;
+    dct:identifier "TF" ;
+    dct:identifier "260" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATG> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Antigua and Barbuda"@en ;
+    skos:definition "Antigua and Barbuda"@en ;
+    skos:notation "ATG"^^xsd:string ;
+    dct:identifier "AG" ;
+    dct:identifier "028" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AUS> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Australia"@en ;
+    skos:definition "Australia"@en ;
+    skos:notation "AUS"^^xsd:string ;
+    dct:identifier "AU" ;
+    dct:identifier "036" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AUT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Austria"@en ;
+    skos:altLabel "Republic of Austria"@en ;
+    skos:definition "Austria"@en ;
+    skos:notation "AUT"^^xsd:string ;
+    dct:identifier "AT" ;
+    dct:identifier "040" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AZE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Azerbaijan"@en ;
+    skos:altLabel "Republic of Azerbaijan"@en ;
+    skos:definition "Azerbaijan"@en ;
+    skos:notation "AZE"^^xsd:string ;
+    dct:identifier "AZ" ;
+    dct:identifier "031" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BDI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Burundi"@en ;
+    skos:altLabel "Republic of Burundi"@en ;
+    skos:definition "Burundi"@en ;
+    skos:notation "BDI"^^xsd:string ;
+    dct:identifier "BI" ;
+    dct:identifier "108" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BEL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Belgium"@en ;
+    skos:altLabel "Kingdom of Belgium"@en ;
+    skos:definition "Belgium"@en ;
+    skos:notation "BEL"^^xsd:string ;
+    dct:identifier "BE" ;
+    dct:identifier "056" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BEN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Benin"@en ;
+    skos:altLabel "Republic of Benin"@en ;
+    skos:definition "Benin"@en ;
+    skos:notation "BEN"^^xsd:string ;
+    dct:identifier "BJ" ;
+    dct:identifier "204" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BES> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bonaire, Sint Eustatius and Saba"@en ;
+    skos:altLabel "Bonaire, Sint Eustatius and Saba"@en ;
+    skos:definition "Bonaire, Sint Eustatius and Saba"@en ;
+    skos:notation "BES"^^xsd:string ;
+    dct:identifier "BQ" ;
+    dct:identifier "535" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BFA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Burkina Faso"@en ;
+    skos:definition "Burkina Faso"@en ;
+    skos:notation "BFA"^^xsd:string ;
+    dct:identifier "BF" ;
+    dct:identifier "854" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BGD> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bangladesh"@en ;
+    skos:altLabel "People's Republic of Bangladesh"@en ;
+    skos:definition "Bangladesh"@en ;
+    skos:notation "BGD"^^xsd:string ;
+    dct:identifier "BD" ;
+    dct:identifier "050" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BGR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bulgaria"@en ;
+    skos:altLabel "Republic of Bulgaria"@en ;
+    skos:definition "Bulgaria"@en ;
+    skos:notation "BGR"^^xsd:string ;
+    dct:identifier "BG" ;
+    dct:identifier "100" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BHR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bahrain"@en ;
+    skos:altLabel "Kingdom of Bahrain"@en ;
+    skos:definition "Bahrain"@en ;
+    skos:notation "BHR"^^xsd:string ;
+    dct:identifier "BH" ;
+    dct:identifier "048" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BHS> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bahamas"@en ;
+    skos:altLabel "Commonwealth of the Bahamas"@en ;
+    skos:definition "Bahamas"@en ;
+    skos:notation "BHS"^^xsd:string ;
+    dct:identifier "BS" ;
+    dct:identifier "044" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BIH> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bosnia and Herzegovina"@en ;
+    skos:altLabel "Republic of Bosnia and Herzegovina"@en ;
+    skos:definition "Bosnia and Herzegovina"@en ;
+    skos:notation "BIH"^^xsd:string ;
+    dct:identifier "BA" ;
+    dct:identifier "070" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BLM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Saint Barthélemy"@en ;
+    skos:definition "Saint Barthélemy"@en ;
+    skos:notation "BLM"^^xsd:string ;
+    dct:identifier "BL" ;
+    dct:identifier "652" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BLR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Belarus"@en ;
+    skos:altLabel "Republic of Belarus"@en ;
+    skos:definition "Belarus"@en ;
+    skos:notation "BLR"^^xsd:string ;
+    dct:identifier "BY" ;
+    dct:identifier "112" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BLZ> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Belize"@en ;
+    skos:definition "Belize"@en ;
+    skos:notation "BLZ"^^xsd:string ;
+    dct:identifier "BZ" ;
+    dct:identifier "084" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BMU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bermuda"@en ;
+    skos:definition "Bermuda"@en ;
+    skos:notation "BMU"^^xsd:string ;
+    dct:identifier "BM" ;
+    dct:identifier "060" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BOL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bolivia, Plurinational State of"@en ;
+    skos:altLabel "Plurinational State of Bolivia"@en ;
+    skos:definition "Bolivia, Plurinational State of"@en ;
+    skos:notation "BOL"^^xsd:string ;
+    dct:identifier "BO" ;
+    dct:identifier "068" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BRA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Brazil"@en ;
+    skos:altLabel "Federative Republic of Brazil"@en ;
+    skos:definition "Brazil"@en ;
+    skos:notation "BRA"^^xsd:string ;
+    dct:identifier "BR" ;
+    dct:identifier "076" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BRB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Barbados"@en ;
+    skos:definition "Barbados"@en ;
+    skos:notation "BRB"^^xsd:string ;
+    dct:identifier "BB" ;
+    dct:identifier "052" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BRN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Brunei Darussalam"@en ;
+    skos:definition "Brunei Darussalam"@en ;
+    skos:notation "BRN"^^xsd:string ;
+    dct:identifier "BN" ;
+    dct:identifier "096" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BTN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bhutan"@en ;
+    skos:altLabel "Kingdom of Bhutan"@en ;
+    skos:definition "Bhutan"@en ;
+    skos:notation "BTN"^^xsd:string ;
+    dct:identifier "BT" ;
+    dct:identifier "064" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BVT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bouvet Island"@en ;
+    skos:definition "Bouvet Island"@en ;
+    skos:notation "BVT"^^xsd:string ;
+    dct:identifier "BV" ;
+    dct:identifier "074" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BWA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Botswana"@en ;
+    skos:altLabel "Republic of Botswana"@en ;
+    skos:definition "Botswana"@en ;
+    skos:notation "BWA"^^xsd:string ;
+    dct:identifier "BW" ;
+    dct:identifier "072" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CAF> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Central African Republic"@en ;
+    skos:definition "Central African Republic"@en ;
+    skos:notation "CAF"^^xsd:string ;
+    dct:identifier "CF" ;
+    dct:identifier "140" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CAN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Canada"@en ;
+    skos:definition "Canada"@en ;
+    skos:notation "CAN"^^xsd:string ;
+    dct:identifier "CA" ;
+    dct:identifier "124" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CCK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Cocos (Keeling) Islands"@en ;
+    skos:definition "Cocos (Keeling) Islands"@en ;
+    skos:notation "CCK"^^xsd:string ;
+    dct:identifier "CC" ;
+    dct:identifier "166" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CHE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Switzerland"@en ;
+    skos:altLabel "Swiss Confederation"@en ;
+    skos:definition "Switzerland"@en ;
+    skos:notation "CHE"^^xsd:string ;
+    dct:identifier "CH" ;
+    dct:identifier "756" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CHL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Chile"@en ;
+    skos:altLabel "Republic of Chile"@en ;
+    skos:definition "Chile"@en ;
+    skos:notation "CHL"^^xsd:string ;
+    dct:identifier "CL" ;
+    dct:identifier "152" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CHN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "China"@en ;
+    skos:altLabel "People's Republic of China"@en ;
+    skos:definition "China"@en ;
+    skos:notation "CHN"^^xsd:string ;
+    dct:identifier "CN" ;
+    dct:identifier "156" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CIV> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Côte d'Ivoire"@en ;
+    skos:altLabel "Republic of Côte d'Ivoire"@en ;
+    skos:definition "Côte d'Ivoire"@en ;
+    skos:notation "CIV"^^xsd:string ;
+    dct:identifier "CI" ;
+    dct:identifier "384" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CMR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Cameroon"@en ;
+    skos:altLabel "Republic of Cameroon"@en ;
+    skos:definition "Cameroon"@en ;
+    skos:notation "CMR"^^xsd:string ;
+    dct:identifier "CM" ;
+    dct:identifier "120" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/COD> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Congo, The Democratic Republic of the"@en ;
+    skos:definition "Congo, The Democratic Republic of the"@en ;
+    skos:notation "COD"^^xsd:string ;
+    dct:identifier "CD" ;
+    dct:identifier "180" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/COG> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Congo"@en ;
+    skos:altLabel "Republic of the Congo"@en ;
+    skos:definition "Congo"@en ;
+    skos:notation "COG"^^xsd:string ;
+    dct:identifier "CG" ;
+    dct:identifier "178" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/COK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Cook Islands"@en ;
+    skos:definition "Cook Islands"@en ;
+    skos:notation "COK"^^xsd:string ;
+    dct:identifier "CK" ;
+    dct:identifier "184" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/COL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Colombia"@en ;
+    skos:altLabel "Republic of Colombia"@en ;
+    skos:definition "Colombia"@en ;
+    skos:notation "COL"^^xsd:string ;
+    dct:identifier "CO" ;
+    dct:identifier "170" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/COM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Comoros"@en ;
+    skos:altLabel "Union of the Comoros"@en ;
+    skos:definition "Comoros"@en ;
+    skos:notation "COM"^^xsd:string ;
+    dct:identifier "KM" ;
+    dct:identifier "174" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CPV> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Cabo Verde"@en ;
+    skos:altLabel "Republic of Cabo Verde"@en ;
+    skos:definition "Cabo Verde"@en ;
+    skos:notation "CPV"^^xsd:string ;
+    dct:identifier "CV" ;
+    dct:identifier "132" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CRI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Costa Rica"@en ;
+    skos:altLabel "Republic of Costa Rica"@en ;
+    skos:definition "Costa Rica"@en ;
+    skos:notation "CRI"^^xsd:string ;
+    dct:identifier "CR" ;
+    dct:identifier "188" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CUB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Cuba"@en ;
+    skos:altLabel "Republic of Cuba"@en ;
+    skos:definition "Cuba"@en ;
+    skos:notation "CUB"^^xsd:string ;
+    dct:identifier "CU" ;
+    dct:identifier "192" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CUW> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Curaçao"@en ;
+    skos:altLabel "Curaçao"@en ;
+    skos:definition "Curaçao"@en ;
+    skos:notation "CUW"^^xsd:string ;
+    dct:identifier "CW" ;
+    dct:identifier "531" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CXR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Christmas Island"@en ;
+    skos:definition "Christmas Island"@en ;
+    skos:notation "CXR"^^xsd:string ;
+    dct:identifier "CX" ;
+    dct:identifier "162" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CYM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Cayman Islands"@en ;
+    skos:definition "Cayman Islands"@en ;
+    skos:notation "CYM"^^xsd:string ;
+    dct:identifier "KY" ;
+    dct:identifier "136" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CYP> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Cyprus"@en ;
+    skos:altLabel "Republic of Cyprus"@en ;
+    skos:definition "Cyprus"@en ;
+    skos:notation "CYP"^^xsd:string ;
+    dct:identifier "CY" ;
+    dct:identifier "196" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/CZE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Czechia"@en ;
+    skos:altLabel "Czech Republic"@en ;
+    skos:definition "Czechia"@en ;
+    skos:notation "CZE"^^xsd:string ;
+    dct:identifier "CZ" ;
+    dct:identifier "203" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/DEU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Germany"@en ;
+    skos:altLabel "Federal Republic of Germany"@en ;
+    skos:definition "Germany"@en ;
+    skos:notation "DEU"^^xsd:string ;
+    dct:identifier "DE" ;
+    dct:identifier "276" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/DJI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Djibouti"@en ;
+    skos:altLabel "Republic of Djibouti"@en ;
+    skos:definition "Djibouti"@en ;
+    skos:notation "DJI"^^xsd:string ;
+    dct:identifier "DJ" ;
+    dct:identifier "262" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/DMA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Dominica"@en ;
+    skos:altLabel "Commonwealth of Dominica"@en ;
+    skos:definition "Dominica"@en ;
+    skos:notation "DMA"^^xsd:string ;
+    dct:identifier "DM" ;
+    dct:identifier "212" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/DNK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Denmark"@en ;
+    skos:altLabel "Kingdom of Denmark"@en ;
+    skos:definition "Denmark"@en ;
+    skos:notation "DNK"^^xsd:string ;
+    dct:identifier "DK" ;
+    dct:identifier "208" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/DOM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Dominican Republic"@en ;
+    skos:definition "Dominican Republic"@en ;
+    skos:notation "DOM"^^xsd:string ;
+    dct:identifier "DO" ;
+    dct:identifier "214" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/DZA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Algeria"@en ;
+    skos:altLabel "People's Democratic Republic of Algeria"@en ;
+    skos:definition "Algeria"@en ;
+    skos:notation "DZA"^^xsd:string ;
+    dct:identifier "DZ" ;
+    dct:identifier "012" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ECU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Ecuador"@en ;
+    skos:altLabel "Republic of Ecuador"@en ;
+    skos:definition "Ecuador"@en ;
+    skos:notation "ECU"^^xsd:string ;
+    dct:identifier "EC" ;
+    dct:identifier "218" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/EGY> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Egypt"@en ;
+    skos:altLabel "Arab Republic of Egypt"@en ;
+    skos:definition "Egypt"@en ;
+    skos:notation "EGY"^^xsd:string ;
+    dct:identifier "EG" ;
+    dct:identifier "818" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ERI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Eritrea"@en ;
+    skos:altLabel "the State of Eritrea"@en ;
+    skos:definition "Eritrea"@en ;
+    skos:notation "ERI"^^xsd:string ;
+    dct:identifier "ER" ;
+    dct:identifier "232" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ESH> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Western Sahara"@en ;
+    skos:definition "Western Sahara"@en ;
+    skos:notation "ESH"^^xsd:string ;
+    dct:identifier "EH" ;
+    dct:identifier "732" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ESP> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Spain"@en ;
+    skos:altLabel "Kingdom of Spain"@en ;
+    skos:definition "Spain"@en ;
+    skos:notation "ESP"^^xsd:string ;
+    dct:identifier "ES" ;
+    dct:identifier "724" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/EST> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Estonia"@en ;
+    skos:altLabel "Republic of Estonia"@en ;
+    skos:definition "Estonia"@en ;
+    skos:notation "EST"^^xsd:string ;
+    dct:identifier "EE" ;
+    dct:identifier "233" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ETH> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Ethiopia"@en ;
+    skos:altLabel "Federal Democratic Republic of Ethiopia"@en ;
+    skos:definition "Ethiopia"@en ;
+    skos:notation "ETH"^^xsd:string ;
+    dct:identifier "ET" ;
+    dct:identifier "231" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/FIN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Finland"@en ;
+    skos:altLabel "Republic of Finland"@en ;
+    skos:definition "Finland"@en ;
+    skos:notation "FIN"^^xsd:string ;
+    dct:identifier "FI" ;
+    dct:identifier "246" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/FJI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Fiji"@en ;
+    skos:altLabel "Republic of Fiji"@en ;
+    skos:definition "Fiji"@en ;
+    skos:notation "FJI"^^xsd:string ;
+    dct:identifier "FJ" ;
+    dct:identifier "242" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/FLK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Falkland Islands (Malvinas)"@en ;
+    skos:definition "Falkland Islands (Malvinas)"@en ;
+    skos:notation "FLK"^^xsd:string ;
+    dct:identifier "FK" ;
+    dct:identifier "238" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/FRA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "France"@en ;
+    skos:altLabel "French Republic"@en ;
+    skos:definition "France"@en ;
+    skos:notation "FRA"^^xsd:string ;
+    dct:identifier "FR" ;
+    dct:identifier "250" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/FRO> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Faroe Islands"@en ;
+    skos:definition "Faroe Islands"@en ;
+    skos:notation "FRO"^^xsd:string ;
+    dct:identifier "FO" ;
+    dct:identifier "234" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/FSM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Micronesia, Federated States of"@en ;
+    skos:altLabel "Federated States of Micronesia"@en ;
+    skos:definition "Micronesia, Federated States of"@en ;
+    skos:notation "FSM"^^xsd:string ;
+    dct:identifier "FM" ;
+    dct:identifier "583" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GAB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Gabon"@en ;
+    skos:altLabel "Gabonese Republic"@en ;
+    skos:definition "Gabon"@en ;
+    skos:notation "GAB"^^xsd:string ;
+    dct:identifier "GA" ;
+    dct:identifier "266" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GBR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "United Kingdom"@en ;
+    skos:altLabel "United Kingdom of Great Britain and Northern Ireland"@en ;
+    skos:definition "United Kingdom"@en ;
+    skos:notation "GBR"^^xsd:string ;
+    dct:identifier "GB" ;
+    dct:identifier "826" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GEO> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Georgia"@en ;
+    skos:definition "Georgia"@en ;
+    skos:notation "GEO"^^xsd:string ;
+    dct:identifier "GE" ;
+    dct:identifier "268" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GGY> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Guernsey"@en ;
+    skos:definition "Guernsey"@en ;
+    skos:notation "GGY"^^xsd:string ;
+    dct:identifier "GG" ;
+    dct:identifier "831" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GHA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Ghana"@en ;
+    skos:altLabel "Republic of Ghana"@en ;
+    skos:definition "Ghana"@en ;
+    skos:notation "GHA"^^xsd:string ;
+    dct:identifier "GH" ;
+    dct:identifier "288" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GIB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Gibraltar"@en ;
+    skos:definition "Gibraltar"@en ;
+    skos:notation "GIB"^^xsd:string ;
+    dct:identifier "GI" ;
+    dct:identifier "292" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GIN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Guinea"@en ;
+    skos:altLabel "Republic of Guinea"@en ;
+    skos:definition "Guinea"@en ;
+    skos:notation "GIN"^^xsd:string ;
+    dct:identifier "GN" ;
+    dct:identifier "324" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GLP> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Guadeloupe"@en ;
+    skos:definition "Guadeloupe"@en ;
+    skos:notation "GLP"^^xsd:string ;
+    dct:identifier "GP" ;
+    dct:identifier "312" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GMB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Gambia"@en ;
+    skos:altLabel "Republic of the Gambia"@en ;
+    skos:definition "Gambia"@en ;
+    skos:notation "GMB"^^xsd:string ;
+    dct:identifier "GM" ;
+    dct:identifier "270" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GNB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Guinea-Bissau"@en ;
+    skos:altLabel "Republic of Guinea-Bissau"@en ;
+    skos:definition "Guinea-Bissau"@en ;
+    skos:notation "GNB"^^xsd:string ;
+    dct:identifier "GW" ;
+    dct:identifier "624" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GNQ> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Equatorial Guinea"@en ;
+    skos:altLabel "Republic of Equatorial Guinea"@en ;
+    skos:definition "Equatorial Guinea"@en ;
+    skos:notation "GNQ"^^xsd:string ;
+    dct:identifier "GQ" ;
+    dct:identifier "226" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GRC> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Greece"@en ;
+    skos:altLabel "Hellenic Republic"@en ;
+    skos:definition "Greece"@en ;
+    skos:notation "GRC"^^xsd:string ;
+    dct:identifier "GR" ;
+    dct:identifier "300" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GRD> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Grenada"@en ;
+    skos:definition "Grenada"@en ;
+    skos:notation "GRD"^^xsd:string ;
+    dct:identifier "GD" ;
+    dct:identifier "308" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GRL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Greenland"@en ;
+    skos:definition "Greenland"@en ;
+    skos:notation "GRL"^^xsd:string ;
+    dct:identifier "GL" ;
+    dct:identifier "304" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GTM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Guatemala"@en ;
+    skos:altLabel "Republic of Guatemala"@en ;
+    skos:definition "Guatemala"@en ;
+    skos:notation "GTM"^^xsd:string ;
+    dct:identifier "GT" ;
+    dct:identifier "320" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GUF> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "French Guiana"@en ;
+    skos:definition "French Guiana"@en ;
+    skos:notation "GUF"^^xsd:string ;
+    dct:identifier "GF" ;
+    dct:identifier "254" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GUM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Guam"@en ;
+    skos:definition "Guam"@en ;
+    skos:notation "GUM"^^xsd:string ;
+    dct:identifier "GU" ;
+    dct:identifier "316" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GUY> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Guyana"@en ;
+    skos:altLabel "Republic of Guyana"@en ;
+    skos:definition "Guyana"@en ;
+    skos:notation "GUY"^^xsd:string ;
+    dct:identifier "GY" ;
+    dct:identifier "328" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/HKG> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Hong Kong"@en ;
+    skos:altLabel "Hong Kong Special Administrative Region of China"@en ;
+    skos:definition "Hong Kong"@en ;
+    skos:notation "HKG"^^xsd:string ;
+    dct:identifier "HK" ;
+    dct:identifier "344" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/HMD> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Heard Island and McDonald Islands"@en ;
+    skos:definition "Heard Island and McDonald Islands"@en ;
+    skos:notation "HMD"^^xsd:string ;
+    dct:identifier "HM" ;
+    dct:identifier "334" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/HND> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Honduras"@en ;
+    skos:altLabel "Republic of Honduras"@en ;
+    skos:definition "Honduras"@en ;
+    skos:notation "HND"^^xsd:string ;
+    dct:identifier "HN" ;
+    dct:identifier "340" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/HRV> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Croatia"@en ;
+    skos:altLabel "Republic of Croatia"@en ;
+    skos:definition "Croatia"@en ;
+    skos:notation "HRV"^^xsd:string ;
+    dct:identifier "HR" ;
+    dct:identifier "191" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/HTI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Haiti"@en ;
+    skos:altLabel "Republic of Haiti"@en ;
+    skos:definition "Haiti"@en ;
+    skos:notation "HTI"^^xsd:string ;
+    dct:identifier "HT" ;
+    dct:identifier "332" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/HUN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Hungary"@en ;
+    skos:altLabel "Hungary"@en ;
+    skos:definition "Hungary"@en ;
+    skos:notation "HUN"^^xsd:string ;
+    dct:identifier "HU" ;
+    dct:identifier "348" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/IDN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Indonesia"@en ;
+    skos:altLabel "Republic of Indonesia"@en ;
+    skos:definition "Indonesia"@en ;
+    skos:notation "IDN"^^xsd:string ;
+    dct:identifier "ID" ;
+    dct:identifier "360" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/IMN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Isle of Man"@en ;
+    skos:definition "Isle of Man"@en ;
+    skos:notation "IMN"^^xsd:string ;
+    dct:identifier "IM" ;
+    dct:identifier "833" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/IND> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "India"@en ;
+    skos:altLabel "Republic of India"@en ;
+    skos:definition "India"@en ;
+    skos:notation "IND"^^xsd:string ;
+    dct:identifier "IN" ;
+    dct:identifier "356" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/IOT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "British Indian Ocean Territory"@en ;
+    skos:definition "British Indian Ocean Territory"@en ;
+    skos:notation "IOT"^^xsd:string ;
+    dct:identifier "IO" ;
+    dct:identifier "086" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/IRL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Ireland"@en ;
+    skos:definition "Ireland"@en ;
+    skos:notation "IRL"^^xsd:string ;
+    dct:identifier "IE" ;
+    dct:identifier "372" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/IRN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Iran, Islamic Republic of"@en ;
+    skos:altLabel "Islamic Republic of Iran"@en ;
+    skos:definition "Iran, Islamic Republic of"@en ;
+    skos:notation "IRN"^^xsd:string ;
+    dct:identifier "IR" ;
+    dct:identifier "364" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/IRQ> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Iraq"@en ;
+    skos:altLabel "Republic of Iraq"@en ;
+    skos:definition "Iraq"@en ;
+    skos:notation "IRQ"^^xsd:string ;
+    dct:identifier "IQ" ;
+    dct:identifier "368" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ISL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Iceland"@en ;
+    skos:altLabel "Republic of Iceland"@en ;
+    skos:definition "Iceland"@en ;
+    skos:notation "ISL"^^xsd:string ;
+    dct:identifier "IS" ;
+    dct:identifier "352" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ISR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Israel"@en ;
+    skos:altLabel "State of Israel"@en ;
+    skos:definition "Israel"@en ;
+    skos:notation "ISR"^^xsd:string ;
+    dct:identifier "IL" ;
+    dct:identifier "376" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ITA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Italy"@en ;
+    skos:altLabel "Italian Republic"@en ;
+    skos:definition "Italy"@en ;
+    skos:notation "ITA"^^xsd:string ;
+    dct:identifier "IT" ;
+    dct:identifier "380" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/JAM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Jamaica"@en ;
+    skos:definition "Jamaica"@en ;
+    skos:notation "JAM"^^xsd:string ;
+    dct:identifier "JM" ;
+    dct:identifier "388" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/JEY> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Jersey"@en ;
+    skos:definition "Jersey"@en ;
+    skos:notation "JEY"^^xsd:string ;
+    dct:identifier "JE" ;
+    dct:identifier "832" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/JOR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Jordan"@en ;
+    skos:altLabel "Hashemite Kingdom of Jordan"@en ;
+    skos:definition "Jordan"@en ;
+    skos:notation "JOR"^^xsd:string ;
+    dct:identifier "JO" ;
+    dct:identifier "400" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/JPN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Japan"@en ;
+    skos:definition "Japan"@en ;
+    skos:notation "JPN"^^xsd:string ;
+    dct:identifier "JP" ;
+    dct:identifier "392" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/KAZ> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Kazakhstan"@en ;
+    skos:altLabel "Republic of Kazakhstan"@en ;
+    skos:definition "Kazakhstan"@en ;
+    skos:notation "KAZ"^^xsd:string ;
+    dct:identifier "KZ" ;
+    dct:identifier "398" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/KEN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Kenya"@en ;
+    skos:altLabel "Republic of Kenya"@en ;
+    skos:definition "Kenya"@en ;
+    skos:notation "KEN"^^xsd:string ;
+    dct:identifier "KE" ;
+    dct:identifier "404" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/KGZ> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Kyrgyzstan"@en ;
+    skos:altLabel "Kyrgyz Republic"@en ;
+    skos:definition "Kyrgyzstan"@en ;
+    skos:notation "KGZ"^^xsd:string ;
+    dct:identifier "KG" ;
+    dct:identifier "417" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/KHM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Cambodia"@en ;
+    skos:altLabel "Kingdom of Cambodia"@en ;
+    skos:definition "Cambodia"@en ;
+    skos:notation "KHM"^^xsd:string ;
+    dct:identifier "KH" ;
+    dct:identifier "116" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/KIR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Kiribati"@en ;
+    skos:altLabel "Republic of Kiribati"@en ;
+    skos:definition "Kiribati"@en ;
+    skos:notation "KIR"^^xsd:string ;
+    dct:identifier "KI" ;
+    dct:identifier "296" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/KNA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Saint Kitts and Nevis"@en ;
+    skos:definition "Saint Kitts and Nevis"@en ;
+    skos:notation "KNA"^^xsd:string ;
+    dct:identifier "KN" ;
+    dct:identifier "659" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/KOR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Korea, Republic of"@en ;
+    skos:definition "Korea, Republic of"@en ;
+    skos:notation "KOR"^^xsd:string ;
+    dct:identifier "KR" ;
+    dct:identifier "410" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/KWT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Kuwait"@en ;
+    skos:altLabel "State of Kuwait"@en ;
+    skos:definition "Kuwait"@en ;
+    skos:notation "KWT"^^xsd:string ;
+    dct:identifier "KW" ;
+    dct:identifier "414" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LAO> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Lao People's Democratic Republic"@en ;
+    skos:definition "Lao People's Democratic Republic"@en ;
+    skos:notation "LAO"^^xsd:string ;
+    dct:identifier "LA" ;
+    dct:identifier "418" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LBN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Lebanon"@en ;
+    skos:altLabel "Lebanese Republic"@en ;
+    skos:definition "Lebanon"@en ;
+    skos:notation "LBN"^^xsd:string ;
+    dct:identifier "LB" ;
+    dct:identifier "422" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LBR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Liberia"@en ;
+    skos:altLabel "Republic of Liberia"@en ;
+    skos:definition "Liberia"@en ;
+    skos:notation "LBR"^^xsd:string ;
+    dct:identifier "LR" ;
+    dct:identifier "430" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LBY> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Libya"@en ;
+    skos:altLabel "Libya"@en ;
+    skos:definition "Libya"@en ;
+    skos:notation "LBY"^^xsd:string ;
+    dct:identifier "LY" ;
+    dct:identifier "434" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LCA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Saint Lucia"@en ;
+    skos:definition "Saint Lucia"@en ;
+    skos:notation "LCA"^^xsd:string ;
+    dct:identifier "LC" ;
+    dct:identifier "662" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LIE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Liechtenstein"@en ;
+    skos:altLabel "Principality of Liechtenstein"@en ;
+    skos:definition "Liechtenstein"@en ;
+    skos:notation "LIE"^^xsd:string ;
+    dct:identifier "LI" ;
+    dct:identifier "438" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LKA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Sri Lanka"@en ;
+    skos:altLabel "Democratic Socialist Republic of Sri Lanka"@en ;
+    skos:definition "Sri Lanka"@en ;
+    skos:notation "LKA"^^xsd:string ;
+    dct:identifier "LK" ;
+    dct:identifier "144" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LSO> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Lesotho"@en ;
+    skos:altLabel "Kingdom of Lesotho"@en ;
+    skos:definition "Lesotho"@en ;
+    skos:notation "LSO"^^xsd:string ;
+    dct:identifier "LS" ;
+    dct:identifier "426" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LTU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Lithuania"@en ;
+    skos:altLabel "Republic of Lithuania"@en ;
+    skos:definition "Lithuania"@en ;
+    skos:notation "LTU"^^xsd:string ;
+    dct:identifier "LT" ;
+    dct:identifier "440" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LUX> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Luxembourg"@en ;
+    skos:altLabel "Grand Duchy of Luxembourg"@en ;
+    skos:definition "Luxembourg"@en ;
+    skos:notation "LUX"^^xsd:string ;
+    dct:identifier "LU" ;
+    dct:identifier "442" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/LVA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Latvia"@en ;
+    skos:altLabel "Republic of Latvia"@en ;
+    skos:definition "Latvia"@en ;
+    skos:notation "LVA"^^xsd:string ;
+    dct:identifier "LV" ;
+    dct:identifier "428" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MAC> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Macao"@en ;
+    skos:altLabel "Macao Special Administrative Region of China"@en ;
+    skos:definition "Macao"@en ;
+    skos:notation "MAC"^^xsd:string ;
+    dct:identifier "MO" ;
+    dct:identifier "446" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MAF> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Saint Martin (French part)"@en ;
+    skos:definition "Saint Martin (French part)"@en ;
+    skos:notation "MAF"^^xsd:string ;
+    dct:identifier "MF" ;
+    dct:identifier "663" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MAR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Morocco"@en ;
+    skos:altLabel "Kingdom of Morocco"@en ;
+    skos:definition "Morocco"@en ;
+    skos:notation "MAR"^^xsd:string ;
+    dct:identifier "MA" ;
+    dct:identifier "504" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MCO> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Monaco"@en ;
+    skos:altLabel "Principality of Monaco"@en ;
+    skos:definition "Monaco"@en ;
+    skos:notation "MCO"^^xsd:string ;
+    dct:identifier "MC" ;
+    dct:identifier "492" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MDA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Moldova, Republic of"@en ;
+    skos:altLabel "Republic of Moldova"@en ;
+    skos:definition "Moldova, Republic of"@en ;
+    skos:notation "MDA"^^xsd:string ;
+    dct:identifier "MD" ;
+    dct:identifier "498" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MDG> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Madagascar"@en ;
+    skos:altLabel "Republic of Madagascar"@en ;
+    skos:definition "Madagascar"@en ;
+    skos:notation "MDG"^^xsd:string ;
+    dct:identifier "MG" ;
+    dct:identifier "450" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MDV> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Maldives"@en ;
+    skos:altLabel "Republic of Maldives"@en ;
+    skos:definition "Maldives"@en ;
+    skos:notation "MDV"^^xsd:string ;
+    dct:identifier "MV" ;
+    dct:identifier "462" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MEX> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Mexico"@en ;
+    skos:altLabel "United Mexican States"@en ;
+    skos:definition "Mexico"@en ;
+    skos:notation "MEX"^^xsd:string ;
+    dct:identifier "MX" ;
+    dct:identifier "484" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MHL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Marshall Islands"@en ;
+    skos:altLabel "Republic of the Marshall Islands"@en ;
+    skos:definition "Marshall Islands"@en ;
+    skos:notation "MHL"^^xsd:string ;
+    dct:identifier "MH" ;
+    dct:identifier "584" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MKD> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "North Macedonia"@en ;
+    skos:altLabel "Republic of North Macedonia"@en ;
+    skos:definition "North Macedonia"@en ;
+    skos:notation "MKD"^^xsd:string ;
+    dct:identifier "MK" ;
+    dct:identifier "807" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MLI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Mali"@en ;
+    skos:altLabel "Republic of Mali"@en ;
+    skos:definition "Mali"@en ;
+    skos:notation "MLI"^^xsd:string ;
+    dct:identifier "ML" ;
+    dct:identifier "466" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MLT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Malta"@en ;
+    skos:altLabel "Republic of Malta"@en ;
+    skos:definition "Malta"@en ;
+    skos:notation "MLT"^^xsd:string ;
+    dct:identifier "MT" ;
+    dct:identifier "470" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MMR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Myanmar"@en ;
+    skos:altLabel "Republic of Myanmar"@en ;
+    skos:definition "Myanmar"@en ;
+    skos:notation "MMR"^^xsd:string ;
+    dct:identifier "MM" ;
+    dct:identifier "104" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MNE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Montenegro"@en ;
+    skos:altLabel "Montenegro"@en ;
+    skos:definition "Montenegro"@en ;
+    skos:notation "MNE"^^xsd:string ;
+    dct:identifier "ME" ;
+    dct:identifier "499" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MNG> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Mongolia"@en ;
+    skos:definition "Mongolia"@en ;
+    skos:notation "MNG"^^xsd:string ;
+    dct:identifier "MN" ;
+    dct:identifier "496" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MNP> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Northern Mariana Islands"@en ;
+    skos:altLabel "Commonwealth of the Northern Mariana Islands"@en ;
+    skos:definition "Northern Mariana Islands"@en ;
+    skos:notation "MNP"^^xsd:string ;
+    dct:identifier "MP" ;
+    dct:identifier "580" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MOZ> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Mozambique"@en ;
+    skos:altLabel "Republic of Mozambique"@en ;
+    skos:definition "Mozambique"@en ;
+    skos:notation "MOZ"^^xsd:string ;
+    dct:identifier "MZ" ;
+    dct:identifier "508" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MRT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Mauritania"@en ;
+    skos:altLabel "Islamic Republic of Mauritania"@en ;
+    skos:definition "Mauritania"@en ;
+    skos:notation "MRT"^^xsd:string ;
+    dct:identifier "MR" ;
+    dct:identifier "478" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MSR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Montserrat"@en ;
+    skos:definition "Montserrat"@en ;
+    skos:notation "MSR"^^xsd:string ;
+    dct:identifier "MS" ;
+    dct:identifier "500" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MTQ> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Martinique"@en ;
+    skos:definition "Martinique"@en ;
+    skos:notation "MTQ"^^xsd:string ;
+    dct:identifier "MQ" ;
+    dct:identifier "474" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MUS> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Mauritius"@en ;
+    skos:altLabel "Republic of Mauritius"@en ;
+    skos:definition "Mauritius"@en ;
+    skos:notation "MUS"^^xsd:string ;
+    dct:identifier "MU" ;
+    dct:identifier "480" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MWI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Malawi"@en ;
+    skos:altLabel "Republic of Malawi"@en ;
+    skos:definition "Malawi"@en ;
+    skos:notation "MWI"^^xsd:string ;
+    dct:identifier "MW" ;
+    dct:identifier "454" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MYS> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Malaysia"@en ;
+    skos:definition "Malaysia"@en ;
+    skos:notation "MYS"^^xsd:string ;
+    dct:identifier "MY" ;
+    dct:identifier "458" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/MYT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Mayotte"@en ;
+    skos:definition "Mayotte"@en ;
+    skos:notation "MYT"^^xsd:string ;
+    dct:identifier "YT" ;
+    dct:identifier "175" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NAM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Namibia"@en ;
+    skos:altLabel "Republic of Namibia"@en ;
+    skos:definition "Namibia"@en ;
+    skos:notation "NAM"^^xsd:string ;
+    dct:identifier "NA" ;
+    dct:identifier "516" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NCL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "New Caledonia"@en ;
+    skos:definition "New Caledonia"@en ;
+    skos:notation "NCL"^^xsd:string ;
+    dct:identifier "NC" ;
+    dct:identifier "540" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NER> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Niger"@en ;
+    skos:altLabel "Republic of the Niger"@en ;
+    skos:definition "Niger"@en ;
+    skos:notation "NER"^^xsd:string ;
+    dct:identifier "NE" ;
+    dct:identifier "562" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NFK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Norfolk Island"@en ;
+    skos:definition "Norfolk Island"@en ;
+    skos:notation "NFK"^^xsd:string ;
+    dct:identifier "NF" ;
+    dct:identifier "574" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NGA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Nigeria"@en ;
+    skos:altLabel "Federal Republic of Nigeria"@en ;
+    skos:definition "Nigeria"@en ;
+    skos:notation "NGA"^^xsd:string ;
+    dct:identifier "NG" ;
+    dct:identifier "566" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NIC> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Nicaragua"@en ;
+    skos:altLabel "Republic of Nicaragua"@en ;
+    skos:definition "Nicaragua"@en ;
+    skos:notation "NIC"^^xsd:string ;
+    dct:identifier "NI" ;
+    dct:identifier "558" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NIU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Niue"@en ;
+    skos:altLabel "Niue"@en ;
+    skos:definition "Niue"@en ;
+    skos:notation "NIU"^^xsd:string ;
+    dct:identifier "NU" ;
+    dct:identifier "570" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NLD> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Netherlands"@en ;
+    skos:altLabel "Kingdom of the Netherlands"@en ;
+    skos:definition "Netherlands"@en ;
+    skos:notation "NLD"^^xsd:string ;
+    dct:identifier "NL" ;
+    dct:identifier "528" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NOR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Norway"@en ;
+    skos:altLabel "Kingdom of Norway"@en ;
+    skos:definition "Norway"@en ;
+    skos:notation "NOR"^^xsd:string ;
+    dct:identifier "NO" ;
+    dct:identifier "578" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NPL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Nepal"@en ;
+    skos:altLabel "Federal Democratic Republic of Nepal"@en ;
+    skos:definition "Nepal"@en ;
+    skos:notation "NPL"^^xsd:string ;
+    dct:identifier "NP" ;
+    dct:identifier "524" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NRU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Nauru"@en ;
+    skos:altLabel "Republic of Nauru"@en ;
+    skos:definition "Nauru"@en ;
+    skos:notation "NRU"^^xsd:string ;
+    dct:identifier "NR" ;
+    dct:identifier "520" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/NZL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "New Zealand"@en ;
+    skos:definition "New Zealand"@en ;
+    skos:notation "NZL"^^xsd:string ;
+    dct:identifier "NZ" ;
+    dct:identifier "554" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/OMN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Oman"@en ;
+    skos:altLabel "Sultanate of Oman"@en ;
+    skos:definition "Oman"@en ;
+    skos:notation "OMN"^^xsd:string ;
+    dct:identifier "OM" ;
+    dct:identifier "512" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PAK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Pakistan"@en ;
+    skos:altLabel "Islamic Republic of Pakistan"@en ;
+    skos:definition "Pakistan"@en ;
+    skos:notation "PAK"^^xsd:string ;
+    dct:identifier "PK" ;
+    dct:identifier "586" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PAN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Panama"@en ;
+    skos:altLabel "Republic of Panama"@en ;
+    skos:definition "Panama"@en ;
+    skos:notation "PAN"^^xsd:string ;
+    dct:identifier "PA" ;
+    dct:identifier "591" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PCN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Pitcairn"@en ;
+    skos:definition "Pitcairn"@en ;
+    skos:notation "PCN"^^xsd:string ;
+    dct:identifier "PN" ;
+    dct:identifier "612" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PER> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Peru"@en ;
+    skos:altLabel "Republic of Peru"@en ;
+    skos:definition "Peru"@en ;
+    skos:notation "PER"^^xsd:string ;
+    dct:identifier "PE" ;
+    dct:identifier "604" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PHL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Philippines"@en ;
+    skos:altLabel "Republic of the Philippines"@en ;
+    skos:definition "Philippines"@en ;
+    skos:notation "PHL"^^xsd:string ;
+    dct:identifier "PH" ;
+    dct:identifier "608" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PLW> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Palau"@en ;
+    skos:altLabel "Republic of Palau"@en ;
+    skos:definition "Palau"@en ;
+    skos:notation "PLW"^^xsd:string ;
+    dct:identifier "PW" ;
+    dct:identifier "585" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PNG> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Papua New Guinea"@en ;
+    skos:altLabel "Independent State of Papua New Guinea"@en ;
+    skos:definition "Papua New Guinea"@en ;
+    skos:notation "PNG"^^xsd:string ;
+    dct:identifier "PG" ;
+    dct:identifier "598" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/POL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Poland"@en ;
+    skos:altLabel "Republic of Poland"@en ;
+    skos:definition "Poland"@en ;
+    skos:notation "POL"^^xsd:string ;
+    dct:identifier "PL" ;
+    dct:identifier "616" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PRI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Puerto Rico"@en ;
+    skos:definition "Puerto Rico"@en ;
+    skos:notation "PRI"^^xsd:string ;
+    dct:identifier "PR" ;
+    dct:identifier "630" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PRK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Korea, Democratic People's Republic of"@en ;
+    skos:altLabel "Democratic People's Republic of Korea"@en ;
+    skos:definition "Korea, Democratic People's Republic of"@en ;
+    skos:notation "PRK"^^xsd:string ;
+    dct:identifier "KP" ;
+    dct:identifier "408" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PRT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Portugal"@en ;
+    skos:altLabel "Portuguese Republic"@en ;
+    skos:definition "Portugal"@en ;
+    skos:notation "PRT"^^xsd:string ;
+    dct:identifier "PT" ;
+    dct:identifier "620" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PRY> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Paraguay"@en ;
+    skos:altLabel "Republic of Paraguay"@en ;
+    skos:definition "Paraguay"@en ;
+    skos:notation "PRY"^^xsd:string ;
+    dct:identifier "PY" ;
+    dct:identifier "600" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PSE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Palestine, State of"@en ;
+    skos:altLabel "the State of Palestine"@en ;
+    skos:definition "Palestine, State of"@en ;
+    skos:notation "PSE"^^xsd:string ;
+    dct:identifier "PS" ;
+    dct:identifier "275" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/PYF> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "French Polynesia"@en ;
+    skos:definition "French Polynesia"@en ;
+    skos:notation "PYF"^^xsd:string ;
+    dct:identifier "PF" ;
+    dct:identifier "258" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/QAT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Qatar"@en ;
+    skos:altLabel "State of Qatar"@en ;
+    skos:definition "Qatar"@en ;
+    skos:notation "QAT"^^xsd:string ;
+    dct:identifier "QA" ;
+    dct:identifier "634" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/REU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Réunion"@en ;
+    skos:definition "Réunion"@en ;
+    skos:notation "REU"^^xsd:string ;
+    dct:identifier "RE" ;
+    dct:identifier "638" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ROU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Romania"@en ;
+    skos:definition "Romania"@en ;
+    skos:notation "ROU"^^xsd:string ;
+    dct:identifier "RO" ;
+    dct:identifier "642" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/RUS> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Russian Federation"@en ;
+    skos:definition "Russian Federation"@en ;
+    skos:notation "RUS"^^xsd:string ;
+    dct:identifier "RU" ;
+    dct:identifier "643" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/RWA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Rwanda"@en ;
+    skos:altLabel "Rwandese Republic"@en ;
+    skos:definition "Rwanda"@en ;
+    skos:notation "RWA"^^xsd:string ;
+    dct:identifier "RW" ;
+    dct:identifier "646" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SAU> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Saudi Arabia"@en ;
+    skos:altLabel "Kingdom of Saudi Arabia"@en ;
+    skos:definition "Saudi Arabia"@en ;
+    skos:notation "SAU"^^xsd:string ;
+    dct:identifier "SA" ;
+    dct:identifier "682" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SDN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Sudan"@en ;
+    skos:altLabel "Republic of the Sudan"@en ;
+    skos:definition "Sudan"@en ;
+    skos:notation "SDN"^^xsd:string ;
+    dct:identifier "SD" ;
+    dct:identifier "729" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SEN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Senegal"@en ;
+    skos:altLabel "Republic of Senegal"@en ;
+    skos:definition "Senegal"@en ;
+    skos:notation "SEN"^^xsd:string ;
+    dct:identifier "SN" ;
+    dct:identifier "686" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SGP> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Singapore"@en ;
+    skos:altLabel "Republic of Singapore"@en ;
+    skos:definition "Singapore"@en ;
+    skos:notation "SGP"^^xsd:string ;
+    dct:identifier "SG" ;
+    dct:identifier "702" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SGS> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "South Georgia and the South Sandwich Islands"@en ;
+    skos:definition "South Georgia and the South Sandwich Islands"@en ;
+    skos:notation "SGS"^^xsd:string ;
+    dct:identifier "GS" ;
+    dct:identifier "239" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SHN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Saint Helena, Ascension and Tristan da Cunha"@en ;
+    skos:definition "Saint Helena, Ascension and Tristan da Cunha"@en ;
+    skos:notation "SHN"^^xsd:string ;
+    dct:identifier "SH" ;
+    dct:identifier "654" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SJM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Svalbard and Jan Mayen"@en ;
+    skos:definition "Svalbard and Jan Mayen"@en ;
+    skos:notation "SJM"^^xsd:string ;
+    dct:identifier "SJ" ;
+    dct:identifier "744" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SLB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Solomon Islands"@en ;
+    skos:definition "Solomon Islands"@en ;
+    skos:notation "SLB"^^xsd:string ;
+    dct:identifier "SB" ;
+    dct:identifier "090" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SLE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Sierra Leone"@en ;
+    skos:altLabel "Republic of Sierra Leone"@en ;
+    skos:definition "Sierra Leone"@en ;
+    skos:notation "SLE"^^xsd:string ;
+    dct:identifier "SL" ;
+    dct:identifier "694" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SLV> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "El Salvador"@en ;
+    skos:altLabel "Republic of El Salvador"@en ;
+    skos:definition "El Salvador"@en ;
+    skos:notation "SLV"^^xsd:string ;
+    dct:identifier "SV" ;
+    dct:identifier "222" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SMR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "San Marino"@en ;
+    skos:altLabel "Republic of San Marino"@en ;
+    skos:definition "San Marino"@en ;
+    skos:notation "SMR"^^xsd:string ;
+    dct:identifier "SM" ;
+    dct:identifier "674" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SOM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Somalia"@en ;
+    skos:altLabel "Federal Republic of Somalia"@en ;
+    skos:definition "Somalia"@en ;
+    skos:notation "SOM"^^xsd:string ;
+    dct:identifier "SO" ;
+    dct:identifier "706" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SPM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Saint Pierre and Miquelon"@en ;
+    skos:definition "Saint Pierre and Miquelon"@en ;
+    skos:notation "SPM"^^xsd:string ;
+    dct:identifier "PM" ;
+    dct:identifier "666" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SRB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Serbia"@en ;
+    skos:altLabel "Republic of Serbia"@en ;
+    skos:definition "Serbia"@en ;
+    skos:notation "SRB"^^xsd:string ;
+    dct:identifier "RS" ;
+    dct:identifier "688" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SSD> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "South Sudan"@en ;
+    skos:altLabel "Republic of South Sudan"@en ;
+    skos:definition "South Sudan"@en ;
+    skos:notation "SSD"^^xsd:string ;
+    dct:identifier "SS" ;
+    dct:identifier "728" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/STP> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Sao Tome and Principe"@en ;
+    skos:altLabel "Democratic Republic of Sao Tome and Principe"@en ;
+    skos:definition "Sao Tome and Principe"@en ;
+    skos:notation "STP"^^xsd:string ;
+    dct:identifier "ST" ;
+    dct:identifier "678" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SUR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Suriname"@en ;
+    skos:altLabel "Republic of Suriname"@en ;
+    skos:definition "Suriname"@en ;
+    skos:notation "SUR"^^xsd:string ;
+    dct:identifier "SR" ;
+    dct:identifier "740" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SVK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Slovakia"@en ;
+    skos:altLabel "Slovak Republic"@en ;
+    skos:definition "Slovakia"@en ;
+    skos:notation "SVK"^^xsd:string ;
+    dct:identifier "SK" ;
+    dct:identifier "703" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SVN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Slovenia"@en ;
+    skos:altLabel "Republic of Slovenia"@en ;
+    skos:definition "Slovenia"@en ;
+    skos:notation "SVN"^^xsd:string ;
+    dct:identifier "SI" ;
+    dct:identifier "705" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SWE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Sweden"@en ;
+    skos:altLabel "Kingdom of Sweden"@en ;
+    skos:definition "Sweden"@en ;
+    skos:notation "SWE"^^xsd:string ;
+    dct:identifier "SE" ;
+    dct:identifier "752" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SWZ> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Eswatini"@en ;
+    skos:altLabel "Kingdom of Eswatini"@en ;
+    skos:definition "Eswatini"@en ;
+    skos:notation "SWZ"^^xsd:string ;
+    dct:identifier "SZ" ;
+    dct:identifier "748" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SXM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Sint Maarten (Dutch part)"@en ;
+    skos:altLabel "Sint Maarten (Dutch part)"@en ;
+    skos:definition "Sint Maarten (Dutch part)"@en ;
+    skos:notation "SXM"^^xsd:string ;
+    dct:identifier "SX" ;
+    dct:identifier "534" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SYC> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Seychelles"@en ;
+    skos:altLabel "Republic of Seychelles"@en ;
+    skos:definition "Seychelles"@en ;
+    skos:notation "SYC"^^xsd:string ;
+    dct:identifier "SC" ;
+    dct:identifier "690" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/SYR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Syrian Arab Republic"@en ;
+    skos:definition "Syrian Arab Republic"@en ;
+    skos:notation "SYR"^^xsd:string ;
+    dct:identifier "SY" ;
+    dct:identifier "760" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TCA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Turks and Caicos Islands"@en ;
+    skos:definition "Turks and Caicos Islands"@en ;
+    skos:notation "TCA"^^xsd:string ;
+    dct:identifier "TC" ;
+    dct:identifier "796" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TCD> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Chad"@en ;
+    skos:altLabel "Republic of Chad"@en ;
+    skos:definition "Chad"@en ;
+    skos:notation "TCD"^^xsd:string ;
+    dct:identifier "TD" ;
+    dct:identifier "148" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TGO> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Togo"@en ;
+    skos:altLabel "Togolese Republic"@en ;
+    skos:definition "Togo"@en ;
+    skos:notation "TGO"^^xsd:string ;
+    dct:identifier "TG" ;
+    dct:identifier "768" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/THA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Thailand"@en ;
+    skos:altLabel "Kingdom of Thailand"@en ;
+    skos:definition "Thailand"@en ;
+    skos:notation "THA"^^xsd:string ;
+    dct:identifier "TH" ;
+    dct:identifier "764" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TJK> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Tajikistan"@en ;
+    skos:altLabel "Republic of Tajikistan"@en ;
+    skos:definition "Tajikistan"@en ;
+    skos:notation "TJK"^^xsd:string ;
+    dct:identifier "TJ" ;
+    dct:identifier "762" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TKL> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Tokelau"@en ;
+    skos:definition "Tokelau"@en ;
+    skos:notation "TKL"^^xsd:string ;
+    dct:identifier "TK" ;
+    dct:identifier "772" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TKM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Turkmenistan"@en ;
+    skos:definition "Turkmenistan"@en ;
+    skos:notation "TKM"^^xsd:string ;
+    dct:identifier "TM" ;
+    dct:identifier "795" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TLS> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Timor-Leste"@en ;
+    skos:altLabel "Democratic Republic of Timor-Leste"@en ;
+    skos:definition "Timor-Leste"@en ;
+    skos:notation "TLS"^^xsd:string ;
+    dct:identifier "TL" ;
+    dct:identifier "626" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TON> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Tonga"@en ;
+    skos:altLabel "Kingdom of Tonga"@en ;
+    skos:definition "Tonga"@en ;
+    skos:notation "TON"^^xsd:string ;
+    dct:identifier "TO" ;
+    dct:identifier "776" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TTO> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Trinidad and Tobago"@en ;
+    skos:altLabel "Republic of Trinidad and Tobago"@en ;
+    skos:definition "Trinidad and Tobago"@en ;
+    skos:notation "TTO"^^xsd:string ;
+    dct:identifier "TT" ;
+    dct:identifier "780" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TUN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Tunisia"@en ;
+    skos:altLabel "Republic of Tunisia"@en ;
+    skos:definition "Tunisia"@en ;
+    skos:notation "TUN"^^xsd:string ;
+    dct:identifier "TN" ;
+    dct:identifier "788" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TUR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Türkiye"@en ;
+    skos:altLabel "Republic of Türkiye"@en ;
+    skos:definition "Türkiye"@en ;
+    skos:notation "TUR"^^xsd:string ;
+    dct:identifier "TR" ;
+    dct:identifier "792" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TUV> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Tuvalu"@en ;
+    skos:definition "Tuvalu"@en ;
+    skos:notation "TUV"^^xsd:string ;
+    dct:identifier "TV" ;
+    dct:identifier "798" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TWN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Taiwan, Province of China"@en ;
+    skos:altLabel "Taiwan, Province of China"@en ;
+    skos:definition "Taiwan, Province of China"@en ;
+    skos:notation "TWN"^^xsd:string ;
+    dct:identifier "TW" ;
+    dct:identifier "158" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/TZA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Tanzania, United Republic of"@en ;
+    skos:altLabel "United Republic of Tanzania"@en ;
+    skos:definition "Tanzania, United Republic of"@en ;
+    skos:notation "TZA"^^xsd:string ;
+    dct:identifier "TZ" ;
+    dct:identifier "834" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/UGA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Uganda"@en ;
+    skos:altLabel "Republic of Uganda"@en ;
+    skos:definition "Uganda"@en ;
+    skos:notation "UGA"^^xsd:string ;
+    dct:identifier "UG" ;
+    dct:identifier "800" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/UKR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Ukraine"@en ;
+    skos:definition "Ukraine"@en ;
+    skos:notation "UKR"^^xsd:string ;
+    dct:identifier "UA" ;
+    dct:identifier "804" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/UMI> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "United States Minor Outlying Islands"@en ;
+    skos:definition "United States Minor Outlying Islands"@en ;
+    skos:notation "UMI"^^xsd:string ;
+    dct:identifier "UM" ;
+    dct:identifier "581" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/URY> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Uruguay"@en ;
+    skos:altLabel "Eastern Republic of Uruguay"@en ;
+    skos:definition "Uruguay"@en ;
+    skos:notation "URY"^^xsd:string ;
+    dct:identifier "UY" ;
+    dct:identifier "858" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/USA> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "United States"@en ;
+    skos:altLabel "United States of America"@en ;
+    skos:definition "United States"@en ;
+    skos:notation "USA"^^xsd:string ;
+    dct:identifier "US" ;
+    dct:identifier "840" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/UZB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Uzbekistan"@en ;
+    skos:altLabel "Republic of Uzbekistan"@en ;
+    skos:definition "Uzbekistan"@en ;
+    skos:notation "UZB"^^xsd:string ;
+    dct:identifier "UZ" ;
+    dct:identifier "860" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/VAT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Holy See (Vatican City State)"@en ;
+    skos:definition "Holy See (Vatican City State)"@en ;
+    skos:notation "VAT"^^xsd:string ;
+    dct:identifier "VA" ;
+    dct:identifier "336" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/VCT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Saint Vincent and the Grenadines"@en ;
+    skos:definition "Saint Vincent and the Grenadines"@en ;
+    skos:notation "VCT"^^xsd:string ;
+    dct:identifier "VC" ;
+    dct:identifier "670" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/VEN> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Venezuela, Bolivarian Republic of"@en ;
+    skos:altLabel "Bolivarian Republic of Venezuela"@en ;
+    skos:definition "Venezuela, Bolivarian Republic of"@en ;
+    skos:notation "VEN"^^xsd:string ;
+    dct:identifier "VE" ;
+    dct:identifier "862" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/VGB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Virgin Islands, British"@en ;
+    skos:altLabel "British Virgin Islands"@en ;
+    skos:definition "Virgin Islands, British"@en ;
+    skos:notation "VGB"^^xsd:string ;
+    dct:identifier "VG" ;
+    dct:identifier "092" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/VIR> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Virgin Islands, U.S."@en ;
+    skos:altLabel "Virgin Islands of the United States"@en ;
+    skos:definition "Virgin Islands, U.S."@en ;
+    skos:notation "VIR"^^xsd:string ;
+    dct:identifier "VI" ;
+    dct:identifier "850" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/VNM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Viet Nam"@en ;
+    skos:altLabel "Socialist Republic of Viet Nam"@en ;
+    skos:definition "Viet Nam"@en ;
+    skos:notation "VNM"^^xsd:string ;
+    dct:identifier "VN" ;
+    dct:identifier "704" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/VUT> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Vanuatu"@en ;
+    skos:altLabel "Republic of Vanuatu"@en ;
+    skos:definition "Vanuatu"@en ;
+    skos:notation "VUT"^^xsd:string ;
+    dct:identifier "VU" ;
+    dct:identifier "548" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/WLF> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Wallis and Futuna"@en ;
+    skos:definition "Wallis and Futuna"@en ;
+    skos:notation "WLF"^^xsd:string ;
+    dct:identifier "WF" ;
+    dct:identifier "876" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/WSM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Samoa"@en ;
+    skos:altLabel "Independent State of Samoa"@en ;
+    skos:definition "Samoa"@en ;
+    skos:notation "WSM"^^xsd:string ;
+    dct:identifier "WS" ;
+    dct:identifier "882" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/YEM> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Yemen"@en ;
+    skos:altLabel "Republic of Yemen"@en ;
+    skos:definition "Yemen"@en ;
+    skos:notation "YEM"^^xsd:string ;
+    dct:identifier "YE" ;
+    dct:identifier "887" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ZAF> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "South Africa"@en ;
+    skos:altLabel "Republic of South Africa"@en ;
+    skos:definition "South Africa"@en ;
+    skos:notation "ZAF"^^xsd:string ;
+    dct:identifier "ZA" ;
+    dct:identifier "710" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ZMB> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Zambia"@en ;
+    skos:altLabel "Republic of Zambia"@en ;
+    skos:definition "Zambia"@en ;
+    skos:notation "ZMB"^^xsd:string ;
+    dct:identifier "ZM" ;
+    dct:identifier "894" .
+
+<https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ZWE> a skos:Concept ;
+    skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Zimbabwe"@en ;
+    skos:altLabel "Republic of Zimbabwe"@en ;
+    skos:definition "Zimbabwe"@en ;
+    skos:notation "ZWE"^^xsd:string ;
+    dct:identifier "ZW" ;
+    dct:identifier "716" .
 
