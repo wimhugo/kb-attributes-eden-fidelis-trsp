@@ -1,0 +1,1972 @@
+@prefix ex: <https://example.org/vocab/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Vocabulary: subjects
+
+ex:subjects a skos:ConceptScheme ;
+    skos:prefLabel "subjects"@en ;
+    skos:definition "Controlled vocabulary generated from XSD subjectIds and subjectNames."@en .
+
+ex:subjects/1 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:prefLabel "1" ;
+    skos:definition "Humanities and Social Sciences"@en ;
+    skos:notation "1"^^xsd:string .
+
+ex:subjects/11 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/1 ;
+    skos:prefLabel "11" ;
+    skos:definition "Humanities"@en ;
+    skos:notation "11"^^xsd:string .
+
+ex:subjects/111 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/11 ;
+    skos:prefLabel "111" ;
+    skos:definition "Ancient Cultures"@en ;
+    skos:notation "111"^^xsd:string .
+
+ex:subjects/11101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/111 ;
+    skos:prefLabel "11101" ;
+    skos:definition "Prehistory and World Archaeology"@en ;
+    skos:notation "11101"^^xsd:string .
+
+ex:subjects/11102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/111 ;
+    skos:prefLabel "11102" ;
+    skos:definition "Greek and Latin Philology"@en ;
+    skos:notation "11102"^^xsd:string .
+
+ex:subjects/11103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/111 ;
+    skos:prefLabel "11103" ;
+    skos:definition "Ancient History"@en ;
+    skos:notation "11103"^^xsd:string .
+
+ex:subjects/11104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/111 ;
+    skos:prefLabel "11104" ;
+    skos:definition "Classical, Roman, Christian and Islamic Archaeology"@en ;
+    skos:notation "11104"^^xsd:string .
+
+ex:subjects/11105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/111 ;
+    skos:prefLabel "11105" ;
+    skos:definition "Egyptology and Ancient Near Eastern Studies"@en ;
+    skos:notation "11105"^^xsd:string .
+
+ex:subjects/112 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/11 ;
+    skos:prefLabel "112" ;
+    skos:definition "History"@en ;
+    skos:notation "112"^^xsd:string .
+
+ex:subjects/11201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/112 ;
+    skos:prefLabel "11201" ;
+    skos:definition "Medieval History"@en ;
+    skos:notation "11201"^^xsd:string .
+
+ex:subjects/11202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/112 ;
+    skos:prefLabel "11202" ;
+    skos:definition "Early Modern History"@en ;
+    skos:notation "11202"^^xsd:string .
+
+ex:subjects/11203 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/112 ;
+    skos:prefLabel "11203" ;
+    skos:definition "Modern and Contemporary History"@en ;
+    skos:notation "11203"^^xsd:string .
+
+ex:subjects/11204 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/112 ;
+    skos:prefLabel "11204" ;
+    skos:definition "History of Science"@en ;
+    skos:notation "11204"^^xsd:string .
+
+ex:subjects/113 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/11 ;
+    skos:prefLabel "113" ;
+    skos:definition "Art History, Music, Theatre and Media Studies"@en ;
+    skos:notation "113"^^xsd:string .
+
+ex:subjects/11301 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/113 ;
+    skos:prefLabel "11301" ;
+    skos:definition "Art History"@en ;
+    skos:notation "11301"^^xsd:string .
+
+ex:subjects/11302 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/113 ;
+    skos:prefLabel "11302" ;
+    skos:definition "Musicology"@en ;
+    skos:notation "11302"^^xsd:string .
+
+ex:subjects/11303 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/113 ;
+    skos:prefLabel "11303" ;
+    skos:definition "Theatre and Media Studies"@en ;
+    skos:notation "11303"^^xsd:string .
+
+ex:subjects/114 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/11 ;
+    skos:prefLabel "114" ;
+    skos:definition "Linguistics"@en ;
+    skos:notation "114"^^xsd:string .
+
+ex:subjects/11401 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/114 ;
+    skos:prefLabel "11401" ;
+    skos:definition "General and Comparative Linguistics, Experimental Linguistics, Typology, Non-European Languages"@en ;
+    skos:notation "11401"^^xsd:string .
+
+ex:subjects/11402 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/114 ;
+    skos:prefLabel "11402" ;
+    skos:definition "Individual Linguistics, Historical Linguistics"@en ;
+    skos:notation "11402"^^xsd:string .
+
+ex:subjects/11403 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/114 ;
+    skos:prefLabel "11403" ;
+    skos:definition "Applied Linguistics, Computational Linguistics"@en ;
+    skos:notation "11403"^^xsd:string .
+
+ex:subjects/115 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/11 ;
+    skos:prefLabel "115" ;
+    skos:definition "Literary Studies"@en ;
+    skos:notation "115"^^xsd:string .
+
+ex:subjects/11501 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/115 ;
+    skos:prefLabel "11501" ;
+    skos:definition "German Medieval Studies (Medieval German Literature)"@en ;
+    skos:notation "11501"^^xsd:string .
+
+ex:subjects/11502 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/115 ;
+    skos:prefLabel "11502" ;
+    skos:definition "German Literary and Cultural Studies (Modern German Literature)"@en ;
+    skos:notation "11502"^^xsd:string .
+
+ex:subjects/11503 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/115 ;
+    skos:prefLabel "11503" ;
+    skos:definition "European and American Literary and Cultural Studies"@en ;
+    skos:notation "11503"^^xsd:string .
+
+ex:subjects/11504 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/115 ;
+    skos:prefLabel "11504" ;
+    skos:definition "General and Comparative Literary Studies; Cultural Studies"@en ;
+    skos:notation "11504"^^xsd:string .
+
+ex:subjects/116 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/11 ;
+    skos:prefLabel "116" ;
+    skos:definition "Social and Cultural Anthropology, Non-European Cultures, Jewish Studies and Religious Studies"@en ;
+    skos:notation "116"^^xsd:string .
+
+ex:subjects/11601 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/116 ;
+    skos:prefLabel "11601" ;
+    skos:definition "Social and Cultural Anthropology and Ethnology"@en ;
+    skos:notation "11601"^^xsd:string .
+
+ex:subjects/11602 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/116 ;
+    skos:prefLabel "11602" ;
+    skos:definition "Asian Studies"@en ;
+    skos:notation "11602"^^xsd:string .
+
+ex:subjects/11603 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/116 ;
+    skos:prefLabel "11603" ;
+    skos:definition "African, American and Oceania Studies"@en ;
+    skos:notation "11603"^^xsd:string .
+
+ex:subjects/11604 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/116 ;
+    skos:prefLabel "11604" ;
+    skos:definition "Islamic Studies, Arabian Studies, Semitic Studies"@en ;
+    skos:notation "11604"^^xsd:string .
+
+ex:subjects/11605 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/116 ;
+    skos:prefLabel "11605" ;
+    skos:definition "Religious Studies and Jewish Studies"@en ;
+    skos:notation "11605"^^xsd:string .
+
+ex:subjects/117 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/11 ;
+    skos:prefLabel "117" ;
+    skos:definition "Theology"@en ;
+    skos:notation "117"^^xsd:string .
+
+ex:subjects/11701 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/117 ;
+    skos:prefLabel "11701" ;
+    skos:definition "Protestant Theology"@en ;
+    skos:notation "11701"^^xsd:string .
+
+ex:subjects/11702 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/117 ;
+    skos:prefLabel "11702" ;
+    skos:definition "Roman Catholic Theology"@en ;
+    skos:notation "11702"^^xsd:string .
+
+ex:subjects/118 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/11 ;
+    skos:prefLabel "118" ;
+    skos:definition "Philosophy"@en ;
+    skos:notation "118"^^xsd:string .
+
+ex:subjects/11801 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/118 ;
+    skos:prefLabel "11801" ;
+    skos:definition "History of Philosophy"@en ;
+    skos:notation "11801"^^xsd:string .
+
+ex:subjects/11802 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/118 ;
+    skos:prefLabel "11802" ;
+    skos:definition "Theoretical Philosophy"@en ;
+    skos:notation "11802"^^xsd:string .
+
+ex:subjects/11803 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/118 ;
+    skos:prefLabel "11803" ;
+    skos:definition "Practical Philosophy"@en ;
+    skos:notation "11803"^^xsd:string .
+
+ex:subjects/12 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/1 ;
+    skos:prefLabel "12" ;
+    skos:definition "Social and Behavioural Sciences"@en ;
+    skos:notation "12"^^xsd:string .
+
+ex:subjects/121 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/12 ;
+    skos:prefLabel "121" ;
+    skos:definition "Educational Research"@en ;
+    skos:notation "121"^^xsd:string .
+
+ex:subjects/12101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/121 ;
+    skos:prefLabel "12101" ;
+    skos:definition "General Education and History of Education"@en ;
+    skos:notation "12101"^^xsd:string .
+
+ex:subjects/12102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/121 ;
+    skos:prefLabel "12102" ;
+    skos:definition "General and Domain-Specific Teaching and Learning"@en ;
+    skos:notation "12102"^^xsd:string .
+
+ex:subjects/12103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/121 ;
+    skos:prefLabel "12103" ;
+    skos:definition "Education Systems and Educational Institutions"@en ;
+    skos:notation "12103"^^xsd:string .
+
+ex:subjects/12104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/121 ;
+    skos:prefLabel "12104" ;
+    skos:definition "Educational Research on Socialisation, Welfare and Professionalism"@en ;
+    skos:notation "12104"^^xsd:string .
+
+ex:subjects/122 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/12 ;
+    skos:prefLabel "122" ;
+    skos:definition "Psychology"@en ;
+    skos:notation "122"^^xsd:string .
+
+ex:subjects/12201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/122 ;
+    skos:prefLabel "12201" ;
+    skos:definition "General, Cognitive and Mathematical Psychology"@en ;
+    skos:notation "12201"^^xsd:string .
+
+ex:subjects/12202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/122 ;
+    skos:prefLabel "12202" ;
+    skos:definition "Biological Psychology and Cognitive Neuroscience"@en ;
+    skos:notation "12202"^^xsd:string .
+
+ex:subjects/12203 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/122 ;
+    skos:prefLabel "12203" ;
+    skos:definition "Developmental and Educational Psychology"@en ;
+    skos:notation "12203"^^xsd:string .
+
+ex:subjects/12204 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/122 ;
+    skos:prefLabel "12204" ;
+    skos:definition "Social Psychology, Industrial and Organisational Psychology"@en ;
+    skos:notation "12204"^^xsd:string .
+
+ex:subjects/12205 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/122 ;
+    skos:prefLabel "12205" ;
+    skos:definition "Personality Psychology, Clinical and Medical Psychology, Methodology"@en ;
+    skos:notation "12205"^^xsd:string .
+
+ex:subjects/123 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/12 ;
+    skos:prefLabel "123" ;
+    skos:definition "Social Sciences"@en ;
+    skos:notation "123"^^xsd:string .
+
+ex:subjects/12301 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/123 ;
+    skos:prefLabel "12301" ;
+    skos:definition "Sociological Theory"@en ;
+    skos:notation "12301"^^xsd:string .
+
+ex:subjects/12302 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/123 ;
+    skos:prefLabel "12302" ;
+    skos:definition "Empirical Social Research"@en ;
+    skos:notation "12302"^^xsd:string .
+
+ex:subjects/12303 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/123 ;
+    skos:prefLabel "12303" ;
+    skos:definition "Communication Sciences"@en ;
+    skos:notation "12303"^^xsd:string .
+
+ex:subjects/12304 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/123 ;
+    skos:prefLabel "12304" ;
+    skos:definition "Political Science"@en ;
+    skos:notation "12304"^^xsd:string .
+
+ex:subjects/124 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/12 ;
+    skos:prefLabel "124" ;
+    skos:definition "Economics"@en ;
+    skos:notation "124"^^xsd:string .
+
+ex:subjects/12401 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/124 ;
+    skos:prefLabel "12401" ;
+    skos:definition "Economic Theory"@en ;
+    skos:notation "12401"^^xsd:string .
+
+ex:subjects/12402 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/124 ;
+    skos:prefLabel "12402" ;
+    skos:definition "Economic Policy, Applied Economics"@en ;
+    skos:notation "12402"^^xsd:string .
+
+ex:subjects/12403 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/124 ;
+    skos:prefLabel "12403" ;
+    skos:definition "Accounting und Finance"@en ;
+    skos:notation "12403"^^xsd:string .
+
+ex:subjects/12404 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/124 ;
+    skos:prefLabel "12404" ;
+    skos:definition "Management and Marketing"@en ;
+    skos:notation "12404"^^xsd:string .
+
+ex:subjects/12405 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/124 ;
+    skos:prefLabel "12405" ;
+    skos:definition "Operations Management and Computer Science for Business Administration"@en ;
+    skos:notation "12405"^^xsd:string .
+
+ex:subjects/12406 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/124 ;
+    skos:prefLabel "12406" ;
+    skos:definition "Statistics and Econometrics"@en ;
+    skos:notation "12406"^^xsd:string .
+
+ex:subjects/12407 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/124 ;
+    skos:prefLabel "12407" ;
+    skos:definition "Economic and Social History"@en ;
+    skos:notation "12407"^^xsd:string .
+
+ex:subjects/125 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/12 ;
+    skos:prefLabel "125" ;
+    skos:definition "Jurisprudence"@en ;
+    skos:notation "125"^^xsd:string .
+
+ex:subjects/12501 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/125 ;
+    skos:prefLabel "12501" ;
+    skos:definition "Principles of Law and Jurisprudence"@en ;
+    skos:notation "12501"^^xsd:string .
+
+ex:subjects/12502 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/125 ;
+    skos:prefLabel "12502" ;
+    skos:definition "Private Law"@en ;
+    skos:notation "12502"^^xsd:string .
+
+ex:subjects/12503 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/125 ;
+    skos:prefLabel "12503" ;
+    skos:definition "Public Law"@en ;
+    skos:notation "12503"^^xsd:string .
+
+ex:subjects/12504 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/125 ;
+    skos:prefLabel "12504" ;
+    skos:definition "Criminal Law"@en ;
+    skos:notation "12504"^^xsd:string .
+
+ex:subjects/12505 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/125 ;
+    skos:prefLabel "12505" ;
+    skos:definition "Criminology"@en ;
+    skos:notation "12505"^^xsd:string .
+
+ex:subjects/2 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:prefLabel "2" ;
+    skos:definition "Life Sciences"@en ;
+    skos:notation "2"^^xsd:string .
+
+ex:subjects/21 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/2 ;
+    skos:prefLabel "21" ;
+    skos:definition "Biology"@en ;
+    skos:notation "21"^^xsd:string .
+
+ex:subjects/211 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/21 ;
+    skos:prefLabel "211" ;
+    skos:definition "Basic Research in Biology and Medicine"@en ;
+    skos:notation "211"^^xsd:string .
+
+ex:subjects/21101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/211 ;
+    skos:prefLabel "21101" ;
+    skos:definition "Biochemistry"@en ;
+    skos:notation "21101"^^xsd:string .
+
+ex:subjects/21102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/211 ;
+    skos:prefLabel "21102" ;
+    skos:definition "Biophysics"@en ;
+    skos:notation "21102"^^xsd:string .
+
+ex:subjects/21103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/211 ;
+    skos:prefLabel "21103" ;
+    skos:definition "Cell Biology"@en ;
+    skos:notation "21103"^^xsd:string .
+
+ex:subjects/21104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/211 ;
+    skos:prefLabel "21104" ;
+    skos:definition "Structural Biology"@en ;
+    skos:notation "21104"^^xsd:string .
+
+ex:subjects/21105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/211 ;
+    skos:prefLabel "21105" ;
+    skos:definition "General Genetics and Functional Genome Biology"@en ;
+    skos:notation "21105"^^xsd:string .
+
+ex:subjects/21106 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/211 ;
+    skos:prefLabel "21106" ;
+    skos:definition "Developmental Biology"@en ;
+    skos:notation "21106"^^xsd:string .
+
+ex:subjects/21107 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/211 ;
+    skos:prefLabel "21107" ;
+    skos:definition "Bioinformatics and Theoretical Biology"@en ;
+    skos:notation "21107"^^xsd:string .
+
+ex:subjects/212 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/21 ;
+    skos:prefLabel "212" ;
+    skos:definition "Plant Sciences"@en ;
+    skos:notation "212"^^xsd:string .
+
+ex:subjects/21201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/212 ;
+    skos:prefLabel "21201" ;
+    skos:definition "Evolution and Systematics of Plants and Fungi"@en ;
+    skos:notation "21201"^^xsd:string .
+
+ex:subjects/21202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/212 ;
+    skos:prefLabel "21202" ;
+    skos:definition "Ecology and Biodiversity of Plants and Ecosystems"@en ;
+    skos:notation "21202"^^xsd:string .
+
+ex:subjects/21203 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/212 ;
+    skos:prefLabel "21203" ;
+    skos:definition "Organismic Interactions, Chemical Ecology and Microbiomes of Plant Systems"@en ;
+    skos:notation "21203"^^xsd:string .
+
+ex:subjects/21204 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/212 ;
+    skos:prefLabel "21204" ;
+    skos:definition "Plant Physiology"@en ;
+    skos:notation "21204"^^xsd:string .
+
+ex:subjects/21205 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/212 ;
+    skos:prefLabel "21205" ;
+    skos:definition "Plant Biochemistry and Biophysics"@en ;
+    skos:notation "21205"^^xsd:string .
+
+ex:subjects/21206 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/212 ;
+    skos:prefLabel "21206" ;
+    skos:definition "Plant Cell and Developmental Biology"@en ;
+    skos:notation "21206"^^xsd:string .
+
+ex:subjects/21207 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/212 ;
+    skos:prefLabel "21207" ;
+    skos:definition "Plant Genetics and Genomics"@en ;
+    skos:notation "21207"^^xsd:string .
+
+ex:subjects/213 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/21 ;
+    skos:prefLabel "213" ;
+    skos:definition "Zoology"@en ;
+    skos:notation "213"^^xsd:string .
+
+ex:subjects/21301 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/213 ;
+    skos:prefLabel "21301" ;
+    skos:definition "Systematics and Morphology (Zoology)"@en ;
+    skos:notation "21301"^^xsd:string .
+
+ex:subjects/21302 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/213 ;
+    skos:prefLabel "21302" ;
+    skos:definition "Evolution, Anthropology"@en ;
+    skos:notation "21302"^^xsd:string .
+
+ex:subjects/21303 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/213 ;
+    skos:prefLabel "21303" ;
+    skos:definition "Ecology and Biodiversity of Animals and Ecosystems, Organismic Interactions"@en ;
+    skos:notation "21303"^^xsd:string .
+
+ex:subjects/21304 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/213 ;
+    skos:prefLabel "21304" ;
+    skos:definition "Sensory and Behavioural Biology"@en ;
+    skos:notation "21304"^^xsd:string .
+
+ex:subjects/21305 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/213 ;
+    skos:prefLabel "21305" ;
+    skos:definition "Animal Physiology and Biochemistry"@en ;
+    skos:notation "21305"^^xsd:string .
+
+ex:subjects/21306 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/213 ;
+    skos:prefLabel "21306" ;
+    skos:definition "Evolutionary Cell and Developmental Biology (Zoology)"@en ;
+    skos:notation "21306"^^xsd:string .
+
+ex:subjects/22 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/2 ;
+    skos:prefLabel "22" ;
+    skos:definition "Medicine"@en ;
+    skos:notation "22"^^xsd:string .
+
+ex:subjects/221 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/22 ;
+    skos:prefLabel "221" ;
+    skos:definition "Microbiology, Virology and Immunology"@en ;
+    skos:notation "221"^^xsd:string .
+
+ex:subjects/22101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/221 ;
+    skos:prefLabel "22101" ;
+    skos:definition "Metabolism, Biochemistry and Genetics of Microorganisms"@en ;
+    skos:notation "22101"^^xsd:string .
+
+ex:subjects/22102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/221 ;
+    skos:prefLabel "22102" ;
+    skos:definition "Microbial Ecology and Applied Microbiology"@en ;
+    skos:notation "22102"^^xsd:string .
+
+ex:subjects/22103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/221 ;
+    skos:prefLabel "22103" ;
+    skos:definition "Medical Microbiology and Mycology, Hygiene, Molecular Infection Biology"@en ;
+    skos:notation "22103"^^xsd:string .
+
+ex:subjects/22104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/221 ;
+    skos:prefLabel "22104" ;
+    skos:definition "Virology"@en ;
+    skos:notation "22104"^^xsd:string .
+
+ex:subjects/22105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/221 ;
+    skos:prefLabel "22105" ;
+    skos:definition "Immunology"@en ;
+    skos:notation "22105"^^xsd:string .
+
+ex:subjects/22106 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/221 ;
+    skos:prefLabel "22106" ;
+    skos:definition "Parasitology and Biology of Tropical Infectious Disease Pathogens"@en ;
+    skos:notation "22106"^^xsd:string .
+
+ex:subjects/222 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/22 ;
+    skos:prefLabel "222" ;
+    skos:definition "Medicine"@en ;
+    skos:notation "222"^^xsd:string .
+
+ex:subjects/22201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22201" ;
+    skos:definition "Epidemiology and Medical Biometry/Statistics"@en ;
+    skos:notation "22201"^^xsd:string .
+
+ex:subjects/22202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22202" ;
+    skos:definition "Public Heatlh, Healthcare Research, Social and Occupational Medicine"@en ;
+    skos:notation "22202"^^xsd:string .
+
+ex:subjects/22203 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22203" ;
+    skos:definition "Human Genetics"@en ;
+    skos:notation "22203"^^xsd:string .
+
+ex:subjects/22204 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22204" ;
+    skos:definition "Anatomy and Physiology"@en ;
+    skos:notation "22204"^^xsd:string .
+
+ex:subjects/22205 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22205" ;
+    skos:definition "Nutritional Sciences"@en ;
+    skos:notation "22205"^^xsd:string .
+
+ex:subjects/22206 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22206" ;
+    skos:definition "Pathology"@en ;
+    skos:notation "22206"^^xsd:string .
+
+ex:subjects/22207 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22207" ;
+    skos:definition "Medical Informatics and Medical Bioinformatics"@en ;
+    skos:notation "22207"^^xsd:string .
+
+ex:subjects/22208 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22208" ;
+    skos:definition "Pharmacy"@en ;
+    skos:notation "22208"^^xsd:string .
+
+ex:subjects/22209 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22209" ;
+    skos:definition "Pharmacology"@en ;
+    skos:notation "22209"^^xsd:string .
+
+ex:subjects/22210 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22210" ;
+    skos:definition "Toxicology, Laboratory Medicine"@en ;
+    skos:notation "22210"^^xsd:string .
+
+ex:subjects/22211 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22211" ;
+    skos:definition "Anaesthesiology"@en ;
+    skos:notation "22211"^^xsd:string .
+
+ex:subjects/22212 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22212" ;
+    skos:definition "Cardiology, Angiology"@en ;
+    skos:notation "22212"^^xsd:string .
+
+ex:subjects/22213 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22213" ;
+    skos:definition "Pneumology, Thoracic Surgery"@en ;
+    skos:notation "22213"^^xsd:string .
+
+ex:subjects/22214 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22214" ;
+    skos:definition "Hematology, Oncology"@en ;
+    skos:notation "22214"^^xsd:string .
+
+ex:subjects/22215 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22215" ;
+    skos:definition "Gastroenterology"@en ;
+    skos:notation "22215"^^xsd:string .
+
+ex:subjects/22216 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22216" ;
+    skos:definition "Nephrology"@en ;
+    skos:notation "22216"^^xsd:string .
+
+ex:subjects/22217 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22217" ;
+    skos:definition "Endocrinology, Diabetology, Metabolism"@en ;
+    skos:notation "22217"^^xsd:string .
+
+ex:subjects/22218 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22218" ;
+    skos:definition "Rheumatology"@en ;
+    skos:notation "22218"^^xsd:string .
+
+ex:subjects/22219 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22219" ;
+    skos:definition "Dermatology"@en ;
+    skos:notation "22219"^^xsd:string .
+
+ex:subjects/22220 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22220" ;
+    skos:definition "Pediatric and Adolescent Medicine"@en ;
+    skos:notation "22220"^^xsd:string .
+
+ex:subjects/22221 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22221" ;
+    skos:definition "Gynaecology and Obstetrics"@en ;
+    skos:notation "22221"^^xsd:string .
+
+ex:subjects/22222 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22222" ;
+    skos:definition "Clinical Immunology and Allergology"@en ;
+    skos:notation "22222"^^xsd:string .
+
+ex:subjects/22223 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22223" ;
+    skos:definition "Reproductive Medicine, Urology"@en ;
+    skos:notation "22223"^^xsd:string .
+
+ex:subjects/22224 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22224" ;
+    skos:definition "Biogerontology and Geriatric Medicine"@en ;
+    skos:notation "22224"^^xsd:string .
+
+ex:subjects/22225 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22225" ;
+    skos:definition "General and Visceral Surgery"@en ;
+    skos:notation "22225"^^xsd:string .
+
+ex:subjects/22226 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22226" ;
+    skos:definition "Cardiac and Vascular Surgery"@en ;
+    skos:notation "22226"^^xsd:string .
+
+ex:subjects/22227 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22227" ;
+    skos:definition "Orthopaedics, Traumatology, Reconstructive Surgery"@en ;
+    skos:notation "22227"^^xsd:string .
+
+ex:subjects/22228 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22228" ;
+    skos:definition "Dentistry, Oral Surgery"@en ;
+    skos:notation "22228"^^xsd:string .
+
+ex:subjects/22229 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22229" ;
+    skos:definition "Otolaryngology, Phoniatrics and Audiology"@en ;
+    skos:notation "22229"^^xsd:string .
+
+ex:subjects/22230 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22230" ;
+    skos:definition "Radiology"@en ;
+    skos:notation "22230"^^xsd:string .
+
+ex:subjects/22231 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22231" ;
+    skos:definition "Clinical Infectiology and Tropical Medicine"@en ;
+    skos:notation "22231"^^xsd:string .
+
+ex:subjects/22232 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22232" ;
+    skos:definition "Medical Physics, Biomedical Technology"@en ;
+    skos:notation "22232"^^xsd:string .
+
+ex:subjects/22233 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/222 ;
+    skos:prefLabel "22233" ;
+    skos:definition "Nuclear Medicine, Radiotherapy, Radiobiology"@en ;
+    skos:notation "22233"^^xsd:string .
+
+ex:subjects/223 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/22 ;
+    skos:prefLabel "223" ;
+    skos:definition "Neurosciences"@en ;
+    skos:notation "223"^^xsd:string .
+
+ex:subjects/22301 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22301" ;
+    skos:definition "Developmental Neurobiology"@en ;
+    skos:notation "22301"^^xsd:string .
+
+ex:subjects/22302 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22302" ;
+    skos:definition "Molecular Biology and Physiology of Neurons and Glial Cells"@en ;
+    skos:notation "22302"^^xsd:string .
+
+ex:subjects/22303 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22303" ;
+    skos:definition "Experimental and Theoretical Network Neuroscience"@en ;
+    skos:notation "22303"^^xsd:string .
+
+ex:subjects/22304 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22304" ;
+    skos:definition "Cognitive, Systems and Behavioural Neurobiology"@en ;
+    skos:notation "22304"^^xsd:string .
+
+ex:subjects/22305 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22305" ;
+    skos:definition "Experimental Models for the Understanding of Nervous System Diseases"@en ;
+    skos:notation "22305"^^xsd:string .
+
+ex:subjects/22306 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22306" ;
+    skos:definition "Molecular and Cellular Neurology and Neuropathology"@en ;
+    skos:notation "22306"^^xsd:string .
+
+ex:subjects/22307 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22307" ;
+    skos:definition "Clinical Neurology; Neurosurgery and Neuroradiology"@en ;
+    skos:notation "22307"^^xsd:string .
+
+ex:subjects/22308 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22308" ;
+    skos:definition "Human Cognitive and Systems Neuroscience"@en ;
+    skos:notation "22308"^^xsd:string .
+
+ex:subjects/22309 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22309" ;
+    skos:definition "Biological Psychiatry"@en ;
+    skos:notation "22309"^^xsd:string .
+
+ex:subjects/22310 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22310" ;
+    skos:definition "Clinical Psychiatry, Psychotherapy, Child and Adolescent Psychiatry"@en ;
+    skos:notation "22310"^^xsd:string .
+
+ex:subjects/22311 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/223 ;
+    skos:prefLabel "22311" ;
+    skos:definition "Ophthalmology"@en ;
+    skos:notation "22311"^^xsd:string .
+
+ex:subjects/23 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/2 ;
+    skos:prefLabel "23" ;
+    skos:definition "Agriculture, Forestry and Veterinary Medicine"@en ;
+    skos:notation "23"^^xsd:string .
+
+ex:subjects/231 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/23 ;
+    skos:prefLabel "231" ;
+    skos:definition "Agriculture, Forestry and Veterinary Medicine"@en ;
+    skos:notation "231"^^xsd:string .
+
+ex:subjects/23101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/231 ;
+    skos:prefLabel "23101" ;
+    skos:definition "Soil Sciences"@en ;
+    skos:notation "23101"^^xsd:string .
+
+ex:subjects/23102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/231 ;
+    skos:prefLabel "23102" ;
+    skos:definition "Plant Breeding and Plant Pathology"@en ;
+    skos:notation "23102"^^xsd:string .
+
+ex:subjects/23103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/231 ;
+    skos:prefLabel "23103" ;
+    skos:definition "Plant Cultivation, Plant Nutrition, Agricultural Technology"@en ;
+    skos:notation "23103"^^xsd:string .
+
+ex:subjects/23104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/231 ;
+    skos:prefLabel "23104" ;
+    skos:definition "Ecology of Land Use"@en ;
+    skos:notation "23104"^^xsd:string .
+
+ex:subjects/23105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/231 ;
+    skos:prefLabel "23105" ;
+    skos:definition "Agricultural Economics, Agricultural Policy, Agricultural Sociology"@en ;
+    skos:notation "23105"^^xsd:string .
+
+ex:subjects/23106 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/231 ;
+    skos:prefLabel "23106" ;
+    skos:definition "Forestry"@en ;
+    skos:notation "23106"^^xsd:string .
+
+ex:subjects/23107 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/231 ;
+    skos:prefLabel "23107" ;
+    skos:definition "Animal Breeding, Animal Nutrition, Animal Husbandry"@en ;
+    skos:notation "23107"^^xsd:string .
+
+ex:subjects/23108 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/231 ;
+    skos:prefLabel "23108" ;
+    skos:definition "Veterinary Medical Science"@en ;
+    skos:notation "23108"^^xsd:string .
+
+ex:subjects/3 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:prefLabel "3" ;
+    skos:definition "Natural Sciences"@en ;
+    skos:notation "3"^^xsd:string .
+
+ex:subjects/31 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/3 ;
+    skos:prefLabel "31" ;
+    skos:definition "Chemistry"@en ;
+    skos:notation "31"^^xsd:string .
+
+ex:subjects/311 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/31 ;
+    skos:prefLabel "311" ;
+    skos:definition "Molecular Chemistry"@en ;
+    skos:notation "311"^^xsd:string .
+
+ex:subjects/31101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/311 ;
+    skos:prefLabel "31101" ;
+    skos:definition "Inorganic Molecular Chemistry - Synthesis and Characterisation"@en ;
+    skos:notation "31101"^^xsd:string .
+
+ex:subjects/31102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/311 ;
+    skos:prefLabel "31102" ;
+    skos:definition "Organic Molecular Chemistry - Synthesis and Characterisation"@en ;
+    skos:notation "31102"^^xsd:string .
+
+ex:subjects/312 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/31 ;
+    skos:prefLabel "312" ;
+    skos:definition "Chemical Solid State and Surface Research"@en ;
+    skos:notation "312"^^xsd:string .
+
+ex:subjects/31201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/312 ;
+    skos:prefLabel "31201" ;
+    skos:definition "Solid State and Surface Chemistry, Material Synthesis"@en ;
+    skos:notation "31201"^^xsd:string .
+
+ex:subjects/31202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/312 ;
+    skos:prefLabel "31202" ;
+    skos:definition "Physical Chemistry of Solids and Surfaces, Material Characterisation"@en ;
+    skos:notation "31202"^^xsd:string .
+
+ex:subjects/313 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/31 ;
+    skos:prefLabel "313" ;
+    skos:definition "Physical Chemistry"@en ;
+    skos:notation "313"^^xsd:string .
+
+ex:subjects/31301 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/313 ;
+    skos:prefLabel "31301" ;
+    skos:definition "Physical Chemistry of Molecules, Liquids and Interfaces, Biophysical Chemistry"@en ;
+    skos:notation "31301"^^xsd:string .
+
+ex:subjects/314 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/31 ;
+    skos:prefLabel "314" ;
+    skos:definition "Analytical Chemistry"@en ;
+    skos:notation "314"^^xsd:string .
+
+ex:subjects/31401 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/314 ;
+    skos:prefLabel "31401" ;
+    skos:definition "Analytical Chemistry"@en ;
+    skos:notation "31401"^^xsd:string .
+
+ex:subjects/315 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/31 ;
+    skos:prefLabel "315" ;
+    skos:definition "Biological Chemistry and Food Chemistry"@en ;
+    skos:notation "315"^^xsd:string .
+
+ex:subjects/31501 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/315 ;
+    skos:prefLabel "31501" ;
+    skos:definition "Biological and Biomimetic Chemistry"@en ;
+    skos:notation "31501"^^xsd:string .
+
+ex:subjects/31502 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/315 ;
+    skos:prefLabel "31502" ;
+    skos:definition "Food Chemistry"@en ;
+    skos:notation "31502"^^xsd:string .
+
+ex:subjects/316 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/31 ;
+    skos:prefLabel "316" ;
+    skos:definition "Polymer Research"@en ;
+    skos:notation "316"^^xsd:string .
+
+ex:subjects/31601 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/316 ;
+    skos:prefLabel "31601" ;
+    skos:definition "Preparatory and Physical Chemistry of Polymers"@en ;
+    skos:notation "31601"^^xsd:string .
+
+ex:subjects/31602 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/316 ;
+    skos:prefLabel "31602" ;
+    skos:definition "Experimental and Theoretical Physics of Polymers"@en ;
+    skos:notation "31602"^^xsd:string .
+
+ex:subjects/31603 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/316 ;
+    skos:prefLabel "31603" ;
+    skos:definition "Polymer Materials"@en ;
+    skos:notation "31603"^^xsd:string .
+
+ex:subjects/317 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/31 ;
+    skos:prefLabel "317" ;
+    skos:definition "Theoretical Chemistry"@en ;
+    skos:notation "317"^^xsd:string .
+
+ex:subjects/31701 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/317 ;
+    skos:prefLabel "31701" ;
+    skos:definition "Theoretical Chemistry: Electron Structure, Dynamics, Simulation"@en ;
+    skos:notation "31701"^^xsd:string .
+
+ex:subjects/31702 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/317 ;
+    skos:prefLabel "31702" ;
+    skos:definition "Theoretical Chemistry: Molecules, Materials, Surfaces"@en ;
+    skos:notation "31702"^^xsd:string .
+
+ex:subjects/32 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/3 ;
+    skos:prefLabel "32" ;
+    skos:definition "Physics"@en ;
+    skos:notation "32"^^xsd:string .
+
+ex:subjects/321 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/32 ;
+    skos:prefLabel "321" ;
+    skos:definition "Condensed Matter Physics"@en ;
+    skos:notation "321"^^xsd:string .
+
+ex:subjects/32101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/321 ;
+    skos:prefLabel "32101" ;
+    skos:definition "Experimental Condensed Matter Physics"@en ;
+    skos:notation "32101"^^xsd:string .
+
+ex:subjects/32102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/321 ;
+    skos:prefLabel "32102" ;
+    skos:definition "Theoretical Condensed Matter Physics"@en ;
+    skos:notation "32102"^^xsd:string .
+
+ex:subjects/322 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/32 ;
+    skos:prefLabel "322" ;
+    skos:definition "Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter, Biological Physics"@en ;
+    skos:notation "322"^^xsd:string .
+
+ex:subjects/32201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/322 ;
+    skos:prefLabel "32201" ;
+    skos:definition "Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter, Biological Physics"@en ;
+    skos:notation "32201"^^xsd:string .
+
+ex:subjects/323 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/32 ;
+    skos:prefLabel "323" ;
+    skos:definition "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas"@en ;
+    skos:notation "323"^^xsd:string .
+
+ex:subjects/32301 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/323 ;
+    skos:prefLabel "32301" ;
+    skos:definition "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas"@en ;
+    skos:notation "32301"^^xsd:string .
+
+ex:subjects/324 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/32 ;
+    skos:prefLabel "324" ;
+    skos:definition "Particles, Nuclei and Fields"@en ;
+    skos:notation "324"^^xsd:string .
+
+ex:subjects/32401 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/324 ;
+    skos:prefLabel "32401" ;
+    skos:definition "Nuclear and Elementary Particle Physics, Quantum Mechanics, Relativity, Fields"@en ;
+    skos:notation "32401"^^xsd:string .
+
+ex:subjects/325 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/32 ;
+    skos:prefLabel "325" ;
+    skos:definition "Astrophysics and Astronomy"@en ;
+    skos:notation "325"^^xsd:string .
+
+ex:subjects/32501 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/325 ;
+    skos:prefLabel "32501" ;
+    skos:definition "Astrophysics and Astronomy"@en ;
+    skos:notation "32501"^^xsd:string .
+
+ex:subjects/33 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/3 ;
+    skos:prefLabel "33" ;
+    skos:definition "Mathematics"@en ;
+    skos:notation "33"^^xsd:string .
+
+ex:subjects/331 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/33 ;
+    skos:prefLabel "331" ;
+    skos:definition "Mathematics"@en ;
+    skos:notation "331"^^xsd:string .
+
+ex:subjects/33101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/331 ;
+    skos:prefLabel "33101" ;
+    skos:definition "Mathematics"@en ;
+    skos:notation "33101"^^xsd:string .
+
+ex:subjects/34 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/3 ;
+    skos:prefLabel "34" ;
+    skos:definition "Geosciences"@en ;
+    skos:notation "34"^^xsd:string .
+
+ex:subjects/341 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/34 ;
+    skos:prefLabel "341" ;
+    skos:definition "Atmospheric Science, Oceanography and Climate Research"@en ;
+    skos:notation "341"^^xsd:string .
+
+ex:subjects/34101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/341 ;
+    skos:prefLabel "34101" ;
+    skos:definition "Atmospheric Science"@en ;
+    skos:notation "34101"^^xsd:string .
+
+ex:subjects/34102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/341 ;
+    skos:prefLabel "34102" ;
+    skos:definition "Oceanography"@en ;
+    skos:notation "34102"^^xsd:string .
+
+ex:subjects/342 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/34 ;
+    skos:prefLabel "342" ;
+    skos:definition "Geology and Palaeontology"@en ;
+    skos:notation "342"^^xsd:string .
+
+ex:subjects/34201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/342 ;
+    skos:prefLabel "34201" ;
+    skos:definition "Geology"@en ;
+    skos:notation "34201"^^xsd:string .
+
+ex:subjects/34202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/342 ;
+    skos:prefLabel "34202" ;
+    skos:definition "Palaeontology"@en ;
+    skos:notation "34202"^^xsd:string .
+
+ex:subjects/343 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/34 ;
+    skos:prefLabel "343" ;
+    skos:definition "Geophysics and Geodesy"@en ;
+    skos:notation "343"^^xsd:string .
+
+ex:subjects/34301 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/343 ;
+    skos:prefLabel "34301" ;
+    skos:definition "Geophysics"@en ;
+    skos:notation "34301"^^xsd:string .
+
+ex:subjects/34302 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/343 ;
+    skos:prefLabel "34302" ;
+    skos:definition "Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartography"@en ;
+    skos:notation "34302"^^xsd:string .
+
+ex:subjects/344 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/34 ;
+    skos:prefLabel "344" ;
+    skos:definition "Mineralogy, Petrology and Geochemistry"@en ;
+    skos:notation "344"^^xsd:string .
+
+ex:subjects/34401 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/344 ;
+    skos:prefLabel "34401" ;
+    skos:definition "Mineralogy, Petrology and Geochemistry"@en ;
+    skos:notation "34401"^^xsd:string .
+
+ex:subjects/345 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/34 ;
+    skos:prefLabel "345" ;
+    skos:definition "Geography"@en ;
+    skos:notation "345"^^xsd:string .
+
+ex:subjects/34501 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/345 ;
+    skos:prefLabel "34501" ;
+    skos:definition "Physical Geography"@en ;
+    skos:notation "34501"^^xsd:string .
+
+ex:subjects/34502 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/345 ;
+    skos:prefLabel "34502" ;
+    skos:definition "Human Geography"@en ;
+    skos:notation "34502"^^xsd:string .
+
+ex:subjects/346 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/34 ;
+    skos:prefLabel "346" ;
+    skos:definition "Water Research"@en ;
+    skos:notation "346"^^xsd:string .
+
+ex:subjects/34601 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/346 ;
+    skos:prefLabel "34601" ;
+    skos:definition "Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management"@en ;
+    skos:notation "34601"^^xsd:string .
+
+ex:subjects/4 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:prefLabel "4" ;
+    skos:definition "Engineering Sciences"@en ;
+    skos:notation "4"^^xsd:string .
+
+ex:subjects/41 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/4 ;
+    skos:prefLabel "41" ;
+    skos:definition "Mechanical and Industrial Engineering"@en ;
+    skos:notation "41"^^xsd:string .
+
+ex:subjects/411 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/41 ;
+    skos:prefLabel "411" ;
+    skos:definition "Production Technology"@en ;
+    skos:notation "411"^^xsd:string .
+
+ex:subjects/41101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/411 ;
+    skos:prefLabel "41101" ;
+    skos:definition "Metal-Cutting and Abrasive Manufacturing Engineering"@en ;
+    skos:notation "41101"^^xsd:string .
+
+ex:subjects/41102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/411 ;
+    skos:prefLabel "41102" ;
+    skos:definition "Primary Shaping and Reshaping Technology, Additive Manufacturing"@en ;
+    skos:notation "41102"^^xsd:string .
+
+ex:subjects/41103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/411 ;
+    skos:prefLabel "41103" ;
+    skos:definition "Joining and Separation Technology"@en ;
+    skos:notation "41103"^^xsd:string .
+
+ex:subjects/41104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/411 ;
+    skos:prefLabel "41104" ;
+    skos:definition "Plastics Engineering"@en ;
+    skos:notation "41104"^^xsd:string .
+
+ex:subjects/41105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/411 ;
+    skos:prefLabel "41105" ;
+    skos:definition "Production Systems, Operations Management, Quality Management and Factory Planning"@en ;
+    skos:notation "41105"^^xsd:string .
+
+ex:subjects/41106 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/411 ;
+    skos:prefLabel "41106" ;
+    skos:definition "Production Automation and Assembly Technology"@en ;
+    skos:notation "41106"^^xsd:string .
+
+ex:subjects/412 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/41 ;
+    skos:prefLabel "412" ;
+    skos:definition "Mechanics and Constructive Mechanical Engineering"@en ;
+    skos:notation "412"^^xsd:string .
+
+ex:subjects/41201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/412 ;
+    skos:prefLabel "41201" ;
+    skos:definition "Engineering Design, Machine Elements, Product Development"@en ;
+    skos:notation "41201"^^xsd:string .
+
+ex:subjects/41202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/412 ;
+    skos:prefLabel "41202" ;
+    skos:definition "Mechanics"@en ;
+    skos:notation "41202"^^xsd:string .
+
+ex:subjects/41203 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/412 ;
+    skos:prefLabel "41203" ;
+    skos:definition "Lightweight Construction, Textile Technology"@en ;
+    skos:notation "41203"^^xsd:string .
+
+ex:subjects/41204 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/412 ;
+    skos:prefLabel "41204" ;
+    skos:definition "Acoustics"@en ;
+    skos:notation "41204"^^xsd:string .
+
+ex:subjects/42 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/4 ;
+    skos:prefLabel "42" ;
+    skos:definition "Thermal Engineering/Process Engineering"@en ;
+    skos:notation "42"^^xsd:string .
+
+ex:subjects/421 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/42 ;
+    skos:prefLabel "421" ;
+    skos:definition "Process Engineering, Technical Chemistry"@en ;
+    skos:notation "421"^^xsd:string .
+
+ex:subjects/42101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/421 ;
+    skos:prefLabel "42101" ;
+    skos:definition "Chemical and Thermal Process Engineering"@en ;
+    skos:notation "42101"^^xsd:string .
+
+ex:subjects/42102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/421 ;
+    skos:prefLabel "42102" ;
+    skos:definition "Technical Chemistry"@en ;
+    skos:notation "42102"^^xsd:string .
+
+ex:subjects/42103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/421 ;
+    skos:prefLabel "42103" ;
+    skos:definition "Mechanical Process Engineering"@en ;
+    skos:notation "42103"^^xsd:string .
+
+ex:subjects/42104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/421 ;
+    skos:prefLabel "42104" ;
+    skos:definition "Biological Process Engineering"@en ;
+    skos:notation "42104"^^xsd:string .
+
+ex:subjects/42105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/421 ;
+    skos:prefLabel "42105" ;
+    skos:definition "Systems Process Engineering"@en ;
+    skos:notation "42105"^^xsd:string .
+
+ex:subjects/422 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/42 ;
+    skos:prefLabel "422" ;
+    skos:definition "Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering"@en ;
+    skos:notation "422"^^xsd:string .
+
+ex:subjects/42201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/422 ;
+    skos:prefLabel "42201" ;
+    skos:definition "Energy Process Engineering"@en ;
+    skos:notation "42201"^^xsd:string .
+
+ex:subjects/42202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/422 ;
+    skos:prefLabel "42202" ;
+    skos:definition "Technical Thermodynamics"@en ;
+    skos:notation "42202"^^xsd:string .
+
+ex:subjects/42203 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/422 ;
+    skos:prefLabel "42203" ;
+    skos:definition "Fluid Mechanics"@en ;
+    skos:notation "42203"^^xsd:string .
+
+ex:subjects/42204 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/422 ;
+    skos:prefLabel "42204" ;
+    skos:definition "Hydraulic and Turbo Engines and Piston Engines"@en ;
+    skos:notation "42204"^^xsd:string .
+
+ex:subjects/43 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/4 ;
+    skos:prefLabel "43" ;
+    skos:definition "Materials Science and Engineering"@en ;
+    skos:notation "43"^^xsd:string .
+
+ex:subjects/431 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/43 ;
+    skos:prefLabel "431" ;
+    skos:definition "Materials Engineering"@en ;
+    skos:notation "431"^^xsd:string .
+
+ex:subjects/43101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/431 ;
+    skos:prefLabel "43101" ;
+    skos:definition "Metallurgical, Thermal and Thermomechanical Treatment of Materials"@en ;
+    skos:notation "43101"^^xsd:string .
+
+ex:subjects/43102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/431 ;
+    skos:prefLabel "43102" ;
+    skos:definition "Materials in Sintering Processes and Generative Manufacturing Processes"@en ;
+    skos:notation "43102"^^xsd:string .
+
+ex:subjects/43103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/431 ;
+    skos:prefLabel "43103" ;
+    skos:definition "Coating and Surface Technology"@en ;
+    skos:notation "43103"^^xsd:string .
+
+ex:subjects/43104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/431 ;
+    skos:prefLabel "43104" ;
+    skos:definition "Mechanical Properties of Metallic Materials and their Microstructural Origins"@en ;
+    skos:notation "43104"^^xsd:string .
+
+ex:subjects/43105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/431 ;
+    skos:prefLabel "43105" ;
+    skos:definition "Glass, Ceramics and Derived Composites"@en ;
+    skos:notation "43105"^^xsd:string .
+
+ex:subjects/43106 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/431 ;
+    skos:prefLabel "43106" ;
+    skos:definition "Polymeric and Biogenic Materials and Derived Composites"@en ;
+    skos:notation "43106"^^xsd:string .
+
+ex:subjects/432 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/43 ;
+    skos:prefLabel "432" ;
+    skos:definition "Materials Science"@en ;
+    skos:notation "432"^^xsd:string .
+
+ex:subjects/43201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/432 ;
+    skos:prefLabel "43201" ;
+    skos:definition "Synthesis and Properties of Functional Materials"@en ;
+    skos:notation "43201"^^xsd:string .
+
+ex:subjects/43202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/432 ;
+    skos:prefLabel "43202" ;
+    skos:definition "Biomaterials"@en ;
+    skos:notation "43202"^^xsd:string .
+
+ex:subjects/43203 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/432 ;
+    skos:prefLabel "43203" ;
+    skos:definition "Thermodynamics and Kinetics as well as Properties of Phases and Microstructure of Materials"@en ;
+    skos:notation "43203"^^xsd:string .
+
+ex:subjects/43204 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/432 ;
+    skos:prefLabel "43204" ;
+    skos:definition "Computer-Aided Design of Materials and Simulation of Materials Behaviour from Atomic to Microscopic Scale"@en ;
+    skos:notation "43204"^^xsd:string .
+
+ex:subjects/44 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/4 ;
+    skos:prefLabel "44" ;
+    skos:definition "Computer Science, Systems and Electrical Engineering"@en ;
+    skos:notation "44"^^xsd:string .
+
+ex:subjects/441 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/44 ;
+    skos:prefLabel "441" ;
+    skos:definition "Systems Engineering"@en ;
+    skos:notation "441"^^xsd:string .
+
+ex:subjects/44101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/441 ;
+    skos:prefLabel "44101" ;
+    skos:definition "Automation, Mechatronics, Control Systems, Intelligent Technical Systems, Robotics"@en ;
+    skos:notation "44101"^^xsd:string .
+
+ex:subjects/44102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/441 ;
+    skos:prefLabel "44102" ;
+    skos:definition "Measurement Systems"@en ;
+    skos:notation "44102"^^xsd:string .
+
+ex:subjects/44103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/441 ;
+    skos:prefLabel "44103" ;
+    skos:definition "Microsystems"@en ;
+    skos:notation "44103"^^xsd:string .
+
+ex:subjects/44104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/441 ;
+    skos:prefLabel "44104" ;
+    skos:definition "Traffic and Transport Systems, Intelligent and Automated Traffic"@en ;
+    skos:notation "44104"^^xsd:string .
+
+ex:subjects/44105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/441 ;
+    skos:prefLabel "44105" ;
+    skos:definition "Human Factors, Ergonomics, Human-Machine Systems"@en ;
+    skos:notation "44105"^^xsd:string .
+
+ex:subjects/44106 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/441 ;
+    skos:prefLabel "44106" ;
+    skos:definition "Biomedical Systems Technology"@en ;
+    skos:notation "44106"^^xsd:string .
+
+ex:subjects/442 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/44 ;
+    skos:prefLabel "442" ;
+    skos:definition "Electrical Engineering and Information Technology"@en ;
+    skos:notation "442"^^xsd:string .
+
+ex:subjects/44201 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/442 ;
+    skos:prefLabel "44201" ;
+    skos:definition "Electronic Semiconductors, Components and Circuits, Integrated Systems, Sensor Technology, Theoretical Electrical Engineering"@en ;
+    skos:notation "44201"^^xsd:string .
+
+ex:subjects/44202 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/442 ;
+    skos:prefLabel "44202" ;
+    skos:definition "Communication Technology and Networks, High-Frequency Technology and Photonic Systems, Signnal Processing and Machine Learning for Information Technology"@en ;
+    skos:notation "44202"^^xsd:string .
+
+ex:subjects/44203 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/442 ;
+    skos:prefLabel "44203" ;
+    skos:definition "Electrical Energy Systems, Power Management, Power Electronics, Electrical Machines and Drives"@en ;
+    skos:notation "44203"^^xsd:string .
+
+ex:subjects/44204 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/442 ;
+    skos:prefLabel "44204" ;
+    skos:definition "Hardware Systems and Architectures for Information Technology and Artificial Intelligence, Quantum Engineering Systems"@en ;
+    skos:notation "44204"^^xsd:string .
+
+ex:subjects/443 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/44 ;
+    skos:prefLabel "443" ;
+    skos:definition "Computer Science"@en ;
+    skos:notation "443"^^xsd:string .
+
+ex:subjects/44301 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/443 ;
+    skos:prefLabel "44301" ;
+    skos:definition "Theoretical Computer Science"@en ;
+    skos:notation "44301"^^xsd:string .
+
+ex:subjects/44302 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/443 ;
+    skos:prefLabel "44302" ;
+    skos:definition "Software Engineering and Programming Languages"@en ;
+    skos:notation "44302"^^xsd:string .
+
+ex:subjects/44303 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/443 ;
+    skos:prefLabel "44303" ;
+    skos:definition "Security and Dependability, Operating, Communication and Distributed Systems"@en ;
+    skos:notation "44303"^^xsd:string .
+
+ex:subjects/44304 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/443 ;
+    skos:prefLabel "44304" ;
+    skos:definition "Artificial Intelligence and Machine Learning Methods"@en ;
+    skos:notation "44304"^^xsd:string .
+
+ex:subjects/44305 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/443 ;
+    skos:prefLabel "44305" ;
+    skos:definition "Image and Language Processing, Computer Graphics and Visualisation, Human Computer Interaction, Ubiquitous and Wearable Computing"@en ;
+    skos:notation "44305"^^xsd:string .
+
+ex:subjects/44306 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/443 ;
+    skos:prefLabel "44306" ;
+    skos:definition "Data Management, Data-Intensive Systems, Computer Science Methods in Business Informatics"@en ;
+    skos:notation "44306"^^xsd:string .
+
+ex:subjects/44307 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/443 ;
+    skos:prefLabel "44307" ;
+    skos:definition "Computer Architecture, Embedded and Massively Parallel Systems"@en ;
+    skos:notation "44307"^^xsd:string .
+
+ex:subjects/45 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/4 ;
+    skos:prefLabel "45" ;
+    skos:definition "Construction Engineering and Architecture"@en ;
+    skos:notation "45"^^xsd:string .
+
+ex:subjects/451 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/45 ;
+    skos:prefLabel "451" ;
+    skos:definition "Construction Engineering and Architecture"@en ;
+    skos:notation "451"^^xsd:string .
+
+ex:subjects/45101 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/451 ;
+    skos:prefLabel "45101" ;
+    skos:definition "Architecture, Building and Construction History, Construction Research, Sustainable Building Technology"@en ;
+    skos:notation "45101"^^xsd:string .
+
+ex:subjects/45102 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/451 ;
+    skos:prefLabel "45102" ;
+    skos:definition "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning"@en ;
+    skos:notation "45102"^^xsd:string .
+
+ex:subjects/45103 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/451 ;
+    skos:prefLabel "45103" ;
+    skos:definition "Construction Material Sciences, Chemistry, Building Physics"@en ;
+    skos:notation "45103"^^xsd:string .
+
+ex:subjects/45104 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/451 ;
+    skos:prefLabel "45104" ;
+    skos:definition "Structural Engineering, Building Informatics and Construction Operation"@en ;
+    skos:notation "45104"^^xsd:string .
+
+ex:subjects/45105 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/451 ;
+    skos:prefLabel "45105" ;
+    skos:definition "Applied Mechanics, Statics and Dynamics"@en ;
+    skos:notation "45105"^^xsd:string .
+
+ex:subjects/45106 a skos:Concept ;
+    skos:inScheme ex:subjects ;
+    skos:broader ex:subjects/451 ;
+    skos:prefLabel "45106" ;
+    skos:definition "Geotechnics, Hydraulic Engineering"@en ;
+    skos:notation "45106"^^xsd:string .
