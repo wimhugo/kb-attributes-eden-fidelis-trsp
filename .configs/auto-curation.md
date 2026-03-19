@@ -15,3 +15,7 @@ We make use of the re3data schema in several ways:
   - Vocabularies are all contained in the folder vocabs/r3d and can also alternatively be found by searching files for the schema identifier: https://schema.re3data.org/4-0/re3dataV4-0.xsd. New vocabularies and updates to existing ones will lead to pull requests.
   - Constraints are defined with each of the attributes in the re3data profile, and may include new or amended references to vocabularies and other constraints, changes are created as pull requests.
   - New attributes may have to be included into the re3data profile, and of they have not been defined by TRSP, a pull request for a new attribute and profile relationship needs to be created.
+
+### 1.2 COAR Trigger
+
+re3data, and indirectly TRSP, makes use of the COAR content type definitions, and any change in those definitions or a change in the re3data preferred terms will result in a change to https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/content-types.ttl 
