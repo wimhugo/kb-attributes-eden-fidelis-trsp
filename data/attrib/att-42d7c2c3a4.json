@@ -50,6 +50,20 @@
       "profileBenchmark": "",
       "profileBenchmarkIRI": "",
       "ex:profileBenchmarkType": "None"
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.42D7C2C3A4",
+      "profileAttributeLabel": "Public Statement of Wind-Down",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "",
+      "ex:profileBenchmarkType": "None"
     }
   ]
 }

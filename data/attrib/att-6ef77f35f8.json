@@ -50,6 +50,20 @@
       "profileBenchmark": "Free|Attribution|Contribution|Use|Crawl|Training|Subscription|Purchase",
       "profileBenchmarkIRI": "",
       "ex:profileBenchmarkType": "Vocabulary"
+    },
+    {
+      "@type": "Relationship",
+      "relationType": "includeInProfile",
+      "object": {
+        "@id": "profile.1EE89F448D",
+        "name": "TRSP"
+      },
+      "profileClass": "Standard",
+      "profileAttributeIRI": "att.6EF77F35F8",
+      "profileAttributeLabel": "Revenue Type",
+      "profileAttributeAggregationType": "None",
+      "profileBenchmark": "Free|Attribution|Contribution|Use|Crawl|Training|Subscription|Purchase",
+      "ex:profileBenchmarkType": "Vocabulary"
     }
   ]
 }
