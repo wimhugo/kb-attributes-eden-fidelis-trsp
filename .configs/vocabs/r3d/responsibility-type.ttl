@@ -1,0 +1,25 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: responsibilityTypes
+##############################################################
+
+r3d:responsibilityTypes a skos:ConceptScheme ;
+    skos:prefLabel "responsibilityTypes"@en .
+
+r3d:responsibilityTypes/funding a skos:Concept ;
+    skos:inScheme r3d:responsibilityTypes ;
+    skos:prefLabel "funding"@en ;
+    skos:definition "funding"@en .
+
+r3d:responsibilityTypes/general a skos:Concept ;
+    skos:inScheme r3d:responsibilityTypes ;
+    skos:prefLabel "general"@en ;
+    skos:definition "general"@en .
+
+r3d:responsibilityTypes/technical a skos:Concept ;
+    skos:inScheme r3d:responsibilityTypes ;
+    skos:prefLabel "technical"@en ;
+    skos:definition "technical"@en .
