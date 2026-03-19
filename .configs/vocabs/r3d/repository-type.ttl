@@ -1,1 +1,32 @@
+#################################################
+# re3data Repository Types
+#################################################
+
+trsp:r3d-repository-type-scheme a skos:ConceptScheme ;
+    skos:prefLabel "re3data Repository Types"@en .
+
+trsp:repositoryDisciplinary a skos:Concept, trsp:RelationshipType ;
+    skos:inScheme trsp:r3d-repository-type-scheme ;
+    skos:prefLabel "Discipline-specific Repository"@en ;
+    skos:definition "Repository focused on and specialised for a defined discipline."@en .
+
+trsp:repositoryGovernmental a skos:Concept, trsp:RelationshipType ;
+    skos:inScheme trsp:r3d-repository-type-scheme ;
+    skos:prefLabel "Governmental Repository"@en ;
+    skos:definition "Repository for government data or research."@en .
+
+trsp:repositoryInstitutional a skos:Concept, trsp:RelationshipType ;
+    skos:inScheme trsp:r3d-repository-type-scheme ;
+    skos:prefLabel "Institutional Repository"@en ;
+    skos:definition "Repository for a research-performing institution."@en .
+
+trsp:repositoryMultiDisciplinary skos:Concept, trsp:RelationshipType ;
+    skos:inScheme trsp:r3d-repository-type-scheme ;
+    skos:prefLabel "Multi-disciplinary Repository"@en ;
+    skos:definition "Repository focused on and specialised for multiple disciplines.."@en .
+
+trsp:repositoryOther skos:Concept, trsp:RelationshipType ;
+    skos:inScheme trsp:r3d-repository-type-scheme ;
+    skos:prefLabel "Other Repository"@en ;
+    skos:definition "Repository not matching any of the other categories."@en .
 
