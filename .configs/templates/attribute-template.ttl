@@ -1,7 +1,10 @@
-@prefix trsp: <https://example.org/trsp/> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 <> a trsp:Attribute, skos:Concept ;
     skos:prefLabel ""@en ;
@@ -10,3 +13,36 @@
     trsp:hasMeasurementType <> ;
     trsp:benchmark ""@en ;
     trsp:cardinalityCode <> .
+
+trsp:att.TEMPLATE
+    a trsp:Attribute, skos:Concept, schema:DefinedTerm ;
+    schema:name ""@en ;
+    skos:prefLabel ""@en ;
+    skos:altLabel ""@en ;
+    schema:description ""@en ;
+    schema:category ""@en ;
+    dcat:keyword ""@en ;
+    trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
+    trsp:benchmark ""@en ;
+    trsp:cardinalityCode trsp:cardinality0_n ;
+    trsp:hasExternalIdentifier [
+        a trsp:ExternalIdentifier ;
+        trsp:relationType trsp:relationAlternateIdentifier ;
+        trsp:object <https://example.org/external/term> ;
+        trsp:contextIRI <https://example.org/external/context> ;
+        trsp:identifierIri <https://example.org/external/term> ;
+        trsp:identifierUsage trsp:defaultUsage
+    ] ;
+    trsp:hasApplicableProfileAssertion [
+        a trsp:ProfileAssertion ;
+        trsp:relationType trsp:includeInProfile ;
+        trsp:object trsp:profile.TEMPLATE ;
+        trsp:profileClass trsp:profileTypeRepository ;
+        trsp:profileAttributeIRI trsp:att.TEMPLATE ;
+        trsp:profileAttributeLabel ""@en ;
+        trsp:profileAttributeCategory ""@en ;
+        trsp:profileAttributeAggregationType trsp:aggregationSingleSelect ;
+        trsp:profileAttributeValue "" ;
+        trsp:profileBenchmark ""@en ;
+        trsp:profileBenchmarkIRI trsp:measurementTypeVocabulary
+    ] .
