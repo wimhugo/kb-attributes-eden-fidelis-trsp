@@ -1,0 +1,20 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: institutionTypes
+##############################################################
+
+r3d:institutionTypes a skos:ConceptScheme ;
+    skos:prefLabel "institutionTypes"@en .
+
+r3d:institutionTypes/commercial a skos:Concept ;
+    skos:inScheme r3d:institutionTypes ;
+    skos:prefLabel "commercial"@en ;
+    skos:definition "commercial"@en .
+
+r3d:institutionTypes/non-profit a skos:Concept ;
+    skos:inScheme r3d:institutionTypes ;
+    skos:prefLabel "non-profit"@en ;
+    skos:definition "non-profit"@en .
