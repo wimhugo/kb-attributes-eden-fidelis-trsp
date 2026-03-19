@@ -1,0 +1,20 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: databaseAccessRestrictions
+##############################################################
+
+r3d:databaseAccessRestrictions a skos:ConceptScheme ;
+    skos:prefLabel "databaseAccessRestrictions"@en .
+
+r3d:databaseAccessRestrictions/feeRequired a skos:Concept ;
+    skos:inScheme r3d:databaseAccessRestrictions ;
+    skos:prefLabel "feeRequired"@en ;
+    skos:definition "feeRequired"@en .
+
+r3d:databaseAccessRestrictions/registration a skos:Concept ;
+    skos:inScheme r3d:databaseAccessRestrictions ;
+    skos:prefLabel "registration"@en ;
+    skos:definition "registration"@en .
