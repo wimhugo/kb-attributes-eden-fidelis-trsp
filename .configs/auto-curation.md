@@ -19,3 +19,11 @@ We make use of the re3data schema in several ways:
 ### 1.2 COAR Trigger
 
 re3data, and indirectly TRSP, makes use of the COAR content type definitions (http://purl.org/coar/resource_type/), and any change in those definitions or a change in the re3data preferred terms will result in a change to https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/content-types.ttl 
+
+### 1.3 ISO Triggers ###
+
+re3data and TRSP both use ISO language and country vocabularies, encoded in the vocabs/iso namepsace in this repository. If any of these soures change, the relevant vocabularies will require updates via pull requests.
+
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/iso/iso-639-3.ttl
+
+
