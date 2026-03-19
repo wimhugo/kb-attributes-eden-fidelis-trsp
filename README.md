@@ -82,7 +82,7 @@ The repository contains a substantial number of repositories, and these are of t
 
 A side benefit of the SKOS TTL definitions of vocabularies is the implicit capablity to map terms to one another, and this can be seen in the example, whiuch shows a mapping netween the TRSP term and teh Dublic Core term. Any other relevant mapping can be added via pull requests, serving indirectly as a vocabulary crosswalk.
 
-'''
+```
 <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AFG> a skos:Concept ;
     skos:inScheme <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
     skos:prefLabel "Afghanistan"@en ;
@@ -91,7 +91,7 @@ A side benefit of the SKOS TTL definitions of vocabularies is the implicit capab
     skos:notation "AFG"^^xsd:string ;
     dct:identifier "AF" ;
     dct:identifier "004" .
-'''
+```
 
 # Maintaining a Knowledge Base in GitHub using CSV/ Google Sheets as a Source
 
