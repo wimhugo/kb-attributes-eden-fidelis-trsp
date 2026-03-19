@@ -1,5 +1,7 @@
 #################################################
 # re3data Repository Types
+# https://schema.re3data.org/4-0/re3dataV4-0.xsd
+# <xs:simpleType name="repositoryTypes">
 #################################################
 
 trsp:r3d-repository-type-scheme a skos:ConceptScheme ;
@@ -23,7 +25,12 @@ trsp:repositoryInstitutional a skos:Concept, trsp:RelationshipType ;
 trsp:repositoryMultiDisciplinary skos:Concept, trsp:RelationshipType ;
     skos:inScheme trsp:r3d-repository-type-scheme ;
     skos:prefLabel "Multi-disciplinary Repository"@en ;
-    skos:definition "Repository focused on and specialised for multiple disciplines.."@en .
+    skos:definition "Repository focused on and specialised for multiple disciplines."@en .
+
+trsp:repositoryProjectRelated skos:Concept, trsp:RelationshipType ;
+    skos:inScheme trsp:r3d-repository-type-scheme ;
+    skos:prefLabel "Project-Related Repository"@en ;
+    skos:definition "Repository established for the purpose of publishing project outputs."@en .
 
 trsp:repositoryOther skos:Concept, trsp:RelationshipType ;
     skos:inScheme trsp:r3d-repository-type-scheme ;
