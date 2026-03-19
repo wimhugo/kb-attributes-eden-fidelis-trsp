@@ -1,0 +1,30 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: dataAccessTypes
+##############################################################
+
+r3d:dataAccessTypes a skos:ConceptScheme ;
+    skos:prefLabel "dataAccessTypes"@en .
+
+r3d:dataAccessTypes/open a skos:Concept ;
+    skos:inScheme r3d:dataAccessTypes ;
+    skos:prefLabel "open"@en ;
+    skos:definition "open"@en .
+
+r3d:dataAccessTypes/embargoed a skos:Concept ;
+    skos:inScheme r3d:dataAccessTypes ;
+    skos:prefLabel "embargoed"@en ;
+    skos:definition "embargoed"@en .
+
+r3d:dataAccessTypes/restricted a skos:Concept ;
+    skos:inScheme r3d:dataAccessTypes ;
+    skos:prefLabel "restricted"@en ;
+    skos:definition "restricted"@en .
+
+r3d:dataAccessTypes/closed a skos:Concept ;
+    skos:inScheme r3d:dataAccessTypes ;
+    skos:prefLabel "closed"@en ;
+    skos:definition "closed"@en .
