@@ -80,7 +80,7 @@ The repository contains a substantial number of repositories, and these are of t
 - Vocabularies that are applicable to Profiles, in the sense that an atteribute in a specific profile has its values constrained to a vocabulary. There are other constraints besides vocabularies applicable here, and we discuss them below. Multiple vocabularies can be defined for the same attribute, each associated with a different profile. For example, re3data and CoreTrustSeal may have different vocabularies for the same attribute, such as 'Repository Type'.
 - External vocabulary resources are maintained on behalf of the community by a large number of institutions and platforms, for example by ISO (languages, countries), COAR (content types), and the like. These are sometimes formalised as machine-readable external sources (for example via PURL or W3ID), but in many cases, the external vocabularies are not machine-readable, and SKOS TTL equivalents are created for use by TRSP and its client systems.
 
-A side benefit of the SKOS TTL definitions of vocabularies is the implicit capablity to map terms to one another, and this can be seen in the example, whiuch shows a mapping netween the TRSP term and teh Dublic Core term. Any other relevant mapping can be added via pull requests, serving indirectly as a vocabulary crosswalk.
+A side benefit of the SKOS TTL definitions of vocabularies is the implicit capablity to map terms to one another, and this can be seen in the example, which shows a mapping between the TRSP term and the Dublic Core term. Any other relevant mapping can be added via pull requests, serving indirectly as a vocabulary crosswalk.
 
 ```
 <https://https://https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AFG> a skos:Concept ;
