@@ -18,4 +18,4 @@ We make use of the re3data schema in several ways:
 
 ### 1.2 COAR Trigger
 
-re3data, and indirectly TRSP, makes use of the COAR content type definitions, and any change in those definitions or a change in the re3data preferred terms will result in a change to https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/content-types.ttl 
+re3data, and indirectly TRSP, makes use of the COAR content type definitions (http://purl.org/coar/resource_type/), and any change in those definitions or a change in the re3data preferred terms will result in a change to https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/content-types.ttl 
