@@ -1,0 +1,51 @@
+# OpenREL Pipeline Config
+# Auto-generated
+
+name: "trsp_test"
+description: "tests the pipeline to a new repo"
+namespace: "openrel"
+source:
+  type: "json"
+  file: "json_input_test_array.json"
+  fields:
+    - IRI
+    - label
+    - description
+    - permissions
+    - action
+    - constraint.name
+    - prohibitions
+    - constraint.operator
+    - constraint.rightOperand
+    - duties
+    - sources
+    - name
+    - link
+template:
+  fields:
+    - type
+    - IRI
+    - label
+    - description
+    - action
+    - constraint.name
+    - constraint.operator
+    - constraint.rightOperand
+    - name
+    - link
+mapping:
+  type: "type"
+  IRI: "IRI"
+  label: "label"
+  description: "description"
+  action: "action"
+  constraint.name: "constraint.name"
+  constraint.operator: "constraint.operator"
+  constraint.rightOperand: "constraint.rightOperand"
+  name: "name"
+  link: "link"
+github:
+  repo: "wimhugo/kb-attributes-eden-fidelis-trsp"
+  branch: "main"
+  target_folder: "test"
+schedule: "manual"
