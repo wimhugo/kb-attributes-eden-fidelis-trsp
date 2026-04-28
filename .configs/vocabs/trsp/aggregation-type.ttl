@@ -5,84 +5,85 @@
 ############################################################################################################################
 
 trsp:profile-aggregation-type-scheme a skos:ConceptScheme ;
-    skos:prefLabel "TRSP profile aggregation types"@en .
+    skos:prefLabel "TRSP profile aggregation types"@en ;
+    skos:hasTopConcept trsp:aggregationSum .
 
 trsp:aggregationSum a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Sum"@en ;
+    skos:prefLabel "aggregation sum"@en ;
     skos:definition "Add the return array values together."@en .
 
 trsp:aggregationCount a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Count"@en ;
+    skos:prefLabel "aggregation count"@en ;
     skos:definition "Count of elements in the return array."@en .
 
 trsp:aggregationMax a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Maximum"@en ;
+    skos:prefLabel "aggregation max"@en ;
     skos:definition "Maximum value of elements in the return array."@en .
 
-trsp:aggregationMax a skos:Concept, trsp:AggregationType ;
+trsp:aggregationMin a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Minimum"@en ;
+    skos:prefLabel "aggregation minimum"@en ;
     skos:definition "Minimum value of elements in the return array."@en .
 
 trsp:aggregationAve a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Average"@en ;
+    skos:prefLabel "aggregation ave"@en ;
     skos:definition "Average of the return array values."@en .
 
 trsp:aggregationFirst a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "First"@en ;
+    skos:prefLabel "aggregation first"@en ;
     skos:definition "First element in the return array (ordered ascending)."@en .
 
 trsp:aggregationLast a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Last"@en ;
+    skos:prefLabel "aggregation last"@en ;
     skos:definition "Last element in the return array (ordered ascending)."@en .
 
 trsp:aggregationMedian a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Median"@en ;
+    skos:prefLabel "aggregation median"@en ;
     skos:definition "Median of elements in the return array (ordered ascending)."@en .
 
 trsp:aggregationList a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "List"@en ;
+    skos:prefLabel "aggregation list"@en ;
     skos:definition "A delimited list of unique elements in the return array (ordered ascending)."@en .
 
 trsp:aggregationUnion a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Union"@en ;
+    skos:prefLabel "aggregation union"@en ;
     skos:definition "A range or coverage spanning the elements in the return array (ordered ascending)."@en .
 
 trsp:aggregationNER a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Named Entity Recognition"@en ;
+    skos:prefLabel "aggregation ner"@en ;
     skos:definition "Perform matching of array elements or value to a controlled vocabulary"@en .
 
 trsp:aggregationExists a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Exists"@en ;
+    skos:prefLabel "aggregation exists"@en ;
     skos:definition "True if any value or array is returned"@en .
 
 trsp:aggregationInherit a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Inherit"@en ;
+    skos:prefLabel "aggregation inherit"@en ;
     skos:definition "The value returned is assigned directly"@en .
 
 trsp:aggregationCategoryCount a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Category Count"@en ;
+    skos:prefLabel "aggregation category count"@en ;
     skos:definition "Return a count of unique elements in the array"@en .
 
 trsp:aggregationMap a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Map"@en ;
+    skos:prefLabel "aggregation map"@en ;
     skos:definition "Map elements or ranges in the source array to a target array"@en .
 
 trsp:aggregationMatch a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
-    skos:prefLabel "Matches Benchmark"@en ;
+    skos:prefLabel "aggregation match"@en ;
     skos:definition "Exactly one value in the return array is selected if it matches a benchmark ."@en .
