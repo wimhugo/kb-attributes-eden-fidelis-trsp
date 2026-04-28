@@ -7,7 +7,8 @@
 ##############################################################
 
 r3d:dataUploadTypes a skos:ConceptScheme ;
-    skos:prefLabel "dataUploadTypes"@en .
+    skos:prefLabel "dataUploadTypes"@en ;
+    skos:hasTopConcept r3d:dataUploadTypes/open .
 
 r3d:dataUploadTypes/open a skos:Concept ;
     skos:inScheme r3d:dataUploadTypes ;
