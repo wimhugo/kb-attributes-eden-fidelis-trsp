@@ -7,15 +7,22 @@
 ##############################################################
 
 r3d:databaseAccessRestrictions a skos:ConceptScheme ;
-    skos:prefLabel "database access restrictions"@en .
+    skos:prefLabel "database access restrictions"@en ;
+    skos:hasTopConcept r3d:databaseAccessRestrictions/feeRequired , r3d:databaseAccessRestrictions/registration .
 
 r3d:databaseAccessRestrictions/feeRequired a skos:Concept ;
     skos:inScheme r3d:databaseAccessRestrictions ;
     skos:prefLabel "fee required"@en ;
-    skos:definition "feeRequired"@en .
+    skos:definition "feeRequired"@en ;
+    skos:broader r3d:databaseAccessRestrictions .
 
 r3d:databaseAccessRestrictions/registration a skos:Concept ;
     skos:inScheme r3d:databaseAccessRestrictions ;
     skos:prefLabel "registration"@en ;
-    skos:definition "registration"@en .
+    skos:definition "registration"@en ;
+    skos:broader r3d:databaseAccessRestrictions .
 
+# --- deterministic fixes ---
+r3d:databaseAccessRestrictions skos:prefLabel "database access restrictions"@en .
+r3d:databaseAccessRestrictions/feeRequired skos:prefLabel "fee required"@en .
+r3d:databaseAccessRestrictions/registration skos:prefLabel "registration"@en .
