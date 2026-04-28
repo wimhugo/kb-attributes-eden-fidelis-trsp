@@ -5,7 +5,8 @@
 ############################################################################################################################
 
 trsp:profile-aggregation-type-scheme a skos:ConceptScheme ;
-    skos:prefLabel "TRSP profile aggregation types"@en .
+    skos:prefLabel "TRSP profile aggregation types"@en ;
+    skos:topConceptOf trsp:profile-aggregation-type-scheme .
 
 trsp:aggregationSum a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
@@ -22,7 +23,7 @@ trsp:aggregationMax a skos:Concept, trsp:AggregationType ;
     skos:prefLabel "Maximum"@en ;
     skos:definition "Maximum value of elements in the return array."@en .
 
-trsp:aggregationMax a skos:Concept, trsp:AggregationType ;
+trsp:aggregationMin a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
     skos:prefLabel "Minimum"@en ;
     skos:definition "Minimum value of elements in the return array."@en .
@@ -86,3 +87,4 @@ trsp:aggregationMatch a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
     skos:prefLabel "Matches Benchmark"@en ;
     skos:definition "Exactly one value in the return array is selected if it matches a benchmark ."@en .
+
