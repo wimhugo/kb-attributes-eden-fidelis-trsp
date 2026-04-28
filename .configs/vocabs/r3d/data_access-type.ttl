@@ -30,7 +30,6 @@ r3d:dataAccessTypes/closed a skos:Concept ;
     skos:prefLabel "closed"@en ;
     skos:definition "closed"@en .
 
-
 # --- deterministic fixes ---
 r3d:dataAccessTypes skos:prefLabel "data access types"@en .
 r3d:dataAccessTypes/open skos:prefLabel "open"@en .
