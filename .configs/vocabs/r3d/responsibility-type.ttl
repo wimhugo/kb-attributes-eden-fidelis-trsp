@@ -1,4 +1,4 @@
-@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -7,28 +7,17 @@
 ##############################################################
 
 r3d:responsibilityTypes a skos:ConceptScheme ;
-    skos:prefLabel "responsibilityTypes"@en ;
-    skos:hasTopConcept r3d:responsibilityTypes/funding ;
-    skos:hasTopConcept r3d:responsibilityTypes/general ;
-    skos:hasTopConcept r3d:responsibilityTypes/technical .
+    skos:prefLabel "responsibility types"@en ;
+    skos:hasTopConcept r3d:responsibilityTypes/funding, r3d:responsibilityTypes/general, r3d:responsibilityTypes/technical .
 
 r3d:responsibilityTypes/funding a skos:Concept ;
     skos:inScheme r3d:responsibilityTypes ;
-    skos:prefLabel "funding"@en ;
-    skos:definition "funding"@en .
+    skos:prefLabel "funding"@en .
 
 r3d:responsibilityTypes/general a skos:Concept ;
     skos:inScheme r3d:responsibilityTypes ;
-    skos:prefLabel "general"@en ;
-    skos:definition "general"@en .
+    skos:prefLabel "general"@en .
 
 r3d:responsibilityTypes/technical a skos:Concept ;
     skos:inScheme r3d:responsibilityTypes ;
-    skos:prefLabel "technical"@en ;
-    skos:definition "technical"@en .
-
-# --- deterministic fixes ---
-r3d:responsibilityTypes skos:prefLabel "responsibility types"@en .
-r3d:responsibilityTypes/funding skos:prefLabel "funding"@en .
-r3d:responsibilityTypes/general skos:prefLabel "general"@en .
-r3d:responsibilityTypes/technical skos:prefLabel "technical"@en .
+    skos:prefLabel "technical"@en .
