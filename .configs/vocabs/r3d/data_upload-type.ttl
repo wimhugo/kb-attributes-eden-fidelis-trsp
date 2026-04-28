@@ -7,7 +7,7 @@
 ##############################################################
 
 r3d:dataUploadTypes a skos:ConceptScheme ;
-    skos:prefLabel "data upload types"@en ;
+    skos:prefLabel "dataUploadTypes"@en ;
     skos:hasTopConcept r3d:dataUploadTypes/open .
 
 r3d:dataUploadTypes/open a skos:Concept ;
@@ -27,6 +27,7 @@ r3d:dataUploadTypes/closed a skos:Concept ;
 
 
 # --- deterministic fixes ---
+
 r3d:dataUploadTypes skos:prefLabel "data upload types"@en .
 r3d:dataUploadTypes/open skos:prefLabel "open"@en .
 r3d:dataUploadTypes/restricted skos:prefLabel "restricted"@en .
