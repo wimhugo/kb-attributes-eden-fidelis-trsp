@@ -1,4 +1,4 @@
-@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -7,7 +7,9 @@
 ##############################################################
 
 r3d:relatedRepositoryTypes a skos:ConceptScheme ;
-    skos:prefLabel "relatedRepositoryTypes"@en .
+    skos:prefLabel "related repository types"@en ;
+    skos:hasTopConcept r3d:relatedRepositoryTypes/predecessor ;
+    skos:hasTopConcept r3d:relatedRepositoryTypes/successor .
 
 r3d:relatedRepositoryTypes/predecessor a skos:Concept ;
     skos:inScheme r3d:relatedRepositoryTypes ;
@@ -18,3 +20,6 @@ r3d:relatedRepositoryTypes/successor a skos:Concept ;
     skos:inScheme r3d:relatedRepositoryTypes ;
     skos:prefLabel "successor"@en ;
     skos:definition "successor"@en .
+
+r3d:relatedRepositoryTypes/predecessor skos:related r3d:relatedRepositoryTypes/successor ;
+r3d:relatedRepositoryTypes/successor skos:related r3d:relatedRepositoryTypes/predecessor .
