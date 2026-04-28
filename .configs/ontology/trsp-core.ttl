@@ -119,7 +119,6 @@ trsp:hasAttributeAssertion a rdf:Property ;            ## follow up - not sure
     rdfs:domain trsp:Profile ;
     rdfs:range trsp:AttributeAssertion .
 
-
 ####################################################################################
 # Attribute assertion
 # Applies to those repostories and services that measure one or more attributes
@@ -221,6 +220,5 @@ trsp:ExternalIdentifier a rdfs:Class ;
 trsp:profileAttributeValue a rdf:Property ;
     rdfs:label "profile attribute value"@en ;
     rdfs:domain trsp:ProfileAssertion .
-
 
 trsp:service a rdf:Property .
