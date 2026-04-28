@@ -4,16 +4,16 @@
 
 trsp:measurement-type-scheme a skos:ConceptScheme ;
     skos:prefLabel "TRSP measurement types"@en ;
-    skos:hasTopConcept trsp:measurementTypeNone ;
-    skos:hasTopConcept trsp:measurementTypeBinary ;
-    skos:hasTopConcept trsp:measurementTypeBinaryEvidence ;
-    skos:hasTopConcept trsp:measurementTypeVocabulary ;
-    skos:hasTopConcept trsp:measurementTypeRegistry ;
-    skos:hasTopConcept trsp:measurementTypeChecklist ;
-    skos:hasTopConcept trsp:measurementTypeChecklistEvidence ;
-    skos:hasTopConcept trsp:measurementTypeFormat ;
-    skos:hasTopConcept trsp:measurementTypeSpecialType ;
-    skos:hasTopConcept trsp:measurementTypeStandard ;
+    skos:hasTopConcept trsp:measurementTypeNone ;  
+    skos:hasTopConcept trsp:measurementTypeBinary ;  
+    skos:hasTopConcept trsp:measurementTypeBinaryEvidence ;  
+    skos:hasTopConcept trsp:measurementTypeVocabulary ;  
+    skos:hasTopConcept trsp:measurementTypeRegistry ;  
+    skos:hasTopConcept trsp:measurementTypeChecklist ;  
+    skos:hasTopConcept trsp:measurementTypeChecklistEvidence ;  
+    skos:hasTopConcept trsp:measurementTypeFormat ;  
+    skos:hasTopConcept trsp:measurementTypeSpecialType ;  
+    skos:hasTopConcept trsp:measurementTypeStandard ;  
     skos:hasTopConcept trsp:measurementTypeSpecification .
 
 trsp:measurementTypeNone a skos:Concept, trsp:MeasurementType ;
