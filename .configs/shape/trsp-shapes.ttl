@@ -75,3 +75,15 @@ trsp:ConceptScheme
 trsp:Attribute skos:prefLabel "Attribute (alternative)"@en .
 trsp:Repository skos:prefLabel "Repository (alternative)"@en .
 trsp:Service skos:prefLabel "Service (alternative)"@en .
+
+# --- deterministic fixes ---
+trsp:ConceptScheme skos:prefLabel "concept scheme"@en .
+trsp:ConceptScheme skos:narrower ; .
+
+# Ensure each concept has an inverse relationship
+trsp:Attribute skos:related trsp:Repository .
+trsp:Repository skos:related trsp:Attribute .
+trsp:Attribute skos:related trsp:Service .
+trsp:Service skos:related trsp:Attribute .
+trsp:Repository skos:related trsp:Service .
+trsp:Service skos:related trsp:Repository .
