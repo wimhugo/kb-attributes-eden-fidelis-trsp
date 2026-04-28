@@ -3,7 +3,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 trsp:cardinality-scheme a skos:ConceptScheme ;
-    skos:prefLabel "TRSP cardinality types"@en .
+    skos:prefLabel "TRSP cardinality types"@en ;
+    skos:hasTopConcept trsp:cardinality0_1 ;
+    skos:hasTopConcept trsp:cardinality1_1 ;
+    skos:hasTopConcept trsp:cardinality0_n ;
+    skos:hasTopConcept trsp:cardinality1_n .
 
 trsp:cardinality0_1
     a skos:Concept, trsp:CardinalityType ;
@@ -32,3 +36,9 @@ trsp:cardinality1_n
     skos:prefLabel "1..n"@en ;
     skos:notation "1..n" ;
     skos:definition "One or more values required."@en .
+
+trsp:cardinality-scheme skos:prefLabel "cardinality-scheme"@en .
+trsp:cardinality0_1 skos:prefLabel "cardinality0 1"@en .
+trsp:cardinality1_1 skos:prefLabel "cardinality1 1"@en .
+trsp:cardinality0_n skos:prefLabel "cardinality0 n"@en .
+trsp:cardinality1_n skos:prefLabel "cardinality1 n"@en .
