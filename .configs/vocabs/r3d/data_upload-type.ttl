@@ -26,9 +26,16 @@ r3d:dataUploadTypes/closed a skos:Concept ;
     skos:definition "closed"@en .
 
 # --- deterministic fixes ---
-
 r3d:dataUploadTypes skos:prefLabel "data upload types"@en .
 r3d:dataUploadTypes/open skos:prefLabel "open"@en .
 r3d:dataUploadTypes/restricted skos:prefLabel "restricted"@en .
 r3d:dataUploadTypes/closed skos:prefLabel "closed"@en .
 r3d:dataUploadTypes/open skos:topConceptOf r3d:dataUploadTypes .
+
+r3d:dataUploadTypes/open skos:broader r3d:dataUploadTypes .
+r3d:dataUploadTypes/restricted skos:broader r3d:dataUploadTypes .
+r3d:dataUploadTypes/closed skos:broader r3d:dataUploadTypes .
+
+# Additional Relationships 
+r3d:dataUploadTypes/open skos:related r3d:dataUploadTypes/restricted ;
+r3d:dataUploadTypes/open skos:related r3d:dataUploadTypes/closed .
