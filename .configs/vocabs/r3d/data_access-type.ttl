@@ -1,4 +1,4 @@
-@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -36,3 +36,11 @@ r3d:dataAccessTypes/open skos:prefLabel "open"@en .
 r3d:dataAccessTypes/embargoed skos:prefLabel "embargoed"@en .
 r3d:dataAccessTypes/restricted skos:prefLabel "restricted"@en .
 r3d:dataAccessTypes/closed skos:prefLabel "closed"@en .
+
+# Adding skos:broader and skos:related inverses to orphan concepts
+r3d:dataAccessTypes/embargoed skos:broader r3d:dataAccessTypes/open .
+r3d:dataAccessTypes/open skos:related r3d:dataAccessTypes/embargoed .
+r3d:dataAccessTypes/restricted skos:broader r3d:dataAccessTypes/open .
+r3d:dataAccessTypes/open skos:related r3d:dataAccessTypes/restricted .
+r3d:dataAccessTypes/closed skos:broader r3d:dataAccessTypes/open .
+r3d:dataAccessTypes/open skos:related r3d:dataAccessTypes/closed .
