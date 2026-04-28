@@ -4,24 +4,22 @@
 
 trsp:profile-type-scheme a skos:ConceptScheme ;
     skos:prefLabel "TRSP profile types"@en ;
-    skos:hasTopConcept trsp:profileTypeRepository,
-                    trsp:profileTypeService,
-                    trsp:profileTypeSource,
-                    trsp:profileTypeStandard,
-                    trsp:profileTypeCommunityProfile,
-                    trsp:profileTypeUserProfile .
+    skos:hasTopConcept trsp:profileTypeRepository, trsp:profileTypeService, trsp:profileTypeSource, trsp:profileTypeStandard, trsp:profileTypeCommunityProfile, trsp:profileTypeUserProfile .
+
 
 trsp:profileTypeRepository a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Repository"@en ;
     dct:description "The profile represents the attributes maintained and published by a Repository"@en;
     skos:inScheme trsp:profile-type-scheme ;
-    skos:related trsp:profileTypeService .
+    skos:related trsp:profileTypeCommunityProfile ;
+    skos:related rdfs:label "Computes the Repository that has a relationship with the Community Profile" .
 
 trsp:profileTypeService a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Service"@en ;
     dct:description "The profile represents the attributes maintained and published by a Service"@en;
     skos:inScheme trsp:profile-type-scheme ;
-    skos:related trsp:profileTypeRepository .
+    skos:related trsp:profileTypeUserProfile ;
+    skos:related rdfs:label "Computes the Service that has a relationship with the User Profile" .
 
 trsp:profileTypeSource a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Source"@en ;
