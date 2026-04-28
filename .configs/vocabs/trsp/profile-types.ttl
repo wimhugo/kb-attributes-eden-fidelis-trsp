@@ -4,48 +4,44 @@
 
 trsp:profile-type-scheme a skos:ConceptScheme ;
     skos:prefLabel "TRSP profile types"@en ;
-    skos:hasTopConcept trsp:profileTypeRepository ;
-    skos:hasTopConcept trsp:profileTypeService ;
-    skos:hasTopConcept trsp:profileTypeSource ;
-    skos:hasTopConcept trsp:profileTypeStandard ;
-    skos:hasTopConcept trsp:profileTypeCommunityProfile ;
-    skos:hasTopConcept trsp:profileTypeUserProfile .
+    skos:hasTopConcept trsp:profileTypeRepository,
+                    trsp:profileTypeService,
+                    trsp:profileTypeSource,
+                    trsp:profileTypeStandard,
+                    trsp:profileTypeCommunityProfile,
+                    trsp:profileTypeUserProfile .
 
 trsp:profileTypeRepository a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Repository"@en ;
     dct:description "The profile represents the attributes maintained and published by a Repository"@en;
     skos:inScheme trsp:profile-type-scheme ;
-    skos:broader trsp:profile-type-scheme .
+    skos:related trsp:profileTypeService .
 
 trsp:profileTypeService a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Service"@en ;
     dct:description "The profile represents the attributes maintained and published by a Service"@en;
     skos:inScheme trsp:profile-type-scheme ;
-    skos:broader trsp:profile-type-scheme .
+    skos:related trsp:profileTypeRepository .
 
 trsp:profileTypeSource a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Source"@en ;
     dct:description "The profile represents the attributes published by an authoritative Source, such as a working group or an infrastructure"@en;
-    skos:inScheme trsp:profile-type-scheme ;
-    skos:broader trsp:profile-type-scheme .
+    skos:inScheme trsp:profile-type-scheme .
 
 trsp:profileTypeStandard a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Standard"@en ;
     dct:description "The profile represents the attributes maintained and published as a Standard, for example schema.org or DCAT"@en;
-    skos:inScheme trsp:profile-type-scheme ;
-    skos:broader trsp:profile-type-scheme .
+    skos:inScheme trsp:profile-type-scheme .
 
 trsp:profileTypeCommunityProfile a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "Community Profile"@en ;
     dct:description "The profile represents the attributes maintained and published as part of a community profile - for example FIDELIS network"@en;
-    skos:inScheme trsp:profile-type-scheme ;
-    skos:broader trsp:profile-type-scheme .
+    skos:inScheme trsp:profile-type-scheme .
 
 trsp:profileTypeUserProfile a skos:Concept, trsp:ProfileType ;
     skos:prefLabel "User Profile"@en ;
-    dct:description "The profile represents the attributes associated with the exepctations or criteria of an individual User"@en;
-    skos:inScheme trsp:profile-type-scheme ;
-    skos:broader trsp:profile-type-scheme .
+    dct:description "The profile represents the attributes associated with the expectations or criteria of an individual User"@en;
+    skos:inScheme trsp:profile-type-scheme .
 
 # --- deterministic fixes ---
 trsp:profile-type-scheme skos:prefLabel "profile-type-scheme"@en .
