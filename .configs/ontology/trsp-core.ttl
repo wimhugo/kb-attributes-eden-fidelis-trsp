@@ -114,14 +114,14 @@ trsp:hasProfileType a rdf:Property ;
     rdfs:domain trsp:Profile ;
     rdfs:range trsp:ProfileType .
 
-trsp:hasAttributeAssertion a rdf:Property ;            ## follow up - not sure
+trsp:hasAttributeAssertion a rdf:Property ;
     rdfs:label "has attribute assertion"@en ;
     rdfs:domain trsp:Profile ;
     rdfs:range trsp:AttributeAssertion .
 
 ####################################################################################
 # Attribute assertion
-# Applies to those repostories and services that measure one or more attributes
+# Applies to those repositories and services that measure one or more attributes
 ####################################################################################
 
 trsp:aboutAttribute a rdf:Property ;                    ## nomenclature change
@@ -135,7 +135,7 @@ trsp:forProfile a rdf:Property ;
     rdfs:range trsp:Profile .
 
 ####################################################################################
-# Attribute measurement 
+# Attribute measurement
 ####################################################################################
 
 ## trsp:measurement a rdf:Property .                    ## preferred term
@@ -170,7 +170,7 @@ trsp:repository a rdf:Property ;
 
 ########################################################################################
 # Profile Assertion Properties
-# Applies to any profile that includes and attribute
+# Applies to any profile that includes an attribute
 ########################################################################################
 
 #    The class (type) of profile
@@ -206,7 +206,7 @@ trsp:profileBenchmark a rdf:Property ;
     rdfs:label "profile benchmark"@en ;
     rdfs:domain trsp:ProfileAssertion .
 
-#    A controlled vocabulary describing the benchmark (m easurement) type 
+#    A controlled vocabulary describing the benchmark (measurement) type
 #    trsp:measurementTypeVocabulary
 trsp:profileBenchmarkIRI a rdf:Property ;
     rdfs:label "profile benchmark IRI"@en ;
@@ -216,13 +216,12 @@ trsp:profileBenchmarkIRI a rdf:Property ;
 trsp:ExternalIdentifier a rdfs:Class ;
     rdfs:label "External identifier"@en .
 
-#    Not sure about this one - reused by some properties in the 'Profile' class 
+#    Not sure about this one - reused by some properties in the 'Profile' class
 trsp:profileAttributeValue a rdf:Property ;
     rdfs:label "profile attribute value"@en ;
     rdfs:domain trsp:ProfileAssertion .
 
 trsp:service a rdf:Property ;
-
 
 trsp:CoreConcept a skos:Concept ;
     skos:prefLabel "Core Concept"@en ;
@@ -232,3 +231,12 @@ trsp:CoreConcept a skos:Concept ;
 trsp:CoreConceptScheme a skos:ConceptScheme ;
     skos:prefLabel "Core Concept Scheme"@en ;
     skos:hasTopConcept trsp:CoreConcept .
+
+# --- deterministic fixes ---
+trsp:CoreConcept skos:prefLabel "core concept"@en .
+trsp:CoreConceptScheme skos:prefLabel "core concept scheme"@en .
+
+trsp:ProfileType skos:prefLabel "Profile Type"@en .
+trsp:Service skos:broader trsp:Profile .
+trsp:Repository skos:broader trsp:Profile .
+trsp:Attribute skos:broader trsp:Profile .
