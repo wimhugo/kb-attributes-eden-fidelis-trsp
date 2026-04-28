@@ -221,4 +221,14 @@ trsp:profileAttributeValue a rdf:Property ;
     rdfs:label "profile attribute value"@en ;
     rdfs:domain trsp:ProfileAssertion .
 
-trsp:service a rdf:Property .
+trsp:service a rdf:Property ;
+
+
+trsp:CoreConcept a skos:Concept ;
+    skos:prefLabel "Core Concept"@en ;
+    skos:topConceptOf trsp:CoreConceptScheme ;
+    skos:related trsp:Service .
+
+trsp:CoreConceptScheme a skos:ConceptScheme ;
+    skos:prefLabel "Core Concept Scheme"@en ;
+    skos:hasTopConcept trsp:CoreConcept .
