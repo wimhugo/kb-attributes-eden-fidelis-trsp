@@ -23,3 +23,11 @@ r3d:dataAccessRestrictions/registration a skos:Concept ;
     skos:inScheme r3d:dataAccessRestrictions ;
     skos:prefLabel "registration"@en ;
     skos:definition "registration"@en .
+
+
+# --- deterministic fixes ---
+r3d:dataAccessRestrictions skos:prefLabel "data access restrictions"@en .
+r3d:dataAccessRestrictions/feeRequired skos:prefLabel "fee required"@en .
+r3d:dataAccessRestrictions/institutionalMembership skos:prefLabel "institutional membership"@en .
+r3d:dataAccessRestrictions/registration skos:prefLabel "registration"@en .
+

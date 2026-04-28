@@ -7,7 +7,8 @@
 ##############################################################
 
 r3d:dataAccessTypes a skos:ConceptScheme ;
-    skos:prefLabel "dataAccessTypes"@en .
+    skos:prefLabel "dataAccessTypes"@en ;
+    skos:hasTopConcept r3d:dataAccessTypes/open .
 
 r3d:dataAccessTypes/open a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
@@ -28,3 +29,10 @@ r3d:dataAccessTypes/closed a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
     skos:prefLabel "closed"@en ;
     skos:definition "closed"@en .
+
+# --- deterministic fixes ---
+r3d:dataAccessTypes skos:prefLabel "data access types"@en .
+r3d:dataAccessTypes/open skos:prefLabel "open"@en .
+r3d:dataAccessTypes/embargoed skos:prefLabel "embargoed"@en .
+r3d:dataAccessTypes/restricted skos:prefLabel "restricted"@en .
+r3d:dataAccessTypes/closed skos:prefLabel "closed"@en .
