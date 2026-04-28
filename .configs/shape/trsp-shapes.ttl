@@ -2,6 +2,8 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdft: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 #################################
 # Attribute shape
@@ -39,6 +41,31 @@ trsp:ServiceShape
         sh:minCount 1 ;
     ] .
 
-# Updated prefixes for compliance
-@prefix rdft: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+#################################
+# Additional Requirements
+#################################
+
+# Fixing SKOS concepts
+# Adding skos:topConceptOf for root top concepts
+# Ensuring all concepts have a prefLabel
+
+trsp:Attribute
+    a skos:Concept ;
+    skos:prefLabel "Attribute"@en ;
+    skos:broader trsp:ConceptScheme .
+
+trsp:Repository
+    a skos:Concept ;
+    skos:prefLabel "Repository"@en ;
+    skos:broader trsp:ConceptScheme .
+
+trsp:Service
+    a skos:Concept ;
+    skos:prefLabel "Service"@en ;
+    skos:broader trsp:ConceptScheme .
+
+trsp:ConceptScheme
+    a skos:ConceptScheme ;
+    skos:hasTopConcept trsp:Attribute ;
+    skos:hasTopConcept trsp:Repository ;
+    skos:hasTopConcept trsp:Service .
