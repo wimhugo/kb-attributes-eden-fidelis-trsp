@@ -70,3 +70,17 @@ trsp:measurementTypeSpecification a skos:Concept, trsp:MeasurementType ;
     skos:prefLabel "Specification"@en ;
     dct:description "The measurement MUST correspond to a machine-actionable specification referenced via IRI"@en ;
     skos:inScheme trsp:measurement-type-scheme .
+
+# --- deterministic fixes ---
+trsp:measurement-type-scheme skos:prefLabel "measurement-type-scheme"@en .
+trsp:measurementTypeNone skos:prefLabel "measurement type none"@en .
+trsp:measurementTypeBinary skos:prefLabel "measurement type binary"@en .
+trsp:measurementTypeBinaryEvidence skos:prefLabel "measurement type binary evidence"@en .
+trsp:measurementTypeVocabulary skos:prefLabel "measurement type vocabulary"@en .
+trsp:measurementTypeRegistry skos:prefLabel "measurement type registry"@en .
+trsp:measurementTypeChecklist skos:prefLabel "measurement type checklist"@en .
+trsp:measurementTypeChecklistEvidence skos:prefLabel "measurement type checklist evidence"@en .
+trsp:measurementTypeFormat skos:prefLabel "measurement type format"@en .
+trsp:measurementTypeSpecialType skos:prefLabel "measurement type special type"@en .
+trsp:measurementTypeStandard skos:prefLabel "measurement type standard"@en .
+trsp:measurementTypeSpecification skos:prefLabel "measurement type specification"@en .
