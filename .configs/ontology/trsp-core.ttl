@@ -240,3 +240,19 @@ trsp:ProfileType skos:prefLabel "Profile Type"@en .
 trsp:Service skos:broader trsp:Profile .
 trsp:Repository skos:broader trsp:Profile .
 trsp:Attribute skos:broader trsp:Profile .
+
+trsp:Source a skos:Concept ;
+    skos:prefLabel "Source"@en ;
+    skos:broader trsp:Profile .
+
+trsp:Standard a skos:Concept ;
+    skos:prefLabel "Standard"@en ;
+    skos:broader trsp:Profile .
+
+trsp:CommunityProfile a skos:Concept ;
+    skos:prefLabel "Community Profile"@en ;
+    skos:broader trsp:Profile .
+
+trsp:UserProfile a skos:Concept ;
+    skos:prefLabel "User Profile"@en ;
+    skos:broader trsp:Profile .
