@@ -1,7 +1,3 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix trsp: <http://example.org/trsp#> .
-@prefix dct: <http://purl.org/dc/terms/> .
-
 trsp:identifier-usage-scheme a skos:ConceptScheme ;
     skos:prefLabel "TRSP identifier usage types"@en ;
     skos:hasTopConcept trsp:defaultUsage .
@@ -10,12 +6,7 @@ trsp:defaultUsage a skos:Concept ;
     skos:inScheme trsp:identifier-usage-scheme ;
     skos:prefLabel "default usage"@en ;
     skos:definition "Default use of identifier."@en ;
-    skos:related trsp:anotherUsage ;
-    skos:broader trsp:identifier-usage-scheme .
+    skos:prefLabel "default usage"@en .
 
-trsp:anotherUsage a skos:Concept ;
-    skos:inScheme trsp:identifier-usage-scheme ;
-    skos:prefLabel "another usage"@en ;
-    skos:definition "Another possible use of identifier."@en ;
-    skos:related trsp:defaultUsage ;
-    skos:broader trsp:identifier-usage-scheme .
+# Adding broader relationship assuming it belongs in some hierarchy
+trsp:defaultUsage skos:broader trsp:identifier-usage-scheme .
