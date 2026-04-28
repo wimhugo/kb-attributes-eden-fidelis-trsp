@@ -7,9 +7,9 @@
 ##############################################################
 
 r3d:relatedRepositoryTypes a skos:ConceptScheme ;
-    skos:prefLabel "related repository types"@en ;
-    skos:hasTopConcept r3d:relatedRepositoryTypes/predecessor ,
-                      r3d:relatedRepositoryTypes/successor .
+    skos:prefLabel "relatedRepositoryTypes"@en ;
+    skos:hasTopConcept r3d:relatedRepositoryTypes/predecessor ;
+    skos:hasTopConcept r3d:relatedRepositoryTypes/successor .
 
 r3d:relatedRepositoryTypes/predecessor a skos:Concept ;
     skos:inScheme r3d:relatedRepositoryTypes ;
@@ -21,5 +21,7 @@ r3d:relatedRepositoryTypes/successor a skos:Concept ;
     skos:prefLabel "successor"@en ;
     skos:definition "successor"@en .
 
-r3d:relatedRepositoryTypes/predecessor skos:broader r3d:relatedRepositoryTypes/successor .
-r3d:relatedRepositoryTypes/successor skos:broader r3d:relatedRepositoryTypes/predecessor .
+# --- deterministic fixes ---
+r3d:relatedRepositoryTypes skos:prefLabel "related repository types"@en .
+r3d:relatedRepositoryTypes/predecessor skos:prefLabel "predecessor"@en .
+r3d:relatedRepositoryTypes/successor skos:prefLabel "successor"@en .
