@@ -7,7 +7,10 @@
 ##############################################################
 
 r3d:databaseAccessTypes a skos:ConceptScheme ;
-    skos:prefLabel "databaseAccessTypes"@en .
+    skos:prefLabel "database access types"@en ;
+    skos:hasTopConcept r3d:databaseAccessTypes/open ;
+    skos:hasTopConcept r3d:databaseAccessTypes/restricted ;
+    skos:hasTopConcept r3d:databaseAccessTypes/closed .
 
 r3d:databaseAccessTypes/open a skos:Concept ;
     skos:inScheme r3d:databaseAccessTypes ;
