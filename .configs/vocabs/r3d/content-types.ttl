@@ -139,3 +139,29 @@
     skos:prefLabel "other"@en ;
     skos:definition "other"@en ;
     skos:notation "c_1843"^^xsd:string .
+
+
+# --- deterministic fixes ---
+<http://purl.org/coar/resource_type/> skos:prefLabel ""@en .
+<http://purl.org/coar/resource_type/c_ddb1> skos:prefLabel "c ddb1"@en .
+<http://purl.org/coar/resource_type/ACF7-8YT9> skos:prefLabel "acf7-8yt9"@en .
+<http://purl.org/coar/resource_type/c_cb28> skos:prefLabel "c cb28"@en .
+<http://purl.org/coar/resource_type/FXF3-D3G7> skos:prefLabel "fxf3-d3g7"@en .
+<http://purl.org/coar/resource_type/AM6W-6QAW> skos:prefLabel "am6w-6qaw"@en .
+<http://purl.org/coar/resource_type/63NG-B465> skos:prefLabel "63ng-b465"@en .
+<http://purl.org/coar/resource_type/A8F1-NPV9> skos:prefLabel "a8f1-npv9"@en .
+<http://purl.org/coar/resource_type/2H0M-X761> skos:prefLabel "2h0m-x761"@en .
+<http://purl.org/coar/resource_type/H41Y-FW7B> skos:prefLabel "h41y-fw7b"@en .
+<http://purl.org/coar/resource_type/DD58-GFSX> skos:prefLabel "dd58-gfsx"@en .
+<http://purl.org/coar/resource_type/FF4C-28RK> skos:prefLabel "ff4c-28rk"@en .
+<http://purl.org/coar/resource_type/CQMR-7K63> skos:prefLabel "cqmr-7k63"@en .
+<http://purl.org/coar/resource_type/W2XT-7017> skos:prefLabel "w2xt-7017"@en .
+<http://purl.org/coar/resource_type/NHD0-W6SY> skos:prefLabel "nhd0-w6sy"@en .
+<http://purl.org/coar/resource_type/c_c513> skos:prefLabel "c c513"@en .
+<http://purl.org/coar/resource_type/c_8a7e> skos:prefLabel "c 8a7e"@en .
+<http://purl.org/coar/resource_type/c_ecc8> skos:prefLabel "c ecc8"@en .
+<http://purl.org/coar/resource_type/c_5ce6> skos:prefLabel "c 5ce6"@en .
+<http://purl.org/coar/resource_type/c_c950> skos:prefLabel "c c950"@en .
+<http://purl.org/coar/resource_type/QH80-2R4E> skos:prefLabel "qh80-2r4e"@en .
+<http://purl.org/coar/resource_type/c_18cf> skos:prefLabel "c 18cf"@en .
+<http://purl.org/coar/resource_type/c_1843> skos:prefLabel "c 1843"@en .
