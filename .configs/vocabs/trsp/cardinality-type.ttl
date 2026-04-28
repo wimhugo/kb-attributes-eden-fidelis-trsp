@@ -4,10 +4,7 @@
 
 trsp:cardinality-scheme a skos:ConceptScheme ;
     skos:prefLabel "TRSP cardinality types"@en ;
-    skos:hasTopConcept trsp:cardinality0_1 ;
-    skos:hasTopConcept trsp:cardinality1_1 ;
-    skos:hasTopConcept trsp:cardinality0_n ;
-    skos:hasTopConcept trsp:cardinality1_n .
+    skos:hasTopConcept trsp:cardinality0_1 .
 
 trsp:cardinality0_1
     a skos:Concept, trsp:CardinalityType ;
@@ -36,5 +33,3 @@ trsp:cardinality1_n
     skos:prefLabel "1..n"@en ;
     skos:notation "1..n" ;
     skos:definition "One or more values required."@en .
-
-# Detected orphan concepts have been assigned a top concept relation in the ConceptScheme.
