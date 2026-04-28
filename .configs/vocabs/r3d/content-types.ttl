@@ -12,133 +12,155 @@
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "dataset"@en ;
     skos:definition "dataset"@en ;
-    skos:notation "c_ddb1"^^xsd:string .
+    skos:notation "c_ddb1"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/ACF7-8YT9> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "aggregated data"@en ;
     skos:definition "aggregated data"@en ;
-    skos:notation "ACF7-8YT9"^^xsd:string .
+    skos:notation "ACF7-8YT9"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/c_cb28> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "clinical trial data"@en ;
     skos:definition "clinical trial data"@en ;
-    skos:notation "c_cb28"^^xsd:string .
+    skos:notation "c_cb28"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/FXF3-D3G7> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "compiled data"@en ;
     skos:definition "compiled data"@en ;
-    skos:notation "FXF3-D3G7"^^xsd:string .
+    skos:notation "FXF3-D3G7"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/AM6W-6QAW> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "encoded data"@en ;
     skos:definition "encoded data"@en ;
-    skos:notation "AM6W-6QAW"^^xsd:string .
+    skos:notation "AM6W-6QAW"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/63NG-B465> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "experimental data"@en ;
     skos:definition "experimental data"@en ;
-    skos:notation "63NG-B465"^^xsd:string .
+    skos:notation "63NG-B465"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/A8F1-NPV9> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "genomic data"@en ;
     skos:definition "genomic data"@en ;
-    skos:notation "A8F1-NPV9"^^xsd:string .
+    skos:notation "A8F1-NPV9"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/2H0M-X761> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "geospatial data"@en ;
     skos:definition "geospatial data"@en ;
-    skos:notation "2H0M-X761"^^xsd:string .
+    skos:notation "2H0M-X761"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/H41Y-FW7B> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "laboratory notebook"@en ;
     skos:definition "laboratory notebook"@en ;
-    skos:notation "H41Y-FW7B"^^xsd:string .
+    skos:notation "H41Y-FW7B"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/DD58-GFSX> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "measurement and test data"@en ;
     skos:definition "measurement and test data"@en ;
-    skos:notation "DD58-GFSX"^^xsd:string .
+    skos:notation "DD58-GFSX"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/FF4C-28RK> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "observational data"@en ;
     skos:definition "observational data"@en ;
-    skos:notation "FF4C-28RK"^^xsd:string .
+    skos:notation "FF4C-28RK"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/CQMR-7K63> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "recorded data"@en ;
     skos:definition "recorded data"@en ;
-    skos:notation "CQMR-7K63"^^xsd:string .
+    skos:notation "CQMR-7K63"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/W2XT-7017> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "simulation data"@en ;
     skos:definition "simulation data"@en ;
-    skos:notation "W2XT-7017"^^xsd:string .
+    skos:notation "W2XT-7017"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/NHD0-W6SY> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "survey data"@en ;
     skos:definition "survey data"@en ;
-    skos:notation "NHD0-W6SY"^^xsd:string .
+    skos:notation "NHD0-W6SY"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/c_c513> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "image"@en ;
     skos:definition "image"@en ;
-    skos:notation "c_c513"^^xsd:string .
+    skos:notation "c_c513"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/c_8a7e> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "moving image"@en ;
     skos:definition "moving image"@en ;
-    skos:notation "c_8a7e"^^xsd:string .
+    skos:notation "c_8a7e"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/c_ecc8> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "still image"@en ;
     skos:definition "still image"@en ;
-    skos:notation "c_ecc8"^^xsd:string .
+    skos:notation "c_ecc8"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/c_5ce6> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "software"@en ;
     skos:definition "software"@en ;
-    skos:notation "c_5ce6"^^xsd:string .
+    skos:notation "c_5ce6"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/c_c950> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "research software"@en ;
     skos:definition "research software"@en ;
-    skos:notation "c_c950"^^xsd:string .
+    skos:notation "c_c950"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/QH80-2R4E> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "source code"@en ;
     skos:definition "source code"@en ;
-    skos:notation "QH80-2R4E"^^xsd:string .
+    skos:notation "QH80-2R4E"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/c_18cf> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "text"@en ;
     skos:definition "text"@en ;
-    skos:notation "c_18cf"^^xsd:string .
+    skos:notation "c_18cf"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 <http://purl.org/coar/resource_type/c_1843> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
     skos:prefLabel "other"@en ;
     skos:definition "other"@en ;
-    skos:notation "c_1843"^^xsd:string .
+    skos:notation "c_1843"^^xsd:string ;
+    skos:broader <http://purl.org/coar/resource_type/> .
 
 # --- deterministic fixes ---
 <http://purl.org/coar/resource_type/> skos:prefLabel "content types"@en .
