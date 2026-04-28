@@ -1,4 +1,4 @@
-@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -7,26 +7,15 @@
 ##############################################################
 
 r3d:databaseAccessRestrictions a skos:ConceptScheme ;
-    skos:prefLabel "databaseAccessRestrictions"@en .
+    skos:prefLabel "database access restrictions"@en .
 
 r3d:databaseAccessRestrictions/feeRequired a skos:Concept ;
     skos:inScheme r3d:databaseAccessRestrictions ;
-    skos:prefLabel "feeRequired"@en ;
+    skos:prefLabel "fee required"@en ;
     skos:definition "feeRequired"@en .
 
 r3d:databaseAccessRestrictions/registration a skos:Concept ;
     skos:inScheme r3d:databaseAccessRestrictions ;
     skos:prefLabel "registration"@en ;
     skos:definition "registration"@en .
-
-# --- deterministic fixes ---
-r3d:databaseAccessRestrictions skos:prefLabel "database access restrictions"@en .
-r3d:databaseAccessRestrictions/feeRequired skos:prefLabel "fee required"@en .
-r3d:databaseAccessRestrictions/registration skos:prefLabel "registration"@en .
-
-# Corrected syntax errors
-r3d:databaseAccessRestrictions/feeRequired a skos:Concept ;
-    skos:inScheme r3d:databaseAccessRestrictions ;
-    skos:prefLabel "feeRequired"@en ;
-    skos:definition "feeRequired"@en .
 
