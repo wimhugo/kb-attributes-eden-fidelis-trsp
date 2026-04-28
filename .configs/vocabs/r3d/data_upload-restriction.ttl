@@ -2,7 +2,6 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-
 r3d:dataUploadRestrictions a skos:ConceptScheme ;
     skos:prefLabel "dataUploadRestrictions"@en ;
     skos:hasTopConcept r3d:dataUploadRestrictions/feeRequired .
@@ -10,23 +9,26 @@ r3d:dataUploadRestrictions a skos:ConceptScheme ;
 r3d:dataUploadRestrictions/feeRequired a skos:Concept ;
     skos:inScheme r3d:dataUploadRestrictions ;
     skos:prefLabel "feeRequired"@en ;
-    skos:definition "feeRequired"@en .
+    skos:definition "feeRequired"@en ;
+    skos:broader r3d:dataUploadRestrictions .
 
 r3d:dataUploadRestrictions/institutionalMembership a skos:Concept ;
     skos:inScheme r3d:dataUploadRestrictions ;
     skos:prefLabel "institutionalMembership"@en ;
-    skos:definition "institutionalMembership"@en .
+    skos:definition "institutionalMembership"@en ;
+    skos:broader r3d:dataUploadRestrictions .
 
 r3d:dataUploadRestrictions/registration a skos:Concept ;
     skos:inScheme r3d:dataUploadRestrictions ;
     skos:prefLabel "registration"@en ;
-    skos:definition "registration"@en .
+    skos:definition "registration"@en ;
+    skos:broader r3d:dataUploadRestrictions .
 
 r3d:dataUploadRestrictions/storageLimit a skos:Concept ;
     skos:inScheme r3d:dataUploadRestrictions ;
     skos:prefLabel "storageLimit"@en ;
-    skos:definition "storageLimit"@en .
-
+    skos:definition "storageLimit"@en ;
+    skos:broader r3d:dataUploadRestrictions .
 
 # --- deterministic fixes ---
 r3d:dataUploadRestrictions skos:prefLabel "data upload restrictions"@en .
