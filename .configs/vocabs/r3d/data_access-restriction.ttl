@@ -7,7 +7,8 @@
 ##############################################################
 
 r3d:dataAccessRestrictions a skos:ConceptScheme ;
-    skos:prefLabel "dataAccessRestrictions"@en .
+    skos:prefLabel "dataAccessRestrictions"@en ;
+    skos:hasTopConcept r3d:dataAccessRestrictions/feeRequired .
 
 r3d:dataAccessRestrictions/feeRequired a skos:Concept ;
     skos:inScheme r3d:dataAccessRestrictions ;
