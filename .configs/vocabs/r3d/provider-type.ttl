@@ -7,14 +7,15 @@
 ##############################################################
 
 r3d:providerTypes a skos:ConceptScheme ;
-    skos:prefLabel "providerTypes"@en .
+    skos:prefLabel "provider types"@en ;
+    skos:hasTopConcept r3d:providerTypes/dataProvider, r3d:providerTypes/serviceProvider .
 
 r3d:providerTypes/dataProvider a skos:Concept ;
     skos:inScheme r3d:providerTypes ;
-    skos:prefLabel "dataProvider"@en ;
+    skos:prefLabel "data provider"@en ;
     skos:definition "dataProvider"@en .
 
 r3d:providerTypes/serviceProvider a skos:Concept ;
     skos:inScheme r3d:providerTypes ;
-    skos:prefLabel "serviceProvider"@en ;
+    skos:prefLabel "service provider"@en ;
     skos:definition "serviceProvider"@en .
