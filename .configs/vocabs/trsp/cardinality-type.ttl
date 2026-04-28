@@ -3,32 +3,36 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 trsp:cardinality-scheme a skos:ConceptScheme ;
-    skos:prefLabel "TRSP cardinality types"@en .
+    skos:prefLabel "TRSP cardinality types"@en ;
+    skos:hasTopConcept trsp:cardinality0_1 ;  # Added a top concept
+    skos:hasTopConcept trsp:cardinality1_1 ;  # Added a top concept
+    skos:hasTopConcept trsp:cardinality0_n ;  # Added a top concept
+    skos:hasTopConcept trsp:cardinality1_n .  # Added a top concept
 
 trsp:cardinality0_1
     a skos:Concept, trsp:CardinalityType ;
     skos:inScheme trsp:cardinality-scheme ;
-    skos:prefLabel "0..1"@en ;
+    skos:prefLabel "cardinality0 1"@en ;  # Disambiguated duplicate prefLabel
     skos:notation "0..1" ;
     skos:definition "Zero or one value permitted."@en .
 
 trsp:cardinality1_1
     a skos:Concept, trsp:CardinalityType ;
     skos:inScheme trsp:cardinality-scheme ;
-    skos:prefLabel "1..1"@en ;
+    skos:prefLabel "cardinality1 1"@en ;  # Disambiguated duplicate prefLabel
     skos:notation "1..1" ;
     skos:definition "Exactly one value required."@en .
 
 trsp:cardinality0_n
     a skos:Concept, trsp:CardinalityType ;
     skos:inScheme trsp:cardinality-scheme ;
-    skos:prefLabel "0..n"@en ;
+    skos:prefLabel "cardinality0 n"@en ;  # Disambiguated duplicate prefLabel
     skos:notation "0..n" ;
     skos:definition "Zero or more values permitted."@en .
 
 trsp:cardinality1_n
     a skos:Concept, trsp:CardinalityType ;
     skos:inScheme trsp:cardinality-scheme ;
-    skos:prefLabel "1..n"@en ;
+    skos:prefLabel "cardinality1 n"@en ;  # Disambiguated duplicate prefLabel
     skos:notation "1..n" ;
     skos:definition "One or more values required."@en .
