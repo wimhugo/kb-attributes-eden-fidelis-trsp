@@ -68,4 +68,10 @@ trsp:ConceptScheme
     a skos:ConceptScheme ;
     skos:hasTopConcept trsp:Attribute ;
     skos:hasTopConcept trsp:Repository ;
-    skos:hasTopConcept trsp:Service .
+    skos:hasTopConcept trsp:Service ;
+    skos:prefLabel "Concept Scheme"@en .
+
+# To disambiguate duplicate labels
+trsp:Attribute skos:prefLabel "Attribute (alternative)"@en .
+trsp:Repository skos:prefLabel "Repository (alternative)"@en .
+trsp:Service skos:prefLabel "Service (alternative)"@en .
