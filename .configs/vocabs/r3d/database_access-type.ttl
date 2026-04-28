@@ -26,3 +26,11 @@ r3d:databaseAccessTypes/closed a skos:Concept ;
     skos:inScheme r3d:databaseAccessTypes ;
     skos:prefLabel "closed"@en ;
     skos:definition "closed"@en .
+
+# Adding missing skos:broader relationships for orphan concepts
+r3d:databaseAccessTypes/open skos:broader r3d:databaseAccessTypes .
+r3d:databaseAccessTypes/restricted skos:broader r3d:databaseAccessTypes .
+r3d:databaseAccessTypes/closed skos:broader r3d:databaseAccessTypes .
+
+# Adding additional properties or links based on requirements
+# Each concept could optionally have a link property to demonstrate relationships to profiles that are potentially defined in another file
