@@ -88,3 +88,22 @@ trsp:aggregationMatch a skos:Concept, trsp:AggregationType ;
     skos:prefLabel "Matches Benchmark"@en ;
     skos:definition "Exactly one value in the return array is selected if it matches a benchmark ."@en .
 
+
+# --- deterministic fixes ---
+trsp:profile-aggregation-type-scheme skos:prefLabel "profile-aggregation-type-scheme"@en .
+trsp:aggregationSum skos:prefLabel "aggregation sum"@en .
+trsp:aggregationCount skos:prefLabel "aggregation count"@en .
+trsp:aggregationMax skos:prefLabel "aggregation max"@en .
+trsp:aggregationMin skos:prefLabel "aggregation min"@en .
+trsp:aggregationAve skos:prefLabel "aggregation ave"@en .
+trsp:aggregationFirst skos:prefLabel "aggregation first"@en .
+trsp:aggregationLast skos:prefLabel "aggregation last"@en .
+trsp:aggregationMedian skos:prefLabel "aggregation median"@en .
+trsp:aggregationList skos:prefLabel "aggregation list"@en .
+trsp:aggregationUnion skos:prefLabel "aggregation union"@en .
+trsp:aggregationNER skos:prefLabel "aggregation ner"@en .
+trsp:aggregationExists skos:prefLabel "aggregation exists"@en .
+trsp:aggregationInherit skos:prefLabel "aggregation inherit"@en .
+trsp:aggregationCategoryCount skos:prefLabel "aggregation category count"@en .
+trsp:aggregationMap skos:prefLabel "aggregation map"@en .
+trsp:aggregationMatch skos:prefLabel "aggregation match"@en .
