@@ -27,3 +27,7 @@ r3d:databaseAccessRestrictions/registration a skos:Concept ;
 r3d:databaseAccessRestrictions skos:prefLabel "database access restrictions"@en .
 r3d:databaseAccessRestrictions/feeRequired skos:prefLabel "fee required"@en .
 r3d:databaseAccessRestrictions/registration skos:prefLabel "registration"@en .
+
+# Linking skos:narrower to concepts
+r3d:databaseAccessRestrictions/feeRequired skos:narrower r3d:databaseAccessRestrictions/registration .
+r3d:databaseAccessRestrictions/registration skos:narrower r3d:databaseAccessRestrictions/feeRequired .
