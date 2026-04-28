@@ -1,6 +1,6 @@
 # Schema Validation Against Text Description of Conceptual Model
 
-Inpect the current schema files (TTL, SHACL) and verufy that the following statements are supported by the schema. Add any suggestions for improvement or discrepancies as suggestions to be processed as a prepended section to this file.
+Inpect the current schema files (TTL, SHACL) and verify that the following statements are supported by the schema. Add any suggestions for improvement or discrepancies as suggestions to be processed as a prepended section to this file.
 
 - The schema should make provision for three main classes:
   - “Attributes”,
