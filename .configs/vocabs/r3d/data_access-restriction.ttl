@@ -1,4 +1,4 @@
-@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -7,27 +7,25 @@
 ##############################################################
 
 r3d:dataAccessRestrictions a skos:ConceptScheme ;
-    skos:prefLabel "dataAccessRestrictions"@en .
+    skos:prefLabel "data access restrictions"@en ;
+    skos:hasTopConcept r3d:dataAccessRestrictions/feeRequired ;
+    skos:hasTopConcept r3d:dataAccessRestrictions/institutionalMembership ;
+    skos:hasTopConcept r3d:dataAccessRestrictions/registration .
 
 r3d:dataAccessRestrictions/feeRequired a skos:Concept ;
     skos:inScheme r3d:dataAccessRestrictions ;
-    skos:prefLabel "feeRequired"@en ;
-    skos:definition "feeRequired"@en .
+    skos:prefLabel "fee required"@en ;
+    skos:definition "feeRequired"@en ;
+    skos:broader r3d:dataAccessRestrictions .
 
 r3d:dataAccessRestrictions/institutionalMembership a skos:Concept ;
     skos:inScheme r3d:dataAccessRestrictions ;
-    skos:prefLabel "institutionalMembership"@en ;
-    skos:definition "institutionalMembership"@en .
+    skos:prefLabel "institutional membership"@en ;
+    skos:definition "institutionalMembership"@en ;
+    skos:broader r3d:dataAccessRestrictions .
 
 r3d:dataAccessRestrictions/registration a skos:Concept ;
     skos:inScheme r3d:dataAccessRestrictions ;
     skos:prefLabel "registration"@en ;
-    skos:definition "registration"@en .
-
-
-# --- deterministic fixes ---
-r3d:dataAccessRestrictions skos:prefLabel "data access restrictions"@en .
-r3d:dataAccessRestrictions/feeRequired skos:prefLabel "fee required"@en .
-r3d:dataAccessRestrictions/institutionalMembership skos:prefLabel "institutional membership"@en .
-r3d:dataAccessRestrictions/registration skos:prefLabel "registration"@en .
-
+    skos:definition "registration"@en ;
+    skos:broader r3d:dataAccessRestrictions .
