@@ -7,7 +7,10 @@
 ##############################################################
 
 r3d:responsibilityTypes a skos:ConceptScheme ;
-    skos:prefLabel "responsibilityTypes"@en .
+    skos:prefLabel "responsibilityTypes"@en ;
+    skos:hasTopConcept r3d:responsibilityTypes/funding ;
+    skos:hasTopConcept r3d:responsibilityTypes/general ;
+    skos:hasTopConcept r3d:responsibilityTypes/technical .
 
 r3d:responsibilityTypes/funding a skos:Concept ;
     skos:inScheme r3d:responsibilityTypes ;
