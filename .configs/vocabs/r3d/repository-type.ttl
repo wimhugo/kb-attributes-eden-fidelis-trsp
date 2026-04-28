@@ -1,21 +1,15 @@
-@prefix trsp: <https://example.org/trsp#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix trsp: <http://example.org/trsp#> .
 
 #################################################
 # re3data Repository Types
 # https://schema.re3data.org/4-0/re3dataV4-0.xsd
-# <xs:simpleType name="repositoryTypes">
+# <xs:simpleType name="repositoryTypes"> 
 #################################################
 
 trsp:r3d-repository-type-scheme a skos:ConceptScheme ;
     skos:prefLabel "re3data Repository Types"@en ;
-    skos:hasTopConcept trsp:repositoryDisciplinary ;
-    skos:hasTopConcept trsp:repositoryGovernmental ;
-    skos:hasTopConcept trsp:repositoryInstitutional ;
-    skos:hasTopConcept trsp:repositoryMultiDisciplinary ;
-    skos:hasTopConcept trsp:repositoryProjectRelated ;
-    skos:hasTopConcept trsp:repositoryOther .
+    skos:hasTopConcept trsp:repositoryDisciplinary .
 
 trsp:repositoryDisciplinary a skos:Concept, trsp:RelationshipType ;
     skos:inScheme trsp:r3d-repository-type-scheme ;
@@ -46,9 +40,3 @@ trsp:repositoryOther a skos:Concept, trsp:RelationshipType ;
     skos:inScheme trsp:r3d-repository-type-scheme ;
     skos:prefLabel "Other Repository"@en ;
     skos:definition "Repository not matching any of the other categories."@en .
-
-# --- deterministic fixes ---
-trsp:r3d-repository-type-scheme skos:prefLabel "r3d-repository-type-scheme"@en .
-trsp:repositoryDisciplinary skos:prefLabel "repository disciplinary"@en .
-trsp:repositoryGovernmental skos:prefLabel "repository governmental"@en .
-trsp:repositoryInstitutional skos:prefLabel "repository institutional"@en .
