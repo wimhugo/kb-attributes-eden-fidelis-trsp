@@ -6,7 +6,7 @@
 
 trsp:profile-aggregation-type-scheme a skos:ConceptScheme ;
     skos:prefLabel "TRSP profile aggregation types"@en ;
-    skos:topConceptOf trsp:profile-aggregation-type-scheme .
+    skos:hasTopConcept trsp:aggregationSum .
 
 trsp:aggregationSum a skos:Concept, trsp:AggregationType ;
     skos:inScheme trsp:profile-aggregation-type-scheme ;
