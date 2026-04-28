@@ -15,28 +15,32 @@ r3d:dataAccessTypes/open a skos:Concept ;
     skos:prefLabel "open"@en ;
     skos:definition "open"@en .
     skos:broader r3d:dataAccessTypes ;
-    skos:related r3d:dataAccessTypes/embargoed .
+    skos:related r3d:dataAccessTypes/embargoed ;
+    skos:related r3d:dataAccessTypes/restricted .
 
 r3d:dataAccessTypes/embargoed a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
     skos:prefLabel "embargoed"@en ;
     skos:definition "embargoed"@en .
     skos:broader r3d:dataAccessTypes ;
-    skos:related r3d:dataAccessTypes/open .
+    skos:related r3d:dataAccessTypes/open ;
+    skos:related r3d:dataAccessTypes/restricted .
 
 r3d:dataAccessTypes/restricted a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
     skos:prefLabel "restricted"@en ;
     skos:definition "restricted"@en .
     skos:broader r3d:dataAccessTypes ;
-    skos:related r3d:dataAccessTypes/closed .
+    skos:related r3d:dataAccessTypes/closed ;
+    skos:related r3d:dataAccessTypes/open .
 
 r3d:dataAccessTypes/closed a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
     skos:prefLabel "closed"@en ;
     skos:definition "closed"@en .
     skos:broader r3d:dataAccessTypes ;
-    skos:related r3d:dataAccessTypes/restricted .
+    skos:related r3d:dataAccessTypes/restricted ;
+    skos:related r3d:dataAccessTypes/open .
 
 # --- deterministic fixes ---
 r3d:dataAccessTypes skos:prefLabel "data access types"@en .
