@@ -2,9 +2,9 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-
 r3d:dataUploadRestrictions a skos:ConceptScheme ;
-    skos:prefLabel "dataUploadRestrictions"@en .
+    skos:prefLabel "dataUploadRestrictions"@en ;
+    skos:hasTopConcept r3d:dataUploadRestrictions/feeRequired .
 
 r3d:dataUploadRestrictions/feeRequired a skos:Concept ;
     skos:inScheme r3d:dataUploadRestrictions ;
