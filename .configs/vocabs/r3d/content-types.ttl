@@ -5,7 +5,8 @@
 
 <http://purl.org/coar/resource_type/> a skos:ConceptScheme ;
     skos:prefLabel "content types"@en ;
-    skos:definition "Controlled vocabulary generated from XSD contentTypeNames and contentTypeIds, using externally managed COAR concept IRIs."@en .
+    skos:definition "Controlled vocabulary generated from XSD contentTypeNames and contentTypeIds, using externally managed COAR concept IRIs."@en ;
+    skos:hasTopConcept <http://purl.org/coar/resource_type/c_ddb1> .
 
 <http://purl.org/coar/resource_type/c_ddb1> a skos:Concept ;
     skos:inScheme <https://example.org/vocab/contentTypes> ;
