@@ -5,38 +5,90 @@
 @prefix dct:  <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
-############################
+trsp:Ontology
+    a owl:Ontology ;
+    dct:title "TRSP Ontology"@en ;
+    dct:description "TRSP Ontology: Schema definition and constraints for Attributes, Profiles, Repositories, and Services. Used by TRSP WG, EOSC EDEN, and EOSC FIDELIS."@en ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    dct:contributor <https://orcid.org/0000-0003-1106-8441> .
+
+########################################################
 # Core classes
-############################
+########################################################
 
-trsp:Attribute a rdfs:Class ; rdfs:label "Attribute"@en .
-trsp:Profile a rdfs:Class ; rdfs:label "Profile"@en .
-trsp:Repository a rdfs:Class ; rdfs:subClassOf trsp:Profile ; rdfs:label "Repository"@en .
-trsp:Service a rdfs:Class ; rdfs:subClassOf trsp:Profile ; rdfs:label "Service"@en .
+# Attribute
+trsp:Attribute a rdfs:Class ; 
+    rdfs:label "Attribute"@en ;
+    rdfs:comment "Attributes describe the characteristics, actions, and features of repositories and services, and are based on an inventory of repository and service attributes gathered by the RDA TRSP WG."@en .
 
-trsp:ProfileType a rdfs:Class ; rdfs:label "Profile type"@en .
-trsp:MeasurementType a rdfs:Class ; rdfs:label "Measurement type"@en .
-trsp:RelationshipType a rdfs:Class ; rdfs:label "Relationship type"@en .
+# Profile
+trsp:Profile a rdfs:Class ; 
+    rdfs:label "Profile"@en ;
+    rdfs:comment "Profiles define entities that exhibit or publish attributes, and can be Repositories, Services, or other authoritative sources" .
+
+# Repository
+trsp:Repository a rdfs:Class ; 
+    rdfs:subClassOf trsp:Profile ; 
+    rdfs:label "Repository"@en ;
+    skos:narrower dcat:Catalogm;
+    skos:broader trsp:Profile ;
+    skos:related dcat:DataService ;
+    rdfs:comment "A Repository is broadly defined as an archive, repository, or other collection of digital resources, and its supporting services and functionalities." .
+
+# Service
+trsp:Service a rdfs:Class ; 
+    rdfs:subClassOf trsp:Profile ; 
+    rdfs:label "Service"@en ;
+    skos:narrower dcat:DataService ;
+    skos:narrower dcat:Catalog ;
+    skos:broader trsp:Profile ;
+    rdfs:comment "A Service is defined as a web-based interface that can be accessed primarily by machines. Repositories can offer or consume one or more Services" .
+
+##################################################################
+# Properties that require values from controlled vocabulary
+##################################################################
+
+# ProfileType - one of the values from trsp:profile-type-scheme
+trsp:ProfileType a rdfs:Class ; rdfs:label "Profile Type"@en .
+
+# MeaurementType - one of the values from trsp:measurement-type-scheme
+trsp:MeasurementType a rdfs:Class ; rdfs:label "Measurement Type"@en .
+
+# RelationType - one of the values from trsp:relation-type-scheme
+trsp:RelationType a rdfs:Class ; rdfs:label "Relations Type"@en .
+
+# Aggregation Type - one of the values from trsp:profile-aggregation-type-scheme
 trsp:AggregationType a rdfs:Class ; rdfs:label "Aggregation type"@en .
+
+# Cardinality type - one of the values from trsp:cardinality-scheme
 trsp:CardinalityType a rdfs:Class ; rdfs:label "Cardinality type"@en .
 
-trsp:ExternalIdentifier a rdfs:Class ; rdfs:label "External identifier"@en .
-trsp:AnnotationReference a rdfs:Class ; rdfs:label "Annotation reference"@en .
-trsp:AttributeAssertion a rdfs:Class ; rdfs:label "Attribute assertion"@en .
-trsp:ProfileAssertion a rdfs:Class ; rdfs:label "Profile assertion"@en .
+# ServiceRelation Type one of the values from trsp:service-relation-scheme 
 trsp:ServiceRelation a rdfs:Class ; rdfs:label "Service relation"@en .
 
-# --- deterministic fixes ---
+##################################################################
+# Classes that define objects that are reusable
+##################################################################
 
-trsp:ProfileType skos:prefLabel "Profile Type"@en .
-trsp:Service skos:broader trsp:Profile .
-trsp:Repository skos:broader trsp:Profile .
+# ExternalIdentifier - holds minimum properties of an external identifier
+trsp:ExternalIdentifier a rdfs:Class ; rdfs:label "External identifier"@en .
+
+# AnnotationReference - holds minimum properties of an annotation to support an assertion
+trsp:AnnotationReference a rdfs:Class ; rdfs:label "Annotation reference"@en .
+
+# AttributeAssertion - holds minimum properties of a measurement or value of an attribute for a Repository or Service
+trsp:AttributeAssertion a rdfs:Class ; rdfs:label "Attribute assertion"@en .
+
+# ProfileAssertion - holds minimum properties of the relation between an Attribute and a Profile
+trsp:ProfileAssertion a rdfs:Class ; rdfs:label "Profile assertion"@en .
 
 
-############################
+#################################################################
 # Identifier properties
-############################
+#################################################################
 
 trsp:hasExternalIdentifier a rdf:Property ;
     rdfs:label "has external identifier"@en ;
@@ -53,10 +105,10 @@ trsp:identifierUsage a rdf:Property ;
     rdfs:domain trsp:ExternalIdentifier ;
     rdfs:range skos:Concept .
 
-#####################################
+#################################################################
 # Relations and Annotation properties
 # Mostly to external objects
-#####################################
+#################################################################
 
 trsp:relationType a rdf:Property ;
     rdfs:label "relation type"@en ;
