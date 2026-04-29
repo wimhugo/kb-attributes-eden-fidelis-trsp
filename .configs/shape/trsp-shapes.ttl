@@ -75,3 +75,9 @@ trsp:ConceptScheme
 trsp:Attribute skos:prefLabel "Attribute (alternative)"@en .
 trsp:Repository skos:prefLabel "Repository (alternative)"@en .
 trsp:Service skos:prefLabel "Service (alternative)"@en .
+
+# Adding the missing skos:related asymmetry
+trsp:Attribute skos:related trsp:Repository .
+trsp:Repository skos:related trsp:Attribute .
+trsp:Attribute skos:related trsp:Service .
+trsp:Service skos:related trsp:Attribute .
