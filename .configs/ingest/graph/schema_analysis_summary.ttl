@@ -1,6 +1,6 @@
 # Consolidated schema summary from: .configs/ingest/graph/registry.trig
 # All named graphs aggregated — unique type → property list
-# Generated: 2026-04-29T11:38:35.100Z
+# Generated: 2026-04-29T12:00:37.367Z
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -17,41 +17,120 @@ ex:summary_ex_DepositionPolicy a ex:TypeSummary ;
   ex:nodeType <ex:DepositionPolicy> ;
   ex:usesProperty dct:conformsTo ;
   ex:usesProperty dct:contactPoint ;
+  ex:usesProperty dct:description ;
+  ex:usesProperty dct:identifier ;
+  ex:usesProperty dct:license ;
+  ex:usesProperty dct:title ;
+  ex:usesProperty dct:type ;
+  ex:usesProperty dcat:keyword ;
+.
+
+ex:summary_ex_SustainabilityPolicy a ex:TypeSummary ;
+  ex:nodeType <ex:SustainabilityPolicy> ;
+  ex:usesProperty dct:title ;
+.
+
+ex:summary_citation a ex:TypeSummary ;
+  ex:nodeType <http://localhost:3030/service_registry_store/citation> ;
+  ex:usesProperty dct:title ;
+.
+
+ex:summary_CreativeWork a ex:TypeSummary ;
+  ex:nodeType <http://localhost:3030/service_registry_store/CreativeWork> ;
+  ex:usesProperty dct:title ;
+.
+
+ex:summary_license a ex:TypeSummary ;
+  ex:nodeType <http://localhost:3030/service_registry_store/license> ;
+  ex:usesProperty dct:title ;
 .
 
 ex:summary_Policy a ex:TypeSummary ;
   ex:nodeType dct:Policy ;
   ex:usesProperty dct:conformsTo ;
   ex:usesProperty dct:contactPoint ;
+  ex:usesProperty dct:description ;
+  ex:usesProperty dct:identifier ;
+  ex:usesProperty dct:license ;
   ex:usesProperty dct:publisher ;
+  ex:usesProperty dct:title ;
+  ex:usesProperty dct:type ;
+  ex:usesProperty dcat:keyword ;
+.
+
+ex:summary_Kind a ex:TypeSummary ;
+  ex:nodeType vcard:Kind ;
+  ex:usesProperty vcard:hasEmail ;
+  ex:usesProperty vcard:url ;
 .
 
 ex:summary_Catalog a ex:TypeSummary ;
   ex:nodeType dcat:Catalog ;
   ex:usesProperty dct:conformsTo ;
   ex:usesProperty dct:contactPoint ;
+  ex:usesProperty dct:description ;
+  ex:usesProperty dct:identifier ;
+  ex:usesProperty dct:language ;
+  ex:usesProperty dct:license ;
   ex:usesProperty dct:publisher ;
-  ex:usesProperty vcard:url ;
+  ex:usesProperty dct:title ;
+  ex:usesProperty dct:type ;
+  ex:usesProperty dcat:keyword ;
   ex:usesProperty dcat:service ;
+  ex:usesProperty prov:hadPrimarySource ;
 .
 
 ex:summary_CatalogRecord a ex:TypeSummary ;
   ex:nodeType dcat:CatalogRecord ;
-  ex:usesProperty dct:conformsTo ;
-  ex:usesProperty dct:contactPoint ;
-  ex:usesProperty dct:publisher ;
-  ex:usesProperty dcat:service ;
+  ex:usesProperty dct:issued ;
   ex:usesProperty prov:wasAssociatedWith ;
   ex:usesProperty prov:wasGeneratedBy ;
-  ex:usesProperty foaf:homepage ;
   ex:usesProperty foaf:primaryTopic ;
+.
+
+ex:summary_DataService a ex:TypeSummary ;
+  ex:nodeType dcat:DataService ;
+  ex:usesProperty dct:conformsTo ;
+  ex:usesProperty dct:format ;
+  ex:usesProperty dct:title ;
+  ex:usesProperty dcat:endpointURL ;
+.
+
+ex:summary_Activity a ex:TypeSummary ;
+  ex:nodeType prov:Activity ;
+  ex:usesProperty prov:name ;
+  ex:usesProperty prov:startedAtTime ;
+.
+
+ex:summary_SoftwareAgent a ex:TypeSummary ;
+  ex:nodeType prov:SoftwareAgent ;
+  ex:usesProperty prov:label ;
+.
+
+ex:summary_Agent a ex:TypeSummary ;
+  ex:nodeType foaf:Agent ;
+  ex:usesProperty vcard:country ;
+  ex:usesProperty foaf:homepage ;
+  ex:usesProperty foaf:name ;
 .
 
 ex:summary_Project a ex:TypeSummary ;
   ex:nodeType foaf:Project ;
   ex:usesProperty dct:conformsTo ;
   ex:usesProperty dct:contactPoint ;
+  ex:usesProperty dct:description ;
+  ex:usesProperty dct:identifier ;
+  ex:usesProperty dct:language ;
+  ex:usesProperty dct:license ;
   ex:usesProperty dct:publisher ;
-  ex:usesProperty vcard:url ;
+  ex:usesProperty dct:title ;
+  ex:usesProperty dct:type ;
+  ex:usesProperty dcat:keyword ;
   ex:usesProperty dcat:service ;
+  ex:usesProperty prov:hadPrimarySource ;
+.
+
+ex:summary_premis_PreservationPolicy a ex:TypeSummary ;
+  ex:nodeType <premis:PreservationPolicy> ;
+  ex:usesProperty dct:title ;
 .
