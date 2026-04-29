@@ -6,6 +6,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 
 trsp:profile-type-scheme a skos:ConceptScheme;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
