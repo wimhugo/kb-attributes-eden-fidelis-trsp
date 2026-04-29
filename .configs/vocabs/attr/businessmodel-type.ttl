@@ -1,1 +1,54 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wikidata: <https://www.wikidata.org/wiki/#> .
 
+trsp:businessmodel-type a skos:ConceptScheme ;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:creator <https://orcid.org/0000-0002-0255-5101>;
+  dct:contributor <https://orcid.org/0000-0003-1106-8441>;
+  dct:description "Business Model Types derived from annotation sources"@en;
+  dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:rights <https://spdx.org/licenses/CC0-1.0>;
+  dct:title "TRSP Attributes Business Model Types"@en;
+  skos:prefLabel "TRSP Attributes Business Model Types"@en .
+  owl:versionInfo "0.0.1"@en;
+  foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:businessmodel-for-profit
+    a skos:Concept, trsp:CardinalityType ;
+    skos:inScheme trsp:businessmodel-type  ;
+    skos:prefLabel "For-Profit"@en ;
+    skos:notation "For-Profit" ;
+    skos:altLabel "Commercial Organisation", "Commercial Business", "Commercial Enterprise" ;
+    trsp:hasExternalIdentifier [
+        a trsp:ExternalIdentifier ;
+        trsp:relationType trsp:relationTypeAnnotation ;
+        skos:prefLabel "Commercial Organization"@en ;
+        trsp:identifierIri wikidata:Q21980538  ;
+        trsp:identifierUsage trsp:defaultUsage ;
+        skos:definition "business/ company working for profit in contrast to a non-profit company" 
+        ];
+    skos:definition "Organisation aims to and is legally permitted to declare a profit."@en .
+
+trsp:businessmodel-non-profit
+    a skos:Concept, trsp:CardinalityType ;
+    skos:inScheme trsp:businessmodel-type  ;
+    skos:prefLabel "Non-Profit"@en ;
+    skos:notation "Non-Profit" ;
+    skos:altLabel "not-for-profit organization", "NPO", "non-profit organization", "non profit organization","non-profit organisation","nonprofit organisation","not-for-profit organisation","not for profit organization","civil association","citizen sector organization","civil society organization","non-profit agency","nonprofit institution","non-profit institution","not for profit institution","Organizations, Nonprofit","NPI","np organization","nonprofit","non-profit" ;
+    trsp:hasExternalIdentifier [
+        a trsp:ExternalIdentifier ;
+        trsp:relationType trsp:relationTypeAnnotation ;
+        skos:prefLabel "Non-Profit Organization"@en ;
+        trsp:identifierIri wikidata:Q163740  ;
+        trsp:identifierUsage trsp:defaultUsage ;
+        skos:definition "organization operated for a collective benefit." 
+        ];
+    skos:definition "Organisation does not aim to and is not legally permitted to declare a profit."@en .
