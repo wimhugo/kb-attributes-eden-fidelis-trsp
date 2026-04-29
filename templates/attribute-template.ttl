@@ -1,0 +1,29 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+# Define a ConceptScheme and its Top Concept for Attributes
+
+<https://TODO/your-scheme> a skos:ConceptScheme ;
+    skos:prefLabel "Concept Scheme"@en ;
+    skos:hasTopConcept trsp:Attribute . # Top concept is Attribute
+
+# Now creating an instance of trsp:Attribute with placeholders
+
+trsp:AttributeInstance1 a skos:Concept ;
+    skos:prefLabel "TODO: fill in label"@en ; # The preferred label for the attribute
+    skos:definition "TODO: fill in definition"@en ; # Definition of the attribute
+    skos:inScheme <https://TODO/your-scheme> ; # Link to the concept scheme
+
+    # Properties related to trsp:Attribute
+    trsp:hasMeasurementType [ a trsp:MeasurementType ; skos:prefLabel "TODO: fill in measurement type"@en ] ; # Measurement type for this attribute
+    trsp:benchmark "TODO: fill in benchmark value" ; # Provided benchmark for the attribute
+    trsp:cardinalityCode [ a trsp:CardinalityType ; skos:prefLabel "TODO: fill in cardinality code"@en ] ; # Cardinality type associated with this attribute
+    trsp:hasApplicableProfile [ a trsp:Profile ; skos:prefLabel "TODO: fill in applicable profile"@en ] ; # Profile this attribute applies to
+    trsp:hasApplicableProfileAssertion [ a trsp:ProfileAssertion ; skos:prefLabel "TODO: fill in profile assertion"@en ] . # Assertion for profile applicability
+
+# The template above must be filled with concrete values, where placeholders are indicated.
