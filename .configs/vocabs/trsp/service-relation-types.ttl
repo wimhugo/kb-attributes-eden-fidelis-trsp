@@ -30,12 +30,12 @@ trsp:offeredByRepository a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     skos:prefLabel "Service offered by repository"@en ;
-    skos:definition "Service is offered by a repository to users, for example an OAI-PMH endpoint or a file metadata service"@en ;
+    skos:definition "Service is offered by a repository to users or clients, for example an OAI-PMH endpoint or a file metadata service"@en ;
     skos:inScheme trsp:service-relation-scheme .
 
 trsp:usedByRepository a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     skos:prefLabel "Service used by repository"@en ;
-    skos:definition "An external Service is used by a repository to users, for example a file conversion or metadata crosswalks service"@en ;
+    skos:definition "An external Service is used by a repository to assist its workflows or users, for example a file conversion or metadata crosswalks service"@en ;
     skos:inScheme trsp:service-relation-scheme .
