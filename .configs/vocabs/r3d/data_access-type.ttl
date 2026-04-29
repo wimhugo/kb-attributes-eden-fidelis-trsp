@@ -45,3 +45,8 @@ r3d:dataAccessTypes/embargoed skos:prefLabel "embargoed"@en .
 r3d:dataAccessTypes/restricted skos:prefLabel "restricted"@en .
 r3d:dataAccessTypes/closed skos:prefLabel "closed"@en .
 r3d:dataAccessTypes skos:narrower . .
+
+r3d:dataAccessTypes/open skos:related r3d:dataAccessTypes/embargoed .
+r3d:dataAccessTypes/embargoed skos:related r3d:dataAccessTypes/open .
+r3d:dataAccessTypes/restricted skos:related r3d:dataAccessTypes/closed .
+r3d:dataAccessTypes/closed skos:related r3d:dataAccessTypes/restricted .
