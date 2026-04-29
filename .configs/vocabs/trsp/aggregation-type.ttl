@@ -18,7 +18,7 @@ trsp:profile-aggregation-type-scheme a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
-  dct:description "Relation Types distinguish the type of relation between Attributes and Profiles"@en;
+  dct:description "Aggregation Types determine the mechanism for resolving multiple values associated with an attribute measurement"@en;
   dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Aggregation Types"@en;
