@@ -1,0 +1,36 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+# Placeholder ConceptScheme to group concepts
+skos:ConceptScheme a skos:ConceptScheme ;
+    skos:prefLabel "Concept Scheme"@en ;
+    skos:hasTopConcept trsp:Attribute ;
+    skos:hasTopConcept trsp:Repository ;
+    skos:hasTopConcept trsp:Service .
+
+# Instance of Attribute Concept
+trsp:AttributeInstance a skos:Concept ;
+    skos:prefLabel "TODO: fill in label"@en ;  # Preferred label of the attribute
+    skos:definition "TODO: fill in definition"@en ;  # Definition of the attribute
+    skos:inScheme <https://TODO/your-scheme> ;  # The ConceptScheme this instance is part of
+    trsp:hasMeasurementType <https://TODO/measurement-type> ;  # The measurement type, TODO: fill in measurement type IRI
+    trsp:benchmark "TODO: fill in benchmark"@en ;  # A benchmark value, TODO: specify what benchmark
+    trsp:cardinalityCode <https://TODO/cardinality-type> ;  # Cardinality type, TODO: fill IRI
+    trsp:hasApplicableProfile <https://TODO/applicable-profile> ;  # The applicable profile for the attribute, TODO: fill IRI
+    trsp:hasApplicableProfileAssertion <https://TODO/applicable-profile-assertion> .  # Assertion related to profile, TODO: fill IRI
+
+# Relationship specification
+    # Example of broader/narrower relationships, add if applicable
+    # skos:broader <https://TODO/broader-concept> ;  # TODO: fill broader concept IRI
+    # skos:narrower <https://TODO/narrower-concept> .  # TODO: fill narrower concept IRI
+
+# Additional properties can be added as necessary, above are the main relevant ones
+
+# Comments to assist the curator in filling in the template.
+# - Please ensure to fill out all TODO placeholders with appropriate values.
+# - Define relations only if applicable, otherwise those lines can be removed if not needed.
