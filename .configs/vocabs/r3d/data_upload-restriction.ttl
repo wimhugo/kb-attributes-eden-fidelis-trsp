@@ -12,23 +12,33 @@ r3d:dataUploadRestrictions/feeRequired a skos:Concept ;
     skos:prefLabel "fee required"@en ;
     skos:definition "feeRequired"@en ;
     skos:broader r3d:dataUploadRestrictions ;
-    skos:related r3d:dataUploadRestrictions/institutionalMembership .
+    skos:related r3d:dataUploadRestrictions/institutionalMembership ;
+    skos:related r3d:dataUploadRestrictions/registration ;
+    skos:related r3d:dataUploadRestrictions/storageLimit .
 
 r3d:dataUploadRestrictions/institutionalMembership a skos:Concept ;
     skos:inScheme r3d:dataUploadRestrictions ;
     skos:prefLabel "institutional membership"@en ;
     skos:definition "institutionalMembership"@en ;
     skos:broader r3d:dataUploadRestrictions ;
-    skos:related r3d:dataUploadRestrictions/feeRequired .
+    skos:related r3d:dataUploadRestrictions/feeRequired ;
+    skos:related r3d:dataUploadRestrictions/registration ;
+    skos:related r3d:dataUploadRestrictions/storageLimit .
 
 r3d:dataUploadRestrictions/registration a skos:Concept ;
     skos:inScheme r3d:dataUploadRestrictions ;
     skos:prefLabel "registration"@en ;
     skos:definition "registration"@en ;
-    skos:broader r3d:dataUploadRestrictions .
+    skos:broader r3d:dataUploadRestrictions ;
+    skos:related r3d:dataUploadRestrictions/feeRequired ;
+    skos:related r3d:dataUploadRestrictions/institutionalMembership ;
+    skos:related r3d:dataUploadRestrictions/storageLimit .
 
 r3d:dataUploadRestrictions/storageLimit a skos:Concept ;
     skos:inScheme r3d:dataUploadRestrictions ;
     skos:prefLabel "storage limit"@en ;
     skos:definition "storageLimit"@en ;
-    skos:broader r3d:dataUploadRestrictions .
+    skos:broader r3d:dataUploadRestrictions ;
+    skos:related r3d:dataUploadRestrictions/feeRequired ;
+    skos:related r3d:dataUploadRestrictions/institutionalMembership ;
+    skos:related r3d:dataUploadRestrictions/registration .
