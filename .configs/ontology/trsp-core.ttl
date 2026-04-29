@@ -15,9 +15,9 @@ trsp:Ontology
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     dct:contributor <https://orcid.org/0000-0003-1106-8441> .
 
-########################################################
+##################################################################
 # Core classes
-########################################################
+##################################################################
 
 # Attribute
 trsp:Attribute a rdfs:Class ; 
@@ -113,7 +113,7 @@ trsp:identifierUsage a rdf:Property ;
 trsp:relationType a rdf:Property ;
     rdfs:label "relation type"@en ;
     rdfs:domain rdfs:Resource ;
-    rdfs:range skos:Concept .
+    rdfs:range trsp:RelationType .
 
 trsp:object a rdf:Property ;
     rdfs:label "object"@en ;
@@ -135,9 +135,9 @@ trsp:webReference a rdf:Property ;
     rdfs:domain trsp:AnnotationReference ;
     rdfs:range rdfs:Resource .
 
-############################
+#################################################################
 # Attribute properties
-############################
+#################################################################
 
 trsp:hasMeasurementType a rdf:Property ;
     rdfs:label "has measurement type"@en ;
