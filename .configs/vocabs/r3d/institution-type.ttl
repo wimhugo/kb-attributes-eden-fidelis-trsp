@@ -13,9 +13,15 @@ r3d:institutionTypes a skos:ConceptScheme ;
 r3d:institutionTypes/commercial a skos:Concept ;
     skos:inScheme r3d:institutionTypes ;
     skos:prefLabel "commercial"@en ;
-    skos:definition "commercial"@en .
+    skos:definition "commercial"@en ;
+    skos:related r3d:institutionTypes/non-profit .
 
 r3d:institutionTypes/non-profit a skos:Concept ;
     skos:inScheme r3d:institutionTypes ;
     skos:prefLabel "non-profit"@en ;
-    skos:definition "non-profit"@en .
+    skos:definition "non-profit"@en ;
+    skos:related r3d:institutionTypes/commercial .
+
+# --- deterministic fixes ---
+r3d:institutionTypes/commercial skos:topConceptOf r3d:institutionTypes .
+r3d:institutionTypes/non-profit skos:topConceptOf r3d:institutionTypes .

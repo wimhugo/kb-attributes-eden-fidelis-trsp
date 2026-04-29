@@ -226,7 +226,7 @@ trsp:service a rdf:Property ;
 trsp:CoreConcept a skos:Concept ;
     skos:prefLabel "Core Concept"@en ;
     skos:topConceptOf trsp:CoreConceptScheme ;
-    skos:related trsp:Service .
+    skos:related trsp:Service ;
 
 trsp:CoreConceptScheme a skos:ConceptScheme ;
     skos:prefLabel "Core Concept Scheme"@en ;
@@ -240,3 +240,4 @@ trsp:ProfileType skos:prefLabel "Profile Type"@en .
 trsp:Service skos:broader trsp:Profile .
 trsp:Repository skos:broader trsp:Profile .
 trsp:Attribute skos:broader trsp:Profile .
+
