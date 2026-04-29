@@ -1,5 +1,5 @@
 # Schema extraction from: .configs/ingest/graph/registry.trig
-# Generated: 2026-04-29T10:09:45.282Z
+# Generated: 2026-04-29T11:33:15.173Z
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
