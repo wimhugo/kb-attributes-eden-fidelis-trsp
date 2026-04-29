@@ -15,18 +15,25 @@ r3d:dataAccessRestrictions/feeRequired a skos:Concept ;
     skos:prefLabel "fee required"@en ;
     skos:definition "fee required"@en ;
     skos:related r3d:dataAccessRestrictions/institutionalMembership ;
-    skos:related r3d:dataAccessRestrictions/registration .
+    skos:related r3d:dataAccessRestrictions/registration ;
+    skos:broader r3d:dataAccessRestrictions .
 
 r3d:dataAccessRestrictions/institutionalMembership a skos:Concept ;
     skos:inScheme r3d:dataAccessRestrictions ;
     skos:prefLabel "institutional membership"@en ;
     skos:definition "institutional membership"@en ;
     skos:related r3d:dataAccessRestrictions/registration ;
-    skos:related r3d:dataAccessRestrictions/feeRequired .
+    skos:related r3d:dataAccessRestrictions/feeRequired ;
+    skos:broader r3d:dataAccessRestrictions .
 
 r3d:dataAccessRestrictions/registration a skos:Concept ;
     skos:inScheme r3d:dataAccessRestrictions ;
     skos:prefLabel "registration"@en ;
     skos:definition "registration"@en ;
     skos:related r3d:dataAccessRestrictions/feeRequired ;
-    skos:related r3d:dataAccessRestrictions/institutionalMembership .
+    skos:related r3d:dataAccessRestrictions/institutionalMembership ;
+    skos:broader r3d:dataAccessRestrictions .
+
+# --- deterministic fixes ---
+r3d:dataAccessRestrictions/institutionalMembership skos:topConceptOf r3d:dataAccessRestrictions .
+r3d:dataAccessRestrictions/registration skos:topConceptOf r3d:dataAccessRestrictions .
