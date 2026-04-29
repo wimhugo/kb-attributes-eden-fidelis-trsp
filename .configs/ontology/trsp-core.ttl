@@ -27,6 +27,13 @@ trsp:AttributeAssertion a rdfs:Class ; rdfs:label "Attribute assertion"@en .
 trsp:ProfileAssertion a rdfs:Class ; rdfs:label "Profile assertion"@en .
 trsp:ServiceRelation a rdfs:Class ; rdfs:label "Service relation"@en .
 
+# --- deterministic fixes ---
+
+trsp:ProfileType skos:prefLabel "Profile Type"@en .
+trsp:Service skos:broader trsp:Profile .
+trsp:Repository skos:broader trsp:Profile .
+
+
 ############################
 # Identifier properties
 ############################
@@ -222,22 +229,3 @@ trsp:profileAttributeValue a rdf:Property ;
     rdfs:domain trsp:ProfileAssertion .
 
 trsp:service a rdf:Property ;
-
-trsp:CoreConcept a skos:Concept ;
-    skos:prefLabel "Core Concept"@en ;
-    skos:topConceptOf trsp:CoreConceptScheme ;
-    skos:related trsp:Service ;
-
-trsp:CoreConceptScheme a skos:ConceptScheme ;
-    skos:prefLabel "Core Concept Scheme"@en ;
-    skos:hasTopConcept trsp:CoreConcept .
-
-# --- deterministic fixes ---
-trsp:CoreConcept skos:prefLabel "core concept"@en .
-trsp:CoreConceptScheme skos:prefLabel "core concept scheme"@en .
-
-trsp:ProfileType skos:prefLabel "Profile Type"@en .
-trsp:Service skos:broader trsp:Profile .
-trsp:Repository skos:broader trsp:Profile .
-trsp:Attribute skos:broader trsp:Profile .
-
