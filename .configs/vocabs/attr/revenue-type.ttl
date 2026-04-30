@@ -7,8 +7,6 @@
 @prefix ex: <https://vocab.example.org/> .
 
 trsp:profile-test-type-scheme a skos:ConceptScheme ;
-  dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  dcterms:description "The [Revenue Type] ... defines how a licensee MUST compensate the licensor for permitted uses of the enclosing license. If omitted, the license is assumed to be free."@en ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
@@ -20,9 +18,9 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Revenue Type"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/dcee9b9ab3600948df0b95c27077019bbbd507ab" ;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/eb2ea3695015cf541830211c9dcc853574c52410" ;
   skos:prefLabel "Revenue Type"@en;
-  owl:versionInfo "0.2"@en;
+  owl:versionInfo "0.3"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:revenue-type-free
