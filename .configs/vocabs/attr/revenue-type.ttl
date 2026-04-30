@@ -18,21 +18,21 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Revenue Type"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/eb2ea3695015cf541830211c9dcc853574c52410" ;
-  skos:prefLabel "Revenue Type"@en;
-  owl:versionInfo "0.3"@en;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/cbd080c62fae05587d00590b22f1476556e75697" ;
+  skos:prefLabel "TRSP Revenue Type Vocabulary"@en;
+  owl:versionInfo "0.4"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:revenue-type-free
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Free"@en ;
   skos:definition "No payment or attribution required."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:revenue-type-payment
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Purchase"@en ;
   skos:definition "One-time payment."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <http://purl.org/cerif/frapo/Purchaser> ;
@@ -42,7 +42,7 @@ trsp:revenue-type-payment
 
 trsp:revenue-type-recurring
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Subscription"@en ;
   skos:definition "Recurring payment for access."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <http://purl.org/cerif/frapo/Subscription> ;
@@ -52,7 +52,7 @@ trsp:revenue-type-recurring
 
 trsp:revenue-type-recurring
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Subscription"@en ;
   skos:definition "Recurring payment for access."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <http://purl.org/cerif/frapo/Subscription> ;
@@ -62,21 +62,21 @@ trsp:revenue-type-recurring
 
 trsp:revenue-type-ai-training
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "AI Training"@en ;
   skos:definition "Payment every time the content is used for AI training."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:revenue-type-crawl
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Crawl"@en ;
   skos:definition "Payment every time the content is crawled."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:revenue-type-ai-use
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "AI Use"@en ;
   skos:definition "Payment each time the content contributes to an AI-generated output, including use in inference, grounding, or generation processes."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <https://w3id.org/AIRO#AIUser> ;
@@ -86,14 +86,14 @@ trsp:revenue-type-ai-use
 
 trsp:revenue-type-contribution
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Contribution"@en ;
   skos:definition "A good faith monetary or in-kind contribution that supports the development or maintenance of the assets, or the broader content ecosystem."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:revenue-type-contribution
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Attribution"@en ;
   skos:definition "Licensees MUST provide visible credit and a functional link to the original source."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <http://simile.mit.edu/2003/10/ontologies/vraCore3#attribution> ;
