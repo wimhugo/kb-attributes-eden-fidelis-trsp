@@ -7,10 +7,12 @@
 @prefix ex: <https://vocab.example.org/> .
 
 trsp:profile-test-type-scheme a skos:ConceptScheme ;
+  dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
+  dcterms:description "The [Revenue Type] ... defines how a licensee MUST compensate the licensor for permitted uses of the enclosing license. If omitted, the license is assumed to be free."@en ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
-  dct:description "Revenue Type determines the technical mechanism for revenue generation and cost recovery."@en;
+  skos:definition "Revenue Type determines the technical mechanism for revenue generation and cost recovery."@en;
   dct:modified "2026-04-30"^^xsd:datetime;
   prov:wasAssociatedWith  
      [ a prov:SoftwareAgent;
@@ -18,16 +20,10 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Revenue Type"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/8cc593f58f89e1a2f92e8ee399f4214dbb5d557f" ;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/dcee9b9ab3600948df0b95c27077019bbbd507ab" ;
   skos:prefLabel "Revenue Type"@en;
-  owl:versionInfo "0.1"@en;
+  owl:versionInfo "0.2"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
-
-trsp:ConceptScheme
-  a skos:ConceptScheme ;
-  dcterms:description "The [Revenue Type] ... defines how a licensee MUST compensate the licensor for permitted uses of the enclosing license. If omitted, the license is assumed to be free."@en ;
-  dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:prefLabel "Revenue Type"@en .
 
 trsp:revenue-type-free
   a skos:Concept ;
@@ -41,10 +37,9 @@ trsp:revenue-type-payment
   skos:prefLabel "Revenue Type"@en ;
   skos:definition "One-time payment."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:altLabel "leasing"@en ;
-  skos:closeMatch <http://eurovoc.europa.eu/2642> ;
-  skos:broadMatch <http://eurovoc.europa.eu/2642> ;
-  rdfs:seeAlso <http://eurovoc.europa.eu/2642> ;
+  skos:closeMatch <http://purl.org/cerif/frapo/Purchaser> ;
+  skos:broadMatch <http://purl.org/cerif/frapo/Purchaser> ;
+  rdfs:seeAlso <http://purl.org/cerif/frapo/Purchaser> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:revenue-type-recurring
