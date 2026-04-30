@@ -15,7 +15,7 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Compensation Rule Vocabulary"@en;
   skos:prefLabel "TRSP Compensation Rule Vocabulary"@en;
-  owl:versionInfo "0.0.1"@en;
+  owl:versionInfo "0.0.2"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:compensation-rule-type-free
