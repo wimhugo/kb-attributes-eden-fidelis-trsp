@@ -1,0 +1,1358 @@
+# Node Inventory
+# Generated: 2026-04-30T07:45:36.605Z
+# Filter types: foaf:Project, dcat:Catalog
+# Properties: dct:title, dct:identifier, dct:description, dcat:endpointURL, dct:type
+
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix schema: <http://schema.org/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<https://dataservices.gfz-potsdam.de/web/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "GFZ Data Services" ;
+  dct:title "Scientific Drilling Database" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100012335" ;
+  dct:identifier "10.25504/FAIRsharing.e0d571" ;
+  dct:identifier "r3d100010659" ;
+  dct:identifier "https://dataservices.gfz-potsdam.de/portal/?fq=datacentre_symbol:DOIDB.SDDB" ;
+  dct:description "Since 2004, the GFZ German Research Centre for Geosciences assigns Digital Object Identifiers (DOI) to datasets. These datasets are archived by and published through GFZ Data Services and cover all geoscientific disciplines. They range from large dynamic datasets deriving from data intensive global monitoring networks with real-time data acquisition to the full suite of highly variable datasets collected by individual researchers or small teams. These highly variable data (‘long-tail data’) are small in size, but represent an important part of the total scientific output." ;
+  dct:description "Projects in the International Scientific Continental Drilling Program (ICDP) produce large amounts of data. Since the start of ICDP, data sharing has played an important part in ICDP projects, and the ICDP Operational Support Group, which provides the infrastructure for data capturing for many ICDP projects, has facilitated dissemination of data within project groups. With the online Scientific Drilling Database (SDDB; http://www.scientificdrilling.org), ICDP and GFZ Helmholtz Centre for Geosciences, Germany created a platform for the public dissemination of drilling data" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://library.camtree.org/home>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Camtree Digital Library :: Home" ;
+  dct:identifier "https://library.camtree.org/home" ;
+  dct:identifier "https://library.camtree.org/home" ;
+  dct:type "dcmitype:Text" .
+
+<https://www.cellosaurus.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Cellosaurus" ;
+  dct:title "Cellosaurus" ;
+  dct:title "Cellosaurus" ;
+  dct:identifier "10.25504/FAIRsharing.hkk309" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013293" ;
+  dct:identifier "10.25504/FAIRsharing.hkk309" ;
+  dct:identifier "https://www.cellosaurus.org/" ;
+  dct:identifier "SCR_013869" ;
+  dct:identifier "r3d100013293" ;
+  dct:identifier "https://www.cellosaurus.org/" ;
+  dct:identifier "urn:uuid:c6d53a5a-5f75-4685-8d53-75b08f416d5d" ;
+  dct:identifier "https://www.cellosaurus.org/" ;
+  dct:description "The Cellosaurus is a knowledge resource on cell lines. It attempts to describe all cell lines used in biomedical research. Its scope includes: Immortalized cell lines; naturally immortal cell lines (example: stem cell lines); finite life cell lines when those are distributed and used widely; vertebrate cell line with an emphasis on human, mouse and rat cell lines; and invertebrate (insects and ticks) cell lines. Its scope does not include primary cell lines (with the exception of the finite life cell lines described above) and plant cell lines." ;
+  dct:description "The Cellosaurus is a knowledge resource on cell lines. It attempts to describe all cell lines used in biomedical research. Its scope includes: Immortalized cell lines, Naturally immortal cell lines (example: stem cell lines), Finite life cell lines when those are distributed and used widely, Vertebrate cell line with an emphasis on human, mouse and rat cell lines, Invertebrate (insects and ticks) cell lines. Its scope does not include: Primary cell lines (with the exception of the finite life cell lines described above), Plant cell lines.  Cellosaurus was initiated to be used as a cell line controlled vocabulary in the context of the neXtProt knowledgebase, but it quickly become apparent that there was a need for a cell line knowledge resource that would serve the needs of individual researchers, cell line distributors and bioinformatic resources. This leads to an increase of the scope and depth of the content of the Cellosaurus. The Cellosaurus is a participant of the Resource Identification Initiative and contributes actively to the work of the International Cell Line Authentication Committee (ICLAC). It is a Global Core Biodata Resource, an ELIXIR Core Data Resource and an IRDiRC Recognized Resource." ;
+  dct:description "Cellosaurus, a cell line database, cell line catalogue, cell line ontology" ;
+  dct:type "fairsharing:knowledgebase" ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "Organization" .
+
+<https://www.ebi.ac.uk/ena/browser/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "https://www.ebi.ac.uk/ena/browser/" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "ENA Browser" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" .
+
+<https://reactome.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Reactome" ;
+  dct:title "Reactome" ;
+  dct:identifier "nif-0000-03390" ;
+  dct:identifier "SCR_003485" ;
+  dct:identifier "10.25504/FAIRsharing.tf6kj8" ;
+  dct:identifier "OMICS_02771" ;
+  dct:identifier "00000018" ;
+  dct:identifier "https://reactome.org/" ;
+  dct:identifier "r3d100010861" ;
+  dct:identifier "https://reactome.org/" ;
+  dct:identifier "10.25504/FAIRsharing.tf6kj8" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010861" ;
+  dct:identifier "urn:uuid:69760d0d-ab7a-4b86-8ba9-5a01ee6a3590" ;
+  dct:identifier "https://reactome.org/" ;
+  dct:identifier "https://reactome.org/" ;
+  dct:description "Reactome is a manually curated, peer-reviewed pathway database, annotated by expert biologists and cross-referenced to bioinformatics databases. Its aim is to share information in the visual representations of biological pathways in a computationally accessible format. Pathway annotations are authored by expert biologists, in collaboration with Reactome editorial staff and cross-referenced to many bioinformatics databases. These include NCBI Gene, Ensembl and UniProt databases, the UCSC and HapMap Genome Browsers, the KEGG Compound and ChEBI small molecule databases, PubMed, and Gene Ontology." ;
+  dct:description "The cornerstone of Reactome is a freely available, open source relational database of signaling and metabolic molecules and their relations organized into biological pathways and processes. The core unit of the Reactome data model is the reaction. Entities (nucleic acids, proteins, complexes, vaccines, anti-cancer therapeutics and small molecules) participating in reactions form a network of biological interactions and are grouped into pathways. Examples of biological pathways in Reactome include classical intermediary metabolism, signaling, transcriptional regulation, apoptosis and disease. Inferred orthologous reactions are available for 15 non-human species including mouse, rat, chicken, zebrafish, worm, fly, and yeast." ;
+  dct:description "Reactome is pathway database which provides intuitive bioinformatics tools for the visualisation, interpretation and analysis of pathway knowledge." ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:knowledgebase" ;
+  dct:type "Organization" ;
+  dct:type "dcmitype:Text" .
+
+<https://inspirehep.net/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Inspire-HEP" ;
+  dct:identifier "https://inspirehep.net/" ;
+  dct:identifier "https://inspirehep.net/?ln=en" ;
+  dct:identifier "r3d100011077" ;
+  dct:description "CERN, DESY, Fermilab and SLAC have built the next-generation High Energy Physics (HEP) information system, INSPIRE. It combines the successful SPIRES database content, curated at DESY, Fermilab and SLAC, with the Invenio digital library technology developed at CERN. INSPIRE is run by a collaboration of CERN, DESY, Fermilab, IHEP, IN2P3 and SLAC, and interacts closely with HEP publishers, arXiv.org, NASA-ADS, PDG, HEPDATA and other information resources.nINSPIRE represents a natural evolution of scholarly communication, built on successful community-based information systems, and provides a vision for information management in other fields of science." ;
+  dct:type "r3d:Repository" .
+
+<https://www.adp.fdv.uni-lj.si/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Slovenian Social Science Data Archives " ;
+  dct:title "Slovenian Social Science Data Archives" ;
+  dct:identifier "https://www.adp.fdv.uni-lj.si/" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010487" ;
+  dct:identifier "10.25504/FAIRsharing.14d3fb" ;
+  dct:identifier "https://www.adp.fdv.uni-lj.si/" ;
+  dct:identifier "r3d100010487" ;
+  dct:identifier "https://www.adp.fdv.uni-lj.si/en/" ;
+  dct:description "Slovenian Social Science Data Archives (ADP) was established in 1997 as an organizational unit of the Social Sciences Research Institute at the Faculty of Social Sciences, University of Ljubljana. It is a national research infrastructure for social sciences, whose main mission is to manage data and data services in order to support research, education, and general well-being.nnDigital curation of high-quality research data that are openly accessible to researchers and other interested public is at the essence of the ADP activities.nnWithin its mission, the ADP establishes itself as a national infrastructure that collects important data sources from a wide range of social sciences, interesting for analyzing the Slovenian society, deposits, preserves and promotes their further use in scientific, educational and other purposes.nnThe Ministry of Education, Science, and Sports of the Republic of Slovenia has appointed ADP as the national data service provider for social sciences within its membership in CESSDA. The long-term national importance of the ADP is clear also in the ongoing support of the ministry, which from the establishment of ADP onwards ensures funding. Since 2004, the funding of operations has been provided within the infrastructure program Network of research infrastructure centers at the University of Ljubljana (MRIC UL).nnADP reports about its activities to the Council of ADP and to the Slovenian Research Agency that funds the infrastructure research program of the University of Ljubljana (MRIC UL)." ;
+  dct:description "The Slovenian Social Science Data Archives (Slovenski Arhiv Družboslovnih podatkov - ADP) were established in 1997 as an organizational unit within the Institute of Social Sciences at the Faculty of Social Sciences, University of Ljubljana. Its tasks are to acquire significant data sources within a wide range of social science disciplines of interest to Slovenian social scientists, review and prepare them for digital preservation, and to disseminate them for further scientific, educational and other purposes." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://www.ortolang.fr/en/home/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Ortolang" ;
+  dct:identifier "r3d100011329" ;
+  dct:identifier "2417-7482" ;
+  dct:identifier "https://www.ortolang.fr/en/home/" ;
+  dct:identifier "https://www.ortolang.fr/en/home/" ;
+  dct:identifier "https://www.ortolang.fr/en/home/" ;
+  dct:description "ORTOLANG is an EQUIPEX project accepted in February 2012 in the framework of investissements d’avenir. Its aim is to construct a network infrastructure including a repository of language data (corpora, lexicons, dictionaries etc.) and readily available, well-documented tools for its processing. Expected outcomes comprize:npromoting research on analysis, modelling and automatic processing of our language to their highest international levels thanks to effective resource pooling;nfacilitating the use and transfer of resources and tools set up within public laboratories to industrial partners, notably SMEs which often cannot develop such resources and tools for language processing given the cost of investment;npromoting French language and the regional languages of France by sharing expertise acquired by public laboratories.nORTOLANG is a service for the language, which is complementary to the service offered by Huma-Num (très grande infrastructure de recherche). Ortolang gives access to SLDR for speech, and CNRTL for text resources." ;
+  dct:description "Plate-forme d'outils et de ressources linguistiques pour un traitement optimisé de la langue française" ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://www.storedb.org/store_v3/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "STOREDB" ;
+  dct:title "STOREDB" ;
+  dct:identifier "10.25504/FAIRsharing.6h8d2r" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100011049" ;
+  dct:identifier "r3d100011049" ;
+  dct:identifier "10.25504/FAIRsharing.6h8d2r" ;
+  dct:identifier "https://www.storedb.org/store_v3/" ;
+  dct:identifier "00000577" ;
+  dct:identifier "SCR_023207" ;
+  dct:description "STOREDB provides infrastructure for sharing data and resources in radiation biology and epidemiology. It is a platform for the archiving and sharing of primary data and outputs of all kinds, including epidemiological and experimental data, from research on the effects of radiation. It also provides a directory of bioresources and databases containing information and materials that investigators are willing to share. STORE supports the creation of a radiation research commons." ;
+  dct:description "STOREDB is a platform for the archiving and sharing of primary data and outputs of all kinds, including epidemiological and experimental data, from research on the effects of radiation. It also provides a directory of bioresources and databases containing information and materials that investigators are willing to share. STORE supports the creation of a radiation research commons." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://string-db.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "STRING" ;
+  dct:title "STRING protein-protein interaction networks" ;
+  dct:title "STRING" ;
+  dct:identifier "r3d100010604" ;
+  dct:identifier "SCR_005223" ;
+  dct:identifier "OMICS_29032" ;
+  dct:identifier "00000265" ;
+  dct:identifier "10.25504/FAIRsharing.9b7wvk" ;
+  dct:identifier "https://string-db.org/" ;
+  dct:identifier "nif-0000-03503" ;
+  dct:identifier "stringdb" ;
+  dct:identifier "https://string-db.org" ;
+  dct:identifier "10.25504/FAIRsharing.9b7wvk" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010604" ;
+  dct:description "STRING is a database of known and predicted protein interactions.nThe interactions include direct (physical) and indirect (functional) associations; they are derived from four sources:n- Genomic Contextn- High-throughput Experimentsn- (Conserved) Coexpressionn- Previous KnowledgenSTRING quantitatively integrates interaction data from these sources for a large number of organisms, and transfers information between these organisms where applicable." ;
+  dct:description "STRING is a database of known and predicted protein-protein interactions and a functional enrichment tool covering more than 5000 genomes" ;
+  dct:description "STRING is a database of known and predicted protein interactions. The interactions include direct (physical) and indirect (functional) associations." ;
+  dct:type "r3d:Repository" ;
+  dct:type "DataCatalog" ;
+  dct:type "fairsharing:knowledgebase" .
+
+<https://www.crossda.hr/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Croatian Social Science Data Archive" ;
+  dct:title "Croatian Social Science Data Archive" ;
+  dct:title "I4NG: Next Level Europe: Educational and employment opportunities for young people in Europe" ;
+  dct:identifier "https://www.crossda.hr/" ;
+  dct:identifier "https://data.crossda.hr" ;
+  dct:identifier "10.25504/fairsharing.718d75" ;
+  dct:identifier "r3d100014739" ;
+  dct:identifier "10.25504/FAIRsharing.718d75" ;
+  dct:identifier "urn:uuid:fddc8c4b-3413-486e-8b1d-c127a9dba4c8" ;
+  dct:description "The Croatian Social Science Data Archive (CROSSDA) is a national infrastructure public service whose role is to ensure the long-term preservation and dissemination of social science research data. CROSSDA is committed to providing data management support for researchers during the entire lifecycle of the project, from hypothesis development and grant preparation to data collection and data analysis. The data archive will make sure that the data are preserved and reusable in the long-term. CROSSDA is the national service provider for Croatia in the Consortium of European Social Science Data Archives CESSDA ERIC." ;
+  dct:description "The Croatian Social Science Data Archive (CROSSDA) is a national infrastructure public service whose role is to ensure the long-term preservation and dissemination of social science research data. CROSSDA is committed to providing data management support for researchers during the entire lifecycle of the project, from hypothesis development and grant preparation to data collection and data analysis. The data archive will make sure that the data are preserved and reusable in the long-term. CROSSDA is the national service provider for Croatia in the Consortium of European Social Science Data Archives CESSDA ERIC. Please note that while portions of the website are in Croatian only, the data repository is also in English." ;
+  dct:description "&lt;p&gt;Summary The Datathon – Next Level Europe: Educational and employment opportunities for young people in Europe – is a three day online event hosted by the Infra4NextGen project. Description Individuals [&hellip;]&lt;/p&gt;\\n" ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "Event" .
+
+<https://dans.knaw.nl/nl/life-sciences/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Data Station Life Sciences | DANS" ;
+  dct:title "EASY" ;
+  dct:identifier "https://dans.knaw.nl/nl/life-sciences/" ;
+  dct:identifier "https://dans.knaw.nl/nl/life-sciences/" ;
+  dct:identifier "https://dans.knaw.nl/nl/life-sciences/" ;
+  dct:identifier "r3d100010214" ;
+  dct:identifier "https://easy.dans.knaw.nl/ui/home" ;
+  dct:identifier "10.25504/FAIRsharing.w55kwn" ;
+  dct:description "Dit Data Station stelt je in staat om data te deponeren en naar data te zoeken binnen de domeinen levenswetenschappen, gezondheidswetenschappen en medische wetenschappen." ;
+  dct:description "Dit Data Station stelt je in staat om data te deponeren en naar data te zoeken binnen de domeinen levenswetenschappen, gezondheidswetenschappen en medische wetenschappen." ;
+  dct:description "<<<!!!<<< Please note that EASY has been replaced by the DANS Data Stations. Data from EASY can be discovered and accessed through the Data Stations. https://dans.knaw.nl/nl/ >>>!!!>>>" ;
+  dct:type "WebPage" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" .
+
+<https://www.ebi.ac.uk/intact/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:identifier "https://www.ebi.ac.uk/intact/" ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:description "EMBL-EBI" ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://www.ebi.ac.uk/pride/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "EMBL-EBI" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://anc.plus.ac.at/index.html>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Austrian NeuroCloud" ;
+  dct:title "Austrian NeuroCloud" ;
+  dct:title "Austrian NeuroCloud" ;
+  dct:title "Austrian NeuroCloud" ;
+  dct:identifier "https://anc.plus.ac.at" ;
+  dct:identifier "SCR_027771" ;
+  dct:identifier "r3d100014355" ;
+  dct:identifier "10.25504/FAIRsharing.0ea19f" ;
+  dct:identifier "https://anc.plus.ac.at" ;
+  dct:identifier "https:/anc.plus.ac.at" ;
+  dct:identifier "https://anc.plus.ac.at" ;
+  dct:identifier "https:/anc.plus.ac.at" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100014355" ;
+  dct:identifier "10.25504/FAIRsharing.0ea19f" ;
+  dct:description "The ANC is a FAIR-enabling open repository providing tools and services for the storage, maintenance, and utilization (e.g., through (re)-analysis or integration) of neurocognitive research data. The ANC fully supports the mission of the European Open Science Cloud (EOSC) and is committed to the European Union's open science policy, legal standards, and best open science practices. We aspire to provide the framework necessary for researchers to facilitate data operations along the entire research data lifecycle. This includes planning and designing research studies (with an increasing amount of funding agencies requiring a stringent data management plan), organizing and preparing data (by adhering to accepted community standards), processing and analyzing data (using a system of integrated tools), and finally storing and sharing the research data (promoting the ongoing shift in research culture towards heightened transparency, data reusability, and result reproducibility)." ;
+  dct:description "The ANC is a FAIR-enabling open repository providing tools and services for the storage, maintenance, and utilization (e.g., through (re)-analysis or integration) of neurocognitive research data. The ANC fully supports the mission of the European Open Science Cloud (EOSC) and is commited to the European Union's open science policy, legal standards, and best open science practices. We aspire to provide the framework necessary for researchers to facilitate data operations along the entire research data lifecycle. This includes planning and designing research studies (with an increasing amount of funding agencies requiring a stringent data management plan), organizing and preparing data (by adhering to accepted community standards), processing and analyzing data (using a system of integrated tools), and finally storing and sharing the research data (promoting the ongoing shift in research culture towards heightened transparency, data reusability, and result reproducibility)." ;
+  dct:description "The ANC is a FAIR-enabling open repository providing tools and services for the storage, maintenance, and utilization (e.g., through (re)-analysis or integration) of neurocognitive research data. The ANC fully supports the mission of the European Open Science Cloud (EOSC) and is commited to the European Union's open science policy, legal standards, and best open science practices. We aspire to provide the framework necessary for researchers to facilitate data operations along the entire research data lifecycle. This includes planning and designing research studies (with an increasing amount of funding agencies requiring a stringent data management plan), organizing and preparing data (by adhering to accepted community standards), processing and analyzing data (using a system of integrated tools), and finally storing and sharing the research data (promoting the ongoing shift in research culture towards heightened transparency, data reusability, and result reproducibility)." ;
+  dct:description "The Austrian NeuroCloud (ANC) is a FAIR-enabling platform for sustainable research data management in cognitive neuroscience. It supports the entire data lifecycle, from acquisition and storage to validation, metadata curation, publishing, and sharing. The platform provides researchers with tools to ensure continuous data integrity, compliance with community standards, and controlled access to research data. " ;
+  dct:type "r3d:Repository" ;
+  dct:type "schema:DataCatalog" ;
+  dct:type "dcat:Catalog" ;
+  dct:type "foaf:Project" ;
+  dct:type "schema:Project" ;
+  dct:type "schema:DataCatalog" ;
+  dct:type "dcat:Catalog" ;
+  dct:type "foaf:Project" ;
+  dct:type "schema:Project" ;
+  dct:type "fairsharing:repository" .
+
+<https://www.orthodb.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "OrthoDB" ;
+  dct:title "Database of Orthologous Groups" ;
+  dct:identifier "https://www.orthodb.org/" ;
+  dct:identifier "10.25504/FAIRsharing.x989d5" ;
+  dct:description "OrthoDB provides evolutionary and functional annotations of genes classified into groups of orthologs in a diverse sampling of eukaryotes, prokaryotes, and viruses." ;
+  dct:description "OrthoDB presents a catalog of eukaryotic orthologous protein-coding genes. Orthology refers to the last common ancestor of the species under consideration, and thus OrthoDB explicitly delineates orthologs at each radiation along the species phylogeny." ;
+  dct:type "WebSite" ;
+  dct:type "fairsharing:knowledgebase" .
+
+<https://aussda.at/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "AUSSDA - The Austrian Social Science Data Archive" ;
+  dct:title "AUSSDA - Austrian Social Science Data Archive" ;
+  dct:title "AUSSDA - The Austrian Social Science Data Archive " ;
+  dct:identifier "https://aussda.at/" ;
+  dct:identifier "r3d100010483" ;
+  dct:identifier "10.25504/FAIRsharing.RJ3PDJ" ;
+  dct:identifier "https://data.aussda.at/" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010483" ;
+  dct:identifier "10.25504/FAIRsharing.RJ3PDJ" ;
+  dct:description "AUSSDA - The Austrian Social Science Data Archive is a certified, national research infrastructure for the social science community. We offer sustainable and easy-to-use services in the field of digital archiving and preservation. The main beneficiaries are researchers, students, educational institutions and media professionals.nWe implement international standards to make research data findable, accessible, interoperable and reusable according to the FAIR principles. AUSSDA supports the open science movement to maximize the potential for data reuse. We stand for integrity in archiving and advocate for compliance with data protection and ethical principles in research data management.nAUSSDA represents Austria as a national service provider in CESSDA ERIC, has locations at the University of Vienna and the WU Wien and at the universities of Graz, Linz, Innsbruck, Krems, Klagenfurt and Salzburg as well as at the OeAW (Austrian Academy of Sciences) and works within a network of national and international partners." ;
+  dct:description "AUSSDA - The Austrian Social Science Data Archive is a certified, national research infrastructure for the social science community. We offer sustainable and easy-to-use services in the field of digital archiving and preservation. The main beneficiaries are researchers, students, educational institutions and media professionals.nnWe implement international standards to make research data findable, accessible, interoperable and reusable according to the FAIR principles. AUSSDA supports the open science movement to maximize the potential for data reuse. We stand for integrity in archiving and advocate for compliance with data protection and ethical principles in research data management.nnAUSSDA represents Austria as a national service provider in CESSDA ERIC, has locations at the University of Vienna and the WU Wien and at the universities of Graz, Linz, Innsbruck, Krems, Klagenfurt and Salzburg as well as at the OeAW (Austrian Academy of Sciences) and works within a network of national and international partners." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" .
+
+<https://cds.unistra.fr/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Strasbourg Astronomical Data Center" ;
+  dct:identifier "https://cds.unistra.fr/" ;
+  dct:identifier "https://cds.unistra.fr/" ;
+  dct:identifier "https://cds.unistra.fr//" ;
+  dct:identifier "r3d100010584" ;
+  dct:description "Strasbourg astronomical Data Center (CDS) is dedicated to the collection and worldwide distribution of astronomical data and related information.nAlongside data curation and service maintenance responsibilities, the CDS undertakes R&D activities that are fundamental to ensure the long term sustainability in a domain in which technology evolves very quickly. R&D areas include informatics, big data, and development of the astronomical Virtual Observatory (VO). CDS is a major actor in the VO with leading roles in European VO projects, the French Virtual Observatory and the International Virtual Observatory Alliance (IVOA). nThe CDS hosts the SIMBAD astronomical database, the world reference database for the identification of astronomical objects; VizieR, the catalogue service for the CDS reference collection of astronomical catalogues and tables published in academic journals; and the Aladin interactive software sky atlas for access, visualization and analysis of astronomical images, surveys, catalogues, databases and related data." ;
+  dct:type "r3d:Repository" .
+
+<https://dans.knaw.nl/nl/social-sciences-and-humanities/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Data Station Social Sciences and Humanities | DANS" ;
+  dct:title "EASY" ;
+  dct:identifier "https://dans.knaw.nl/nl/social-sciences-and-humanities/" ;
+  dct:identifier "https://dans.knaw.nl/nl/social-sciences-and-humanities/" ;
+  dct:identifier "https://dans.knaw.nl/nl/social-sciences-and-humanities/" ;
+  dct:identifier "r3d100010214" ;
+  dct:identifier "https://easy.dans.knaw.nl/ui/home" ;
+  dct:identifier "10.25504/FAIRsharing.w55kwn" ;
+  dct:description "Dit Data Station stelt je in staat om data te deponeren en naar data te zoeken binnen de sociale wetenschappen en geesteswetenschappen." ;
+  dct:description "Dit Data Station stelt je in staat om data te deponeren en naar data te zoeken binnen de sociale wetenschappen en geesteswetenschappen." ;
+  dct:description "<<<!!!<<< Please note that EASY has been replaced by the DANS Data Stations. Data from EASY can be discovered and accessed through the Data Stations. https://dans.knaw.nl/nl/ >>>!!!>>>" ;
+  dct:type "WebPage" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" .
+
+<https://www.uniprot.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "UniProt Knowledgebase" ;
+  dct:title "UniProtKB" ;
+  dct:identifier "https://www.uniprot.org/" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100011521" ;
+  dct:identifier "10.25504/FAIRsharing.s1ne3g" ;
+  dct:identifier "SCR_004426" ;
+  dct:identifier "https://www.uniprot.org/uniprotkb/" ;
+  dct:identifier "r3d100011521" ;
+  dct:identifier "nlx_53981" ;
+  dct:identifier "10.25504/FAIRsharing.s1ne3g" ;
+  dct:description "The UniProt Knowledgebase (UniProtKB) is the central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. In addition to capturing the core data mandatory for each UniProtKB entry (mainly, the amino acid sequence, protein name or description, taxonomic data and citation information), as much annotation information as possible is added. This includes widely accepted biological ontologies, classifications and cross-references, and clear indications of the quality of annotation in the form of evidence attribution of experimental and computational data. The UniProt Knowledgebase consists of two sections: a reviewed section containing manually-annotated records with information extracted from literature and curator-evaluated computational analysis (aka \"UniProtKB/Swiss-Prot\"), and an unreviewed section with computationally analyzed records that await full manual annotation (aka \"UniProtKB/TrEMBL\")." ;
+  dct:description "The UniProt Knowledgebase (UniProtKB) is the central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. In addition to capturing the core data mandatory for each UniProtKB entry (mainly, the amino acid sequence, protein name or description, taxonomic data and citation information), as much annotation information as possible is added. This includes widely accepted biological ontologies, classifications and cross-references, and clear indications of the quality of annotation in the form of evidence attribution of experimental and computational data. The Universal Protein Resource (UniProt) is a comprehensive resource for protein sequence and annotation data. The UniProt databases are the UniProt Knowledgebase (UniProtKB), the UniProt Reference Clusters (UniRef), and the UniProt Archive (UniParc). The UniProt Metagenomic and Environmental Sequences (UniMES) database is a repository specifically developed for metagenomic and environmental data. The UniProt Knowledgebase,is an expertly and richly curated protein database, consisting of two sections called UniProtKB/Swiss-Prot and UniProtKB/TrEMBL." ;
+  dct:type "fairsharing:knowledgebase_and_repository" ;
+  dct:type "r3d:Repository" .
+
+<https://www.wdc-climate.de/ui/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "World Data Center for Climate" ;
+  dct:title "World Data Center for Climate at DRKZ " ;
+  dct:title "World Data Center for Climate" ;
+  dct:identifier "https://www.wdc-climate.de/ui/" ;
+  dct:identifier "10.25504/FAIRsharing.x3hgaw" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010299" ;
+  dct:identifier "https://www.wdc-climate.de/ui/" ;
+  dct:identifier "10.25504/FAIRsharing.x3hgaw" ;
+  dct:identifier "r3d100010299" ;
+  dct:description "The World Data Center Climate (WDCC) at the German Climate Computing Center (DKRZ: Deutsches Klimarechenzentrum GmbH) is part of an international effort to set up domain specific data portals as a service for the scientific community. The WDCC provides a long-term archiving service for large climate or Earth System research data sets. This service includes archiving and retrieval capability of data for time periods of 10 years or longer.  The WDCC focuses on climate and climate-related data products, specifically those resulting from climate simulations. Metadata and research data in WDCC is curated in collaboration with the data providers. Data in WDCC is citable and can be directly integrated into scientific publications." ;
+  dct:description "The mission of World Data Center for Climate (WDCC) is to provide central support for the German and European climate research community. The WDCC is member of the ISC's World Data System. Emphasis is on development and implementation of best practice methods  for Earth System data management. Data for and from climate research are collected, stored and disseminated. The WDCC is  restricted to data products. Cooperations exist with thematically corresponding data centres of, e.g., earth observation,  meteorology, oceanography, paleo climate and environmental sciences. The services of WDCC are also available to external  users at cost price. A special service for the direct integration of research data in scientific publications has been developed. The editorial process at WDCC ensures the quality of metadata and research data in collaboration with the data producers. A citation code and a digital identifier (DOI) are provided and registered together with citation information at the DOI registration agency DataCite." ;
+  dct:type "Organization" ;
+  dct:type "DataCatalog" ;
+  dct:type "WebSite" ;
+  dct:type "fairsharing:knowledgebase" ;
+  dct:type "r3d:Repository" .
+
+<https://www.fsd.tuni.fi/en/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Finnish Social Science Data Archive" ;
+  dct:title "Finnish Social Science Data Archive" ;
+  dct:identifier "10.25504/FAIRsharing.2okP6D" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010490" ;
+  dct:identifier "https://www.fsd.tuni.fi/en/" ;
+  dct:identifier "https://www.fsd.tuni.fi/en/" ;
+  dct:identifier "ISNI:0000 0004 7448 6517" ;
+  dct:identifier "Q11902697" ;
+  dct:identifier "10.25504/FAIRsharing.2okP6D" ;
+  dct:identifier "10932" ;
+  dct:identifier "05wmhj005" ;
+  dct:identifier "r3d100010490" ;
+  dct:description "The Finnish Social Science Data Archive (FSD) is a national-level service resource for research and teaching in Finland. FSD promotes data sharing and curates and disseminates digital research data for research, teaching and studying purposes. FSD serves both Finnish and international users. FSD is an expert in the curation and preservation of digital research data collected to study society, people and culture. FSD focuses on acquiring Social Science data, but data from other relevant fields (Arts and Humanities, Education, and Health Science) is also archived. FSD is Finland's service provider for CESSDA ERIC, the Consortium of European Social Science Data Archives." ;
+  dct:description "The Data Archive provides research data to researchers, teachers and students. All services are free of charge." ;
+  dct:description "The Finnish Social Science Data Archive (FSD) is a national resource centre for research and education. FSD's mission is to preserve data collected to study Finnish society, people and cultural phenomena in the long term. FSD archives, promotes and disseminates digital research data for research, teaching and learning purposes. Data descriptions are published in Finnish and English on FSD’s service portal Aila, through which users also download data. Quantitative datasets are translated from Finnish into English on request, and a large number of datasets are available in English. All services are free of charge. FSD promotes transparency, accumulation and efficient reuse of scientific research as well as open access to research data. FSD is the Finnish Service Provider for CESSDA ERIC." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" .
+
+<https://sikt.no/en/archiving-research-data>
+  a dcat:Catalog, foaf:Project, dct:Policy, <ex:DepositionPolicy> ;
+  dct:title "Deposit your research data | Sikt" ;
+  dct:title "Sikt Research Data Archive" ;
+  dct:title "Terms and Conditions (Archive)" ;
+  dct:title "Sikt Research Data Archive" ;
+  dct:identifier "https://sikt.no/en/archiving-research-data" ;
+  dct:identifier "r3d100010493" ;
+  dct:identifier "https://sikt.no/en/find-data" ;
+  dct:identifier "10.25504/FAIRsharing.mKDii0" ;
+  dct:identifier "10.25504/FAIRsharing.mKDii0" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010493" ;
+  dct:description "Sikt tar imot og arkiverer forskingsdata om mennesker og samfunn, og gjør dem tilgjengelige for gjenbruk. Vi hjelper deg å dokumentere data og velge riktig tilgangsnivå." ;
+  dct:description "Sikt archives research data on people and society to make sure the data can be shared and is made available for reuse. We continuously enrich our data collections to provide a richer basis for research.nSikt’s main focus is quantitative data matrices on individuals, organisations, administrative, political, and geographical actors. The archive specialise in survey data, which undergoes extensive curation at the variable level and detailed metadata is produced and published in Norwegian and English." ;
+  dct:description "Sikt Research Data Archive is a national research data infrastructure dedicated to the digital curation of high-quality research data, focusing on social science, humanities, and select areas of medical, health, and environmental research.  The Archive's mission is to archive, facilitate, and disseminate rich data resources and support services to students, researchers, and organisations in higher education and research. The Archive offers data curation services that include carefully reviewing incoming data and documentation, enhancing documentation, adding detailed metadata, creating new sustainable formats, and reviewing deposited data for accuracy and legitimacy. The Archive is the Norwegian Service Provider for the Consortium of European Social Science Data Archives (CESSDA). nnThe Archive has a long history of promoting and supporting open access to research data and data sharing within the social sciences, both as a national infrastructure and as part of the European and worldwide network of social science data archives. Before its merger into Sikt in 2022, the Archive was part of NSD – Norwegian Centre for Research Data. NSD was established in 1971 as part of the Research Council of Norway and became an independent limited company fully owned by the Ministry of Education and Research in 2003. The Archive is now a service under Sikt – Norwegian Agency for Shared Services in Education and Research, a public administrative body under the Ministry of Education and Research." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:knowledgebase_and_repository" .
+
+<https://www.sodha.be/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Social Sciences and Digital Humanities Archive" ;
+  dct:identifier "https://www.sodha.be/" ;
+  dct:identifier "https://www.sodha.be/" ;
+  dct:identifier "r3d100013518" ;
+  dct:description "Welcome to SODHA, the Belgian federal data archive for social sciences and the digital humanities! Here you can find and deposit social science and digital humanities data in reusable form. Published datasets receive a DOI, making them citable like other types of publications. SODHA promotes open data by enabling reuse of research data and by safely preserving datasets in the long term. SODHA is the Belgian service provider in the Consortium of European Social Science Data Archives (CESSDA) and is hosted by the State Archives of Belgium. SODHA was built with the help of DEMO (UCLouvain) and Interface Demography (VUB). You can consult the SODHA Guide here, and you can read our policies here. Want to learn more about SODHA? Consult our brochure or our presentation on the State Archives' website. If you have any question, you can contact us at sodha@arch.be." ;
+  dct:description "SODHA is the federal Belgian data archive for social sciences and the digital humanities. SODHA is a new service of the State Archives of Belgium and acts as the Belgian service provider for the Consortium of European Social Science Data Archives (CESSDA)." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" .
+
+<https://datice.is/is>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "DATICE" ;
+  dct:title "DATICE" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013494" ;
+  dct:identifier "10.25504/FAIRsharing.8cdb5f" ;
+  dct:identifier "10.25504/FAIRsharing.8cdb5f" ;
+  dct:identifier "r3d100013494" ;
+  dct:identifier "https://dataverse.rhi.hi.is" ;
+  dct:description "DATICE is a data service and archive for Icelandic social science research data. Our goal is to ensure open and free access to high quality data for the research community as well as the general public. The service is located within the Social Science Research Institute (SSRI) at the University of Iceland." ;
+  dct:description "DATICE was established in late 2018 and is funded by the University of Iceland's (UI) School of Social Sciences, with a contribution from the university's Centennial Fund. DATICE is the appointed service provider for the Consortium of European Social Science Data Archives (CESSDA ERIC) in Iceland and is located within the UI Social Science Research Institute (SSRI). The main goal of the data service is to ensure open and free access to high quality research data for the research community as well as the general public." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://www.cathdb.info/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "CATH - Protein Structure Classification" ;
+  dct:title "CATH" ;
+  dct:title "CATH" ;
+  dct:identifier "www.cathdb.info" ;
+  dct:identifier "urn:uuid:009954bc-1fa0-428e-9fa6-a821f65a00ba" ;
+  dct:identifier "00000210" ;
+  dct:identifier "nif-0000-02640" ;
+  dct:identifier "10.25504/FAIRsharing.xgcyyn" ;
+  dct:identifier "https://www.cathdb.info/" ;
+  dct:identifier "SCR_007583" ;
+  dct:identifier "r3d100012629" ;
+  dct:identifier "10.25504/FAIRsharing.xgcyyn" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100012629" ;
+  dct:description "CATH is a classification of protein structures downloaded from the Protein Data Bank. We group protein domains into superfamilies when there is sufficient evidence they have diverged from a common ancestor." ;
+  dct:description "The CATH database is a hierarchical domain classification of protein structures in the Protein Data Bank. Protein structures are classified using a combination of automated and manual procedures.  There are four major levels in the CATH hierarchy; Class, Architecture, Topology and Homologous superfamily." ;
+  dct:description "The CATH database is a free, publicly available online resource that provides information on the evolutionary relationships of protein domains. It provides a hierarchical domain classification of protein structures in the Protein Data Bank. Protein structures are classified using a combination of automated and manual procedures. There are four major levels in this hierarchy; Class (secondary structure classification, e.g. mostly alpha), Architecture (classification based on overall shape), Topology (fold family) and Homologous superfamily (protein domains which are thought to share a common ancestor)." ;
+  dct:type "DataCatalog" ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:knowledgebase" .
+
+<https://www.ebi.ac.uk/gwas/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:identifier "https://www.ebi.ac.uk/gwas/" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:description "The NHGRI-EBI GWAS Catalog: a curated collection of all human genome-wide association studies, produced by a collaboration between EMBL-EBI and NHGRI" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://ukdataservice.ac.uk/about/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "UK Data Service" ;
+  dct:title "UK Data Service" ;
+  dct:title "About us - UK Data Service" ;
+  dct:identifier "https://ukdataservice.ac.uk/about/" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010230" ;
+  dct:identifier "10.25504/FAIRsharing.1ky0cs" ;
+  dct:identifier "0468x4e75" ;
+  dct:identifier "https://ukdataservice.ac.uk/" ;
+  dct:identifier "10.25504/FAIRsharing.1ky0cs" ;
+  dct:identifier "r3d100010230" ;
+  dct:identifier "https://ukdataservice.ac.uk/about/" ;
+  dct:identifier "https://ukdataservice.ac.uk/about/" ;
+  dct:description "A comprehensive resource funded by the ESRC to support researchers, teachers and policymakers who depend on high-quality social and economic data." ;
+  dct:description "UK Data Service (UKDS) provides unified access to the UK's largest collection of social, economic and population data for research and teaching purposes covering a range of different disciplines. The majority of our data are fully anonymised, unless otherwise specified in the relevant online catalogue records, and are therefore not suitable for genealogical users or family historians. The UK Data Service is funded by the Economic and Social Research Council (ESRC) to meet the data needs of researchers, students and teachers from all sectors, including academia, central and local government, charities and foundations, independent research centres, think tanks, and business consultants and the commercial sector." ;
+  dct:description "The UK Data Service is a national data service funded by the ESRC to provide research access to the UK’s largest collection of social, economic and population data including UK government-sponsored surveys, cross-national surveys, longitudinal studies, UK census data, international aggregate, business data, and qualitative data.nDesigned to meet the data needs of researchers, students and teachers from all sectors, including academia, central and local government, charities and foundations, independent research centres, think tanks, business consultants and analysts, communities and the commercial sector, the UK Data Service provides access to high-quality social and economic data; support for policy-relevant research; guidance and training for the development of skills in data use, and the development of best practice in digital preservation and sharing.nData users can browse collections online and register to analyse and download them. Open Data collections are available for anyone to use.nKey partners include JISC, the University of Manchester, University of Edinburgh and University College London (UCL).  The lead partner is the UK Data Archive (https://service.re3data.org/repository/r3d100010215) based at the University of Essex, a Trusted Digital Repository (TDR) certified against the CoreTrustSeal (https://www.coretrustseal.org/) and certified against ISO27001 for Information Security (https://www.iso.org/standard/27001).nThe UK Data Service replaces the earlier ESRC investments of the Economic and Social Data Service (ESDS), the Secure Data Service (SDS), the Survey Question Bank and elements of the ESRC Census Programme." ;
+  dct:description "Helping researchers explore quality data for over 50 years. Background information, contact details and job opportunities." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" ;
+  dct:type "WebPage" .
+
+<https://cer.ihtm.bg.ac.rs/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Central Repository ICTM" ;
+  dct:title "CeR – Central Repository ICTM" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013811" ;
+  dct:identifier "https://cer.ihtm.bg.ac.rs" ;
+  dct:identifier "r3d100013811" ;
+  dct:description "CeR i.e. Central Repository ICTM is a digital repository of the Institute of Chemistry, Technology and Metallurgy, University of Belgrade, Serbia. CeR provides open access to the publications, as well as to other outputs of the research projects implemented in this institution." ;
+  dct:description "CeR – Central Repository is the institutional digital repository of the Institute of Chemistry, Technology and Metallurgy, University of Belgrade. The aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the Institute of Chemistry, Technology and Metallurgy. The repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB)." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://modelarchive.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "ModelArchive" ;
+  dct:title "ModelArchive" ;
+  dct:identifier "urn:uuid:f5378897-0353-47d5-83a3-7a859793365b" ;
+  dct:identifier "https://modelarchive.org/" ;
+  dct:identifier "10.25504/FAIRsharing.tpqndj" ;
+  dct:description "ModelArchive provides a stable accession code (DOI) for deposited theoretical models of protein and macromolecular structures" ;
+  dct:description "ModelArchive provides a stable accession code (DOI) for deposited theoretical models of protein and macromolecular structures" ;
+  dct:description "ModelArchive is the archive for structural models which are not based on experimental data and complements the PDB archive for experimental structures and PDB-Dev for integrative structures. The ModelArchive is being developed following the \"Workshop on Applications of Protein Models in Biomedical Research\" held at the University of California, San Francisco in July 2008 for applications of protein models in biomedical research. ModelArchive is a repository for depositions of computed models of macromolecular structures which are not based on experimental data. The models can consist of any combination of proteins, RNA, DNA, or carbohydrates and include small molecules bound to them. Deposited models are findable, accessible, interoperable and reusable. Depositions are assigned a DOI to be included in manuscripts for which the model was generated." ;
+  dct:type "DataCatalog" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" .
+
+<https://www.ebi.ac.uk/empiar/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:identifier "https://www.ebi.ac.uk/empiar/" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:description "EMPIAR, the Electron Microscopy Public Image Archive centered at EMBL-EBI, is a public resource for raw electronn    microscopy images related to EMDB, contains micrographs, particle sets and tilt-series." ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" .
+
+<https://radar.brookes.ac.uk/radar/hierarchy.do?topic=86e2c9d7-ef43-4b54-a387-3223d30acd3b>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Oxford Brookes University: RADAR" ;
+  dct:identifier "2287" ;
+  dct:identifier "r3d100012929" ;
+  dct:identifier "1680" ;
+  dct:identifier "https://radar.brookes.ac.uk/radar" ;
+  dct:description "RADAR (Research And Digital Assets Repository) is the institutional repository of Oxford Brookes University. The role of RADAR is to share the intellectual product of Oxford Brookes freely and openly with the staff and students of Oxford Brookes or with the global academic and public community.n​RADAR has a variety of research collections (primarily containing original research publications) and teaching collections (primarily containing resources that support teaching at Oxford Brookes University). Some of the collections​ and resources on RADAR are freely accessible to the general public and other collections​ and resources are only accessible by current Oxford Brookes staff and students." ;
+  dct:type "r3d:Repository" .
+
+<https://www.bgee.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Bgee DataBase for Gene Expression Evolution" ;
+  dct:title "Bgee gene expression data" ;
+  dct:title "Bgee" ;
+  dct:identifier "https://www.bgee.org/" ;
+  dct:identifier "10.25504/FAIRsharing.x6d6sx" ;
+  dct:identifier "https://www.bgee.org/" ;
+  dct:identifier "https://www.bgee.org" ;
+  dct:identifier "https://www.bgee.org/" ;
+  dct:identifier "r3d100014596" ;
+  dct:identifier "Q54985720" ;
+  dct:identifier "SCR_002028" ;
+  dct:identifier "10.25504/FAIRsharing.x6d6sx" ;
+  dct:description "Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species. It provides an intuitive answer to the question -where is a gene expressed?- and supports research in cancer and agriculture, as well as evolutionary biology." ;
+  dct:description "Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species. It provides an intuitive answer to the question \"where is a gene expressed?\" and supports research in cancer and agriculture as well as evolutionary biology.nBgee data are produced from multiple data types (bulk and single-cell RNA-Seq, Affymetrix, in situ hybridization, EST data), and multiple data sets, that are all integrated consistently to provide a single answer to the question: \"where is this gene expressed?\"nBgee is based exclusively on curated \"normal\", healthy wild-type expression data (e.g., no gene knock-out, no treatment, no disease), to provide a comparable reference of normal gene expression.nBgee produces calls of presence/absence of expression, and of differential over-/under-expression, integrated along with information of gene orthology, and of homology between organs. This allows comparisons of expression patterns between species." ;
+  dct:description "Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species. It provides an intuitive answer to the question -where is a gene expressed?- and supports research in cancer and agriculture, as well as evolutionary biology." ;
+  dct:description "Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species. It provides an intuitive answer to the question \"where is a gene expressed?\" and supports research in cancer and agriculture, as well as evolutionary biology." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:knowledgebase" ;
+  dct:type "Dataset" ;
+  dct:type "r3d:Repository" .
+
+<https://datarepositorium.uminho.pt/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "DataRepositoriUM" ;
+  dct:title "DataRepositoriUM" ;
+  dct:identifier "https://datarepositorium.uminho.pt/" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013173" ;
+  dct:identifier "10.25504/FAIRsharing.066ce6" ;
+  dct:identifier "r3d100013173" ;
+  dct:identifier "https://datarepositorium.uminho.pt/" ;
+  dct:description "Repositório de Dados da Universidade do Minho" ;
+  dct:description "Data Repository of the University of Minho to share, publish and manage research data from University of Minho research units. n" ;
+  dct:description "Data Repository of the University of Minho. Share, publish and manage data from University of Minho research units." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://recherche.data.gouv.fr/en/page/about-recherche-data-gouv>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Recherche Data Gouv" ;
+  dct:title "Recherche Data Gouv" ;
+  dct:title "Recherche Data Gouv" ;
+  dct:identifier "https://recherche.data.gouv.fr/en/page/about-recherche-data-gouv" ;
+  dct:identifier "r3d100013931" ;
+  dct:identifier "https://entrepot.recherche.data.gouv.fr/dataverse/root/?q=" ;
+  dct:identifier "urn:uuid:5f42281b-7f48-4b05-883d-a8ab37df12ab" ;
+  dct:identifier "http://doi.org/10.17616/R31NJN8R" ;
+  dct:identifier "10.25504/FAIRsharing.59985a" ;
+  dct:description "Inaugurated in 2022 by the French Minister of Higher Education and Research, Recherche Data Gouv is the national ecosystem dedicated to managing, sharing and..." ;
+  dct:description "Recherche Data Gouv is the French national federated platform for research data. As a flagship initiative of the Second National Plan for Open Science, it is mandated and funded by the French Ministry of Higher Education and Research (MESR). Recherche Data Gouv's mission is to provide a sovereign solution for sharing and preserving research data, ensuring compliance with FAIR principles and fostering reuse." ;
+  dct:description "The Research Data Gouv repository allows the French scientific community to publish public research data. It is based on the open source research data repository software \"Dataverse\".nThis multidisciplinary repository is a sovereign publishing solution for sharing and opening up data for communities which are yet to set up their own recognised thematic repository." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" ;
+  dct:type "WebSite" ;
+  dct:type "fairsharing:repository" .
+
+<https://www.paradisec.org.au/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Pacific and Regional Archive for Digital Sources in Endangered Cultures" ;
+  dct:title "Pacific and Regional Archive for Digital Sources in Endangered Cultures" ;
+  dct:identifier "https://www.paradisec.org.au/" ;
+  dct:identifier "r3d100010451" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010451" ;
+  dct:identifier "10.25504/FAIRsharing.f2efdd" ;
+  dct:identifier "https://www.paradisec.org.au/" ;
+  dct:description "PARADISEC (the Pacific And Regional Archive for Digital Sources in Endangered Cultures) offers a facility for digital conservation and access to endangered materials from all over the world. Our research group has developed models to ensure that the archive can provide access to interested communities, and conforms with emerging international standards for digital archiving. We have established a framework for accessioning, cataloguing and digitising audio, text and visual material, and preserving digital copies. The primary focus of this initial stage is safe preservation of material that would otherwise be lost, especially field tapes from the 1950s and 1960s." ;
+  dct:description "PARADISEC (the Pacific And Regional Archive for Digital Sources in Endangered Cultures) is a digital archive that preserves recordings and materials documenting endangered languages and small cultures, mainly from the Pacific and Southeast Asia. It provides access to audio, text, and visual data collected through fieldwork, ensuring they are safely digitized and catalogued according to international archiving standards." ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" .
+
+<https://www.ebi.ac.uk/biosamples/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:title "BioSamples database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "urn:uuid:dc87cfaf-b43e-47f4-9618-6395ab3e3f42" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "BioSamples stores and supplies descriptions and metadata about biological samples used in research and development by academia and industry. Samples are either 'reference' samples (e.g. from 1000 Genomes, HipSci, FAANG) or have been used in an assay database such as the European Nucleotide Archive (ENA) or ArrayExpress." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" ;
+  dct:type "DataCatalog" .
+
+<https://site.uit.no/dataverseno/>
+  a dcat:Catalog, foaf:Project ;
+  dct:identifier "https://site.uit.no/dataverseno/" ;
+  dct:identifier "https://site.uit.no/dataverseno/" ;
+  dct:description "DataverseNO (https://dataverse.no/) is a national, generalist repository for open research data from researchers from Norwegian research institutions. DataverseNO enables the FAIR Guiding Principles for scientific data management and stewardship and is CoreTrustSeal certified." ;
+  dct:type "dcmitype:Text" .
+
+<https://rdr.kuleuven.be/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "KU Leuven RDR " ;
+  dct:title "KU Leuven RDR" ;
+  dct:identifier "https://rdr.kuleuven.be/" ;
+  dct:identifier "https://rdr.kuleuven.be/" ;
+  dct:identifier "10.25504/FAIRsharing.c1dfed" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013824" ;
+  dct:identifier "10.25504/FAIRsharing.c1dfed" ;
+  dct:identifier "r3d100013824" ;
+  dct:identifier "https://rdr.kuleuven.be/" ;
+  dct:description "RDR (pronounced 'Radar') is the curated institutional research data repository of KU Leuven. The repository contains published data resulting from KU Leuven research in a FAIR way and allows the published data to be as open as possible, but as closed as necessary. The institutional repository helps KU Leuven researchers publish, share, cite, and preserve their research data in a findable, accessible, interoperable, and reusable way, with support from university staff. The repository uses the open source Dataverse project software as its base." ;
+  dct:description "RDR (pronounced 'Radar') is the curated institutional research data repository of KU Leuven. The repository contains published data resulting from KU Leuven research in a FAIR way and allows the published data to be as open as possible, but as closed as necessary. The institutional repository helps KU Leuven researchers publish, share, cite, and preserve their research data in a findable, accessible, interoperable, and reusable way, with support from university staff. The repository uses the open source Dataverse project software as its base." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://www.ebi.ac.uk/biostudies/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "https://www.ebi.ac.uk/biostudies/" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "BioStudies – one package for all the data supporting a study" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" .
+
+<https://data.4tu.nl/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "4TU.ResearchData" ;
+  dct:title "4TU.ResearchData | science.engineering.design" ;
+  dct:identifier "https://data.4tu.nl/" ;
+  dct:identifier "10.25504/FAIRsharing.zcveaz" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010216" ;
+  dct:identifier "02d887280" ;
+  dct:identifier "nlx_151952" ;
+  dct:identifier "https://data.4tu.nl" ;
+  dct:identifier "r3d100010216" ;
+  dct:identifier "10.25504/FAIRsharing.zcveaz" ;
+  dct:identifier "SCR_006295" ;
+  dct:identifier "https://data.4tu.nl/" ;
+  dct:description "4TU.ResearchData is an international data repository for science, engineering and design, open to anyone in the world to upload and download data. Its services include curation, sharing, long-term access and preservation of research datasets. These services are available to anyone around the world. In addition, 4TU.ResearchData also offers training and resources to researchers to support them in making research data findable, accessible, interoperable and reproducible (FAIR)." ;
+  dct:description "4TU.ResearchData, previously known as 4TU.Centre for Research Data, is a research data repository dedicated to the science, engineering and design disciplines. It offers the knowledge, experience and the tools to manage, publish and find scientific research data in a standardized, secure and well-documented manner. 4TU.ResearchData provides the research community with:nCustomised advice and support on research data management;nA long-term repository for scientific research data;nSupport for current research projects;nTools to enhance reuse of research data." ;
+  dct:description "4TU.ResearchData is an international data repository for science, engineering and design. We offer research dataset curation, sharing, long-term access and preservation services to anyone, anywhere. Our training and community engagement resources are available to research and research-support professionals working to make their research data findable, accessible, interoperable and reproducible (FAIR)." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://www.ebi.ac.uk/metabolights/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:identifier "https://www.ebi.ac.uk/metabolights/" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:description "MetaboLights metabolomics experiments" ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" .
+
+<https://archiv.soc.cas.cz/en/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Czech Social Science Data Archive" ;
+  dct:title "Czech Social Science Data Archive" ;
+  dct:identifier "https://archiv.soc.cas.cz/en/pristup-k-datum-2/nase-data" ;
+  dct:identifier "r3d100010484" ;
+  dct:identifier "https://archiv.soc.cas.cz/en/" ;
+  dct:identifier "https://archiv.soc.cas.cz/en/" ;
+  dct:identifier "10.25504/FAIRsharing.f4bfb1" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010484" ;
+  dct:description "The Czech Social Science Data Archive (CSDA) of the Institute of Sociology of the Academy of Sciences of the Czech Republic accesses, processes, documents and stores data files from social science research projects and promotes their dissemination to make them widely available for secondary use in academic research and for educational purposes." ;
+  dct:description "Český sociálněvědní datový archiv (ČSDA) je národní centrum datových služeb pro sociální vědy, které získává, zpracovává, dokumentuje a uchovává soubory digitál" ;
+  dct:description "The Czech Social Science Data Archive (CSDA) is a national data services center for the social sciences, which acquires, processes, documents, and stores digital data files from scientific projects and makes them available for further analytical use in scientific research and teaching at universities." ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:knowledgebase" .
+
+<https://www.kielipankki.fi/language-bank/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Online course: Data Clinic" ;
+  dct:title "Kielipankki" ;
+  dct:identifier "urn:uuid:cc80e0eb-e62e-4489-918c-b15e84045254" ;
+  dct:identifier "https://www.kielipankki.fi/language-bank/" ;
+  dct:identifier "r3d100011807" ;
+  dct:identifier "https://www.kielipankki.fi/language-bank/" ;
+  dct:description "&lt;p&gt;Online course: Data Clinic Kurssisivu/Course page&lt;/p&gt;\\n" ;
+  dct:description "The Language Bank features text and speech corpora with different kinds of annotations in over 60 languages. There is also a selection of tools for working with them, from linguistic analyzers to programming environments. Corpora are also available via web interfaces, and users can be allowed to download some of them. The IP holders can monitor the use of their resources and view user statistics." ;
+  dct:type "Event" ;
+  dct:type "r3d:Repository" .
+
+<https://portfir.insa.min-saude.pt/pt/>
+  a dcat:Catalog, foaf:Project ;
+  dct:identifier "https://portfir.insa.min-saude.pt/pt/" .
+
+<https://www.fairdata.fi/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Fairdata" ;
+  dct:title "Etsin Research Data Finder" ;
+  dct:title "Fairdata" ;
+  dct:identifier "https://www.fairdata.fi/" ;
+  dct:identifier "https://www.fairdata.fi/" ;
+  dct:identifier "https://etsin.fairdata.fi/" ;
+  dct:identifier "r3d100012158" ;
+  dct:identifier "https://www.fairdata.fi/" ;
+  dct:identifier "https://www.fairdata.fi/#/schema/WebSite" ;
+  dct:identifier "https://www.fairdata.fi/" ;
+  dct:description "Fairdata services are part of the digital preservation services offered by the Ministry of Education and Culture, Finland (“Minedu”). The Fairdata services support the research process and management of digital data with some of the components described in the Framework for Open Science and Research." ;
+  dct:description "Etsin is a research data finder that contains descriptive information – that is, metadata – on research datasets. In the service you can search and find data from various fields of research. A researcher, research group or organisation can use Etsin to publish information on their datasets and offer them for wider use. The metadata contained in Etsin makes it easy for anyone to discover the datasets.  Etsin assigns a permanent URN identifier to datasets, making it possible to link to the dataset and gather merit through its publication and use.nThe metadata enables users to search for datasets and evaluate the potential for reuse. Etsin includes a description of the dataset, keywords and various dataset identifiers. The dataset information includes, for example, its subject, language, author, owner and how it is licensed for reuse. Good description of data plays an important role in its discoverability and visibility. Etsin encourages comprehensive descriptions by adapting a common set of discipline independent metadata fields and by making it easy to enter metadata.nEtsin only collects metadata on datasets, not the data themselves. Anyone may browse and read the metadata. Etsin can be used with a browser or through an open interface (API). The service is discipline independent and free to use. nEtsin is a service provided by the Ministry of Education and Culture to actors in the Finnish research system. The service is produced by CSC – IT Center for Science (CSC).  Customer service contacts and feedback is available through servicedesk@csc.fi. The service maintenance window is on the fourth Monday of every month between 4 and 6 PM (EET). During that time, the service will be out of use." ;
+  dct:description "Huolehdi tutkimusaineistoistasi" ;
+  dct:description "Löydettävä, saavutettava, yhteentoimiva…" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" ;
+  dct:type "WebSite" ;
+  dct:type "dcmitype:Text" .
+
+<https://data.sciencespo.fr/dataverse/cdsp>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "data.sciencespo" ;
+  dct:title "data.sciencespo" ;
+  dct:identifier "10.25504/FAIRsharing.bb17f3" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013271" ;
+  dct:identifier "https://data.sciencespo.fr" ;
+  dct:identifier "r3d100013271" ;
+  dct:description "data.sciencespo is a repository that offers visibility, sharing and preservation of Humanities and Social Science data collected, curated and processed at Sciences Po. This dataverse instance stores two databases: CDSP, a manually-curated, national level repository of survey data; and an institutional repository that allows self deposit from researchers within SciencesPo." ;
+  dct:description "Launched in February 2020, data.sciencespo is a repository that offers visibility, sharing and preservation of data collected, curated and processed at Sciences Po. The repository is based on the Dataverse open-source software and organised into collections:nCDSP Collection nThis collection managed by the Centre des données socio-politiques (CDSP) includes the catalogue of surveys, in the social science and humanities, processed and curated by CDSP engineers since 2005. This catalogue brings together surveys produced at Sciences Po and other French and international institutions. n- Sciences Po collection (self-deposit)nThis collection, which is managed by the Direction des ressources et de l'information scientifique (DRIS), is intended to host data produced by researchers affiliated with Sciences Po, following the self-deposit process assisted by the Library's staff." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://cds.climate.copernicus.eu/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Copernicus Climate Change Service Portal" ;
+  dct:identifier "https://cds.climate.copernicus.eu/" ;
+  dct:identifier "https://cds.climate.copernicus.eu/" ;
+  dct:description "The C3S portal offers access to the reference products generated by the Copernicus Climate Change Service that are derived from Sentinel reference products (Sentinel 1 and 3 primarily) along with other satellite observations and in-situ measurements. The C3S portal provides authoritative information concerning past, present, and future (forecasting) global climate." ;
+  dct:type "fairsharing:repository" .
+
+<https://repo.researchdata.hu/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "ARP Research Data Repository" ;
+  dct:title "ARP Research Data Repository" ;
+  dct:identifier "10.25504/FAIRsharing.b7f3ff" ;
+  dct:identifier "https://repo.researchdata.hu/" ;
+  dct:identifier "r3d100014109" ;
+  dct:identifier "https://repo.researchdata.hu/" ;
+  dct:identifier "10.25504/FAIRsharing.b7f3ff" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100014109" ;
+  dct:identifier "https://repo.researchdata.hu/" ;
+  dct:description "This repository supports the researchers of the Hungarian Research Network (HUN-REN), and to some extent the Hungarian scientists in general." ;
+  dct:description "The HUN-REN Data Repository Platform (HUN-REN ARP) is a new repository infrastructure service that supports the continuous and long-term research data management of the entire HUN-REN research network. The development provides a solution for the secure digital storage, use and reuse of research data as a valuable data asset, as well as its further utilization by the research community and other sectors like the economy." ;
+  dct:description "This is the root dataverse collection for HUN-REN ARP." ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://ega-archive.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "The European Genome-phenome Archive" ;
+  dct:title "European Genome-phenome Archive" ;
+  dct:title "The European Genome-phenome Archive" ;
+  dct:identifier "00000512" ;
+  dct:identifier "r3d100011242" ;
+  dct:identifier "nlx_91316" ;
+  dct:identifier "SCR_004944" ;
+  dct:identifier "https://ega-archive.org/" ;
+  dct:identifier "10.25504/FAIRsharing.mya1ff" ;
+  dct:identifier "urn:uuid:0bd4be7b-0c37-4b3e-a88d-bf0add946fc1" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100011242" ;
+  dct:identifier "10.25504/FAIRsharing.mya1ff" ;
+  dct:identifier "https://ega-archive.org/" ;
+  dct:description "The European Genome-phenome Archive (EGA) is designed to be a repository for all types of sequence and genotype experiments, including case-control, population, and family studies. We will include SNP and CNV genotypes from array based methods and genotyping done with re-sequencing methods. nThe EGA will serve as a permanent archive that will archive several levels of data including the raw data (which could, for example, be re-analysed in the future by other algorithms) as well as the genotype calls provided by the submitters. We are developing data mining and access tools for the database.nFor controlled access data, the EGA will provide the necessary security required to control access, and maintain patient confidentiality, while providing access to those researchers and clinicians authorised to view the data. In all cases, data access decisions will be made by the appropriate data access-granting organisation (DAO) and not by the EGA. The DAO will normally be the same organisation that approved and monitored the initial study protocol or a designate of this approving organisation. The European Genome-phenome Archive (EGA) allows you to explore datasets from genomic studies, provided by a range of data providers. Access to datasets must be approved by the specified Data Access Committee (DAC)." ;
+  dct:description "The EGA provides a service for the permanent archiving and distribution of personally identifiable genetic and phenotypic data resulting from biomedical research projects. Data at EGA was collected from individuals whose consent agreements authorise data release only for specific research use to bona fide researchers. Strict protocols govern how information is managed, stored and distributed by the EGA project." ;
+  dct:description "The European Genome-phenome Archive (EGA) is a service for permanent archiving and sharing of personally identifiable genetic, phenotypic, and clinical data generated for the purposes of biomedical research projects or in the context of research-focused healthcare systems. Access to data must be approved by the specified Data Access Committee (DAC)." ;
+  dct:description "The European Genome-phenome Archive (EGA) is a service for permanent archiving and sharing of all types of personally identifiable genetic and phenotypic data resulting from biomedical research projects." ;
+  dct:type "r3d:Repository" ;
+  dct:type "DataCatalog" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://dass.credi.ba/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "DASS-BiH" ;
+  dct:title "Data Archive for Social Sciences & The Humanities in Bosnia & Herzegovina" ;
+  dct:identifier "https://dass.credi.ba/" ;
+  dct:identifier "r3d100013508" ;
+  dct:identifier "10.25504/FAIRsharing.a61589" ;
+  dct:identifier "https://dass.credi.ba/" ;
+  dct:identifier "10.25504/FAIRsharing.a61589" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013508" ;
+  dct:description "DASS-BiH (Data Archive for Social Sciences in Bosnia and Herzegovina) is the national service whose role is to ensure long-term preservation and dissemination of social science research data. The purpose of the data archive is to provide a vital research data resource for researchers, teachers, students, and all other interested users." ;
+  dct:description "DASS-BiH (Data Archive for Social Sciences in Bosnia and Herzegovina) is a national service whose role is to ensure long-term preservation and dissemination of social science research data. The purpose of the data archive is to provide a research data resource for researchers, teachers, students, and all other interested users. economy, education, employment and labour, political science, psychology, sociology, society and culture, social welfare policy and systems." ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" .
+
+<https://www.ebi.ac.uk/bioimage-archive/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:identifier "https://www.ebi.ac.uk/bioimage-archive/" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:description "EMBL-EBI" ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" .
+
+<https://rivec.institut-palanka.rs/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "RIVeC" ;
+  dct:identifier "10160" ;
+  dct:identifier "17220" ;
+  dct:identifier "https://rivec.institut-palanka.rs/?locale-attribute=en" ;
+  dct:identifier "r3d100013809" ;
+  dct:description "RIVeC - Repository of the Institute for Vegetable Crops is the institutional digital repository of the Institute for Vegetable Crops. The aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the Institute for Vegetable Crops. The repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB)." ;
+  dct:type "r3d:Repository" .
+
+<https://dataverse.no/dataverse/trolling>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "DataverseNO" ;
+  dct:title "DataverseNO" ;
+  dct:identifier "r3d100012538" ;
+  dct:identifier "10171" ;
+  dct:identifier "https://dataverse.no/" ;
+  dct:identifier "10.25504/FAIRsharing.5O9YTT" ;
+  dct:identifier "https://dataverse.no/dataverse/trolling" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100012538" ;
+  dct:identifier "10.25504/FAIRsharing.5O9YTT" ;
+  dct:description "DataverseNO  is a curated, FAIR-aligned national generic repository for open research data from all academic disciplines. DataverseNO commits to facilitate that published data remain accessible and (re)usable in a long-term perspective. The repository is owned and operated by UiT The Arctic University of Norway. DataverseNO accepts submissions from researchers primarily from Norwegian research institutions. Datasets in DataverseNO are grouped into institutional collections as well as special collections. The technical infrastructure of the repository is based on the open source application Dataverse (https://dataverse.org), which is developed by an international developer and user community led by Harvard University." ;
+  dct:description "Getting started with TROLLing" ;
+  dct:description "DataverseNO (https://dataverse.no/) is a national, generalist repository for open research data, operated and coordinated by UiT The Arctic University of Norway. DataverseNO is a curated and FAIR-enabling repository. The technical infrastructure of the repository is based on the open-source application Dataverse, which is developed by an international developer and user community led by Harvard University. DataverseNO is CoreTrustSeal certified." ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" .
+
+<https://www.lipidmaps.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "LIPID MAPS" ;
+  dct:title "LIPID MAPS" ;
+  dct:identifier "https://www.lipidmaps.org/" ;
+  dct:identifier "10.25504/FAIRsharing.cpneh8" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100012315" ;
+  dct:identifier "https://www.lipidmaps.org/" ;
+  dct:identifier "r3d100012315" ;
+  dct:identifier "nif-0000-00368" ;
+  dct:identifier "10.25504/FAIRsharing.cpneh8" ;
+  dct:identifier "https://www.lipidmaps.org/" ;
+  dct:identifier "SCR_006579" ;
+  dct:identifier "OMICS_02529" ;
+  dct:description "LIPID Metabolites And Pathways Strategy (LIPID MAPS®) is a multi-institutional supported website and database that provides access to a large number of globally used lipidomics resources. LIPID MAPS® has internationally led the field of lipid curation, classification, and nomenclature since 2003. We strive to produce new open-access databases, informatics tools and lipidomics-focused training activities will be generated and made publicly available for researchers studying lipids in health and disease. LIPID MAPS® is currently funded by a multi-institutional grant from Wellcome, held jointly by Cardiff University, University of California San Diego, the Babraham Institute Cambridge, and Swansea University, as well as an Innovation Study funded by ELIXIR. This current phase will see that LIPID MAPS® is maintained and importantly, further developed in line with the global demand and development of lipidomics. LIPID MAPS® has an internationally recognized classification system and the largest curated lipid structure database in the world." ;
+  dct:description "LIPID MAPS website provides open-access to a large number of globally used lipidomics resources, including databases, tools and educational materials." ;
+  dct:description "Tthe Lipidomics Gateway -  a free, comprehensive website for researchers interested in lipid biology, provided by the LIPID MAPS (Lipid Metabolites and Pathways Strategy) Consortium. The LIPID MAPS Lipidomics Gateway provides a rich collection of information and resources to help you stay abreast of the latest developments in this rapidly expanding field. LIPID Metabolites And Pathways Strategy (LIPID MAPS®) is a multi-institutional effort created in 2003 to identify and quantitate, using a systems biology approach and sophisticated mass spectrometers, all of the major — and many minor — lipid species in mammalian cells, as well as to quantitate the changes in these species in response to perturbation.nThe ultimate goal of our research is to better understand lipid metabolism and the active role lipids play in diabetes, stroke, cancer, arthritis, Alzheimer's and other lipid-based diseases in order to facilitate development of more effective treatments.nSince our inception, we have made great strides toward defining the \"lipidome\" (an inventory of the thousands of individual lipid molecular species) in the mouse macrophage. We have also worked to make lipid analysis easier and more accessible for the broader scientific community and to advance a robust research infrastructure for the international research community. We share new lipidomics findings and methods, hold annual meetings open to all interested investigators, and are exploring joint efforts to extend the use of these powerful new methods to new applications" ;
+  dct:type "fairsharing:knowledgebase" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" .
+
+<https://sasd.sav.sk/en/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Slovak Archive of Social Data" ;
+  dct:identifier "r3d100014833" ;
+  dct:identifier "https://sasd.sav.sk/sk/index.php" ;
+  dct:description "The Slovak Archive of Social Data (SASD), established in 2004, is a national repository dedicated to preserving and providing access to documentation and datasets from sociological and social science research in Slovakia. It archives data from major international programs such as ISSP, ESS, and EVS, as well as Slovak research projects funded by public, private, or commercial sources, provided they meet professional standards. SASD ensures long‑term accessibility of high‑quality social data for non‑commercial research, education, journalism, and public use, and also offers links to other international data archives and resources" ;
+  dct:type "r3d:Repository" .
+
+<https://www.ebi.ac.uk/biostudies/arrayexpress>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "https://www.ebi.ac.uk/biostudies/arrayexpress" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "BioStudies – one package for all the data supporting a study" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" .
+
+<https://data.progedo.fr/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Quetelet-Progedo" ;
+  dct:title "Quetelet-Progedo" ;
+  dct:identifier "10.25504/FAIRsharing.277cff" ;
+  dct:identifier "https://data.progedo.fr/" ;
+  dct:identifier "r3d100010494" ;
+  dct:identifier "2427-1683" ;
+  dct:description "Quetelet-Progedo is Progedo's data repository dedicated to quantitative social sciences and humanities. Its data collection currently includes administrative, survey (aggregate- and individual-level), geographic, and historical data that cover a wide range of themes such as education, labour, wages, demography, family, health, migration, etc. These data have primarily been produced by French government agencies (notably the French National Institute of Statistics and Economic Studies (INSEE)[5] and, more recently, by academic researchers. Quetelet-Progedo, as a product of Progedo, has been jointly funded by the French Ministry of Higher Education and Research and the CNRS. Please note that the majority of the data and documentation is in French." ;
+  dct:description "Quetelet-Progedo’s mission is to enable the preservation and dissemination of data for quantitative social science research. It may be data from official statistical sources as well as research data. It therefore facilitates the implementation of national and European open data policies. Quetelet-Progedo strives to make data FAIR and ensures that they are of high quality. To this end, Quetelet-Progedo:n- documents the data in accordance with international standards for metadata (DDI) and distributes them in formats that facilitate their reuse (.csv, .sas, .dat, sav);n- preserves the data and its integrity via proven technical solutions, including the use of the CC-IN2P3 data centre, for which access has been provided by Huma-NumIR*;n- ensures the long-term identification of data through the allocation of Digital Object Identifiers (DOI);n- supports users, both in depositing and accessing data, through its dedicated team and all the University Platforms for Data (PUD);n- promotes ethical principles and compliance with legal requirements, paying particular attention to the protection of personal and sensitive data." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://biomodels.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:identifier "https://biomodels.org/" ;
+  dct:description "BioModels is a repository of freely-available mathematical models of biological and biomedical systems. It hosts a vast selection of physiologically and pharmaceuticallynrelevant mechanistic models in standard formats." ;
+  dct:type "dcmitype:Text" .
+
+<https://www.ebi.ac.uk/emdb/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:identifier "https://www.ebi.ac.uk/emdb/" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:description "EMDB Home page" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://about.coscine.de/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Coscine" ;
+  dct:title "Coscine" ;
+  dct:identifier "https://about.coscine.de/" ;
+  dct:identifier "10.25504/FAIRsharing.4fc072" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100014335" ;
+  dct:identifier "r3d100014335" ;
+  dct:identifier "https://www.coscine.de" ;
+  dct:description "Coscine landing page" ;
+  dct:description "Coscine is a platform for research data management (RDM) that is being developed at RWTH Aachen University. Researchers from all fields can create projects there, store data including the associated metadata, share it with other project members and archive the research data for ten years after the project in accordance with good scientific practice. The metadata is stored using so-called application profiles. Coscine enables compliance with the FAIR principles by bundling research data, metadata, interfaces and PIDs in a linked data set according to the \"FAIR Digital Objects\" model. Coscine's functions can be accessed both via the web interface and via APIs, enabling automated processes.n" ;
+  dct:description "Coscine is a web-based RDM platform for all kind of generic research data that was developed at RWTH Aachen University. It enables the storage, management and archiving for ten years of research and metadata generated in the context of research projects. The platform also promotes cooperation across organizational boundaries, as researchers can log in either via their organization via SSO or via ORCID. To enable meaningful metadata management for all research areas, Coscine allows flexible description with metadata based on established technologies (SHACL/RDF). The platform is designed to make warm/used/active data FAIR." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://dv.dataverse.lv/dataverse/root>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "DataverseLV" ;
+  dct:identifier "r3d100014655" ;
+  dct:identifier "https://dv.dataverse.lv/" ;
+  dct:description "DataverseLV is a secure and sustainable repository for Latvian researchers to deposit, preserve, and share research data in line with Open Science and FAIR principles. The repository is developed, maintained, and curated by the Latvian Data Stewards Network - a collaborative group of specialists from Latvian research institutions who support researchers, advance research data management, and promote open science practices." ;
+  dct:type "r3d:Repository" .
+
+<https://gude.uni-frankfurt.de/home>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "GUDe :: Home" ;
+  dct:title "Goethe University Data Repository - GUDe" ;
+  dct:identifier "https://gude.uni-frankfurt.de/home" ;
+  dct:identifier "r3d100014359" ;
+  dct:identifier "https://gude.uni-frankfurt.de/home" ;
+  dct:description "The Goethe University Data Repository (GUDe) provides a platform for its members to electronically archive, share, and publish their research data. GUDe is operated by the University Library of the Goethe University. The metadata of all public content is freely available and indexed by search engines as well as scientific web services. GUDe follows the FAIR principles for long-term accessibility (minimum 10 years), allows for reliable citation via DOIs as well as cooperative access to non-public data and operates on DSpace-CRIS v7." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" .
+
+<https://www.ldc.upenn.edu/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Linguistic Data Consortium" ;
+  dct:title "Linguistic Data Consortium" ;
+  dct:identifier "10.25504/FAIRsharing.25a72c" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100011940" ;
+  dct:identifier "r3d100011940" ;
+  dct:identifier "https://www.ldc.upenn.edu/" ;
+  dct:description "The Linguistic Data Consortium (LDC) is an open consortium that creates, collects, archives, and shares large collections of language data, including speech, text, and lexical resources, for research and technology development in linguistics and natural language processing." ;
+  dct:description "The Linguistic Data Consortium (LDC) is an open consortium of universities, libraries, corporations and government research laboratories. It was formed in 1992 to address the critical data shortage then facing language technology research and development. nInitially, LDC's primary role was as a repository and distribution point for language resources. Since that time, and with the help of its members, LDC has grown into an organization that creates and distributes a wide array of language resources. LDC also supports sponsored research programs and language-based technology evaluations by providing resources and contributing organizational expertise.nLDC is hosted by the University of Pennsylvania and is a center within the University’s School of Arts and Sciences." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://www.ebi.ac.uk/pdbe/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" .
+
+<https://lida.dataverse.lt/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "LiDA" ;
+  dct:title "Lithuanian Data Archive for Social Sciences and Humanities" ;
+  dct:identifier "10.25504/FAIRsharing.c5e881" ;
+  dct:identifier "r3d100010492" ;
+  dct:identifier "https://lida.dataverse.lt" ;
+  dct:identifier "00c4rg397" ;
+  dct:identifier "10.25504/FAIRsharing.c5e881" ;
+  dct:identifier "http://doi.org/10.17616/R34S5V" ;
+  dct:identifier "https://lida.dataverse.lt/" ;
+  dct:description "Lithuanian Data Archive for Social Sciences and Humanities (LiDA) is a virtual digital infrastructure for SSH data and research resources acquisition, long-term preservation and dissemination. All the data and research resources are documented in both English and Lithuanian according to international standards. Access to the resources is provided via Dataverse repository. LiDA curates different types of resources and they are published into catalogues according to the type: Survey Data, Aggregated Data (including Historical Statistics), Encoded Data (including News Media Studies), and Textual Data. Also, LiDA holds collections of social sciences and humanities data deposited by Lithuanian science and higher education institutions and Lithuanian state institutions (Data of Other Institutions).nLiDA is the Lithuanian national service provider for the CESSDA ERIC." ;
+  dct:description "Lithuanian Data Archive for Social Sciences and Humanities (LiDA) is a virtual digital infrastructure for SSH data and research resources acquisition, long-term preservation and dissemination. It provides access to more than 600 data and research resources. All the data and research resources are documented in both Lithuanian and English according to international standards. Access to the resources is provided via this Dataverse repository (not all the resources are available, as in 2020-2029 a migration project from the old infrastructure is being implemented). LiDA curates different types of resources and they are published into catalogues according to the type: Survey Data, Aggregated Data (including Historical Statistics), Encoded Data (including News Media Studies), and Textual Data. Also, LiDA holds collections of social sciences and humanities data deposited by Lithuanian science and higher education institutions and Lithuanian state institutions (Data of Other Institutions).nLiDA is hosted by the Centre for Data Analysis and Archiving (DAtA) of Kaunas University of Technology (data.ktu.edu)." ;
+  dct:description "Lithuanian Data Archive for Social Sciences and Humanities (LiDA) is a virtual digital infrastructure for SSH data and research resources acquisition, long-term preservation and dissemination. It provides access to more than 600 data and research resources. All the data and research resources are documented in both Lithuanian and English according to international standards. LiDA is hosted by the Centre for Data Analysis and Archiving (DAtA) of Kaunas University of Technology (data.ktu.edu). Access to the resources is provided via this Dataverse repository (not all the resources are available, as in 2020-2029 a migration project from the old infrastructure is being implemented). LiDA curates different types of resources and they are published into catalogues according to the type: Survey Data, Interview Data, Aggregated Data (including Historical Statistics), Textual Data, and Encoded Data (including News Media Studies). Also, LiDA holds collections of data produced in large national projets (Large Project Data) as well as social sciences and humanities data deposited by Lithuanian science and higher education institutions and Lithuanian governmental institutions (Data of Other Institutions). Depositors interested in deposit of their data into the LiDA Dataverse repository should consult this page. Lietuvos humanitarinių ir socialinių mokslų duomenų archyvas (LiDA) yra virtuali skaitmeninė empirinių HSM duomenų ir tyrimų išteklių kaupimo, ilgalaikio saugojimo ir sklaidos infrastruktūra, suteikianti prieigą prie daugiau nei 600 duomenų ir tyrimų išteklių. Visi duomenų ir tyrimų ištekliai yra dokumentuoti lietuvių ir anglų kalbomis pagal tarptautinius standartus. LiDA įsikūręs Kauno technologijos universiteto Duomenų analizės ir archyvavimo (DAtA) centre (data.ktu.edu). Prieigai prie išteklių naudojama ši Dataverse talpykla (kol kas ne visi ištekliai prieinami, nes 2020-2029 m. vykdomas perkėlimo iš senosios infrastruktūros projektas). LiDA kuruoja įvairių tipų išteklius ir jie publikuojami atskiruose kataloguose pagal tipą: Apklausų duomenys, Interviu duomenys, Agreguotieji duomenys (įskaitant Istorinę statistiką), Tekstiniai duomenys ir Koduotieji duomenys (įskaitant Žiniasklaidos tyrimus). Taip pat LiDA talpinami didelių nacionalinių projektų duomenys (Didelių projektų duomenys) ir Lietuvos aukštojo mokslo ir studijų bei Lietuvos valstybės institucijų deponuoti socialinių ir humanitarinių mokslų duomenų rinkiniai (Kitų institucijų duomenys). Norintiems išmokti naudotis šia talpykla, surasti ir parsisiųsti duomenis, siūlome susipažinti su LiDA Dataverse talpyklos naudotojo vadovu. Depozitoriai, kurie norėtų deponuoti savo duomenis į LiDA Dataverse talpyklą, turėtų susipažinti su informacija šiame puslapyje." ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://qdr.syr.edu/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Qualitative Data Repository" ;
+  dct:title "Qualitative Data Repository" ;
+  dct:identifier "10.25504/FAIRsharing.bmz5ap" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100011038" ;
+  dct:identifier "SCR_022833" ;
+  dct:identifier "https://qdr.syr.edu/" ;
+  dct:identifier "10.25504/FAIRsharing.bmz5ap" ;
+  dct:identifier "r3d100011038" ;
+  dct:description "The Qualitative Data Repository (QDR) is a dedicated archive for storing and sharing digital data (and accompanying documentation) generated or collected through qualitative and multi-method research in the social sciences. QDR provides search tools to facilitate the discovery of data, and also serves as a portal to material beyond its own holdings, with links to U.S. and international archives. The repository’s initial emphasis is on political science. Four beliefs underpin the repository's mission: data that can be shared and reused should be; evidence-based claims should be made transparently; teaching is enriched by the use of well-documented data; and rigorous social science requires common understandings of its research methods." ;
+  dct:description "The Qualitative Data Repository (QDR) is a dedicated archive for storing and sharing digital data (and accompanying documentation) generated or collected through qualitative and multi-method research in the social sciences. QDR provides data management consulting services and actively curates all data projects, maintaining the value and usefulness of the data over time, and ensuring their availability and findability for re-use." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://www.clarin.eu/content/national-consortia>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "CLARIN-ERIC" ;
+  dct:title "Component Metadata Specification" ;
+  dct:identifier "https://www.clarin.eu/" ;
+  dct:identifier "r3d100010209" ;
+  dct:identifier "10.25504/FAIRsharing.2e0599" ;
+  dct:identifier "https://www.clarin.eu/content/national-consortia" ;
+  dct:description "CLARIN is a European Research Infrastructure for the Humanities and Social Sciences, focusing on language resources (data and tools). It is being implemented and constantly improved at leading institutions in a large and growing number of European countries, aiming at improving Europe's multi-linguality competence. CLARIN provides several services, such as access to language data and tools to analyze data, and offers to deposit research data, as well as direct access to knowledge about relevant topics in relation to (research on and with) language resources. The main tool is the 'Virtual Language Observatory' providing metadata and access to the different national CLARIN centers and their data." ;
+  dct:description "CDMI is a standardised format for describing the components of metadata. The format is customisiable and compatible with other metadata formats. It provides a framework to describe and reuse metadata blueprints. Description building blocks (“components”, which include field definitions) can be grouped into a ready-made description format (a “profile”). Both are stored and shared with other users in the Component Registry to promote reuse. Each metadata record is then expressed as an XML file, including a link to the profile on which it is based." ;
+  dct:description "The majority of operations, services and centres of the CLARIN infrastructure is provided and funded by CLARIN ERIC members, as well as observers. Members and observers can be countries or intergovernmental organisations." ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:model_and_format" ;
+  dct:type "dcmitype:Text" .
+
+<https://naehrwertdaten.ch/de/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Home - The Swiss Food Composition Database" ;
+  dct:identifier "https://naehrwertdaten.ch/de/" ;
+  dct:identifier "https://naehrwertdaten.ch/de/" ;
+  dct:identifier "https://naehrwertdaten.ch/de/" ;
+  dct:type "WebPage" .
+
+<https://lindat.mff.cuni.cz/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "LINDAT/CLARIAH-CZ repository" ;
+  dct:identifier "https://lindat.mff.cuni.cz/repository/home" ;
+  dct:identifier "r3d100010386" ;
+  dct:identifier "https://lindat.mff.cuni.cz/" ;
+  dct:description "LINDAT/CLARIN is designed as a Czech “node” of Clarin ERIC (Common LanguagenResources and Technology Infrastructure). It also supports the goals of the META-NET language technology network. Both networks aim at collection, annotation, development and free sharing of language data and basic technologies between institutions and individuals both in science and in all types of research. The Clarin ERIC infrastructural project is more focused on humanities, while META-NET aims at the development of language technologies and applications. The data stored in the repository are already being used in scientific publications in the Czech Republic.nIn 2019 LINDAT/CLARIAH-CZ was established as a unification of two research infrastructures,nLINDAT/CLARIN and DARIAH-CZ." ;
+  dct:type "r3d:Repository" .
+
+<https://www.rohub.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "ROHub " ;
+  dct:title "ROHub" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013832" ;
+  dct:identifier "10.25504/FAIRsharing.d3c5fd" ;
+  dct:identifier "https://www.rohub.org/" ;
+  dct:identifier "r3d100013832" ;
+  dct:identifier "10.25504/FAIRsharing.d3c5fd" ;
+  dct:description "ROHub is a holistic solution for the storage, lifecycle management and preservation of scientific investigations, campaigns and operational processes via research objects. It makes these resources available to others, allows to publish and release them through a DOI, and allows to discover and reuse pre-existing scientific knowledge. Built entirely around the research object concept and inspired by sustainable software management principles, ROHub is the reference platform implementing natively the full research object model and paradigm, including the latest RO-Crate specification, and which provides the backbone to a wealth of RO-centric applications and interfaces across different scientific communities. ROHub has been onboarded as a research enabling service in EOSC to support scientists in the adoption of FAIR and Open Science principles." ;
+  dct:description "ROHub is a holistic solution for the storage, lifecycle management and preservation of scientific investigations, campaigns and operational processes via research objects. It makes these resources available to others, allows to publish and release them through a DOI, and allows to discover and reuse pre-existing scientific knowledge. Built entirely around the research object concept and inspired by sustainable software management principles, ROHub is the reference platform implementing natively the full research object model and paradigm, which provides the backbone to a wealth of RO-centric applications and interfaces across different scientific communities." ;
+  dct:type "fairsharing:knowledgebase_and_repository" ;
+  dct:type "r3d:Repository" .
+
+<https://www.tarki.hu/eng>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "TARKI Data Archive" ;
+  dct:title "TARKI Data Archive" ;
+  dct:identifier "https://www.tarki.hu/eng" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010496" ;
+  dct:identifier "10.25504/FAIRsharing.d14d9f" ;
+  dct:identifier "https://adatbank.tarki.hu/en/" ;
+  dct:identifier "10.25504/FAIRsharing.d14d9f" ;
+  dct:identifier "r3d100010496" ;
+  dct:description "TARKI is the Hungarian Social Science data archive. It is a member of CESSDA-ERIC and the European Association of Social Science Data Archives. There are more than 800 social science resources in the TÁRKI archive, representing more than 35 years of survey research in Hungary." ;
+  dct:description "TÁRKI Social Research Institute is an independent, employee-owned research organisation that specialises in policy research in the fields of social policy and the social consequences of economic policies. This includes related data-collection, archiving and statistical activities. We recently increased our involvement in the areas of strategic market research and health policy analysis. In addition, we regularly contribute to basic research, in the areas of social stratification and inequality, and to the methodology of empirical social research." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://pangaea.de/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PANGAEA" ;
+  dct:title "PANGAEA - Data Publisher for Earth and Environmental Science " ;
+  dct:title "PANGAEA" ;
+  dct:identifier "https://doi.org/10.1594/PANGAEA" ;
+  dct:identifier "urn:uuid:6151cd94-571e-46f8-b09d-7adb0916c3da" ;
+  dct:identifier "10.25504/FAIRsharing.6yw6cp" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010134" ;
+  dct:identifier "10.25504/FAIRsharing.6yw6cp" ;
+  dct:identifier "https://www.pangaea.de/" ;
+  dct:identifier "r3d100010134" ;
+  dct:identifier "https://pangaea.de/" ;
+  dct:description "PANGAEA - Data Publisher for Earth & Environmental Sciences  has an almost 30-year history as an open-access library for archiving, publishing, and disseminating georeferenced data from the Earth, environmental, and biodiversity sciences. Originally evolving from a database for sediment cores, it is operated as a joint facility of the Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) and the Center for Marine Environmental Sciences (MARUM) at the University of Bremen. PANGAEA holds a mandate from the World Meteorological Organization (WMO)  and is accredited as a World Radiation Monitoring Center (WRMC). It was further accredited as a World Data Center by the International Council for Science (ICS)  in 2001 and has been certified with the Core Trust Seal  since 2019. nThe successful cooperation between PANGAEA and the publishing industry along with the correspondent technical implementation enables the cross-referencing of scientific publications and datasets archived as supplements to these publications. PANGAEA is the recommended data repository of numerous international scientific journals." ;
+  dct:description "PANGAEA - Data Publisher for Earth & Environmental Sciences has an almost 30-year history as an open-access library for archiving, publishing, and disseminating georeferenced data from the Earth, environmental, and biodiversity sciences. Originally evolving from a database for sediment cores, it is operated as a joint facility of the Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) and the Center for Marine Environmental Sciences (MARUM) at the University of Bremen. PANGAEA holds a mandate from the World Meteorological Organization (WMO) and is accredited as a World Radiation Monitoring Center (WRMC). It was further accredited as a World Data Center by the International Council for Science (ICS) in 2001 and has been certified with the Core Trust Seal since 2019. The successful cooperation between PANGAEA and the publishing industry along with the correspondent technical implementation enables the cross-referencing of scientific publications and datasets archived as supplements to these publications. PANGAEA is the recommended data repository of numerous international scientific journals." ;
+  dct:type "Organization" ;
+  dct:type "DataCatalog" ;
+  dct:type "WebSite" ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://www.ebi.ac.uk/eva/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:identifier "https://www.ebi.ac.uk/eva/" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:description "EMBL-EBI" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:repository" .
+
+<https://borealisdata.ca/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Borealis" ;
+  dct:title "Borealis, the Canadian Dataverse Repository" ;
+  dct:identifier "https://borealisdata.ca/" ;
+  dct:identifier "https://borealisdata.ca/" ;
+  dct:identifier "r3d100010691" ;
+  dct:identifier "10.25504/FAIRsharing.kwzydf" ;
+  dct:identifier "https://borealisdata.ca/dataverse.xhtml" ;
+  dct:identifier "10.25504/FAIRsharing.kwzydf" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010691" ;
+  dct:description "Borealis, the Canadian Dataverse Repository, is a bilingual, multidisciplinary, secure, Canadian research data repository, supported by academic libraries and research institutions across Canada. Borealis supports open discovery, management, sharing, and preservation of Canadian research data." ;
+  dct:description "Borealis, the Canadian Dataverse Repository, is a bilingual, multidisciplinary, secure, Canadian research data repository, supported by academic libraries and research institutions across Canada. Borealis supports open discovery, management, sharing, and preservation of Canadian research data.nBorealis is available to researchers who are affiliated with a participating Canadian university or research organization and their collaborators. Borealis is a shared service provided in partnership with Canadian regional academic library consortia, institutions, research organizations, and the Digital Research Alliance of Canada, with technical infrastructure hosted by Scholars Portal and the University of Toronto Libraries." ;
+  dct:description "Borealis, the Canadian Dataverse Repository, is a bilingual, multidisciplinary, secure, Canadian research data repository, supported by academic libraries and research institutions across Canada. Borealis supports open discovery, management, sharing, and preservation of Canadian research data. nnBorealis is a shared service provided in partnership with Canadian regional academic library consortia, institutions, research organizations, and the Digital Research Alliance of Canada, with technical infrastructure hosted by Scholars Portal and the University of Toronto Libraries. Borealis is designed to balance openness and responsibility, following the principle of “as open as possible, as closed as necessary.” While metadata is openly discoverable, access to data may be restricted where appropriate. Deposit is limited to affiliated researchers, faculty, and students from participating institutions, ensuring institutional oversight and compliance with policy requirements." ;
+  dct:type "dcmitype:Text" ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" .
+
+<https://bacdive.dsmz.de/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "BacDive - The Bacterial Diversity Database" ;
+  dct:title "BacDive" ;
+  dct:identifier "10.25504/FAIRsharing.aSszvY" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100013060" ;
+  dct:identifier "r3d100013060" ;
+  dct:identifier "https://bacdive.dsmz.de/" ;
+  dct:identifier "00000676" ;
+  dct:identifier "10.25504/FAIRsharing.aSszvY" ;
+  dct:identifier "OMICS_10161" ;
+  dct:identifier "https://bacdive.dsmz.de/" ;
+  dct:description "The Bacterial Diversity Metadatabase BacDive is the worldwide largest database for standardized bacterial phenotypic information. Its mission is to mobilize research data on strain level from internal files in culture collections (e.g. CABI, CIP, CCUG, DSMZ) as well as from primary literature and make it freely accessible. Today BacDive offers data on 93,254 bacterial and archaeal strains, including 19,313 type strains and thereby covers approx. 90% of the validly described species. Within over 600 data fields the topics taxonomy, morphology, physiology, origin, molecular data, and cultivation conditions are covered. The database offers systematic access to phenotypic data. BacDive thereby enables queries like \"show me all strains that grow under certain conditions” by using the Advanced search or queries like “show me all strains isolated from a marine environment” by using the Isolation source search. With currently 15,357 API® tests for 27,634 strains, BacDive also offers the worldwide largest API® test collection, which can be queried using the API test finder tool. " ;
+  dct:description "BacDive (The Bacterial Diversity Database) is the worldwide largest database for standardized bacterial and archaeal strain-level information. Its mission is to mobilize and integrate research data on strain level from diverse sources and make it freely accessible. BacDive is a comprehensive resource containing diverse data on bacterial and archaeal strains, including taxonomy, morphology, physiology, sampling and environmental data and sequence information." ;
+  dct:description "The Bacterial Diversity Metadatabase provides strain-linked information about bacterial and archaeal biodiversity." ;
+  dct:type "fairsharing:knowledgebase" ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://agroportal.eu/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "AgroPortal" ;
+  dct:title "AgroPortal" ;
+  dct:identifier "https://agroportal.eu/" ;
+  dct:identifier "r3d100014569" ;
+  dct:identifier "10.25504/FAIRsharing.z4xpxx" ;
+  dct:identifier "10.25504/FAIRsharing.z4xpxx" ;
+  dct:description "AgroPortal is a research data repository dedicated to ontologies and semantic artefacts in the agri-food domain. It provides a catalog of agricultural, food, and environmental ontologies, enabling semantic interoperability and supporting the adoption of FAIR principles. Offering ontology hosting, versioning, metadata management, semantic search, and annotation and recommendation services, AgroPortal supports researchers and data managers in structuring and linking their data. It facilitates ontology alignment, promotes open science, and integrates with linked open data to enhance knowledge organization in agriculture and related fields." ;
+  dct:description "AgroPortal is an ontology repository (or semantic artefact catalogue) for agri-food. It provides ontology hosting, search, versioning, visualization, comment, and recommendation; enables semantic annotation; stores and exploits ontology alignments; and enables interoperation with the semantic web. To align with the needs of the agronomy community, AgroPortal uses SKOS vocabularies and trait dictionaries) and supported features (offering detailed metadata and advanced annotation capabilities)." ;
+  dct:type "r3d:Repository" ;
+  dct:type "fairsharing:repository" .
+
+<https://opendata.nas.gov.ua/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Open Data Repository of the National Academy of Sciences of Ukraine" ;
+  dct:identifier "r3d100014746" ;
+  dct:identifier "https://opendata.nas.gov.ua/" ;
+  dct:identifier "11203" ;
+  dct:description "The open data repository DataverseUA of the National Academy of Sciences of Ukraine is a digital platform for storing, classifying and publishing the Academy's scientific data. The aim of the project is to establish an open data repository service for research conducted by scientific institutions affiliated with the National Academy of Sciences of Ukraine. The repository is intended to provide researchers, innovators, technology companies, and the general public with an accessible and reliable environment where they can publish, discover, and reuse data." ;
+  dct:type "r3d:Repository" .
+
+<https://omabrowser.org/oma/home/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "OMA Standalone" ;
+  dct:title "Orthologous MAtrix" ;
+  dct:identifier "https://omabrowser.org/standalone" ;
+  dct:identifier "OMA" ;
+  dct:identifier "https://omabrowser.org/oma/home/" ;
+  dct:identifier "10.25504/FAIRsharing.g3j5qj" ;
+  dct:description "Software Package to compute OMA orthologs on own datasets" ;
+  dct:description "OMA is a method and database for the inference of orthologs among complete genomes. We provide browsable orthology predictions, APIs, flat file downloads and a standalone version of the inference algorithm." ;
+  dct:description "The OMA (“Orthologous MAtrix”) project is a method and database for the inference of orthologs among complete genomes. The distinctive features of OMA are its broad scope and size, high quality of inferences, feature-rich web interface, availability of data in a wide range of formats and interfaces, and frequent update schedule of two releases per year." ;
+  dct:type "SoftwareApplication" ;
+  dct:type "SoftwareSourceCode" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:knowledgebase" .
+
+<https://www.ebi.ac.uk/chembl/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "PRoteomics IDEntifications database" ;
+  dct:title "PRoteomics IDEntifications Database" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "https://www.re3data.org/repository/r3d100010137" ;
+  dct:identifier "10.25504/FAIRsharing.e1byny" ;
+  dct:identifier "SCR_003411" ;
+  dct:identifier "https://www.ebi.ac.uk/pride/" ;
+  dct:identifier "00100094" ;
+  dct:identifier "r3d100010137" ;
+  dct:identifier "OMICS_02456" ;
+  dct:identifier "nif-0000-03336" ;
+  dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories. " ;
+  dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." ;
+  dct:type "fairsharing:repository" ;
+  dct:type "r3d:Repository" .
+
+<https://glittr.org/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Glittr.org" ;
+  dct:identifier "https://glittr.org/" ;
+  dct:identifier "10.25504/FAIRsharing.aa243c" ;
+  dct:description "Glittr.org is a curated list of educational materials for the computational life sciences." ;
+  dct:description "Glittr.org is a curated database of educational material for the computational life sciences.nnAll material is:n- In a GitHub or GitLab repositoryn- Free to usen- Written in markdown or similar" ;
+  dct:type "dcmitype:Text" ;
+  dct:type "fairsharing:knowledgebase" .
+
+<https://www.progedo.fr/en/home/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "Quetelet-Progedo" ;
+  dct:identifier "https://data.progedo.fr/" ;
+  dct:identifier "r3d100010494" ;
+  dct:identifier "2427-1683" ;
+  dct:identifier "https://www.progedo.fr/en/home/" ;
+  dct:description "Quetelet-Progedo’s mission is to enable the preservation and dissemination of data for quantitative social science research. It may be data from official statistical sources as well as research data. It therefore facilitates the implementation of national and European open data policies. Quetelet-Progedo strives to make data FAIR and ensures that they are of high quality. To this end, Quetelet-Progedo:n- documents the data in accordance with international standards for metadata (DDI) and distributes them in formats that facilitate their reuse (.csv, .sas, .dat, sav);n- preserves the data and its integrity via proven technical solutions, including the use of the CC-IN2P3 data centre, for which access has been provided by Huma-NumIR*;n- ensures the long-term identification of data through the allocation of Digital Object Identifiers (DOI);n- supports users, both in depositing and accessing data, through its dedicated team and all the University Platforms for Data (PUD);n- promotes ethical principles and compliance with legal requirements, paying particular attention to the protection of personal and sensitive data." ;
+  dct:description "Home - Progedo" ;
+  dct:type "r3d:Repository" ;
+  dct:type "dcmitype:Text" .
+
+<https://data.dtu.dk/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "DTU Data" ;
+  dct:identifier "r3d100013488" ;
+  dct:identifier "https://data.dtu.dk/" ;
+  dct:description "Institutional data repository built on the Figshare platform. Contains research data from the Technical University of Denmark" ;
+  dct:type "r3d:Repository" .
+
+<https://dais.sanu.ac.rs/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "DAIS" ;
+  dct:identifier "https://dais.sanu.ac.rs/?locale-attribute=en" ;
+  dct:identifier "r3d100013425" ;
+  dct:description "DAIS - Digital Archive of the Serbian Academy of Sciences and Arts is a joint digital repository of the Serbian Academy of Sciences and Arts (SASA) and the research institutes under the auspices of SASA. The aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the SASA and its institutes. The repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB)." ;
+  dct:type "r3d:Repository" .
+
+<https://radar.ibiss.bg.ac.rs/>
+  a dcat:Catalog, foaf:Project ;
+  dct:title "RADaR - Digital Repository of Archived Publications of the Institute for Biological Research “Siniša Stanković”" ;
+  dct:identifier "4035" ;
+  dct:identifier "14159" ;
+  dct:identifier "https://radar.ibiss.bg.ac.rs/?locale-attribute=en" ;
+  dct:identifier "r3d100014102" ;
+  dct:description "RADaR - Digital Repository of Archived Publications of the Institute for Biological Research “Siniša Stanković” is the institutional digital repository of the Institute for Biological Research “Siniša Stanković” – National Institute of Republic of Serbia, University of Belgrade.nThe aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the Institute for Biological Research “Siniša Stanković”.nThe repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB)." ;
+  dct:type "r3d:Repository" .
