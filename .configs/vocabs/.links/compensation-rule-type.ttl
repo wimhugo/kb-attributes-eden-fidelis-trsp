@@ -1,0 +1,48 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ex: <https://vocab.example.org/> .
+
+trsp:profile-test-type-scheme a skos:ConceptScheme ;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:creator <https://orcid.org/0000-0002-0255-5101>;
+  dct:contributor <https://orcid.org/0000-0003-1106-8441>;
+  dct:description "Test vocab linker"@en;
+  dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:rights <https://spdx.org/licenses/CC0-1.0>;
+  dct:title "TRSP Vocab Linker Test"@en;
+  skos:prefLabel "RSP Vocab Linker Test"@en;
+  owl:versionInfo "0.0.1"@en;
+  foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:compensation-rule-type-free
+  a skos:Concept ;
+  skos:prefLabel "Free"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:compensation-rule-type-non-commercial
+  a skos:Concept ;
+  skos:prefLabel "Non-Commercial"@en ;
+  skos:altLabel "DL-DE BY-NC 1.0"@en ;
+  skos:closeMatch <http://eurovoc.europa.eu/6783> ;
+  skos:broadMatch <http://eurovoc.europa.eu/6783> ;
+  rdfs:seeAlso <http://eurovoc.europa.eu/6783> ;
+  dcterms:source "EuroVoc contributors. (n.d.). non-commercial sector. In EuroVoc. Retrieved from http://eurovoc.europa.eu/6783" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:compensation-rule-type-free-registered
+  a skos:Concept ;
+  skos:prefLabel "Free to Verified Users"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:compensation-rule-type-cost-recovery
+  a skos:Concept ;
+  skos:prefLabel "Cost Recovery"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:compensation-rule-type-commercial
+  a skos:Concept ;
+  skos:prefLabel "Commercial Product"@en ;
+  skos:inScheme trsp:ConceptScheme .
