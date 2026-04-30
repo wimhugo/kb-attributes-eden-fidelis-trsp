@@ -1,6 +1,6 @@
 # Consolidated schema summary from: .configs/ingest/graph/registry.trig
 # All named graphs aggregated — unique type → property list
-# Generated: 2026-04-30T07:54:03.640Z
+# Generated: 2026-04-30T08:08:59.984Z
 
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
