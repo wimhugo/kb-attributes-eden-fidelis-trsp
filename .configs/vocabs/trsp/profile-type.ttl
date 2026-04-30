@@ -1,0 +1,98 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix fairsharing: <https://fairsharing.org/> .
+@prefix r3d: <https://fairsharing.org/> .
+
+trsp:profile-test-type-scheme a skos:ConceptScheme ;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:creator <https://orcid.org/0000-0002-0255-5101>;
+  dct:contributor <https://orcid.org/0000-0003-1106-8441>;
+  skos:definition "Profile Types distinguish the type or origin of a profile"@en;
+  dct:modified "2026-04-30"^^xsd:datetime;
+  prov:wasAssociatedWith  
+     [ a prov:SoftwareAgent;
+         prov:label "TRSP B Curation Platform" .
+     ] ;
+  dct:rights <https://spdx.org/licenses/CC0-1.0>;
+  dct:title "TRSP Profile Types"@en;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/9375807cb5fa64003c6c42e79d20af247b842174" ;
+  skos:prefLabel "TRSP Profile Type Vocabulary"@en;
+  owl:versionInfo "0.1"@en;
+  foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:profile-type-repository
+  a skos:Concept ;
+  skos:prefLabel "Repository"@en ;
+  skos:definition "The profile represents the attributes maintained and published by a Repository."@en ;
+  dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
+  skos:altLabel "repository Types (re3data)"@en ;
+  skos:closeMatch <https://schema.re3data.org/4-0#repositoryTypes_disciplinary> ;
+  rdfs:seeAlso <https://schema.re3data.org/4-0#repositoryTypes_disciplinary> ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:profile-type-service
+  a skos:Concept ;
+  skos:prefLabel "Service"@en ;
+  skos:definition "The profile represents the attributes maintained and published by a Service."@en ;
+  dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
+  skos:altLabel "provider Types (re3data)"@en ;
+  skos:closeMatch <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
+  skos:broadMatch <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
+  rdfs:seeAlso <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:profile-type-project
+  a skos:Concept ;
+  skos:prefLabel "Project"@en ;
+  skos:definition "A project that maintains or contributes to a service or repository."@en ;
+  dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
+  skos:altLabel "repository Types (re3data)"@en ;
+  skos:closeMatch <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
+  skos:broadMatch <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
+  rdfs:seeAlso <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:profile-type-source
+  a skos:Concept ;
+  skos:prefLabel "Source"@en ;
+  skos:definition "The profile represents the attributes published by an authoritative Source, such as a working group or an infrastructure."@en ;
+  dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
+  skos:closeMatch <http://purl.org/coar/resource_type/c_e9a0> ;
+  skos:broadMatch <http://purl.org/coar/resource_type/c_e9a0> ;
+  rdfs:seeAlso <http://purl.org/coar/resource_type/c_e9a0> ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:profile-type-standard
+  a skos:Concept ;
+  skos:prefLabel "Standard"@en ;
+  skos:definition "The profile represents the attributes maintained and published as a Standard, for example schema.org or DCAT."@en ;
+  dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:profile-type-community
+  a skos:Concept ;
+  skos:prefLabel "Community"@en ;
+  skos:definition "The profile represents the attributes maintained and published as part of a community profile - for example FIDELIS network."@en ;
+  dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
+  skos:altLabel "Valencian Community"@en ;
+  skos:altLabel "EC budget"@en ;
+  skos:altLabel "EEC"@en ;
+  skos:closeMatch <http://eurovoc.europa.eu/5515> ;
+  skos:broadMatch <http://eurovoc.europa.eu/5515> ;
+  rdfs:seeAlso <http://eurovoc.europa.eu/5515> ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:profile-type-user
+  a skos:Concept ;
+  skos:prefLabel "User"@en ;
+  skos:definition "The profile represents the attributes associated with the exepctations or criteria of an individual User."@en ;
+  dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
+  skos:closeMatch <http://open.vocab.org/terms/creatorUserAgent> ;
+  skos:broadMatch <http://open.vocab.org/terms/creatorUserAgent> ;
+  rdfs:seeAlso <http://open.vocab.org/terms/creatorUserAgent> ;
+  skos:inScheme trsp:ConceptScheme .
