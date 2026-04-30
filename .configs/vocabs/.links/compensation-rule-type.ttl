@@ -1,3 +1,4 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
@@ -9,11 +10,11 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
-  dct:description "Test vocab linker"@en;
+  dct:description "Compensation rules determine how cost is recovered. Repositories may implement more than one approach."@en;
   dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
-  dct:title "TRSP Vocab Linker Test"@en;
-  skos:prefLabel "RSP Vocab Linker Test"@en;
+  dct:title "TRSP Compensation Rule Vocabulary"@en;
+  skos:prefLabel "TRSP Compensation Rule Vocabulary"@en;
   owl:versionInfo "0.0.1"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
