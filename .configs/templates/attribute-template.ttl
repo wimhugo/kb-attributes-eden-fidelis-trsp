@@ -7,12 +7,14 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 <> a trsp:Attribute, skos:Concept ;
+    dct:identifier "" ;
     skos:prefLabel ""@en ;
     dct:description ""@en ;
     dcat:keyword ""@en ;
     trsp:hasMeasurementType <> ;
     trsp:benchmark ""@en ;
-    trsp:cardinalityCode <> .
+    trsp:cardinalityCode <> ;
+    trsp:hasExternalIdentifier 
 
 trsp:att.TEMPLATE
     a trsp:Attribute, skos:Concept, schema:DefinedTerm ;
@@ -28,11 +30,9 @@ trsp:att.TEMPLATE
     trsp:hasExternalIdentifier [
         a trsp:ExternalIdentifier ;
         trsp:relationType trsp:relationAlternateIdentifier ;
-        trsp:object <https://example.org/external/term> ;
-        trsp:contextIRI <https://example.org/external/context> ;
         trsp:identifierIri <https://example.org/external/term> ;
-        trsp:identifierUsage trsp:defaultUsage
-    ] ;
+        trsp:identifierUsage trsp:defaultUsage .
+        ] ;
     trsp:hasApplicableProfileAssertion [
         a trsp:ProfileAssertion ;
         trsp:relationType trsp:includeInProfile ;
