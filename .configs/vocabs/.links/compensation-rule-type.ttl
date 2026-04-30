@@ -11,32 +11,25 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
   dct:description "Compensation rules determine how cost is recovered. Repositories may implement more than one approach."@en;
-  dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:modified "2026-04-30"^^xsd:datetime;
   prov:wasAssociatedWith  
      [ a prov:SoftwareAgent;
-         prov:label "TRSP Base 44 Curation Platform" .
+         prov:label "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/vocab-link/2026-04-30T05-10-05/.configs/vocabs/.links/compensation-rule-type.ttl@2026-04-30" .
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
-  dct:title "TRSP Compensation Rule Vocabulary"@en;
-  skos:prefLabel "TRSP Compensation Rule Vocabulary"@en;
-  owl:versionInfo "0.0.1"@en;
+  dct:title "Compensation Rule"@en;
+  skos:prefLabel "Compensation Rule"@en;
+  owl:versionInfo "0.1"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:compensation-rule-type-free
   a skos:Concept ;
-  skos:prefLabel "Free"@en ;
-  skos:altLabel "media freedom"@en ;
-  skos:altLabel "freedom of religious worship"@en ;
-  skos:altLabel "free movement of commodities"@en ;
-  skos:closeMatch <http://eurovoc.europa.eu/785> ;
-  skos:broadMatch <http://eurovoc.europa.eu/785> ;
-  rdfs:seeAlso <http://eurovoc.europa.eu/785> ;
-  dcterms:source "EuroVoc contributors. (n.d.). free education. In EuroVoc. Retrieved from http://eurovoc.europa.eu/785" ;
+  skos:prefLabel "Compensation Rule"@en ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:compensation-rule-type-non-commercial
   a skos:Concept ;
-  skos:prefLabel "Non-Commercial"@en ;
+  skos:prefLabel "Compensation Rule"@en ;
   skos:altLabel "DL-DE BY-NC 1.0"@en ;
   skos:closeMatch <http://eurovoc.europa.eu/6783> ;
   skos:broadMatch <http://eurovoc.europa.eu/6783> ;
@@ -46,15 +39,15 @@ trsp:compensation-rule-type-non-commercial
 
 trsp:compensation-rule-type-free-registered
   a skos:Concept ;
-  skos:prefLabel "Free to Verified Users"@en ;
+  skos:prefLabel "Compensation Rule"@en ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:compensation-rule-type-cost-recovery
   a skos:Concept ;
-  skos:prefLabel "Cost Recovery"@en ;
+  skos:prefLabel "Compensation Rule"@en ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:compensation-rule-type-commercial
   a skos:Concept ;
-  skos:prefLabel "Commercial Product"@en ;
+  skos:prefLabel "Compensation Rule"@en ;
   skos:inScheme trsp:ConceptScheme .
