@@ -20,9 +20,9 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Profile Types"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/0931cc75c4cfddcd81d98ecc6f175e29b9c1cb4f" ;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/65fc77deb026e987c3e38de1dacb2c1acbd53b28" ;
   skos:prefLabel "TRSP Profile Type Vocabulary"@en;
-  owl:versionInfo "0.2"@en;
+  owl:versionInfo "0.3"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:profile-type-repository
@@ -30,9 +30,15 @@ trsp:profile-type-repository
   skos:prefLabel "Repository"@en ;
   skos:definition "The profile represents the attributes maintained and published by a Repository."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
+  skos:altLabel "repository Types (re3data)"@en ;
   skos:altLabel "Repo"@en ;
   skos:altLabel "Repositories"@en ;
   skos:altLabel "Repos"@en ;
+  skos:closeMatch <http://purl.obolibrary.org/obo/OBI_0001885> ;
+  skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0001885> ;
+  rdfs:seeAlso <http://purl.obolibrary.org/obo/OBI_0001885> ;
+  skos:closeMatch <https://schema.re3data.org/4-0#repositoryTypes_disciplinary> ;
+  rdfs:seeAlso <https://schema.re3data.org/4-0#repositoryTypes_disciplinary> ;
   skos:closeMatch <http://example.com/gorc_gloss/repository> ;
   skos:exactMatch <http://example.com/gorc_gloss/repository> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/repository> ;
@@ -43,8 +49,17 @@ trsp:profile-type-service
   skos:prefLabel "Service"@en ;
   skos:definition "The profile represents the attributes maintained and published by a Service."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
-  skos:altLabel "Services"@en ;
-  skos:altLabel "Data Services"@en ;
+  skos:altLabel "Cooking and other preparation services for the production of meat products"@en ;
+  skos:altLabel "Cooking and other preparation services (concentration, etc.) for the preservation of fruit and vegetables"@en ;
+  skos:altLabel "Finishing services of clothing"@en ;
+  skos:altLabel "Composition, plate-making services, typesetting and phototypesetting"@en ;
+  skos:altLabel "provider Types (re3data)"@en ;
+  skos:closeMatch <http://publications.europa.eu/resource/authority/fd_578/4.10.02.01.05.01> ;
+  skos:broadMatch <http://publications.europa.eu/resource/authority/fd_578/4.10.02.01.05.01> ;
+  rdfs:seeAlso <http://publications.europa.eu/resource/authority/fd_578/4.10.02.01.05.01> ;
+  skos:closeMatch <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
+  skos:broadMatch <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
+  rdfs:seeAlso <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
   skos:closeMatch <http://example.com/gorc_gloss/service> ;
   skos:exactMatch <http://example.com/gorc_gloss/service> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/service> ;
@@ -55,6 +70,10 @@ trsp:profile-type-project
   skos:prefLabel "Project"@en ;
   skos:definition "A project that maintains or contributes to a service or repository."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
+  skos:altLabel "repository Types (re3data)"@en ;
+  skos:closeMatch <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
+  skos:broadMatch <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
+  rdfs:seeAlso <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-source
@@ -93,6 +112,9 @@ trsp:profile-type-user
   skos:definition "The profile represents the attributes associated with the exepctations or criteria of an individual User."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:altLabel "Users"@en ;
+  skos:closeMatch <http://open.vocab.org/terms/creatorUserAgent> ;
+  skos:broadMatch <http://open.vocab.org/terms/creatorUserAgent> ;
+  rdfs:seeAlso <http://open.vocab.org/terms/creatorUserAgent> ;
   skos:closeMatch <http://example.com/gorc_gloss/user> ;
   skos:exactMatch <http://example.com/gorc_gloss/user> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/user> ;
