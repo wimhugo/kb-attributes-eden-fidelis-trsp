@@ -20,9 +20,9 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Profile Types"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/65fc77deb026e987c3e38de1dacb2c1acbd53b28" ;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/85f8b9005e596f478ee2d7dcaeb2eccb45a760a0" ;
   skos:prefLabel "TRSP Profile Type Vocabulary"@en;
-  owl:versionInfo "0.3"@en;
+  owl:versionInfo "0.4"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:profile-type-repository
@@ -34,12 +34,8 @@ trsp:profile-type-repository
   skos:altLabel "Repo"@en ;
   skos:altLabel "Repositories"@en ;
   skos:altLabel "Repos"@en ;
-  skos:closeMatch <http://purl.obolibrary.org/obo/OBI_0001885> ;
-  skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0001885> ;
-  rdfs:seeAlso <http://purl.obolibrary.org/obo/OBI_0001885> ;
   skos:closeMatch <https://schema.re3data.org/4-0#repositoryTypes_disciplinary> ;
   rdfs:seeAlso <https://schema.re3data.org/4-0#repositoryTypes_disciplinary> ;
-  skos:closeMatch <http://example.com/gorc_gloss/repository> ;
   skos:exactMatch <http://example.com/gorc_gloss/repository> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/repository> ;
   skos:inScheme trsp:ConceptScheme .
@@ -54,13 +50,10 @@ trsp:profile-type-service
   skos:altLabel "Finishing services of clothing"@en ;
   skos:altLabel "Composition, plate-making services, typesetting and phototypesetting"@en ;
   skos:altLabel "provider Types (re3data)"@en ;
-  skos:closeMatch <http://publications.europa.eu/resource/authority/fd_578/4.10.02.01.05.01> ;
   skos:broadMatch <http://publications.europa.eu/resource/authority/fd_578/4.10.02.01.05.01> ;
   rdfs:seeAlso <http://publications.europa.eu/resource/authority/fd_578/4.10.02.01.05.01> ;
-  skos:closeMatch <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
   skos:broadMatch <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
   rdfs:seeAlso <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
-  skos:closeMatch <http://example.com/gorc_gloss/service> ;
   skos:exactMatch <http://example.com/gorc_gloss/service> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/service> ;
   skos:inScheme trsp:ConceptScheme .
@@ -71,7 +64,6 @@ trsp:profile-type-project
   skos:definition "A project that maintains or contributes to a service or repository."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
   skos:altLabel "repository Types (re3data)"@en ;
-  skos:closeMatch <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
   skos:broadMatch <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
   rdfs:seeAlso <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
   skos:inScheme trsp:ConceptScheme .
@@ -89,7 +81,6 @@ trsp:profile-type-standard
   skos:definition "The profile represents the attributes maintained and published as a Standard, for example schema.org or DCAT."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:altLabel "Standards"@en ;
-  skos:closeMatch <http://example.com/gorc_gloss/standard> ;
   skos:exactMatch <http://example.com/gorc_gloss/standard> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/standard> ;
   skos:inScheme trsp:ConceptScheme .
@@ -101,7 +92,6 @@ trsp:profile-type-community
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:altLabel "Commons Community"@en ;
   skos:altLabel "Research Commons Community"@en ;
-  skos:closeMatch <http://example.com/gorc_gloss/community> ;
   skos:exactMatch <http://example.com/gorc_gloss/community> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/community> ;
   skos:inScheme trsp:ConceptScheme .
@@ -112,10 +102,8 @@ trsp:profile-type-user
   skos:definition "The profile represents the attributes associated with the exepctations or criteria of an individual User."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:altLabel "Users"@en ;
-  skos:closeMatch <http://open.vocab.org/terms/creatorUserAgent> ;
   skos:broadMatch <http://open.vocab.org/terms/creatorUserAgent> ;
   rdfs:seeAlso <http://open.vocab.org/terms/creatorUserAgent> ;
-  skos:closeMatch <http://example.com/gorc_gloss/user> ;
   skos:exactMatch <http://example.com/gorc_gloss/user> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/user> ;
   skos:inScheme trsp:ConceptScheme .
