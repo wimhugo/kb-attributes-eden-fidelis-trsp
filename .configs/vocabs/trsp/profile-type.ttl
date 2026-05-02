@@ -13,16 +13,16 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
   skos:definition "Profile Types distinguish the type or origin of a profile"@en;
-  dct:modified "2026-04-30"^^xsd:datetime;
+  dct:modified "2026-05-02"^^xsd:datetime;
   prov:wasAssociatedWith  
      [ a prov:SoftwareAgent;
          prov:label "TRSP B Curation Platform" .
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Profile Types"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/9375807cb5fa64003c6c42e79d20af247b842174" ;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/0931cc75c4cfddcd81d98ecc6f175e29b9c1cb4f" ;
   skos:prefLabel "TRSP Profile Type Vocabulary"@en;
-  owl:versionInfo "0.1"@en;
+  owl:versionInfo "0.2"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:profile-type-repository
@@ -30,9 +30,12 @@ trsp:profile-type-repository
   skos:prefLabel "Repository"@en ;
   skos:definition "The profile represents the attributes maintained and published by a Repository."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
-  skos:altLabel "repository Types (re3data)"@en ;
-  skos:closeMatch <https://schema.re3data.org/4-0#repositoryTypes_disciplinary> ;
-  rdfs:seeAlso <https://schema.re3data.org/4-0#repositoryTypes_disciplinary> ;
+  skos:altLabel "Repo"@en ;
+  skos:altLabel "Repositories"@en ;
+  skos:altLabel "Repos"@en ;
+  skos:closeMatch <http://example.com/gorc_gloss/repository> ;
+  skos:exactMatch <http://example.com/gorc_gloss/repository> ;
+  rdfs:seeAlso <http://example.com/gorc_gloss/repository> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-service
@@ -40,10 +43,11 @@ trsp:profile-type-service
   skos:prefLabel "Service"@en ;
   skos:definition "The profile represents the attributes maintained and published by a Service."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
-  skos:altLabel "provider Types (re3data)"@en ;
-  skos:closeMatch <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
-  skos:broadMatch <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
-  rdfs:seeAlso <https://schema.re3data.org/4-0#providerTypes_serviceProvider> ;
+  skos:altLabel "Services"@en ;
+  skos:altLabel "Data Services"@en ;
+  skos:closeMatch <http://example.com/gorc_gloss/service> ;
+  skos:exactMatch <http://example.com/gorc_gloss/service> ;
+  rdfs:seeAlso <http://example.com/gorc_gloss/service> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-project
@@ -51,10 +55,6 @@ trsp:profile-type-project
   skos:prefLabel "Project"@en ;
   skos:definition "A project that maintains or contributes to a service or repository."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
-  skos:altLabel "repository Types (re3data)"@en ;
-  skos:closeMatch <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
-  skos:broadMatch <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
-  rdfs:seeAlso <https://schema.re3data.org/4-0#repositoryTypes_project-related> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-source
@@ -62,9 +62,6 @@ trsp:profile-type-source
   skos:prefLabel "Source"@en ;
   skos:definition "The profile represents the attributes published by an authoritative Source, such as a working group or an infrastructure."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
-  skos:closeMatch <http://purl.org/coar/resource_type/c_e9a0> ;
-  skos:broadMatch <http://purl.org/coar/resource_type/c_e9a0> ;
-  rdfs:seeAlso <http://purl.org/coar/resource_type/c_e9a0> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-standard
@@ -72,6 +69,10 @@ trsp:profile-type-standard
   skos:prefLabel "Standard"@en ;
   skos:definition "The profile represents the attributes maintained and published as a Standard, for example schema.org or DCAT."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
+  skos:altLabel "Standards"@en ;
+  skos:closeMatch <http://example.com/gorc_gloss/standard> ;
+  skos:exactMatch <http://example.com/gorc_gloss/standard> ;
+  rdfs:seeAlso <http://example.com/gorc_gloss/standard> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-community
@@ -79,12 +80,11 @@ trsp:profile-type-community
   skos:prefLabel "Community"@en ;
   skos:definition "The profile represents the attributes maintained and published as part of a community profile - for example FIDELIS network."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:altLabel "Valencian Community"@en ;
-  skos:altLabel "EC budget"@en ;
-  skos:altLabel "EEC"@en ;
-  skos:closeMatch <http://eurovoc.europa.eu/5515> ;
-  skos:broadMatch <http://eurovoc.europa.eu/5515> ;
-  rdfs:seeAlso <http://eurovoc.europa.eu/5515> ;
+  skos:altLabel "Commons Community"@en ;
+  skos:altLabel "Research Commons Community"@en ;
+  skos:closeMatch <http://example.com/gorc_gloss/community> ;
+  skos:exactMatch <http://example.com/gorc_gloss/community> ;
+  rdfs:seeAlso <http://example.com/gorc_gloss/community> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-user
@@ -92,7 +92,8 @@ trsp:profile-type-user
   skos:prefLabel "User"@en ;
   skos:definition "The profile represents the attributes associated with the exepctations or criteria of an individual User."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:closeMatch <http://open.vocab.org/terms/creatorUserAgent> ;
-  skos:broadMatch <http://open.vocab.org/terms/creatorUserAgent> ;
-  rdfs:seeAlso <http://open.vocab.org/terms/creatorUserAgent> ;
+  skos:altLabel "Users"@en ;
+  skos:closeMatch <http://example.com/gorc_gloss/user> ;
+  skos:exactMatch <http://example.com/gorc_gloss/user> ;
+  rdfs:seeAlso <http://example.com/gorc_gloss/user> ;
   skos:inScheme trsp:ConceptScheme .
