@@ -1,0 +1,29 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:ConceptScheme
+  a skos:ConceptScheme ;
+  skos:prefLabel "Checklist for Deposit Documentation"@en ;
+  dct:title "Checklist for Deposit Documentation"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:accurateMetadata
+  a skos:Concept ;
+  skos:prefLabel "Accurate Metadata"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:technicalValidation
+  a skos:Concept ;
+  skos:prefLabel "Technical Validation"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:dataValidation
+  a skos:Concept ;
+  skos:prefLabel "Data Validation"@en ;
+  skos:inScheme trsp:ConceptScheme .

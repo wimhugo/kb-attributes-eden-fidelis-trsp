@@ -1,0 +1,34 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:ConceptScheme
+  a skos:ConceptScheme ;
+  skos:prefLabel "Checklist for Metrics"@en ;
+  dct:title "Checklist for Metrics"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:citations
+  a skos:Concept ;
+  skos:prefLabel "Citations"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:pageViews
+  a skos:Concept ;
+  skos:prefLabel "Page Views"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:downloads
+  a skos:Concept ;
+  skos:prefLabel "Downloads"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:mentions
+  a skos:Concept ;
+  skos:prefLabel "Mentions"@en ;
+  skos:inScheme trsp:ConceptScheme .
