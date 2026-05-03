@@ -1,0 +1,34 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:checklistUSerSchemaCrosswalks
+  a skos:ConceptScheme ;
+  skos:prefLabel "Checklist for User Schema and Crosswalks"@en ;
+  dct:title "Checklist for User Schema and Crosswalks"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:brokering
+  a skos:Concept ;
+  skos:prefLabel "Brokering"@en ;
+  skos:inScheme trsp:checklistUSerSchemaCrosswalks .
+
+trsp:crosswalks
+  a skos:Concept ;
+  skos:prefLabel "Crosswalks"@en ;
+  skos:inScheme trsp:checklistUSerSchemaCrosswalks .
+
+trsp:mediation
+  a skos:Concept ;
+  skos:prefLabel "Mediation"@en ;
+  skos:inScheme trsp:checklistUSerSchemaCrosswalks .
+
+trsp:contentNegotiation
+  a skos:Concept ;
+  skos:prefLabel "Content Negotiation"@en ;
+  skos:inScheme trsp:checklistUSerSchemaCrosswalks .
