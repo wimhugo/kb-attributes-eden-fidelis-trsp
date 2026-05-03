@@ -26,7 +26,7 @@ Construct a SKOS conceptscheme as a machine-readable vocabulary
 
 ## CARE Principles 
 
-(Carroll et al., 2020 — GIDA) 
+(Carroll et al., 2020 — GIDA)  https://doi.org/10.5334/dsj-2020-043
 
 Partial RDF presence:
 - The GIDA (Global Indigenous Data Alliance) hasn't published a formal SPARQL-queryable vocabulary
