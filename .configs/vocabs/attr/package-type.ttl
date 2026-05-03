@@ -11,16 +11,20 @@ trsp:package-type-scheme
   dct:title "Package Encoding Type"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 trsp:bagit
   a skos:Concept ;
   skos:prefLabel "Bag-It"@en ;
+  skos:closeMatch <https://doi.org/10.25504/FAIRsharing.3224a5> ;
+  rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.3224a5> ;
   skos:inScheme trsp:package-type-scheme .
 
 trsp:rocrate
   a skos:Concept ;
   skos:prefLabel "RO-Crate"@en ;
+  skos:closeMatch <https://doi.org/10.25504/FAIRsharing.wUoZKE> ;
+  rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.wUoZKE> ;
   skos:inScheme trsp:package-type-scheme .
 
 trsp:aip
