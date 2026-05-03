@@ -65,12 +65,6 @@ trsp:Policy
 trsp:Licence
   a skos:Concept ;
   skos:prefLabel "Licence"@en ;
-  skos:altLabel "permits"@en ;
-  skos:altLabel "fishing permits"@en ;
-  skos:altLabel "fishing permit fees"@en ;
-  skos:broadMatch agrovoc:c_4313 ;
-  rdfs:seeAlso agrovoc:c_4313 ;
-  dcterms:source "AGROVOC contributors. (n.d.). licences. In AGROVOC. Retrieved from http://aims.fao.org/aos/agrovoc/c_4313" ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:Monitoring
