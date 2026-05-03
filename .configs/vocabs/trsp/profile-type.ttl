@@ -1,4 +1,7 @@
-@prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+@prefix trust: <https://purl.org/trsp/trust/> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix posi: <https://purl.org/trsp/posi/> .
+@prefix gorc: <https://purl.org/gorc/> .
 @prefix re3data: <https://schema.re3data.org/4-0#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -22,9 +25,9 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Profile Types"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/a38cfc8ab074b558157cade083fd83fcf188314e" ;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/88390bfb6a6b61c90e61aedb1aba6decadc38702" ;
   skos:prefLabel "TRSP Profile Type Vocabulary"@en;
-  owl:versionInfo "0.5"@en;
+  owl:versionInfo "0.6"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:profile-type-repository
@@ -38,8 +41,8 @@ trsp:profile-type-repository
   skos:altLabel "Repos"@en ;
   skos:closeMatch re3data:repositoryTypes_disciplinary ;
   rdfs:seeAlso re3data:repositoryTypes_disciplinary ;
-  skos:exactMatch <http://example.com/gorc_gloss/repository> ;
-  rdfs:seeAlso <http://example.com/gorc_gloss/repository> ;
+  skos:exactMatch gorc:repository ;
+  rdfs:seeAlso gorc:repository ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-service
@@ -47,17 +50,15 @@ trsp:profile-type-service
   skos:prefLabel "Service"@en ;
   skos:definition "The profile represents the attributes maintained and published by a Service."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
-  skos:altLabel "Cooking and other preparation services for the production of meat products"@en ;
-  skos:altLabel "Cooking and other preparation services (concentration, etc.) for the preservation of fruit and vegetables"@en ;
-  skos:altLabel "Finishing services of clothing"@en ;
-  skos:altLabel "Composition, plate-making services, typesetting and phototypesetting"@en ;
   skos:altLabel "provider Types (re3data)"@en ;
-  skos:broadMatch <http://publications.europa.eu/resource/authority/fd_578/4.10.02.01.05.01> ;
-  rdfs:seeAlso <http://publications.europa.eu/resource/authority/fd_578/4.10.02.01.05.01> ;
+  skos:altLabel "Services"@en ;
+  skos:altLabel "Data Services"@en ;
   skos:broadMatch re3data:providerTypes_serviceProvider ;
   rdfs:seeAlso re3data:providerTypes_serviceProvider ;
-  skos:exactMatch <http://example.com/gorc_gloss/service> ;
-  rdfs:seeAlso <http://example.com/gorc_gloss/service> ;
+  skos:exactMatch gorc:service ;
+  rdfs:seeAlso gorc:service ;
+  skos:broadMatch posi:S6 ;
+  rdfs:seeAlso posi:S6 ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-project
@@ -82,12 +83,13 @@ trsp:profile-type-standard
   skos:prefLabel "Standard"@en ;
   skos:definition "The profile represents the attributes maintained and published as a Standard, for example schema.org or DCAT."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:altLabel "standardizing"@en ;
   skos:altLabel "Standards"@en ;
-  skos:broadMatch agrovoc:c_7366 ;
-  rdfs:seeAlso agrovoc:c_7366 ;
-  skos:exactMatch <http://example.com/gorc_gloss/standard> ;
-  rdfs:seeAlso <http://example.com/gorc_gloss/standard> ;
+  skos:exactMatch gorc:standard ;
+  rdfs:seeAlso gorc:standard ;
+  skos:broadMatch fair:A1 ;
+  rdfs:seeAlso fair:A1 ;
+  skos:broadMatch posi:I5 ;
+  rdfs:seeAlso posi:I5 ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-community
@@ -97,8 +99,13 @@ trsp:profile-type-community
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:altLabel "Commons Community"@en ;
   skos:altLabel "Research Commons Community"@en ;
-  skos:exactMatch <http://example.com/gorc_gloss/community> ;
-  rdfs:seeAlso <http://example.com/gorc_gloss/community> ;
+  skos:altLabel "R1.3"@en ;
+  skos:exactMatch gorc:community ;
+  rdfs:seeAlso gorc:community ;
+  skos:broadMatch fair:R1_3 ;
+  rdfs:seeAlso fair:R1_3 ;
+  skos:broadMatch posi:G7 ;
+  rdfs:seeAlso posi:G7 ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:profile-type-user
@@ -107,29 +114,11 @@ trsp:profile-type-user
   skos:definition "The profile represents the attributes associated with the exepctations or criteria of an individual User."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:altLabel "Users"@en ;
+  skos:altLabel "U — User Focus"@en ;
   skos:broadMatch <http://open.vocab.org/terms/creatorUserAgent> ;
   rdfs:seeAlso <http://open.vocab.org/terms/creatorUserAgent> ;
-  skos:exactMatch <http://example.com/gorc_gloss/user> ;
-  rdfs:seeAlso <http://example.com/gorc_gloss/user> ;
-  skos:inScheme trsp:ConceptScheme .
-@prefix trust: <https://purl.org/trsp/trust/> .
-@prefix fair: <https://w3id.org/fair/principles/terms/> .
-@prefix posi: <https://purl.org/trsp/posi/> .
-
-prov:wasAssociatedWith  
-     [ a prov:SoftwareAgent;
-         prov:label "TRSP B Curation Platform" .
-     ] ;
-  dct:rights <https://spdx.org/licenses/CC0-1.0>;
-  dct:title "TRSP Profile Types"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/a38cfc8ab074b558157cade083fd83fcf188314e" ;
-  skos:prefLabel "TRSP Profile Type Vocabulary"@en;
-  owl:versionInfo "0.5"@en;
-  foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
-
-trsp:profile-type-repository
-  a skos:Concept ;
-  skos:prefLabel "Repository"@en ;
-  skos:definition "The profile represents the attributes maintained and published by a Repository."@en ;
-  dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
+  skos:exactMatch gorc:user ;
+  rdfs:seeAlso gorc:user ;
+  skos:broadMatch trust:userFocus ;
+  rdfs:seeAlso trust:userFocus ;
   skos:inScheme trsp:ConceptScheme .
