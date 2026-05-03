@@ -4,6 +4,10 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix agrovoc: <http://aims.fao.org/aos/agrovoc/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix fairsharing: <https://fairsharing.org/> .
+@prefix r3d: <https://fairsharing.org/> .
 
 trsp:ConceptScheme
   a skos:ConceptScheme ;
@@ -11,7 +15,7 @@ trsp:ConceptScheme
   dct:title "Checklist on Data Protection Measures"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 trsp:policy
   a skos:Concept ;
@@ -44,6 +48,55 @@ trsp:physicalAccess
   skos:inScheme trsp:ConceptScheme .
 
 trsp:logicalAccess
+  a skos:Concept ;
+  skos:prefLabel "Logical Access"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:Checklist_on_Data_Protection_Measures
+  a skos:Concept ;
+  skos:prefLabel "Checklist on Data Protection Measures"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:Policy
+  a skos:Concept ;
+  skos:prefLabel "Policy"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:Licence
+  a skos:Concept ;
+  skos:prefLabel "Licence"@en ;
+  skos:altLabel "permits"@en ;
+  skos:altLabel "fishing permits"@en ;
+  skos:altLabel "fishing permit fees"@en ;
+  skos:broadMatch agrovoc:c_4313 ;
+  rdfs:seeAlso agrovoc:c_4313 ;
+  dcterms:source "AGROVOC contributors. (n.d.). licences. In AGROVOC. Retrieved from http://aims.fao.org/aos/agrovoc/c_4313" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:Monitoring
+  a skos:Concept ;
+  skos:prefLabel "Monitoring"@en ;
+  skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0000144> ;
+  rdfs:seeAlso <http://purl.obolibrary.org/obo/OBI_0000144> ;
+  dcterms:source "LOV contributors. (n.d.). role of independent data monitoring committee. In LOV. Retrieved from http://purl.obolibrary.org/obo/OBI_0000144" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:Guidance
+  a skos:Concept ;
+  skos:prefLabel "Guidance"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:Disclosure_Risk_Categorisation
+  a skos:Concept ;
+  skos:prefLabel "Disclosure Risk Categorisation"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:Physical_Access
+  a skos:Concept ;
+  skos:prefLabel "Physical Access"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:Logical_Access
   a skos:Concept ;
   skos:prefLabel "Logical Access"@en ;
   skos:inScheme trsp:ConceptScheme .
