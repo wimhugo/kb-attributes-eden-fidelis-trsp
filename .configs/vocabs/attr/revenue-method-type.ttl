@@ -1,0 +1,39 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:revenue-method-type-scheme
+  a skos:ConceptScheme ;
+  skos:prefLabel "Revenue Method Type"@en ;
+  dct:title "Revenue Method Type"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:free
+  a skos:Concept ;
+  skos:prefLabel "Free"@en ;
+  skos:inScheme trsp:revenue-method-type-scheme .
+
+trsp:subscription
+  a skos:Concept ;
+  skos:prefLabel "Subscription"@en ;
+  skos:inScheme trsp:revenue-method-type-scheme .
+
+trsp:payPerUse
+  a skos:Concept ;
+  skos:prefLabel "Pay per use"@en ;
+  skos:inScheme trsp:revenue-method-type-scheme .
+
+trsp:membership
+  a skos:Concept ;
+  skos:prefLabel "Membership"@en ;
+  skos:inScheme trsp:revenue-method-type-scheme .
+
+trsp:grants
+  a skos:Concept ;
+  skos:prefLabel "Grants"@en ;
+  skos:inScheme trsp:revenue-method-type-scheme .
