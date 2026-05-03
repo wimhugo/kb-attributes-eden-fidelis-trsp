@@ -1,0 +1,49 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:ConceptScheme
+  a skos:ConceptScheme ;
+  skos:prefLabel "Checklist on Reuse Support"@en ;
+  dct:title "Checklist on Reuse Support"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:richMetadata
+  a skos:Concept ;
+  skos:prefLabel "Rich Metadata"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:clearLicencing
+  a skos:Concept ;
+  skos:prefLabel "Clear Licencing"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:objectlevelProvenance
+  a skos:Concept ;
+  skos:prefLabel "Object-Level Provenance"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:metadataExportcrosswalks
+  a skos:Concept ;
+  skos:prefLabel "Metadata Export/Crosswalks"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:dataExporttransformation
+  a skos:Concept ;
+  skos:prefLabel "Data Export/Transformation"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:packageExport
+  a skos:Concept ;
+  skos:prefLabel "Package Export"@en ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:valueaddedServices
+  a skos:Concept ;
+  skos:prefLabel "Value-Added Services"@en ;
+  skos:inScheme trsp:ConceptScheme .
