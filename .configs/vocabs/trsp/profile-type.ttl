@@ -15,16 +15,16 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
   skos:definition "Profile Types distinguish the type or origin of a profile"@en;
-  dct:modified "2026-05-02"^^xsd:datetime;
+  dct:modified "2026-05-03"^^xsd:datetime;
   prov:wasAssociatedWith  
      [ a prov:SoftwareAgent;
          prov:label "TRSP B Curation Platform" .
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Profile Types"@en;
-  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/85f8b9005e596f478ee2d7dcaeb2eccb45a760a0" ;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/a38cfc8ab074b558157cade083fd83fcf188314e" ;
   skos:prefLabel "TRSP Profile Type Vocabulary"@en;
-  owl:versionInfo "0.4"@en;
+  owl:versionInfo "0.5"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:profile-type-repository
@@ -111,4 +111,25 @@ trsp:profile-type-user
   rdfs:seeAlso <http://open.vocab.org/terms/creatorUserAgent> ;
   skos:exactMatch <http://example.com/gorc_gloss/user> ;
   rdfs:seeAlso <http://example.com/gorc_gloss/user> ;
+  skos:inScheme trsp:ConceptScheme .
+@prefix trust: <https://purl.org/trsp/trust/> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix posi: <https://purl.org/trsp/posi/> .
+
+prov:wasAssociatedWith  
+     [ a prov:SoftwareAgent;
+         prov:label "TRSP B Curation Platform" .
+     ] ;
+  dct:rights <https://spdx.org/licenses/CC0-1.0>;
+  dct:title "TRSP Profile Types"@en;
+  dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/a38cfc8ab074b558157cade083fd83fcf188314e" ;
+  skos:prefLabel "TRSP Profile Type Vocabulary"@en;
+  owl:versionInfo "0.5"@en;
+  foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:profile-type-repository
+  a skos:Concept ;
+  skos:prefLabel "Repository"@en ;
+  skos:definition "The profile represents the attributes maintained and published by a Repository."@en ;
+  dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
   skos:inScheme trsp:ConceptScheme .
