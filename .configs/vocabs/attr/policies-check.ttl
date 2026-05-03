@@ -1,0 +1,94 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:checklistPolicies
+  a skos:ConceptScheme ;
+  skos:prefLabel "Checklist of Policies"@en ;
+  dct:title "Checklist of Policies"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:versioning
+  a skos:Concept ;
+  skos:prefLabel "Versioning"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:retention
+  a skos:Concept ;
+  skos:prefLabel "Retention"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:preservation
+  a skos:Concept ;
+  skos:prefLabel "Preservation"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:appraisal
+  a skos:Concept ;
+  skos:prefLabel "Appraisal"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:accession
+  a skos:Concept ;
+  skos:prefLabel "Accession"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:disclosureRiskAssessment
+  a skos:Concept ;
+  skos:prefLabel "Disclosure Risk Assessment"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:bibliographicMetadata
+  a skos:Concept ;
+  skos:prefLabel "Bibliographic Metadata"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:policyDevelopment
+  a skos:Concept ;
+  skos:prefLabel "Policy Development"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:ethicsClearanceVerification
+  a skos:Concept ;
+  skos:prefLabel "Ethics Clearance Verification"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:persistentIdentifier
+  a skos:Concept ;
+  skos:prefLabel "Persistent Identifier"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:licence
+  a skos:Concept ;
+  skos:prefLabel "Licence"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:preferredFormats
+  a skos:Concept ;
+  skos:prefLabel "Preferred Formats"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:compliance
+  a skos:Concept ;
+  skos:prefLabel "Compliance"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:rights
+  a skos:Concept ;
+  skos:prefLabel "Rights"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:interoprability
+  a skos:Concept ;
+  skos:prefLabel "Interoprability"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:dataSecurityAndIntegrity
+  a skos:Concept ;
+  skos:prefLabel "Data Security and Integrity"@en ;
+  skos:inScheme trsp:checklistPolicies .

@@ -1,0 +1,29 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:package-type-scheme
+  a skos:ConceptScheme ;
+  skos:prefLabel "Package Encoding Type"@en ;
+  dct:title "Package Encoding Type"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:bagit
+  a skos:Concept ;
+  skos:prefLabel "Bag-It"@en ;
+  skos:inScheme trsp:package-type-scheme .
+
+trsp:rocrate
+  a skos:Concept ;
+  skos:prefLabel "RO-Crate"@en ;
+  skos:inScheme trsp:package-type-scheme .
+
+trsp:aip
+  a skos:Concept ;
+  skos:prefLabel "AIP"@en ;
+  skos:inScheme trsp:package-type-scheme .
