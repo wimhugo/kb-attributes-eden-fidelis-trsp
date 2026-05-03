@@ -11,7 +11,7 @@ trsp:principles-type-scheme
   dct:title "Principles Vocabulary"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 trsp:fair
   a skos:Concept ;
@@ -31,4 +31,6 @@ trsp:care
 trsp:posi
   a skos:Concept ;
   skos:prefLabel "POSI"@en ;
+  skos:closeMatch <https://doi.org/10.25504/FAIRsharing.b16f42> ;
+  rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.b16f42> ;
   skos:inScheme trsp:principles-type-scheme .
