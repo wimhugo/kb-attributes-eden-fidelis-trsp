@@ -4,6 +4,9 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix care: <https://purl.org/trsp/care/> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix gorc: <https://purl.org/gorc/> .
 
 trsp:checklistPolicies
   a skos:ConceptScheme ;
@@ -11,16 +14,20 @@ trsp:checklistPolicies
   dct:title "Checklist of Policies"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 trsp:versioning
   a skos:Concept ;
   skos:prefLabel "Versioning"@en ;
+  skos:broadMatch <http://purl.org/pav/> ;
+  rdfs:seeAlso <http://purl.org/pav/> ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:retention
   a skos:Concept ;
   skos:prefLabel "Retention"@en ;
+  skos:broadMatch <http://linkeddata.center/kees/v1#RetentionPolicy> ;
+  rdfs:seeAlso <http://linkeddata.center/kees/v1#RetentionPolicy> ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:preservation
@@ -31,6 +38,8 @@ trsp:preservation
 trsp:appraisal
   a skos:Concept ;
   skos:prefLabel "Appraisal"@en ;
+  skos:broadMatch <http://culturalis.org/oad#appraisalDestructionAndSchedulingInformation> ;
+  rdfs:seeAlso <http://culturalis.org/oad#appraisalDestructionAndSchedulingInformation> ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:accession
@@ -46,6 +55,8 @@ trsp:disclosureRiskAssessment
 trsp:bibliographicMetadata
   a skos:Concept ;
   skos:prefLabel "Bibliographic Metadata"@en ;
+  skos:exactMatch <http://purl.org/spar/fabio/BibliographicMetadata> ;
+  rdfs:seeAlso <http://purl.org/spar/fabio/BibliographicMetadata> ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:policyDevelopment
@@ -61,6 +72,10 @@ trsp:ethicsClearanceVerification
 trsp:persistentIdentifier
   a skos:Concept ;
   skos:prefLabel "Persistent Identifier"@en ;
+  skos:exactMatch gorc:pid ;
+  rdfs:seeAlso gorc:pid ;
+  skos:broadMatch fair:F1 ;
+  rdfs:seeAlso fair:F1 ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:licence
@@ -76,11 +91,17 @@ trsp:preferredFormats
 trsp:compliance
   a skos:Concept ;
   skos:prefLabel "Compliance"@en ;
+  skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0500023> ;
+  rdfs:seeAlso <http://purl.obolibrary.org/obo/OBI_0500023> ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:rights
   a skos:Concept ;
   skos:prefLabel "Rights"@en ;
+  skos:exactMatch <http://bblfish.net/work/atom-owl/2006-06-06/#rights> ;
+  rdfs:seeAlso <http://bblfish.net/work/atom-owl/2006-06-06/#rights> ;
+  skos:broadMatch care:A1 ;
+  rdfs:seeAlso care:A1 ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:interoprability
