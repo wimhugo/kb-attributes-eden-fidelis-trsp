@@ -30,8 +30,3 @@ trsp:dataValidation
   skos:exactMatch wd:Q3306762 ;
   rdfs:seeAlso wd:Q3306762 ;
   skos:inScheme trsp:checklistDepositDocumentation .
-
-trsp:checklistForDepositDocumentation
-  a skos:Concept ;
-  skos:prefLabel "Checklist for Deposit Documentation"@en ;
-  skos:inScheme trsp:ConceptScheme .
