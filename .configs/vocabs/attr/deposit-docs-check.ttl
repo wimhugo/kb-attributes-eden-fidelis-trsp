@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 trsp:checklistDepositDocumentation
   a skos:ConceptScheme ;
@@ -11,7 +12,7 @@ trsp:checklistDepositDocumentation
   dct:title "Checklist for Deposit Documentation"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 trsp:accurateMetadata
   a skos:Concept ;
@@ -26,4 +27,11 @@ trsp:technicalValidation
 trsp:dataValidation
   a skos:Concept ;
   skos:prefLabel "Data Validation"@en ;
+  skos:exactMatch wd:Q3306762 ;
+  rdfs:seeAlso wd:Q3306762 ;
   skos:inScheme trsp:checklistDepositDocumentation .
+
+trsp:checklistForDepositDocumentation
+  a skos:Concept ;
+  skos:prefLabel "Checklist for Deposit Documentation"@en ;
+  skos:inScheme trsp:ConceptScheme .
