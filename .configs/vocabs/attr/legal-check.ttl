@@ -11,11 +11,13 @@ trsp:checklistLegalDocuments
   dct:title "Checklist of Legal Documents"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 trsp:termsOfUse
   a skos:Concept ;
   skos:prefLabel "Terms of Use"@en ;
+  skos:broadMatch <http://www.data-knowledge.org/dk/hasTerms> ;
+  rdfs:seeAlso <http://www.data-knowledge.org/dk/hasTerms> ;
   skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:privacyStatement
@@ -26,6 +28,8 @@ trsp:privacyStatement
 trsp:disclaimer
   a skos:Concept ;
   skos:prefLabel "Disclaimer"@en ;
+  skos:broadMatch <http://open.vocab.org/terms/disclaimerText> ;
+  rdfs:seeAlso <http://open.vocab.org/terms/disclaimerText> ;
   skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:termsOfDeposit
