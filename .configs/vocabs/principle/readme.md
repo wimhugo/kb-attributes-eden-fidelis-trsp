@@ -38,7 +38,7 @@ Partial RDF presence:
 Construct a SKOS conceptscheme as a machine-readable vocabulary
 
 
-##POSI 
+## POSI 
 
 (Bilder et al., 2020 — Principles of Open Scholarly Infrastructure) https://openscholarlyinfrastructure.org/
 
