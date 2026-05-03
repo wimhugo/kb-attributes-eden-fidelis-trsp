@@ -1,0 +1,49 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:checklistDataProtection
+  a skos:ConceptScheme ;
+  skos:prefLabel "Checklist on Data Protection Measures"@en ;
+  dct:title "Checklist on Data Protection Measures"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:policy
+  a skos:Concept ;
+  skos:prefLabel "Policy"@en ;
+  skos:inScheme trsp:checklistDataProtection .
+
+trsp:licence
+  a skos:Concept ;
+  skos:prefLabel "Licence"@en ;
+  skos:inScheme trsp:checklistDataProtection .
+
+trsp:monitoring
+  a skos:Concept ;
+  skos:prefLabel "Monitoring"@en ;
+  skos:inScheme trsp:checklistDataProtection .
+
+trsp:guidance
+  a skos:Concept ;
+  skos:prefLabel "Guidance"@en ;
+  skos:inScheme trsp:checklistDataProtection .
+
+trsp:disclosureRiskCategorisation
+  a skos:Concept ;
+  skos:prefLabel "Disclosure Risk Categorisation"@en ;
+  skos:inScheme trsp:checklistDataProtection .
+
+trsp:physicalAccess
+  a skos:Concept ;
+  skos:prefLabel "Physical Access"@en ;
+  skos:inScheme trsp:checklistDataProtection .
+
+trsp:logicalAccess
+  a skos:Concept ;
+  skos:prefLabel "Logical Access"@en ;
+  skos:inScheme trsp:checklistDataProtection .
