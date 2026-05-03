@@ -15,7 +15,7 @@ trsp:ConceptScheme
   dct:title "Checklist for Deposit Documentation"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.2" .
+  owl:versionInfo "0.3" .
 
 trsp:accurateMetadata
   a skos:Concept ;
@@ -30,4 +30,6 @@ trsp:technicalValidation
 trsp:dataValidation
   a skos:Concept ;
   skos:prefLabel "Data Validation"@en ;
+  skos:exactMatch wd:Q3306762 ;
+  rdfs:seeAlso wd:Q3306762 ;
   skos:inScheme trsp:ConceptScheme .
