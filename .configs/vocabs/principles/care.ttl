@@ -1,0 +1,149 @@
+@prefix care: <https://purl.org/trsp/care/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+care:ConceptScheme a skos:ConceptScheme ;
+  skos:prefLabel "CARE Principles for Indigenous Data Governance"@en ;
+  dct:title "CARE Principles for Indigenous Data Governance"@en ;
+  dct:creator <https://doi.org/10.5334/dsj-2020-043> ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  dct:created "2020-11-04"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" ;
+  dct:rights <https://spdx.org/licenses/CC-BY-4.0> ;
+  skos:definition "The CARE Principles for Indigenous Data Governance assert that data ecosystems must reflect Collective Benefit, Authority to Control, Responsibility, and Ethics to realise Indigenous data sovereignty."@en .
+
+care:collectiveBenefit a skos:Concept ;
+  skos:prefLabel "Collective Benefit"@en ;
+  skos:notation "C" ;
+  skos:altLabel "C — Collective Benefit"@en ;
+  skos:definition "Data ecosystems shall be designed and function in ways that enable Indigenous Peoples to derive benefit from the data."@en ;
+  skos:narrower care:C1, care:C2, care:C3 ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:C1 a skos:Concept ;
+  skos:prefLabel "C1: For inclusive development and innovation"@en ;
+  skos:notation "C1" ;
+  skos:definition "Governments and institutions must actively support the use and reuse of data by and for Indigenous nations and communities by enabling the creation of the foundations for Indigenous innovation, value generation, and the promotion of local self-determined development processes."@en ;
+  skos:broader care:collectiveBenefit ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:C2 a skos:Concept ;
+  skos:prefLabel "C2: For improved governance and citizen engagement"@en ;
+  skos:notation "C2" ;
+  skos:definition "Data enrich the planning, implementation, and evaluation processes that support the service and policy needs of Indigenous communities. Data also enable better engagement between citizens, institutions, and governments to improve decision-making."@en ;
+  skos:broader care:collectiveBenefit ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:C3 a skos:Concept ;
+  skos:prefLabel "C3: For equitable outcomes"@en ;
+  skos:notation "C3" ;
+  skos:definition "Indigenous data are grounded in community values, which extend to society at large. Any value created from Indigenous data should benefit Indigenous communities in an equitable manner and contribute to Indigenous aspirations for wellbeing."@en ;
+  skos:broader care:collectiveBenefit ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:authorityToControl a skos:Concept ;
+  skos:prefLabel "Authority to Control"@en ;
+  skos:notation "A" ;
+  skos:altLabel "A — Authority to Control"@en ;
+  skos:definition "Indigenous Peoples' rights and interests in Indigenous data must be recognised and their authority to control such data be empowered."@en ;
+  skos:narrower care:A1, care:A2, care:A3 ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:A1 a skos:Concept ;
+  skos:prefLabel "A1: Recognising rights and interests"@en ;
+  skos:notation "A1" ;
+  skos:definition "Indigenous Peoples have rights and interests in both Traditional Knowledge and Indigenous data. Indigenous Peoples have collective and individual rights to free, prior, and informed consent in the collection and use of such data, including the development of data policies and protocols for collection."@en ;
+  skos:broader care:authorityToControl ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:A2 a skos:Concept ;
+  skos:prefLabel "A2: Data for governance"@en ;
+  skos:notation "A2" ;
+  skos:definition "Indigenous Peoples have the right to data that are relevant to their world views and empower self-determination and effective self-governance. Indigenous data must be made available and accessible to Indigenous nations and communities in order to support Indigenous governance."@en ;
+  skos:broader care:authorityToControl ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:A3 a skos:Concept ;
+  skos:prefLabel "A3: Governance of data"@en ;
+  skos:notation "A3" ;
+  skos:definition "Indigenous Peoples have the right to develop cultural governance protocols for Indigenous data and be active leaders in the stewardship of, and access to, Indigenous data especially in the context of Indigenous Knowledge."@en ;
+  skos:broader care:authorityToControl ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:responsibility a skos:Concept ;
+  skos:prefLabel "Responsibility"@en ;
+  skos:notation "R" ;
+  skos:altLabel "R — Responsibility"@en ;
+  skos:definition "Those working with Indigenous data have a responsibility to share how those data are used to support Indigenous Peoples' self-determination and collective benefit."@en ;
+  skos:narrower care:R1, care:R2, care:R3 ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:R1 a skos:Concept ;
+  skos:prefLabel "R1: For positive relationships"@en ;
+  skos:notation "R1" ;
+  skos:definition "Indigenous data use is unviable unless it is linked to relationships built on respect, reciprocity, trust, and mutual understanding, as defined by the Indigenous Peoples to whom those data relate."@en ;
+  skos:broader care:responsibility ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:R2 a skos:Concept ;
+  skos:prefLabel "R2: For expanding capability and capacity"@en ;
+  skos:notation "R2" ;
+  skos:definition "Use of Indigenous data invokes a reciprocal responsibility to enhance data literacy within Indigenous communities and to support the development of an Indigenous data workforce and digital infrastructure to enable the creation, collection, management, security, governance, and application of data."@en ;
+  skos:broader care:responsibility ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:R3 a skos:Concept ;
+  skos:prefLabel "R3: For Indigenous languages and worldviews"@en ;
+  skos:notation "R3" ;
+  skos:definition "Resources must be provided to generate data grounded in the languages, worldviews, and lived experiences (including values and principles) of Indigenous Peoples."@en ;
+  skos:broader care:responsibility ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:ethics a skos:Concept ;
+  skos:prefLabel "Ethics"@en ;
+  skos:notation "E" ;
+  skos:altLabel "E — Ethics"@en ;
+  skos:definition "Indigenous Peoples' rights and wellbeing should be the primary concern at all stages of the data life cycle and across the data ecosystem."@en ;
+  skos:narrower care:E1, care:E2, care:E3 ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:E1 a skos:Concept ;
+  skos:prefLabel "E1: For minimising harm and maximising benefit"@en ;
+  skos:notation "E1" ;
+  skos:definition "Ethical data are data that do not stigmatise or portray Indigenous Peoples, cultures, or knowledges in terms of deficit. Ethical data are collected and used in ways that align with Indigenous ethical frameworks and with rights affirmed in UNDRIP."@en ;
+  skos:broader care:ethics ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:E2 a skos:Concept ;
+  skos:prefLabel "E2: For justice"@en ;
+  skos:notation "E2" ;
+  skos:definition "Ethical processes address imbalances in power, resources, and how these affect the expression of Indigenous rights and human rights. Ethical allocation of resources recognises and redresses the historical inequity in how knowledge about Indigenous Peoples has been generated and used to the detriment of Indigenous Peoples."@en ;
+  skos:broader care:ethics ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
+
+care:E3 a skos:Concept ;
+  skos:prefLabel "E3: For future use"@en ;
+  skos:notation "E3" ;
+  skos:definition "Data governance should take into account the potential future use and future harm that may come from the reuse of the data. Communities should be the ones to determine what represents acceptable uses of their data, and who makes those decisions."@en ;
+  skos:broader care:ethics ;
+  dct:source <https://doi.org/10.5334/dsj-2020-043> ;
+  skos:inScheme care:ConceptScheme .
