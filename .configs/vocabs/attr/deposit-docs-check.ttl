@@ -9,7 +9,7 @@
 @prefix fairsharing: <https://fairsharing.org/> .
 @prefix r3d: <https://fairsharing.org/> .
 
-trsp:ConceptScheme
+trsp:checklistForDepositDocumentation
   a skos:ConceptScheme ;
   skos:prefLabel "Checklist for Deposit Documentation"@en ;
   dct:title "Checklist for Deposit Documentation"@en ;
@@ -20,14 +20,14 @@ trsp:ConceptScheme
 trsp:accurateMetadata
   a skos:Concept ;
   skos:prefLabel "Accurate Metadata"@en ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:checklistForDepositDocumentation .
 
 trsp:technicalValidation
   a skos:Concept ;
   skos:prefLabel "Technical Validation"@en ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:checklistForDepositDocumentation .
 
 trsp:dataValidation
   a skos:Concept ;
   skos:prefLabel "Data Validation"@en ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:checklistForDepositDocumentation .
