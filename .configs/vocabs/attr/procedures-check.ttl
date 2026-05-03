@@ -11,16 +11,20 @@ trsp:checklistProceduresWorkflow
   dct:title "Checklist of Procedures and Workflows"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 trsp:versioning
   a skos:Concept ;
   skos:prefLabel "Versioning"@en ;
+  skos:broadMatch <http://purl.org/pav/> ;
+  rdfs:seeAlso <http://purl.org/pav/> ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:retention
   a skos:Concept ;
   skos:prefLabel "Retention"@en ;
+  skos:broadMatch <http://linkeddata.center/kees/v1#RetentionPolicy> ;
+  rdfs:seeAlso <http://linkeddata.center/kees/v1#RetentionPolicy> ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:preservation
@@ -46,6 +50,8 @@ trsp:softwareDevelopment
 trsp:compliance
   a skos:Concept ;
   skos:prefLabel "Compliance"@en ;
+  skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0500023> ;
+  rdfs:seeAlso <http://purl.obolibrary.org/obo/OBI_0500023> ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:qualityAssurance
