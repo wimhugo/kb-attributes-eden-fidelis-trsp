@@ -11,7 +11,7 @@ trsp:checklistDataProtection
   dct:title "Checklist on Data Protection Measures"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 trsp:policy
   a skos:Concept ;
@@ -26,6 +26,8 @@ trsp:licence
 trsp:monitoring
   a skos:Concept ;
   skos:prefLabel "Monitoring"@en ;
+  skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0000144> ;
+  rdfs:seeAlso <http://purl.obolibrary.org/obo/OBI_0000144> ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:guidance
