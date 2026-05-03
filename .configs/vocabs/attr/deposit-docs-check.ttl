@@ -31,28 +31,3 @@ trsp:dataValidation
   a skos:Concept ;
   skos:prefLabel "Data Validation"@en ;
   skos:inScheme trsp:ConceptScheme .
-
-trsp:Checklist_for_Deposit_Documentation
-  a skos:Concept ;
-  skos:prefLabel "Checklist for Deposit Documentation"@en ;
-  skos:inScheme trsp:ConceptScheme .
-
-trsp:Accurate_Metadata
-  a skos:Concept ;
-  skos:prefLabel "Accurate Metadata"@en ;
-  skos:inScheme trsp:ConceptScheme .
-
-trsp:Technical_Validation
-  a skos:Concept ;
-  skos:prefLabel "Technical Validation"@en ;
-  skos:inScheme trsp:ConceptScheme .
-
-trsp:Data_Validation
-  a skos:Concept ;
-  skos:prefLabel "Data Validation"@en ;
-  skos:definition "technical process"@en ;
-  skos:altLabel "validation logic"@en ;
-  skos:exactMatch wd:Q3306762 ;
-  rdfs:seeAlso wd:Q3306762 ;
-  dcterms:source "Wikidata contributors. (n.d.). data validation. In Wikidata. Retrieved from http://www.wikidata.org/entity/Q3306762" ;
-  skos:inScheme trsp:ConceptScheme .
