@@ -5,6 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
+
 trsp:principles-type-scheme
   a skos:ConceptScheme ;
   skos:prefLabel "Principles Vocabulary"@en ;
@@ -16,21 +17,25 @@ trsp:principles-type-scheme
 trsp:fair
   a skos:Concept ;
   skos:prefLabel "FAIR"@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/> ;
   skos:inScheme trsp:principles-type-scheme .
 
 trsp:trust
   a skos:Concept ;
   skos:prefLabel "TRUST"@en ;
+  skos:exactMatch <https://doi.org/10.1038/s41597-020-0486-7> ;
   skos:inScheme trsp:principles-type-scheme .
 
 trsp:care
   a skos:Concept ;
   skos:prefLabel "CARE"@en ;
+  skos:exactMatch <https://doi.org/10.1038/s41597-020-0486-7>
   skos:inScheme trsp:principles-type-scheme .
 
 trsp:posi
   a skos:Concept ;
   skos:prefLabel "POSI"@en ;
+  skos:exactMatch <https://openscholarlyinfrastructure.org/> ;
   skos:closeMatch <https://doi.org/10.25504/FAIRsharing.b16f42> ;
   rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.b16f42> ;
   skos:inScheme trsp:principles-type-scheme .
