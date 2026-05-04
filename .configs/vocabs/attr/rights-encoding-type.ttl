@@ -10,8 +10,8 @@ trsp:rights-encoding-type-scheme
   skos:prefLabel "Rights Encoding Vocabulary"@en ;
   dct:title "Rights Encoding Vocabulary"@en ;
   dct:created "2026-05-03"^^xsd:date ;
-  dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  dct:modified "2026-05-04"^^xsd:date ;
+  owl:versionInfo "0.2" .
 
 trsp:rel
   a skos:Concept ;
@@ -26,6 +26,8 @@ trsp:ccrel
 trsp:odrl
   a skos:Concept ;
   skos:prefLabel "ODRL"@en ;
+  skos:broadMatch <http://www.w3.org/ns/odrl/2/core> ;
+  rdfs:seeAlso <http://www.w3.org/ns/odrl/2/core> ;
   skos:inScheme trsp:rights-encoding-type-scheme .
 
 trsp:rsl
