@@ -4,28 +4,35 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
 
 trsp:checklistReuse
   a skos:ConceptScheme ;
   skos:prefLabel "Checklist on Reuse Support"@en ;
   dct:title "Checklist on Reuse Support"@en ;
   dct:created "2026-05-03"^^xsd:date ;
-  dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  dct:modified "2026-05-04"^^xsd:date ;
+  owl:versionInfo "0.2" .
 
 trsp:richMetadata
   a skos:Concept ;
   skos:prefLabel "Rich Metadata"@en ;
+  skos:broadMatch fair:F2 ;
+  rdfs:seeAlso fair:F2 ;
   skos:inScheme trsp:checklistReuse .
 
 trsp:clearLicencing
   a skos:Concept ;
   skos:prefLabel "Clear Licencing"@en ;
+  skos:closeMatch <https://doi.org/10.25504/FAIRsharing.714d4e> ;
+  rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.714d4e> ;
   skos:inScheme trsp:checklistReuse .
 
 trsp:objectlevelProvenance
   a skos:Concept ;
   skos:prefLabel "Object-Level Provenance"@en ;
+  skos:closeMatch <https://doi.org/10.25504/FAIRsharing.653df6> ;
+  rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.653df6> ;
   skos:inScheme trsp:checklistReuse .
 
 trsp:metadataExportcrosswalks
@@ -36,6 +43,8 @@ trsp:metadataExportcrosswalks
 trsp:dataExporttransformation
   a skos:Concept ;
   skos:prefLabel "Data Export/Transformation"@en ;
+  skos:closeMatch <https://doi.org/10.25504/FAIRsharing.ede0df> ;
+  rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.ede0df> ;
   skos:inScheme trsp:checklistReuse .
 
 trsp:packageExport
