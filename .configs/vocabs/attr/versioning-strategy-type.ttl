@@ -10,8 +10,8 @@ trsp:versioning-strategy-type-scheme
   skos:prefLabel "Versioning Strategy Vocabulary"@en ;
   dct:title "Versioning Strategy Vocabulary"@en ;
   dct:created "2026-05-03"^^xsd:date ;
-  dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  dct:modified "2026-05-04"^^xsd:date ;
+  owl:versionInfo "0.2" .
 
 trsp:stableCitationReference
   a skos:Concept ;
@@ -26,6 +26,8 @@ trsp:reproducibilityAndAuthenticity
 trsp:contentEvolution
   a skos:Concept ;
   skos:prefLabel "Content Evolution"@en ;
+  skos:closeMatch <https://doi.org/10.25504/FAIRsharing.ochiOn> ;
+  rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.ochiOn> ;
   skos:inScheme trsp:versioning-strategy-type-scheme .
 
 trsp:dynamicContentGrowth
