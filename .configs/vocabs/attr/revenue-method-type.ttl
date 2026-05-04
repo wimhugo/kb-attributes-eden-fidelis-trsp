@@ -4,23 +4,30 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix posi: <https://purl.org/trsp/posi/> .
+@prefix re3data: <https://schema.re3data.org/4-0#> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
 
 trsp:revenue-method-type-scheme
   a skos:ConceptScheme ;
   skos:prefLabel "Revenue Method Type"@en ;
   dct:title "Revenue Method Type"@en ;
   dct:created "2026-05-03"^^xsd:date ;
-  dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  dct:modified "2026-05-04"^^xsd:date ;
+  owl:versionInfo "0.2" .
 
 trsp:free
   a skos:Concept ;
   skos:prefLabel "Free"@en ;
+  skos:broadMatch fair:A1_1 ;
+  rdfs:seeAlso fair:A1_1 ;
   skos:inScheme trsp:revenue-method-type-scheme .
 
 trsp:subscription
   a skos:Concept ;
   skos:prefLabel "Subscription"@en ;
+  skos:exactMatch <http://purl.org/cerif/frapo/Subscription> ;
+  rdfs:seeAlso <http://purl.org/cerif/frapo/Subscription> ;
   skos:inScheme trsp:revenue-method-type-scheme .
 
 trsp:payPerUse
@@ -31,9 +38,17 @@ trsp:payPerUse
 trsp:membership
   a skos:Concept ;
   skos:prefLabel "Membership"@en ;
+  skos:exactMatch <http://www.w3.org/ns/org#Membership> ;
+  rdfs:seeAlso <http://www.w3.org/ns/org#Membership> ;
+  skos:broadMatch re3data:dataAccessRestrictions_institutionalMembership ;
+  rdfs:seeAlso re3data:dataAccessRestrictions_institutionalMembership ;
+  skos:broadMatch posi:G3 ;
+  rdfs:seeAlso posi:G3 ;
   skos:inScheme trsp:revenue-method-type-scheme .
 
 trsp:grants
   a skos:Concept ;
   skos:prefLabel "Grants"@en ;
+  skos:exactMatch <http://w3id.org/roh#grants> ;
+  rdfs:seeAlso <http://w3id.org/roh#grants> ;
   skos:inScheme trsp:revenue-method-type-scheme .
