@@ -65,6 +65,11 @@ trsp:disclosureRiskAssessment
   skos:prefLabel "Disclosure Risk Assessment"@en ;
   skos:inScheme trsp:checklistPolicies .
 
+trsp:access
+  a skos:Concept ;
+  skos:prefLabel "Access and Request Assessment"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
 trsp:bibliographicMetadata
   a skos:Concept ;
   skos:prefLabel "Bibliographic Metadata"@en ;
