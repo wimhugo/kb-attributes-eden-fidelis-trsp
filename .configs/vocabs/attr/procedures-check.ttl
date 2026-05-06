@@ -59,6 +59,12 @@ trsp:qualityAssurance
   skos:prefLabel "Quality Assurance"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
+trsp:registerAI
+  a skos:Concept ;
+  skos:prefLabel "Maintain AI-Related and Usage Records"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+
 trsp:policyDevelopment
   a skos:Concept ;
   skos:prefLabel "Policy Development"@en ;
