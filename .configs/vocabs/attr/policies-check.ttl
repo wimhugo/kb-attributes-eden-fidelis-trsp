@@ -117,6 +117,11 @@ trsp:rights
   rdfs:seeAlso care:A1 ;
   skos:inScheme trsp:checklistPolicies .
 
+trsp:responsibleAI
+  a skos:Concept ;
+  skos:prefLabel "Responsible Use of AI in the Organisation"@en ;
+  skos:inScheme trsp:checklistPolicies .
+
 trsp:interoprability
   a skos:Concept ;
   skos:prefLabel "Interoprability"@en ;
