@@ -14,7 +14,7 @@ trsp:revenue-method-type-scheme
   dct:title "Revenue Source Type"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-04"^^xsd:date ;
-  owl:versionInfo "0.2" .
+  owl:versionInfo "0.3" .
 
 trsp:free
   a skos:Concept ;
