@@ -36,16 +36,10 @@ trsp:preservation
   skos:prefLabel "Preservation"@en ;
   skos:inScheme trsp:checklistPolicies .
 
-trsp:deposit
-  a skos:Concept ;
-  skos:prefLabel "Deposition Policy"@en ;
-  skos:exactMatch eden:depositionPolicy ;    ## to be updated
-  skos:inScheme trsp:checklistPolicies .
-
 trsp:sustainability
   a skos:Concept ;
   skos:prefLabel "Sustainability Policy"@en ;
-  skos:exactMatch eden:sustainabilityPolicy ;    ## to be updated
+  skos:exactMatch eden:sustainabilityPolicy ; 
   skos:inScheme trsp:checklistPolicies .
 
 trsp:appraisal
@@ -57,7 +51,10 @@ trsp:appraisal
 
 trsp:accession
   a skos:Concept ;
-  skos:prefLabel "Accession"@en ;
+  skos:prefLabel "Accession Policy"@en ;
+  skos:altLabel "Deposit Policy"@en ;  
+  skos:altLabel "Deposition Policy"@en ;
+  skos:altLabel "Accession and Deposition Policy"@en ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:disclosureRiskAssessment
