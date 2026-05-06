@@ -10,8 +10,8 @@
 
 trsp:revenue-method-type-scheme
   a skos:ConceptScheme ;
-  skos:prefLabel "Revenue Method Type"@en ;
-  dct:title "Revenue Method Type"@en ;
+  skos:prefLabel "Revenue Source Type"@en ;
+  dct:title "Revenue Source Type"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-04"^^xsd:date ;
   owl:versionInfo "0.2" .
@@ -21,19 +21,24 @@ trsp:free
   skos:prefLabel "Free"@en ;
   skos:broadMatch fair:A1_1 ;
   rdfs:seeAlso fair:A1_1 ;
-  skos:inScheme trsp:revenue-method-type-scheme .
+  skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:subscription
   a skos:Concept ;
   skos:prefLabel "Subscription"@en ;
   skos:exactMatch <http://purl.org/cerif/frapo/Subscription> ;
   rdfs:seeAlso <http://purl.org/cerif/frapo/Subscription> ;
-  skos:inScheme trsp:revenue-method-type-scheme .
+  skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:payPerUse
   a skos:Concept ;
   skos:prefLabel "Pay per use"@en ;
-  skos:inScheme trsp:revenue-method-type-scheme .
+  skos:inScheme trsp:revenue-source-type-scheme .
+
+trsp:structural
+  a skos:Concept ;
+  skos:prefLabel "Structural Income or Budget Allocation"@en ;
+  skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:membership
   a skos:Concept ;
@@ -44,11 +49,11 @@ trsp:membership
   rdfs:seeAlso re3data:dataAccessRestrictions_institutionalMembership ;
   skos:broadMatch posi:G3 ;
   rdfs:seeAlso posi:G3 ;
-  skos:inScheme trsp:revenue-method-type-scheme .
+  skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:grants
   a skos:Concept ;
   skos:prefLabel "Grants"@en ;
   skos:exactMatch <http://w3id.org/roh#grants> ;
   rdfs:seeAlso <http://w3id.org/roh#grants> ;
-  skos:inScheme trsp:revenue-method-type-scheme .
+  skos:inScheme trsp:revenue-source-type-scheme .
