@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "nestor" @en ;
+    dct:description "nestor criteria : Catalogue of Criteria for Trusted Digital Repositories; Version 2; 2009; Frankfurt am Main: nestor c/o Deutsche Nationalbibliothek; urn:nbn:de:0008-2010030806" @en ;
+    dct:identifier http://nbn-resolving.de/urn:nbn:de:0008-2010030806  ;
+    dcat:endpointURL http://nbn-resolving.de/urn:nbn:de:0008-2010030806  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .
