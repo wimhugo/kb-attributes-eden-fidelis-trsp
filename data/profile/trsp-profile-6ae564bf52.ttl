@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.6AE564BF52 a trsp:Profile ;
+    dct:title CARE @en ;
+    dct:description Carroll; S.R.; Garba; I.; Figueroa-Rodríguez; O.L.; Holbrook; J.; Lovett; R.; Materechera; S.; Parsons; M.; Raseroka; K.; Rodriguez-Lonebear; D.; Rowe; R.; Sara; R.; Walker; J.D.; Anderson; J. and Hudson; M. (2020) ‘The CARE Principles for Indigenous Data Governance’; Data Science Journal; 19(1); p. 43. @en ;
+    dct:identifier https://doi.org/10.5334/dsj-2020-043  ;
+    dcat:endpointURL https://doi.org/10.5334/dsj-2020-043  ;
+    trsp:hasProfileType trsp:profile-type-community  .
