@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "LIPID MAPS" @en ;
+    dct:description "LIPID Metabolites And Pathways Strategy (LIPID MAPS®) is a multi-institutional supported website and database that provides access to a large number of globally used lipidomics resources. LIPID MAPS® has internationally led the field of lipid curation, classification, and nomenclature since 2003. We strive to produce new open-access databases, informatics tools and lipidomics-focused training activities will be generated and made publicly available for researchers studying lipids in health and disease. LIPID MAPS® is currently funded by a multi-institutional grant from Wellcome, held jointly by Cardiff University, University of California San Diego, the Babraham Institute Cambridge, and Swansea University, as well as an Innovation Study funded by ELIXIR. This current phase will see that LIPID MAPS® is maintained and importantly, further developed in line with the global demand and development of lipidomics. LIPID MAPS® has an internationally recognized classification system and the largest curated lipid structure database in the world." @en ;
+    dct:identifier https://www.lipidmaps.org/  ;
+    dcat:endpointURL https://www.lipidmaps.org/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
