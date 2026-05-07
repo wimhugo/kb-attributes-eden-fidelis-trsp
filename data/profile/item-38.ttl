@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "TRSP" @en ;
+    dct:description "The Trusted Repository Service Provider (TRSP) Research Data Alliance (RDA) Working Group (WG)" @en ;
+    dct:identifier https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf  ;
+    dcat:endpointURL https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf  ;
+    trsp:hasProfileType "trsp:profile-type-standard"  .
