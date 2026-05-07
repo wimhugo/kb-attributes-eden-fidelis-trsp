@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "Reactome" @en ;
+    dct:description "Reactome is a manually curated, peer-reviewed pathway database, annotated by expert biologists and cross-referenced to bioinformatics databases. Its aim is to share information in the visual representations of biological pathways in a computationally accessible format. Pathway annotations are authored by expert biologists, in collaboration with Reactome editorial staff and cross-referenced to many bioinformatics databases. These include NCBI Gene, Ensembl and UniProt databases, the UCSC and HapMap Genome Browsers, the KEGG Compound and ChEBI small molecule databases, PubMed, and Gene Ontology." @en ;
+    dct:identifier "nif-0000-03390"  ;
+    dcat:endpointURL https://reactome.org/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
