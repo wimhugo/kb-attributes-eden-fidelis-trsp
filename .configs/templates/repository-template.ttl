@@ -1,6 +1,9 @@
 @prefix trsp: <https://example.org/trsp/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 
-<> a trsp:Repository ;
+trsp:profile.TEMPLATE a trsp:Repository ;
     dct:title ""@en ;
-    trsp:hasProfileType trsp:profileTypeRepository .
+    dct:description ""@en ;
+    dct:identifier "" ;
+    dcat:endpointURL "" ;
+    trsp:hasProfileType <> .
