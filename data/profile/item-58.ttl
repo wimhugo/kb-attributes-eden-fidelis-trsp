@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.552C7DD5F0 a trsp:Profile ;
     dct:title "Data Station Social Sciences and Humanities | DANS" @en ;
     dct:description "Dit Data Station stelt je in staat om data te deponeren en naar data te zoeken binnen de sociale wetenschappen en geesteswetenschappen." @en ;
     dct:identifier https://dans.knaw.nl/nl/social-sciences-and-humanities/  ;
