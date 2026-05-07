@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.18D00D3332 a trsp:Profile ;
     dct:title "STOREDB" @en ;
     dct:description "STOREDB provides infrastructure for sharing data and resources in radiation biology and epidemiology. It is a platform for the archiving and sharing of primary data and outputs of all kinds, including epidemiological and experimental data, from research on the effects of radiation. It also provides a directory of bioresources and databases containing information and materials that investigators are willing to share. STORE supports the creation of a radiation research commons." @en ;
     dct:identifier "10.25504/FAIRsharing.6h8d2r"  ;
