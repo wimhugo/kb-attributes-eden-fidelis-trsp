@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.2D7DE43001 a trsp:Profile ;
-    dct:title PRoteomics IDEntifications database @en ;
-    dct:description The NHGRI-EBI GWAS Catalog: a curated collection of all human genome-wide association studies, produced by a collaboration between EMBL-EBI and NHGRI @en ;
+    dct:title "PRoteomics IDEntifications database" @en ;
+    dct:description "The NHGRI-EBI GWAS Catalog: a curated collection of all human genome-wide association studies, produced by a collaboration between EMBL-EBI and NHGRI" @en ;
     dct:identifier https://www.ebi.ac.uk/gwas/  ;
     dcat:endpointURL https://www.ebi.ac.uk/gwas/  ;
-    trsp:hasProfileType trsp:profile-type-repository  .
+    trsp:hasProfileType "trsp:profile-type-repository"  .
