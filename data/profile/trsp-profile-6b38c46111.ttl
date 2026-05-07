@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.6B38C46111 a trsp:Profile ;
+    dct:title CESSDA @en ;
+    dct:description CESSDA; CESSDA Trust and Landscape Report 2024 @en ;
+    dct:identifier https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing  ;
+    dcat:endpointURL https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing  ;
+    trsp:hasProfileType trsp:profile-type-source  .
