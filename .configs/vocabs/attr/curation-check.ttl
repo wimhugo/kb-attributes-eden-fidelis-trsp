@@ -1,0 +1,34 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:checklistCurationType
+  a skos:ConceptScheme ;
+  skos:prefLabel "Level of Curation"@en ;
+  dct:title "Level of Curation"@en ;
+  dct:created "2026-05-07"^^xsd:date ;
+  dct:modified "2026-05-07"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:datalevelCuration
+  a skos:Concept ;
+  skos:prefLabel "Data-level curation"@en ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:enhancedCuration
+  a skos:Concept ;
+  skos:prefLabel "Enhanced curation"@en ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:basicCuration
+  a skos:Concept ;
+  skos:prefLabel "Basic curation"@en ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:contentDistributedAsDeposited
+  a skos:Concept ;
+  skos:prefLabel "Content distributed as deposited"@en ;
+  skos:inScheme trsp:checklistCurationType .
