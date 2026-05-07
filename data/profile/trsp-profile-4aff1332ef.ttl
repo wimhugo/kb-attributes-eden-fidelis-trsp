@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.4AFF1332EF a trsp:Profile ;
+    dct:title GORC @en ;
+    dct:description Woodford; C.; Treloar; A.; Leggott; M.; Payne; K.; Jones; S.; Lopez Albacete; J.; Madalli; D.; Genova; F.; Dharmawardena; K.; Chibhira; N.; Åkerström; W. N.; Macneil; R.; Nurnberger; A.; Pfeiffenberger; H.; Tanifuji; M.; Zhang; Q.; Jones; N.; Sesink; L.; Wood-Charlson; E.; & RDA GORC International Model WG. (2023). The Global Open Research Commons International Model; Version 1 (1.0). Zenodo. @en ;
+    dct:identifier https://doi.org/10.15497/RDA00099  ;
+    dcat:endpointURL https://doi.org/10.15497/RDA00099  ;
+    trsp:hasProfileType trsp:profile-type-source  .
