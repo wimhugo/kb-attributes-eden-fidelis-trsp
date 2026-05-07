@@ -8,7 +8,7 @@
 @prefix fairsharing: <https://fairsharing.org/> .
 @prefix r3d: <https://fairsharing.org/> .
 
-trsp:profile-test-type-scheme a skos:ConceptScheme ;
+trsp:legislation-type-scheme a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
@@ -21,7 +21,7 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "Legislation Type"@en;
   dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/012798a9adca56feceefe68ea5644e18ee3c3c0b" ;
-  skos:prefLabel "TRSP Ligislation Type Vocabulary"@en;
+  skos:prefLabel "TRSP Legislation Type Vocabulary"@en;
   owl:versionInfo "0.2"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
@@ -30,102 +30,102 @@ trsp:legislation-type-gdpr
   skos:prefLabel "European Union General Data Protection Regulation (GDPR)"@en ;
   skos:definition "Primary EU regulation governing processing of personal data, consent, lawful basis, data subject rights, cross-border transfer, and security obligations for repositories handling personal or sensitive research data."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2016/679/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:legislation-type-dga
   a skos:Concept ;
   skos:prefLabel "Data Governance Act (DGA)"@en ;
   skos:definition "Framework for trustworthy data sharing, data intermediaries, data altruism, and reuse of protected public-sector data; highly relevant to European data spaces and repository interoperability."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2022/868/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:da
   a skos:Concept ;
   skos:prefLabel "Data Act"@en ;
   skos:definition "Regulation defining access to and reuse of data, interoperability, cloud switching, and data-sharing obligations; relevant for repository APIs, platform interoperability, and data portability."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2023/2854/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:odd
   a skos:Concept ;
   skos:prefLabel "Open Data Directive"@en ;
   skos:definition "Governs reuse of public sector information and high-value datasets; relevant to publicly funded repositories and open government/scientific data dissemination."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2019/1024/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:nis2
   a skos:Concept ;
   skos:prefLabel "NIS2 Directive"@en ;
   skos:definition "Cybersecurity obligations for essential and important entities, incident reporting, governance, and supply-chain security; may apply to national research infrastructures and large repository operators."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2022/2555/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:csa
   a skos:Concept ;
   skos:prefLabel "Cybersecurity Act"@en ;
   skos:definition "Establishes the strengthened mandate of ENISA and EU cybersecurity certification frameworks relevant to trusted repository infrastructure and cloud services."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2019/881/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:aia
   a skos:Concept ;
   skos:prefLabel "AI Act"@en ;
   skos:definition "Risk-based regulation for AI systems, including governance, transparency, documentation, and data quality requirements; relevant where repositories expose or operate AI services or training corpora."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2024/1689/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:eIDAS
   a skos:Concept ;
   skos:prefLabel "eIDAS Regulation"@en ;
   skos:definition "Framework for electronic identification, trust services, electronic signatures, seals, and timestamps; relevant for repository authentication, provenance, and trusted workflows."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/No 910/2014/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:dsm
   a skos:Concept ;
   skos:prefLabel "Copyright in the Digital Single Market (DSM) Directive"@en ;
   skos:definition "Defines copyright exceptions and obligations including text and data mining provisions important for repository access and reuse policies."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2019/790/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:dd
   a skos:Concept ;
   skos:prefLabel "Database Directive"@en ;
   skos:definition "Protects databases through sui generis database rights; relevant for repository aggregation, metadata reuse, and extraction rights."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/dir/1996/9/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:inspire
   a skos:Concept ;
   skos:prefLabel "INSPIRE Directive"@en ;
   skos:definition "Spatial data interoperability framework for environmental and geospatial datasets; relevant to geoscience and environmental repositories."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/dir/2007/2/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:ctr
   a skos:Concept ;
   skos:prefLabel "Clinical Trials Regulation"@en ;
   skos:definition "Governs registration and data handling for EU clinical trials; relevant for biomedical and health-data repositories."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/No 536/2014/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:ehds
   a skos:Concept ;
   skos:prefLabel "European Health Data Space (EHDS) Regulation"@en ;
   skos:definition "Emerging framework for sharing and secondary use of electronic health data across the EU; highly relevant to biomedical repositories and health research infrastructures."@en ;
   dcterms:source <https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space_en> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:dsa
   a skos:Concept ;
   skos:prefLabel "Digital Services Act (DSA)"@en ;
   skos:definition "Platform governance, transparency, notice-and-action, and intermediary obligations; may affect repositories with significant public-facing platform functionality."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2022/2065/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
 
 trsp:ffnpd
   a skos:Concept ;
   skos:prefLabel "Free Flow of Non-Personal Data Regulation"@en ;
   skos:definition "Enables movement and processing of non-personal data across EU member states without unjustified localisation restrictions."@en ;
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2018/1807/oj> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:legislation-type-scheme .
