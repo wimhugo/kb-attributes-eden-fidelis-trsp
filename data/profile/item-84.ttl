@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "PortFIR" @en ;
+    dct:description "PortFIR is a program for implementing Portuguese networks of excellence in nutrition and food safety, and a portal that includes sustainable and recognized quality databases on Food Composition and Contamination and Food Consumption." @en ;
+    dct:identifier https://portfir.insa.min-saude.pt/pt/ .  ;
+    dcat:endpointURL https://portfir.insa.min-saude.pt/pt/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
