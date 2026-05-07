@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.4BAE18BFED a trsp:Profile ;
     dct:title "Online course: Data Clinic" @en ;
     dct:description "&lt;p&gt;Online course: Data Clinic Kurssisivu/Course page&lt;/p&gt;\\n" @en ;
     dct:identifier "urn:uuid:cc80e0eb-e62e-4489-918c-b15e84045254"  ;

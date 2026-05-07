@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.27DEC264D7 a trsp:Profile ;
     dct:title "Recherche Data Gouv" @en ;
     dct:description "Inaugurated in 2022 by the French Minister of Higher Education and Research, Recherche Data Gouv is the national ecosystem dedicated to managing, sharing and..." @en ;
     dct:identifier https://recherche.data.gouv.fr/en/page/about-recherche-data-gouv  ;

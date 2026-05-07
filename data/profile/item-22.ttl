@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.644301C176 a trsp:Profile ;
     dct:title "COAR" @en ;
     dct:description "Next Generation Repositories." @en ;
     dct:identifier https://ngr.coar-repositories.org/  ;

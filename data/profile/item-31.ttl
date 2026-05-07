@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.76BC362CF1 a trsp:Profile ;
     dct:title "TRUST WG" @en ;
     dct:description "RDA/WDS Trust Principles Outreach and Adoption WG" @en ;
     dct:identifier https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;

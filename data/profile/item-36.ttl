@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.02C745403B a trsp:Profile ;
     dct:title "JISC DPS" @en ;
     dct:description "JISC Digital preservation systems dynamic purchasing system (DPS) 2024.  Similar to DPC core requirements for digital preservation." @en ;
     dct:identifier https://www.jisc.ac.uk/digital-preservation-systems-dynamic-purchasing-system-dps  ;

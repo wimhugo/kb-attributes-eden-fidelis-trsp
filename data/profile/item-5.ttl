@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.6EBCF639D3 a trsp:Profile ;
     dct:title "EOSC PID" @en ;
     dct:description "European Commission; Directorate-General for Research and Innovation; Hellström; M.; Heughebaert; A.; Kotarski; R.; et al.; A Persistent Identifier (PID) policy for the European Open Science Cloud (EOSC); Publications Office; 2020" @en ;
     dct:identifier https://data.europa.eu/doi/10.2777/926037  ;

@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.1AA258A562 a trsp:Profile ;
     dct:title "4TU.ResearchData" @en ;
     dct:description "4TU.ResearchData is an international data repository for science, engineering and design, open to anyone in the world to upload and download data. Its services include curation, sharing, long-term access and preservation of research datasets. These services are available to anyone around the world. In addition, 4TU.ResearchData also offers training and resources to researchers to support them in making research data findable, accessible, interoperable and reproducible (FAIR)." @en ;
     dct:identifier https://data.4tu.nl/  ;

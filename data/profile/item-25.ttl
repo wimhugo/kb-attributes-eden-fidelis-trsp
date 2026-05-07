@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.757212C93C a trsp:Profile ;
     dct:title "COAR" @en ;
     dct:description "Confederation of Open Access Repositories. (2022). COAR Community Framework for Good Practices in Repositories; Version 2 (Version 2). Zenodo." @en ;
     dct:identifier https://doi.org/10.5281/zenodo.7108101  ;
