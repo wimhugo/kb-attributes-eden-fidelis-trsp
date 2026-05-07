@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.644301C176 a trsp:Profile ;
-    dct:title COAR @en ;
-    dct:description Next Generation Repositories. @en ;
+    dct:title "COAR" @en ;
+    dct:description "Next Generation Repositories." @en ;
     dct:identifier https://ngr.coar-repositories.org/  ;
     dcat:endpointURL https://ngr.coar-repositories.org/  ;
-    trsp:hasProfileType trsp:profile-type-source  .
+    trsp:hasProfileType "trsp:profile-type-source"  .
