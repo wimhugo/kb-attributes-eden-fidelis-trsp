@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.2BBC8312C3 a trsp:Profile ;
-    dct:title ERC-HE @en ;
-    dct:description OAPEN; 2024. ERC Open Access requirements for FP7; Horizon 2020 and Horizon Europe grants. @en ;
+    dct:title "ERC-HE" @en ;
+    dct:description "OAPEN; 2024. ERC Open Access requirements for FP7; Horizon 2020 and Horizon Europe grants." @en ;
     dct:identifier https://www.oapen.org/article/13934224-erc-oa-requirement  ;
     dcat:endpointURL https://www.oapen.org/article/13934224-erc-oa-requirement  ;
-    trsp:hasProfileType trsp:profile-type-community  .
+    trsp:hasProfileType "trsp:profile-type-community"  .
