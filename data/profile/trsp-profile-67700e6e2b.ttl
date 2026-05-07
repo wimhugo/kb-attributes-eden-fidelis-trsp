@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.67700E6E2B a trsp:Profile ;
+    dct:title ARP Research Data Repository @en ;
+    dct:description This repository supports the researchers of the Hungarian Research Network (HUN-REN), and to some extent the Hungarian scientists in general. @en ;
+    dct:identifier 10.25504/FAIRsharing.b7f3ff  ;
+    dcat:endpointURL https://repo.researchdata.hu/  ;
+    trsp:hasProfileType trsp:profile-type-repository  .
