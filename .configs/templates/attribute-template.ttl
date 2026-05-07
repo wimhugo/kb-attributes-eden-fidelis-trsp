@@ -6,16 +6,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
-<> a trsp:Attribute, skos:Concept ;
-    dct:identifier "" ;
-    skos:prefLabel ""@en ;
-    dct:description ""@en ;
-    dcat:keyword ""@en ;
-    trsp:hasMeasurementType <> ;
-    trsp:benchmark ""@en ;
-    trsp:cardinalityCode <> ;
-    trsp:hasExternalIdentifier 
-
+##Attribute Definition
 trsp:att.TEMPLATE
     a trsp:Attribute, skos:Concept, schema:DefinedTerm ;
     schema:name ""@en ;
@@ -23,26 +14,24 @@ trsp:att.TEMPLATE
     skos:altLabel ""@en ;
     schema:description ""@en ;
     schema:category ""@en ;
+    skos:broader ""@en ;
     dcat:keyword ""@en ;
-    trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
+    trsp:hasMeasurementType <> ; ## trsp:measurement-type-scheme
     trsp:benchmark ""@en ;
-    trsp:cardinalityCode trsp:cardinality0_n ;
+    trsp:cardinalityCode <> ; ## trsp:cardinality-scheme
+    ## External Identifiers
     trsp:hasExternalIdentifier [
         a trsp:ExternalIdentifier ;
-        trsp:relationType trsp:relationAlternateIdentifier ;
-        trsp:identifierIri <https://example.org/external/term> ;
+        trsp:relationType <> ; ## trsp:relation-type-scheme
+        trsp:identifierIri <> ;
         trsp:identifierUsage trsp:defaultUsage .
         ] ;
+    ## Profile Assertions
     trsp:hasApplicableProfileAssertion [
         a trsp:ProfileAssertion ;
         trsp:relationType trsp:includeInProfile ;
         trsp:object trsp:profile.TEMPLATE ;
         trsp:profileClass trsp:profileTypeRepository ;
         trsp:profileAttributeIRI trsp:att.TEMPLATE ;
-        trsp:profileAttributeLabel ""@en ;
-        trsp:profileAttributeCategory ""@en ;
         trsp:profileAttributeAggregationType trsp:aggregationSingleSelect ;
-        trsp:profileAttributeValue "" ;
-        trsp:profileBenchmark ""@en ;
-        trsp:profileBenchmarkIRI trsp:measurementTypeVocabulary
     ] .
