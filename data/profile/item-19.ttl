@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "FIDELIS" @en ;
+    dct:description "The FIDELIS project will establish and consolidate a European network of FAIR-enabling trustworthy digital repositories that will live on after the project finishes and represent its member repositories to key stakeholders on important matters." @en ;
+    dct:identifier https://eden-fidelis.eu/  ;
+    dcat:endpointURL https://eden-fidelis.eu/  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .
