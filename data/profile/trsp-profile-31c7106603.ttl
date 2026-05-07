@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.31C7106603 a trsp:Profile ;
+    dct:title Croatian Social Science Data Archive @en ;
+    dct:description The Croatian Social Science Data Archive (CROSSDA) is a national infrastructure public service whose role is to ensure the long-term preservation and dissemination of social science research data. CROSSDA is committed to providing data management support for researchers during the entire lifecycle of the project, from hypothesis development and grant preparation to data collection and data analysis. The data archive will make sure that the data are preserved and reusable in the long-term. CROSSDA is the national service provider for Croatia in the Consortium of European Social Science Data Archives CESSDA ERIC. @en ;
+    dct:identifier https://www.crossda.hr/  ;
+    dcat:endpointURL https://www.crossda.hr/  ;
+    trsp:hasProfileType trsp:profile-type-repository  .
