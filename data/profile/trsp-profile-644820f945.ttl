@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.644820F945 a trsp:Profile ;
+    dct:title Camtree Digital Library :: Home @en ;
+    dct:description  @en ;
+    dct:identifier https://library.camtree.org/home  ;
+    dcat:endpointURL https://library.camtree.org/home  ;
+    trsp:hasProfileType trsp:profile-type-repository  .
