@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.661B6E0023 a trsp:Profile ;
+    dct:title re3data.org @en ;
+    dct:description Strecker; D.; Axtmann; A.; Bertelmann; R.; Cousijn; H.; Elger; K.; Ferguson; L. M.; Fichtmüller; D.; Jones; C.; Lindenmann; I.; Neidiger; C.; Nguyen; T. B.; Pal; J. K.; Pampel; H.; Petras; V.; Schnepf; E.; Semrau; A.; Ulrich; R.; Upmeier; A.; Vierkant; P.; Wang; H.; Weickert; G.; Weisweiler; N. L.; Williams; S. C.; Witt; M.; Wright; S. J. (2023): Metadata Schema for the Description of Research Data Repositories: version 4.0; re3data; 33 p. @en ;
+    dct:identifier   ;
+    dcat:endpointURL   ;
+    trsp:hasProfileType   .
