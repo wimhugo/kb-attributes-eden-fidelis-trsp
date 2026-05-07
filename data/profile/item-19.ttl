@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.3C2D6C1C37 a trsp:Profile ;
     dct:title "FIDELIS" @en ;
     dct:description "The FIDELIS project will establish and consolidate a European network of FAIR-enabling trustworthy digital repositories that will live on after the project finishes and represent its member repositories to key stakeholders on important matters." @en ;
     dct:identifier https://eden-fidelis.eu/  ;
