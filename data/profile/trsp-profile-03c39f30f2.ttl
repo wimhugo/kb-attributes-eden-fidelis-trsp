@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.03C39F30F2 a trsp:Profile ;
-    dct:title RDA/  WDS IG @en ;
-    dct:description RDA/WDS Certification of Digital Repositories IG @en ;
+    dct:title "RDA/  WDS IG" @en ;
+    dct:description "RDA/WDS Certification of Digital Repositories IG" @en ;
     dct:identifier https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;
     dcat:endpointURL https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;
-    trsp:hasProfileType trsp:profile-type-source  .
+    trsp:hasProfileType "trsp:profile-type-source"  .
