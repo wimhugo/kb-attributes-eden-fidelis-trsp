@@ -6,7 +6,7 @@
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 
-trsp:principles-type-scheme
+trsp:checklistPrinciples
   a skos:ConceptScheme ;
   skos:prefLabel "Principles Vocabulary"@en ;
   dct:title "Principles Vocabulary"@en ;
@@ -18,19 +18,19 @@ trsp:fair
   a skos:Concept ;
   skos:prefLabel "FAIR"@en ;
   skos:exactMatch <https://w3id.org/fair/principles/> ;
-  skos:inScheme trsp:principles-type-scheme .
+  skos:inScheme trsp:checklistPrinciples .
 
 trsp:trust
   a skos:Concept ;
   skos:prefLabel "TRUST"@en ;
   skos:exactMatch <https://doi.org/10.1038/s41597-020-0486-7> ;
-  skos:inScheme trsp:principles-type-scheme .
+  skos:inScheme trsp:checklistPrinciples .
 
 trsp:care
   a skos:Concept ;
   skos:prefLabel "CARE"@en ;
   skos:exactMatch <https://doi.org/10.1038/s41597-020-0486-7>
-  skos:inScheme trsp:principles-type-scheme .
+  skos:inScheme trsp:checklistPrinciples .
 
 trsp:posi
   a skos:Concept ;
@@ -38,4 +38,4 @@ trsp:posi
   skos:exactMatch <https://openscholarlyinfrastructure.org/> ;
   skos:closeMatch <https://doi.org/10.25504/FAIRsharing.b16f42> ;
   rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.b16f42> ;
-  skos:inScheme trsp:principles-type-scheme .
+  skos:inScheme trsp:checklistPrinciplese .
