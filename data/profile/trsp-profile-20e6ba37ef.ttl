@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.20E6BA37EF a trsp:Profile ;
+    dct:title GFZ Data Services @en ;
+    dct:description Since 2004, the GFZ German Research Centre for Geosciences assigns Digital Object Identifiers (DOI) to datasets. These datasets are archived by and published through GFZ Data Services and cover all geoscientific disciplines. They range from large dynamic datasets deriving from data intensive global monitoring networks with real-time data acquisition to the full suite of highly variable datasets collected by individual researchers or small teams. These highly variable data (‘long-tail data’) are small in size, but represent an important part of the total scientific output. @en ;
+    dct:identifier https://www.re3data.org/repository/r3d100012335  ;
+    dcat:endpointURL https://dataservices.gfz-potsdam.de/web/  ;
+    trsp:hasProfileType trsp:profile-type-repository  .
