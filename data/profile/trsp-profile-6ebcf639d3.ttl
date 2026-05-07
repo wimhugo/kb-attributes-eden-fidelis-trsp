@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.6EBCF639D3 a trsp:Profile ;
-    dct:title EOSC PID @en ;
-    dct:description European Commission; Directorate-General for Research and Innovation; Hellström; M.; Heughebaert; A.; Kotarski; R.; et al.; A Persistent Identifier (PID) policy for the European Open Science Cloud (EOSC); Publications Office; 2020 @en ;
-    dct:identifier   ;
-    dcat:endpointURL   ;
-    trsp:hasProfileType   .
+    dct:title "EOSC PID" @en ;
+    dct:description "European Commission; Directorate-General for Research and Innovation; Hellström; M.; Heughebaert; A.; Kotarski; R.; et al.; A Persistent Identifier (PID) policy for the European Open Science Cloud (EOSC); Publications Office; 2020" @en ;
+    dct:identifier https://data.europa.eu/doi/10.2777/926037  ;
+    dcat:endpointURL https://data.europa.eu/doi/10.2777/926037  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .
