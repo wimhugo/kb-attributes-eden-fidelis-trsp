@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.0180636A61 a trsp:Profile ;
+    dct:title DASS-BiH @en ;
+    dct:description DASS-BiH (Data Archive for Social Sciences in Bosnia and Herzegovina) is the national service whose role is to ensure long-term preservation and dissemination of social science research data. The purpose of the data archive is to provide a vital research data resource for researchers, teachers, students, and all other interested users. @en ;
+    dct:identifier https://dass.credi.ba/  ;
+    dcat:endpointURL https://dass.credi.ba/  ;
+    trsp:hasProfileType trsp:profile-type-repository  .
