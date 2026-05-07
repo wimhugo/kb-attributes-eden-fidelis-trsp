@@ -5,6 +5,7 @@
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix fidelis: <> .
 
 
 trsp:profile.trsp:profile.3C2D6C1C37 a trsp:Profile ;
@@ -12,4 +13,24 @@ trsp:profile.trsp:profile.3C2D6C1C37 a trsp:Profile ;
     dct:description "The FIDELIS project will establish and consolidate a European network of FAIR-enabling trustworthy digital repositories that will live on after the project finishes and represent its member repositories to key stakeholders on important matters." @en ;
     dct:identifier https://eden-fidelis.eu/  ;
     dcat:endpointURL https://eden-fidelis.eu/  ;
-    trsp:hasProfileType "trsp:profile-type-community"  .
+    trsp:hasProfileType "trsp:profile-type-community"  ;
+    trsp:hasApplicableProfileAssertion [
+        a trsp:ProfileAssertion ;
+        trsp:relationType trsp:includeInProfile ;
+        trsp:object fidelis:repositoryName	; ## Repository Name
+        trsp:profileClass trsp:profileTypeCommunity ;
+        trsp:profileAttributeIRI trsp:att.41F4454A97	; ## Repository Name ;
+        skos:exactMatch;
+    ] ;
+    trsp:hasApplicableProfileAssertion [
+        a trsp:ProfileAssertion ;
+        trsp:relationType trsp:includeInProfile ;
+        trsp:object fidelis:licence	; ## Licences Used
+        trsp:profileClass trsp:profileTypeCommunity ;
+        trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
+        trsp:benchmark "Social Sciences and Humanities, Life Sciences, Physical Sciences, Multiple or General"@en ;
+        trsp:cardinalityCode trsp:cardinality1_n ;
+        trsp:profileAttributeIRI trsp:att.41F4454A97	; ## Repository Name ;
+        trsp:profileAttributeAggregationType trsp:aggregationList ;
+        skos:exactMatch;                                     
+    ] .
