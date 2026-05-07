@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "Qualitative Data Repository" @en ;
+    dct:description "The Qualitative Data Repository (QDR) is a dedicated archive for storing and sharing digital data (and accompanying documentation) generated or collected through qualitative and multi-method research in the social sciences. QDR provides search tools to facilitate the discovery of data, and also serves as a portal to material beyond its own holdings, with links to U.S. and international archives. The repository’s initial emphasis is on political science. Four beliefs underpin the repository's mission: data that can be shared and reused should be; evidence-based claims should be made transparently; teaching is enriched by the use of well-documented data; and rigorous social science requires common understandings of its research methods." @en ;
+    dct:identifier "10.25504/FAIRsharing.bmz5ap"  ;
+    dcat:endpointURL https://qdr.syr.edu/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
