@@ -9,6 +9,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix wikidata: <https://www.wikidata.org/wiki/#> .
 @prefix schema: <http://schema.org/> .
+@prefix gorc: <https://purl.org/gorc/> .
 
 
 trsp:trsp-attributes a skos:ConceptScheme ;
@@ -16,11 +17,11 @@ trsp:trsp-attributes a skos:ConceptScheme ;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
   dct:description "Business Model Types derived from annotation sources"@en;
-  dct:modified "2026-05-07T00:00:00+00:00"^^xsd:datetime;
+  dct:modified "2026-05-07"^^xsd:datetime;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Attribute Definition Vocabulary"@en;
   skos:prefLabel "TRSP Attributes"@en .
-  owl:versionInfo "0.0.1"@en;
+  owl:versionInfo "0.1"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 
@@ -685,7 +686,7 @@ trsp:att56f24c24c3
   a skos:Concept ;
   skos:prefLabel "Ethics Checklist"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|Ethics Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Ethics Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
   skos:broader att.4AA1880060 ;
@@ -1205,7 +1206,7 @@ trsp:att12ca661df7
   a skos:Concept ;
   skos:prefLabel "Submission Workflow"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|Submission Workflow" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Submission Workflow" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "EDEN" ;
@@ -1217,7 +1218,7 @@ trsp:att5f37a613bb
   a skos:Concept ;
   skos:prefLabel "Preservation Workflow"@en ;
   skos:description "Workflows and standard procedures aimed at preservation and periodic re-appraisal."@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|Preservation Workflow" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Preservation Workflow" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "EDEN" ;
@@ -1229,7 +1230,7 @@ trsp:att18e904aae2
   a skos:Concept ;
   skos:prefLabel "Disposal and Retraction Workflows"@en ;
   skos:description "Proper policies and mechanisms exist for conditions under which content can be disposed or retracted, while maintaining tombstone metadata."@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|Disposal and Retraction Workflows" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Disposal and Retraction Workflows" ;
   dcat:keyword "CPP" ;
   owl:versionInfo "0.1" ;
   skos:broader att.4AA1880060 ;
@@ -1239,7 +1240,7 @@ trsp:att0fe5d01c72
   a skos:Concept ;
   skos:prefLabel "FAIR Assessment"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|FAIR Assessment" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|FAIR Assessment" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
   skos:broader att.4AA1880060 ;
@@ -1249,7 +1250,7 @@ trsp:att50adce9e0d
   a skos:Concept ;
   skos:prefLabel "FAIR Assessment Tool(s)"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|FAIR Assessment Tool(s)" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|FAIR Assessment Tool(s)" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
   skos:broader att.4AA1880060 ;
@@ -1259,7 +1260,7 @@ trsp:att2ec221bd80
   a skos:Concept ;
   skos:prefLabel "Privacy/ Sensitive Data Checklist"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|Privacy/ Sensitive Data Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Privacy/ Sensitive Data Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
   skos:broader att.4AA1880060 ;
@@ -1269,7 +1270,7 @@ trsp:att64a44f5193
   a skos:Concept ;
   skos:prefLabel "Legal Compliance Checklist"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|Legal Compliance Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Legal Compliance Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
   skos:broader att.4AA1880060 ;
@@ -1279,7 +1280,7 @@ trsp:att6a5bf0698f
   a skos:Concept ;
   skos:prefLabel "Rights Obtained from Depositor"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows|Rights Obtained from Depositor" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Rights Obtained from Depositor" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
   owl:versionInfo "0.1" ;
@@ -2674,6 +2675,8 @@ trsp:att42a3d7a518
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
   skos:broader att.70DECA9F26 ;
+  skos:exactMatch gorc:metadata ;
+  rdfs:seeAlso gorc:metadata ;
   skos:inScheme trsp:trsp-attributes .
 
 trsp:att60f7491b6a
