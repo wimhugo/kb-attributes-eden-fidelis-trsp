@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.4E16B3E617 a trsp:Profile ;
+    dct:title data.sciencespo @en ;
+    dct:description data.sciencespo is a repository that offers visibility, sharing and preservation of Humanities and Social Science data collected, curated and processed at Sciences Po. This dataverse instance stores two databases: CDSP, a manually-curated, national level repository of survey data; and an institutional repository that allows self deposit from researchers within SciencesPo. @en ;
+    dct:identifier 10.25504/FAIRsharing.bb17f3  ;
+    dcat:endpointURL https://data.sciencespo.fr/dataverse/cdsp  ;
+    trsp:hasProfileType trsp:profile-type-repository  .
