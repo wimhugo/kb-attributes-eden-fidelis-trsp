@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.0CBE4E6DFC a trsp:Profile ;
-    dct:title DataverseLV @en ;
-    dct:description DataverseLV is a secure and sustainable repository for Latvian researchers to deposit, preserve, and share research data in line with Open Science and FAIR principles. The repository is developed, maintained, and curated by the Latvian Data Stewards Network - a collaborative group of specialists from Latvian research institutions who support researchers, advance research data management, and promote open science practices. @en ;
-    dct:identifier r3d100014655  ;
+    dct:title "DataverseLV" @en ;
+    dct:description "DataverseLV is a secure and sustainable repository for Latvian researchers to deposit, preserve, and share research data in line with Open Science and FAIR principles. The repository is developed, maintained, and curated by the Latvian Data Stewards Network - a collaborative group of specialists from Latvian research institutions who support researchers, advance research data management, and promote open science practices." @en ;
+    dct:identifier "r3d100014655"  ;
     dcat:endpointURL https://dv.dataverse.lv/dataverse/root  ;
-    trsp:hasProfileType trsp:profile-type-repository  .
+    trsp:hasProfileType "trsp:profile-type-repository"  .
