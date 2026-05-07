@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "Linguistic Data Consortium" @en ;
+    dct:description "The Linguistic Data Consortium (LDC) is an open consortium that creates, collects, archives, and shares large collections of language data, including speech, text, and lexical resources, for research and technology development in linguistics and natural language processing." @en ;
+    dct:identifier "10.25504/FAIRsharing.25a72c"  ;
+    dcat:endpointURL https://www.ldc.upenn.edu/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
