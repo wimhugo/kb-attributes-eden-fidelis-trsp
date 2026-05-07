@@ -2119,12 +2119,7 @@ trsp:att6c03ab58b8
 trsp:att01924ad3a3
   a skos:Concept ;
   skos:prefLabel "Supported Data/ Metadata Packages"@en ;
-  skos:description "The information should cover
-- List of packaging standards supported
-- List of accepted/ preferred packaging standards 
-- List of packaging standards the service or tools can export
-- The packaging standard(s) used internally
-- List of community-specific packaging standards supported"@en ;
+  skos:description "The information should cover: list of packaging standards supported, list of accepted/ preferred packaging standards; list of packaging standards the service or tools can export, the packaging standard(s) used internally, list of community-specific packaging standards supported"@en ;
   schema:category "Transparency|Benefits and Constraints|Context|Capabilities|Supported Data/ Metadata Packages" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
