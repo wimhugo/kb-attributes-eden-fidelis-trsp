@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "OPENAIRE" @en ;
+    dct:description "Hugo; W.; & Manghi; P. (2025). Case Study: Principles for high-quality data sources in OpenAIRE encoded in CAT. Zenodo" @en ;
+    dct:identifier https://doi.org/10.5281/zenodo.15534446  ;
+    dcat:endpointURL https://doi.org/10.5281/zenodo.15534446  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .
