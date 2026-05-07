@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.14554765CB a trsp:Profile ;
-    dct:title CATH - Protein Structure Classification @en ;
-    dct:description CATH is a classification of protein structures downloaded from the Protein Data Bank. We group protein domains into superfamilies when there is sufficient evidence they have diverged from a common ancestor. @en ;
-    dct:identifier www.cathdb.info  ;
+    dct:title "CATH - Protein Structure Classification" @en ;
+    dct:description "CATH is a classification of protein structures downloaded from the Protein Data Bank. We group protein domains into superfamilies when there is sufficient evidence they have diverged from a common ancestor." @en ;
+    dct:identifier "www.cathdb.info"  ;
     dcat:endpointURL https://www.cathdb.info/  ;
-    trsp:hasProfileType trsp:profile-type-repository  .
+    trsp:hasProfileType "trsp:profile-type-repository"  .
