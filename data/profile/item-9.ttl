@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile. a trsp:Profile ;
+trsp:profile.trsp:profile.1E05BBE77F a trsp:Profile ;
     dct:title "DPC CRPS" @en ;
     dct:description "Digital Preservation Coalition (2022). Core requirements for a digital preservation system.  Part of the DPC Procurement Toolkit.  Mapping also available to DPC RAM." @en ;
     dct:identifier https://www.dpconline.org/digipres/implement-digipres/procurement-toolkit/procurement-toolkit-core-requirements  ;
