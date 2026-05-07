@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.0CBE4E6DFC a trsp:Profile ;
+    dct:title DataverseLV @en ;
+    dct:description DataverseLV is a secure and sustainable repository for Latvian researchers to deposit, preserve, and share research data in line with Open Science and FAIR principles. The repository is developed, maintained, and curated by the Latvian Data Stewards Network - a collaborative group of specialists from Latvian research institutions who support researchers, advance research data management, and promote open science practices. @en ;
+    dct:identifier r3d100014655  ;
+    dcat:endpointURL https://dv.dataverse.lv/dataverse/root  ;
+    trsp:hasProfileType trsp:profile-type-repository  .
