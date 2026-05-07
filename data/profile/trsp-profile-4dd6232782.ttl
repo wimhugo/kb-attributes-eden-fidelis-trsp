@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.4DD6232782 a trsp:Profile ;
-    dct:title OPENAIRE @en ;
-    dct:description Hugo; W.; & Manghi; P. (2025). Case Study: Principles for high-quality data sources in OpenAIRE encoded in CAT. Zenodo @en ;
+    dct:title "OPENAIRE" @en ;
+    dct:description "Hugo; W.; & Manghi; P. (2025). Case Study: Principles for high-quality data sources in OpenAIRE encoded in CAT. Zenodo" @en ;
     dct:identifier https://doi.org/10.5281/zenodo.15534446  ;
     dcat:endpointURL https://doi.org/10.5281/zenodo.15534446  ;
-    trsp:hasProfileType trsp:profile-type-community  .
+    trsp:hasProfileType "trsp:profile-type-community"  .
