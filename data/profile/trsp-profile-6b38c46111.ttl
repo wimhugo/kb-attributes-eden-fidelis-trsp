@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.6B38C46111 a trsp:Profile ;
-    dct:title CESSDA @en ;
-    dct:description CESSDA; CESSDA Trust and Landscape Report 2024 @en ;
+    dct:title "CESSDA" @en ;
+    dct:description "CESSDA; CESSDA Trust and Landscape Report 2024" @en ;
     dct:identifier https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing  ;
     dcat:endpointURL https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing  ;
-    trsp:hasProfileType trsp:profile-type-source  .
+    trsp:hasProfileType "trsp:profile-type-source"  .
