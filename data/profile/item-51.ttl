@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "Data Station Life Sciences | DANS" @en ;
+    dct:description "Dit Data Station stelt je in staat om data te deponeren en naar data te zoeken binnen de domeinen levenswetenschappen, gezondheidswetenschappen en medische wetenschappen." @en ;
+    dct:identifier https://dans.knaw.nl/nl/life-sciences/  ;
+    dcat:endpointURL https://dans.knaw.nl/nl/life-sciences/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
