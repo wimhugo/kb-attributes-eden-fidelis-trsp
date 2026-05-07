@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "4TU.ResearchData" @en ;
+    dct:description "4TU.ResearchData is an international data repository for science, engineering and design, open to anyone in the world to upload and download data. Its services include curation, sharing, long-term access and preservation of research datasets. These services are available to anyone around the world. In addition, 4TU.ResearchData also offers training and resources to researchers to support them in making research data findable, accessible, interoperable and reproducible (FAIR)." @en ;
+    dct:identifier https://data.4tu.nl/  ;
+    dcat:endpointURL https://data.4tu.nl/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
