@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.76BC362CF1 a trsp:Profile ;
-    dct:title TRUST WG @en ;
-    dct:description RDA/WDS Trust Principles Outreach and Adoption WG @en ;
+    dct:title "TRUST WG" @en ;
+    dct:description "RDA/WDS Trust Principles Outreach and Adoption WG" @en ;
     dct:identifier https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;
     dcat:endpointURL https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;
-    trsp:hasProfileType trsp:profile-type-source  .
+    trsp:hasProfileType "trsp:profile-type-source"  .
