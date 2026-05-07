@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.494FFE37F8 a trsp:Profile ;
-    dct:title biomodels.org @en ;
-    dct:description BioModels is a repository of freely-available mathematical models of biological and biomedical systems. It hosts a vast selection of physiologically and pharmaceuticallynrelevant mechanistic models in standard formats. @en ;
+    dct:title "biomodels.org" @en ;
+    dct:description "BioModels is a repository of freely-available mathematical models of biological and biomedical systems. It hosts a vast selection of physiologically and pharmaceuticallynrelevant mechanistic models in standard formats." @en ;
     dct:identifier https://biomodels.org/  ;
     dcat:endpointURL https://biomodels.org/  ;
-    trsp:hasProfileType trsp:profile-type-repository  .
+    trsp:hasProfileType "trsp:profile-type-repository"  .
