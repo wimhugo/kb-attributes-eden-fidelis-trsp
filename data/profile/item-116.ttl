@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile. a trsp:Profile ;
+    dct:title "AgroPortal" @en ;
+    dct:description "AgroPortal is a research data repository dedicated to ontologies and semantic artefacts in the agri-food domain. It provides a catalog of agricultural, food, and environmental ontologies, enabling semantic interoperability and supporting the adoption of FAIR principles. Offering ontology hosting, versioning, metadata management, semantic search, and annotation and recommendation services, AgroPortal supports researchers and data managers in structuring and linking their data. It facilitates ontology alignment, promotes open science, and integrates with linked open data to enhance knowledge organization in agriculture and related fields." @en ;
+    dct:identifier https://agroportal.eu/  ;
+    dcat:endpointURL https://agroportal.eu/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
