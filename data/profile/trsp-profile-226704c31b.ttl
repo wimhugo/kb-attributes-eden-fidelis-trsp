@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.226704C31B a trsp:Profile ;
+    dct:title Glittr.org @en ;
+    dct:description Glittr.org is a curated list of educational materials for the computational life sciences. @en ;
+    dct:identifier https://glittr.org/  ;
+    dcat:endpointURL https://glittr.org/  ;
+    trsp:hasProfileType trsp:profile-type-repository  .
