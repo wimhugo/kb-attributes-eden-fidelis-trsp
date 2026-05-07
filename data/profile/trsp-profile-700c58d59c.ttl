@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.700C58D59C a trsp:Profile ;
+    dct:title Gen Repo IG @en ;
+    dct:description RDA IG on generalist repository landscape (in planning) - RDA P23 BoF @en ;
+    dct:identifier https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/  ;
+    dcat:endpointURL https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/  ;
+    trsp:hasProfileType trsp:profile-type-source  .
