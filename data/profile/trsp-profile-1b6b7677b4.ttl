@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.1B6B7677B4 a trsp:Profile ;
-    dct:title UK Data Service @en ;
-    dct:description A comprehensive resource funded by the ESRC to support researchers, teachers and policymakers who depend on high-quality social and economic data. @en ;
+    dct:title "UK Data Service" @en ;
+    dct:description "A comprehensive resource funded by the ESRC to support researchers, teachers and policymakers who depend on high-quality social and economic data." @en ;
     dct:identifier https://ukdataservice.ac.uk/about/  ;
     dcat:endpointURL https://ukdataservice.ac.uk/about/  ;
-    trsp:hasProfileType trsp:profile-type-repository  .
+    trsp:hasProfileType "trsp:profile-type-repository"  .
