@@ -8,8 +8,8 @@
 
 
 trsp:profile.trsp:profile.4DF95C0BF2 a trsp:Profile ;
-    dct:title TARKI Data Archive @en ;
-    dct:description TARKI is the Hungarian Social Science data archive. It is a member of CESSDA-ERIC and the European Association of Social Science Data Archives. There are more than 800 social science resources in the TÁRKI archive, representing more than 35 years of survey research in Hungary. @en ;
+    dct:title "TARKI Data Archive" @en ;
+    dct:description "TARKI is the Hungarian Social Science data archive. It is a member of CESSDA-ERIC and the European Association of Social Science Data Archives. There are more than 800 social science resources in the TÁRKI archive, representing more than 35 years of survey research in Hungary." @en ;
     dct:identifier https://www.tarki.hu/eng  ;
     dcat:endpointURL https://www.tarki.hu/eng  ;
-    trsp:hasProfileType trsp:profile-type-repository  .
+    trsp:hasProfileType "trsp:profile-type-repository"  .
