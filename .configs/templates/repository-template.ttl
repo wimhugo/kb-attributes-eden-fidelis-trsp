@@ -6,4 +6,4 @@ trsp:profile.TEMPLATE a trsp:Repository ;
     dct:description ""@en ;
     dct:identifier "" ;
     dcat:endpointURL "" ;
-    trsp:hasProfileType <> .
+    trsp:hasProfileType <> ## trsp:profile-type-scheme .
