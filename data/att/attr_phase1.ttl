@@ -688,7 +688,7 @@ trsp:att.56f24c24c3
   a skos:Concept ;
   skos:prefLabel "Ethics Checklist"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Ethics Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|Ethics Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.2" ;
   skos:broader att.4AA1880060 ;
@@ -1208,7 +1208,7 @@ trsp:att.12ca661df7
   a skos:Concept ;
   skos:prefLabel "Submission Workflow"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Submission Workflow" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|Submission Workflow" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "EDEN" ;
@@ -1220,7 +1220,7 @@ trsp:att.5f37a613bb
   a skos:Concept ;
   skos:prefLabel "Preservation Workflow"@en ;
   skos:description "Workflows and standard procedures aimed at preservation and periodic re-appraisal."@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Preservation Workflow" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|Preservation Workflow" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "EDEN" ;
@@ -1232,7 +1232,7 @@ trsp:att.18e904aae2
   a skos:Concept ;
   skos:prefLabel "Disposal and Retraction Workflows"@en ;
   skos:description "Proper policies and mechanisms exist for conditions under which content can be disposed or retracted, while maintaining tombstone metadata."@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Disposal and Retraction Workflows" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|Disposal and Retraction Workflows" ;
   dcat:keyword "CPP" ;
   owl:versionInfo "0.2" ;
   skos:broader att.4AA1880060 ;
@@ -1242,7 +1242,7 @@ trsp:att.0fe5d01c72
   a skos:Concept ;
   skos:prefLabel "FAIR Assessment"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|FAIR Assessment" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|FAIR Assessment" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.2" ;
   skos:broader att.4AA1880060 ;
@@ -1252,7 +1252,7 @@ trsp:att.50adce9e0d
   a skos:Concept ;
   skos:prefLabel "FAIR Assessment Tool(s)"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|FAIR Assessment Tool(s)" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|FAIR Assessment Tool(s)" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.2" ;
   skos:broader att.4AA1880060 ;
@@ -1262,7 +1262,7 @@ trsp:att.2ec221bd80
   a skos:Concept ;
   skos:prefLabel "Privacy/ Sensitive Data Checklist"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Privacy/ Sensitive Data Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|Privacy/ Sensitive Data Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.2" ;
   skos:broader att.4AA1880060 ;
@@ -1272,7 +1272,7 @@ trsp:att.64a44f5193
   a skos:Concept ;
   skos:prefLabel "Legal Compliance Checklist"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Legal Compliance Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|Legal Compliance Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.2" ;
   skos:broader att.4AA1880060 ;
@@ -1282,7 +1282,7 @@ trsp:att.6a5bf0698f
   a skos:Concept ;
   skos:prefLabel "Rights Obtained from Depositor"@en ;
   skos:description "(TBD)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Rights Obtained from Depositor" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂÃÂ Workflows|Rights Obtained from Depositor" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
   owl:versionInfo "0.2" ;
@@ -1339,7 +1339,8 @@ trsp:att.4cb4f7ed15
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.2" ;
   skos:broader att.532324DE1D ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:broadMatch dcat:service.
 
 trsp:att.1c5f7aaa09
   a skos:Concept ;
@@ -1489,7 +1490,9 @@ trsp:att.7298144e24
   dcat:keyword "CTS" ;
   owl:versionInfo "0.2" ;
   skos:broader att.2922ED695E ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:broadMatch dcat:CatalogRecord ;
+  skos:relatedMatch dcat:record.
 
 trsp:att.714ec2aa27
   a skos:Concept ;
@@ -1499,7 +1502,13 @@ trsp:att.714ec2aa27
   dcat:keyword "CTS" ;
   owl:versionInfo "0.2" ;
   skos:broader att.2922ED695E ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:broadMatch dcat:accessService ;
+  skos:relatedMatch dcat:accessURL ;
+  skos:closeMatch dcat:DataService ;
+  skos:relatedMatch dcat:Dataset ;
+  skos:relatedMatch dcat:downloadURL ;
+  skos:relatedMatch dcat:servesDataset.
 
 trsp:att.62e1c089db
   a skos:Concept ;
@@ -1832,7 +1841,9 @@ trsp:att.3e1ca96845
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.2" ;
   skos:broader att.1B94296BAD ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:broadMatch dcat:Distribution ;
+  skos:broadMatch dcat:distribution.
 
 trsp:att.50e0581b3d
   a skos:Concept ;
@@ -1863,7 +1874,8 @@ trsp:att.3f76446066
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.2" ;
   skos:broader att.0B3D7477E7 ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:closeMatch dcat:endpointURL.
 
 trsp:att.3282bd1281
   a skos:Concept ;
@@ -1894,7 +1906,8 @@ trsp:att.34d1282f11
   dcat:keyword "POSI" ;
   owl:versionInfo "0.2" ;
   skos:broader att.64FDE59BAD ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:exactMatch dcat:geographicalCoverage.
 
 trsp:att.5d0e8069fc
   a skos:Concept ;
@@ -1924,7 +1937,8 @@ trsp:att.3b633179c5
   dcat:keyword "POSI" ;
   owl:versionInfo "0.2" ;
   skos:broader att.64FDE59BAD ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:broadMatch dcat:theme.
 
 trsp:att.54317f78cb
   a skos:Concept ;
@@ -1987,7 +2001,8 @@ trsp:att.0c1737084b
   dcat:keyword "DRAWG" ;
   owl:versionInfo "0.2" ;
   skos:broader att.761C0FB70D ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:exactMatch dcat:landingPage.
 
 trsp:att.41f4454a97
   a skos:Concept ;
@@ -2027,7 +2042,8 @@ trsp:att.291848cb10
   dcat:keyword "DRAWG" ;
   owl:versionInfo "0.2" ;
   skos:broader att.761C0FB70D ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:broadMatch dcat:contactPoint.
 
 trsp:att.57c5a7579f
   a skos:Concept ;
@@ -2069,7 +2085,9 @@ trsp:att.0ab11676b0
   dcat:keyword "TTRAM" ;
   owl:versionInfo "0.2" ;
   skos:broader att.761C0FB70D ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:closeMatch dcat:Catalog ;
+  skos:exactMatch dcat:Catalog(ue).
 
 trsp:att.78cc017229
   a skos:Concept ;
@@ -2109,7 +2127,8 @@ trsp:att.4234565a8d
   dcat:keyword "CTM" ;
   owl:versionInfo "0.2" ;
   skos:broader att.3E5F32A9E8 ;
-  skos:inScheme trsp:trsp-attributes .
+  skos:inScheme trsp:trsp-attributes ;
+  skos:broadMatch dcat:mediaType.
 
 trsp:att.6c03ab58b8
   a skos:Concept ;
