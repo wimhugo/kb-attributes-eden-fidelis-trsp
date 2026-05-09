@@ -1,0 +1,1680 @@
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+trsp:att4cb9ed25fe
+  a skos:Concept ;
+  skos:prefLabel "Sustainability"@en ;
+  schema:category "Sustainability" ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0849a7f1e2
+  a skos:Concept ;
+  skos:prefLabel "Social Sustainability"@en ;
+  skos:description "Aspects such as open governance, community involvement and engagement, planning and continuity arrangements, forum and working group participation and creation. Frequent user surveys, publication of roadmaps."@en ;
+  schema:category "Sustainability|Social Sustainability" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.4CB9ED25FE ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att539a68df8a
+  a skos:Concept ;
+  skos:prefLabel "Governance"@en ;
+  schema:category "Sustainability|Social Sustainability|Governance" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "POSI" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CARE" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4e4fd79526
+  a skos:Concept ;
+  skos:prefLabel "Expert Guidance"@en ;
+  schema:category "Sustainability|Social Sustainability|Expert Guidance" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6237ed1101
+  a skos:Concept ;
+  skos:prefLabel "Living Will"@en ;
+  schema:category "Sustainability|Social Sustainability|Living Will" ;
+  dcat:keyword "POSI" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5fbaf6dc9f
+  a skos:Concept ;
+  skos:prefLabel "Planning/ Continuity"@en ;
+  schema:category "Sustainability|Social Sustainability|Planning/ Continuity" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "POSI" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0cf10c6cfb
+  a skos:Concept ;
+  skos:prefLabel "Community Engagement"@en ;
+  schema:category "Sustainability|Social Sustainability|Community Engagement" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "POSI" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CARE" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att139cd89a8a
+  a skos:Concept ;
+  skos:prefLabel "Community Engagement"@en ;
+  skos:description "Demonstrable longer-term funding and income sources. Structural income is adequate. Revenue is justifiable, the source is clearly defined, and revenue does not come from selling the data or metadata holdings. Recovering justifiable cost, for example for disseminating or storing large data sets, is acceptable."@en ;
+  schema:category "Sustainability|Financial Sustainability|Community Engagement" ;
+  dcat:keyword "POSI" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3e8808255f
+  a skos:Concept ;
+  skos:prefLabel "Business Model"@en ;
+  schema:category "Sustainability|Financial Sustainability|Business Model" ;
+  dcat:keyword "POSI" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1eb263b2ce
+  a skos:Concept ;
+  skos:prefLabel "Revenue"@en ;
+  schema:category "Sustainability|Financial Sustainability|Revenue" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att410ba123b3
+  a skos:Concept ;
+  skos:prefLabel "Justifiable Cost"@en ;
+  schema:category "Sustainability|Financial Sustainability|Revenue|Justifiable Cost" ;
+  dcat:keyword "PID" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0e0c905d2a
+  a skos:Concept ;
+  skos:prefLabel "Data is free"@en ;
+  skos:description "Identified primarily as a requirement for public infrastructure services by POSI, this criterion ensures that the data gathered by services is available without cost to the community, and serves as insurance should the service no longer be available."@en ;
+  schema:category "Sustainability|Financial Sustainability|Revenue|Data is free" ;
+  dcat:keyword "POSI" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att678439cd93
+  a skos:Concept ;
+  skos:prefLabel "Source"@en ;
+  schema:category "Sustainability|Financial Sustainability|Revenue|Source" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5cf6ab3b6e
+  a skos:Concept ;
+  skos:prefLabel "Adequacy of Structural Income"@en ;
+  schema:category "Sustainability|Financial Sustainability|Adequacy of Structural Income" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7da1b3367b
+  a skos:Concept ;
+  skos:prefLabel "Technical Sustainability"@en ;
+  skos:description "Open availability of the technical means to reestablish the service elsewhere"@en ;
+  schema:category "Sustainability|Technical Sustainability" ;
+  dcat:keyword "POSI" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.4CB9ED25FE ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att79d95e290a
+  a skos:Concept ;
+  skos:prefLabel "Data Continuity"@en ;
+  schema:category "Sustainability|Technical Sustainability|Data Continuity" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.792636C88D ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4b417e2d31
+  a skos:Concept ;
+  skos:prefLabel "Open Source"@en ;
+  schema:category "Sustainability|Technical Sustainability|Open Source" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.792636C88D ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att04f0db0243
+  a skos:Concept ;
+  skos:prefLabel "Planning"@en ;
+  schema:category "Sustainability|Planning" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.4CB9ED25FE ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att375960b05e
+  a skos:Concept ;
+  skos:prefLabel "Infrastructure Links"@en ;
+  schema:category "Sustainability|Infrastructure Links" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.4CB9ED25FE ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att65a95f223f
+  a skos:Concept ;
+  skos:prefLabel "Responsibility"@en ;
+  schema:category "Responsibility" ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4a4b5a22fe
+  a skos:Concept ;
+  skos:prefLabel "Schema"@en ;
+  skos:description "Establishing appropriate metadata schema, as well as assisting to identify applicable file formats and schema"@en ;
+  schema:category "Responsibility|Schema" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.65A95F223F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att365f68cb18
+  a skos:Concept ;
+  skos:prefLabel "Metadata and Data"@en ;
+  schema:category "Responsibility|Schema|Metadata and Data" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7ad9748a7d
+  a skos:Concept ;
+  skos:prefLabel "Applicable and appropriate"@en ;
+  schema:category "Responsibility|Schema|Applicable and appropriate" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att03e69b6858
+  a skos:Concept ;
+  skos:prefLabel "Digital Representation of Physical Objects"@en ;
+  schema:category "Responsibility|Schema|Digital Representation of Physical Objects" ;
+  dcat:keyword "PID" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att40296310dd
+  a skos:Concept ;
+  skos:prefLabel "Stewardship"@en ;
+  schema:category "Responsibility|Stewardship" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.65A95F223F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att00c02c55dc
+  a skos:Concept ;
+  skos:prefLabel "Quality Control - Deposit Documentation"@en ;
+  skos:description "Ensuring that deposit documentation is adequate, meets well-defined quality standards or guidelines, and is technically sound (schema validation, file formats, ...)"@en ;
+  schema:category "Responsibility|Stewardship|Quality Control - Deposit Documentation" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att700343d2b3
+  a skos:Concept ;
+  skos:prefLabel "Accurate Entity Metadata"@en ;
+  schema:category "Responsibility|Stewardship|Quality Control - Deposit Documentation|Accurate Entity Metadata" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att00edbed146
+  a skos:Concept ;
+  skos:prefLabel "Technical validation"@en ;
+  schema:category "Responsibility|Stewardship|Quality Control - Deposit Documentation|Technical validation" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att2af9c821f9
+  a skos:Concept ;
+  skos:prefLabel "Data Validation"@en ;
+  schema:category "Responsibility|Stewardship|Quality Control - Deposit Documentation|Data Validation" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att22831d6953
+  a skos:Concept ;
+  skos:prefLabel "Provenance"@en ;
+  schema:category "Responsibility|Stewardship|Provenance" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0fee58fd17
+  a skos:Concept ;
+  skos:prefLabel "Versioning - Procedure"@en ;
+  schema:category "Responsibility|Stewardship|Provenance|Versioning - Procedure" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3c8326fc1d
+  a skos:Concept ;
+  skos:prefLabel "Update Functionality"@en ;
+  schema:category "Responsibility|Stewardship|Provenance|Update Functionality" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att570534f4b8
+  a skos:Concept ;
+  skos:prefLabel "Long-term Preservation"@en ;
+  skos:description "Format and bit-level preservation"@en ;
+  schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CARE" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att00577fc6fc
+  a skos:Concept ;
+  skos:prefLabel "Resolution Authenticity or Efficiency"@en ;
+  schema:category "Responsibility|Stewardship|Long-term Preservation|Resolution Authenticity or Efficiency" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "FAIR" ;
+  dcat:keyword "EDEN" ;
+  dcat:keyword "PID" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att76e3f555fc
+  a skos:Concept ;
+  skos:prefLabel "Bit-Level Preservation"@en ;
+  schema:category "Responsibility|Stewardship|Long-term Preservation|Bit-Level Preservation" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att497c7ace99
+  a skos:Concept ;
+  skos:prefLabel "Re-appraisal"@en ;
+  schema:category "Responsibility|Stewardship|Long-term Preservation|Re-appraisal" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3319eedc99
+  a skos:Concept ;
+  skos:prefLabel "Transfer"@en ;
+  skos:description "Allow transfer of stewardship"@en ;
+  schema:category "Responsibility|Stewardship|Transfer" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "PID" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3532a00a80
+  a skos:Concept ;
+  skos:prefLabel "Confidentiality and Ethics"@en ;
+  skos:description "Determine if ethical norms have been adhered to, if consent has been granted by subjects, confidentiality respected, and similar concerns"@en ;
+  schema:category "Responsibility|Stewardship|Confidentiality and Ethics" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4de2dd546e
+  a skos:Concept ;
+  skos:prefLabel "Confidentiality"@en ;
+  schema:category "Responsibility|Stewardship|Confidentiality and Ethics|Confidentiality" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att16855d3cb9
+  a skos:Concept ;
+  skos:prefLabel "Ethics"@en ;
+  schema:category "Responsibility|Stewardship|Confidentiality and Ethics|Ethics" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CARE" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att72f38a16d8
+  a skos:Concept ;
+  skos:prefLabel "Integrity and Authenticity"@en ;
+  skos:description "Validation of provenance and authenticity, protection and recording of provenance, verification of depositors/ content editors"@en ;
+  schema:category "Responsibility|Stewardship|Integrity and Authenticity" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att2080c1d4ee
+  a skos:Concept ;
+  skos:prefLabel "Integrity"@en ;
+  schema:category "Responsibility|Stewardship|Integrity and Authenticity|Integrity" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att608015d600
+  a skos:Concept ;
+  skos:prefLabel "Authenticity - determine and protect"@en ;
+  schema:category "Responsibility|Stewardship|Integrity and Authenticity|Authenticity - determine and protect" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att76b25efa00
+  a skos:Concept ;
+  skos:prefLabel "Identify Depositors"@en ;
+  schema:category "Responsibility|Stewardship|Integrity and Authenticity|Identify Depositors" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att27f5c3bd10
+  a skos:Concept ;
+  skos:prefLabel "Version Maintenance"@en ;
+  schema:category "Responsibility|Stewardship|Integrity and Authenticity|Version Maintenance" ;
+  dcat:keyword "PID" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att06f21028d1
+  a skos:Concept ;
+  skos:prefLabel "Rights Management"@en ;
+  skos:description "Aspects such as protection of the rights of the subjects of research, the owners of works, the end users, the depositors, and the curators of the holdings. Provisions to transfer rights of depositors/ subjects to curators in event of unavailability of the latter."@en ;
+  schema:category "Responsibility|Stewardship|Rights Management" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3d6a6043d4
+  a skos:Concept ;
+  skos:prefLabel "Documentation"@en ;
+  schema:category "Responsibility|Stewardship|Rights Management|Documentation" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att297ad6f574
+  a skos:Concept ;
+  skos:prefLabel "Considerations"@en ;
+  schema:category "Responsibility|Stewardship|Rights Management|Considerations" ;
+  dcat:keyword "CARE" ;
+  dcat:keyword "GDPR" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7c56b5ed00
+  a skos:Concept ;
+  skos:prefLabel "Encoding"@en ;
+  schema:category "Responsibility|Stewardship|Rights Management|Encoding" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att553a464ec8
+  a skos:Concept ;
+  skos:prefLabel "Depositor Rights"@en ;
+  schema:category "Responsibility|Stewardship|Rights Management|Depositor Rights" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5a6c15e767
+  a skos:Concept ;
+  skos:prefLabel "Other Actor Rights"@en ;
+  schema:category "Responsibility|Stewardship|Rights Management|Other Actor Rights" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att24650a32ba
+  a skos:Concept ;
+  skos:prefLabel "Subject Rights"@en ;
+  schema:category "Responsibility|Stewardship|Rights Management|Subject Rights" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CARE" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5f45ff82f5
+  a skos:Concept ;
+  skos:prefLabel "Artefacts/ Legal: documented information"@en ;
+  skos:description "The policies and legal agreements that shape the service, dealing with aspects of use, roles and responsibilities, handling sensitive data, licensing, and regulatory aspects. Linked to rights management."@en ;
+  schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att12c140c8cd
+  a skos:Concept ;
+  skos:prefLabel "Contracts, agreements, roles, responsibilities"@en ;
+  schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information|Contracts, agreements, roles, responsibilities" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1a4e593402
+  a skos:Concept ;
+  skos:prefLabel "Service Level Agreement"@en ;
+  schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information|Service Level Agreement" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5ce6a2bbce
+  a skos:Concept ;
+  skos:prefLabel "Risk Management"@en ;
+  schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information|Risk Management" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att419ee6d029
+  a skos:Concept ;
+  skos:prefLabel "Licences"@en ;
+  schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information|Licences" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "DRAWG" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att297ed3685c
+  a skos:Concept ;
+  skos:prefLabel "Process"@en ;
+  skos:description "Verification is in place for confirmation of ownership and IP rights, the right to publish, and the right to select a licence"@en ;
+  schema:category "Responsibility|Stewardship|Process" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4d039ca977
+  a skos:Concept ;
+  skos:prefLabel "Monitoring"@en ;
+  schema:category "Responsibility|Stewardship|Process|Monitoring" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4aa1880060
+  a skos:Concept ;
+  skos:prefLabel "Curation & Preservation Workflows"@en ;
+  schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att697c57fe46
+  a skos:Concept ;
+  skos:prefLabel "Licence-Related Processes"@en ;
+  schema:category "Responsibility|Stewardship|Process|Licence-Related Processes" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4a43a19133
+  a skos:Concept ;
+  skos:prefLabel "Typical Value-added Services"@en ;
+  skos:description "User-directed services: APIs and API documentation, data dumps, guidelines for implementation and use, user guides, ..."@en ;
+  schema:category "Responsibility|Typical Value-added Services" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.65A95F223F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att532324de1d
+  a skos:Concept ;
+  skos:prefLabel "Inventory of Available Services"@en ;
+  skos:description "This is an important aspect related to services and softwar e platforms - providing both human- and machine readable inventories of available services/ service elements and accompanying it with proper documentation. It os a prerequisite for incproating the services and/ or software platforms into autoomated workflows."@en ;
+  schema:category "Responsibility|Typical Value-added Services|Inventory of Available Services" ;
+  dcat:keyword "TRSP" ;
+  dcat:keyword "TTRAM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.699F35CDBC ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att05cdc6d747
+  a skos:Concept ;
+  skos:prefLabel "Standard APIs"@en ;
+  schema:category "Responsibility|Typical Value-added Services|Standard APIs" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.699F35CDBC ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4a2cf0af0a
+  a skos:Concept ;
+  skos:prefLabel "Considerations"@en ;
+  schema:category "Responsibility|Typical Value-added Services|Standard APIs|Considerations" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0d3c935a8a
+  a skos:Concept ;
+  skos:prefLabel "Automated Curation"@en ;
+  schema:category "Responsibility|Typical Value-added Services|Standard APIs|Automated Curation" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att03110a5773
+  a skos:Concept ;
+  skos:prefLabel "Machine-Readable Policies"@en ;
+  skos:description "For services, the focus is on automation, and as a result, aspects such as policies and what they entail should be machine-readable. Somne policy provisions find expression in licences or conditions of use, and as such will be more useful as machine-readable, standardised resources."@en ;
+  schema:category "Responsibility|Typical Value-added Services|Standard APIs|Machine-Readable Policies" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att28a2220e45
+  a skos:Concept ;
+  skos:prefLabel "Machine-Readable Licences"@en ;
+  schema:category "Responsibility|Typical Value-added Services|Standard APIs|Machine-Readable Licences" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att2922ed695e
+  a skos:Concept ;
+  skos:prefLabel "Access to Metadata and Data"@en ;
+  schema:category "Responsibility|Typical Value-added Services|Standard APIs|Access to Metadata and Data" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att50af53c9b2
+  a skos:Concept ;
+  skos:prefLabel "Community Support"@en ;
+  schema:category "Responsibility|Typical Value-added Services|Community Support" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.699F35CDBC ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5dc262fe75
+  a skos:Concept ;
+  skos:prefLabel "Guidelines and Support"@en ;
+  schema:category "Responsibility|Typical Value-added Services|Community Support|Guidelines and Support" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1f4ae0b0f8
+  a skos:Concept ;
+  skos:prefLabel "Metrics"@en ;
+  skos:description "Implementing relevant metrics and making these available to users."@en ;
+  schema:category "Responsibility|Typical Value-added Services|Metrics" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.699F35CDBC ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att693d7b796f
+  a skos:Concept ;
+  skos:prefLabel "Transparency"@en ;
+  schema:category "Transparency" ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att371d70b854
+  a skos:Concept ;
+  skos:prefLabel "Certification and Assessment"@en ;
+  skos:description "Certification schemes and/or community badges that assess certain aspects of the repository (e.g., its fitness, trustworthiness, adoption)'"@en ;
+  schema:category "Transparency|Certification and Assessment" ;
+  dcat:keyword "CTM" ;
+  dcat:keyword "DRAWG" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.693D7B796F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att26cd4b30b3
+  a skos:Concept ;
+  skos:prefLabel "Benefits and Constraints"@en ;
+  schema:category "Transparency|Benefits and Constraints" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.693D7B796F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7af3a65add
+  a skos:Concept ;
+  skos:prefLabel "Mission and Mandate"@en ;
+  skos:description "The organisation is mandated to perform the services it offers, and this is clearly stated in publicly available documentation. The organisation is focused on the mission and does not divert resources to other focus areas. The mission is mandated and approved at an appropriate level (e.g. board level)."@en ;
+  schema:category "Transparency|Benefits and Constraints|Mission and Mandate" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att035accb10d
+  a skos:Concept ;
+  skos:prefLabel "Mission"@en ;
+  schema:category "Transparency|Benefits and Constraints|Mission and Mandate|Mission" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att43abb27ebe
+  a skos:Concept ;
+  skos:prefLabel "Single Focus"@en ;
+  schema:category "Transparency|Benefits and Constraints|Mission and Mandate|Single Focus" ;
+  dcat:keyword "POSI" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att18d74ed687
+  a skos:Concept ;
+  skos:prefLabel "Legal and Regulatory"@en ;
+  skos:description "Disclaimers, Privacy, Terms and Conditions"@en ;
+  schema:category "Transparency|Benefits and Constraints|Legal and Regulatory" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att13132a45e7
+  a skos:Concept ;
+  skos:prefLabel "Policy"@en ;
+  skos:description "Policy/ high level information is available"@en ;
+  schema:category "Transparency|Benefits and Constraints|Policy" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att2744ced24f
+  a skos:Concept ;
+  skos:prefLabel "Policy Management"@en ;
+  schema:category "Transparency|Benefits and Constraints|Policy|Policy Management" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6105038322
+  a skos:Concept ;
+  skos:prefLabel "Appraisal/ Accession Policy"@en ;
+  skos:description "Policies related to appropriateness of accession, rights, authenticity, provenance, and dissemination risk"@en ;
+  schema:category "Transparency|Benefits and Constraints|Policy|Appraisal/ Accession Policy" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att2e979c3b25
+  a skos:Concept ;
+  skos:prefLabel "Data Policy"@en ;
+  schema:category "Transparency|Benefits and Constraints|Policy|Data Policy" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0e2db53e0e
+  a skos:Concept ;
+  skos:prefLabel "Disclosure Risk"@en ;
+  schema:category "Transparency|Benefits and Constraints|Policy|Disclosure Risk" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att2847f75853
+  a skos:Concept ;
+  skos:prefLabel "Privacy Policy"@en ;
+  schema:category "Transparency|Benefits and Constraints|Policy|Privacy Policy" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3619ef1b84
+  a skos:Concept ;
+  skos:prefLabel "Rights Management"@en ;
+  schema:category "Transparency|Benefits and Constraints|Policy|Rights Management" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "CARE" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1b94296bad
+  a skos:Concept ;
+  skos:prefLabel "Supported Formats"@en ;
+  skos:description "Ensuring that guidance and/or enforcement is in place to ensure optimal file formats for dissemination and preservation"@en ;
+  schema:category "Transparency|Benefits and Constraints|Policy|Supported Formats" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.545686D0F9 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att060e8af1a4
+  a skos:Concept ;
+  skos:prefLabel "Context"@en ;
+  skos:description "It is important to define context clearly and publicly - scope of services offered, the target end user community, and information that can be used by end users to select the most appropriate service or repository."@en ;
+  schema:category "Transparency|Benefits and Constraints|Context" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "POSI" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0b3d7477e7
+  a skos:Concept ;
+  skos:prefLabel "Source of Repository Attributes"@en ;
+  schema:category "Transparency|Benefits and Constraints|Context|Source of Repository Attributes" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4bfd6fb9b3
+  a skos:Concept ;
+  skos:prefLabel "Target User Community"@en ;
+  schema:category "Transparency|Benefits and Constraints|Context|Target User Community" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "POSI" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att64fde59bad
+  a skos:Concept ;
+  skos:prefLabel "Coverage"@en ;
+  schema:category "Transparency|Benefits and Constraints|Context|Coverage" ;
+  dcat:keyword "POSI" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att761c0fb70d
+  a skos:Concept ;
+  skos:prefLabel "Repository Characterisation"@en ;
+  schema:category "Transparency|Benefits and Constraints|Context|Repository Characterisation" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3e5f32a9e8
+  a skos:Concept ;
+  skos:prefLabel "Capabilities"@en ;
+  schema:category "Transparency|Benefits and Constraints|Context|Capabilities" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att613f28af34
+  a skos:Concept ;
+  skos:prefLabel "Scope of Services"@en ;
+  skos:description "Services that are offered range throughout the value chain, and can include automation or centralisation of common services. Services should be documented and appropriate. Pre-deposit services include QA and FAIR improvement, linking to DMPs, format conversions, etc. Value-added services include linking to tools, citation indices, and SKGs."@en ;
+  schema:category "Transparency|Scope of Services" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.693D7B796F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att38da273fcf
+  a skos:Concept ;
+  skos:prefLabel "Pre-deposit"@en ;
+  schema:category "Transparency|Scope of Services|Pre-deposit" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3754546590
+  a skos:Concept ;
+  skos:prefLabel "Deposit/ Appraisal/ Ingest"@en ;
+  schema:category "Transparency|Scope of Services|Deposit/ Appraisal/ Ingest" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4dcdbad9b4
+  a skos:Concept ;
+  skos:prefLabel "Semantic Enhancement"@en ;
+  schema:category "Transparency|Scope of Services|Deposit/ Appraisal/ Ingest|Semantic Enhancement" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att66c6612ea5
+  a skos:Concept ;
+  skos:prefLabel "Curation"@en ;
+  schema:category "Transparency|Scope of Services|Curation" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att156b52fb19
+  a skos:Concept ;
+  skos:prefLabel "Preservation"@en ;
+  schema:category "Transparency|Scope of Services|Preservation" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "DRAWG" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att34e5521dd7
+  a skos:Concept ;
+  skos:prefLabel "Discovery"@en ;
+  schema:category "Transparency|Scope of Services|Discovery" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att354e278d69
+  a skos:Concept ;
+  skos:prefLabel "Proper Citation"@en ;
+  schema:category "Transparency|Scope of Services|Discovery|Proper Citation" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att540f680a1e
+  a skos:Concept ;
+  skos:prefLabel "Service APIs"@en ;
+  schema:category "Transparency|Scope of Services|Discovery|Service APIs" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att536467081e
+  a skos:Concept ;
+  skos:prefLabel "Value-Added"@en ;
+  schema:category "Transparency|Scope of Services|Value-Added" ;
+  dcat:keyword "POSI" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att50da0aa84e
+  a skos:Concept ;
+  skos:prefLabel "Crosswalks and Conversions"@en ;
+  schema:category "Transparency|Scope of Services|Value-Added|Crosswalks and Conversions" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.24C6E69FBF ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att110c424081
+  a skos:Concept ;
+  skos:prefLabel "Annotation"@en ;
+  schema:category "Transparency|Scope of Services|Value-Added|Annotation" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.24C6E69FBF ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0674156b7e
+  a skos:Concept ;
+  skos:prefLabel "Consulting Services"@en ;
+  schema:category "Transparency|Scope of Services|Value-Added|Consulting Services" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.24C6E69FBF ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att08dace15b1
+  a skos:Concept ;
+  skos:prefLabel "Interoperability"@en ;
+  schema:category "Transparency|Scope of Services|Interoperability" ;
+  dcat:keyword "TTRAM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att696b580e35
+  a skos:Concept ;
+  skos:prefLabel "Interoperability Management"@en ;
+  schema:category "Transparency|Scope of Services|Interoperability|Interoperability Management" ;
+  dcat:keyword "TTRAM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att15dbb60ac2
+  a skos:Concept ;
+  skos:prefLabel "Legal Interoperability"@en ;
+  schema:category "Transparency|Scope of Services|Interoperability|Legal Interoperability" ;
+  dcat:keyword "TTRAM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att09c8cbe4de
+  a skos:Concept ;
+  skos:prefLabel "Semantic Interoperability"@en ;
+  schema:category "Transparency|Scope of Services|Interoperability|Semantic Interoperability" ;
+  dcat:keyword "TTRAM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att71a5d27d84
+  a skos:Concept ;
+  skos:prefLabel "Technical Interoperability"@en ;
+  schema:category "Transparency|Scope of Services|Interoperability|Technical Interoperability" ;
+  dcat:keyword "TTRAM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att39ed69c36b
+  a skos:Concept ;
+  skos:prefLabel "Package Exchange"@en ;
+  schema:category "Transparency|Scope of Services|Interoperability|Package Exchange" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7362d6d981
+  a skos:Concept ;
+  skos:prefLabel "Reuse"@en ;
+  schema:category "Transparency|Scope of Services|Reuse" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att67de43d8df
+  a skos:Concept ;
+  skos:prefLabel "Rich Metadata"@en ;
+  schema:category "Transparency|Scope of Services|Reuse|Rich Metadata" ;
+  dcat:keyword "FAIR" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att56c67a542a
+  a skos:Concept ;
+  skos:prefLabel "Technology"@en ;
+  skos:description "A repository depends on the interaction of people, processes, and technologies to support secure, persistent, and reliable services. Its activities and functions are supported by software, hardware, and technical services.'"@en ;
+  schema:category "Technology" ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6a837d5a94
+  a skos:Concept ;
+  skos:prefLabel "Reliable"@en ;
+  schema:category "Technology|Reliable" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.56C67A542A ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att752453ed45
+  a skos:Concept ;
+  skos:prefLabel "Accessible"@en ;
+  schema:category "Technology|Accessible" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.56C67A542A ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0ed3d624b3
+  a skos:Concept ;
+  skos:prefLabel "Accessibility Measures"@en ;
+  schema:category "Technology|Accessible|Accessibility Measures" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.752453ED45 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att70deca9f26
+  a skos:Concept ;
+  skos:prefLabel "Multi-Language Support"@en ;
+  schema:category "Technology|Accessible|Multi-Language Support" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.752453ED45 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6d262193a1
+  a skos:Concept ;
+  skos:prefLabel "Secure"@en ;
+  schema:category "Technology|Secure" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.56C67A542A ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1ae2618c36
+  a skos:Concept ;
+  skos:prefLabel "e-Infrastructure security and Integrity"@en ;
+  schema:category "Technology|Secure|e-Infrastructure security and Integrity" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6f82b396bd
+  a skos:Concept ;
+  skos:prefLabel "Sovereignty Considerations"@en ;
+  schema:category "Technology|Secure|Sovereignty Considerations" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5efdb0d148
+  a skos:Concept ;
+  skos:prefLabel "Object Storage"@en ;
+  schema:category "Technology|Secure|Object Storage" ;
+  dcat:keyword "TTRAM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att43246175ea
+  a skos:Concept ;
+  skos:prefLabel "Certified"@en ;
+  schema:category "Technology|Certified" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.56C67A542A ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att22f180559a
+  a skos:Concept ;
+  skos:prefLabel "Research Data Management"@en ;
+  schema:category "Technology|Certified|Research Data Management" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1593e1ae08
+  a skos:Concept ;
+  skos:prefLabel "Software Development Quality"@en ;
+  schema:category "Technology|Certified|Software Development Quality" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7f2af694bc
+  a skos:Concept ;
+  skos:prefLabel "Process Quality"@en ;
+  schema:category "Technology|Certified|Process Quality" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6fb4481988
+  a skos:Concept ;
+  skos:prefLabel "Service Quality and Security"@en ;
+  schema:category "Technology|Certified|Service Quality and Security" ;
+  dcat:keyword "TRSP" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att35579be2fc
+  a skos:Concept ;
+  skos:prefLabel "Services"@en ;
+  schema:category "Technology|Services" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.56C67A542A ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att46058de67b
+  a skos:Concept ;
+  skos:prefLabel "External/ Micro-Services"@en ;
+  schema:category "Technology|Services|External/ Micro-Services" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1db4b1e4f0
+  a skos:Concept ;
+  skos:prefLabel "Ownership"@en ;
+  schema:category "Technology|Services|External/ Micro-Services|Ownership" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3720038519
+  a skos:Concept ;
+  skos:prefLabel "Dependencies"@en ;
+  schema:category "Technology|Services|External/ Micro-Services|Dependencies" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0afac21629
+  a skos:Concept ;
+  skos:prefLabel "Performance"@en ;
+  schema:category "Technology|Services|External/ Micro-Services|Performance" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att216fec031c
+  a skos:Concept ;
+  skos:prefLabel "Service Maturity/ Readiness"@en ;
+  schema:category "Technology|Services|Service Maturity/ Readiness" ;
+  dcat:keyword "PID" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3219437e8f
+  a skos:Concept ;
+  skos:prefLabel "Software and Service Quality"@en ;
+  schema:category "Technology|Services|Service Maturity/ Readiness|Software and Service Quality" ;
+  dcat:keyword "PID" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7592d43f0b
+  a skos:Concept ;
+  skos:prefLabel "Open Source"@en ;
+  schema:category "Technology|Open Source" ;
+  dcat:keyword "TRUST" ;
+  dcat:keyword "POSI" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.56C67A542A ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att21f3c82f8b
+  a skos:Concept ;
+  skos:prefLabel "Legal"@en ;
+  schema:category "Technology|Legal" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.56C67A542A ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5abd0e52c7
+  a skos:Concept ;
+  skos:prefLabel "Performance"@en ;
+  schema:category "Performance" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5ABD0E52C7 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1bf97ae324
+  a skos:Concept ;
+  skos:prefLabel "Submission Processing"@en ;
+  skos:description "The considerations that end users value highly include the timeous publication of research outputs and the PID for the output."@en ;
+  schema:category "Performance|Submission Processing" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5ABD0E52C7 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att79ca40de94
+  a skos:Concept ;
+  skos:prefLabel "Deposit Properties"@en ;
+  skos:description "The mechanics of deposit limitations may also be important considerations for end users."@en ;
+  schema:category "Performance|Deposit Properties" ;
+  dcat:keyword "TRSP" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5ABD0E52C7 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7f7c2776ac
+  a skos:Concept ;
+  skos:prefLabel "File and Dataset Properties"@en ;
+  skos:description "Software platforms should provide easy API access to file and dataset properties in addition to dataset metadata - for example file sizes and checksums, file types, storage types, download links, and similar."@en ;
+  schema:category "Performance|Deposit Properties|File and Dataset Properties" ;
+  dcat:keyword "TRSP" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att1095e8cf4a
+  a skos:Concept ;
+  skos:prefLabel "Performance Assessment"@en ;
+  skos:description "The extent to which formal assessments/ audits of performance have been obtained. These aspects relate to performance assessments that are associated with digital services in general, also soutside teh research output management landscape. It covers aspects of process quality (such as ISO 9000), information security (ISO 27001), and service management (FitSM)."@en ;
+  schema:category "Performance|Performance Assessment" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5ABD0E52C7 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att57326a13eb
+  a skos:Concept ;
+  skos:prefLabel "Scalability/ Big Data Readiness"@en ;
+  skos:description "The extent to which the service or software can cope with increases in volume or intensity."@en ;
+  schema:category "Performance|Scalability/ Big Data Readiness" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5ABD0E52C7 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att72cbe64acc
+  a skos:Concept ;
+  skos:prefLabel "Availability"@en ;
+  skos:description "For services and systems integrators, aspects such as uptime and rate limits may be important."@en ;
+  schema:category "Performance|Availability|Availability" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att305548d83d
+  a skos:Concept ;
+  skos:prefLabel "Income and Expenditure"@en ;
+  skos:description "Moved non-accounting values to 'Financial Sustainability' and 'Attributes'"@en ;
+  schema:category "Income and Expenditure" ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att0da8e81794
+  a skos:Concept ;
+  skos:prefLabel "Financial Planning"@en ;
+  schema:category "Income and Expenditure|Financial Planning" ;
+  dcat:keyword "TTRAM" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.305548D83D ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3cf9d1eda3
+  a skos:Concept ;
+  skos:prefLabel "Capital Costs"@en ;
+  schema:category "Income and Expenditure|Capital Costs" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.305548D83D ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att2e1e7576aa
+  a skos:Concept ;
+  skos:prefLabel "Hardware and Networking"@en ;
+  schema:category "Income and Expenditure|Capital Costs|Hardware and Networking" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5ffceeb1f9
+  a skos:Concept ;
+  skos:prefLabel "Systems Development"@en ;
+  schema:category "Income and Expenditure|Capital Costs|Systems Development" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6d12041533
+  a skos:Concept ;
+  skos:prefLabel "Research and Development"@en ;
+  schema:category "Income and Expenditure|Capital Costs|Research and Development" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att357d9538d7
+  a skos:Concept ;
+  skos:prefLabel "Other"@en ;
+  schema:category "Income and Expenditure|Capital Costs|Other" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att355cb4d570
+  a skos:Concept ;
+  skos:prefLabel "Other"@en ;
+  schema:category "Income and Expenditure|Operating Costs|Other" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4840647866
+  a skos:Concept ;
+  skos:prefLabel "Hardware and Networking"@en ;
+  schema:category "Income and Expenditure|Operating Costs|Hardware and Networking" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att66003293b3
+  a skos:Concept ;
+  skos:prefLabel "Personnel"@en ;
+  schema:category "Income and Expenditure|Operating Costs|Personnel" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4a04909c47
+  a skos:Concept ;
+  skos:prefLabel "Facilities and Offices"@en ;
+  schema:category "Income and Expenditure|Operating Costs|Facilities and Offices" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3ecdbaa77f
+  a skos:Concept ;
+  skos:prefLabel "Other"@en ;
+  schema:category "Income and Expenditure|Operating Costs|Other" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.055D3C1243 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att650ba75f4f
+  a skos:Concept ;
+  skos:prefLabel "Other"@en ;
+  schema:category "Income and Expenditure|Revenue|Other" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.435A79A35F ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att27e790a86b
+  a skos:Concept ;
+  skos:prefLabel "User Focus"@en ;
+  schema:category "User Focus" ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6fb10117a8
+  a skos:Concept ;
+  skos:prefLabel "Community Engagement"@en ;
+  skos:description "Aspects include the involvement of the commumity in the governance, technology, standards development and specification, and usability of the service. It overlaps with social sustainability aspects/ governance."@en ;
+  schema:category "User Focus|Community Engagement" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.27E790A86B ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att56b57bdcc5
+  a skos:Concept ;
+  skos:prefLabel "Guidance"@en ;
+  skos:description "These elements list commonly supported use cases, and can be useful in describing the details of services offered. Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
+  schema:category "User Focus|Guidance" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.27E790A86B ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att06d09133ae
+  a skos:Concept ;
+  skos:prefLabel "General Depositor Guidance"@en ;
+  schema:category "User Focus|Guidance|General Depositor Guidance" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7c41966ab5
+  a skos:Concept ;
+  skos:prefLabel "Guidance on Data and Metadata Preparation"@en ;
+  schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att74fdfb3e00
+  a skos:Concept ;
+  skos:prefLabel "Metadata Schema"@en ;
+  schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|Metadata Schema" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att48b32fb000
+  a skos:Concept ;
+  skos:prefLabel "Integrations (DMP, RO-Crate, ...)"@en ;
+  schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|Integrations (DMP, RO-Crate, ...)" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att176cc246a8
+  a skos:Concept ;
+  skos:prefLabel "FAIR Assessment"@en ;
+  schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|FAIR Assessment" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att2687a2f0b8
+  a skos:Concept ;
+  skos:prefLabel "FAIR Aggregation"@en ;
+  schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|FAIR Aggregation" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3f6736bf1c
+  a skos:Concept ;
+  skos:prefLabel "Format guidance and conversion"@en ;
+  schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|Format guidance and conversion" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att7c3a4c601f
+  a skos:Concept ;
+  skos:prefLabel "Licence guidance and selection"@en ;
+  schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|Licence guidance and selection" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att394d659c0c
+  a skos:Concept ;
+  skos:prefLabel "API Documentation"@en ;
+  schema:category "User Focus|Guidance|API Documentation" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att234960b12d
+  a skos:Concept ;
+  skos:prefLabel "Discovery"@en ;
+  skos:description "Similary, these elements list commonly supported use cases, and can be useful in describing the details of services offered.  Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
+  schema:category "User Focus|Discovery" ;
+  dcat:keyword "CTS" ;
+  dcat:keyword "TRUST" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.27E790A86B ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6b61f7af54
+  a skos:Concept ;
+  skos:prefLabel "Find"@en ;
+  schema:category "User Focus|Discovery|Find" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6a47f71f59
+  a skos:Concept ;
+  skos:prefLabel "Explore"@en ;
+  schema:category "User Focus|Discovery|Explore" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att38699ab445
+  a skos:Concept ;
+  skos:prefLabel "Understand"@en ;
+  schema:category "User Focus|Discovery|Understand" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5e44673c02
+  a skos:Concept ;
+  skos:prefLabel "Provenance"@en ;
+  schema:category "User Focus|Discovery|Provenance" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att5f06eec902
+  a skos:Concept ;
+  skos:prefLabel "Harvestable"@en ;
+  schema:category "User Focus|Discovery|Harvestable" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.5CA7C2BE56 ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6a8a5e1219
+  a skos:Concept ;
+  skos:prefLabel "Application and Reuse"@en ;
+  skos:description "Similary, these elements list commonly supported use cases, and can be useful in describing the details of services offered.  Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
+  schema:category "User Focus|Application and Reuse" ;
+  dcat:keyword "CTS" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.27E790A86B ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att6e790e641f
+  a skos:Concept ;
+  skos:prefLabel "Context"@en ;
+  skos:description "Linking LOD references (DOIs, ORCIDS, ...) to additional external context in SKGs, registries, and vocabularies"@en ;
+  schema:category "User Focus|Context" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.27E790A86B ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att70c4c7b218
+  a skos:Concept ;
+  skos:prefLabel "Annotation, Metrics, Feedback and Use"@en ;
+  skos:description "Allow end users to annotate and rate metadata and data, and provide them with links to external resources (other versions, citation metrics, ...)"@en ;
+  schema:category "User Focus|Annotation, Metrics, Feedback and Use" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.27E790A86B ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att3e9295c9a1
+  a skos:Concept ;
+  skos:prefLabel "User Support Mechanisms"@en ;
+  schema:category "User Focus|User Support Mechanisms" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.27E790A86B ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:att4721cbc19a
+  a skos:Concept ;
+  skos:prefLabel "Object Maintenance"@en ;
+  schema:category "User Focus|Object Maintenance" ;
+  owl:versionInfo "0.1" ;
+  skos:broader att.27E790A86B ;
+  skos:inScheme trsp:ConceptScheme .
