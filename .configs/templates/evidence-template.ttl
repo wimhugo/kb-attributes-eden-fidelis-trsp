@@ -1,0 +1,18 @@
+@prefix trsp: <https://example.org/trsp/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix eden: <> .
+
+<> a eden:EvidenceObject ;
+  dct:title ""@en ; ##the title of the 'evidence' object
+  dct:identifier <> ; ## the iri for the 'evidence' object
+  ## the following properties are optional and/ or can be provided by the identifier IRI if it is machine readable
+  ## to encode some TRSP/ EDEN attributes, some of these properties have to be provided explicitly 
+  dct:created ""^^xsd:datetime; ## the creation date for the evidence object
+  dct:modified ""^^xsd:datetime; ## the last modified date for the evidence object
+  dct:conformsTo <>; ## one or more standards or specifications that the evidence object conforms to
+  dct:contactPoint <> ; ## can be a reference to a foaf object
+  dct:description ""; ## an optional description of the evidence object
+  dct:license <> ; ## a licence IRI obtained from the EDEN Licence facade service (LFS) and incorporating SPDX IRIs
+  dct:type <> ; ## a type IRI conformant with e.g. Dublin Core resource types 
+  trsp:evidenceType <>;  ##values from a controlled vocabulary (policies, workflows, procedures, etc.)
+  dcat:keyword .
