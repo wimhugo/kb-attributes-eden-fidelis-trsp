@@ -140,7 +140,7 @@ trsp:webReference a rdf:Property ;
 #################################################################
 
 trsp:hasMeasurementType a rdf:Property ;
-    rdfs:label "has measurement type"@en ;
+    rdfs:label "Has Measurement Type"@en ;
     rdfs:domain trsp:Attribute ;
     rdfs:range trsp:MeasurementType .
 
@@ -149,18 +149,18 @@ trsp:benchmark a rdf:Property ;
     rdfs:domain trsp:Attribute .                         ## may have to be broadened, also applies to profiles
 
 #    One of 4 cardinality types, from a vocabulary
-trsp:cardinalityCode a rdf:Property ;
-    rdfs:label "cardinality code"@en ;
+trsp:hasCardinalityType a rdf:Property ;
+    rdfs:label "Cardinality Code"@en ;
     rdfs:domain trsp:Attribute ;
     rdfs:range trsp:CardinalityType .
 
-trsp:hasApplicableProfile a rdf:Property ;
-    rdfs:label "has applicable profile"@en ;
+trsp:hasProfile a rdf:Property ;
+    rdfs:label "Has Applicable Profile"@en ;
     rdfs:domain trsp:Attribute ;
     rdfs:range trsp:Profile .
 
-trsp:hasApplicableProfileAssertion a rdf:Property ;
-    rdfs:label "has applicable profile assertion"@en ;
+trsp:hasProfileAssertion a rdf:Property ;
+    rdfs:label "Has Applicable Profile Assertion"@en ;
     rdfs:domain trsp:Attribute ;
     rdfs:range trsp:ProfileAssertion .
 
