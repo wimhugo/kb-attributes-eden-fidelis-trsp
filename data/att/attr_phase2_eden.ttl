@@ -1,1 +1,3230 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wikidata: <https://www.wikidata.org/wiki/#> .
+@prefix schema: <http://schema.org/> .
+@prefix gorc: <https://purl.org/gorc/> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix re3data: <https://schema.re3data.org/4-0#> .
+trsp:trsp-eden-profile a skos:ConceptScheme ;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ; # Wim Hugo
+  dct:contributor <https://orcid.org/0000-0003-1106-8441> ; # Wilko Steinhoff
+  dct:contributor "Wesley Middelbos" ;
+  dct:contributor "EOSC EDEN WP2" ;
+  dct:description "A profile of repository and repository services attributes identified by EOSC EDEN"@en 
+  dct:modified "2026-05-07T00:00:00+00:00"^^xsd:datetime;
+  dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
+  dct:rights <https://spdx.org/licenses/CC0-1.0>;
+  dct:title "EOSC EDEN Attribute Vocabulary Profile @en;
+  skos:prefLabel "EDEN Attributes"@en .
+  owl:versionInfo "0.4"@en;
+  foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
+trsp:<eden.att:000001>
+  a skos:Concept ;
+  skos:description "Does the repository use API standards and protocols and which?"@en ;
+  skos:exactMatch trsp:att.1C5F7AAA09 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Makes use of API standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Adoption of open API standards or protocols (REST, OAI-PMH)"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000003>
+  a skos:Concept ;
+  skos:description "Does the repository use API standards and protocols and which?"@en ;
+  skos:exactMatch trsp:att.515B8F83FB ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Documentation of API protocols"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Adoption of open API standards or protocols (REST, OAI-PMH)"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000004>
+  a skos:Concept ;
+  skos:description "Does the repository provide manuals or documentation for their services and protocols they use?"@en ;
+  skos:exactMatch trsp:att.1F40BC420B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Machine-readable API documentation available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Reference implementations and API guidelines"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000005>
+  a skos:Concept ;
+  skos:description "Does the repository provide manuals or documentation for their services and protocols they use?"@en ;
+  skos:exactMatch trsp:att.207398D3A8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Human-readable API documentation available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Reference implementations and API guidelines"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000007>
+  a skos:Concept ;
+  skos:description "Publishes the tool which is used to test, per service or tool if available"@en ;
+  skos:exactMatch trsp:att.64E3E49E89 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Uses conformance testing tools"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Conformance testing tools"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000008>
+  a skos:Concept ;
+  skos:description "Publishes and refers to the latest result of conformance tests, if available"@en ;
+  skos:exactMatch trsp:att.3A2655ABB6 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Latest conformance test results available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Conformance testing tools"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000009>
+  a skos:Concept ;
+  skos:description "Publishes if automated conformance tests are conducted"@en ;
+  skos:exactMatch trsp:att.09BFA24214 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Conformance tests exist"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Conformance testing tools"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00000A>
+  a skos:Concept ;
+  skos:description "Publishes the frequency of testing"@en ;
+  skos:exactMatch trsp:att.1ADEEC1D3A ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Conformance testing frequency defined"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Conformance testing tools"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00000B>
+  a skos:Concept ;
+  skos:description "Which types of information the repository stores in a machine-readable interface (software, analysis, raw data, etc....)"@en ;
+  skos:exactMatch trsp:att.1BF23E39F5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Stored Information Types (Machine-Readable)"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for both General-purpose and Domain-specific Formats"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00000C>
+  a skos:Concept ;
+  skos:description "Policy exist that define the formatting of file formats, and/or the desired types by the repository"@en ;
+  skos:exactMatch trsp:att.1BF23E39F5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "File Format Policy with Persistent Reference"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for both General-purpose and Domain-specific Formats"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00000D>
+  a skos:Concept ;
+  skos:description "Does the repository support the ability to map, transform and/or align metadata that comes in different schemas, standards, or structural formats?"@en ;
+  skos:exactMatch trsp:att.3B49F36F75 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports metadata schema mapping"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Metadata Alignment across Heterogeneous Formats"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00000E>
+  a skos:Concept ;
+  skos:description "Does the repository support the ability to map, transform and/or align metadata that comes in different schemas, standards, or structural formats?"@en ;
+  skos:exactMatch trsp:att.45EC53C288 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports metadata schemas"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Metadata Alignment across Heterogeneous Formats"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00000F>
+  a skos:Concept ;
+  skos:description "Does the repository use services or tools which are also available to translate, transform, mediate between different data formats (e.g. package structures, file formats, metadata standards)?"@en ;
+  skos:exactMatch trsp:att.32846CB4DF ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports metadata/ data format translation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Integration Tools for Bridging Formats"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00001C>
+  a skos:Concept ;
+  skos:description "Does the repository support search on nested metadata?"@en ;
+  skos:exactMatch trsp:att.562C603E9F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Search level support - Advanced"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00001D>
+  a skos:Concept ;
+  skos:description "List of the searchable metadata fields, both low (nested data) and high level search (e.g. Dublin Core)"@en ;
+  skos:exactMatch trsp:att.562C603E9F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Searchable Metadata Fields (Advanced Search Capabilities)"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00001F>
+  a skos:Concept ;
+  skos:description "Does the repository support high-level search and discovery?"@en ;
+  skos:exactMatch trsp:att.7170942244 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Search level support - Simple"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000024>
+  a skos:Concept ;
+  skos:description "Is the system capable of querying across domains to participate in external cross-domain discovery networks?"@en ;
+  skos:exactMatch trsp:att.4BFE0576A2 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Federated query support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Federated and cross-domain query support"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00002C>
+  a skos:Concept ;
+  skos:description "List of indexed metadata levels per source (e.g. dataset level, file level, service level)?"@en ;
+  skos:exactMatch trsp:att.374F095E69 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata levels"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Metadata indexing at multiple levels"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000033>
+  a skos:Concept ;
+  skos:description "The URL to the discovery API"@en ;
+  skos:exactMatch trsp:att.18CE7D92FA ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "URL to discovery API"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000036>
+  a skos:Concept ;
+  skos:description "The levels of granularity which are supported in the discovery API"@en ;
+  skos:exactMatch trsp:att.374F095E69 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Level of granularity"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000037>
+  a skos:Concept ;
+  skos:description "Repository publishes its policy for PID?"@en ;
+  skos:exactMatch trsp:att.2901B9E359 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "PID Policy"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Cross-community PID harmonisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000038>
+  a skos:Concept ;
+  skos:description "Publishes which persistent identifier standards it supports in a machine-readable way"@en ;
+  skos:exactMatch trsp:att.2F993B25AD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Use of PID standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Cross-community PID harmonisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00003A>
+  a skos:Concept ;
+  skos:description "Is PID metadata exposed in a machine-readable format?"@en ;
+  skos:exactMatch trsp:att.754BCAC5A8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "PID Metadata machine readable"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Cross-community PID harmonisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00003B>
+  a skos:Concept ;
+  skos:description "Can a PID be linked to objects in another domain?"@en ;
+  skos:exactMatch trsp:att.1A4192F248 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "External objects"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Cross-community PID harmonisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00003D>
+  a skos:Concept ;
+  skos:description "Is the PID resolvable via HTTPS?"@en ;
+  skos:exactMatch trsp:att.6EED29CAE5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Resolvable PIDs over HTTPS"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Machine-resolvable PIDs"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00003F>
+  a skos:Concept ;
+  skos:description "Does the repository have the capability to autoresolve metadata based on PIDs?"@en ;
+  skos:exactMatch trsp:att.6EED29CAE5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "PID-Based Metadata Autoresolution"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Machine-resolvable PIDs"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000040>
+  a skos:Concept ;
+  skos:description "Which type of PID is used in the repository"@en ;
+  skos:exactMatch trsp:att.2F993B25AD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "PID Type Usage"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Machine-resolvable PIDs"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000044>
+  a skos:Concept ;
+  skos:description "Does the repository support PID which are connected to structured descriptive metadata?"@en ;
+  skos:exactMatch trsp:att.6EED29CAE5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Structured Metadata PID Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Metadata-linked identifiers"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000049>
+  a skos:Concept ;
+  skos:description "Does the PID system track different versions of an object?"@en ;
+  skos:exactMatch trsp:att.27F5C3BD10 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Digital object version tracking"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Clear EOSC PID policy and lifecycle tracking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00004D>
+  a skos:Concept ;
+  skos:description "Link to policy of assignment & reassignment and deprecation of PIDs"@en ;
+  skos:exactMatch trsp:att.1395FD0F03 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Defines access policy - EOSC"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Clear EOSC PID policy and lifecycle tracking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000051>
+  a skos:Concept ;
+  skos:description "Does the repository or service implement widely accepted authentication and authorisation protocols such as SAML, OpenID Connect, or OAuth2? Supporting well-established standards ensures compatibility with federated identity providers, secure machine-to-machine communication, and interoperability with EOSC’s AAI ecosystem. This also facilitates cross-service user access and integration with external infrastructures."@en ;
+  skos:exactMatch trsp:att.337C35222E ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Protocol documentation available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Standards-Based Authentication Mechanisms|Standards Support"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000055>
+  a skos:Concept ;
+  skos:description "Publish default metadata profile used"@en ;
+  skos:exactMatch trsp:att.3D988650EC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Default profile"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000056>
+  a skos:Concept ;
+  skos:description "Metadata is getting validated against the profile"@en ;
+  skos:exactMatch trsp:att.4EA572A954 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata profile validaton"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000057>
+  a skos:Concept ;
+  skos:description "Allows users to select a metadata profile"@en ;
+  skos:exactMatch trsp:att.678241192E ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata profile selection"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00005A>
+  a skos:Concept ;
+  skos:description "Link to an human readable documentation of the crosswalk"@en ;
+  skos:exactMatch trsp:att.0FAB8D7E65 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Crosswalks - Human readable documentation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Crosswalks between metadata schemas"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00005C>
+  a skos:Concept ;
+  skos:description "List of schema pairs and their defined mappings"@en ;
+  skos:exactMatch trsp:att.3B49F36F75 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Crosswalks - Schema Mapping Definitions"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Crosswalks between metadata schemas"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000061>
+  a skos:Concept ;
+  skos:description "Is the system able to provide the metadata in different languages to give people from different backgrounds the ability to interpret them consistently?"@en ;
+  skos:exactMatch trsp:att.42A3D7A518 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata localisation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Multilingual metadata support"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000062>
+  a skos:Concept ;
+  skos:description "Whether the system is exposing the metadata in a structured, machine-readable format aligned with FAIR principles?"@en ;
+  skos:exactMatch trsp:att.7298144E24 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports metadata format translation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Schema.org or FAIR-compliant metadata exposure"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000063>
+  a skos:Concept ;
+  skos:description "Supported FAIR formats, and if the system adherence to a specific metadata model or profile"@en ;
+  skos:exactMatch trsp:att.6C03AB58B8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "FAIR formats supported"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Schema.org or FAIR-compliant metadata exposure"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000067>
+  a skos:Concept ;
+  skos:description "Does the TDR or TDA ensure that semantic artefacts used in metadata are discoverable and accessible through domain-recognized reference repositories to promote reuse, semantic consistency, and machine-actionability?"@en ;
+  skos:exactMatch trsp:att.51C655BFB0 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Semantic Artefacts - Human-readable API documentation available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Reference repositories for semantic artefacts"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00006B>
+  a skos:Concept ;
+  skos:description "Systems publishes URIs which resolve to useful representation of terms"@en ;
+  skos:exactMatch trsp:att.7AC495443D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Machine-readable representation of terms"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Machine-readable vocabulary linking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00006C>
+  a skos:Concept ;
+  skos:description "URI or reference to documentation of the format and vocabulary used"@en ;
+  skos:exactMatch trsp:att.57D4BD2121 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Provides machine-readable documentation - Vocabularies"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Machine-readable vocabulary linking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00006E>
+  a skos:Concept ;
+  skos:description "Whether the system has the capability to expose the controlled vocabularies and ontologies terms in such format it is machine-readable which increases metadata interpretation, reasoning and integration across systems automatically."@en ;
+  skos:exactMatch trsp:att.7AC495443D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supported vocabulary & formats"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Machine-readable vocabulary linking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000070>
+  a skos:Concept ;
+  skos:description "Whether the system has services available to align or map terms across different vocabularies or ontologies. These mappings ensure semantical equivalent terms for a wide variety of communities which this way can be interpreted consistently."@en ;
+  skos:exactMatch trsp:att.6AF56A372D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Attribute support available - Vocabulary Harmonisation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Vocabulary harmonisation and mapping services"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000072>
+  a skos:Concept ;
+  skos:description "Publishes a list of supported mapping services"@en ;
+  skos:exactMatch trsp:att.3B49F36F75 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supported mapping services"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Vocabulary harmonisation and mapping services"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000075>
+  a skos:Concept ;
+  skos:description "Whether the system has the capability to use or expose controlled vocabularies in multiple languages enabling different linguistic backgrounds to interpret, search and reuse metadata across domains."@en ;
+  skos:exactMatch trsp:att.211F98FA33 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports multilingual vocabularies"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Support for multilingual vocabularies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00007A>
+  a skos:Concept ;
+  skos:description "Whether the system is supporting PID for semantic terms"@en ;
+  skos:exactMatch trsp:att.7AC495443D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Makes use of URIs to reference terms"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Use of PIDs for semantic terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00007C>
+  a skos:Concept ;
+  skos:description "Identifiers used in the metadata can be dereferenced"@en ;
+  skos:exactMatch trsp:att.1A4192F248 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Dereferenceable identifiers"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Support for semantic identifier dereferencing"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00007E>
+  a skos:Concept ;
+  skos:description "Whether the system is aligned with well-established identifier systems for common metadata entities, which increases the discoverability and reuse."@en ;
+  skos:exactMatch trsp:att.2F993B25AD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports metadata formats"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Alignment with recognised identifier systems"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000080>
+  a skos:Concept ;
+  skos:description "Whether the system is aligned with well-established identifier systems for common metadata entities, which increases the discoverability and reuse."@en ;
+  skos:exactMatch trsp:att.2F993B25AD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata formats - PID support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Alignment with recognised identifier systems"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000082>
+  a skos:Concept ;
+  skos:description "Whether the system supports embedded semantic annotations."@en ;
+  skos:exactMatch trsp:att.0ECEE93CF8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports ARK identifiers"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|Support for embedded semantic annotations"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000083>
+  a skos:Concept ;
+  skos:description "Whether the system supports and uses external tools or services for applying, managing and/or enriching metadata with semantic annotations. Possibly enabling decoupled annotation workflows."@en ;
+  skos:exactMatch trsp:att.7ABEF7ECA8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "External Semantic Annotation Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|External annotation services or tools"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000086>
+  a skos:Concept ;
+  skos:description "Which vocabulary does the system use for defining the machine-readable SLAs"@en ;
+  skos:exactMatch trsp:att.4B703E5E93 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "SLA Vocabulary"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|SLA semantics"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000088>
+  a skos:Concept ;
+  skos:description "Does the system publish the SLAs in a machine-readable format?"@en ;
+  skos:exactMatch trsp:att.3B023F9CF0 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "SLA in machine-readable format"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|SLA semantics"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00008A>
+  a skos:Concept ;
+  skos:description "Whether the repository publishes its data policy in a clearly accessible location on its website, so external partners can understand the conditions and frameworks governing data access, reuse, and preservation."@en ;
+  skos:exactMatch trsp:att.145BD6BECD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Data policy availability"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Repository has a publicly accessible data policy webpage"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00008B>
+  a skos:Concept ;
+  skos:description "The data policy is linked from metadata and/or landing pages"@en ;
+  skos:exactMatch trsp:att.145BD6BECD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Data policy is easily found"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Repository has a publicly accessible data policy webpage"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00008E>
+  a skos:Concept ;
+  skos:description "Which format or encoding is used in the data policy"@en ;
+  skos:exactMatch trsp:att.435A79A35F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports machine-readable policies"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Policy includes machine-readable terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000090>
+  a skos:Concept ;
+  skos:description "Whether the repository’s data policy is encoded in a structured, machine-readable format (e.g., JSON-LD, XML, RDF), allowing automated tools and external systems to ingest, assess, or integrate policy information."@en ;
+  skos:exactMatch trsp:att.58166D724B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Data policy includes license terms"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Policy includes machine-readable terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000091>
+  a skos:Concept ;
+  skos:description "Whether the repository maintains and displays version history of its data policy, enabling traceability and clarity over policy changes for users and collaborators."@en ;
+  skos:exactMatch trsp:att.11B8A1B690 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Policy versioning"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Policy includes versioning information"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000093>
+  a skos:Concept ;
+  skos:description "A changelog or revision history is maintained"@en ;
+  skos:exactMatch trsp:att.1A78609F7E ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Changelog or revision history"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Policy includes versioning information"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000097>
+  a skos:Concept ;
+  skos:description "Data deposits are linked to persistent identifiers and versioned consistently"@en ;
+  skos:exactMatch trsp:att.7FEEA35BFF ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Persistent Identifier and Versioning Consistency"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Inconsistent Service Workflows|Standardised Data Deposit Process"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000098>
+  a skos:Concept ;
+  skos:description "Whether the system supports a harmonised, community-aligned workflow for data publication and deposit. This includes ensuring that data providers follow agreed protocols for metadata generation, format selection, validation, and submission. The standardisation of deposit workflows fosters interoperability, simplifies reuse, and ensures consistent metadata quality across domains."@en ;
+  skos:exactMatch trsp:att.12CA661DF7 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Provides an API"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Inconsistent Service Workflows|Standardised Data Deposit Process"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00009E>
+  a skos:Concept ;
+  skos:description "Roles are linked to persistent identifiers"@en ;
+  skos:exactMatch trsp:att.2F993B25AD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports persistent identifiers for curation roles"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Undefined Roles and Responsibilities|Role Metadata in Deposit and Curation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00009F>
+  a skos:Concept ;
+  skos:description "Whether systems capture and expose metadata about individual and organizational roles involved in the deposit, curation, maintenance, and management of digital objects. This includes identifying roles such as data steward, curator, depositor, reviewer, or administrator."@en ;
+  skos:exactMatch trsp:att.2218E83FC4 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Allowed documentation URI provided"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Undefined Roles and Responsibilities|Role Metadata in Deposit and Curation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000A2>
+  a skos:Concept ;
+  skos:description "Whether the system provides clear, user-friendly pathways for users to access, understand, and effectively use its services, particularly in cross-disciplinary or multi-platform research environments. This includes the availability of comprehensive documentation, tutorials, help interfaces, and support services that lower the barrier to entry and promote effective onboarding. Accessibility also refers to the clarity of service offerings, consistency in interfaces, and ease of locating and using relevant resources."@en ;
+  skos:exactMatch trsp:att.62E1C089DB ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Support is available and integrated"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Lack of User-Centric Service Design|Accessibility and Support Documentation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000A3>
+  a skos:Concept ;
+  skos:description "Whether the system provides clear, user-friendly pathways for users to access, understand, and effectively use its services, particularly in cross-disciplinary or multi-platform research environments. This includes the availability of comprehensive documentation, tutorials, help interfaces, and support services that lower the barrier to entry and promote effective onboarding. Accessibility also refers to the clarity of service offerings, consistency in interfaces, and ease of locating and using relevant resources."@en ;
+  skos:exactMatch trsp:att.1146FD1520 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Documentation provided"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Lack of User-Centric Service Design|Accessibility and Support Documentation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000A8>
+  a skos:Concept ;
+  skos:description "List of licenses used"@en ;
+  skos:exactMatch trsp:att.543A727F84 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Licenses used"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|License Compatibility and Reusability|License alignment and combinability"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000A9>
+  a skos:Concept ;
+  skos:description "Publishing compatibillity matrix or guidance on combining licenses"@en ;
+  skos:exactMatch trsp:att.49EE16D366 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Guidance or matrix combining licenses"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|License Compatibility and Reusability|License alignment and combinability"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000AA>
+  a skos:Concept ;
+  skos:description "Guidance for users how to choose combinable licenses"@en ;
+  skos:exactMatch trsp:att.7C3A4C601F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "User guidance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|License Compatibility and Reusability|License alignment and combinability"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000AB>
+  a skos:Concept ;
+  skos:description "URI is published to the license policy in use"@en ;
+  skos:exactMatch trsp:att.7EC681717D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "License policy"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|License Compatibility and Reusability|Use of standardized open licenses"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000AC>
+  a skos:Concept ;
+  skos:description "Indicates which license is set by default when none is provided by the depositor"@en ;
+  skos:exactMatch trsp:att.141AB906EC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Default license"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|License Compatibility and Reusability|Use of standardized open licenses"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000AD>
+  a skos:Concept ;
+  skos:description "List of supported license types is published"@en ;
+  skos:exactMatch trsp:att.543A727F84 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Standardized open licenses used"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|License Compatibility and Reusability|Use of standardized open licenses"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000AE>
+  a skos:Concept ;
+  skos:description "Publishes the standard vocabularies or schemas used for licenses"@en ;
+  skos:exactMatch trsp:att.6AF56A372D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Vocabulary and standards used"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Clarity and Automation of Legal Conditions|Machine-readable licensing terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000AF>
+  a skos:Concept ;
+  skos:description "Metadata includes a URI to a machine-readable license expression"@en ;
+  skos:exactMatch trsp:att.3E5176E2B8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "URI resolution"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Clarity and Automation of Legal Conditions|Machine-readable licensing terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000B0>
+  a skos:Concept ;
+  skos:description "Metadata includes machine-readable license format"@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Machine-readable license format"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Clarity and Automation of Legal Conditions|Machine-readable licensing terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000B3>
+  a skos:Concept ;
+  skos:description "Access rights and usage conditions for data should be clearly expressed in metadata to inform users and enable automated decision-making."@en ;
+  skos:exactMatch trsp:att.2F39DE4E78 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Machine-Readable Access and Usage Conditions"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Clarity and Automation of Legal Conditions|Metadata describing access and use conditions"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000B7>
+  a skos:Concept ;
+  skos:description "Metadata includes justification for the applied restriction"@en ;
+  skos:exactMatch trsp:att.4F40729393 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Justification for restriction"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Restriction Handling and Compliance|Documentation of applicable restrictions"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000B9>
+  a skos:Concept ;
+  skos:description "URI to restriction policies and or legal guidance"@en ;
+  skos:exactMatch trsp:att.145BD6BECD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Restriction Policy and Legal Guidance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Restriction Handling and Compliance|Documentation of applicable restrictions"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000BB>
+  a skos:Concept ;
+  skos:description "Repositories and services should align with applicable legal frameworks, including GDPR and national open data laws, to ensure lawful access, storage, and sharing."@en ;
+  skos:exactMatch trsp:att.64A44F5193 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Provides documentation URI"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law, Institutional Policy|Policy and Regulatory Alignment|Alignment with EU and national data policies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000BF>
+  a skos:Concept ;
+  skos:description "Metadata includes license mandate information"@en ;
+  skos:exactMatch trsp:att.08C2A995C0 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "License Mandate Metadata"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law, Institutional Policy|Policy and Regulatory Alignment|Evaluation of license mandates at different levels"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000C3>
+  a skos:Concept ;
+  skos:description "Access policies are publicly available"@en ;
+  skos:exactMatch trsp:att.145BD6BECD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Access policy exposed"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|FAIR Metadata Despite Restrictions to Data Access|Publishing of access policies even for restricted content"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000C4>
+  a skos:Concept ;
+  skos:description "Human readable access documentation is referred to by URI"@en ;
+  skos:exactMatch trsp:att.550348356C ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Human readable access documention"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|FAIR Metadata Despite Restrictions to Data Access|Publishing of access policies even for restricted content"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000C5>
+  a skos:Concept ;
+  skos:description "Machine-readable access policies are supported"@en ;
+  skos:exactMatch trsp:att.58166D724B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Machine-readable access policies"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|FAIR Metadata Despite Restrictions to Data Access|Publishing of access policies even for restricted content"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000C6>
+  a skos:Concept ;
+  skos:description "Policy or guidance exist for which content can be deposited into the repository"@en ;
+  skos:exactMatch trsp:att.6D6A09147B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Content Deposit Policy"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Applicability and Alignment|Alignment"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000C7>
+  a skos:Concept ;
+  skos:description "Guidance service for depositors is available to guide them to the most appropriate repository"@en ;
+  skos:exactMatch trsp:att.27198D2C3B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Depositor Guidance Service"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Applicability and Alignment|Alignment"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000C8>
+  a skos:Concept ;
+  skos:description "Policy or guidance alignment is verified for submissions"@en ;
+  skos:exactMatch trsp:att.24C260AA9C ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Submission Policy Alignment Verification"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Applicability and Alignment|Alignment"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000CD>
+  a skos:Concept ;
+  skos:description "The repository verifies that the submission was made by a researcher or someone making a deposit in a research context, and that it is a dataset associated with original research"@en ;
+  skos:exactMatch trsp:att.301A364D55 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Research Submission Verification"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Authenticity and Originality|Research Origin Verified"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000CE>
+  a skos:Concept ;
+  skos:description "maDMP is available and linked"@en ;
+  skos:exactMatch trsp:att.5E50766D16 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "maDMP Availability and Linking"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Authenticity and Originality|Research Origin Verified"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000D0>
+  a skos:Concept ;
+  skos:description "Repositories can inspect provenance information to confirm the authenticity of work submitted for publication"@en ;
+  skos:exactMatch trsp:att.72DE0527E3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Documentation link available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Authenticity and Originality|Provenance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000D7>
+  a skos:Concept ;
+  skos:description "The repository verifies whether personal data is included in the deposit, and if so, follows a procedure to determine the level of protection required and implements it"@en ;
+  skos:exactMatch trsp:att.2EC221BD80 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Access policy available - GDPR"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|GDPR"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000D9>
+  a skos:Concept ;
+  skos:description "The repository verifies whether personal data is included in the deposit, and if so, follows a procedure to determine the level of protection required and implements it"@en ;
+  skos:exactMatch trsp:att.2EC221BD80 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Defines access policy - GDPR"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|GDPR"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000DA>
+  a skos:Concept ;
+  skos:description "The repository verifies whether personal data is included in the deposit, and if so, follows a procedure to determine the level of protection required and implements it"@en ;
+  skos:exactMatch trsp:att.2EC221BD80 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Attribute support available - GDPR"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|GDPR"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000DB>
+  a skos:Concept ;
+  skos:description "Metadata standards & vocabulary used to explicitly indicate the rights"@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Access Rights Metadata"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Legal Interoperability|Unclear permissions|Right statement standardisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000E3>
+  a skos:Concept ;
+  skos:description "The repository uses commonly accepted machine readable standard terms (or URIs) to indicate licenses"@en ;
+  skos:exactMatch trsp:att.3E5176E2B8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Licensing conflicts|License standarisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000E4>
+  a skos:Concept ;
+  skos:description "The repository uses commonly accepted machine readable standard terms (or URIs) to indicate licenses"@en ;
+  skos:exactMatch trsp:att.3E5176E2B8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Defines access license"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Licensing conflicts|License standarisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000E6>
+  a skos:Concept ;
+  skos:description "The repository provides user guidance to select the most appropriate license"@en ;
+  skos:exactMatch trsp:att.7C3A4C601F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Standardized open licenses used - guidance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Licensing conflicts|License guidance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000E7>
+  a skos:Concept ;
+  skos:description "The repository maintains a registry or list of accepted licenses"@en ;
+  skos:exactMatch trsp:att.543A727F84 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Attribute support available - Licence provision"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Licensing conflicts|Licence provision"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000E8>
+  a skos:Concept ;
+  skos:description "The repository regularly checks assigned licenses and has workflows in place to replace outdated or invalid licenses in a legally compliant manner."@en ;
+  skos:exactMatch trsp:att.3FD2C99B44 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Licence stewardship"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Licensing conflicts|Licence stewardship"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000E9>
+  a skos:Concept ;
+  skos:description "The repository exposes policies in a standardised way."@en ;
+  skos:exactMatch trsp:att.58166D724B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Explicit policy indication"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Institutional Policy|Inconsistent policies|Policy standardisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000EA>
+  a skos:Concept ;
+  skos:description "The repository uses a controlled vocabulary to indicate the policy type of its policy documents."@en ;
+  skos:exactMatch trsp:att.435A79A35F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Defines access policy vocabulary"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Institutional Policy|Inconsistent policies|Policy (type) provision"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000ED>
+  a skos:Concept ;
+  skos:description "The repository provides mechanisms and tools to assess the legal compliance of its assets."@en ;
+  skos:exactMatch trsp:att.64A44F5193 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Attribute support available - Legal clearance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law|Legal uncertainty|Legal clearance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000F0>
+  a skos:Concept ;
+  skos:description "The repository has tools to perform ethical assessments"@en ;
+  skos:exactMatch trsp:att.56F24C24C3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Attribute support available - Ethics clearance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Ethics Clearance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000F1>
+  a skos:Concept ;
+  skos:description "The repository manages its users' contracts and consents and assigns them to individual digital objects as necessary such as preservation agreements etc."@en ;
+  skos:exactMatch trsp:att.54339656E9 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Documentation link available - Consent"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Contract / Preservation Agreement, Technical Interoperability, Semantic Interoperability, Legal Interoperability, Contextual Data Quality, Metadata Quality, Technical Data Quality, Copyright & Law, Licensing|Documentation gaps|Contract and consent management"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000F3>
+  a skos:Concept ;
+  skos:description "The repository is able to show the extent to which its AIPs fulfil the requirements of the OAIS Information model."@en ;
+  skos:exactMatch trsp:att.2B5E85FAE5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Requires specific metadata formats"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of well defined semantics for AIPs|Evaluaton of AIPs against the semantics of the OAIS Information Model"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000F4>
+  a skos:Concept ;
+  skos:description "AIPs from a repository can be tested and assessed in a standardised way for their completeness."@en ;
+  skos:exactMatch trsp:att.4EA572A954 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "AIP Completeness Assessment"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of well defined semantics for AIPs|Evaluaton of AIPs against the semantics of the OAIS Information Model"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0000FF>
+  a skos:Concept ;
+  skos:description "The curator, or the system includes a FAIR score in the deposit and publishes them on different levels."@en ;
+  skos:exactMatch trsp:att.3C89A4DF3F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Attribute support available - FAIR assessment aggregated score"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Automated FAIR Metadata assessment|FAIR assessment aggregated score"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000107>
+  a skos:Concept ;
+  skos:description "Metadata needs to conform to metadata standards or schemas relevant to the domain or general best practice. Repositories should declare which metadata schema(s) they use and support interoperability via mappings."@en ;
+  skos:exactMatch trsp:att.1DD721CC5B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Provides metadata schema mappings"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Metadata Completeness|Metadata Standards Alignment"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00010B>
+  a skos:Concept ;
+  skos:description "A repository supports metadata in multiple languages to broaden accessibility."@en ;
+  skos:exactMatch trsp:att.42A3D7A518 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Multilingual Metadata Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Multilingual Metadata|Language Localization and indexation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00010E>
+  a skos:Concept ;
+  skos:description "Metadata holds sufficient context for reuse of the data, such as provenance information and usage license."@en ;
+  skos:exactMatch trsp:att.67DE43D8DF ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supports provenance metadata"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Authenticity and Originality|Provenance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00010F>
+  a skos:Concept ;
+  skos:description "The repository or service is able to extract relevant technical metadata from files based on the defined significant properties."@en ;
+  skos:exactMatch trsp:att.25D8680361 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Technical Metadata Extraction"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Lack documented properties of files in a repository|Technical metadata extraction"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000111>
+  a skos:Concept ;
+  skos:description "Machine-actionable template for each file format supported"@en ;
+  skos:exactMatch trsp:att.552D4D7CBF ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Machine-Actionable File Format Templates"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Lack documented properties of files in a repository|Significant properties definition"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000114>
+  a skos:Concept ;
+  skos:description "Indication of granularity for each file format (file format version, profiles)"@en ;
+  skos:exactMatch trsp:att.45E4291E97 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "File Format Granularity Specification"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format identification"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000115>
+  a skos:Concept ;
+  skos:description "Provides a possible integration of several different tools for different file formats"@en ;
+  skos:exactMatch trsp:att.6BA2330E96 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Multi-Tool File Format Integration"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format identification"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000116>
+  a skos:Concept ;
+  skos:description "Reports identified file formats in a standardised, machine actionable manner by linking to a file type registry URI"@en ;
+  skos:exactMatch trsp:att.6E3855425F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Standardised File Format Reporting"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format identification"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000117>
+  a skos:Concept ;
+  skos:description "Provides a link to file format registries used"@en ;
+  skos:exactMatch trsp:att.6E3855425F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Link to used file format registries"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format identification"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00011D>
+  a skos:Concept ;
+  skos:description "Files in formats that have become obsolete are migrated to formats that are sustainable."@en ;
+  skos:exactMatch trsp:att.720D076722 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Migration to sustainable formats"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Files are not in a supported or sustainable file format|Format normalization"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00011E>
+  a skos:Concept ;
+  skos:description "A service is available which provide guidance for high-quality format conversions"@en ;
+  skos:exactMatch trsp:att.6A439A6743 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Guidance for format conversions - normalisation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Files are not in a supported or sustainable file format|Format normalization"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000120>
+  a skos:Concept ;
+  skos:description "A service is available which provide guidance for high-quality format conversions"@en ;
+  skos:exactMatch trsp:att.3B8FD2CB5F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Guidance for format conversions - migration"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Files are stored in file formats that are obsolete|Format migration"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000121>
+  a skos:Concept ;
+  skos:description "Supported harvesting protocols"@en ;
+  skos:exactMatch trsp:att.4CB4F7ED15 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Harvesting protocols"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000122>
+  a skos:Concept ;
+  skos:description "Which global PID initiatives are aligned with the repository policy?"@en ;
+  skos:exactMatch trsp:att.2901B9E359 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Alignment with Global PID Initiatives"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Clear EOSC PID policy and lifecycle tracking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000123>
+  a skos:Concept ;
+  skos:description "Does the repository resolve external PIDs?"@en ;
+  skos:exactMatch trsp:att.1A4192F248 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Resolves external PIDs"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Cross-community PID harmonisation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000124>
+  a skos:Concept ;
+  skos:description "Which type of PID is used in the repository"@en ;
+  skos:exactMatch trsp:att.2F993B25AD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Repository PID Type"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Machine-resolvable PIDs"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000127>
+  a skos:Concept ;
+  skos:description "The TDA should document commonly encountered file format validation errors and their solutions in a regularly maintained database."@en ;
+  skos:exactMatch trsp:att.29A8E8970A ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "File Format Validation error database"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format validation error database"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000129>
+  a skos:Concept ;
+  skos:description "Repository is aware of tools that can be implemented for file format transformation actions."@en ;
+  skos:exactMatch trsp:att.6A439A6743 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Awareness of file format transformation tools"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Files are not in a supported or sustainable file format|Format transformation tools registry"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00012A>
+  a skos:Concept ;
+  skos:description "The repository verifies whether personal data is included in the deposit (including pseudonymised data), and if so, follows a procedure to determine the level of protection required and implements it"@en ;
+  skos:exactMatch trsp:att.2EC221BD80 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Access policy available - Legal - GDPR Compliance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law|Legal and Regulatory|Legal - GDPR Compliance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00012B>
+  a skos:Concept ;
+  skos:description "The repository verifies whether personal data is included in the deposit (including pseudonymised data), and if so, follows a procedure to determine the level of protection required and implements it"@en ;
+  skos:exactMatch trsp:att.2EC221BD80 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Attribute support available - Legal - GDPR Compliance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law|Legal and Regulatory|Legal - GDPR Compliance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00012F>
+  a skos:Concept ;
+  skos:description "The repository verifies to the best of its knowledge that outputs are the result of a research process for which ethics clearance was obtained, including provision for, and specifics of, data sharing when gaining consent."@en ;
+  skos:exactMatch trsp:att.56F24C24C3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Defines access policy - Ethics"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Ethics Clearance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000130>
+  a skos:Concept ;
+  skos:description "The consent forms are linked or available"@en ;
+  skos:exactMatch trsp:att.1B3A0A1CF6 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Consent form"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Ethics Clearance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000131>
+  a skos:Concept ;
+  skos:description "The documentation for ethics clearance are linked or available"@en ;
+  skos:exactMatch trsp:att.61C5AB7572 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Documentation link available - Ethics Clearance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Ethics Clearance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000133>
+  a skos:Concept ;
+  skos:description "Repositories ensure that all access conditions, restrictions, or limitations are transparent, and preferably machine-readable."@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "REST API standards documented"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing, Ethical Constraints|Transparency of Access and Rights|Transparency"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000138>
+  a skos:Concept ;
+  skos:description "Repositories should re-appraise the objects in the repository from time to time, either with scheduled frequency or due to defined triggers."@en ;
+  skos:exactMatch trsp:att.497C7ACE99 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Object Reappraisal Policy"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Licences and Machine Actionability|Re-appraisal"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00013B>
+  a skos:Concept ;
+  skos:description "Evidence is provided that an ethics & right-focused checklist exist for curators and depositors"@en ;
+  skos:exactMatch trsp:att.56F24C24C3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Guidance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law, Institutional Policy|Policy and Regulatory Alignment|Subject Protection"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00013E>
+  a skos:Concept ;
+  skos:description "Repositories should make a list of applicable policies available in a machine-readable way"@en ;
+  skos:exactMatch trsp:att.03110A5773 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Provides documentation link"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law, Institutional Policy|Policy and Regulatory Alignment|Inventory"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000141>
+  a skos:Concept ;
+  skos:description "Does the repository publish a sensitive data policy, and if so, is there evidence available?"@en ;
+  skos:exactMatch trsp:att.2B81C65FFB ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Personal/ Sensitive Data Policy exists"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|GDPR"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000142>
+  a skos:Concept ;
+  skos:description "Does the repository publish a privacy statement, and if so, is there evidence available?"@en ;
+  skos:exactMatch trsp:att.20EFD54EFD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Privacy Statement available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|GDPR"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000143>
+  a skos:Concept ;
+  skos:description "Does the repository publish a personal data removal procedure, and if so, is there evidence available?"@en ;
+  skos:exactMatch trsp:att.434F29EDB9 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Personal Data Removal Request Procedure exists"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|GDPR"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000144>
+  a skos:Concept ;
+  skos:description "Confirmation of personal data removal can be provided"@en ;
+  skos:exactMatch trsp:att.39D810EEC9 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Confirmation of personal data removal can be provided"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|GDPR"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000145>
+  a skos:Concept ;
+  skos:description "Confirmation that the privacy statement is GDPR compliant"@en ;
+  skos:exactMatch trsp:att.5D17940B6B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "GDPR-Compliant Privacy Statement is available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|GDPR"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000146>
+  a skos:Concept ;
+  skos:description "Ethics clearance forms part of repository policy, and evidence (link to relevant policy)"@en ;
+  skos:exactMatch trsp:att.61C5AB7572 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Ethics clearance-related policy"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Ethics Clearance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000147>
+  a skos:Concept ;
+  skos:description "Confirmation that the repository links consent forms, link to an example"@en ;
+  skos:exactMatch trsp:att.2D03EB4E9B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Consent forms are linked or available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Ethics Clearance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000148>
+  a skos:Concept ;
+  skos:description "Confirmation that the repository links  ethics clearance documentation, link to an example"@en ;
+  skos:exactMatch trsp:att.61C5AB7572 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Ethics clearance documents are linked or available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Ethics Clearance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000149>
+  a skos:Concept ;
+  skos:description "List of machine-actionable licence identifiers"@en ;
+  skos:exactMatch trsp:att.3E5176E2B8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Machine-actionable licences used"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing, Ethical Constraints|Transparency of Access and Rights|Transparency"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00014A>
+  a skos:Concept ;
+  skos:description "Link to REL vocabularies used by the repository"@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Provisions are encoded using a published vocabulary"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing, Ethical Constraints|Transparency of Access and Rights|Transparency"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00014B>
+  a skos:Concept ;
+  skos:description "Confirmation that the repository maintains a registry of access requests and outcomes"@en ;
+  skos:exactMatch trsp:att.5DCB41BB3F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Record of access requests and outcomes"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Balancing Rights and Openness|TRUST-Access Conditions"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00014C>
+  a skos:Concept ;
+  skos:description "Actors (agents) expected to act on licence provisions and mentioned in policies are based on a specific model or vocabulary"@en ;
+  skos:exactMatch trsp:att.0CBE414A78 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Actors expected to act on the licence"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing, Ethical Constraints|Transparency of Access and Rights|Granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00014D>
+  a skos:Concept ;
+  skos:description "At what level of granularity does the repository licence apply? Values from a controlled list."@en ;
+  skos:exactMatch trsp:att.5960A93A27 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Scope of the licence: object level, dataset level, etc."@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing, Ethical Constraints|Transparency of Access and Rights|Granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00014E>
+  a skos:Concept ;
+  skos:description "The most recent date on which re-appraisal of the repository holdings were performed"@en ;
+  skos:exactMatch trsp:att.36E9CFFB4B ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Last date of re-appraisal"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Licences and Machine Actionability|Re-appraisal"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00014F>
+  a skos:Concept ;
+  skos:description "Evidence of a disclosure risk assessment process is provided"@en ;
+  skos:exactMatch trsp:att.08C2A995C0 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Disclosure RIsk Management"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Balancing Rights and Openness|Disclosure Risk"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000150>
+  a skos:Concept ;
+  skos:description "Confirmation of public domain licence for bibliographic and non-sensitive metadata"@en ;
+  skos:exactMatch trsp:att.45F7A22412 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Bibliographic/ non-sensitive metadata licence"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing|Open Metadata and Bibliographic Information|Metadata"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000151>
+  a skos:Concept ;
+  skos:description "The repository addresses GDPR concerns about bibliographic metadata in its privacy statement"@en ;
+  skos:exactMatch trsp:att.6B7CED5897 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Bibliographic metadata in privacy statement"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law|Legal and Regulatory|Legal - GDPR Compliance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000152>
+  a skos:Concept ;
+  skos:description "The repository addresses the rights of subjects and ethical considerations on research subjects in a policy, and evidence is available."@en ;
+  skos:exactMatch trsp:att.24650A32BA ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Evidence of policy addressing ethics and rights of subjects"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law, Institutional Policy|Policy and Regulatory Alignment|Subject Protection"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000153>
+  a skos:Concept ;
+  skos:description "Repositories clearly state the need for proper attribution of content that is reused"@en ;
+  skos:exactMatch trsp:att.769A9F52BD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Reuse policies and guidelines exist"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethical constraints|Attribution"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000154>
+  a skos:Concept ;
+  skos:description "The repository keeps record of whether end users of data assent to licence conditions prior to download."@en ;
+  skos:exactMatch trsp:att.0CBE414A78 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Licence assent is recorded"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethical constraints|Attribution"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000155>
+  a skos:Concept ;
+  skos:description "The repository provides a list of applicable policies in a concise summary"@en ;
+  skos:exactMatch trsp:att.145BD6BECD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Policy list"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law, Institutional Policy|Policy and Regulatory Alignment|Inventory"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000156>
+  a skos:Concept ;
+  skos:description "The repository publishes a data security and integrity summary that is available on request"@en ;
+  skos:exactMatch trsp:att.181F35E46A ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Data security and integrity information"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing, Copyright & Law|Sovereignty|Infrastructure Location"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000157>
+  a skos:Concept ;
+  skos:description "The country in which data and metadata storage is located"@en ;
+  skos:exactMatch trsp:att.1DB0A6F7DB ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Indication of locality (country) of data storage"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing, Copyright & Law|Sovereignty|Infrastructure Location"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000158>
+  a skos:Concept ;
+  skos:description "Repositories should publish which FAIR assessment tool(s) was used."@en ;
+  skos:exactMatch trsp:att.50ADCE9E0D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Provides a list of used FAIR assessment tools"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Automated FAIR Metadata assessment|FAIR assessment tool"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00015A>
+  a skos:Concept ;
+  skos:description "The curator, or the system includes a FAIR score in the deposit and publishes them on different levels."@en ;
+  skos:exactMatch trsp:att.4673784806 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Aggregated FAIR assessment score on collection level"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Automated FAIR Metadata assessment|FAIR assessment aggregated score"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00015B>
+  a skos:Concept ;
+  skos:description "The curator, or the system includes a FAIR score in the deposit and publishes them on different levels."@en ;
+  skos:exactMatch trsp:att.74778C177C ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Aggregated FAIR assessment score on repository level"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Automated FAIR Metadata assessment|FAIR assessment aggregated score"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00015C>
+  a skos:Concept ;
+  skos:description "Repository affordances should be findable not only by humans, but also by machines."@en ;
+  skos:exactMatch trsp:att.236C15FEA4 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Repository compliance to the FAIRiCAT specifications"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Machine-readable rights for digital preservation of AIPs|Repository affordances discovery"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00015D>
+  a skos:Concept ;
+  skos:description "Metadata of an object should be findable not only by humans, but also by machines."@en ;
+  skos:exactMatch trsp:att.6F05B292BD ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Repository compliance to the FAIR Signposting specifications"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Machine-readable rights for digital preservation of AIPs|Metadata discovery"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00015E>
+  a skos:Concept ;
+  skos:description "Repository should offer crosswalks to facilitate metadata schema compliance"@en ;
+  skos:exactMatch trsp:att.3B49F36F75 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata Schema Crosswalks"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Crosswalks between metadata schemas"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00015F>
+  a skos:Concept ;
+  skos:description "Metadata holds sufficient context for reuse of the data, such as usage license"@en ;
+  skos:exactMatch trsp:att.7F80554D90 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata records include a data usage license statement from a (controlled) license list."@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Metadata Completeness|Usage license"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000160>
+  a skos:Concept ;
+  skos:description "Metadata holds sufficient context for reuse of the data, such as provenance information"@en ;
+  skos:exactMatch trsp:att.1A78609F7E ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Provenance information is part of the metadata"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Metadata Completeness|Metadata Provenance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000161>
+  a skos:Concept ;
+  skos:description "Metadata is published in a format and structure that computers can parse and understand with minimal human intervention."@en ;
+  skos:exactMatch trsp:att.7298144E24 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata can be retrieved via machine-accessible services or APIs"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Machine-readable rights for digital preservation of AIPs|Structured and parseable metadata"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000162>
+  a skos:Concept ;
+  skos:description "Relevant documentation should be included in the deposit"@en ;
+  skos:exactMatch trsp:att.00C02C55DC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Documentation availability is verified"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Completeness|Documentation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000163>
+  a skos:Concept ;
+  skos:description "The repository/system publishes guidance on improvement of the FAIRness score of a deposit, so that a depositor can use this to improve the FAIRness of the deposit."@en ;
+  skos:exactMatch trsp:att.176CC246A8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Expose guidance on FAIRness"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Automated FAIR Metadata assessment|Guidance on FAIR compliance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000164>
+  a skos:Concept ;
+  skos:description "Does the PID metadata include lifecycle status?"@en ;
+  skos:exactMatch trsp:att.1A78609F7E ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "PID Lifecycle Status Metadata"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Clear EOSC PID policy and lifecycle tracking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000165>
+  a skos:Concept ;
+  skos:description "Are changes to metadata or PID records logged and timestamped?"@en ;
+  skos:exactMatch trsp:att.1A78609F7E ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata and PID Change Logging"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Persistent Identifier (PID) Diversity and Policy Gaps|Clear EOSC PID policy and lifecycle tracking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000167>
+  a skos:Concept ;
+  skos:description "Service description has been published"@en ;
+  skos:exactMatch trsp:att.515B8F83FB ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Service description"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of open and uniform interface specifications|Reference implementations and API guidelines"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000168>
+  a skos:Concept ;
+  skos:description "Support filtering based on content properties"@en ;
+  skos:exactMatch trsp:att.562C603E9F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Content Filtering Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000169>
+  a skos:Concept ;
+  skos:description "The repository accepts data from other sources than its own community"@en ;
+  skos:exactMatch trsp:att.115BEEC616 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "External Data Acceptance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00016A>
+  a skos:Concept ;
+  skos:description "Publishes which metadata standards the repository supports"@en ;
+  skos:exactMatch trsp:att.6C03AB58B8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supported Metadata Standards Publication"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00016B>
+  a skos:Concept ;
+  skos:description "Publishes if the repository supports crosswalks"@en ;
+  skos:exactMatch trsp:att.3B49F36F75 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata Crosswalk Support Publication"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00016C>
+  a skos:Concept ;
+  skos:description "Documentation exist for the service used to translate, transform and/or mediate between different metadata and data formats. (Package structures, file formats, metadata standards)"@en ;
+  skos:exactMatch trsp:att.0FAB8D7E65 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Data Translation and Mediation Service Documentation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Integration Tools for Bridging Formats"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00016D>
+  a skos:Concept ;
+  skos:description "Publishes tools used to translate, transform and/or mediate service between different data formats"@en ;
+  skos:exactMatch trsp:att.6A439A6743 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Data Transformation Tool Publication"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Integration Tools for Bridging Formats"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00016F>
+  a skos:Concept ;
+  skos:description "Does the system publish human-readable SLAs linked to the machine-readable one"@en ;
+  skos:exactMatch trsp:att.3B023F9CF0 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Human readable version linked to machine-readable SLA"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|SLA semantics"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000170>
+  a skos:Concept ;
+  skos:description "Is the system declaring community-aligned definitions for services attributes such as uptime, ticket response time ..?"@en ;
+  skos:exactMatch trsp:att.24C6E69FBF ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Service Level Definition Alignment"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|SLA semantics"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000171>
+  a skos:Concept ;
+  skos:description "List of fields that can be queried per each level of granularity"@en ;
+  skos:exactMatch trsp:att.374F095E69 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Queryable Fields by Granularity"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000172>
+  a skos:Concept ;
+  skos:description "Query language used"@en ;
+  skos:exactMatch trsp:att.18CE7D92FA ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "API Query Language"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000173>
+  a skos:Concept ;
+  skos:description "Support for linked entity resolution"@en ;
+  skos:exactMatch trsp:att.1A4192F248 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Linked Entity Resolution Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000174>
+  a skos:Concept ;
+  skos:description "Result format of the API"@en ;
+  skos:exactMatch trsp:att.207398D3A8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "API Result Format"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000175>
+  a skos:Concept ;
+  skos:description "Support for pagination"@en ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "API Pagination Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000176>
+  a skos:Concept ;
+  skos:description "Metadata standards used by the API"@en ;
+  skos:exactMatch trsp:att.6C03AB58B8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "API Metadata Standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000177>
+  a skos:Concept ;
+  skos:description "Mappings are checked on semantic correctness"@en ;
+  skos:exactMatch trsp:att.699F35CDBC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Semantic Mapping Validation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Crosswalks between metadata schemas"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000178>
+  a skos:Concept ;
+  skos:description "URI to documentation of license mandate checks"@en ;
+  skos:exactMatch trsp:att.6A5BF0698F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "License Mandate Check Documentation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Copyright & Law, Institutional Policy|Policy and Regulatory Alignment|Evaluation of license mandates at different levels"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000179>
+  a skos:Concept ;
+  skos:description "Documentation is used in workflows for planning and evaluating possible file format conversion paths and processes."@en ;
+  skos:exactMatch trsp:att.57D4BD2121 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "File Format Conversion Planning Documentation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Lack documented properties of files in a repository|Significant properties definition"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00017A>
+  a skos:Concept ;
+  skos:description "Peer-reviewed publication is linked"@en ;
+  skos:exactMatch trsp:att.1A4192F248 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Linked Peer-Reviewed Publication"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Authenticity and Originality|Research Origin Verified"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00017B>
+  a skos:Concept ;
+  skos:description "Repository has defined a process for updating the database."@en ;
+  skos:exactMatch trsp:att.29A8E8970A ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "File Format Validation Error Update Process"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format validation error database"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00017C>
+  a skos:Concept ;
+  skos:description "Allows role assignment during data submission and curation processes"@en ;
+  skos:exactMatch trsp:att.7AD9B8BBCB ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Role Assignment"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Undefined Roles and Responsibilities|Role Metadata in Deposit and Curation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00017D>
+  a skos:Concept ;
+  skos:description "Provenance of role-related actions are recorded and auditable"@en ;
+  skos:exactMatch trsp:att.1A78609F7E ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Role Action Provenance Auditing"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Undefined Roles and Responsibilities|Role Metadata in Deposit and Curation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00017E>
+  a skos:Concept ;
+  skos:description "Older version of policies are archived and accessible"@en ;
+  skos:exactMatch trsp:att.11B8A1B690 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Policy Version Archiving and Accessibility"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Policy includes versioning information"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00017F>
+  a skos:Concept ;
+  skos:description "Specific access and reuse conditions are semantically tagged"@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Semantic Access and Reuse Tagging"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Policy includes machine-readable terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000180>
+  a skos:Concept ;
+  skos:description "Tools can automatically parse policy clauses"@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Automated License and Policy Parsing"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Misalignment of Institutional Policies|Policy includes machine-readable terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000181>
+  a skos:Concept ;
+  skos:description "Publishes an API which offers an endpoint to query or explore linked vocabularies"@en ;
+  skos:exactMatch trsp:att.51C655BFB0 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Query linked vocabularies"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Machine-readable vocabulary linking"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000182>
+  a skos:Concept ;
+  skos:description "System adds languages tags to vocabularies"@en ;
+  skos:exactMatch trsp:att.42A3D7A518 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata Language Tagging"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Support for multilingual vocabularies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000183>
+  a skos:Concept ;
+  skos:description "Allows users to browse or search in their preferred language and which languages are supported"@en ;
+  skos:exactMatch trsp:att.60F7491B6A ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Multilingual Search and Browsing Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Support for multilingual vocabularies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000184>
+  a skos:Concept ;
+  skos:description "Which languages are supported per vocabulary"@en ;
+  skos:exactMatch trsp:att.78A504B99F ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Vocabulary Language Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Support for multilingual vocabularies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000185>
+  a skos:Concept ;
+  skos:description "Default fallback language"@en ;
+  skos:exactMatch trsp:att.02B14C3A2C ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Default Fallback Language"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Support for multilingual vocabularies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000186>
+  a skos:Concept ;
+  skos:description "Identifiers return structured machine-readable data"@en ;
+  skos:exactMatch trsp:att.6EED29CAE5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Structured Identifier Resolution"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Support for semantic identifier dereferencing"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000187>
+  a skos:Concept ;
+  skos:description "Which metadata values are associated with URI-based identifiers"@en ;
+  skos:exactMatch trsp:att.353453C585 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "URI Identifier Metadata Association"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Use of PIDs for semantic terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000188>
+  a skos:Concept ;
+  skos:description "Which authoritative sources are used for entities"@en ;
+  skos:exactMatch trsp:att.6AF56A372D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Authoritative Source Usage"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Use of PIDs for semantic terms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000189>
+  a skos:Concept ;
+  skos:description "Enforces the use of community-agreed metadata standards during deposit"@en ;
+  skos:exactMatch trsp:att.7F192DC5FF ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Enforcement of community-agreed standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Inconsistent Service Workflows|Standardised Data Deposit Process"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00018A>
+  a skos:Concept ;
+  skos:description "Semantic annotations can be bound to objects via PIDs"@en ;
+  skos:exactMatch trsp:att.0ECEE93CF8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "PID-Linked Semantic Annotations"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|External annotation services or tools"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00018B>
+  a skos:Concept ;
+  skos:description "Provides a interface for manual or assisted semantic enrichment"@en ;
+  skos:exactMatch trsp:att.67D4ECB749 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Semantic Enrichment Interface"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|External annotation services or tools"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00018C>
+  a skos:Concept ;
+  skos:description "Publishes context or vocabularies used in the semantic markup"@en ;
+  skos:exactMatch trsp:att.51C655BFB0 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Published Semantic Contexts and Vocabularies"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|Support for embedded semantic annotations"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00018D>
+  a skos:Concept ;
+  skos:description "Access rights statement is published"@en ;
+  skos:exactMatch trsp:att.550348356C ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Rights statement"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Legal Interoperability|Unclear permissions|Access rights"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00018E>
+  a skos:Concept ;
+  skos:description "Standard vocabulary used for access rights"@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Vocabulary used for access rights"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Legal Interoperability|Unclear permissions|Access rights"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00018F>
+  a skos:Concept ;
+  skos:description "Supports embargo expriation and enforcement"@en ;
+  skos:exactMatch trsp:att.6AA7258DA9 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Embargo Expiration and Enforcement"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Restriction Handling and Compliance|Embargos, redaction, and generalisation mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000190>
+  a skos:Concept ;
+  skos:description "Support data redaction or obfuscations workflows"@en ;
+  skos:exactMatch trsp:att.67E6C4912C ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Data Redaction and Obfuscation Workflow"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Restriction Handling and Compliance|Embargos, redaction, and generalisation mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000191>
+  a skos:Concept ;
+  skos:description "Metadata indicates if data has been generalised or redacted"@en ;
+  skos:exactMatch trsp:att.67E6C4912C ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Redaction Status Metadata"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Restriction Handling and Compliance|Embargos, redaction, and generalisation mechanisms"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000192>
+  a skos:Concept ;
+  skos:description "Offers a place where people can report ethical misconduct"@en ;
+  skos:exactMatch trsp:att.434B4A0632 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Ethics governance feedback mechanism"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethical constraints|Ethics governance"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000193>
+  a skos:Concept ;
+  skos:description "Evidence is provided that AIPs are conform the requirements of OAIS"@en ;
+  skos:exactMatch trsp:att.2B5E85FAE5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "AIP conformance evidence"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of consistent approach to implementing the OAIS Information Model for AIPs|Evaluation of AIP contents against the components of the OAIS Information Model"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000194>
+  a skos:Concept ;
+  skos:description "Each component of the AIPs can be mapped to a corresponding entity in the OAIS Information Model"@en ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "AIP to OAIS entity mapping"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of well defined semantics for AIPs|Evaluaton of AIPs against the semantics of the OAIS Information Model"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000195>
+  a skos:Concept ;
+  skos:description "Supports access to and exchange of its AIPs using a defined protocol and set of APIs"@en ;
+  skos:exactMatch trsp:att.6CA1A54238 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "AIP access and exchange"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of well defined mechanism for exchanging AIPs between organisations and systems|Exchange of AIPs between organisations"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000196>
+  a skos:Concept ;
+  skos:description "Supports login through federated identity providers"@en ;
+  skos:exactMatch trsp:att.2C32459481 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Federated login"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Federated Identity and Trust Frameworks|Federated Identity Support"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000197>
+  a skos:Concept ;
+  skos:description "List of supported identify providers or infrastructures"@en ;
+  skos:exactMatch trsp:att.2C32459481 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Supported identity providers"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Federated Identity and Trust Frameworks|Federated Identity Support"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000198>
+  a skos:Concept ;
+  skos:description "Accepted or mapped group/role memberships provided by identity providers"@en ;
+  skos:exactMatch trsp:att.2218E83FC4 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Accepted group and role mappings"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Federated Identity and Trust Frameworks|Federated Identity Support"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:000199>
+  a skos:Concept ;
+  skos:description "Utilised metadata attributes coming from the identity provider"@en ;
+  skos:exactMatch trsp:att.301A364D55 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Utilised identity provider attributes"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Federated Identity and Trust Frameworks|Federated Identity Support"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00019A>
+  a skos:Concept ;
+  skos:description "Evidence provided how sustainable different file formats are for preservation"@en ;
+  skos:exactMatch trsp:att.50E0581B3D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "File format sustainability evidence"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Files have not been evaluated for format appraisal (i.e. how suitable is the file format for long-term preservation)|File format appraisal"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00019B>
+  a skos:Concept ;
+  skos:description "Wrongly identified files are detected"@en ;
+  skos:exactMatch trsp:att.63101DF501 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Wrong file identification detection"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format validation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00019C>
+  a skos:Concept ;
+  skos:description "A service exist which ensures the files can be accessed with contemporary software"@en ;
+  skos:exactMatch trsp:att.3E1CA96845 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Contemporary access assurance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format validation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00019D>
+  a skos:Concept ;
+  skos:description "A service exist Invalid files are identified which a detailed error message that describes the issue"@en ;
+  skos:exactMatch trsp:att.29A8E8970A ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Invalid file identification"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format validation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00019E>
+  a skos:Concept ;
+  skos:description "Invalid files can be detected"@en ;
+  skos:exactMatch trsp:att.63101DF501 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Invalid file detection"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Files are corrupted, broken and unusable|File repair"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:00019F>
+  a skos:Concept ;
+  skos:description "Invalid files can be repaired according to a document, and is an standarized process"@en ;
+  skos:exactMatch trsp:att.09B9B96513 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Standardized file repair process"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Technical Data Quality|Files are corrupted, broken and unusable|File repair"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A0>
+  a skos:Concept ;
+  skos:description "Statistical integrity verification"@en ;
+  skos:exactMatch trsp:att.6CCE23A07E ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Statistical integrity verification"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Fraud"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A1>
+  a skos:Concept ;
+  skos:description "Plagiarism checks are performed"@en ;
+  skos:exactMatch trsp:att.6AF0D4DC26 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Plagiarism check"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Fraud"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A2>
+  a skos:Concept ;
+  skos:description "Duplicate publications are verified"@en ;
+  skos:exactMatch trsp:att.5AF211B2C5 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Duplicate publication verification"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Fraud"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A3>
+  a skos:Concept ;
+  skos:description "Legality of content is verified"@en ;
+  skos:exactMatch trsp:att.44841F89C3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Content legality verification"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Legal and Contractual Aspects|Illegal Content"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A4>
+  a skos:Concept ;
+  skos:description "Content is checked for malicious content"@en ;
+  skos:exactMatch trsp:att.1C495E8A94 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Malicious content check"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Inappropriate Content"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A5>
+  a skos:Concept ;
+  skos:description "Content is checked for nonsense or irrelevant content"@en ;
+  skos:exactMatch trsp:att.5E73BD05DF ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Content relevance check"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Ethical Constraints|Ethics Considerations|Inappropriate Content"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A6>
+  a skos:Concept ;
+  skos:description "Content is automatically checked it has the legal basis for holding and preserving its AIPs"@en ;
+  skos:exactMatch trsp:att.49C7B241EA ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Legal basis verification for AIP preservation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|Machine-readable rights for digital preservation of AIPs|Machine readable rights specifications"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A7>
+  a skos:Concept ;
+  skos:description "The rightsholder(s) consent is obtained"@en ;
+  skos:exactMatch trsp:att.49C7B241EA ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Rightsholder consent obtained"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Licensing, Ethical Constraints|Transparency of Access and Rights|Publication Consent"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A8>
+  a skos:Concept ;
+  skos:description "Service ownership is clearly documented and published"@en ;
+  skos:exactMatch trsp:att.19AF20660A ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Service ownership documentation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Undefined Roles and Responsibilities|Published Service Ownership"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001A9>
+  a skos:Concept ;
+  skos:description "Owning organization or contact point is persistenly identified"@en ;
+  skos:exactMatch trsp:att.08417EDDFC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Persistent ownership identification"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Undefined Roles and Responsibilities|Published Service Ownership"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001AA>
+  a skos:Concept ;
+  skos:description "Changes in service ownership are tracked an versioned over time"@en ;
+  skos:exactMatch trsp:att.4813ACF624 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Ownership change tracking"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Undefined Roles and Responsibilities|Published Service Ownership"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001AB>
+  a skos:Concept ;
+  skos:description "Ownership metadata is exposed through service catalogues or registries"@en ;
+  skos:exactMatch trsp:att.2DA1C98050 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Ownership metadata exposure"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Organizational Interoperability|Undefined Roles and Responsibilities|Published Service Ownership"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001AC>
+  a skos:Concept ;
+  skos:description "Publication rights are given. Part of a wider array of curator rights. Includes the rights to data and metadata improvements, publication, and in some cases, adjudicating access requests."@en ;
+  skos:exactMatch trsp:att.48C6F0C32D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Publication rights granted"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Legal Interoperability|Unclear permissions|Publishing rights"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001AD>
+  a skos:Concept ;
+  skos:description "Standard vocabulary used for publication rights"@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Standard vocabulary for publication rights"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Legal Interoperability|Unclear permissions|Publishing rights"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001AE>
+  a skos:Concept ;
+  skos:description "Able to retrieve file storage status (online/offline, in tape etc...)"@en ;
+  skos:exactMatch trsp:att.0C85A9C228 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "File storage status retrieval"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Storage Management|Online and Offline Storage Options|Retrieval and Access"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001AF>
+  a skos:Concept ;
+  skos:description "Recall from tape is automated"@en ;
+  skos:exactMatch trsp:att.2F5B9B4823 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Automated tape recall"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Storage Management|Online and Offline Storage Options|Retrieval and Access"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B0>
+  a skos:Concept ;
+  skos:description "Dependencies are verified by curators"@en ;
+  skos:exactMatch trsp:att.32048A7179 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Dependency verification by curators"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Contextual Data Quality|Completeness|Self-contained"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B1>
+  a skos:Concept ;
+  skos:description "Able to store content data on offline tape libraries"@en ;
+  skos:exactMatch trsp:att.79C13FD633 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Offline tape storage"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Storage Management|Online and Offline Storage Options|Storage Management"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B2>
+  a skos:Concept ;
+  skos:description "Proof of efficient upload/download of large files (+100gb)"@en ;
+  skos:exactMatch trsp:att.0EF898B591 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Large file transfer efficiency evidence"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Storage Management|Online and Offline Storage Options|Storage Management"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B3>
+  a skos:Concept ;
+  skos:description "List of accepted packaging standards"@en ;
+  skos:exactMatch trsp:att.01924AD3A3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Accepted packaging standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for Different Packaging Standards"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B4>
+  a skos:Concept ;
+  skos:description "List of packaging standards the service or tools can produce"@en ;
+  skos:exactMatch trsp:att.01924AD3A3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Produced packaging standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for Different Packaging Standards"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B5>
+  a skos:Concept ;
+  skos:description "The packaging standards used internally"@en ;
+  skos:exactMatch trsp:att.01924AD3A3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Internal packaging standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for Different Packaging Standards"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B6>
+  a skos:Concept ;
+  skos:description "List of packaging standards supported"@en ;
+  skos:exactMatch trsp:att.01924AD3A3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Convertible packaging standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for Different Packaging Standards"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B7>
+  a skos:Concept ;
+  skos:description "List of community-specific packaging standards supported"@en ;
+  skos:exactMatch trsp:att.01924AD3A3 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Community-specific packaging standards"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for Different Packaging Standards"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B8>
+  a skos:Concept ;
+  skos:description "Services and tools are able to auto-discover the used packing standards at ingest"@en ;
+  skos:exactMatch trsp:att.23727D6070 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Automatic packaging standard discovery"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for Different Packaging Standards"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001B9>
+  a skos:Concept ;
+  skos:description "Able to describe the technical standards and specifications followed for all aspects of serialising and packaging an AIP"@en ;
+  skos:exactMatch trsp:att.2141FF7751 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "AIP serialization and packaging standards description"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Diverse range of formats and specifications used for AIPs|The technical details of each component of an AIP are well defined and at all levels."@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001BA>
+  a skos:Concept ;
+  skos:description "Usage right and/or terms of user are published and given"@en ;
+  skos:exactMatch trsp:att.02BDA33B58 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Usage rights publication"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Legal Interoperability|Unclear permissions|Usage rights"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001BB>
+  a skos:Concept ;
+  skos:description "Standard vocabulary is used for usage rights"@en ;
+  skos:exactMatch trsp:att.6628E95EAC ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Standard vocabulary for usage rights"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Rights & Ethics|Legal Interoperability|Unclear permissions|Usage rights"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001BC>
+  a skos:Concept ;
+  skos:description "List published of controlled vocabularies used"@en ;
+  skos:exactMatch trsp:att.6AF56A372D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Published controlled vocabularies list"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Use of community-endorsed controlled vocabularies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001BD>
+  a skos:Concept ;
+  skos:description "Relation of used vocabularies with the domain it is used for"@en ;
+  skos:exactMatch trsp:att.6AF56A372D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Vocabulary-to-domain relationship"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Use of community-endorsed controlled vocabularies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001BE>
+  a skos:Concept ;
+  skos:description "List of metadata fields which use controllerd vocabularies and which vocabularies are used"@en ;
+  skos:exactMatch trsp:att.6AF56A372D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata field vocabulary usage"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Use of community-endorsed controlled vocabularies"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001BF>
+  a skos:Concept ;
+  skos:description "Able to demonstrate which semantic standards and specification are followed for the holdings of the AIP"@en ;
+  skos:exactMatch trsp:att.6AF56A372D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "AIP semantic standards compliance"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of well defined semantics for AIPs|Well defined semantics for each component of an AIP"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C0>
+  a skos:Concept ;
+  skos:description "Able to provide evidence that the holdings of an AIP are aligned with the semantics of the OAIS Information Model"@en ;
+  skos:exactMatch trsp:att.6AF56A372D ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "AIP OAIS semantic conformance evidence"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of well defined semantics for AIPs|Well defined semantics for each component of an AIP"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C1>
+  a skos:Concept ;
+  skos:description "The repository verifies that the contents of a given file conform to the rules required by the repository using a list of rules. For example, you could define that a given \"name\" field must have unique values ​​throughout the entire file."@en ;
+  skos:exactMatch trsp:att.353453C585 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Documentation references metadata profiles"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C2>
+  a skos:Concept ;
+  skos:description "Crosswalks are available from and to the metadata profiles"@en ;
+  skos:exactMatch trsp:att.3B49F36F75 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Crosswalks available"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C3>
+  a skos:Concept ;
+  skos:description "System registers its profile to a community registry"@en ;
+  skos:exactMatch trsp:att.5BDCFB83B0 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Profile to community registry"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C4>
+  a skos:Concept ;
+  skos:description "Supports extension of profile"@en ;
+  skos:exactMatch trsp:att.568D8C8984 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Extending metadata profiles"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C5>
+  a skos:Concept ;
+  skos:description "Metadata includes an explanation of the access conditions"@en ;
+  skos:exactMatch trsp:att.2F39DE4E78 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata contains explanation"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Legal Interoperability|FAIR Metadata Despite Restrictions to Data Access|Use of persistent identifiers for restricted data"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C6>
+  a skos:Concept ;
+  skos:description "Frequency of updating the index"@en ;
+  skos:exactMatch trsp:att.0CEF99A2D6 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Update frequency"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Metadata indexing at multiple levels"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C7>
+  a skos:Concept ;
+  skos:description "Publishes the format of the indexed data"@en ;
+  skos:exactMatch trsp:att.283D0EB595 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Format of indexed data"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Metadata indexing at multiple levels"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0001C9>
+  a skos:Concept ;
+  skos:description "Whether the system supports embedded semantic annotations."@en ;
+  skos:exactMatch trsp:att.0ECEE93CF8 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Embedded Semantic Annotation Support"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|Support for embedded semantic annotations"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
+
+trsp:<eden.att:0003E9>
+  a skos:Concept ;
+  skos:description "Providing translations for titles/abstracts or using multilingual thesauri for subjects."@en ;
+  skos:exactMatch trsp:att.211F98FA33 ;
+  trsp:hasProfile profile.61E7538E66 ;
+  trsp:hasProfileType trsp:profileTypeSource ;
+  skos:prefLabel "Metadata Translation Practices"@en ;
+  dcat:keyword "EDEN"@en ;
+  schema:category "Quality|Metadata Quality|Multilingual Metadata|Language Localization and indexation"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-eden-profile .
