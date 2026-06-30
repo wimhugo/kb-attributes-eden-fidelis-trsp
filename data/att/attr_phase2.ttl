@@ -7,6 +7,7 @@
 
 
 
+
 trsp:att7c68dbb456
   a skos:Concept ;
   skos:prefLabel "Governance Description"@en ;
@@ -137,6 +138,7 @@ trsp:att41eee92d9c
   owl:versionInfo "0.1" ;
   skos:broader att.678439CD93 ;
   skos:inScheme trsp:ConceptScheme .
+
 
 
 
@@ -395,6 +397,7 @@ trsp:att536a1e5734
 
 
 
+
 trsp:att4a98f89201
   a skos:Concept ;
   skos:prefLabel "Deposit Documentation Checklist"@en ;
@@ -540,6 +543,7 @@ trsp:att5a33175768
   owl:versionInfo "0.1" ;
   skos:broader att.00577FC6FC ;
   skos:inScheme trsp:ConceptScheme .
+
 
 
 
@@ -1948,26 +1952,18 @@ trsp:att01924ad3a3
 
 - List of packaging standards supported
 
-
 - List of accepted/ preferred packaging standards 
-
 
 - List of packaging standards the service or tools can export
 
-
 - The packaging standard(s) used internally
 
-
 - List of community-specific packaging standards supported"@en ;
-  schema:category "Transparency|Benefits and Constraints|Context|Capabilities|Supported Data/ Metadata Packages"@en ;
-  dcat:keyword "EDEN"@en ;
-  owl:versionInfo "0.1"@en ;
+  schema:category "Transparency|Benefits and Constraints|Context|Capabilities|Supported Data/ Metadata Packages" ;
+  dcat:keyword "EDEN" ;
+  owl:versionInfo "0.1" ;
   skos:broader trsp:att.3E5F32A9E8 ;
-  trsp:hasCardinalityType trsp:cardinality0_n ;
-  trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
-  trsp:hasBenchmark trsp:package-type-scheme ;
-  skos:inScheme trsp:trsp-attributes .
-
+  skos:inScheme trsp:ConceptScheme .
 
 
 - List of packaging standards supported
@@ -1987,11 +1983,45 @@ trsp:att01924ad3a3
 
 
 - List of community-specific packaging standards supported"@en ;
+  schema:category "Transparency|Benefits and Constraints|Context|Capabilities|Supported Data/ Metadata Packages"@en ;
+  dcat:keyword "EDEN"@en ;
+  owl:versionInfo "0.1"@en ;
+  skos:broader trsp:att.3E5F32A9E8 ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
+  trsp:hasBenchmark trsp:package-type-scheme ;
+  skos:inScheme trsp:trsp-attributes .
+
+
+
+
+- List of packaging standards supported
+
+
+
+
+- List of accepted/ preferred packaging standards 
+
+
+
+
+- List of packaging standards the service or tools can export
+
+
+
+
+- The packaging standard(s) used internally
+
+
+
+
+- List of community-specific packaging standards supported"@en ;
   schema:category "Transparency|Benefits and Constraints|Context|Capabilities|Supported Data/ Metadata Packages" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
   skos:broader att.3E5F32A9E8 ;
   skos:inScheme trsp:ConceptScheme .
+
 
 
 
@@ -3523,6 +3553,7 @@ trsp:att.7C68DBB456
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.247C3C5849
   a skos:Concept ;
   skos:prefLabel "Stakeholder Representation"@en ;
@@ -3533,6 +3564,7 @@ trsp:att.247C3C5849
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1FC6BCD089
@@ -3547,6 +3579,7 @@ trsp:att.1FC6BCD089
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.42D7C2C3A4
   a skos:Concept ;
   skos:prefLabel "Public Statement of Wind-Down"@en ;
@@ -3559,6 +3592,7 @@ trsp:att.42D7C2C3A4
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7495ADA28B
   a skos:Concept ;
   skos:prefLabel "Public Continuity Plan"@en ;
@@ -3569,6 +3603,7 @@ trsp:att.7495ADA28B
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.01D16EFB9B
@@ -3584,6 +3619,7 @@ trsp:att.01D16EFB9B
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.04DC5770C9
   a skos:Concept ;
   skos:prefLabel "Documentation on Community Engagement"@en ;
@@ -3594,6 +3630,7 @@ trsp:att.04DC5770C9
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.13368CB9AC
@@ -3609,6 +3646,7 @@ trsp:att.13368CB9AC
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7CBE776C7A
   a skos:Concept ;
   skos:prefLabel "Business Model Type"@en ;
@@ -3622,6 +3660,7 @@ trsp:att.7CBE776C7A
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2758AC32B8
   a skos:Concept ;
   skos:prefLabel "Justification of Income"@en ;
@@ -3632,6 +3671,7 @@ trsp:att.2758AC32B8
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7660700650
@@ -3647,6 +3687,7 @@ trsp:att.7660700650
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6EF77F35F8
   a skos:Concept ;
   skos:prefLabel "Revenue Type"@en ;
@@ -3658,6 +3699,7 @@ trsp:att.6EF77F35F8
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:compensation-rule-type ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.028ECACF13
@@ -3673,6 +3715,7 @@ trsp:att.028ECACF13
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6F306E2CEA
   a skos:Concept ;
   skos:prefLabel "Publicly Available Accounts"@en ;
@@ -3683,6 +3726,7 @@ trsp:att.6F306E2CEA
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6EDF9A999F
@@ -3697,6 +3741,7 @@ trsp:att.6EDF9A999F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.52A2A122AF
   a skos:Concept ;
   skos:prefLabel "Base operations structurally funded"@en ;
@@ -3707,6 +3752,7 @@ trsp:att.52A2A122AF
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.269758D5A0
@@ -3722,6 +3768,7 @@ trsp:att.269758D5A0
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5CB2FB5B4C
   a skos:Concept ;
   skos:prefLabel "Content is available free"@en ;
@@ -3732,6 +3779,7 @@ trsp:att.5CB2FB5B4C
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.608B9C73BB
@@ -3746,6 +3794,7 @@ trsp:att.608B9C73BB
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3AD2ECA374
   a skos:Concept ;
   skos:prefLabel "Data is Available"@en ;
@@ -3758,6 +3807,7 @@ trsp:att.3AD2ECA374
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7BCEAFB957
   a skos:Concept ;
   skos:prefLabel "No Patents on Source Code"@en ;
@@ -3768,6 +3818,7 @@ trsp:att.7BCEAFB957
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.792636C88D
@@ -3783,6 +3834,7 @@ trsp:att.792636C88D
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3609108196
   a skos:Concept ;
   skos:prefLabel "Succession Plan"@en ;
@@ -3793,6 +3845,7 @@ trsp:att.3609108196
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4B6380A8F0
@@ -3807,6 +3860,7 @@ trsp:att.4B6380A8F0
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.11E8C2B7D0
   a skos:Concept ;
   skos:prefLabel "Disaster Recovery Plan"@en ;
@@ -3819,6 +3873,7 @@ trsp:att.11E8C2B7D0
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.14C87D5FC0
   a skos:Concept ;
   skos:prefLabel "Long-Term Preservation Plan"@en ;
@@ -3829,6 +3884,7 @@ trsp:att.14C87D5FC0
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.34A4F04633
@@ -3844,6 +3900,7 @@ trsp:att.34A4F04633
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.36E657FC7B
   a skos:Concept ;
   skos:prefLabel "Repository or Collections Data Management Plan"@en ;
@@ -3855,6 +3912,7 @@ trsp:att.36E657FC7B
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.0341AA63B1
@@ -3870,6 +3928,7 @@ trsp:att.0341AA63B1
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.70BFED1AC3
   a skos:Concept ;
   skos:prefLabel "Portal Inclusion"@en ;
@@ -3881,6 +3940,7 @@ trsp:att.70BFED1AC3
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Repository URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.394BC515E7
@@ -3895,6 +3955,7 @@ trsp:att.394BC515E7
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.00BAFE4B4E
   a skos:Concept ;
   skos:prefLabel "Registered in EOSC Marketplace"@en ;
@@ -3905,6 +3966,7 @@ trsp:att.00BAFE4B4E
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.241E6C58DF
@@ -3920,6 +3982,7 @@ trsp:att.241E6C58DF
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3D988650EC
   a skos:Concept ;
   skos:prefLabel "Default Metadata Schema/ Profile Indicated"@en ;
@@ -3931,6 +3994,7 @@ trsp:att.3D988650EC
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Metadata Schema ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.141AB906EC
@@ -3946,6 +4010,7 @@ trsp:att.141AB906EC
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1AD6D47183
   a skos:Concept ;
   skos:prefLabel "Default PID Service"@en ;
@@ -3959,6 +4024,7 @@ trsp:att.1AD6D47183
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.678241192E
   a skos:Concept ;
   skos:prefLabel "Selectable Metadata Profile"@en ;
@@ -3969,6 +4035,7 @@ trsp:att.678241192E
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.02B14C3A2C
@@ -3984,6 +4051,7 @@ trsp:att.02B14C3A2C
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1DD721CC5B
   a skos:Concept ;
   skos:prefLabel "Schema aligned with community practices"@en ;
@@ -3996,6 +4064,7 @@ trsp:att.1DD721CC5B
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.576E711188
   a skos:Concept ;
   skos:prefLabel "Ensure Physical Objects have a Digital Representation"@en ;
@@ -4006,6 +4075,7 @@ trsp:att.576E711188
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4A98F89201
@@ -4022,6 +4092,7 @@ trsp:att.4A98F89201
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4EA572A954
   a skos:Concept ;
   skos:prefLabel "Mandatory Metadata Verified"@en ;
@@ -4034,6 +4105,7 @@ trsp:att.4EA572A954
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6420BCA43E
   a skos:Concept ;
   skos:prefLabel "Metadata validated against profile"@en ;
@@ -4044,6 +4116,7 @@ trsp:att.6420BCA43E
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.51C655BFB0
@@ -4059,6 +4132,7 @@ trsp:att.51C655BFB0
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7AC495443D
   a skos:Concept ;
   skos:prefLabel "URI-linked semantics in metadata"@en ;
@@ -4069,6 +4143,7 @@ trsp:att.7AC495443D
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.25D8680361
@@ -4083,6 +4158,7 @@ trsp:att.25D8680361
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.650F58F3BC
   a skos:Concept ;
   skos:prefLabel "Tools for Technical Metadata Extraction"@en ;
@@ -4093,6 +4169,7 @@ trsp:att.650F58F3BC
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.552D4D7CBF
@@ -4107,6 +4184,7 @@ trsp:att.552D4D7CBF
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.66C51E0B90
   a skos:Concept ;
   skos:prefLabel "Validation of Data Against Schema or Rules"@en ;
@@ -4119,6 +4197,7 @@ trsp:att.66C51E0B90
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0EBAC52CB6
   a skos:Concept ;
   skos:prefLabel "Published versioning procedure available"@en ;
@@ -4129,6 +4208,7 @@ trsp:att.0EBAC52CB6
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.73E0B308E5
@@ -4144,6 +4224,7 @@ trsp:att.73E0B308E5
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.11DF98311A
   a skos:Concept ;
   skos:prefLabel "Software provides update functionality"@en ;
@@ -4154,6 +4235,7 @@ trsp:att.11DF98311A
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1C44587E88
@@ -4169,6 +4251,7 @@ trsp:att.1C44587E88
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5842EC5239
   a skos:Concept ;
   skos:prefLabel "Resolution Percentage"@en ;
@@ -4180,6 +4263,7 @@ trsp:att.5842EC5239
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
   trsp:hasBenchmark Float ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.54CF71ED24
@@ -4194,6 +4278,7 @@ trsp:att.54CF71ED24
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.10FDF86818
   a skos:Concept ;
   skos:prefLabel "Active Bit-Level Preservation in Place"@en ;
@@ -4204,6 +4289,7 @@ trsp:att.10FDF86818
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4EA4FE6911
@@ -4219,6 +4305,7 @@ trsp:att.4EA4FE6911
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.720D076722
   a skos:Concept ;
   skos:prefLabel "File format preservation actions"@en ;
@@ -4229,6 +4316,7 @@ trsp:att.720D076722
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3FD2C99B44
@@ -4243,6 +4331,7 @@ trsp:att.3FD2C99B44
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.36E9CFFB4B
   a skos:Concept ;
   skos:prefLabel "Record of Re-Appraisal"@en ;
@@ -4253,6 +4342,7 @@ trsp:att.36E9CFFB4B
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7436BDEA62
@@ -4267,6 +4357,7 @@ trsp:att.7436BDEA62
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1257C370DF
   a skos:Concept ;
   skos:prefLabel "PID Ownership Transfer is Possible"@en ;
@@ -4277,6 +4368,7 @@ trsp:att.1257C370DF
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.22D6F28F7C
@@ -4292,6 +4384,7 @@ trsp:att.22D6F28F7C
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2B19863F6A
   a skos:Concept ;
   skos:prefLabel "Ethics Guidance"@en ;
@@ -4305,16 +4398,18 @@ trsp:att.2B19863F6A
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.56F24C24C3
   a skos:Concept ;
   skos:prefLabel "Ethics Checklist"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Ethics Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Ethics Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.61C5AB7572
@@ -4329,6 +4424,7 @@ trsp:att.61C5AB7572
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1617820477
   a skos:Concept ;
   skos:prefLabel "Future Use Clarified with Subjects"@en ;
@@ -4339,6 +4435,7 @@ trsp:att.1617820477
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.51E4556DFE
@@ -4353,6 +4450,7 @@ trsp:att.51E4556DFE
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.09B9B96513
   a skos:Concept ;
   skos:prefLabel "File Repair"@en ;
@@ -4363,6 +4461,7 @@ trsp:att.09B9B96513
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6CCE23A07E
@@ -4377,6 +4476,7 @@ trsp:att.6CCE23A07E
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6AF0D4DC26
   a skos:Concept ;
   skos:prefLabel "Plagiarism Verification"@en ;
@@ -4387,6 +4487,7 @@ trsp:att.6AF0D4DC26
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4B8DBC2795
@@ -4402,6 +4503,7 @@ trsp:att.4B8DBC2795
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2923D6DE38
   a skos:Concept ;
   skos:prefLabel "Virus and Malware Checking"@en ;
@@ -4413,6 +4515,7 @@ trsp:att.2923D6DE38
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.72DE0527E3
@@ -4427,6 +4530,7 @@ trsp:att.72DE0527E3
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5AF211B2C5
   a skos:Concept ;
   skos:prefLabel "Checked for Duplicate Publication"@en ;
@@ -4437,6 +4541,7 @@ trsp:att.5AF211B2C5
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1C495E8A94
@@ -4451,6 +4556,7 @@ trsp:att.1C495E8A94
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5E73BD05DF
   a skos:Concept ;
   skos:prefLabel "Checked for Irrelevant Content"@en ;
@@ -4461,6 +4567,7 @@ trsp:att.5E73BD05DF
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.44841F89C3
@@ -4475,6 +4582,7 @@ trsp:att.44841F89C3
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4808A1524B
   a skos:Concept ;
   skos:prefLabel "Checked for AI-generated Content"@en ;
@@ -4485,6 +4593,7 @@ trsp:att.4808A1524B
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.301A364D55
@@ -4499,6 +4608,7 @@ trsp:att.301A364D55
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.242EE15759
   a skos:Concept ;
   skos:prefLabel "Submission and Archival Package Maintenance"@en ;
@@ -4509,6 +4619,7 @@ trsp:att.242EE15759
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.550348356C
@@ -4523,6 +4634,7 @@ trsp:att.550348356C
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5D17940B6B
   a skos:Concept ;
   skos:prefLabel "Privacy and GDPR Addressed"@en ;
@@ -4533,6 +4645,7 @@ trsp:att.5D17940B6B
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1B812FFC4E
@@ -4547,6 +4660,7 @@ trsp:att.1B812FFC4E
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2A0E93C1AC
   a skos:Concept ;
   skos:prefLabel "IP Management"@en ;
@@ -4557,6 +4671,7 @@ trsp:att.2A0E93C1AC
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7D05A04E46
@@ -4572,6 +4687,7 @@ trsp:att.7D05A04E46
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.206C4C60AA
   a skos:Concept ;
   skos:prefLabel "Terms of Deposit"@en ;
@@ -4584,6 +4700,7 @@ trsp:att.206C4C60AA
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.521A4A9E17
   a skos:Concept ;
   skos:prefLabel "Appraisal/ Accession Policy"@en ;
@@ -4594,6 +4711,7 @@ trsp:att.521A4A9E17
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.49C7B241EA
@@ -4609,6 +4727,7 @@ trsp:att.49C7B241EA
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.48C6F0C32D
   a skos:Concept ;
   skos:prefLabel "Curator Rights"@en ;
@@ -4620,6 +4739,7 @@ trsp:att.48C6F0C32D
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.76E631CB8D
@@ -4634,6 +4754,7 @@ trsp:att.76E631CB8D
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1B3A0A1CF6
   a skos:Concept ;
   skos:prefLabel "Consent Forms Verified, Linked"@en ;
@@ -4644,6 +4765,7 @@ trsp:att.1B3A0A1CF6
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2D03EB4E9B
@@ -4658,6 +4780,7 @@ trsp:att.2D03EB4E9B
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5DCB41BB3F
   a skos:Concept ;
   skos:prefLabel "Registry of Access Requests"@en ;
@@ -4668,6 +4791,7 @@ trsp:att.5DCB41BB3F
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.264E948225
@@ -4682,6 +4806,7 @@ trsp:att.264E948225
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5ADB3FC0BB
   a skos:Concept ;
   skos:prefLabel "Grounded - Aligned with Subject Context"@en ;
@@ -4692,6 +4817,7 @@ trsp:att.5ADB3FC0BB
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1C94638914
@@ -4706,6 +4832,7 @@ trsp:att.1C94638914
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2218E83FC4
   a skos:Concept ;
   skos:prefLabel "Roles and Responsibilities Defined"@en ;
@@ -4716,6 +4843,7 @@ trsp:att.2218E83FC4
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7AD9B8BBCB
@@ -4730,6 +4858,7 @@ trsp:att.7AD9B8BBCB
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.58022A9DBD
   a skos:Concept ;
   skos:prefLabel "Contracting Granularity"@en ;
@@ -4740,6 +4869,7 @@ trsp:att.58022A9DBD
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.687D20F962
@@ -4754,6 +4884,7 @@ trsp:att.687D20F962
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.20EFD54EFD
   a skos:Concept ;
   skos:prefLabel "Privacy Statement"@en ;
@@ -4764,6 +4895,7 @@ trsp:att.20EFD54EFD
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6D6A09147B
@@ -4778,6 +4910,7 @@ trsp:att.6D6A09147B
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.54339656E9
   a skos:Concept ;
   skos:prefLabel "Summary of Depositor Contract(s) Available"@en ;
@@ -4788,6 +4921,7 @@ trsp:att.54339656E9
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1D00720769
@@ -4803,6 +4937,7 @@ trsp:att.1D00720769
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7D628D907A
   a skos:Concept ;
   skos:prefLabel "Managed Publication Process"@en ;
@@ -4814,6 +4949,7 @@ trsp:att.7D628D907A
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.34C7F266CD
@@ -4828,6 +4964,7 @@ trsp:att.34C7F266CD
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3B023F9CF0
   a skos:Concept ;
   skos:prefLabel "Machine-Readable SLA"@en ;
@@ -4838,6 +4975,7 @@ trsp:att.3B023F9CF0
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.5568B6EC80
@@ -4852,6 +4990,7 @@ trsp:att.5568B6EC80
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4B703E5E93
   a skos:Concept ;
   skos:prefLabel "SLA Vocabulary Used"@en ;
@@ -4862,6 +5001,7 @@ trsp:att.4B703E5E93
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.08C2A995C0
@@ -4876,6 +5016,7 @@ trsp:att.08C2A995C0
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0FF7E5B673
   a skos:Concept ;
   skos:prefLabel "Bibliographic Metadata Policy"@en ;
@@ -4888,6 +5029,7 @@ trsp:att.0FF7E5B673
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7DFD48623C
   a skos:Concept ;
   skos:prefLabel "Published Custom Licences Available"@en ;
@@ -4898,6 +5040,7 @@ trsp:att.7DFD48623C
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3E5B47B5C9
@@ -4914,6 +5057,7 @@ trsp:att.3E5B47B5C9
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.24C260AA9C
   a skos:Concept ;
   skos:prefLabel "Monitor Process Compliance"@en ;
@@ -4926,23 +5070,25 @@ trsp:att.24C260AA9C
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.12CA661DF7
   a skos:Concept ;
   skos:prefLabel "Submission Workflow"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Submission Workflow" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Submission Workflow" ;
   dcat:keyword "CTS, TRUST, EDEN" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.5F37A613BB
   a skos:Concept ;
   skos:prefLabel "Preservation Workflow"@en ;
   skos:description "Workflows and standard procedures aimed at preservation and periodic re-appraisal."@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Preservation Workflow" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Preservation Workflow" ;
   dcat:keyword "CTS, TRUST, EDEN" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
@@ -4951,11 +5097,12 @@ trsp:att.5F37A613BB
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.18E904AAE2
   a skos:Concept ;
   skos:prefLabel "Disposal and Retraction Workflows"@en ;
   skos:description "Proper policies and mechanisms exist for conditions under which content can be disposed or retracted, while maintaining tombstone metadata."@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Disposal and Retraction Workflows" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Disposal and Retraction Workflows" ;
   dcat:keyword "CPP" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
@@ -4964,10 +5111,11 @@ trsp:att.18E904AAE2
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0FE5D01C72
   a skos:Concept ;
   skos:prefLabel "FAIR Assessment"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|FAIR Assessment" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|FAIR Assessment" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
@@ -4976,10 +5124,11 @@ trsp:att.0FE5D01C72
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.50ADCE9E0D
   a skos:Concept ;
   skos:prefLabel "FAIR Assessment Tool(s)"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|FAIR Assessment Tool(s)" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|FAIR Assessment Tool(s)" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
@@ -4989,22 +5138,24 @@ trsp:att.50ADCE9E0D
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2EC221BD80
   a skos:Concept ;
   skos:prefLabel "Privacy/ Sensitive Data Checklist"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Privacy/ Sensitive Data Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Privacy/ Sensitive Data Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.64A44F5193
   a skos:Concept ;
   skos:prefLabel "Legal Compliance Checklist"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Legal Compliance Checklist" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Legal Compliance Checklist" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
@@ -5013,16 +5164,18 @@ trsp:att.64A44F5193
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6A5BF0698F
   a skos:Concept ;
   skos:prefLabel "Rights Obtained from Depositor"@en ;
-  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÂ Workflows|Rights Obtained from Depositor" ;
+  schema:category "Responsibility|Stewardship|Process|Curation & PreservationÃÂ Workflows|Rights Obtained from Depositor" ;
   dcat:keyword "CTS, TRUST" ;
   owl:versionInfo 0.1 ;
   skos:broader trsp:att.4AA1880060 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.769A9F52BD
@@ -5037,6 +5190,7 @@ trsp:att.769A9F52BD
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0CBE414A78
   a skos:Concept ;
   skos:prefLabel "Verification of Licence Assent"@en ;
@@ -5049,6 +5203,7 @@ trsp:att.0CBE414A78
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.49EE16D366
   a skos:Concept ;
   skos:prefLabel "Licence Combination Supported/ Verified"@en ;
@@ -5059,6 +5214,7 @@ trsp:att.49EE16D366
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1146FD1520
@@ -5074,6 +5230,7 @@ trsp:att.1146FD1520
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4CB4F7ED15
   a skos:Concept ;
   skos:prefLabel "Machine-Readable Inventory"@en ;
@@ -5085,6 +5242,7 @@ trsp:att.4CB4F7ED15
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Service URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1C5F7AAA09
@@ -5099,6 +5257,7 @@ trsp:att.1C5F7AAA09
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.515B8F83FB
   a skos:Concept ;
   skos:prefLabel "Offers API Documentation"@en ;
@@ -5109,6 +5268,7 @@ trsp:att.515B8F83FB
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1828900F1B
@@ -5123,6 +5283,7 @@ trsp:att.1828900F1B
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6E3855425F
   a skos:Concept ;
   skos:prefLabel "File Type Registry API"@en ;
@@ -5133,6 +5294,7 @@ trsp:att.6E3855425F
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.63101DF501
@@ -5147,6 +5309,7 @@ trsp:att.63101DF501
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.29A8E8970A
   a skos:Concept ;
   skos:prefLabel "File Verification Error Data"@en ;
@@ -5159,6 +5322,7 @@ trsp:att.29A8E8970A
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.23727D6070
   a skos:Concept ;
   skos:prefLabel "Package Verification Service"@en ;
@@ -5169,6 +5333,7 @@ trsp:att.23727D6070
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2B5E85FAE5
@@ -5184,6 +5349,7 @@ trsp:att.2B5E85FAE5
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.02BDA33B58
   a skos:Concept ;
   skos:prefLabel "Machine-readable Terms and Conditions"@en ;
@@ -5194,6 +5360,7 @@ trsp:att.02BDA33B58
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.58166D724B
@@ -5208,6 +5375,7 @@ trsp:att.58166D724B
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.435A79A35F
   a skos:Concept ;
   skos:prefLabel "Policy Vocabulary URI"@en ;
@@ -5218,6 +5386,7 @@ trsp:att.435A79A35F
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2F39DE4E78
@@ -5232,6 +5401,7 @@ trsp:att.2F39DE4E78
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6628E95EAC
   a skos:Concept ;
   skos:prefLabel "Machine-readable Licence Provisions (REL)"@en ;
@@ -5242,6 +5412,7 @@ trsp:att.6628E95EAC
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3E5176E2B8
@@ -5257,6 +5428,7 @@ trsp:att.3E5176E2B8
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7298144E24
   a skos:Concept ;
   skos:prefLabel "Metadata (Harvesting) API"@en ;
@@ -5267,6 +5439,7 @@ trsp:att.7298144E24
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.714EC2AA27
@@ -5281,6 +5454,7 @@ trsp:att.714EC2AA27
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.62E1C089DB
   a skos:Concept ;
   skos:prefLabel "User Guidance and Documentation"@en ;
@@ -5291,6 +5465,7 @@ trsp:att.62E1C089DB
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3E85A87190
@@ -5306,6 +5481,7 @@ trsp:att.3E85A87190
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0C3FB3218D
   a skos:Concept ;
   skos:prefLabel "Usage Metrics"@en ;
@@ -5317,6 +5493,7 @@ trsp:att.0C3FB3218D
   trsp:hasMeasurementType trsp:measurementTypeChecklist ;
   trsp:hasBenchmark trsp:checklistMetrics ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.27C898E8A0
@@ -5332,6 +5509,7 @@ trsp:att.27C898E8A0
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1224E087E0
   a skos:Concept ;
   skos:prefLabel "List of Third-Party Assessments"@en ;
@@ -5343,6 +5521,7 @@ trsp:att.1224E087E0
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Assessment URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6E27DEF3A1
@@ -5358,6 +5537,7 @@ trsp:att.6E27DEF3A1
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.516450BF5E
   a skos:Concept ;
   skos:prefLabel "Active Preservation"@en ;
@@ -5368,6 +5548,7 @@ trsp:att.516450BF5E
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1DAD162D7A
@@ -5382,6 +5563,7 @@ trsp:att.1DAD162D7A
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2F80B22A4D
   a skos:Concept ;
   skos:prefLabel "Level of Approval is Public"@en ;
@@ -5392,6 +5574,7 @@ trsp:att.2F80B22A4D
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.04B70A444F
@@ -5406,6 +5589,7 @@ trsp:att.04B70A444F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.65A383C886
   a skos:Concept ;
   skos:prefLabel "Policy statement signed off by a governing board"@en ;
@@ -5418,6 +5602,7 @@ trsp:att.65A383C886
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0B807CC544
   a skos:Concept ;
   skos:prefLabel "Well-defined focus"@en ;
@@ -5428,6 +5613,7 @@ trsp:att.0B807CC544
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.0F78D12691
@@ -5443,6 +5629,7 @@ trsp:att.0F78D12691
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.145BD6BECD
   a skos:Concept ;
   skos:prefLabel "Policies linked or are easily found"@en ;
@@ -5456,6 +5643,7 @@ trsp:att.145BD6BECD
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.11B8A1B690
   a skos:Concept ;
   skos:prefLabel "Policies are versioned"@en ;
@@ -5466,6 +5654,7 @@ trsp:att.11B8A1B690
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6437B9E8E1
@@ -5481,6 +5670,7 @@ trsp:att.6437B9E8E1
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2B81C65FFB
   a skos:Concept ;
   skos:prefLabel "Sensitive Data Appraisal Policy"@en ;
@@ -5490,6 +5680,7 @@ trsp:att.2B81C65FFB
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7F6F3E3DDE
@@ -5502,6 +5693,7 @@ trsp:att.7F6F3E3DDE
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2901B9E359
@@ -5517,6 +5709,7 @@ trsp:att.2901B9E359
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1395FD0F03
   a skos:Concept ;
   skos:prefLabel "Versioning Policy"@en ;
@@ -5527,6 +5720,7 @@ trsp:att.1395FD0F03
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7EC681717D
@@ -5541,6 +5735,7 @@ trsp:att.7EC681717D
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.549827C8B4
   a skos:Concept ;
   skos:prefLabel "Preferred Formats Policy"@en ;
@@ -5551,6 +5746,7 @@ trsp:att.549827C8B4
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.768DAFA0DB
@@ -5565,6 +5761,7 @@ trsp:att.768DAFA0DB
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6B7CED5897
   a skos:Concept ;
   skos:prefLabel "Assessment and Access Policy"@en ;
@@ -5575,6 +5772,7 @@ trsp:att.6B7CED5897
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4F40729393
@@ -5589,6 +5787,7 @@ trsp:att.4F40729393
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.45F7A22412
   a skos:Concept ;
   skos:prefLabel "Bibliographic Metadata - CC0"@en ;
@@ -5599,6 +5798,7 @@ trsp:att.45F7A22412
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.39D810EEC9
@@ -5613,6 +5813,7 @@ trsp:att.39D810EEC9
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.434F29EDB9
   a skos:Concept ;
   skos:prefLabel "Right to be forgotten implemented"@en ;
@@ -5623,6 +5824,7 @@ trsp:att.434F29EDB9
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1042D04416
@@ -5638,6 +5840,7 @@ trsp:att.1042D04416
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6C9FCD9125
   a skos:Concept ;
   skos:prefLabel "RIghts Policy"@en ;
@@ -5651,6 +5854,7 @@ trsp:att.6C9FCD9125
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.390FEB7218
   a skos:Concept ;
   skos:prefLabel "Inventory of Managed Rights"@en ;
@@ -5661,6 +5865,7 @@ trsp:att.390FEB7218
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1BF23E39F5
@@ -5676,6 +5881,7 @@ trsp:att.1BF23E39F5
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3E1CA96845
   a skos:Concept ;
   skos:prefLabel "Dissemination"@en ;
@@ -5687,6 +5893,7 @@ trsp:att.3E1CA96845
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark File Type URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.50E0581B3D
@@ -5703,6 +5910,7 @@ trsp:att.50E0581B3D
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.236C15FEA4
   a skos:Concept ;
   skos:prefLabel "FAIRiCAT URL"@en ;
@@ -5713,6 +5921,7 @@ trsp:att.236C15FEA4
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3F76446066
@@ -5727,6 +5936,7 @@ trsp:att.3F76446066
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3282BD1281
   a skos:Concept ;
   skos:prefLabel "Designated Community Definition"@en ;
@@ -5739,6 +5949,7 @@ trsp:att.3282BD1281
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4AEE114A6B
   a skos:Concept ;
   skos:prefLabel "Equitable Engagement"@en ;
@@ -5749,6 +5960,7 @@ trsp:att.4AEE114A6B
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.34D1282F11
@@ -5764,6 +5976,7 @@ trsp:att.34D1282F11
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5D0E8069FC
   a skos:Concept ;
   skos:prefLabel "Temporal Coverage"@en ;
@@ -5777,6 +5990,7 @@ trsp:att.5D0E8069FC
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.115BEEC616
   a skos:Concept ;
   skos:prefLabel "Community Coverage"@en ;
@@ -5787,6 +6001,7 @@ trsp:att.115BEEC616
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3B633179C5
@@ -5802,6 +6017,7 @@ trsp:att.3B633179C5
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.54317F78CB
   a skos:Concept ;
   skos:prefLabel "Object Coverage"@en ;
@@ -5813,6 +6029,7 @@ trsp:att.54317F78CB
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark r3d:content-types.ttl ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6A715E3A22
@@ -5828,6 +6045,7 @@ trsp:att.6A715E3A22
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.11E21FF2FC
   a skos:Concept ;
   skos:prefLabel "Repository Status"@en ;
@@ -5839,6 +6057,7 @@ trsp:att.11E21FF2FC
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:repo-status-type-scheme ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.64DA341B5F
@@ -5854,6 +6073,7 @@ trsp:att.64DA341B5F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4570870110
   a skos:Concept ;
   skos:prefLabel "Country"@en ;
@@ -5867,6 +6087,7 @@ trsp:att.4570870110
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0C1737084B
   a skos:Concept ;
   skos:prefLabel "Description"@en ;
@@ -5878,6 +6099,7 @@ trsp:att.0C1737084B
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
   trsp:hasBenchmark Text ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.41F4454A97
@@ -5894,6 +6116,7 @@ trsp:att.41F4454A97
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.48BF7E1522
   a skos:Concept ;
   skos:prefLabel "Year of Commencement"@en ;
@@ -5905,6 +6128,7 @@ trsp:att.48BF7E1522
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
   trsp:hasBenchmark Integer ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.08F1F3FAB7
@@ -5920,6 +6144,7 @@ trsp:att.08F1F3FAB7
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.291848CB10
   a skos:Concept ;
   skos:prefLabel "Contact"@en ;
@@ -5931,6 +6156,7 @@ trsp:att.291848CB10
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
   trsp:hasBenchmark Text ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.57C5A7579F
@@ -5946,6 +6172,7 @@ trsp:att.57C5A7579F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7470DA5BBA
   a skos:Concept ;
   skos:prefLabel "URL"@en ;
@@ -5956,6 +6183,7 @@ trsp:att.7470DA5BBA
   trsp:hasCardinalityType trsp:cardinality1_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.698943C6A7
@@ -5970,6 +6198,7 @@ trsp:att.698943C6A7
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0AB11676B0
   a skos:Concept ;
   skos:prefLabel "List of Catalogue(s)"@en ;
@@ -5981,6 +6210,7 @@ trsp:att.0AB11676B0
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.78CC017229
@@ -5997,6 +6227,7 @@ trsp:att.78CC017229
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.48E7481CDD
   a skos:Concept ;
   skos:prefLabel "Administrative Capacity"@en ;
@@ -6007,6 +6238,7 @@ trsp:att.48E7481CDD
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2C32459481
@@ -6022,6 +6254,7 @@ trsp:att.2C32459481
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4234565A8D
   a skos:Concept ;
   skos:prefLabel "Supported Dataset Formats"@en ;
@@ -6033,6 +6266,7 @@ trsp:att.4234565A8D
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark File Type URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6C03AB58B8
@@ -6048,18 +6282,24 @@ trsp:att.6C03AB58B8
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.01924AD3A3
   a skos:Concept ;
   skos:prefLabel "Supported Data/ Metadata Packages"@en ;
   skos:description "The information should cover
 
+
 - List of packaging standards supported
+
 
 - List of accepted/ preferred packaging standards 
 
+
 - List of packaging standards the service or tools can export
 
+
 - The packaging standard(s) used internally
+
 
 - List of community-specific packaging standards supported"@en ;
   schema:category "Transparency|Benefits and Constraints|Context|Capabilities|Supported Data/ Metadata Packages" ;
@@ -6070,6 +6310,7 @@ trsp:att.01924AD3A3
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:package-type-scheme ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.167C47D292
@@ -6086,6 +6327,7 @@ trsp:att.167C47D292
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.543A727F84
   a skos:Concept ;
   skos:prefLabel "Supported Licences"@en ;
@@ -6097,6 +6339,7 @@ trsp:att.543A727F84
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Licence Facade, SPDX ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2F993B25AD
@@ -6112,6 +6355,7 @@ trsp:att.2F993B25AD
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6AF56A372D
   a skos:Concept ;
   skos:prefLabel "Supported Vocabularies"@en ;
@@ -6123,6 +6367,7 @@ trsp:att.6AF56A372D
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark LOV ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6EED29CAE5
@@ -6138,6 +6383,7 @@ trsp:att.6EED29CAE5
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6F05B292BD
   a skos:Concept ;
   skos:prefLabel "Supports Signposting"@en ;
@@ -6148,6 +6394,7 @@ trsp:att.6F05B292BD
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6AA7258DA9
@@ -6162,6 +6409,7 @@ trsp:att.6AA7258DA9
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.67E6C4912C
   a skos:Concept ;
   skos:prefLabel "Supports Redaction/ Obfuscation"@en ;
@@ -6174,6 +6422,7 @@ trsp:att.67E6C4912C
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.50239FC483
   a skos:Concept ;
   skos:prefLabel "Supports Data Expiration"@en ;
@@ -6184,6 +6433,7 @@ trsp:att.50239FC483
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.45EC53C288
@@ -6199,6 +6449,7 @@ trsp:att.45EC53C288
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.32846CB4DF
   a skos:Concept ;
   skos:prefLabel "Data Transformation Service(s) Available"@en ;
@@ -6209,6 +6460,7 @@ trsp:att.32846CB4DF
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1A4192F248
@@ -6223,6 +6475,7 @@ trsp:att.1A4192F248
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5960A93A27
   a skos:Concept ;
   skos:prefLabel "Level of Licence Applicability"@en ;
@@ -6233,6 +6486,7 @@ trsp:att.5960A93A27
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4F90C51D4C
@@ -6248,6 +6502,7 @@ trsp:att.4F90C51D4C
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6C673D59D2
   a skos:Concept ;
   skos:prefLabel "Link to or Ingest External Metadata"@en ;
@@ -6259,6 +6514,7 @@ trsp:att.6C673D59D2
   trsp:hasMeasurementType trsp:measurementTypeChecklist ;
   trsp:hasBenchmark trsp:checklistIngestMetadata ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.5214DF9D16
@@ -6273,6 +6529,7 @@ trsp:att.5214DF9D16
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.67D4ECB749
   a skos:Concept ;
   skos:prefLabel "Named Entity Recognition Service"@en ;
@@ -6283,6 +6540,7 @@ trsp:att.67D4ECB749
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.0563752C9F
@@ -6298,6 +6556,7 @@ trsp:att.0563752C9F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.53947860B6
   a skos:Concept ;
   skos:prefLabel "Provenance Approach Documented"@en ;
@@ -6310,6 +6569,7 @@ trsp:att.53947860B6
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7FEEA35BFF
   a skos:Concept ;
   skos:prefLabel "Versioning Process Documented"@en ;
@@ -6320,6 +6580,7 @@ trsp:att.7FEEA35BFF
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6EB55F36B2
@@ -6335,6 +6596,7 @@ trsp:att.6EB55F36B2
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3DA6C87583
   a skos:Concept ;
   skos:prefLabel "Timeframe is Defined"@en ;
@@ -6345,6 +6607,7 @@ trsp:att.3DA6C87583
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.08AB24D0F7
@@ -6359,6 +6622,7 @@ trsp:att.08AB24D0F7
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0485C82A49
   a skos:Concept ;
   skos:prefLabel "Citation Export and Formatting Support"@en ;
@@ -6369,6 +6633,7 @@ trsp:att.0485C82A49
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.18CE7D92FA
@@ -6384,6 +6649,7 @@ trsp:att.18CE7D92FA
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1669AF8869
   a skos:Concept ;
   skos:prefLabel "Supported Metadata Export Schema"@en ;
@@ -6395,6 +6661,7 @@ trsp:att.1669AF8869
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Schema URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.374F095E69
@@ -6409,6 +6676,7 @@ trsp:att.374F095E69
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0CEF99A2D6
   a skos:Concept ;
   skos:prefLabel "Frequency of Indexing"@en ;
@@ -6419,6 +6687,7 @@ trsp:att.0CEF99A2D6
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.283D0EB595
@@ -6433,6 +6702,7 @@ trsp:att.283D0EB595
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.754BCAC5A8
   a skos:Concept ;
   skos:prefLabel "Object-Level Metadata API"@en ;
@@ -6443,6 +6713,7 @@ trsp:att.754BCAC5A8
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.31600CB8D6
@@ -6457,6 +6728,7 @@ trsp:att.31600CB8D6
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.601EAF4625
   a skos:Concept ;
   skos:prefLabel "Depositor Contact Information Available"@en ;
@@ -6467,6 +6739,7 @@ trsp:att.601EAF4625
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3B49F36F75
@@ -6482,6 +6755,7 @@ trsp:att.3B49F36F75
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0FAB8D7E65
   a skos:Concept ;
   skos:prefLabel "Crosswalk Documentation Provided"@en ;
@@ -6493,6 +6767,7 @@ trsp:att.0FAB8D7E65
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2141FF7751
@@ -6508,6 +6783,7 @@ trsp:att.2141FF7751
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6A439A6743
   a skos:Concept ;
   skos:prefLabel "File Type Conversion Services"@en ;
@@ -6519,6 +6795,7 @@ trsp:att.6A439A6743
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Service URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6CA1A54238
@@ -6535,6 +6812,7 @@ trsp:att.6CA1A54238
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.699F35CDBC
   a skos:Concept ;
   skos:prefLabel "Quality-Assured Crosswalks"@en ;
@@ -6547,6 +6825,7 @@ trsp:att.699F35CDBC
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0ECEE93CF8
   a skos:Concept ;
   skos:prefLabel "Supports Semantic Annotation"@en ;
@@ -6557,6 +6836,7 @@ trsp:att.0ECEE93CF8
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7ABEF7ECA8
@@ -6572,6 +6852,7 @@ trsp:att.7ABEF7ECA8
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2E92627E37
   a skos:Concept ;
   skos:prefLabel "Advisory or Consulting Services Offered"@en ;
@@ -6582,6 +6863,7 @@ trsp:att.2E92627E37
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.360E4F3F7F
@@ -6597,6 +6879,7 @@ trsp:att.360E4F3F7F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0C3DB9BFAA
   a skos:Concept ;
   skos:prefLabel "Interoperability Procedures"@en ;
@@ -6608,6 +6891,7 @@ trsp:att.0C3DB9BFAA
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.630826A6C1
@@ -6622,6 +6906,7 @@ trsp:att.630826A6C1
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2D56594874
   a skos:Concept ;
   skos:prefLabel "Documentation on semantic interoperability provisions"@en ;
@@ -6632,6 +6917,7 @@ trsp:att.2D56594874
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.59B6E7FB7C
@@ -6646,6 +6932,7 @@ trsp:att.59B6E7FB7C
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.33FA4A6BF2
   a skos:Concept ;
   skos:prefLabel "Support for Bagit Specifications"@en ;
@@ -6658,6 +6945,7 @@ trsp:att.33FA4A6BF2
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.741DA00695
   a skos:Concept ;
   skos:prefLabel "Support for RO-Crate Specifications"@en ;
@@ -6668,6 +6956,7 @@ trsp:att.741DA00695
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7D09257304
@@ -6684,6 +6973,7 @@ trsp:att.7D09257304
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7F80554D90
   a skos:Concept ;
   skos:prefLabel "Clear Licence Provisions"@en ;
@@ -6694,6 +6984,7 @@ trsp:att.7F80554D90
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1A78609F7E
@@ -6708,6 +6999,7 @@ trsp:att.1A78609F7E
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2FCC26EFC0
   a skos:Concept ;
   skos:prefLabel "Description of Reliability Measures"@en ;
@@ -6718,6 +7010,7 @@ trsp:att.2FCC26EFC0
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2090660301
@@ -6732,6 +7025,7 @@ trsp:att.2090660301
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.455FB4A066
   a skos:Concept ;
   skos:prefLabel "Accessibility Rating"@en ;
@@ -6742,6 +7036,7 @@ trsp:att.455FB4A066
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.42A3D7A518
@@ -6756,6 +7051,7 @@ trsp:att.42A3D7A518
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.60F7491B6A
   a skos:Concept ;
   skos:prefLabel "Websites and Services"@en ;
@@ -6766,6 +7062,7 @@ trsp:att.60F7491B6A
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.211F98FA33
@@ -6780,6 +7077,7 @@ trsp:att.211F98FA33
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.78A504B99F
   a skos:Concept ;
   skos:prefLabel "Language Support Scope and Documentation"@en ;
@@ -6792,6 +7090,7 @@ trsp:att.78A504B99F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.181F35E46A
   a skos:Concept ;
   skos:prefLabel "Published Security and Integrity Measures"@en ;
@@ -6802,6 +7101,7 @@ trsp:att.181F35E46A
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.337C35222E
@@ -6817,6 +7117,7 @@ trsp:att.337C35222E
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.178C46C3F1
   a skos:Concept ;
   skos:prefLabel "Active Threat Monitoring in Place"@en ;
@@ -6829,6 +7130,7 @@ trsp:att.178C46C3F1
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1DB0A6F7DB
   a skos:Concept ;
   skos:prefLabel "Locality of Data Storage and Archiving"@en ;
@@ -6839,6 +7141,7 @@ trsp:att.1DB0A6F7DB
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.075738C8DF
@@ -6854,6 +7157,7 @@ trsp:att.075738C8DF
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2C0457E919
   a skos:Concept ;
   skos:prefLabel "List of Certifications: RDM"@en ;
@@ -6865,6 +7169,7 @@ trsp:att.2C0457E919
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Certification URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.133FBDB8C2
@@ -6880,6 +7185,7 @@ trsp:att.133FBDB8C2
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.067B4C3677
   a skos:Concept ;
   skos:prefLabel "Software Development Guidelines and Procedures"@en ;
@@ -6891,6 +7197,7 @@ trsp:att.067B4C3677
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1BFD0D011D
@@ -6906,6 +7213,7 @@ trsp:att.1BFD0D011D
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.16021E265C
   a skos:Concept ;
   skos:prefLabel "List of Certifications: Quality and Security"@en ;
@@ -6917,6 +7225,7 @@ trsp:att.16021E265C
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark Certification URIs ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.19AF20660A
@@ -6931,6 +7240,7 @@ trsp:att.19AF20660A
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.08417EDDFC
   a skos:Concept ;
   skos:prefLabel "Contact Point is Maintained"@en ;
@@ -6941,6 +7251,7 @@ trsp:att.08417EDDFC
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4813ACF624
@@ -6955,6 +7266,7 @@ trsp:att.4813ACF624
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2DA1C98050
   a skos:Concept ;
   skos:prefLabel "Service Metdata Available"@en ;
@@ -6965,6 +7277,7 @@ trsp:att.2DA1C98050
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.32048A7179
@@ -6979,6 +7292,7 @@ trsp:att.32048A7179
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.693F62F485
   a skos:Concept ;
   skos:prefLabel "Availability Monitoring"@en ;
@@ -6989,6 +7303,7 @@ trsp:att.693F62F485
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.0EF898B591
@@ -7003,6 +7318,7 @@ trsp:att.0EF898B591
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.79C13FD633
   a skos:Concept ;
   skos:prefLabel "Tape Storage Support"@en ;
@@ -7013,6 +7329,7 @@ trsp:att.79C13FD633
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2F5B9B4823
@@ -7027,6 +7344,7 @@ trsp:att.2F5B9B4823
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4C6A46FB4C
   a skos:Concept ;
   skos:prefLabel "Service Maturity Assessment"@en ;
@@ -7037,6 +7355,7 @@ trsp:att.4C6A46FB4C
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.09BFA24214
@@ -7051,6 +7370,7 @@ trsp:att.09BFA24214
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1ADEEC1D3A
   a skos:Concept ;
   skos:prefLabel "Frequency of Formal Testing"@en ;
@@ -7061,6 +7381,7 @@ trsp:att.1ADEEC1D3A
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.64E3E49E89
@@ -7075,6 +7396,7 @@ trsp:att.64E3E49E89
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3A2655ABB6
   a skos:Concept ;
   skos:prefLabel "Test Results Published"@en ;
@@ -7085,6 +7407,7 @@ trsp:att.3A2655ABB6
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.5247A27418
@@ -7099,6 +7422,7 @@ trsp:att.5247A27418
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2363F099D9
   a skos:Concept ;
   skos:prefLabel "Community Contributions"@en ;
@@ -7109,6 +7433,7 @@ trsp:att.2363F099D9
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6D8778C1BE
@@ -7123,6 +7448,7 @@ trsp:att.6D8778C1BE
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.17B2A92EC9
   a skos:Concept ;
   skos:prefLabel "List of Third Party Services"@en ;
@@ -7133,6 +7459,7 @@ trsp:att.17B2A92EC9
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.13FE6DDD8E
@@ -7147,6 +7474,7 @@ trsp:att.13FE6DDD8E
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.545686D0F9
   a skos:Concept ;
   skos:prefLabel "Median Time To Publication"@en ;
@@ -7157,6 +7485,7 @@ trsp:att.545686D0F9
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.136965B228
@@ -7171,6 +7500,7 @@ trsp:att.136965B228
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.668C5369A6
   a skos:Concept ;
   skos:prefLabel "File Size"@en ;
@@ -7181,6 +7511,7 @@ trsp:att.668C5369A6
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4448343779
@@ -7195,6 +7526,7 @@ trsp:att.4448343779
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.1998CD6B88
   a skos:Concept ;
   skos:prefLabel "Dataset Size"@en ;
@@ -7205,6 +7537,7 @@ trsp:att.1998CD6B88
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.0C85A9C228
@@ -7219,6 +7552,7 @@ trsp:att.0C85A9C228
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3B8FD2CB5F
   a skos:Concept ;
   skos:prefLabel "File Format Guidance"@en ;
@@ -7229,6 +7563,7 @@ trsp:att.3B8FD2CB5F
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.49CD2C1E51
@@ -7244,6 +7579,7 @@ trsp:att.49CD2C1E51
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5BAF2CF9AA
   a skos:Concept ;
   skos:prefLabel "Information Management"@en ;
@@ -7255,6 +7591,7 @@ trsp:att.5BAF2CF9AA
   trsp:hasMeasurementType trsp:measurementTypeChecklist ;
   trsp:hasBenchmark trsp:checklistInfoManagement ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.5086BAFCE4
@@ -7270,6 +7607,7 @@ trsp:att.5086BAFCE4
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.72B1425184
   a skos:Concept ;
   skos:prefLabel "Volume"@en ;
@@ -7280,6 +7618,7 @@ trsp:att.72B1425184
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4C9B7D2697
@@ -7294,6 +7633,7 @@ trsp:att.4C9B7D2697
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.2307B62BCB
   a skos:Concept ;
   skos:prefLabel "Rate Limits"@en ;
@@ -7304,6 +7644,7 @@ trsp:att.2307B62BCB
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1B5925483C
@@ -7319,6 +7660,7 @@ trsp:att.1B5925483C
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0476CED680
   a skos:Concept ;
   skos:prefLabel "Annual Capital Costs"@en ;
@@ -7329,6 +7671,7 @@ trsp:att.0476CED680
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3D29A751BD
@@ -7343,6 +7686,7 @@ trsp:att.3D29A751BD
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6AB2C75C20
   a skos:Concept ;
   skos:prefLabel "Overhead"@en ;
@@ -7353,6 +7697,7 @@ trsp:att.6AB2C75C20
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.52FDC90AA3
@@ -7368,6 +7713,7 @@ trsp:att.52FDC90AA3
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0B461E5444
   a skos:Concept ;
   skos:prefLabel "Other Capital Expenses"@en ;
@@ -7378,6 +7724,7 @@ trsp:att.0B461E5444
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.75E7733432
@@ -7392,6 +7739,7 @@ trsp:att.75E7733432
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3AC5F76F9D
   a skos:Concept ;
   skos:prefLabel "Annual Compute Costs"@en ;
@@ -7402,6 +7750,7 @@ trsp:att.3AC5F76F9D
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.0178B70A6A
@@ -7416,6 +7765,7 @@ trsp:att.0178B70A6A
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.6FB6A7610E
   a skos:Concept ;
   skos:prefLabel "Annual Networking Costs"@en ;
@@ -7426,6 +7776,7 @@ trsp:att.6FB6A7610E
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7637BA7A1D
@@ -7440,6 +7791,7 @@ trsp:att.7637BA7A1D
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7E7029C120
   a skos:Concept ;
   skos:prefLabel "Contract Employee Costs"@en ;
@@ -7450,6 +7802,7 @@ trsp:att.7E7029C120
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1385883981
@@ -7464,6 +7817,7 @@ trsp:att.1385883981
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.47FFCA6BD2
   a skos:Concept ;
   skos:prefLabel "Licence Fees"@en ;
@@ -7474,6 +7828,7 @@ trsp:att.47FFCA6BD2
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.0CA397887F
@@ -7488,6 +7843,7 @@ trsp:att.0CA397887F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4C80663041
   a skos:Concept ;
   skos:prefLabel "Contingency Provision/ Reserves"@en ;
@@ -7498,6 +7854,7 @@ trsp:att.4C80663041
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.055D3C1243
@@ -7512,6 +7869,7 @@ trsp:att.055D3C1243
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0062B8B2C5
   a skos:Concept ;
   skos:prefLabel "User surveys"@en ;
@@ -7522,6 +7880,7 @@ trsp:att.0062B8B2C5
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.319BC310D5
@@ -7537,6 +7896,7 @@ trsp:att.319BC310D5
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.368F99A5F7
   a skos:Concept ;
   skos:prefLabel "Stakeholder Involvement"@en ;
@@ -7547,6 +7907,7 @@ trsp:att.368F99A5F7
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.675434DF2B
@@ -7562,6 +7923,7 @@ trsp:att.675434DF2B
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.27198D2C3B
   a skos:Concept ;
   skos:prefLabel "Guidance on Repository Selection"@en ;
@@ -7572,6 +7934,7 @@ trsp:att.27198D2C3B
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.7F192DC5FF
@@ -7587,6 +7950,7 @@ trsp:att.7F192DC5FF
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.353453C585
   a skos:Concept ;
   skos:prefLabel "Documentation on Profiles"@en ;
@@ -7597,6 +7961,7 @@ trsp:att.353453C585
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.5BDCFB83B0
@@ -7612,6 +7977,7 @@ trsp:att.5BDCFB83B0
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.568D8C8984
   a skos:Concept ;
   skos:prefLabel "Profiles are Extensible"@en ;
@@ -7622,6 +7988,7 @@ trsp:att.568D8C8984
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.14EEC67EC3
@@ -7636,6 +8003,7 @@ trsp:att.14EEC67EC3
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5E50766D16
   a skos:Concept ;
   skos:prefLabel "Link to DMP"@en ;
@@ -7646,6 +8014,7 @@ trsp:att.5E50766D16
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1AAA70FB51
@@ -7660,6 +8029,7 @@ trsp:att.1AAA70FB51
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.3C89A4DF3F
   a skos:Concept ;
   skos:prefLabel "Per Object"@en ;
@@ -7670,6 +8040,7 @@ trsp:att.3C89A4DF3F
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4673784806
@@ -7684,6 +8055,7 @@ trsp:att.4673784806
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.74778C177C
   a skos:Concept ;
   skos:prefLabel "Per Repository/ Catalogue"@en ;
@@ -7694,6 +8066,7 @@ trsp:att.74778C177C
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.16AB115ADD
@@ -7708,6 +8081,7 @@ trsp:att.16AB115ADD
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.57D4BD2121
   a skos:Concept ;
   skos:prefLabel "Format guidance documentation"@en ;
@@ -7718,6 +8092,7 @@ trsp:att.57D4BD2121
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.435F7D1B94
@@ -7732,6 +8107,7 @@ trsp:att.435F7D1B94
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.45E4291E97
   a skos:Concept ;
   skos:prefLabel "Format Guidance Granularity"@en ;
@@ -7742,6 +8118,7 @@ trsp:att.45E4291E97
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.5B6F52B2CF
@@ -7756,6 +8133,7 @@ trsp:att.5B6F52B2CF
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.207398D3A8
   a skos:Concept ;
   skos:prefLabel "Human-readable API documentation available"@en ;
@@ -7766,6 +8144,7 @@ trsp:att.207398D3A8
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.1F40BC420B
@@ -7780,6 +8159,7 @@ trsp:att.1F40BC420B
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.7170942244
   a skos:Concept ;
   skos:prefLabel "Simple discovery"@en ;
@@ -7790,6 +8170,7 @@ trsp:att.7170942244
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.562C603E9F
@@ -7804,6 +8185,7 @@ trsp:att.562C603E9F
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.16C85273EE
   a skos:Concept ;
   skos:prefLabel "Semantic, NL, or AI Search"@en ;
@@ -7814,6 +8196,7 @@ trsp:att.16C85273EE
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.50F2DBF5C1
@@ -7828,6 +8211,7 @@ trsp:att.50F2DBF5C1
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4BFE0576A2
   a skos:Concept ;
   skos:prefLabel "Federated Search Available"@en ;
@@ -7838,6 +8222,7 @@ trsp:att.4BFE0576A2
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.3458FE4AF7
@@ -7852,6 +8237,7 @@ trsp:att.3458FE4AF7
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.398417702D
   a skos:Concept ;
   skos:prefLabel "Rich Metadata is Available"@en ;
@@ -7864,6 +8250,7 @@ trsp:att.398417702D
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4800B935CD
   a skos:Concept ;
   skos:prefLabel "Provenance is recorded using an applicable machine-readable standard"@en ;
@@ -7874,6 +8261,7 @@ trsp:att.4800B935CD
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.0F645C5E04
@@ -7889,6 +8277,7 @@ trsp:att.0F645C5E04
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.04C904A984
   a skos:Concept ;
   skos:prefLabel "Download or stream"@en ;
@@ -7899,6 +8288,7 @@ trsp:att.04C904A984
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.6BA2330E96
@@ -7913,6 +8303,7 @@ trsp:att.6BA2330E96
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0F56D6B0C4
   a skos:Concept ;
   skos:prefLabel "Include into VRE or workflow"@en ;
@@ -7923,6 +8314,7 @@ trsp:att.0F56D6B0C4
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.2F6F8568A8
@@ -7938,6 +8330,7 @@ trsp:att.2F6F8568A8
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.4FE3AA3A42
   a skos:Concept ;
   skos:prefLabel "Analyse and Pre-Process"@en ;
@@ -7950,6 +8343,7 @@ trsp:att.4FE3AA3A42
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.0893119B50
   a skos:Concept ;
   skos:prefLabel "Supports LOD References"@en ;
@@ -7960,6 +8354,7 @@ trsp:att.0893119B50
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.4B81FE7163
@@ -7975,6 +8370,7 @@ trsp:att.4B81FE7163
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.5103AC4BB0
   a skos:Concept ;
   skos:prefLabel "(Forward) Provenance"@en ;
@@ -7986,6 +8382,7 @@ trsp:att.5103AC4BB0
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.21C38D1D00
@@ -8000,6 +8397,7 @@ trsp:att.21C38D1D00
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.51FA72053A
   a skos:Concept ;
   skos:prefLabel "Citation and Mentions Metrics"@en ;
@@ -8012,6 +8410,7 @@ trsp:att.51FA72053A
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.434B4A0632
   a skos:Concept ;
   skos:prefLabel "Helpdesk Available"@en ;
@@ -8022,6 +8421,7 @@ trsp:att.434B4A0632
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
 
 trsp:att.24C6E69FBF
@@ -8037,6 +8437,7 @@ trsp:att.24C6E69FBF
   skos:inScheme trsp:trsp-attributes .
 
 
+
 trsp:att.69BC0467D4
   a skos:Concept ;
   skos:prefLabel "Update Functionality"@en ;
@@ -8047,4 +8448,5 @@ trsp:att.69BC0467D4
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   skos:inScheme trsp:trsp-attributes .
+
 
