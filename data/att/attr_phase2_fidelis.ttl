@@ -1,0 +1,197 @@
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+trsp:fidelispurpose
+  a skos:Concept ;
+  skos:prefLabel "Purpose"@en ;
+  skos:description "Brief Description of Purpose"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisgovernancestructure
+  a skos:Concept ;
+  skos:prefLabel "Governance Structure"@en ;
+  skos:description "A descirption of the governance structure of the repository"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fideliskeystakeholders
+  a skos:Concept ;
+  skos:prefLabel "Key Stakeholders"@en ;
+  skos:description "The key stakeholders and the nature of the mutual dependency"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelismemberships
+  a skos:Concept ;
+  skos:prefLabel "Memberships"@en ;
+  skos:description "Any initiatives, networks, or infrastructures that the repository is a member of"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fideliscoretrustsealcertificationstatus
+  a skos:Concept ;
+  skos:prefLabel "CoreTrustSeal Certification Status"@en ;
+  skos:description "Certfiied by CoreTrustSeal"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisendorsedtrustprinciples
+  a skos:Concept ;
+  skos:prefLabel "Endorsed TRUST Principles?"@en ;
+  skos:description "Has the repository endorsed the TRUST principles?"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fideliscertifications
+  a skos:Concept ;
+  skos:prefLabel "Certifications"@en ;
+  skos:description "Any certifications that the repository has obtained"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisyearestablished
+  a skos:Concept ;
+  skos:prefLabel "Year Established"@en ;
+  skos:description "Year in which the repository was established"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisurl
+  a skos:Concept ;
+  skos:prefLabel "URL"@en ;
+  skos:description "An endpoint URL for the repository"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisfileformats
+  a skos:Concept ;
+  skos:prefLabel "File Formats"@en ;
+  skos:description "List of file formats supported by the repository - can be categorised as 'Preferred', 'Dissemination', and 'Preservation' formats."@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisvocabulariesused
+  a skos:Concept ;
+  skos:prefLabel "Vocabularies Used"@en ;
+  skos:description "List of vocabularies and semantic artefacts supported by the repository"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelispersistentidentifiersystem
+  a skos:Concept ;
+  skos:prefLabel "Persistent Identifier System"@en ;
+  skos:description "List of persistent identifiers supported by the repository"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelislicence
+  a skos:Concept ;
+  skos:prefLabel "Licence"@en ;
+  skos:description "List of licences supported by the repository"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelishostinginstitutionorganisation
+  a skos:Concept ;
+  skos:prefLabel "Hosting Institution/ Organisation"@en ;
+  skos:description "Organisation(s) hosting the repository"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisrepositoryname
+  a skos:Concept ;
+  skos:prefLabel "Repository name"@en ;
+  skos:description "The name or title of the repository or service"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisgovernancemodel
+  a skos:Concept ;
+  skos:prefLabel "Governance Model"@en ;
+  skos:description "Type of governance and management model"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisdataaccesspolicy
+  a skos:Concept ;
+  skos:prefLabel "Data Access Policy"@en ;
+  skos:description "The repository has a Data Access Policy"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelispreservationpolicy
+  a skos:Concept ;
+  skos:prefLabel "Preservation Policy"@en ;
+  skos:description "The repository has a Preservation Policy"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisdepositpolicy
+  a skos:Concept ;
+  skos:prefLabel "Deposit Policy"@en ;
+  skos:description "The repository has a Deposit/ Accession Policy"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisdataretentionpolicy
+  a skos:Concept ;
+  skos:prefLabel "Data Retention Policy"@en ;
+  skos:description "The repository has a Data Retention Policy"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fideliscountryregion
+  a skos:Concept ;
+  skos:prefLabel "Country/Region"@en ;
+  skos:description "Country in which the repository is located"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisprimaryresearchdomains
+  a skos:Concept ;
+  skos:prefLabel "Primary Research Domains"@en ;
+  skos:description "Primary research domain(s)"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fideliseoscnodeparticipation
+  a skos:Concept ;
+  skos:prefLabel "EOSC Node Participation"@en ;
+  skos:description "Part of current or aspiring EOSC Node?"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisfundingmodel
+  a skos:Concept ;
+  skos:prefLabel "Funding Model"@en ;
+  skos:description "What are the sources of revenue available to the repositopry?"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisdatatypesaccepted
+  a skos:Concept ;
+  skos:prefLabel "Data Types Accepted"@en ;
+  skos:description "A list of object types accepted by the repository"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelisapisavailable
+  a skos:Concept ;
+  skos:prefLabel "APIs Available"@en ;
+  skos:description "List of API service types/ protocols available"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fidelistypeofrepository
+  a skos:Concept ;
+  skos:prefLabel "Type of Repository"@en ;
+  skos:description "Type of repository"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:ConceptScheme .
+
+trsp:fideliscomments
+  a skos:Concept ;
+  skos:prefLabel "Comments"@en ;
+  skos:inScheme trsp:ConceptScheme .
