@@ -1,0 +1,2217 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wikidata: <https://www.wikidata.org/wiki/#> .
+@prefix schema: <http://schema.org/> .
+@prefix gorc: <https://purl.org/gorc/> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix re3data: <https://schema.re3data.org/4-0#> .
+trsp:trsp-eden-profile a skos:ConceptScheme ;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ; # Wim Hugo
+  dct:contributor <https://orcid.org/0000-0003-1106-8441> ; # Wilko Steinhoff
+  dct:contributor "Wesley Middelbos" ;
+  dct:contributor "EOSC EDEN WP2" ;
+  dct:description "A profile of repository and repository services attributes identified by EOSC EDEN"@en 
+  dct:modified "2026-05-07T00:00:00+00:00"^^xsd:datetime;
+  dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
+  dct:rights <https://spdx.org/licenses/CC0-1.0>;
+  dct:title "EOSC EDEN Attribute Vocabulary Profile @en;
+  skos:prefLabel "EDEN Attributes"@en .
+  owl:versionInfo "0.4"@en;
+  foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:ttram:AF01
+  a skos:Concept ;
+  skos:prefLabel "Identification & Contact"@en ;
+  skos:description "Names, abbreviations and contact details for the organisation to provide reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.291848CB10 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Identification & Contact"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeFormat ;
+  trsp:hasBenchmark Text ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF01-01
+  a skos:Concept ;
+  skos:prefLabel "Contact details"@en ;
+  skos:description "Names, abbreviations and contact details for the organisation to provide reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.08417EDDFC ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Identification & Contact|Contact details"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF01-02
+  a skos:Concept ;
+  skos:prefLabel "Catalogue identifiers"@en ;
+  skos:description "Names, abbreviations and contact details for the organisation to provide reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.0AB11676B0 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Identification & Contact|Catalogue identifiers"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF01-02-01
+  a skos:Concept ;
+  skos:prefLabel "Catalogue URL"@en ;
+  skos:description "Names, abbreviations and contact details for the organisation to provide reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.7470DA5BBA ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Identification & Contact|Catalogue URL"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF01-03
+  a skos:Concept ;
+  skos:prefLabel "Organisation Identifier(s)"@en ;
+  skos:description "Names, abbreviations and contact details for the organisation to provide reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.41F4454A97 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Identification & Contact|Organisation Identifier(s)"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark RoR ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF01-04
+  a skos:Concept ;
+  skos:prefLabel "Organisation Alternative Names"@en ;
+  skos:description "Names, abbreviations and contact details for the organisation to provide reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.41F4454A97 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Identification & Contact|Organisation Alternative Names"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark RoR ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF01-05
+  a skos:Concept ;
+  skos:prefLabel "Organisation Name"@en ;
+  skos:description "Names, abbreviations and contact details for the organisation to provide reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.41F4454A97 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Identification & Contact|Organisation Name"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark RoR ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02
+  a skos:Concept ;
+  skos:prefLabel "Mission & Scope"@en ;
+  skos:description "Names, abbreviations and contact details for the organisation to provide reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.64FDE59BAD ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-01
+  a skos:Concept ;
+  skos:prefLabel "Organisation Mission Statement"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.04B70A444F ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Organisation Mission Statement"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-02
+  a skos:Concept ;
+  skos:prefLabel "LoRCAP"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.4F90C51D4C ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|LoRCAP"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistCurationType ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-03
+  a skos:Concept ;
+  skos:prefLabel "Repository Type"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.6A715E3A22 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Repository Type"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
+  trsp:hasBenchmark r3d:repository-type ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-04
+  a skos:Concept ;
+  skos:prefLabel "Designated Community"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.3282BD1281 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Designated Community"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-05
+  a skos:Concept ;
+  skos:prefLabel "Permitted/Restricted Object(s)"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.54317F78CB ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Permitted/Restricted Object(s)"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
+  trsp:hasBenchmark r3d:content-types.ttl ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-05-01
+  a skos:Concept ;
+  skos:prefLabel "Depositor Characteristics"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.206C4C60AA ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Depositor Characteristics"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-05-02
+  a skos:Concept ;
+  skos:prefLabel "User Characteristics"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.4BFD6FB9B3 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|User Characteristics"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-06
+  a skos:Concept ;
+  skos:prefLabel "Geographic coverage"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.34D1282F11 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Geographic coverage"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
+  trsp:hasBenchmark iso:iso-3166-1.ttl ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-06-01
+  a skos:Concept ;
+  skos:prefLabel "Linguistic coverage"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.78A504B99F ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Linguistic coverage"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-07
+  a skos:Concept ;
+  skos:prefLabel "FAIR-enabling"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.0FE5D01C72 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|FAIR-enabling"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-07-01
+  a skos:Concept ;
+  skos:prefLabel "Endorses TRUST"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.78CC017229 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Endorses TRUST"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistPrinciples ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF02-07-02
+  a skos:Concept ;
+  skos:prefLabel "Endorses CARE"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.78CC017229 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Context|Mission & Scope|Endorses CARE"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistPrinciples ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF03
+  a skos:Concept ;
+  skos:prefLabel "Conceive, Create, Collect"@en ;
+  skos:description "Defining the purpose (or mission) of the organisation and the boundaries of activities for which the repository is responsible. Where activities involve partners or outsourced services, the organisation retains ultimate responsibility for the activities, functions and outcomes. Provides reference information and context for the rest of the activities and functions."@en ;
+  skos:exactMatch att.62E1C089DB ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Conceive, Create, Collect"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF03-01
+  a skos:Concept ;
+  skos:prefLabel "Pre-deposit guidance"@en ;
+  skos:description "The stages of the research data lifecycle, before data enters a repository. Working with data or metadata creators and owners can help improve quality and highlight the benefits of curation, preservation and reuse."@en ;
+  skos:exactMatch att.06D09133AE ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Conceive, Create, Collect|Pre-deposit guidance"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF03-02
+  a skos:Concept ;
+  skos:prefLabel "Funding Information"@en ;
+  skos:description "The stages of the research data lifecycle, before data enters a repository. Working with data or metadata creators and owners can help improve quality and highlight the benefits of curation, preservation and reuse."@en ;
+  skos:exactMatch att.076A4C2950 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Conceive, Create, Collect|Funding Information"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF03-03
+  a skos:Concept ;
+  skos:prefLabel "Project Information"@en ;
+  skos:description "The stages of the research data lifecycle, before data enters a repository. Working with data or metadata creators and owners can help improve quality and highlight the benefits of curation, preservation and reuse."@en ;
+  skos:exactMatch att.076A4C2950 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Conceive, Create, Collect|Project Information"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF03-04
+  a skos:Concept ;
+  skos:prefLabel "Data Management Plan (DMP)"@en ;
+  skos:description "The stages of the research data lifecycle, before data enters a repository. Working with data or metadata creators and owners can help improve quality and highlight the benefits of curation, preservation and reuse."@en ;
+  skos:exactMatch att.5E50766D16 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Conceive, Create, Collect|Data Management Plan (DMP)"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04
+  a skos:Concept ;
+  skos:prefLabel "Deposit & Appraisal"@en ;
+  skos:description "The stages of the research data lifecycle, before data enters a repository. Working with data or metadata creators and owners can help improve quality and highlight the benefits of curation, preservation and reuse."@en ;
+  skos:exactMatch att.00C02C55DC ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04-01
+  a skos:Concept ;
+  skos:prefLabel "Deposit quality control documentation"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.00C02C55DC ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal|Deposit quality control documentation"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04-02
+  a skos:Concept ;
+  skos:prefLabel "Collections Development and Appraisal Policy"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.6105038322 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal|Collections Development and Appraisal Policy"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04-03
+  a skos:Concept ;
+  skos:prefLabel "Deposit Compliance Criteria"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.4A98F89201 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal|Deposit Compliance Criteria"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistDepositDocumentation ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04-04
+  a skos:Concept ;
+  skos:prefLabel "Deposit Procedures"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.12CA661DF7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal|Deposit Procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04-05
+  a skos:Concept ;
+  skos:prefLabel "Acceptable/Preferred File Formats List"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.3B8FD2CB5F ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal|Acceptable/Preferred File Formats List"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04-06
+  a skos:Concept ;
+  skos:prefLabel "ReAppraisal Plan"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.4EA4FE6911 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal|ReAppraisal Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04-06-01
+  a skos:Concept ;
+  skos:prefLabel "Collection Data Management Plan"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.36E657FC7B ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal|Collection Data Management Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF04-07
+  a skos:Concept ;
+  skos:prefLabel "Deposit licence"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.543A727F84 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Deposit & Appraisal|Deposit licence"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Licence Facade, SPDX ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF05
+  a skos:Concept ;
+  skos:prefLabel "Curation, Quality & Compliance"@en ;
+  skos:description "Accepting custody of digital objects from depositors, transferring responsibility to the repository. It may also include appraising offered or requested deposits to ensure they meet established criteria for acceptance."@en ;
+  skos:exactMatch att.7F2AF694BC ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Curation, Quality & Compliance"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Schema URIs ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF05-01
+  a skos:Concept ;
+  skos:prefLabel "Initial Curation Workflow"@en ;
+  skos:description "Ensuring digital objects reach a defined level of quality and standards compliance before they are made available for reuse."@en ;
+  skos:exactMatch att.12CA661DF7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Curation, Quality & Compliance|Initial Curation Workflow"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF05-02
+  a skos:Concept ;
+  skos:prefLabel "Quality and Standards Statements"@en ;
+  skos:description "Ensuring digital objects reach a defined level of quality and standards compliance before they are made available for reuse."@en ;
+  skos:exactMatch att.00C02C55DC ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Curation, Quality & Compliance|Quality and Standards Statements"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF05-03
+  a skos:Concept ;
+  skos:prefLabel "Standard operating procedures"@en ;
+  skos:description "Ensuring digital objects reach a defined level of quality and standards compliance before they are made available for reuse."@en ;
+  skos:exactMatch trsp:att.3E5B47B5C9 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Curation, Quality & Compliance|Standard operating procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistProceduresWorkflow ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF05-04
+  a skos:Concept ;
+  skos:prefLabel "Compliance policies and procedures"@en ;
+  skos:description "Ensuring digital objects reach a defined level of quality and standards compliance before they are made available for reuse."@en ;
+  skos:exactMatch trsp:att.145BD6BECD ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Curation, Quality & Compliance|Compliance policies and procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF05-04-01
+  a skos:Concept ;
+  skos:prefLabel "Quality assurance policies"@en ;
+  skos:description "Ensuring digital objects reach a defined level of quality and standards compliance before they are made available for reuse."@en ;
+  skos:exactMatch trsp:att.145BD6BECD ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Curation, Quality & Compliance|Quality assurance policies"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF05-04-02
+  a skos:Concept ;
+  skos:prefLabel "Quality assurance procedures"@en ;
+  skos:description "Ensuring digital objects reach a defined level of quality and standards compliance before they are made available for reuse."@en ;
+  skos:exactMatch trsp:att.3E5B47B5C9 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Curation, Quality & Compliance|Quality assurance procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistProceduresWorkflow ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF06
+  a skos:Concept ;
+  skos:prefLabel "Discovery & Identification"@en ;
+  skos:description "Ensuring digital objects reach a defined level of quality and standards compliance before they are made available for reuse."@en ;
+  skos:exactMatch att.34E5521DD7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Discovery & Identification"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
+  trsp:hasBenchmark iso:iso-3166-1.ttl ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF06-01
+  a skos:Concept ;
+  skos:prefLabel "Persistent identifiers used"@en ;
+  skos:description "Applying persistent identifiers and descriptive metadata to digital objects to support resource discovery. Providing discovery systems and making metadata available for harvesting."@en ;
+  skos:exactMatch att.2F993B25AD ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Discovery & Identification|Persistent identifiers used"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark PID-KB ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF06-01-01
+  a skos:Concept ;
+  skos:prefLabel "Links to external resources"@en ;
+  skos:description "Applying persistent identifiers and descriptive metadata to digital objects to support resource discovery. Providing discovery systems and making metadata available for harvesting."@en ;
+  skos:exactMatch att.698943C6A7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Discovery & Identification|Links to external resources"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF06-02
+  a skos:Concept ;
+  skos:prefLabel "Persistent Identifier system(s)"@en ;
+  skos:description "Applying persistent identifiers and descriptive metadata to digital objects to support resource discovery. Providing discovery systems and making metadata available for harvesting."@en ;
+  skos:exactMatch att.2F993B25AD ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Discovery & Identification|Persistent Identifier system(s)"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark PID-KB ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF06-03
+  a skos:Concept ;
+  skos:prefLabel "PID Policy"@en ;
+  skos:description "Applying persistent identifiers and descriptive metadata to digital objects to support resource discovery. Providing discovery systems and making metadata available for harvesting."@en ;
+  skos:exactMatch att.2901B9E359 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Discovery & Identification|PID Policy"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF06-04
+  a skos:Concept ;
+  skos:prefLabel "Discovery metadata and documentation"@en ;
+  skos:description "Applying persistent identifiers and descriptive metadata to digital objects to support resource discovery. Providing discovery systems and making metadata available for harvesting."@en ;
+  skos:exactMatch trsp:att.18CE7D92FA ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Discovery & Identification|Discovery metadata and documentation"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF06-05
+  a skos:Concept ;
+  skos:prefLabel "Resource discovery catalogues"@en ;
+  skos:description "Applying persistent identifiers and descriptive metadata to digital objects to support resource discovery. Providing discovery systems and making metadata available for harvesting."@en ;
+  skos:exactMatch att.51C655BFB0 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Discovery & Identification|Resource discovery catalogues"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Vocabularies, Semantic Artefacts ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF06-06
+  a skos:Concept ;
+  skos:prefLabel "Harvesting protocols"@en ;
+  skos:description "Applying persistent identifiers and descriptive metadata to digital objects to support resource discovery. Providing discovery systems and making metadata available for harvesting."@en ;
+  skos:exactMatch att.7298144E24 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Discovery & Identification|Harvesting protocols"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF07
+  a skos:Concept ;
+  skos:prefLabel "Access"@en ;
+  skos:description "Applying persistent identifiers and descriptive metadata to digital objects to support resource discovery. Providing discovery systems and making metadata available for harvesting."@en ;
+  skos:exactMatch att.6B7CED5897 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Access"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF07-01
+  a skos:Concept ;
+  skos:prefLabel "Access routes and methods documentation"@en ;
+  skos:description "Determining the appropriate method of access—such as direct download or use within a secure remote environment—and facilitating user access accordingly. Access criteria are based on the characteristics of both the digital objects and the users, in alignment with rights management policies (see AF15 \"Rights\")."@en ;
+  skos:exactMatch att.3E85A87190 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Access|Access routes and methods documentation"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistUSerSchemaCrosswalks ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF07-02
+  a skos:Concept ;
+  skos:prefLabel "Access Management Policy"@en ;
+  skos:description "Determining the appropriate method of access—such as direct download or use within a secure remote environment—and facilitating user access accordingly. Access criteria are based on the characteristics of both the digital objects and the users, in alignment with rights management policies (see AF15 \"Rights\")."@en ;
+  skos:exactMatch att.6B7CED5897 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Access|Access Management Policy"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF07-03
+  a skos:Concept ;
+  skos:prefLabel "Machine- and human-readable access routes"@en ;
+  skos:description "Determining the appropriate method of access—such as direct download or use within a secure remote environment—and facilitating user access accordingly. Access criteria are based on the characteristics of both the digital objects and the users, in alignment with rights management policies (see AF15 \"Rights\")."@en ;
+  skos:exactMatch att.207398D3A8 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Access|Machine- and human-readable access routes"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF07-04
+  a skos:Concept ;
+  skos:prefLabel "Licence(s)"@en ;
+  skos:description "Determining the appropriate method of access—such as direct download or use within a secure remote environment—and facilitating user access accordingly. Access criteria are based on the characteristics of both the digital objects and the users, in alignment with rights management policies (see AF15 \"Rights\")."@en ;
+  skos:exactMatch att.543A727F84 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Access|Licence(s)"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Licence Facade, SPDX ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF07-04-01
+  a skos:Concept ;
+  skos:prefLabel "Terms of access"@en ;
+  skos:description "Determining the appropriate method of access—such as direct download or use within a secure remote environment—and facilitating user access accordingly. Access criteria are based on the characteristics of both the digital objects and the users, in alignment with rights management policies (see AF15 \"Rights\")."@en ;
+  skos:exactMatch att.687D20F962 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Access|Terms of access"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF08
+  a skos:Concept ;
+  skos:prefLabel "Reuse"@en ;
+  skos:description "Determining the appropriate method of access—such as direct download or use within a secure remote environment—and facilitating user access accordingly. Access criteria are based on the characteristics of both the digital objects and the users, in alignment with rights management policies (see AF15 \"Rights\")."@en ;
+  skos:exactMatch att.497C7ACE99 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Reuse"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF08-01
+  a skos:Concept ;
+  skos:prefLabel "Reuse-enabling methods"@en ;
+  skos:description "Making and keeping digital objects usable and understandable depends on deposit, curation, and preservation activities. Facilitating reuse depends on understanding the needs and expectations of users, including—but not limited to—identified ‘designated communities’, through ongoing external engagement (see AF20 \"External Engagement\"). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control.”). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control."@en ;
+  skos:exactMatch att.7D09257304 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Reuse|Reuse-enabling methods"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistReuse ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF08-01-01
+  a skos:Concept ;
+  skos:prefLabel "Designated Community definitions"@en ;
+  skos:description "Making and keeping digital objects usable and understandable depends on deposit, curation, and preservation activities. Facilitating reuse depends on understanding the needs and expectations of users, including—but not limited to—identified ‘designated communities’, through ongoing external engagement (see AF20 \"External Engagement\"). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control.”). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control."@en ;
+  skos:exactMatch trsp:att.3282BD1281 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Reuse|Designated Community definitions"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF08-01-02
+  a skos:Concept ;
+  skos:prefLabel "Digital object models."@en ;
+  skos:description "Making and keeping digital objects usable and understandable depends on deposit, curation, and preservation activities. Facilitating reuse depends on understanding the needs and expectations of users, including—but not limited to—identified ‘designated communities’, through ongoing external engagement (see AF20 \"External Engagement\"). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control.”). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control."@en ;
+  skos:exactMatch trsp:att.1C94638914 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Reuse|Digital object models."@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF08-02
+  a skos:Concept ;
+  skos:prefLabel "Terms and Conditions for Use"@en ;
+  skos:description "Making and keeping digital objects usable and understandable depends on deposit, curation, and preservation activities. Facilitating reuse depends on understanding the needs and expectations of users, including—but not limited to—identified ‘designated communities’, through ongoing external engagement (see AF20 \"External Engagement\"). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control.”). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control."@en ;
+  skos:exactMatch trsp:att.687D20F962 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Reuse|Terms and Conditions for Use"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF08-03
+  a skos:Concept ;
+  skos:prefLabel "Designated Community Consultation information"@en ;
+  skos:description "Making and keeping digital objects usable and understandable depends on deposit, curation, and preservation activities. Facilitating reuse depends on understanding the needs and expectations of users, including—but not limited to—identified ‘designated communities’, through ongoing external engagement (see AF20 \"External Engagement\"). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control.”). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control."@en ;
+  skos:exactMatch trsp:att.04DC5770C9 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Reuse|Designated Community Consultation information"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF09
+  a skos:Concept ;
+  skos:prefLabel "Workflows"@en ;
+  skos:description "Making and keeping digital objects usable and understandable depends on deposit, curation, and preservation activities. Facilitating reuse depends on understanding the needs and expectations of users, including—but not limited to—identified ‘designated communities’, through ongoing external engagement (see AF20 \"External Engagement\"). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control.”). Repositories may mediate reuse through secure remote access systems, safe rooms, or other tools that keep the digital objects fully or partially under the service provider's control."@en ;
+  skos:exactMatch att.4AA1880060 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Workflows"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistDepositDocumentation ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF09-01
+  a skos:Concept ;
+  skos:prefLabel "Standard operating procedures"@en ;
+  skos:description "Processes and activities for managing, changing and maintaining digital objects and their associated data and metadata in line with legal, ethical, policy, and other standards and operating procedures (see AF23 “Legal & Ethical” and AF14 “Policy & Standards Management”)."@en ;
+  skos:exactMatch att.3E5B47B5C9 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Workflows|Standard operating procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistProceduresWorkflow ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF09-01-01
+  a skos:Concept ;
+  skos:prefLabel "Workflow/business process diagrams"@en ;
+  skos:description "Processes and activities for managing, changing and maintaining digital objects and their associated data and metadata in line with legal, ethical, policy, and other standards and operating procedures (see AF23 “Legal & Ethical” and AF14 “Policy & Standards Management”)."@en ;
+  skos:exactMatch att.3E5B47B5C9 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Workflows|Workflow/business process diagrams"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistProceduresWorkflow ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF10
+  a skos:Concept ;
+  skos:prefLabel "Preservation"@en ;
+  skos:description "Processes and activities for managing, changing and maintaining digital objects and their associated data and metadata in line with legal, ethical, policy, and other standards and operating procedures (see AF23 “Legal & Ethical” and AF14 “Policy & Standards Management”)."@en ;
+  skos:exactMatch att.570534F4B8 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF10-01
+  a skos:Concept ;
+  skos:prefLabel "Preservation policies, strategies, and plans"@en ;
+  skos:description "Monitoring both the technology landscape (see AF29 \"Technical Infrastructure\") and the user community (see AF20 \"External Engagement\") for any changes that could impact the usability or understanding (see AF08 \"Reuse\") of digital objects. When necessary, preservation actions are taken—such as migrating data formats, updating metadata (e.g., revising ontologies), or emulating the environment in which the digital object is used. These actions help ensure the long-term viability and continued accessibility of the digital object."@en ;
+  skos:exactMatch att.768DAFA0DB ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Preservation|Preservation policies, strategies, and plans"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF10-01-01
+  a skos:Concept ;
+  skos:prefLabel "Preservation procedures"@en ;
+  skos:description "Monitoring both the technology landscape (see AF29 \"Technical Infrastructure\") and the user community (see AF20 \"External Engagement\") for any changes that could impact the usability or understanding (see AF08 \"Reuse\") of digital objects. When necessary, preservation actions are taken—such as migrating data formats, updating metadata (e.g., revising ontologies), or emulating the environment in which the digital object is used. These actions help ensure the long-term viability and continued accessibility of the digital object."@en ;
+  skos:exactMatch att.5F37A613BB ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Preservation|Preservation procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF10-01-02
+  a skos:Concept ;
+  skos:prefLabel "Reappraisal workflow"@en ;
+  skos:description "Monitoring both the technology landscape (see AF29 \"Technical Infrastructure\") and the user community (see AF20 \"External Engagement\") for any changes that could impact the usability or understanding (see AF08 \"Reuse\") of digital objects. When necessary, preservation actions are taken—such as migrating data formats, updating metadata (e.g., revising ontologies), or emulating the environment in which the digital object is used. These actions help ensure the long-term viability and continued accessibility of the digital object."@en ;
+  skos:exactMatch trsp:att.5F37A613BB ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Preservation|Reappraisal workflow"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF11
+  a skos:Concept ;
+  skos:prefLabel "Provenance and Authenticity"@en ;
+  skos:description "Monitoring both the technology landscape (see AF29 \"Technical Infrastructure\") and the user community (see AF20 \"External Engagement\") for any changes that could impact the usability or understanding (see AF08 \"Reuse\") of digital objects. When necessary, preservation actions are taken—such as migrating data formats, updating metadata (e.g., revising ontologies), or emulating the environment in which the digital object is used. These actions help ensure the long-term viability and continued accessibility of the digital object."@en ;
+  skos:exactMatch att.72F38A16D8 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Provenance and Authenticity"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF11-01
+  a skos:Concept ;
+  skos:prefLabel "Provenance at Submission"@en ;
+  skos:description "Providing information about digital objects that details their history (provenance) and ensures their authenticity. Provenance and authenticity information can be captured at the point of deposit, generated during curation and preservation processes, and shared with data or metadata users."@en ;
+  skos:exactMatch att.72DE0527E3 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Provenance and Authenticity|Provenance at Submission"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF11-01-01
+  a skos:Concept ;
+  skos:prefLabel "Curation and Preservation Provenance"@en ;
+  skos:description "Providing information about digital objects that details their history (provenance) and ensures their authenticity. Provenance and authenticity information can be captured at the point of deposit, generated during curation and preservation processes, and shared with data or metadata users."@en ;
+  skos:exactMatch trsp:att.1A78609F7E ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Provenance and Authenticity|Curation and Preservation Provenance"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF12
+  a skos:Concept ;
+  skos:prefLabel "Support"@en ;
+  skos:description "Providing information about digital objects that details their history (provenance) and ensures their authenticity. Provenance and authenticity information can be captured at the point of deposit, generated during curation and preservation processes, and shared with data or metadata users."@en ;
+  skos:exactMatch att.56B57BDCC5 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Support"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF12-01
+  a skos:Concept ;
+  skos:prefLabel "Support Services Offered"@en ;
+  skos:description "Providing guidance and responding to requests from depositors and users around deposit and appraisal, discovery, access and re-use of data and metadata."@en ;
+  skos:exactMatch att.62E1C089DB ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Digital Object Management|Support|Support Services Offered"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF13
+  a skos:Concept ;
+  skos:prefLabel "Governance"@en ;
+  skos:description "Providing guidance and responding to requests from depositors and users around deposit and appraisal, discovery, access and re-use of data and metadata."@en ;
+  skos:exactMatch att.539A68DF8A ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Governance"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF13-01
+  a skos:Concept ;
+  skos:prefLabel "Organisational Structure Documentation"@en ;
+  skos:description "The organisational hierarchies and processes by which the entity's mission is managed and executed."@en ;
+  skos:exactMatch att.34A4F04633 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Governance|Organisational Structure Documentation"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF13-01-01
+  a skos:Concept ;
+  skos:prefLabel "Host Organisation"@en ;
+  skos:description "The organisational hierarchies and processes by which the entity's mission is managed and executed."@en ;
+  skos:exactMatch trsp:att.41F4454A97 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Governance|Host Organisation"@en ;
+  trsp:hasCardinalityType trsp:cardinality1_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark RoR ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF13-01-02
+  a skos:Concept ;
+  skos:prefLabel "Repository Funder"@en ;
+  skos:description "The organisational hierarchies and processes by which the entity's mission is managed and executed."@en ;
+  skos:exactMatch att.076A4C2950 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Governance|Repository Funder"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF14
+  a skos:Concept ;
+  skos:prefLabel "Policy & Standards"@en ;
+  skos:description "The organisational hierarchies and processes by which the entity's mission is managed and executed."@en ;
+  skos:exactMatch att.13132A45E7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Policy & Standards"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF14-01
+  a skos:Concept ;
+  skos:prefLabel "List of policies"@en ;
+  skos:description "The adoption and development of policies, standards and other criteria to guide practice, aligned with governance structures (see AF13 \"Governance\") and operational workflows (see AF09 \"Workflows\"), and in compliance with the applicable legal and ethical framework (see AF23 \"Legal and Ethical\")."@en ;
+  skos:exactMatch att.145BD6BECD ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Policy & Standards|List of policies"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF14-01-01
+  a skos:Concept ;
+  skos:prefLabel "List of supported standards"@en ;
+  skos:description "The adoption and development of policies, standards and other criteria to guide practice, aligned with governance structures (see AF13 \"Governance\") and operational workflows (see AF09 \"Workflows\"), and in compliance with the applicable legal and ethical framework (see AF23 \"Legal and Ethical\")."@en ;
+  skos:exactMatch att.167C47D292 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Policy & Standards|List of supported standards"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark Custom with Evidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF14-01-02
+  a skos:Concept ;
+  skos:prefLabel "Procedure for developing policies"@en ;
+  skos:description "The adoption and development of policies, standards and other criteria to guide practice, aligned with governance structures (see AF13 \"Governance\") and operational workflows (see AF09 \"Workflows\"), and in compliance with the applicable legal and ethical framework (see AF23 \"Legal and Ethical\")."@en ;
+  skos:exactMatch att.6437B9E8E1 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Policy & Standards|Procedure for developing policies"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF14-01-03
+  a skos:Concept ;
+  skos:prefLabel "Procedure for adopting standards"@en ;
+  skos:description "The adoption and development of policies, standards and other criteria to guide practice, aligned with governance structures (see AF13 \"Governance\") and operational workflows (see AF09 \"Workflows\"), and in compliance with the applicable legal and ethical framework (see AF23 \"Legal and Ethical\")."@en ;
+  skos:exactMatch att.6437B9E8E1 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Policy & Standards|Procedure for adopting standards"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF15
+  a skos:Concept ;
+  skos:prefLabel "Rights"@en ;
+  skos:description "The adoption and development of policies, standards and other criteria to guide practice, aligned with governance structures (see AF13 \"Governance\") and operational workflows (see AF09 \"Workflows\"), and in compliance with the applicable legal and ethical framework (see AF23 \"Legal and Ethical\")."@en ;
+  skos:exactMatch att.06F21028D1 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Rights"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF15-01
+  a skos:Concept ;
+  skos:prefLabel "Rights Policy"@en ;
+  skos:description "The management of permissions, prohibitions, and obligations governing how digital objects are accessed and used by individuals and organisations, both within and outside the repository."@en ;
+  skos:exactMatch att.6C9FCD9125 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Rights|Rights Policy"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF15-01-01
+  a skos:Concept ;
+  skos:prefLabel "Licences for deposit, access and reuse"@en ;
+  skos:description "The management of permissions, prohibitions, and obligations governing how digital objects are accessed and used by individuals and organisations, both within and outside the repository."@en ;
+  skos:exactMatch att.543A727F84 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Rights|Licences for deposit, access and reuse"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Licence Facade, SPDX ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF15-01-02
+  a skos:Concept ;
+  skos:prefLabel "Non-Compliance Policy"@en ;
+  skos:description "The management of permissions, prohibitions, and obligations governing how digital objects are accessed and used by individuals and organisations, both within and outside the repository."@en ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Rights|Non-Compliance Policy"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF15-01-03
+  a skos:Concept ;
+  skos:prefLabel "Sufficient rights to permit LoRCAP"@en ;
+  skos:description "The management of permissions, prohibitions, and obligations governing how digital objects are accessed and used by individuals and organisations, both within and outside the repository."@en ;
+  skos:exactMatch att.48C6F0C32D ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Rights|Sufficient rights to permit LoRCAP"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF15-01-04
+  a skos:Concept ;
+  skos:prefLabel "Rights related to succession plans"@en ;
+  skos:description "The management of permissions, prohibitions, and obligations governing how digital objects are accessed and used by individuals and organisations, both within and outside the repository."@en ;
+  skos:exactMatch att.48C6F0C32D ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Rights|Rights related to succession plans"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF16
+  a skos:Concept ;
+  skos:prefLabel "Resources"@en ;
+  skos:description "The management of permissions, prohibitions, and obligations governing how digital objects are accessed and used by individuals and organisations, both within and outside the repository."@en ;
+  skos:exactMatch att.34A4F04633 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Resources"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF16-01
+  a skos:Concept ;
+  skos:prefLabel "Budget and financial plans"@en ;
+  skos:description "The organisational hierarchies and processes by which the organisational entity's human and financial resources are obtained and managed. This includes a knowledge of and an effective deployment of human, financial and energy assets."@en ;
+  skos:exactMatch att.1B5925483C ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Resources|Budget and financial plans"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF16-01-01
+  a skos:Concept ;
+  skos:prefLabel "Financial Strategy and Projections"@en ;
+  skos:description "The organisational hierarchies and processes by which the organisational entity's human and financial resources are obtained and managed. This includes a knowledge of and an effective deployment of human, financial and energy assets."@en ;
+  skos:exactMatch att.6EDF9A999F ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Resources|Financial Strategy and Projections"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF16-01-02
+  a skos:Concept ;
+  skos:prefLabel "Income and expenditure reports"@en ;
+  skos:description "The organisational hierarchies and processes by which the organisational entity's human and financial resources are obtained and managed. This includes a knowledge of and an effective deployment of human, financial and energy assets."@en ;
+  skos:exactMatch att.6F306E2CEA ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Resources|Income and expenditure reports"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF17
+  a skos:Concept ;
+  skos:prefLabel "People & Expertise"@en ;
+  skos:description "The organisational hierarchies and processes by which the organisational entity's human and financial resources are obtained and managed. This includes a knowledge of and an effective deployment of human, financial and energy assets."@en ;
+  skos:exactMatch att.34A4F04633 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|People & Expertise"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF17-01
+  a skos:Concept ;
+  skos:prefLabel "Skills Statement"@en ;
+  skos:description "The management of human resources to fulfil the mission. Includes ensuring that sufficient skills are available, internally or externally (see AF20 “External Engagement”)."@en ;
+  skos:exactMatch att.34A4F04633 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|People & Expertise|Skills Statement"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF17-01-01
+  a skos:Concept ;
+  skos:prefLabel "Skills Development Plan"@en ;
+  skos:description "The management of human resources to fulfil the mission. Includes ensuring that sufficient skills are available, internally or externally (see AF20 “External Engagement”)."@en ;
+  skos:exactMatch att.34A4F04633 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|People & Expertise|Skills Development Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF17-01-02
+  a skos:Concept ;
+  skos:prefLabel "Staff Roles"@en ;
+  skos:description "The management of human resources to fulfil the mission. Includes ensuring that sufficient skills are available, internally or externally (see AF20 “External Engagement”)."@en ;
+  skos:exactMatch att.34A4F04633 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|People & Expertise|Staff Roles"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF17-01-03
+  a skos:Concept ;
+  skos:prefLabel "Skills List"@en ;
+  skos:description "The management of human resources to fulfil the mission. Includes ensuring that sufficient skills are available, internally or externally (see AF20 “External Engagement”)."@en ;
+  skos:exactMatch att.34A4F04633 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|People & Expertise|Skills List"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF18
+  a skos:Concept ;
+  skos:prefLabel "Third Party Dependencies"@en ;
+  skos:description "The management of human resources to fulfil the mission. Includes ensuring that sufficient skills are available, internally or externally (see AF20 “External Engagement”)."@en ;
+  skos:exactMatch att.01D16EFB9B ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Third Party Dependencies"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF18-01
+  a skos:Concept ;
+  skos:prefLabel "Lists of partners"@en ;
+  skos:description "Identifying and managing third-party organisations, hosts, partners, and other actors that are essential to operations, including the delivery of data or metadata services."@en ;
+  skos:exactMatch att.01D16EFB9B ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Third Party Dependencies|Lists of partners"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF18-01-01
+  a skos:Concept ;
+  skos:prefLabel "Partnership Statement"@en ;
+  skos:description "Identifying and managing third-party organisations, hosts, partners, and other actors that are essential to operations, including the delivery of data or metadata services."@en ;
+  skos:exactMatch att.01D16EFB9B ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Third Party Dependencies|Partnership Statement"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF18-01-02
+  a skos:Concept ;
+  skos:prefLabel "Partner Management Plan"@en ;
+  skos:description "Identifying and managing third-party organisations, hosts, partners, and other actors that are essential to operations, including the delivery of data or metadata services."@en ;
+  skos:exactMatch att.01D16EFB9B ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Third Party Dependencies|Partner Management Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF18-01-03
+  a skos:Concept ;
+  skos:prefLabel "External Service Providers"@en ;
+  skos:description "Identifying and managing third-party organisations, hosts, partners, and other actors that are essential to operations, including the delivery of data or metadata services."@en ;
+  skos:exactMatch att.19AF20660A ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Third Party Dependencies|External Service Providers"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF19
+  a skos:Concept ;
+  skos:prefLabel "Continuity of Service"@en ;
+  skos:description "Identifying and managing third-party organisations, hosts, partners, and other actors that are essential to operations, including the delivery of data or metadata services."@en ;
+  skos:exactMatch att.6FB4481988 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Continuity of Service"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF19-01
+  a skos:Concept ;
+  skos:prefLabel "Business Continuity Plan"@en ;
+  skos:description "Ensuring business continuity by maintaining normal operations and preparing for disruptions. This includes non-technical processes (for technical, see AF29 “Technical Infrastructure”) related to the organisation, digital object management (see AF09 \"Workflows\"), and security (see AF30 \"Security\"). It also covers recovery plans for events like service interruptions and disasters. Continuity includes succession planning for the end of a service."@en ;
+  skos:exactMatch att.6FB4481988 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Continuity of Service|Business Continuity Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF19-02
+  a skos:Concept ;
+  skos:prefLabel "Disaster Recovery Plan"@en ;
+  skos:description "Ensuring business continuity by maintaining normal operations and preparing for disruptions. This includes non-technical processes (for technical, see AF29 “Technical Infrastructure”) related to the organisation, digital object management (see AF09 \"Workflows\"), and security (see AF30 \"Security\"). It also covers recovery plans for events like service interruptions and disasters. Continuity includes succession planning for the end of a service."@en ;
+  skos:exactMatch att.11E8C2B7D0 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Continuity of Service|Disaster Recovery Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF19-03
+  a skos:Concept ;
+  skos:prefLabel "Succession Plan"@en ;
+  skos:description "Ensuring business continuity by maintaining normal operations and preparing for disruptions. This includes non-technical processes (for technical, see AF29 “Technical Infrastructure”) related to the organisation, digital object management (see AF09 \"Workflows\"), and security (see AF30 \"Security\"). It also covers recovery plans for events like service interruptions and disasters. Continuity includes succession planning for the end of a service."@en ;
+  skos:exactMatch att.3609108196 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Continuity of Service|Succession Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF20
+  a skos:Concept ;
+  skos:prefLabel "External Engagement"@en ;
+  skos:description "Ensuring business continuity by maintaining normal operations and preparing for disruptions. This includes non-technical processes (for technical, see AF29 “Technical Infrastructure”) related to the organisation, digital object management (see AF09 \"Workflows\"), and security (see AF30 \"Security\"). It also covers recovery plans for events like service interruptions and disasters. Continuity includes succession planning for the end of a service."@en ;
+  skos:exactMatch att.368F99A5F7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|External Engagement"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF20-01
+  a skos:Concept ;
+  skos:prefLabel "Community Skills List"@en ;
+  skos:description "Organisational interaction with external parties, including individuals, partner organisations, funders, and other relevant bodies."@en ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|External Engagement|Community Skills List"@en ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF20-01-01
+  a skos:Concept ;
+  skos:prefLabel "Community Engagement Plan"@en ;
+  skos:description "Organisational interaction with external parties, including individuals, partner organisations, funders, and other relevant bodies."@en ;
+  skos:exactMatch att.368F99A5F7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|External Engagement|Community Engagement Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF20-01-02
+  a skos:Concept ;
+  skos:prefLabel "Engagement with policy makers and funders"@en ;
+  skos:description "Organisational interaction with external parties, including individuals, partner organisations, funders, and other relevant bodies."@en ;
+  skos:exactMatch att.368F99A5F7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|External Engagement|Engagement with policy makers and funders"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF20-01-03
+  a skos:Concept ;
+  skos:prefLabel "Surveys of depositor and user needs"@en ;
+  skos:description "Organisational interaction with external parties, including individuals, partner organisations, funders, and other relevant bodies."@en ;
+  skos:exactMatch att.368F99A5F7 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|External Engagement|Surveys of depositor and user needs"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF21
+  a skos:Concept ;
+  skos:prefLabel "Release & Publishing"@en ;
+  skos:description "Organisational interaction with external parties, including individuals, partner organisations, funders, and other relevant bodies."@en ;
+  skos:exactMatch att.5F45FF82F5 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Release & Publishing"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF21-01
+  a skos:Concept ;
+  skos:prefLabel "Records management policy"@en ;
+  skos:description "The processes by which the organisation creates, manages, approves, releases, updates and withdraws information artefacts (not deposited digital objects) such as publications, policies, guidelines, and other content related to the repository activities and functions. It includes publishing information that provides evidence for external assessments (see AF24 \"Criteria, Assessment, Improvement\") and supports external engagement (see AF20 \"External Engagement\")."@en ;
+  skos:exactMatch att.1D00720769 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Release & Publishing|Records management policy"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF21-01-01
+  a skos:Concept ;
+  skos:prefLabel "Records retention schedule"@en ;
+  skos:description "The processes by which the organisation creates, manages, approves, releases, updates and withdraws information artefacts (not deposited digital objects) such as publications, policies, guidelines, and other content related to the repository activities and functions. It includes publishing information that provides evidence for external assessments (see AF24 \"Criteria, Assessment, Improvement\") and supports external engagement (see AF20 \"External Engagement\")."@en ;
+  skos:exactMatch att.1D00720769 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Release & Publishing|Records retention schedule"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF21-01-02
+  a skos:Concept ;
+  skos:prefLabel "Publication approval process"@en ;
+  skos:description "The processes by which the organisation creates, manages, approves, releases, updates and withdraws information artefacts (not deposited digital objects) such as publications, policies, guidelines, and other content related to the repository activities and functions. It includes publishing information that provides evidence for external assessments (see AF24 \"Criteria, Assessment, Improvement\") and supports external engagement (see AF20 \"External Engagement\")."@en ;
+  skos:exactMatch att.7D628D907A ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Release & Publishing|Publication approval process"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF22
+  a skos:Concept ;
+  skos:prefLabel "Interoperability"@en ;
+  skos:description "The processes by which the organisation creates, manages, approves, releases, updates and withdraws information artefacts (not deposited digital objects) such as publications, policies, guidelines, and other content related to the repository activities and functions. It includes publishing information that provides evidence for external assessments (see AF24 \"Criteria, Assessment, Improvement\") and supports external engagement (see AF20 \"External Engagement\")."@en ;
+  skos:exactMatch att.08DACE15B1 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Interoperability"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF22-01
+  a skos:Concept ;
+  skos:prefLabel "Interoperability policy"@en ;
+  skos:description "The protocols and processes by which people, processes, technologies and digital objects effectively interact with others, both within and across organisational entities."@en ;
+  skos:exactMatch att.360E4F3F7F ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Interoperability|Interoperability policy"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF22-01-01
+  a skos:Concept ;
+  skos:prefLabel "Interoperability plan"@en ;
+  skos:description "The protocols and processes by which people, processes, technologies and digital objects effectively interact with others, both within and across organisational entities."@en ;
+  skos:exactMatch att.360E4F3F7F ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Interoperability|Interoperability plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF22-01-02
+  a skos:Concept ;
+  skos:prefLabel "Interoperability procedures"@en ;
+  skos:description "The protocols and processes by which people, processes, technologies and digital objects effectively interact with others, both within and across organisational entities."@en ;
+  skos:exactMatch att.0C3DB9BFAA ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Interoperability|Interoperability procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF22-01-03
+  a skos:Concept ;
+  skos:prefLabel "Machine-accessible endpoints and services"@en ;
+  skos:description "The protocols and processes by which people, processes, technologies and digital objects effectively interact with others, both within and across organisational entities."@en ;
+  skos:exactMatch att.515B8F83FB ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Interoperability|Machine-accessible endpoints and services"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF22-01-04
+  a skos:Concept ;
+  skos:prefLabel "Crosswalks and transformation support"@en ;
+  skos:description "The protocols and processes by which people, processes, technologies and digital objects effectively interact with others, both within and across organisational entities."@en ;
+  skos:exactMatch att.3B49F36F75 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Interoperability|Crosswalks and transformation support"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Schema Crosswalk URIs ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF23
+  a skos:Concept ;
+  skos:prefLabel "Legal & Ethical"@en ;
+  skos:description "The protocols and processes by which people, processes, technologies and digital objects effectively interact with others, both within and across organisational entities."@en ;
+  skos:exactMatch att.5F45FF82F5 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF23-01
+  a skos:Concept ;
+  skos:prefLabel "Legal/ ethical compliance statements"@en ;
+  skos:description "The legal and ethical obligations that the organisation must be aware of and adhere to."@en ;
+  skos:exactMatch att.51E4556DFE ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Legal & Ethical|Legal/ ethical compliance statements"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF23-01-01
+  a skos:Concept ;
+  skos:prefLabel "Legal/ ethical policies"@en ;
+  skos:description "The legal and ethical obligations that the organisation must be aware of and adhere to."@en ;
+  skos:exactMatch att.7F6F3E3DDE ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Legal & Ethical|Legal/ ethical policies"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF23-01-02
+  a skos:Concept ;
+  skos:prefLabel "Legal/ ethical procedures"@en ;
+  skos:description "The legal and ethical obligations that the organisation must be aware of and adhere to."@en ;
+  skos:exactMatch att.56F24C24C3 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Legal & Ethical|Legal/ ethical procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF23-01-03
+  a skos:Concept ;
+  skos:prefLabel "Ethical guidance"@en ;
+  skos:description "The legal and ethical obligations that the organisation must be aware of and adhere to."@en ;
+  skos:exactMatch att.2B19863F6A ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Legal & Ethical|Ethical guidance"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF23-01-04
+  a skos:Concept ;
+  skos:prefLabel "Applicable legislation list"@en ;
+  skos:description "The legal and ethical obligations that the organisation must be aware of and adhere to."@en ;
+  skos:exactMatch att.64A44F5193 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Legal & Ethical|Applicable legislation list"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF24
+  a skos:Concept ;
+  skos:prefLabel "Criteria, Assessment, Improvement"@en ;
+  skos:description "The legal and ethical obligations that the organisation must be aware of and adhere to."@en ;
+  skos:exactMatch att.7F2AF694BC ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Criteria, Assessment, Improvement"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Schema URIs ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF24-01
+  a skos:Concept ;
+  skos:prefLabel "Self-Assessments"@en ;
+  skos:description "The processes used to assess compliance with standards, policies, and procedures, along with identifying actions for continuous and targeted improvement."@en ;
+  skos:exactMatch att.6E27DEF3A1 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Criteria, Assessment, Improvement|Self-Assessments"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Assessment URIs ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF24-01-01
+  a skos:Concept ;
+  skos:prefLabel "Change Management Procedures"@en ;
+  skos:description "The processes used to assess compliance with standards, policies, and procedures, along with identifying actions for continuous and targeted improvement."@en ;
+  skos:exactMatch att.5BAF2CF9AA ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Criteria, Assessment, Improvement|Change Management Procedures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistInfoManagement ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF24-01-02
+  a skos:Concept ;
+  skos:prefLabel "Certifications"@en ;
+  skos:description "The processes used to assess compliance with standards, policies, and procedures, along with identifying actions for continuous and targeted improvement."@en ;
+  skos:exactMatch att.27C898E8A0 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Criteria, Assessment, Improvement|Certifications"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Certification URIs ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF25
+  a skos:Concept ;
+  skos:prefLabel "Analysis & Impact"@en ;
+  skos:description "The processes used to assess compliance with standards, policies, and procedures, along with identifying actions for continuous and targeted improvement."@en ;
+  skos:exactMatch att.70C4C7B218 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Analysis & Impact"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Repository URIs ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF25-01
+  a skos:Concept ;
+  skos:prefLabel "External impact monitoring"@en ;
+  skos:description "The analysis of internal data and external information to verify and demonstrate that the organisation is effectively fulfilling its mission (see AF02 \"Mission & Scope\")."@en ;
+  skos:exactMatch att.13368CB9AC ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Analysis & Impact|External impact monitoring"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF25-02
+  a skos:Concept ;
+  skos:prefLabel "Metrics and usage information"@en ;
+  skos:description "The analysis of internal data and external information to verify and demonstrate that the organisation is effectively fulfilling its mission (see AF02 \"Mission & Scope\")."@en ;
+  skos:exactMatch att.0C3FB3218D ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Analysis & Impact|Metrics and usage information"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistMetrics ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF26
+  a skos:Concept ;
+  skos:prefLabel "Training"@en ;
+  skos:description "The analysis of internal data and external information to verify and demonstrate that the organisation is effectively fulfilling its mission (see AF02 \"Mission & Scope\")."@en ;
+  skos:exactMatch att.675434DF2B ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Training"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF26-01
+  a skos:Concept ;
+  skos:prefLabel "Training programmes offered"@en ;
+  skos:description "Leveraging internal expertise to train data and metadata producers, owners, depositors, and users. Training can cover the entire digital object management lifecycle, from the conception of research to the reuse of data and metadata. It also includes training for internal staff, as well as for peer organisations, partners, and third parties."@en ;
+  skos:exactMatch att.675434DF2B ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Training|Training programmes offered"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF26-01-01
+  a skos:Concept ;
+  skos:prefLabel "Training materials"@en ;
+  skos:description "Leveraging internal expertise to train data and metadata producers, owners, depositors, and users. Training can cover the entire digital object management lifecycle, from the conception of research to the reuse of data and metadata. It also includes training for internal staff, as well as for peer organisations, partners, and third parties."@en ;
+  skos:exactMatch att.62E1C089DB ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Training|Training materials"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF27
+  a skos:Concept ;
+  skos:prefLabel "Research & Development (R&D)"@en ;
+  skos:description "Leveraging internal expertise to train data and metadata producers, owners, depositors, and users. Training can cover the entire digital object management lifecycle, from the conception of research to the reuse of data and metadata. It also includes training for internal staff, as well as for peer organisations, partners, and third parties."@en ;
+  skos:exactMatch att.269758D5A0 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Research & Development (R&D)"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF27-01
+  a skos:Concept ;
+  skos:prefLabel "Systems development guidelines and standards"@en ;
+  skos:description "Projects and other activities outside current operations, routine maintenance and upgrades. This can include new approaches to data, metadata, business processes, technology, security, and research infrastructure."@en ;
+  skos:exactMatch att.067B4C3677 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Research & Development (R&D)|Systems development guidelines and standards"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF27-01-01
+  a skos:Concept ;
+  skos:prefLabel "Current projects"@en ;
+  skos:description "Projects and other activities outside current operations, routine maintenance and upgrades. This can include new approaches to data, metadata, business processes, technology, security, and research infrastructure."@en ;
+  skos:exactMatch att.52FDC90AA3 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Research & Development (R&D)|Current projects"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF27-01-02
+  a skos:Concept ;
+  skos:prefLabel "Technology readiness level processes"@en ;
+  skos:description "Projects and other activities outside current operations, routine maintenance and upgrades. This can include new approaches to data, metadata, business processes, technology, security, and research infrastructure."@en ;
+  skos:exactMatch att.4C6A46FB4C ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Organisational Infrastructure|Research & Development (R&D)|Technology readiness level processes"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF28
+  a skos:Concept ;
+  skos:prefLabel "Storage & Integrity"@en ;
+  skos:description "Projects and other activities outside current operations, routine maintenance and upgrades. This can include new approaches to data, metadata, business processes, technology, security, and research infrastructure."@en ;
+  skos:exactMatch att.11E8C2B7D0 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Storage & Integrity"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF28-01
+  a skos:Concept ;
+  skos:prefLabel "Storage Documentation"@en ;
+  skos:description "The methods used to store and replicate digital objects’ data and metadata, including the validation of replicated copies and the restoration of data from backups in case of errors."@en ;
+  skos:exactMatch att.075738C8DF ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Storage & Integrity|Storage Documentation"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF28-01-01
+  a skos:Concept ;
+  skos:prefLabel "Integrity measures"@en ;
+  skos:description "The methods used to store and replicate digital objects’ data and metadata, including the validation of replicated copies and the restoration of data from backups in case of errors."@en ;
+  skos:exactMatch att.075738C8DF ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Storage & Integrity|Integrity measures"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF29
+  a skos:Concept ;
+  skos:prefLabel "Technical Infrastructure"@en ;
+  skos:description "The methods used to store and replicate digital objects’ data and metadata, including the validation of replicated copies and the restoration of data from backups in case of errors."@en ;
+  skos:exactMatch att.56C67A542A ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Technical Infrastructure"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF29-01
+  a skos:Concept ;
+  skos:prefLabel "Technical Infrastructure Statement"@en ;
+  skos:description "The comprehensive provision of hardware, software, and IT service management to support the organisation's entity. Monitoring the user community technical needs and broader technical landscape to update and maintain levels of technical service (see AF08 “ReUse”)."@en ;
+  skos:exactMatch att.319BC310D5 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Technical Infrastructure|Technical Infrastructure Statement"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF29-01-01
+  a skos:Concept ;
+  skos:prefLabel "Technical Infrastructure Plan"@en ;
+  skos:description "The comprehensive provision of hardware, software, and IT service management to support the organisation's entity. Monitoring the user community technical needs and broader technical landscape to update and maintain levels of technical service (see AF08 “ReUse”)."@en ;
+  skos:exactMatch att.319BC310D5 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Technical Infrastructure|Technical Infrastructure Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF29-01-02
+  a skos:Concept ;
+  skos:prefLabel "IT Service Management Methodologies"@en ;
+  skos:description "The comprehensive provision of hardware, software, and IT service management to support the organisation's entity. Monitoring the user community technical needs and broader technical landscape to update and maintain levels of technical service (see AF08 “ReUse”)."@en ;
+  skos:exactMatch att.5BAF2CF9AA ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Technical Infrastructure|IT Service Management Methodologies"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistInfoManagement ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF29-01-03
+  a skos:Concept ;
+  skos:prefLabel "Service Management Framework(s)"@en ;
+  skos:description "The comprehensive provision of hardware, software, and IT service management to support the organisation's entity. Monitoring the user community technical needs and broader technical landscape to update and maintain levels of technical service (see AF08 “ReUse”)."@en ;
+  skos:exactMatch att.5BAF2CF9AA ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Technical Infrastructure|Service Management Framework(s)"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark trsp:checklistInfoManagement ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF29-01-04
+  a skos:Concept ;
+  skos:prefLabel "Repository-related software and source code"@en ;
+  skos:description "The comprehensive provision of hardware, software, and IT service management to support the organisation's entity. Monitoring the user community technical needs and broader technical landscape to update and maintain levels of technical service (see AF08 “ReUse”)."@en ;
+  skos:exactMatch att.1146FD1520 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Technology|Technical Infrastructure|Repository-related software and source code"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF30
+  a skos:Concept ;
+  skos:prefLabel "Security"@en ;
+  skos:description "The comprehensive provision of hardware, software, and IT service management to support the organisation's entity. Monitoring the user community technical needs and broader technical landscape to update and maintain levels of technical service (see AF08 “ReUse”)."@en ;
+  skos:exactMatch att.1AE2618C36 ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Security"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF30-01
+  a skos:Concept ;
+  skos:prefLabel "Information Security Statement"@en ;
+  skos:description "Ensuring security across the organisation’s infrastructure, digital object management, and systems. Security also extends to the boundary between the repository and external entities, including users, depositors and dependencies on third parties."@en ;
+  skos:exactMatch att.181F35E46A ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Security|Security|Information Security Statement"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF30-01-01
+  a skos:Concept ;
+  skos:prefLabel "Information Security Plan"@en ;
+  skos:description "Ensuring security across the organisation’s infrastructure, digital object management, and systems. Security also extends to the boundary between the repository and external entities, including users, depositors and dependencies on third parties."@en ;
+  skos:exactMatch att.337C35222E ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Security|Security|Information Security Plan"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_n ;
+  trsp:hasMeasurementType trsp:measurementTypeChecklist ;
+  trsp:hasBenchmark SAML;OAuth2;OpenIDConnect ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
+
+trsp:ttram:AF30-01-02
+  a skos:Concept ;
+  skos:prefLabel "Related Certifications"@en ;
+  skos:description "Ensuring security across the organisation’s infrastructure, digital object management, and systems. Security also extends to the boundary between the repository and external entities, including users, depositors and dependencies on third parties."@en ;
+  skos:exactMatch att.1BFD0D011D ;
+  trsp:hasProfile profile.668467EC38 ;
+  trsp:hasProfileType trsp:profileTypeCommunity ;
+  dcat:keyword "TTRAM"@en ;
+  schema:category "Security|Security|Related Certifications"@en ;
+  trsp:hasCardinalityType trsp:cardinality0_1 ;
+  trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+  trsp:hasBenchmark Certification URIs ;
+  owl:versionInfo "0.1" ;
+  skos:inScheme trsp:trsp-ttram-profile .
