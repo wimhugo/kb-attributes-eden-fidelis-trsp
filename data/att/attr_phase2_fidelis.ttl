@@ -24,7 +24,7 @@ trsp:trsp-eden-profile a skos:ConceptScheme ;
   dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "EOSC FIDELIS Secretariat Attribute Vocabulary Profile @en;
-  skos:prefLabel "FIDELIS Attributes"@en .
+  skos:prefLabel "FIDELIS Profile"@en .
   owl:versionInfo "0.4"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
