@@ -14,25 +14,25 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 
 ex:summary_ex_DepositionPolicy a ex:TypeSummary ;
-  ex:nodeType <ex:DepositionPolicy> ;
-  ex:usesProperty dct:conformsTo ;
-  ex:usesProperty dct:contactPoint ;
-  ex:usesProperty dct:description ;
-  ex:usesProperty dct:identifier ;
-  ex:usesProperty dct:license ;
-  ex:usesProperty dct:title ;
-  ex:usesProperty dct:type ;
-  ex:usesProperty dcat:keyword ;
+  ex:nodeType <ex:DepositionPolicy> ; ## processed - Wim Hugo
+  ex:usesProperty dct:conformsTo ; ## processed - Wim Hugo
+  ex:usesProperty dct:contactPoint ; ## processed - Wim Hugo
+  ex:usesProperty dct:description ; ## processed - Wim Hugo
+  ex:usesProperty dct:identifier ; ## processed - Wim Hugo
+  ex:usesProperty dct:license ; ## processed - Wim Hugo
+  ex:usesProperty dct:title ; ## processed - Wim Hugo
+  ex:usesProperty dct:type ; ## processed - Wim Hugo
+  ex:usesProperty dcat:keyword ; ## processed - Wim Hugo
 .
 
 ex:summary_ex_SustainabilityPolicy a ex:TypeSummary ;
-  ex:nodeType <ex:SustainabilityPolicy> ;
-  ex:usesProperty dct:title ;
+  ex:nodeType <ex:SustainabilityPolicy> ; ## processed - Wim Hugo
+  ex:usesProperty dct:title ; ## processed - Wim Hugo
 .
 
 ex:summary_citation a ex:TypeSummary ;
   ex:nodeType <http://localhost:3030/service_registry_store/citation> ;
-  ex:usesProperty dct:title ;
+  ex:usesProperty dct:title ; 
 .
 
 ex:summary_CreativeWork a ex:TypeSummary ;
@@ -47,15 +47,15 @@ ex:summary_license a ex:TypeSummary ;
 
 ex:summary_Policy a ex:TypeSummary ;
   ex:nodeType dct:Policy ;
-  ex:usesProperty dct:conformsTo ;
-  ex:usesProperty dct:contactPoint ;
-  ex:usesProperty dct:description ;
-  ex:usesProperty dct:identifier ;
-  ex:usesProperty dct:license ;
-  ex:usesProperty dct:publisher ;
-  ex:usesProperty dct:title ;
-  ex:usesProperty dct:type ;
-  ex:usesProperty dcat:keyword ;
+  ex:usesProperty dct:conformsTo ; ## processed - Wim Hugo
+  ex:usesProperty dct:contactPoint ; ## processed - Wim Hugo
+  ex:usesProperty dct:description ; ## processed - Wim Hugo
+  ex:usesProperty dct:identifier ; ## processed - Wim Hugo
+  ex:usesProperty dct:license ; ## processed - Wim Hugo
+  ex:usesProperty dct:publisher ; ## processed - Wim Hugo
+  ex:usesProperty dct:title ; ## processed - Wim Hugo
+  ex:usesProperty dct:type ; ## processed - Wim Hugo
+  ex:usesProperty dcat:keyword ; ## processed - Wim Hugo
 .
 
 ex:summary_Kind a ex:TypeSummary ;
@@ -66,68 +66,68 @@ ex:summary_Kind a ex:TypeSummary ;
 
 ex:summary_Catalog a ex:TypeSummary ;
   ex:nodeType dcat:Catalog ;
-  ex:usesProperty dct:conformsTo ;
-  ex:usesProperty dct:contactPoint ;
-  ex:usesProperty dct:description ;
-  ex:usesProperty dct:identifier ;
-  ex:usesProperty dct:language ;
-  ex:usesProperty dct:license ;
-  ex:usesProperty dct:publisher ;
-  ex:usesProperty dct:title ;
-  ex:usesProperty dct:type ;
-  ex:usesProperty dcat:keyword ;
-  ex:usesProperty dcat:service ;
-  ex:usesProperty prov:hadPrimarySource ;
+  ex:usesProperty dct:conformsTo ; ## processed - Wim Hugo
+  ex:usesProperty dct:contactPoint ; ## processed - Wim Hugo
+  ex:usesProperty dct:description ; ## processed - Wim Hugo
+  ex:usesProperty dct:identifier ; ## processed - Wim Hugo
+  ex:usesProperty dct:language ; ## processed - Wim Hugo
+  ex:usesProperty dct:license ; ## processed - Wim Hugo
+  ex:usesProperty dct:publisher ; ## processed - Wim Hugo
+  ex:usesProperty dct:title ; ## processed - Wim Hugo
+  ex:usesProperty dct:type ; ## processed - Wim Hugo
+  ex:usesProperty dcat:keyword ; ## processed - Wim Hugo
+  ex:usesProperty dcat:service ; ## processed - Wim Hugo
+  ex:usesProperty prov:hadPrimarySource ; ## processed - Wim Hugo
 .
 
 ex:summary_CatalogRecord a ex:TypeSummary ;
   ex:nodeType dcat:CatalogRecord ;
-  ex:usesProperty dct:issued ;
-  ex:usesProperty prov:wasAssociatedWith ;
-  ex:usesProperty prov:wasGeneratedBy ;
-  ex:usesProperty foaf:primaryTopic ;
+  ex:usesProperty dct:issued ; ## processed - Wim Hugo
+  ex:usesProperty prov:wasAssociatedWith ; ## processed - Wim Hugo
+  ex:usesProperty prov:wasGeneratedBy ; ## processed - Wim Hugo
+  ex:usesProperty foaf:primaryTopic ; ## processed - Wim Hugo
 .
 
 ex:summary_DataService a ex:TypeSummary ;
-  ex:nodeType dcat:DataService ;
-  ex:usesProperty dct:conformsTo ;
-  ex:usesProperty dct:format ;
-  ex:usesProperty dct:title ;
-  ex:usesProperty dcat:endpointURL ;
+  ex:nodeType dcat:DataService ; ## processed - Wim Hugo
+  ex:usesProperty dct:conformsTo ; ## processed - Wim Hugo
+  ex:usesProperty dct:format ; ## processed - Wim Hugo
+  ex:usesProperty dct:title ; ## processed - Wim Hugo
+  ex:usesProperty dcat:endpointURL ; ## processed - Wim Hugo
 .
 
 ex:summary_Activity a ex:TypeSummary ;
   ex:nodeType prov:Activity ;
-  ex:usesProperty prov:name ;
-  ex:usesProperty prov:startedAtTime ;
+  ex:usesProperty prov:name ; ## processed - Wim Hugo
+  ex:usesProperty prov:startedAtTime ; ## processed - Wim Hugo
 .
 
 ex:summary_SoftwareAgent a ex:TypeSummary ;
   ex:nodeType prov:SoftwareAgent ;
-  ex:usesProperty prov:label ;
+  ex:usesProperty prov:label ;  ## processed - Wim Hugo
 .
 
-ex:summary_Agent a ex:TypeSummary ;
-  ex:nodeType foaf:Agent ;
-  ex:usesProperty vcard:country ;
-  ex:usesProperty foaf:homepage ;
-  ex:usesProperty foaf:name ;
+ex:summary_Agent a ex:TypeSummary ; 
+  ex:nodeType foaf:Agent ;  ## processed - Wim Hugo
+  ex:usesProperty vcard:country ;  ## processed - Wim Hugo
+  ex:usesProperty foaf:homepage ;  ## processed - Wim Hugo
+  ex:usesProperty foaf:name ;  ## processed - Wim Hugo
 .
 
 ex:summary_Project a ex:TypeSummary ;
   ex:nodeType foaf:Project ;
-  ex:usesProperty dct:conformsTo ;
-  ex:usesProperty dct:contactPoint ;
-  ex:usesProperty dct:description ;
-  ex:usesProperty dct:identifier ;
-  ex:usesProperty dct:language ;
-  ex:usesProperty dct:license ;
-  ex:usesProperty dct:publisher ;
-  ex:usesProperty dct:title ;
-  ex:usesProperty dct:type ;
-  ex:usesProperty dcat:keyword ;
-  ex:usesProperty dcat:service ;
-  ex:usesProperty prov:hadPrimarySource ;
+  ex:usesProperty dct:conformsTo ;  ## processed - Wim Hugo
+  ex:usesProperty dct:contactPoint ; ## processed - Wim Hugo
+  ex:usesProperty dct:description ; ## processed - Wim Hugo
+  ex:usesProperty dct:identifier ; ## processed - Wim Hugo
+  ex:usesProperty dct:language ; ## processed - Wim Hugo
+  ex:usesProperty dct:license ; ## processed - Wim Hugo
+  ex:usesProperty dct:publisher ; ## processed - Wim Hugo
+  ex:usesProperty dct:title ; ## processed - Wim Hugo
+  ex:usesProperty dct:type ; ## processed - Wim Hugo
+  ex:usesProperty dcat:keyword ; ## processed - Wim Hugo
+  ex:usesProperty dcat:service ; ## processed - Wim Hugo
+  ex:usesProperty prov:hadPrimarySource ; ## processed - Wim Hugo
 .
 
 ex:summary_premis_PreservationPolicy a ex:TypeSummary ;
