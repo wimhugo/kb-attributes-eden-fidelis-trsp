@@ -1,6 +1,7 @@
 @prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> .
 
 ##############################################################
 # Vocabulary: institutionTypes
@@ -20,8 +21,15 @@ r3d:institutionTypes/non-profit a skos:Concept ;
     skos:inScheme r3d:institutionTypes ;
     skos:prefLabel "non-profit"@en ;
     skos:definition "non-profit"@en ;
+    skos:note "This is interchangeable with FIDELIS network definition of a commmunity organisation"@en ;
     skos:related r3d:institutionTypes/commercial .
 
-# --- deterministic fixes ---
-r3d:institutionTypes/commercial skos:topConceptOf r3d:institutionTypes .
-r3d:institutionTypes/non-profit skos:topConceptOf r3d:institutionTypes .
+# ---------------------------------------------------------------------------------------------------
+# Extensions - FIDELIS
+# ---------------------------------------------------------------------------------------------------
+
+trsp:institutionTypes/consortium a skos:Concept ;
+    skos:inScheme r3d:institutionTypes ;
+    skos:prefLabel "Consortium"@en ;
+    skos:definition "A consortium of institutions"@en .
+
