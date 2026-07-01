@@ -12,8 +12,6 @@
 @prefix gorc: <https://purl.org/gorc/> .
 @prefix fair: <https://w3id.org/fair/principles/terms/> .
 @prefix re3data: <https://schema.re3data.org/4-0#> .
-
-
 trsp:trsp-eden-profile a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ; # Wim Hugo
@@ -21,11 +19,11 @@ trsp:trsp-eden-profile a skos:ConceptScheme ;
   dct:contributor <0000-0002-3200-2698> # Shanmugasundaram Venkataraman
   dct:contributor "EOSC FIDELIS WP5/6" ;
   dct:contributor "EOSC EDEN WP2" ;
-  dct:description "A profile of repository and repository services attributes identified by EOSC FIDELIS Secretariat"@en 
+  dct:description "A profile of repository and repository services attributes identified by EOSC FIDELIS TTRAM"@en 
   dct:modified "2026-05-07T00:00:00+00:00"^^xsd:datetime;
   dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
-  dct:title "EOSC FIDELIS Attribute Vocabulary Profile @en;
+  dct:title "EOSC EDEN Attribute Vocabulary Profile @en;
   skos:prefLabel "EDEN Attributes"@en .
   owl:versionInfo "0.4"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
@@ -37,7 +35,6 @@ trsp:fidelis:purpose
   skos:closeMatch att.035ACCB10D ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-  trsp:hasBenchmark Type ;
   owl:version "0.1" ;
   skos:inScheme trsp:trsp-fidelis-profile .
 
@@ -48,7 +45,6 @@ trsp:fidelis:governanceStructure
   skos:closeMatch att.7C68DBB456 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-  trsp:hasBenchmark Type ;
   owl:version "0.1" ;
   skos:inScheme trsp:trsp-fidelis-profile .
 
@@ -59,7 +55,6 @@ trsp:fidelis:keyStakeholders
   skos:closeMatch att.01D16EFB9B ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-  trsp:hasBenchmark Type ;
   owl:version "0.1" ;
   skos:inScheme trsp:trsp-fidelis-profile .
 
@@ -70,7 +65,6 @@ trsp:fidelis:memberships
   skos:closeMatch att.01D16EFB9B ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-  trsp:hasBenchmark Type ;
   owl:version "0.1" ;
   skos:inScheme trsp:trsp-fidelis-profile .
 
@@ -114,7 +108,7 @@ trsp:fidelis:yearEstablished
   skos:exactmatch att.48BF7E1522 ;
   trsp:hasCardinalityType trsp:cardinality1_1 ;
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
-  trsp:hasBenchmark DateTime ;
+  trsp:hasBenchmark "DateTime" ;
   owl:version "0.1" ;
   skos:inScheme trsp:trsp-fidelis-profile .
 
@@ -180,7 +174,7 @@ trsp:fidelis:hostingInstitutionOrganisation
   skos:exactmatch att.41F4454A97 ;
   trsp:hasCardinalityType trsp:cardinality1_n ;
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-  trsp:hasBenchmark ROR ;
+  trsp:hasBenchmark <https://api.ror.org/v2/organizations> ;
   owl:version "0.1" ;
   skos:inScheme trsp:trsp-fidelis-profile .
 
@@ -191,7 +185,7 @@ trsp:fidelis:repositoryName
   skos:exactmatch att.64DA341B5F ;
   trsp:hasCardinalityType trsp:cardinality1_1 ;
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
-  trsp:hasBenchmark Text ;
+  trsp:hasBenchmark "Text" ;
   owl:version "0.1" ;
   skos:inScheme trsp:trsp-fidelis-profile .
 
@@ -279,7 +273,7 @@ trsp:fidelis:eoscNodeParticipation
   skos:exactmatch att.394BC515E7 ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
-  trsp:hasBenchmark None;Aspiring;Onboarding;Operational ;
+  trsp:hasBenchmark trsp:eosc-status-type-scheme ;
   owl:version "0.1" ;
   skos:inScheme trsp:trsp-fidelis-profile .
 
