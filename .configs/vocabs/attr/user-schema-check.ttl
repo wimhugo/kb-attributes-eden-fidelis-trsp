@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
-trsp:checklistUSerSchemaCrosswalks
+trsp:checklistUserSchemaCrosswalks
   a skos:ConceptScheme ;
   skos:prefLabel "Checklist for User Schema and Crosswalks"@en ;
   dct:title "Checklist for User Schema and Crosswalks"@en ;
@@ -16,19 +16,23 @@ trsp:checklistUSerSchemaCrosswalks
 trsp:brokering
   a skos:Concept ;
   skos:prefLabel "Brokering"@en ;
-  skos:inScheme trsp:checklistUSerSchemaCrosswalks .
+  skos:inScheme trsp:checklistUserSchemaCrosswalks .
 
 trsp:crosswalks
   a skos:Concept ;
   skos:prefLabel "Crosswalks"@en ;
-  skos:inScheme trsp:checklistUSerSchemaCrosswalks .
+  skos:inScheme trsp:checklistUserSchemaCrosswalks .
 
 trsp:mediation
   a skos:Concept ;
   skos:prefLabel "Mediation"@en ;
-  skos:inScheme trsp:checklistUSerSchemaCrosswalks .
+  skos:inScheme trsp:checklistUserSchemaCrosswalks .
 
 trsp:contentNegotiation
-  a skos:Concept ;
+  a skos:Concept ; 
   skos:prefLabel "Content Negotiation"@en ;
-  skos:inScheme trsp:checklistUSerSchemaCrosswalks .
+  skos:inScheme trsp:checklistUserSchemaCrosswalks .
+
+
+
+
