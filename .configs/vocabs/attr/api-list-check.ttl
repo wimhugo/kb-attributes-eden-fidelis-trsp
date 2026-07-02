@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
-trsp:checklisAPI
+trsp:checklistAPI
   a skos:ConceptScheme ;
   skos:prefLabel "Checklist for APIs"@en ;
   dct:title "Checklist for APIs"@en ;
@@ -19,24 +19,24 @@ trsp:checklisAPI
 trsp:oai-pmh
   a skos:Concept ;
   skos:prefLabel "OAI-PMH Harvesting Endpoint"@en ;
-  skos:inScheme trsp:checklisAPI .
+  skos:inScheme trsp:checklistAPI .
 
 trsp:csw
   a skos:Concept ;
   skos:prefLabel "OGC CS/W Harvesting Endpoint"@en ;
-  skos:inScheme trsp:checklisAPI .
+  skos:inScheme trsp:checklistAPI .
 
 trsp:rest
   a skos:Concept ;
   skos:prefLabel "REST API"@en ;
-  skos:inScheme trsp:checklisAPI .
+  skos:inScheme trsp:checklistAPI .
 
 trsp:sparql
   a skos:Concept ;
   skos:prefLabel "SPARQL Endpoint"@en ;
-  skos:inScheme trsp:checklisAPI .
+  skos:inScheme trsp:checklistAPI .
 
 trsp:graphql
   a skos:Concept ;
   skos:prefLabel "GraphQL Endpoint"@en ;
-  skos:inScheme trsp:checklisAPI .
+  skos:inScheme trsp:checklistAPI .
