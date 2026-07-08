@@ -40,6 +40,11 @@ trsp:licence
   skos:prefLabel "Use Upon Licence Payment"@en ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
+trsp:distribution
+  a skos:Concept ;
+  skos:prefLabel "Recover Distribution Costs"@en ;
+  skos:inScheme trsp:revenue-source-type-scheme .
+
 trsp:structural
   a skos:Concept ;
   skos:prefLabel "Structural Income or Budget Allocation"@en ;
