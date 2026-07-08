@@ -35,12 +35,12 @@ trsp:payPerUse
   skos:prefLabel "Pay per use"@en ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
-trsp:licence
+trsp:licenceFee
   a skos:Concept ;
   skos:prefLabel "Use Upon Licence Payment"@en ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
-trsp:distribution
+trsp:distributionCost
   a skos:Concept ;
   skos:prefLabel "Recover Distribution Costs"@en ;
   skos:inScheme trsp:revenue-source-type-scheme .
