@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.67FF569AA0 a trsp:Profile ;
+trsp:profile.67FF569AA0 a trsp:Profile ;
     dct:title "Central Repository ICTM" @en ;
     dct:description "CeR i.e. Central Repository ICTM is a digital repository of the Institute of Chemistry, Technology and Metallurgy, University of Belgrade, Serbia. CeR provides open access to the publications, as well as to other outputs of the research projects implemented in this institution." @en ;
     dct:identifier https://www.re3data.org/repository/r3d100013811  ;
