@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.67700E6E2B a trsp:Profile ;
-    dct:title "ARP Research Data Repository" @en ;
-    dct:description "This repository supports the researchers of the Hungarian Research Network (HUN-REN), and to some extent the Hungarian scientists in general." @en ;
-    dct:identifier "10.25504/FAIRsharing.b7f3ff"  ;
-    dcat:endpointURL https://repo.researchdata.hu/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.47A2ACE9A8 a trsp:Profile ;
+    dct:title "NDSA" @en ;
+    dct:description "Levels of Digital Preservation." @en ;
+    dct:identifier https://ndsa.org/publications/levels-of-digital-preservation/  ;
+    dcat:endpointURL https://ndsa.org/publications/levels-of-digital-preservation/  ;
+    trsp:hasProfileType "trsp:profile-type-source"  .
