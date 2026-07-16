@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.61E7538E10 a trsp:Profile ;
-    dct:title "EDEN" @en ;
-    dct:description "The EOSC EDEN project seeks to understand the current digital preservation landscape; identify common standards and practices; and provide new solutions and approaches that help institutions select and preserve high-quality FAIR research outputs." @en ;
-    dct:identifier https://eden-fidelis.eu/  ;
-    dcat:endpointURL https://eden-fidelis.eu/  ;
-    trsp:hasProfileType "trsp:profile-type-community"  .
+trsp:profile.trsp:profile.6B38C46111 a trsp:Profile ;
+    dct:title "CESSDA" @en ;
+    dct:description "CESSDA; CESSDA Trust and Landscape Report 2024" @en ;
+    dct:identifier https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing  ;
+    dcat:endpointURL https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing  ;
+    trsp:hasProfileType "trsp:profile-type-source"  .
