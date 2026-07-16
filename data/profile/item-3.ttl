@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.3FE210C50F a trsp:Profile ;
-    dct:title "CTM" @en ;
-    dct:description "Sansone; S.-A.; McQuilton; P.; Cousijn; H.; Cannon; M.; Chan; W. M.; Callaghan; S.; Carnevale; I.; Cranston; I.; Edmunds; S.; Everitt; N.; Ganley; E.; Graf; C.; Hrynaszkiewicz; I.; Khodiyar; V.; Leary; A.; Lemberger; T.; MacCallum; C.; McNeice; K.; Murray; H.; … Threlfall; J. (2020). Data Repository Selection: Criteria That Matter. Zenodo." @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.4084763  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.4084763  ;
-    trsp:hasProfileType "trsp:profile-type-community"  .
+trsp:profile.trsp:profile.00BA218182 a trsp:Profile ;
+    dct:title "ARCHE - A Resource Centre for the HumanitiEs" @en ;
+    dct:description "Austrian national repository for digital humanities research data and cultural heritage resources. Provides long-term archiving and open access to linguistic corpora, historical data, cultural heritage datasets and humanities research outputs. Austrian node of CLARIN ERIC and DARIAH-EU." @en ;
+    dct:identifier https://arche.acdh.oeaw.ac.at/browser/  ;
+    dcat:endpointURL https://arche.acdh.oeaw.ac.at/browser/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
