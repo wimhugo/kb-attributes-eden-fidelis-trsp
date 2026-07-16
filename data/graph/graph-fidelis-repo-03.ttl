@@ -718,7 +718,7 @@ trsp:repo.0094967DCB a trsp:Repository ;
     schema:Comment "Built on DSpace platform", "CoreTrustSeal certified", ">100,000 items", "integrated with RECOLECTA and OpenAIRE" ;
 .
 
-trsp:repo.0.00E+00 a trsp:Repository ;
+trsp:repo.A321Z987GH a trsp:Repository ;
     dct:title "Radboud Data Repository"@en ;
     dct:description "Institutional research data repository of Radboud University providing long-term archiving and access for multidisciplinary research data. Supports FAIR principles and Dutch and European funder data sharing requirements. Particular strength in humanities, social sciences, and cognitive neuroscience."@en ;
     dcat:landingPage <https://data.ru.nl/> ;
@@ -888,7 +888,7 @@ trsp:repo.18D00D3332 a trsp:Repository ;
     schema:Comment "Started under DoReMi EU project", "continues under CONCERT/EURADOS", "supports European low-dose radiation research", "includes SOPs for tissue usability evaluation" ;
 .
 
-trsp:repo.3.73E+52 a trsp:Repository ;
+trsp:repo.GH23JK45LM a trsp:Repository ;
     dct:title "LINDAT/CLARIAH-CZ repository"@en ;
     dct:description "Czech national hub for CLARIN ERIC and DARIAH ERIC research infrastructures. Provides certified long-term storage, publication and NLP tool access for language data, digital humanities resources, text corpora and related research outputs. Promotes FAIR and open science principles."@en ;
     dcat:landingPage <https://lindat.cz/repository/> ;
