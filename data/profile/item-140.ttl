@@ -9,7 +9,7 @@
 
 trsp:profile.7A31FBDEE1 a trsp:Profile ;
     dct:title "STRING" @en ;
-    dct:description "STRING is a database of known and predicted protein interactions.nThe interactions include direct (physical) and indirect (functional) associations; they are derived from four sources:n- Genomic Contextn- High-throughput Experimentsn- (Conserved) Coexpressionn- Previous KnowledgenSTRING quantitatively integrates interaction data from these sources for a large number of organisms, and transfers information between these organisms where applicable." @en ;
+    dct:description "STRING is a database of known and predicted protein interactions.nThe interactions include direct (physical) and indirect (functional) associations", "they are derived from four sources:n- Genomic Contextn- High-throughput Experimentsn- (Conserved) Coexpressionn- Previous KnowledgenSTRING quantitatively integrates interaction data from these sources for a large number of organisms, and transfers information between these organisms where applicable." @en ;
     dct:identifier "r3d100010604"  ;
-    dcat:endpointURL https://string-db.org/  ;
+    dcat:endpointURL <https://string-db.org/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
