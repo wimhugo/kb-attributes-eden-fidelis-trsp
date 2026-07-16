@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.03B02C7454 a trsp:Profile ;
-    dct:title "DCAT-AP" @en ;
-    dct:description "DCAT-AP is a DCAT profile for sharing information about Catalogues containing Datasets and Data Services descriptions in Europe, under maintenance by the SEMIC action, Interoperable Europe." @en ;
-    dct:identifier https://semiceu.github.io/DCAT-AP/releases/3.0.0/  ;
-    dcat:endpointURL https://semiceu.github.io/DCAT-AP/releases/3.0.0/  ;
-    trsp:hasProfileType "trsp:profile-type-standard"  .
+trsp:profile.trsp:profile.0CBE4E6DFC a trsp:Profile ;
+    dct:title "DataverseLV" @en ;
+    dct:description "DataverseLV is a secure and sustainable repository for Latvian researchers to deposit, preserve, and share research data in line with Open Science and FAIR principles. The repository is developed, maintained, and curated by the Latvian Data Stewards Network - a collaborative group of specialists from Latvian research institutions who support researchers, advance research data management, and promote open science practices." @en ;
+    dct:identifier "r3d100014655"  ;
+    dcat:endpointURL https://dv.dataverse.lv/dataverse/root  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
