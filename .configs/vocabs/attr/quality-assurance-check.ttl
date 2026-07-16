@@ -55,6 +55,38 @@ trsp:cts
   skos:source <https://doi.org/10.5281/zenodo.7051012>
   skos:inScheme trsp:checklistQualityAssurance .
 
+trsp:clarin
+  a skos:Concept ;
+  skos:prefLabel "CLARIN ERIC Certification"@en ;
+  dct:description "CLARIN's distributed network is made up of centres. There are several types of centres: B-centres, C-centres and K-centres, each offering different kinds of expertise and services. "@en ;
+  skos:broader trsp:trustedRepository ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012>
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:clarin_b
+  a skos:Concept ;
+  skos:prefLabel "CLARIN ERIC B"@en ;
+  dct:description "A CLARIN B-centre must be based on a stable technical and institutional foundation. "@en ;
+  skos:broader trsp:clarin ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012>
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:clarin_c
+  a skos:Concept ;
+  skos:prefLabel "CLARIN ERIC C"@en ;
+  dct:description "A CLARIN C-centre shares their metadata and are integrated with CLARIN, but they need not offer any further services. "@en ;
+  skos:broader trsp:clarin ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012>
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:clarin_k
+  a skos:Concept ;
+  skos:prefLabel "CLARIN ERIC K"@en ;
+  dct:description "K-centres share their knowledge and expertise on one or more aspects of the domain covered by the CLARIN infrastructure. "@en ;
+  skos:broader trsp:clarin ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012>
+  skos:inScheme trsp:checklistQualityAssurance .
+
 trsp:nestor
   a skos:Concept ;
   skos:prefLabel "nestor Certification"@en ;
