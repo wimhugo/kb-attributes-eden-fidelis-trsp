@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.346AA2D576 a trsp:Profile ;
-    dct:title "DataRepositoriUM" @en ;
-    dct:description "Repositório de Dados da Universidade do Minho" @en ;
-    dct:identifier https://datarepositorium.uminho.pt/  ;
-    dcat:endpointURL https://datarepositorium.uminho.pt/  ;
+trsp:profile.trsp:profile.6DF1A59550 a trsp:Profile ;
+    dct:title "Home - The Swiss Food Composition Database" @en ;
+    dct:description "" @en ;
+    dct:identifier https://naehrwertdaten.ch/de/  ;
+    dcat:endpointURL https://naehrwertdaten.ch/de/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
