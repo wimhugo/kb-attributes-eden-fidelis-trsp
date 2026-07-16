@@ -10,6 +10,6 @@
 trsp:profile.00E8A65B68 a trsp:Profile ;
     dct:title "SOCIB Data Repository" @en ;
     dct:description "Repository for oceanographic, coastal and metocean observation data from the Balearic Sea and western Mediterranean. Provides open access to glider data, sea level observations, wave data, SST and other marine environmental datasets. Integrates with EMODnet and Copernicus Marine Service." @en ;
-    dct:identifier https://www.socib.es/en/what-we-do/metocean-data/socib-data-repository  ;
-    dcat:endpointURL https://www.socib.es/en/what-we-do/metocean-data/socib-data-repository  ;
+    dct:identifier <https://www.socib.es/en/what-we-do/metocean-data/socib-data-repository>  ;
+    dcat:endpointURL <https://www.socib.es/en/what-we-do/metocean-data/socib-data-repository>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
