@@ -10,6 +10,6 @@
 trsp:profile.09D755CCE9 a trsp:Profile ;
     dct:title "FAIRsharing" @en ;
     dct:description "FAIRsharing database metadata (https://fairsharing.gitbook.io/fairsharing/additional-information/database-conditions)" @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.6875035  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.6875035  ;
+    dct:identifier <https://doi.org/10.5281/zenodo.6875035>  ;
+    dcat:endpointURL <https://doi.org/10.5281/zenodo.6875035>  ;
     trsp:hasProfileType "trsp:profile-type-source"  .

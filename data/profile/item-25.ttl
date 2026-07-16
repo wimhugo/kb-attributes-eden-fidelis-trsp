@@ -10,6 +10,6 @@
 trsp:profile.007F9FADF2 a trsp:Profile ;
     dct:title "CRIS UNS" @en ;
     dct:description "Current Research Information System (CRIS) of the University of Novi Sad. A comprehensive institutional research information system that stores, manages and provides access to bibliographic records of scientific and research outputs from all UNS faculties and institutes. Based on the CERIF data model." @en ;
-    dct:identifier https://cris.uns.ac.rs/en  ;
-    dcat:endpointURL https://cris.uns.ac.rs/en  ;
+    dct:identifier <https://cris.uns.ac.rs/en>  ;
+    dcat:endpointURL <https://cris.uns.ac.rs/en>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

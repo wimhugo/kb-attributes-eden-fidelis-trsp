@@ -10,6 +10,6 @@
 trsp:profile.00624373BF a trsp:Profile ;
     dct:title "DataverseUA" @en ;
     dct:description "Ukrainian national open research data repository hosted by the National Academy of Sciences of Ukraine. Provides open access to research data from Ukrainian scientific institutions across all disciplines. Supports Ukrainian open science development." @en ;
-    dct:identifier https://opendata.nas.gov.ua  ;
-    dcat:endpointURL https://opendata.nas.gov.ua  ;
+    dct:identifier <https://opendata.nas.gov.ua>  ;
+    dcat:endpointURL <https://opendata.nas.gov.ua>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

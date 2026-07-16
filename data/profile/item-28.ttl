@@ -10,6 +10,6 @@
 trsp:profile.697647043E a trsp:Profile ;
     dct:title "CTS" @en ;
     dct:description "CoreTrustSeal Standards and Certification Board. (2022). CoreTrustSeal Requirements 2023-2025 (V01.00). Zenodo." @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.7051012  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.7051012  ;
+    dct:identifier <https://doi.org/10.5281/zenodo.7051012>  ;
+    dcat:endpointURL <https://doi.org/10.5281/zenodo.7051012>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

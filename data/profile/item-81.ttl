@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.3.73E+52 a trsp:Profile ;
+trsp:profile.GH23JK45LM a trsp:Profile ;
     dct:title "LINDAT/CLARIAH-CZ repository" @en ;
     dct:description "LINDAT/CLARIN is designed as a Czech “node” of Clarin ERIC (Common LanguagenResources and Technology Infrastructure). It also supports the goals of the META-NET language technology network. Both networks aim at collection, annotation, development and free sharing of language data and basic technologies between institutions and individuals both in science and in all types of research. The Clarin ERIC infrastructural project is more focused on humanities, while META-NET aims at the development of language technologies and applications. The data stored in the repository are already being used in scientific publications in the Czech Republic.nIn 2019 LINDAT/CLARIAH-CZ was established as a unification of two research infrastructures,nLINDAT/CLARIN and DARIAH-CZ." @en ;
-    dct:identifier https://lindat.mff.cuni.cz/repository/home  ;
-    dcat:endpointURL https://lindat.mff.cuni.cz/  ;
+    dct:identifier <https://lindat.mff.cuni.cz/repository/home>  ;
+    dcat:endpointURL <https://lindat.mff.cuni.cz/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

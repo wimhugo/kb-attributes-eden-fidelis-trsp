@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.1.08E+11 a trsp:Profile ;
+trsp:profile.PLK1JHG9VB a trsp:Profile ;
     dct:title "TRUST" @en ;
-    dct:description "Lin; D.; Crabtree; J.; Dillo; I. et al. The TRUST Principles for digital repositories. Sci Data 7; 144 (2020)." @en ;
-    dct:identifier https://doi.org/10.1038/s41597-020-0486-7  ;
-    dcat:endpointURL https://doi.org/10.1038/s41597-020-0486-7  ;
+    dct:description "Lin", "D.", "Crabtree", "J.", "Dillo", "I. et al. The TRUST Principles for digital repositories. Sci Data 7", "144 (2020)." @en ;
+    dct:identifier <https://doi.org/10.1038/s41597-020-0486-7>  ;
+    dcat:endpointURL <https://doi.org/10.1038/s41597-020-0486-7>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

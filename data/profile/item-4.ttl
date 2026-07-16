@@ -11,5 +11,5 @@ trsp:profile.67700E6E2B a trsp:Profile ;
     dct:title "ARP Research Data Repository" @en ;
     dct:description "This repository supports the researchers of the Hungarian Research Network (HUN-REN), and to some extent the Hungarian scientists in general." @en ;
     dct:identifier "10.25504/FAIRsharing.b7f3ff"  ;
-    dcat:endpointURL https://repo.researchdata.hu/  ;
+    dcat:endpointURL <https://repo.researchdata.hu/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

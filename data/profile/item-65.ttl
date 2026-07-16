@@ -10,6 +10,6 @@
 trsp:profile.006C9BFF2E a trsp:Profile ;
     dct:title "GESIS - Leibniz Institute for the Social Sciences" @en ;
     dct:description "Germany's largest infrastructure institute for the social sciences. Archives, curates and disseminates quantitative social science research data (surveys, longitudinal studies, election studies, digital behavioural data) for secondary use. Operates DOI registration agency da|ra for social science data." @en ;
-    dct:identifier https://www.gesis.org/en/data-services/share-data  ;
-    dcat:endpointURL https://www.gesis.org/en/data-services/share-data  ;
+    dct:identifier <https://www.gesis.org/en/data-services/share-data>  ;
+    dcat:endpointURL <https://www.gesis.org/en/data-services/share-data>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

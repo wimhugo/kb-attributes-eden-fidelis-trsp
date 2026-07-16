@@ -10,6 +10,6 @@
 trsp:profile.005134C65D a trsp:Profile ;
     dct:title "Edinburgh DataShare" @en ;
     dct:description "Institutional open-access research data repository of the University of Edinburgh. One of the oldest UK institutional data repositories. Provides long-term preservation and sharing of multidisciplinary research data. Supports UKRI and funder open data mandates." @en ;
-    dct:identifier https://datashare.ed.ac.uk/  ;
-    dcat:endpointURL https://datashare.ed.ac.uk/  ;
+    dct:identifier <https://datashare.ed.ac.uk/>  ;
+    dcat:endpointURL <https://datashare.ed.ac.uk/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

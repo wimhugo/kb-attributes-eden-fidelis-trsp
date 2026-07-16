@@ -10,6 +10,6 @@
 trsp:profile.0041142F56 a trsp:Profile ;
     dct:title "GrantHub Open Funding & Innovation Knowledge Repository" @en ;
     dct:description "Strategic investment advisory and funding intelligence platform connecting research, innovation and investment ecosystems. Supports organisations in navigating EU and international funding programmes (Horizon Europe, Erasmus+, COST, EIC, Eurostars, LIFE, NATO SPS, Interreg) and structuring innovation funding applications. Not a traditional research data repository but a knowledge repository for funding and innovation opportunities." @en ;
-    dct:identifier https://www.granthub.cz/  ;
-    dcat:endpointURL https://www.granthub.cz/  ;
+    dct:identifier <https://www.granthub.cz/>  ;
+    dcat:endpointURL <https://www.granthub.cz/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

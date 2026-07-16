@@ -9,7 +9,7 @@
 
 trsp:profile.2B5B8DBB59 a trsp:Profile ;
     dct:title "RISK" @en ;
-    dct:description "Frank; R.D. (2024); \"Constructing risk in trustworthy digital repositories\"; Journal of Documentation; Vol. 80 No. 6; pp. 1508-1527." @en ;
-    dct:identifier https://doi.org/10.1108/JD-08-2023-0157  ;
-    dcat:endpointURL https://doi.org/10.1108/JD-08-2023-0157  ;
+    dct:description "Frank", "R.D. (2024)", "\"Constructing risk in trustworthy digital repositories\"", "Journal of Documentation", "Vol. 80 No. 6", "pp. 1508-1527." @en ;
+    dct:identifier <https://doi.org/10.1108/JD-08-2023-0157>  ;
+    dcat:endpointURL <https://doi.org/10.1108/JD-08-2023-0157>  ;
     trsp:hasProfileType "trsp:profile-type-source"  .

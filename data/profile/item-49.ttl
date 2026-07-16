@@ -10,6 +10,6 @@
 trsp:profile.74820191F5 a trsp:Profile ;
     dct:title "DPC RAM" @en ;
     dct:description "Digital Preservation Coalition (2024). Digital Preservation Coalition Rapid Assessment Model (DPC RAM). Version 3." @en ;
-    dct:identifier http://doi.org/10.7207/dpcram24-03  ;
-    dcat:endpointURL http://doi.org/10.7207/dpcram24-03  ;
+    dct:identifier <http://doi.org/10.7207/dpcram24-03>  ;
+    dcat:endpointURL <http://doi.org/10.7207/dpcram24-03>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

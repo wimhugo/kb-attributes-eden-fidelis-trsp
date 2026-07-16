@@ -10,6 +10,6 @@
 trsp:profile.78E1E6CCAB a trsp:Profile ;
     dct:title "PRoteomics IDEntifications Database" @en ;
     dct:description "EMPIAR, the Electron Microscopy Public Image Archive centered at EMBL-EBI, is a public resource for raw electronn    microscopy images related to EMDB, contains micrographs, particle sets and tilt-series." @en ;
-    dct:identifier https://www.ebi.ac.uk/empiar/  ;
-    dcat:endpointURL https://www.ebi.ac.uk/empiar/  ;
+    dct:identifier <https://www.ebi.ac.uk/empiar/>  ;
+    dcat:endpointURL <https://www.ebi.ac.uk/empiar/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

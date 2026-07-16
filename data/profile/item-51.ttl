@@ -11,5 +11,5 @@ trsp:profile.29A21B39F5 a trsp:Profile ;
     dct:title "DTU Data" @en ;
     dct:description "Institutional data repository built on the Figshare platform. Contains research data from the Technical University of Denmark" @en ;
     dct:identifier "r3d100013488"  ;
-    dcat:endpointURL https://data.dtu.dk/  ;
+    dcat:endpointURL <https://data.dtu.dk/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

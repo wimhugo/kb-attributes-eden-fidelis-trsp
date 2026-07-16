@@ -10,6 +10,6 @@
 trsp:profile.00B8A6AE14 a trsp:Profile ;
     dct:title "HOMEROS - OSCARS project" @en ;
     dct:description "Community collection within Zenodo for the HOMEROS initiative under the OSCARS (Open Science Cluster Action for Research and Society) Horizon Europe project. Focuses on humanities and social science research outputs and datasets from OSCARS-affiliated communities in Greece and Europe." @en ;
-    dct:identifier https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest  ;
-    dcat:endpointURL https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest  ;
+    dct:identifier <https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest>  ;
+    dcat:endpointURL <https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

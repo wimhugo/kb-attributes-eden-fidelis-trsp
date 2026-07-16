@@ -10,6 +10,6 @@
 trsp:profile.004BA57DAA a trsp:Profile ;
     dct:title "Lithuanian Data Archive for Social Sciences and Humanities (LiDA)" @en ;
     dct:description "Lithuanian national data archive for social sciences and humanities. Archives, documents and provides access to Lithuanian SSH research datasets for secondary analysis, teaching and research. CESSDA Service Provider for Lithuania." @en ;
-    dct:identifier https://lida.dataverse.lt/  ;
-    dcat:endpointURL https://lida.dataverse.lt/  ;
+    dct:identifier <https://lida.dataverse.lt/>  ;
+    dcat:endpointURL <https://lida.dataverse.lt/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

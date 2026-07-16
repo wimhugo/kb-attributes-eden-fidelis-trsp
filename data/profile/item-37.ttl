@@ -10,6 +10,6 @@
 trsp:profile.346AA2D576 a trsp:Profile ;
     dct:title "DataRepositoriUM" @en ;
     dct:description "Repositório de Dados da Universidade do Minho" @en ;
-    dct:identifier https://datarepositorium.uminho.pt/  ;
-    dcat:endpointURL https://datarepositorium.uminho.pt/  ;
+    dct:identifier <https://datarepositorium.uminho.pt/>  ;
+    dcat:endpointURL <https://datarepositorium.uminho.pt/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

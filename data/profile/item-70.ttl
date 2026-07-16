@@ -9,7 +9,7 @@
 
 trsp:profile.546FD5B0D8 a trsp:Profile ;
     dct:title "GREI" @en ;
-    dct:description "Sonia; Lisa; & Helena. (2023). Generalist Repository Ecosystem Initiative Introductory Brochure. Zenodo." @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.8350509  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.8350509  ;
+    dct:description "Sonia", "Lisa", "& Helena. (2023). Generalist Repository Ecosystem Initiative Introductory Brochure. Zenodo." @en ;
+    dct:identifier <https://doi.org/10.5281/zenodo.8350509>  ;
+    dcat:endpointURL <https://doi.org/10.5281/zenodo.8350509>  ;
     trsp:hasProfileType "trsp:profile-type-source"  .

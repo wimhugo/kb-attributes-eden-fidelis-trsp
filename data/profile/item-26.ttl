@@ -10,6 +10,6 @@
 trsp:profile.31C7106603 a trsp:Profile ;
     dct:title "Croatian Social Science Data Archive" @en ;
     dct:description "The Croatian Social Science Data Archive (CROSSDA) is a national infrastructure public service whose role is to ensure the long-term preservation and dissemination of social science research data. CROSSDA is committed to providing data management support for researchers during the entire lifecycle of the project, from hypothesis development and grant preparation to data collection and data analysis. The data archive will make sure that the data are preserved and reusable in the long-term. CROSSDA is the national service provider for Croatia in the Consortium of European Social Science Data Archives CESSDA ERIC." @en ;
-    dct:identifier https://www.crossda.hr/  ;
-    dcat:endpointURL https://www.crossda.hr/  ;
+    dct:identifier <https://www.crossda.hr/>  ;
+    dcat:endpointURL <https://www.crossda.hr/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

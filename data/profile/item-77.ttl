@@ -10,6 +10,6 @@
 trsp:profile.719B779075 a trsp:Profile ;
     dct:title "ISO" @en ;
     dct:description "International Organization for Standardization. Audit and certification of trustworthy digital repositories. 2012." @en ;
-    dct:identifier https://www.iso.org/standard/56510.html  ;
-    dcat:endpointURL https://www.iso.org/standard/56510.html  ;
+    dct:identifier <https://www.iso.org/standard/56510.html>  ;
+    dcat:endpointURL <https://www.iso.org/standard/56510.html>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

@@ -10,6 +10,6 @@
 trsp:profile.00318846F4 a trsp:Profile ;
     dct:title "FiVeR" @en ;
     dct:description "Institutional open-access digital repository of the Institute of Field and Vegetable Crops. Provides access to publications and research outputs from IFVCNS projects including articles, conference papers, patents, theses and books. Compatible with international infrastructure via OAI-PMH harvesting." @en ;
-    dct:identifier https://fiver.ifvcns.rs/  ;
-    dcat:endpointURL https://fiver.ifvcns.rs/  ;
+    dct:identifier <https://fiver.ifvcns.rs/>  ;
+    dcat:endpointURL <https://fiver.ifvcns.rs/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

@@ -9,7 +9,7 @@
 
 trsp:profile.4841BDEC9E a trsp:Profile ;
     dct:title "DINI" @en ;
-    dct:description "DINI AG Elektronisches Publizieren (E-Pub) (2023). DINI Certificate for Open Access Publication Services 2022. DINI Schriften. ; 2022;3-en" @en ;
-    dct:identifier https://doi.org/10.18452/24679  ;
-    dcat:endpointURL https://doi.org/10.18452/24679  ;
+    dct:description "DINI AG Elektronisches Publizieren (E-Pub) (2023). DINI Certificate for Open Access Publication Services 2022. DINI Schriften.", "2022", "3-en" @en ;
+    dct:identifier <https://doi.org/10.18452/24679>  ;
+    dcat:endpointURL <https://doi.org/10.18452/24679>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

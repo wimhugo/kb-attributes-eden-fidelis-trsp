@@ -10,6 +10,6 @@
 trsp:profile.4A3880251E a trsp:Profile ;
     dct:title "OMA Standalone" @en ;
     dct:description "Software Package to compute OMA orthologs on own datasets" @en ;
-    dct:identifier https://omabrowser.org/standalone  ;
-    dcat:endpointURL https://omabrowser.org/oma/home/  ;
+    dct:identifier <https://omabrowser.org/standalone>  ;
+    dcat:endpointURL <https://omabrowser.org/oma/home/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

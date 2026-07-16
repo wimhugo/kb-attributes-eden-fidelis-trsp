@@ -10,6 +10,6 @@
 trsp:profile.39B264CAC4 a trsp:Profile ;
     dct:title "PRoteomics IDEntifications database" @en ;
     dct:description "EMDB Home page" @en ;
-    dct:identifier https://www.ebi.ac.uk/emdb/  ;
-    dcat:endpointURL https://www.ebi.ac.uk/emdb/  ;
+    dct:identifier <https://www.ebi.ac.uk/emdb/>  ;
+    dcat:endpointURL <https://www.ebi.ac.uk/emdb/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

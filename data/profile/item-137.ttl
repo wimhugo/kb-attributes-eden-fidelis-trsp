@@ -9,7 +9,7 @@
 
 trsp:profile.0C1A1A6FE2 a trsp:Profile ;
     dct:title "STATUS" @en ;
-    dct:description "Donaldson DR. Certification information on trustworthy digital repository websites: A content analysis. PLoS One. 2020 Dec 9;15(12):e0242525. doi: 10.1371/journal.pone.0242525. PMID: 33296371; PMCID: PMC7725354." @en ;
-    dct:identifier https://doi.org/10.1371/journal.pone.0242525  ;
-    dcat:endpointURL https://doi.org/10.1371/journal.pone.0242525  ;
+    dct:description "Donaldson DR. Certification information on trustworthy digital repository websites: A content analysis. PLoS One. 2020 Dec 9", "15(12):e0242525. doi: 10.1371/journal.pone.0242525. PMID: 33296371", "PMCID: PMC7725354." @en ;
+    dct:identifier <https://doi.org/10.1371/journal.pone.0242525>  ;
+    dcat:endpointURL <https://doi.org/10.1371/journal.pone.0242525>  ;
     trsp:hasProfileType "trsp:profile-type-source"  .

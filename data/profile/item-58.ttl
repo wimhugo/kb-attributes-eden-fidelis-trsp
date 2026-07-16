@@ -10,6 +10,6 @@
 trsp:profile.00D32E62E3 a trsp:Profile ;
     dct:title "ESRF Data Portal" @en ;
     dct:description "Data repository for photon science experiments conducted at the ESRF synchrotron. Stores and archives raw experimental data, processed data, and associated metadata from X-ray science experiments at the ESRF beamlines. Implements the ESRF Open Data Policy (2016). Data released publicly after embargo (maximum 3 years). First synchrotron repository to receive CoreTrustSeal certification." @en ;
-    dct:identifier https://data.esrf.fr/  ;
-    dcat:endpointURL https://data.esrf.fr/  ;
+    dct:identifier <https://data.esrf.fr/>  ;
+    dcat:endpointURL <https://data.esrf.fr/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

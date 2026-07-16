@@ -10,6 +10,6 @@
 trsp:profile.165CB267FA a trsp:Profile ;
     dct:title "OrthoDB" @en ;
     dct:description "OrthoDB provides evolutionary and functional annotations of genes classified into groups of orthologs in a diverse sampling of eukaryotes, prokaryotes, and viruses." @en ;
-    dct:identifier https://www.orthodb.org/  ;
-    dcat:endpointURL https://www.orthodb.org/  ;
+    dct:identifier <https://www.orthodb.org/>  ;
+    dcat:endpointURL <https://www.orthodb.org/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

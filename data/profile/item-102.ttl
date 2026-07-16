@@ -9,7 +9,7 @@
 
 trsp:profile.635C7081B0 a trsp:Profile ;
     dct:title "POSI" @en ;
-    dct:description "Bilder G; Lin J; Neylon C (2020); The Principles of Open Scholarly Infrastructure; retrieved 08-11-2024" @en ;
-    dct:identifier https://doi.org/10.24343/C34W2H  ;
-    dcat:endpointURL https://doi.org/10.24343/C34W2H  ;
+    dct:description "Bilder G", "Lin J", "Neylon C (2020)", "The Principles of Open Scholarly Infrastructure", "retrieved 08-11-2024" @en ;
+    dct:identifier <https://doi.org/10.24343/C34W2H>  ;
+    dcat:endpointURL <https://doi.org/10.24343/C34W2H>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

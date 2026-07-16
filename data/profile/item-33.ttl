@@ -10,6 +10,6 @@
 trsp:profile.00967B7916 a trsp:Profile ;
     dct:title "Data Repository Platform (ARP)" @en ;
     dct:description "Hungarian national research data repository providing archiving, DOI assignment and open access to research data from Hungarian institutions across all disciplines. Developed as part of the DART project (Developing Appropriate Research data management Techniques for Hungarian research)." @en ;
-    dct:identifier https://repo.researchdata.hu/  ;
-    dcat:endpointURL https://repo.researchdata.hu/  ;
+    dct:identifier <https://repo.researchdata.hu/>  ;
+    dcat:endpointURL <https://repo.researchdata.hu/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

@@ -11,5 +11,5 @@ trsp:profile.2F48DA2962 a trsp:Profile ;
     dct:title "HARVESTER" @en ;
     dct:description "The profile for the EDEN Harvester" @en ;
     dct:identifier "eden://harvester/"  ;
-    dcat:endpointURL https://github.com/EOSC-EDEN/wp2-repo-harvester  ;
+    dcat:endpointURL <https://github.com/EOSC-EDEN/wp2-repo-harvester>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

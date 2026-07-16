@@ -9,7 +9,7 @@
 
 trsp:profile.6C825F4502 a trsp:Profile ;
     dct:title "CPP" @en ;
-    dct:description "Molloy; L.; Lindlar; M.; Benauer; M.; Andreassen; H. N.; Presser; K.; & Anu; M. (2025). EOSC EDEN D1.1 - Overview of Identification; Selection and Appraisal Practices for Long-Term Preservation of Data. Zenodo." @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.17984753  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.17984753  ;
+    dct:description "Molloy", "L.", "Lindlar", "M.", "Benauer", "M.", "Andreassen", "H. N.", "Presser", "K.", "& Anu", "M. (2025). EOSC EDEN D1.1 - Overview of Identification", "Selection and Appraisal Practices for Long-Term Preservation of Data. Zenodo." @en ;
+    dct:identifier <https://doi.org/10.5281/zenodo.17984753>  ;
+    dcat:endpointURL <https://doi.org/10.5281/zenodo.17984753>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

@@ -9,7 +9,7 @@
 
 trsp:profile.25E02CC352 a trsp:Profile ;
     dct:title "ELIXIR" @en ;
-    dct:description "Durinx C; McEntyre J; Appel R et al. Identifying ELIXIR Core Data Resources [version 2; peer review: 2 approved]. F1000Research 2017; 5(ELIXIR):2422" @en ;
-    dct:identifier https://doi.org/10.12688/f1000research.9656.2  ;
-    dcat:endpointURL https://doi.org/10.12688/f1000research.9656.2  ;
+    dct:description "Durinx C", "McEntyre J", "Appel R et al. Identifying ELIXIR Core Data Resources [version 2", "peer review: 2 approved]. F1000Research 2017", "5(ELIXIR):2422" @en ;
+    dct:identifier <https://doi.org/10.12688/f1000research.9656.2>  ;
+    dcat:endpointURL <https://doi.org/10.12688/f1000research.9656.2>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .

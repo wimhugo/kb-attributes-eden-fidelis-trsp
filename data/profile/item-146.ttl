@@ -9,7 +9,7 @@
 
 trsp:profile.0086D1355E a trsp:Profile ;
     dct:title "Tromso, Repository of Language and Linguistics (TROLLing)" @en ;
-    dct:description "FAIR-aligned open-access repository for linguistic datasets and statistical code used in linguistics research. All data accompanied by searchable metadata. Linguists worldwide invited to deposit data and code. Special collection within DataverseNO; CLARIN C-Centre." @en ;
-    dct:identifier https://trolling.uit.no/  ;
-    dcat:endpointURL https://trolling.uit.no/  ;
+    dct:description "FAIR-aligned open-access repository for linguistic datasets and statistical code used in linguistics research. All data accompanied by searchable metadata. Linguists worldwide invited to deposit data and code. Special collection within DataverseNO", "CLARIN C-Centre." @en ;
+    dct:identifier <https://trolling.uit.no/>  ;
+    dcat:endpointURL <https://trolling.uit.no/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

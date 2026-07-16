@@ -10,6 +10,6 @@
 trsp:profile.700C58D59C a trsp:Profile ;
     dct:title "Gen Repo IG" @en ;
     dct:description "RDA IG on generalist repository landscape (in planning) - RDA P23 BoF" @en ;
-    dct:identifier https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/  ;
-    dcat:endpointURL https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/  ;
+    dct:identifier <https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/>  ;
+    dcat:endpointURL <https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/>  ;
     trsp:hasProfileType "trsp:profile-type-source"  .

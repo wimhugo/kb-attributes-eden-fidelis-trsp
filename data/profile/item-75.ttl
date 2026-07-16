@@ -10,6 +10,6 @@
 trsp:profile.00B1563729 a trsp:Profile ;
     dct:title "INFRA-ART Spectral Library" @en ;
     dct:description "Spectral reference library of infrared and near-infrared spectroscopy data for art and cultural heritage materials. Provides open access to reference spectra enabling non-invasive identification of pigments, binders, varnishes and other heritage materials for conservation science." @en ;
-    dct:identifier https://infraart.inoe.ro/  ;
-    dcat:endpointURL https://infraart.inoe.ro/  ;
+    dct:identifier <https://infraart.inoe.ro/>  ;
+    dcat:endpointURL <https://infraart.inoe.ro/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

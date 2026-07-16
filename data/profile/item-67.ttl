@@ -10,6 +10,6 @@
 trsp:profile.226704C31B a trsp:Profile ;
     dct:title "Glittr.org" @en ;
     dct:description "Glittr.org is a curated list of educational materials for the computational life sciences." @en ;
-    dct:identifier https://glittr.org/  ;
-    dcat:endpointURL https://glittr.org/  ;
+    dct:identifier <https://glittr.org/>  ;
+    dcat:endpointURL <https://glittr.org/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

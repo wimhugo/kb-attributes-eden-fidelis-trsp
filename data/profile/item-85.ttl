@@ -10,6 +10,6 @@
 trsp:profile.330680B402 a trsp:Profile ;
     dct:title "ModelArchive" @en ;
     dct:description "ModelArchive provides a stable accession code (DOI) for deposited theoretical models of protein and macromolecular structures" @en ;
-    dct:identifier "urn:uuid:f5378897-0353-47d5-83a3-7a859793365b"  ;
-    dcat:endpointURL https://modelarchive.org/  ;
+    dct:identifier <urn:uuid:f5378897-0353-47d5-83a3-7a859793365b>  ;
+    dcat:endpointURL <https://modelarchive.org/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

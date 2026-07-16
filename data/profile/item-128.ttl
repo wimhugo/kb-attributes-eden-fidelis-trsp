@@ -11,5 +11,5 @@ trsp:profile.007276AA14 a trsp:Profile ;
     dct:title "RIVeC" @en ;
     dct:description "RIVeC - Repository of the Institute for Vegetable Crops is the institutional digital repository of the Institute for Vegetable Crops. The aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the Institute for Vegetable Crops. The repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB)." @en ;
     dct:identifier "10160"  ;
-    dcat:endpointURL https://rivec.institut-palanka.rs/  ;
+    dcat:endpointURL <https://rivec.institut-palanka.rs/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

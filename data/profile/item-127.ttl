@@ -10,6 +10,6 @@
 trsp:profile.0094967DCB a trsp:Profile ;
     dct:title "RiuNet" @en ;
     dct:description "Institutional open-access repository of the Universitat Politècnica de València providing access to research publications, datasets, theses, conference papers and educational materials from UPV. Complies with Spanish and European open access mandates." @en ;
-    dct:identifier https://riunet.upv.es/home  ;
-    dcat:endpointURL https://riunet.upv.es/home  ;
+    dct:identifier <https://riunet.upv.es/home>  ;
+    dcat:endpointURL <https://riunet.upv.es/home>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

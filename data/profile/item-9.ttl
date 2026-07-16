@@ -10,6 +10,6 @@
 trsp:profile.5513301B31 a trsp:Profile ;
     dct:title "Bgee DataBase for Gene Expression Evolution" @en ;
     dct:description "Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species. It provides an intuitive answer to the question -where is a gene expressed?- and supports research in cancer and agriculture, as well as evolutionary biology." @en ;
-    dct:identifier https://www.bgee.org/  ;
-    dcat:endpointURL https://www.bgee.org/  ;
+    dct:identifier <https://www.bgee.org/>  ;
+    dcat:endpointURL <https://www.bgee.org/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

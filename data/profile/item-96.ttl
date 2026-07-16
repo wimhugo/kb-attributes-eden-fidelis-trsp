@@ -11,5 +11,5 @@ trsp:profile.54A6CD95F4 a trsp:Profile ;
     dct:title "Oxford Brookes University: RADAR" @en ;
     dct:description "RADAR (Research And Digital Assets Repository) is the institutional repository of Oxford Brookes University. The role of RADAR is to share the intellectual product of Oxford Brookes freely and openly with the staff and students of Oxford Brookes or with the global academic and public community.n​RADAR has a variety of research collections (primarily containing original research publications) and teaching collections (primarily containing resources that support teaching at Oxford Brookes University). Some of the collections​ and resources on RADAR are freely accessible to the general public and other collections​ and resources are only accessible by current Oxford Brookes staff and students." @en ;
     dct:identifier "2287"  ;
-    dcat:endpointURL https://radar.brookes.ac.uk/radar/hierarchy.do?topic=86e2c9d7-ef43-4b54-a387-3223d30acd3b  ;
+    dcat:endpointURL <https://radar.brookes.ac.uk/radar/hierarchy.do?topic=86e2c9d7-ef43-4b54-a387-3223d30acd3b>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

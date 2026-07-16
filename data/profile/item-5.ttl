@@ -10,6 +10,6 @@
 trsp:profile.002FA0AA0F a trsp:Profile ;
     dct:title "ASAP" @en ;
     dct:description "Automated Single-cell Analysis Portal (ASAP) – a collaborative web platform for analysing, visualising and publishing single-cell RNA-seq and multi-omics data. Allows researchers to import public datasets (GEO, ArrayExpress, SRA, BioProject) and private data, run analyses and share results. Incorporates scFAIR validation schema for single-cell data metadata." @en ;
-    dct:identifier https://asap.epfl.ch/  ;
-    dcat:endpointURL https://asap.epfl.ch/  ;
+    dct:identifier <https://asap.epfl.ch/>  ;
+    dcat:endpointURL <https://asap.epfl.ch/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
