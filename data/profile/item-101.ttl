@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.0CBE4E6DFC a trsp:Profile ;
-    dct:title "DataverseLV" @en ;
-    dct:description "DataverseLV is a secure and sustainable repository for Latvian researchers to deposit, preserve, and share research data in line with Open Science and FAIR principles. The repository is developed, maintained, and curated by the Latvian Data Stewards Network - a collaborative group of specialists from Latvian research institutions who support researchers, advance research data management, and promote open science practices." @en ;
-    dct:identifier "r3d100014655"  ;
-    dcat:endpointURL https://dv.dataverse.lv/dataverse/root  ;
+trsp:profile.trsp:profile.47BF9E27E4 a trsp:Profile ;
+    dct:title "PortFIR" @en ;
+    dct:description "PortFIR is a program for implementing Portuguese networks of excellence in nutrition and food safety, and a portal that includes sustainable and recognized quality databases on Food Composition and Contamination and Food Consumption." @en ;
+    dct:identifier https://portfir.insa.min-saude.pt/pt/ .  ;
+    dcat:endpointURL https://portfir.insa.min-saude.pt/pt/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
