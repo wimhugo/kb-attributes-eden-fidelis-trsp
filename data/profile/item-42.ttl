@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.7AA756F28B a trsp:Profile ;
+trsp:profile.7AA756F28B a trsp:Profile ;
     dct:title "DATICE" @en ;
     dct:description "DATICE is a data service and archive for Icelandic social science research data. Our goal is to ensure open and free access to high quality data for the research community as well as the general public. The service is located within the Social Science Research Institute (SSRI) at the University of Iceland." @en ;
     dct:identifier https://www.re3data.org/repository/r3d100013494  ;
