@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.29A444BA70 a trsp:Profile ;
-    dct:title "Deposit your research data | Sikt" @en ;
-    dct:description "Sikt tar imot og arkiverer forskingsdata om mennesker og samfunn, og gjør dem tilgjengelige for gjenbruk. Vi hjelper deg å dokumentere data og velge riktig tilgangsnivå." @en ;
-    dct:identifier https://sikt.no/en/archiving-research-data  ;
-    dcat:endpointURL https://sikt.no/en/archiving-research-data  ;
+trsp:profile.trsp:profile.66B58B3D2D a trsp:Profile ;
+    dct:title "Finnish Social Science Data Archive" @en ;
+    dct:description "The Finnish Social Science Data Archive (FSD) is a national-level service resource for research and teaching in Finland. FSD promotes data sharing and curates and disseminates digital research data for research, teaching and studying purposes. FSD serves both Finnish and international users. FSD is an expert in the curation and preservation of digital research data collected to study society, people and culture. FSD focuses on acquiring Social Science data, but data from other relevant fields (Arts and Humanities, Education, and Health Science) is also archived. FSD is Finland's service provider for CESSDA ERIC, the Consortium of European Social Science Data Archives." @en ;
+    dct:identifier "10.25504/FAIRsharing.2okP6D"  ;
+    dcat:endpointURL https://www.fsd.tuni.fi/en/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
