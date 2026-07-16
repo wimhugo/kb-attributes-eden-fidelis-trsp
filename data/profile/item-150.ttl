@@ -9,7 +9,7 @@
 
 trsp:profile.668467EC38 a trsp:Profile ;
     dct:title "TTRAM" @en ;
-    dct:description "The Transparent Trustworthy Repository Attributes Matrix (TTRAM) is derived from a review of the European repository landscape. The TTRAM examines 30 common repository activities and functions across digital object management; organisational infrastructure; technology and security." @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.17973113  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.17973113  ;
+    dct:description "The Transparent Trustworthy Repository Attributes Matrix (TTRAM) is derived from a review of the European repository landscape. The TTRAM examines 30 common repository activities and functions across digital object management", "organisational infrastructure", "technology and security." @en ;
+    dct:identifier <https://doi.org/10.5281/zenodo.17973113>  ;
+    dcat:endpointURL <https://doi.org/10.5281/zenodo.17973113>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .
