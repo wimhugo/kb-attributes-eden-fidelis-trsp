@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.114F0465C3 a trsp:Profile ;
-    dct:title "nestor" @en ;
-    dct:description "nestor criteria : Catalogue of Criteria for Trusted Digital Repositories; Version 2; 2009; Frankfurt am Main: nestor c/o Deutsche Nationalbibliothek; urn:nbn:de:0008-2010030806" @en ;
-    dct:identifier http://nbn-resolving.de/urn:nbn:de:0008-2010030806  ;
-    dcat:endpointURL http://nbn-resolving.de/urn:nbn:de:0008-2010030806  ;
-    trsp:hasProfileType "trsp:profile-type-community"  .
+trsp:profile.trsp:profile.67FF569AA0 a trsp:Profile ;
+    dct:title "Central Repository ICTM" @en ;
+    dct:description "CeR i.e. Central Repository ICTM is a digital repository of the Institute of Chemistry, Technology and Metallurgy, University of Belgrade, Serbia. CeR provides open access to the publications, as well as to other outputs of the research projects implemented in this institution." @en ;
+    dct:identifier https://www.re3data.org/repository/r3d100013811  ;
+    dcat:endpointURL https://cer.ihtm.bg.ac.rs/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
