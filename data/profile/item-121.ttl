@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.4D0B570EB7 a trsp:Profile ;
-    dct:title "Quetelet-Progedo" @en ;
-    dct:description "Quetelet-Progedo’s mission is to enable the preservation and dissemination of data for quantitative social science research. It may be data from official statistical sources as well as research data. It therefore facilitates the implementation of national and European open data policies. Quetelet-Progedo strives to make data FAIR and ensures that they are of high quality. To this end, Quetelet-Progedo:n- documents the data in accordance with international standards for metadata (DDI) and distributes them in formats that facilitate their reuse (.csv, .sas, .dat, sav);n- preserves the data and its integrity via proven technical solutions, including the use of the CC-IN2P3 data centre, for which access has been provided by Huma-NumIR*;n- ensures the long-term identification of data through the allocation of Digital Object Identifiers (DOI);n- supports users, both in depositing and accessing data, through its dedicated team and all the University Platforms for Data (PUD);n- promotes ethical principles and compliance with legal requirements, paying particular attention to the protection of personal and sensitive data." @en ;
-    dct:identifier https://data.progedo.fr/  ;
-    dcat:endpointURL https://www.progedo.fr/en/home/  ;
+trsp:profile.trsp:profile.00E4257818 a trsp:Profile ;
+    dct:title "Radboud Data Repository" @en ;
+    dct:description "Institutional research data repository of Radboud University providing long-term archiving and access for multidisciplinary research data. Supports FAIR principles and Dutch and European funder data sharing requirements. Particular strength in humanities, social sciences, and cognitive neuroscience." @en ;
+    dct:identifier https://data.ru.nl/  ;
+    dcat:endpointURL https://data.ru.nl/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
