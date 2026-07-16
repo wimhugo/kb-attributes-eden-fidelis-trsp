@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.0180636A61 a trsp:Profile ;
-    dct:title "DASS-BiH" @en ;
-    dct:description "DASS-BiH (Data Archive for Social Sciences in Bosnia and Herzegovina) is the national service whose role is to ensure long-term preservation and dissemination of social science research data. The purpose of the data archive is to provide a vital research data resource for researchers, teachers, students, and all other interested users." @en ;
-    dct:identifier https://dass.credi.ba/  ;
-    dcat:endpointURL https://dass.credi.ba/  ;
+trsp:profile.trsp:profile.4A3880251E a trsp:Profile ;
+    dct:title "OMA Standalone" @en ;
+    dct:description "Software Package to compute OMA orthologs on own datasets" @en ;
+    dct:identifier https://omabrowser.org/standalone  ;
+    dcat:endpointURL https://omabrowser.org/oma/home/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

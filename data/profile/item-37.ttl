@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.745403B02C a trsp:Profile ;
-    dct:title "schema.org" @en ;
-    dct:description "Schema.org is a joint effort, in the spirit of sitemaps.org, to improve the web by creating a structured data markup schema supported by major search engines." @en ;
-    dct:identifier http://schema.org/  ;
-    dcat:endpointURL http://schema.org/  ;
-    trsp:hasProfileType "trsp:profile-type-source"  .
+trsp:profile.trsp:profile.346AA2D576 a trsp:Profile ;
+    dct:title "DataRepositoriUM" @en ;
+    dct:description "Repositório de Dados da Universidade do Minho" @en ;
+    dct:identifier https://datarepositorium.uminho.pt/  ;
+    dcat:endpointURL https://datarepositorium.uminho.pt/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

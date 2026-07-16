@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.5E53C20361 a trsp:Profile ;
-    dct:title "LiDA" @en ;
-    dct:description "Lithuanian Data Archive for Social Sciences and Humanities (LiDA) is a virtual digital infrastructure for SSH data and research resources acquisition, long-term preservation and dissemination. All the data and research resources are documented in both English and Lithuanian according to international standards. Access to the resources is provided via Dataverse repository. LiDA curates different types of resources and they are published into catalogues according to the type: Survey Data, Aggregated Data (including Historical Statistics), Encoded Data (including News Media Studies), and Textual Data. Also, LiDA holds collections of social sciences and humanities data deposited by Lithuanian science and higher education institutions and Lithuanian state institutions (Data of Other Institutions).nLiDA is the Lithuanian national service provider for the CESSDA ERIC." @en ;
-    dct:identifier "10.25504/FAIRsharing.c5e881"  ;
-    dcat:endpointURL https://lida.dataverse.lt/  ;
+trsp:profile.trsp:profile.035B1CF480 a trsp:Profile ;
+    dct:title "PRoteomics IDEntifications database" @en ;
+    dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories." @en ;
+    dct:identifier "10.25504/FAIRsharing.e1byny"  ;
+    dcat:endpointURL https://www.ebi.ac.uk/pride/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

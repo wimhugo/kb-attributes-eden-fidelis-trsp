@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.003C955045 a trsp:Profile ;
+    dct:title "The Language Bank of Finland" @en ;
+    dct:description "Finnish national infrastructure for language research providing access to text and speech corpora, lexical resources and language technology tools. Serves linguists and language technology researchers in Finland and internationally. Finnish node of CLARIN ERIC." @en ;
+    dct:identifier https://www.kielipankki.fi/language-bank/  ;
+    dcat:endpointURL https://www.kielipankki.fi/language-bank/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

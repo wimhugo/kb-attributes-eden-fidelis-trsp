@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.7B721A758B a trsp:Profile ;
-    dct:title "Strasbourg Astronomical Data Center" @en ;
-    dct:description "Strasbourg astronomical Data Center (CDS) is dedicated to the collection and worldwide distribution of astronomical data and related information.nAlongside data curation and service maintenance responsibilities, the CDS undertakes R&D activities that are fundamental to ensure the long term sustainability in a domain in which technology evolves very quickly. R&D areas include informatics, big data, and development of the astronomical Virtual Observatory (VO). CDS is a major actor in the VO with leading roles in European VO projects, the French Virtual Observatory and the International Virtual Observatory Alliance (IVOA). nThe CDS hosts the SIMBAD astronomical database, the world reference database for the identification of astronomical objects; VizieR, the catalogue service for the CDS reference collection of astronomical catalogues and tables published in academic journals; and the Aladin interactive software sky atlas for access, visualization and analysis of astronomical images, surveys, catalogues, databases and related data." @en ;
-    dct:identifier https://cds.unistra.fr/  ;
-    dcat:endpointURL https://cds.unistra.fr/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.2BBC8312C3 a trsp:Profile ;
+    dct:title "ERC-HE" @en ;
+    dct:description "OAPEN; 2024. ERC Open Access requirements for FP7; Horizon 2020 and Horizon Europe grants." @en ;
+    dct:identifier https://www.oapen.org/article/13934224-erc-oa-requirement  ;
+    dcat:endpointURL https://www.oapen.org/article/13934224-erc-oa-requirement  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

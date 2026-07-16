@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.7643298FE1 a trsp:Profile ;
-    dct:title "PRoteomics IDEntifications database" @en ;
-    dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories." @en ;
-    dct:identifier "10.25504/FAIRsharing.e1byny"  ;
-    dcat:endpointURL https://www.ebi.ac.uk/metabolights/  ;
+trsp:profile.trsp:profile.3725515E46 a trsp:Profile ;
+    dct:title "LINDAT/CLARIAH-CZ repository" @en ;
+    dct:description "LINDAT/CLARIN is designed as a Czech “node” of Clarin ERIC (Common LanguagenResources and Technology Infrastructure). It also supports the goals of the META-NET language technology network. Both networks aim at collection, annotation, development and free sharing of language data and basic technologies between institutions and individuals both in science and in all types of research. The Clarin ERIC infrastructural project is more focused on humanities, while META-NET aims at the development of language technologies and applications. The data stored in the repository are already being used in scientific publications in the Czech Republic.nIn 2019 LINDAT/CLARIAH-CZ was established as a unification of two research infrastructures,nLINDAT/CLARIN and DARIAH-CZ." @en ;
+    dct:identifier https://lindat.mff.cuni.cz/repository/home  ;
+    dcat:endpointURL https://lindat.mff.cuni.cz/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.298D90251D a trsp:Profile ;
+    dct:title "Slovak Archive of Social Data" @en ;
+    dct:description "The Slovak Archive of Social Data (SASD), established in 2004, is a national repository dedicated to preserving and providing access to documentation and datasets from sociological and social science research in Slovakia. It archives data from major international programs such as ISSP, ESS, and EVS, as well as Slovak research projects funded by public, private, or commercial sources, provided they meet professional standards. SASD ensures long‑term accessibility of high‑quality social data for non‑commercial research, education, journalism, and public use, and also offers links to other international data archives and resources" @en ;
+    dct:identifier "r3d100014833"  ;
+    dcat:endpointURL https://sasd.sav.sk/en/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.1704A232F6 a trsp:Profile ;
+    dct:title "Social Sciences and Digital Humanities Archive" @en ;
+    dct:description "Welcome to SODHA, the Belgian federal data archive for social sciences and the digital humanities! Here you can find and deposit social science and digital humanities data in reusable form. Published datasets receive a DOI, making them citable like other types of publications. SODHA promotes open data by enabling reuse of research data and by safely preserving datasets in the long term. SODHA is the Belgian service provider in the Consortium of European Social Science Data Archives (CESSDA) and is hosted by the State Archives of Belgium. SODHA was built with the help of DEMO (UCLouvain) and Interface Demography (VUB). You can consult the SODHA Guide here, and you can read our policies here. Want to learn more about SODHA? Consult our brochure or our presentation on the State Archives' website. If you have any question, you can contact us at sodha@arch.be." @en ;
+    dct:identifier https://www.sodha.be/  ;
+    dcat:endpointURL https://www.sodha.be/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

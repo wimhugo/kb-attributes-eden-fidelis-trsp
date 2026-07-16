@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.5177117B6B a trsp:Profile ;
-    dct:title "Inspire-HEP" @en ;
-    dct:description "CERN, DESY, Fermilab and SLAC have built the next-generation High Energy Physics (HEP) information system, INSPIRE. It combines the successful SPIRES database content, curated at DESY, Fermilab and SLAC, with the Invenio digital library technology developed at CERN. INSPIRE is run by a collaboration of CERN, DESY, Fermilab, IHEP, IN2P3 and SLAC, and interacts closely with HEP publishers, arXiv.org, NASA-ADS, PDG, HEPDATA and other information resources.nINSPIRE represents a natural evolution of scholarly communication, built on successful community-based information systems, and provides a vision for information management in other fields of science." @en ;
-    dct:identifier https://inspirehep.net/  ;
-    dcat:endpointURL https://inspirehep.net/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.4841BDEC9E a trsp:Profile ;
+    dct:title "DINI" @en ;
+    dct:description "DINI AG Elektronisches Publizieren (E-Pub) (2023). DINI Certificate for Open Access Publication Services 2022. DINI Schriften. ; 2022;3-en" @en ;
+    dct:identifier https://doi.org/10.18452/24679  ;
+    dcat:endpointURL https://doi.org/10.18452/24679  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

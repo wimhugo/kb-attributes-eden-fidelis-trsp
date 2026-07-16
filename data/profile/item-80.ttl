@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.1AA258A562 a trsp:Profile ;
-    dct:title "4TU.ResearchData" @en ;
-    dct:description "4TU.ResearchData is an international data repository for science, engineering and design, open to anyone in the world to upload and download data. Its services include curation, sharing, long-term access and preservation of research datasets. These services are available to anyone around the world. In addition, 4TU.ResearchData also offers training and resources to researchers to support them in making research data findable, accessible, interoperable and reproducible (FAIR)." @en ;
-    dct:identifier https://data.4tu.nl/  ;
-    dcat:endpointURL https://data.4tu.nl/  ;
+trsp:profile.trsp:profile.5E53C20361 a trsp:Profile ;
+    dct:title "LiDA" @en ;
+    dct:description "Lithuanian Data Archive for Social Sciences and Humanities (LiDA) is a virtual digital infrastructure for SSH data and research resources acquisition, long-term preservation and dissemination. All the data and research resources are documented in both English and Lithuanian according to international standards. Access to the resources is provided via Dataverse repository. LiDA curates different types of resources and they are published into catalogues according to the type: Survey Data, Aggregated Data (including Historical Statistics), Encoded Data (including News Media Studies), and Textual Data. Also, LiDA holds collections of social sciences and humanities data deposited by Lithuanian science and higher education institutions and Lithuanian state institutions (Data of Other Institutions).nLiDA is the Lithuanian national service provider for the CESSDA ERIC." @en ;
+    dct:identifier "10.25504/FAIRsharing.c5e881"  ;
+    dcat:endpointURL https://lida.dataverse.lt/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

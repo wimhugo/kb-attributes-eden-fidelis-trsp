@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.47A2ACE9A8 a trsp:Profile ;
-    dct:title "NDSA" @en ;
-    dct:description "Levels of Digital Preservation." @en ;
-    dct:identifier https://ndsa.org/publications/levels-of-digital-preservation/  ;
-    dcat:endpointURL https://ndsa.org/publications/levels-of-digital-preservation/  ;
-    trsp:hasProfileType "trsp:profile-type-source"  .
+trsp:profile.trsp:profile.3FE210C50F a trsp:Profile ;
+    dct:title "CTM" @en ;
+    dct:description "Sansone; S.-A.; McQuilton; P.; Cousijn; H.; Cannon; M.; Chan; W. M.; Callaghan; S.; Carnevale; I.; Cranston; I.; Edmunds; S.; Everitt; N.; Ganley; E.; Graf; C.; Hrynaszkiewicz; I.; Khodiyar; V.; Leary; A.; Lemberger; T.; MacCallum; C.; McNeice; K.; Murray; H.; … Threlfall; J. (2020). Data Repository Selection: Criteria That Matter. Zenodo." @en ;
+    dct:identifier https://doi.org/10.5281/zenodo.4084763  ;
+    dcat:endpointURL https://doi.org/10.5281/zenodo.4084763  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

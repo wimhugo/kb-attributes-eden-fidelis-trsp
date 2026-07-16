@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.245EF9D7AE a trsp:Profile ;
-    dct:title "AgroPortal" @en ;
-    dct:description "AgroPortal is a research data repository dedicated to ontologies and semantic artefacts in the agri-food domain. It provides a catalog of agricultural, food, and environmental ontologies, enabling semantic interoperability and supporting the adoption of FAIR principles. Offering ontology hosting, versioning, metadata management, semantic search, and annotation and recommendation services, AgroPortal supports researchers and data managers in structuring and linking their data. It facilitates ontology alignment, promotes open science, and integrates with linked open data to enhance knowledge organization in agriculture and related fields." @en ;
-    dct:identifier https://agroportal.eu/  ;
-    dcat:endpointURL https://agroportal.eu/  ;
+trsp:profile.trsp:profile.67CE4CF672 a trsp:Profile ;
+    dct:title "PRoteomics IDEntifications database" @en ;
+    dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories." @en ;
+    dct:identifier "10.25504/FAIRsharing.e1byny"  ;
+    dcat:endpointURL https://www.ebi.ac.uk/chembl/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

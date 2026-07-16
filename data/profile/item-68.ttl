@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.67FF569AA0 a trsp:Profile ;
-    dct:title "Central Repository ICTM" @en ;
-    dct:description "CeR i.e. Central Repository ICTM is a digital repository of the Institute of Chemistry, Technology and Metallurgy, University of Belgrade, Serbia. CeR provides open access to the publications, as well as to other outputs of the research projects implemented in this institution." @en ;
-    dct:identifier https://www.re3data.org/repository/r3d100013811  ;
-    dcat:endpointURL https://cer.ihtm.bg.ac.rs/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.4AFF1332EF a trsp:Profile ;
+    dct:title "GORC" @en ;
+    dct:description "Woodford; C.; Treloar; A.; Leggott; M.; Payne; K.; Jones; S.; Lopez Albacete; J.; Madalli; D.; Genova; F.; Dharmawardena; K.; Chibhira; N.; Åkerström; W. N.; Macneil; R.; Nurnberger; A.; Pfeiffenberger; H.; Tanifuji; M.; Zhang; Q.; Jones; N.; Sesink; L.; Wood-Charlson; E.; & RDA GORC International Model WG. (2023). The Global Open Research Commons International Model; Version 1 (1.0). Zenodo." @en ;
+    dct:identifier https://doi.org/10.15497/RDA00099  ;
+    dcat:endpointURL https://doi.org/10.15497/RDA00099  ;
+    trsp:hasProfileType "trsp:profile-type-source"  .

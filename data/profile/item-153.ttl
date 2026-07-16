@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.00804149FC a trsp:Profile ;
+    dct:title "UTM-CSIC Data Centre" @en ;
+    dct:description "Marine technology and oceanographic data centre of CSIC's UTM (Marine Technology Unit). Provides data management, archiving and open access to oceanographic expedition data, bathymetric data and marine research datasets from CSIC research vessels and affiliated projects." @en ;
+    dct:identifier https://data.utm.csic.es/  ;
+    dcat:endpointURL https://data.utm.csic.es/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.2FA58C19A1 a trsp:Profile ;
-    dct:title "PRoteomics IDEntifications Database" @en ;
-    dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." @en ;
-    dct:identifier "10.25504/FAIRsharing.e1byny"  ;
-    dcat:endpointURL https://www.ebi.ac.uk/intact/  ;
+trsp:profile.trsp:profile.004A879024 a trsp:Profile ;
+    dct:title "e-cienciaDatos" @en ;
+    dct:description "Multidisciplinary research data repository for universities in the Consorcio Madroño (Community of Madrid). Provides open access data archiving, DOI assignment and FAIR data compliance for researchers across Madroño member universities." @en ;
+    dct:identifier https://edatos.consorciomadrono.es  ;
+    dcat:endpointURL https://edatos.consorciomadrono.es  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

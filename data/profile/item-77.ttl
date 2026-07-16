@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.2BD9FB0372 a trsp:Profile ;
-    dct:title "dataverse.no" @en ;
-    dct:description "DataverseNO (https://dataverse.no/) is a national, generalist repository for open research data from researchers from Norwegian research institutions. DataverseNO enables the FAIR Guiding Principles for scientific data management and stewardship and is CoreTrustSeal certified." @en ;
-    dct:identifier https://site.uit.no/dataverseno/  ;
-    dcat:endpointURL https://site.uit.no/dataverseno/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.719B779075 a trsp:Profile ;
+    dct:title "ISO" @en ;
+    dct:description "International Organization for Standardization. Audit and certification of trustworthy digital repositories. 2012." @en ;
+    dct:identifier https://www.iso.org/standard/56510.html  ;
+    dcat:endpointURL https://www.iso.org/standard/56510.html  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

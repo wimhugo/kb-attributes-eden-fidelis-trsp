@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.494FFE37F8 a trsp:Profile ;
-    dct:title "biomodels.org" @en ;
-    dct:description "BioModels is a repository of freely-available mathematical models of biological and biomedical systems. It hosts a vast selection of physiologically and pharmaceuticallynrelevant mechanistic models in standard formats." @en ;
-    dct:identifier https://biomodels.org/  ;
-    dcat:endpointURL https://biomodels.org/  ;
+trsp:profile.trsp:profile.0589F80CF6 a trsp:Profile ;
+    dct:title "PANGAEA" @en ;
+    dct:description "PANGAEA - Data Publisher for Earth & Environmental Sciences  has an almost 30-year history as an open-access library for archiving, publishing, and disseminating georeferenced data from the Earth, environmental, and biodiversity sciences. Originally evolving from a database for sediment cores, it is operated as a joint facility of the Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) and the Center for Marine Environmental Sciences (MARUM) at the University of Bremen. PANGAEA holds a mandate from the World Meteorological Organization (WMO)  and is accredited as a World Radiation Monitoring Center (WRMC). It was further accredited as a World Data Center by the International Council for Science (ICS)  in 2001 and has been certified with the Core Trust Seal  since 2019. nThe successful cooperation between PANGAEA and the publishing industry along with the correspondent technical implementation enables the cross-referencing of scientific publications and datasets archived as supplements to these publications. PANGAEA is the recommended data repository of numerous international scientific journals." @en ;
+    dct:identifier https://doi.org/10.1594/PANGAEA  ;
+    dcat:endpointURL https://pangaea.de/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.2D7DE43001 a trsp:Profile ;
-    dct:title "PRoteomics IDEntifications database" @en ;
-    dct:description "The NHGRI-EBI GWAS Catalog: a curated collection of all human genome-wide association studies, produced by a collaboration between EMBL-EBI and NHGRI" @en ;
-    dct:identifier https://www.ebi.ac.uk/gwas/  ;
-    dcat:endpointURL https://www.ebi.ac.uk/gwas/  ;
+trsp:profile.trsp:profile.20E6BA37EF a trsp:Profile ;
+    dct:title "GFZ Data Services" @en ;
+    dct:description "Since 2004, the GFZ German Research Centre for Geosciences assigns Digital Object Identifiers (DOI) to datasets. These datasets are archived by and published through GFZ Data Services and cover all geoscientific disciplines. They range from large dynamic datasets deriving from data intensive global monitoring networks with real-time data acquisition to the full suite of highly variable datasets collected by individual researchers or small teams. These highly variable data (‘long-tail data’) are small in size, but represent an important part of the total scientific output." @en ;
+    dct:identifier https://www.re3data.org/repository/r3d100012335  ;
+    dcat:endpointURL https://dataservices.gfz-potsdam.de/web/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

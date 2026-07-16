@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.53D9892B4E a trsp:Profile ;
-    dct:title "Czech Social Science Data Archive" @en ;
-    dct:description "The Czech Social Science Data Archive (CSDA) of the Institute of Sociology of the Academy of Sciences of the Czech Republic accesses, processes, documents and stores data files from social science research projects and promotes their dissemination to make them widely available for secondary use in academic research and for educational purposes." @en ;
-    dct:identifier https://archiv.soc.cas.cz/en/pristup-k-datum-2/nase-data  ;
-    dcat:endpointURL https://archiv.soc.cas.cz/en/  ;
+trsp:profile.trsp:profile.2E14441342 a trsp:Profile ;
+    dct:title "Linguistic Data Consortium" @en ;
+    dct:description "The Linguistic Data Consortium (LDC) is an open consortium that creates, collects, archives, and shares large collections of language data, including speech, text, and lexical resources, for research and technology development in linguistics and natural language processing." @en ;
+    dct:identifier "10.25504/FAIRsharing.25a72c"  ;
+    dcat:endpointURL https://www.ldc.upenn.edu/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

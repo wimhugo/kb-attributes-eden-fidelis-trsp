@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.5C32EF8367 a trsp:Profile ;
-    dct:title "CLARIN-ERIC" @en ;
-    dct:description "CLARIN is a European Research Infrastructure for the Humanities and Social Sciences, focusing on language resources (data and tools). It is being implemented and constantly improved at leading institutions in a large and growing number of European countries, aiming at improving Europe's multi-linguality competence. CLARIN provides several services, such as access to language data and tools to analyze data, and offers to deposit research data, as well as direct access to knowledge about relevant topics in relation to (research on and with) language resources. The main tool is the 'Virtual Language Observatory' providing metadata and access to the different national CLARIN centers and their data." @en ;
-    dct:identifier https://www.clarin.eu/  ;
-    dcat:endpointURL https://www.clarin.eu/content/national-consortia  ;
+trsp:profile.trsp:profile.78E1E6CCAB a trsp:Profile ;
+    dct:title "PRoteomics IDEntifications Database" @en ;
+    dct:description "EMPIAR, the Electron Microscopy Public Image Archive centered at EMBL-EBI, is a public resource for raw electronn    microscopy images related to EMDB, contains micrographs, particle sets and tilt-series." @en ;
+    dct:identifier https://www.ebi.ac.uk/empiar/  ;
+    dcat:endpointURL https://www.ebi.ac.uk/empiar/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

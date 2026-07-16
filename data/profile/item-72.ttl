@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.5513301B31 a trsp:Profile ;
-    dct:title "Bgee DataBase for Gene Expression Evolution" @en ;
-    dct:description "Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species. It provides an intuitive answer to the question -where is a gene expressed?- and supports research in cancer and agriculture, as well as evolutionary biology." @en ;
-    dct:identifier https://www.bgee.org/  ;
-    dcat:endpointURL https://www.bgee.org/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.2F48DA2962 a trsp:Profile ;
+    dct:title "HARVESTER" @en ;
+    dct:description "The profile for the EDEN Harvester" @en ;
+    dct:identifier "eden://harvester/"  ;
+    dcat:endpointURL https://github.com/EOSC-EDEN/wp2-repo-harvester  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

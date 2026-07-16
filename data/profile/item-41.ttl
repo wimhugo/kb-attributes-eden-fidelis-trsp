@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.644820F945 a trsp:Profile ;
-    dct:title "Camtree Digital Library :: Home" @en ;
-    dct:description "(No Data)" @en ;
-    dct:identifier https://library.camtree.org/home  ;
-    dcat:endpointURL https://library.camtree.org/home  ;
+trsp:profile.trsp:profile.00624373BF a trsp:Profile ;
+    dct:title "DataverseUA" @en ;
+    dct:description "Ukrainian national open research data repository hosted by the National Academy of Sciences of Ukraine. Provides open access to research data from Ukrainian scientific institutions across all disciplines. Supports Ukrainian open science development." @en ;
+    dct:identifier https://opendata.nas.gov.ua  ;
+    dcat:endpointURL https://opendata.nas.gov.ua  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

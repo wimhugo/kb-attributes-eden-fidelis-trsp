@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.1EE89F448D a trsp:Profile ;
-    dct:title "TRSP" @en ;
-    dct:description "The Trusted Repository Service Provider (TRSP) Research Data Alliance (RDA) Working Group (WG)" @en ;
-    dct:identifier https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf  ;
-    dcat:endpointURL https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf  ;
-    trsp:hasProfileType "trsp:profile-type-standard"  .
+trsp:profile.trsp:profile.2BD9FB0372 a trsp:Profile ;
+    dct:title "dataverse.no" @en ;
+    dct:description "DataverseNO (https://dataverse.no/) is a national, generalist repository for open research data from researchers from Norwegian research institutions. DataverseNO enables the FAIR Guiding Principles for scientific data management and stewardship and is CoreTrustSeal certified." @en ;
+    dct:identifier https://site.uit.no/dataverseno/  ;
+    dcat:endpointURL https://site.uit.no/dataverseno/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

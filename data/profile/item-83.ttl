@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.4BAE18BFED a trsp:Profile ;
-    dct:title "Online course: Data Clinic" @en ;
-    dct:description "&lt;p&gt;Online course: Data Clinic Kurssisivu/Course page&lt;/p&gt;\\n" @en ;
-    dct:identifier "urn:uuid:cc80e0eb-e62e-4489-918c-b15e84045254"  ;
-    dcat:endpointURL https://www.kielipankki.fi/language-bank/  ;
+trsp:profile.trsp:profile.6258E6CBD8 a trsp:Profile ;
+    dct:title "LIPID MAPS" @en ;
+    dct:description "LIPID Metabolites And Pathways Strategy (LIPID MAPS®) is a multi-institutional supported website and database that provides access to a large number of globally used lipidomics resources. LIPID MAPS® has internationally led the field of lipid curation, classification, and nomenclature since 2003. We strive to produce new open-access databases, informatics tools and lipidomics-focused training activities will be generated and made publicly available for researchers studying lipids in health and disease. LIPID MAPS® is currently funded by a multi-institutional grant from Wellcome, held jointly by Cardiff University, University of California San Diego, the Babraham Institute Cambridge, and Swansea University, as well as an Innovation Study funded by ELIXIR. This current phase will see that LIPID MAPS® is maintained and importantly, further developed in line with the global demand and development of lipidomics. LIPID MAPS® has an internationally recognized classification system and the largest curated lipid structure database in the world." @en ;
+    dct:identifier https://www.lipidmaps.org/  ;
+    dcat:endpointURL https://www.lipidmaps.org/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

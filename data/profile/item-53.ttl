@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.035B1CF480 a trsp:Profile ;
-    dct:title "PRoteomics IDEntifications database" @en ;
-    dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories." @en ;
-    dct:identifier "10.25504/FAIRsharing.e1byny"  ;
-    dcat:endpointURL https://www.ebi.ac.uk/pride/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.61E7538E10 a trsp:Profile ;
+    dct:title "EDEN" @en ;
+    dct:description "The EOSC EDEN project seeks to understand the current digital preservation landscape; identify common standards and practices; and provide new solutions and approaches that help institutions select and preserve high-quality FAIR research outputs." @en ;
+    dct:identifier https://eden-fidelis.eu/  ;
+    dcat:endpointURL https://eden-fidelis.eu/  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

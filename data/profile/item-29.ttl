@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.6B38C46111 a trsp:Profile ;
-    dct:title "CESSDA" @en ;
-    dct:description "CESSDA; CESSDA Trust and Landscape Report 2024" @en ;
-    dct:identifier https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing  ;
-    dcat:endpointURL https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing  ;
-    trsp:hasProfileType "trsp:profile-type-source"  .
+trsp:profile.trsp:profile.53D9892B4E a trsp:Profile ;
+    dct:title "Czech Social Science Data Archive" @en ;
+    dct:description "The Czech Social Science Data Archive (CSDA) of the Institute of Sociology of the Academy of Sciences of the Czech Republic accesses, processes, documents and stores data files from social science research projects and promotes their dissemination to make them widely available for secondary use in academic research and for educational purposes." @en ;
+    dct:identifier https://archiv.soc.cas.cz/en/pristup-k-datum-2/nase-data  ;
+    dcat:endpointURL https://archiv.soc.cas.cz/en/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

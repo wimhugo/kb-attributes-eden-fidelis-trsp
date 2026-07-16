@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.54A6CD95F4 a trsp:Profile ;
-    dct:title "Oxford Brookes University: RADAR" @en ;
-    dct:description "RADAR (Research And Digital Assets Repository) is the institutional repository of Oxford Brookes University. The role of RADAR is to share the intellectual product of Oxford Brookes freely and openly with the staff and students of Oxford Brookes or with the global academic and public community.n​RADAR has a variety of research collections (primarily containing original research publications) and teaching collections (primarily containing resources that support teaching at Oxford Brookes University). Some of the collections​ and resources on RADAR are freely accessible to the general public and other collections​ and resources are only accessible by current Oxford Brookes staff and students." @en ;
-    dct:identifier "2287"  ;
-    dcat:endpointURL https://radar.brookes.ac.uk/radar/hierarchy.do?topic=86e2c9d7-ef43-4b54-a387-3223d30acd3b  ;
+trsp:profile.trsp:profile.5F8F8C0526 a trsp:Profile ;
+    dct:title "GUDe :: Home" @en ;
+    dct:description "The Goethe University Data Repository (GUDe) provides a platform for its members to electronically archive, share, and publish their research data. GUDe is operated by the University Library of the Goethe University. The metadata of all public content is freely available and indexed by search engines as well as scientific web services. GUDe follows the FAIR principles for long-term accessibility (minimum 10 years), allows for reliable citation via DOIs as well as cooperative access to non-public data and operates on DSpace-CRIS v7." @en ;
+    dct:identifier https://gude.uni-frankfurt.de/home  ;
+    dcat:endpointURL https://gude.uni-frankfurt.de/home  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

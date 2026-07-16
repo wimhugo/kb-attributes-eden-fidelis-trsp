@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.29A21B39F5 a trsp:Profile ;
-    dct:title "DTU Data" @en ;
-    dct:description "Institutional data repository built on the Figshare platform. Contains research data from the Technical University of Denmark" @en ;
-    dct:identifier "r3d100013488"  ;
-    dcat:endpointURL https://data.dtu.dk/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.03C39F30F2 a trsp:Profile ;
+    dct:title "RDA/  WDS IG" @en ;
+    dct:description "RDA/WDS Certification of Digital Repositories IG" @en ;
+    dct:identifier https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;
+    dcat:endpointURL https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;
+    trsp:hasProfileType "trsp:profile-type-source"  .

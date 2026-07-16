@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.757212C93C a trsp:Profile ;
-    dct:title "COAR" @en ;
-    dct:description "Confederation of Open Access Repositories. (2022). COAR Community Framework for Good Practices in Repositories; Version 2 (Version 2). Zenodo." @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.7108101  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.7108101  ;
-    trsp:hasProfileType "trsp:profile-type-source"  .
+trsp:profile.trsp:profile.007F9FADF2 a trsp:Profile ;
+    dct:title "CRIS UNS" @en ;
+    dct:description "Current Research Information System (CRIS) of the University of Novi Sad. A comprehensive institutional research information system that stores, manages and provides access to bibliographic records of scientific and research outputs from all UNS faculties and institutes. Based on the CERIF data model." @en ;
+    dct:identifier https://cris.uns.ac.rs/en  ;
+    dcat:endpointURL https://cris.uns.ac.rs/en  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

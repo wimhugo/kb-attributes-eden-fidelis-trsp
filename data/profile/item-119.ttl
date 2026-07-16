@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.67CE4CF672 a trsp:Profile ;
-    dct:title "PRoteomics IDEntifications database" @en ;
-    dct:description "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories." @en ;
-    dct:identifier "10.25504/FAIRsharing.e1byny"  ;
-    dcat:endpointURL https://www.ebi.ac.uk/chembl/  ;
+trsp:profile.trsp:profile.4D0B570EB7 a trsp:Profile ;
+    dct:title "Quetelet-Progedo" @en ;
+    dct:description "Quetelet-Progedo’s mission is to enable the preservation and dissemination of data for quantitative social science research. It may be data from official statistical sources as well as research data. It therefore facilitates the implementation of national and European open data policies. Quetelet-Progedo strives to make data FAIR and ensures that they are of high quality. To this end, Quetelet-Progedo:n- documents the data in accordance with international standards for metadata (DDI) and distributes them in formats that facilitate their reuse (.csv, .sas, .dat, sav);n- preserves the data and its integrity via proven technical solutions, including the use of the CC-IN2P3 data centre, for which access has been provided by Huma-NumIR*;n- ensures the long-term identification of data through the allocation of Digital Object Identifiers (DOI);n- supports users, both in depositing and accessing data, through its dedicated team and all the University Platforms for Data (PUD);n- promotes ethical principles and compliance with legal requirements, paying particular attention to the protection of personal and sensitive data." @en ;
+    dct:identifier https://data.progedo.fr/  ;
+    dcat:endpointURL https://www.progedo.fr/en/home/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

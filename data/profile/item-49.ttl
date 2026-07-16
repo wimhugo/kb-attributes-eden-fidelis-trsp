@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.7A31FBDEE1 a trsp:Profile ;
-    dct:title "STRING" @en ;
-    dct:description "STRING is a database of known and predicted protein interactions.nThe interactions include direct (physical) and indirect (functional) associations; they are derived from four sources:n- Genomic Contextn- High-throughput Experimentsn- (Conserved) Coexpressionn- Previous KnowledgenSTRING quantitatively integrates interaction data from these sources for a large number of organisms, and transfers information between these organisms where applicable." @en ;
-    dct:identifier "r3d100010604"  ;
-    dcat:endpointURL https://string-db.org/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.74820191F5 a trsp:Profile ;
+    dct:title "DPC RAM" @en ;
+    dct:description "Digital Preservation Coalition (2024). Digital Preservation Coalition Rapid Assessment Model (DPC RAM). Version 3." @en ;
+    dct:identifier http://doi.org/10.7207/dpcram24-03  ;
+    dcat:endpointURL http://doi.org/10.7207/dpcram24-03  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.1B6B7677B4 a trsp:Profile ;
+    dct:title "UK Data Service" @en ;
+    dct:description "A comprehensive resource funded by the ESRC to support researchers, teachers and policymakers who depend on high-quality social and economic data." @en ;
+    dct:identifier https://ukdataservice.ac.uk/about/  ;
+    dcat:endpointURL https://ukdataservice.ac.uk/about/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

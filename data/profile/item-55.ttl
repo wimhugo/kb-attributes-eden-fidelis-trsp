@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.165CB267FA a trsp:Profile ;
-    dct:title "OrthoDB" @en ;
-    dct:description "OrthoDB provides evolutionary and functional annotations of genes classified into groups of orthologs in a diverse sampling of eukaryotes, prokaryotes, and viruses." @en ;
-    dct:identifier https://www.orthodb.org/  ;
-    dcat:endpointURL https://www.orthodb.org/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.25E02CC352 a trsp:Profile ;
+    dct:title "ELIXIR" @en ;
+    dct:description "Durinx C; McEntyre J; Appel R et al. Identifying ELIXIR Core Data Resources [version 2; peer review: 2 approved]. F1000Research 2017; 5(ELIXIR):2422" @en ;
+    dct:identifier https://doi.org/10.12688/f1000research.9656.2  ;
+    dcat:endpointURL https://doi.org/10.12688/f1000research.9656.2  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

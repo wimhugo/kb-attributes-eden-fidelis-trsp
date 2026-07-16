@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.0C1A1A6FE2 a trsp:Profile ;
+    dct:title "STATUS" @en ;
+    dct:description "Donaldson DR. Certification information on trustworthy digital repository websites: A content analysis. PLoS One. 2020 Dec 9;15(12):e0242525. doi: 10.1371/journal.pone.0242525. PMID: 33296371; PMCID: PMC7725354." @en ;
+    dct:identifier https://doi.org/10.1371/journal.pone.0242525  ;
+    dcat:endpointURL https://doi.org/10.1371/journal.pone.0242525  ;
+    trsp:hasProfileType "trsp:profile-type-source"  .

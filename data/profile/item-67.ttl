@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.1B6B7677B4 a trsp:Profile ;
-    dct:title "UK Data Service" @en ;
-    dct:description "A comprehensive resource funded by the ESRC to support researchers, teachers and policymakers who depend on high-quality social and economic data." @en ;
-    dct:identifier https://ukdataservice.ac.uk/about/  ;
-    dcat:endpointURL https://ukdataservice.ac.uk/about/  ;
+trsp:profile.trsp:profile.226704C31B a trsp:Profile ;
+    dct:title "Glittr.org" @en ;
+    dct:description "Glittr.org is a curated list of educational materials for the computational life sciences." @en ;
+    dct:identifier https://glittr.org/  ;
+    dcat:endpointURL https://glittr.org/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

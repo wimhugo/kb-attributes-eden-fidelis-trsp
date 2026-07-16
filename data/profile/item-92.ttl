@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.007276AA14 a trsp:Profile ;
-    dct:title "RIVeC" @en ;
-    dct:description "RIVeC - Repository of the Institute for Vegetable Crops is the institutional digital repository of the Institute for Vegetable Crops. The aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the Institute for Vegetable Crops. The repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB)." @en ;
-    dct:identifier "10160"  ;
-    dcat:endpointURL https://rivec.institut-palanka.rs/  ;
+trsp:profile.trsp:profile.235D1D5D91 a trsp:Profile ;
+    dct:title "Open Data Repository of the National Academy of Sciences of Ukraine" @en ;
+    dct:description "The open data repository DataverseUA of the National Academy of Sciences of Ukraine is a digital platform for storing, classifying and publishing the Academy's scientific data. The aim of the project is to establish an open data repository service for research conducted by scientific institutions affiliated with the National Academy of Sciences of Ukraine. The repository is intended to provide researchers, innovators, technology companies, and the general public with an accessible and reliable environment where they can publish, discover, and reuse data." @en ;
+    dct:identifier "r3d100014746"  ;
+    dcat:endpointURL https://opendata.nas.gov.ua/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

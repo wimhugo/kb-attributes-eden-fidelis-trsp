@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.0094967DCB a trsp:Profile ;
+    dct:title "RiuNet" @en ;
+    dct:description "Institutional open-access repository of the Universitat Politècnica de València providing access to research publications, datasets, theses, conference papers and educational materials from UPV. Complies with Spanish and European open access mandates." @en ;
+    dct:identifier https://riunet.upv.es/home  ;
+    dcat:endpointURL https://riunet.upv.es/home  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

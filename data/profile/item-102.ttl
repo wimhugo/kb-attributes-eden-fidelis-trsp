@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.5F8F8C0526 a trsp:Profile ;
-    dct:title "GUDe :: Home" @en ;
-    dct:description "The Goethe University Data Repository (GUDe) provides a platform for its members to electronically archive, share, and publish their research data. GUDe is operated by the University Library of the Goethe University. The metadata of all public content is freely available and indexed by search engines as well as scientific web services. GUDe follows the FAIR principles for long-term accessibility (minimum 10 years), allows for reliable citation via DOIs as well as cooperative access to non-public data and operates on DSpace-CRIS v7." @en ;
-    dct:identifier https://gude.uni-frankfurt.de/home  ;
-    dcat:endpointURL https://gude.uni-frankfurt.de/home  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.635C7081B0 a trsp:Profile ;
+    dct:title "POSI" @en ;
+    dct:description "Bilder G; Lin J; Neylon C (2020); The Principles of Open Scholarly Infrastructure; retrieved 08-11-2024" @en ;
+    dct:identifier https://doi.org/10.24343/C34W2H  ;
+    dcat:endpointURL https://doi.org/10.24343/C34W2H  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .

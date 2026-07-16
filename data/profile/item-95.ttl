@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.298D90251D a trsp:Profile ;
-    dct:title "Slovak Archive of Social Data" @en ;
-    dct:description "The Slovak Archive of Social Data (SASD), established in 2004, is a national repository dedicated to preserving and providing access to documentation and datasets from sociological and social science research in Slovakia. It archives data from major international programs such as ISSP, ESS, and EVS, as well as Slovak research projects funded by public, private, or commercial sources, provided they meet professional standards. SASD ensures long‑term accessibility of high‑quality social data for non‑commercial research, education, journalism, and public use, and also offers links to other international data archives and resources" @en ;
-    dct:identifier "r3d100014833"  ;
-    dcat:endpointURL https://sasd.sav.sk/en/  ;
+trsp:profile.trsp:profile.7996C467D4 a trsp:Profile ;
+    dct:title "Ortolang" @en ;
+    dct:description "ORTOLANG is an EQUIPEX project accepted in February 2012 in the framework of investissements d’avenir. Its aim is to construct a network infrastructure including a repository of language data (corpora, lexicons, dictionaries etc.) and readily available, well-documented tools for its processing. Expected outcomes comprize:npromoting research on analysis, modelling and automatic processing of our language to their highest international levels thanks to effective resource pooling;nfacilitating the use and transfer of resources and tools set up within public laboratories to industrial partners, notably SMEs which often cannot develop such resources and tools for language processing given the cost of investment;npromoting French language and the regional languages of France by sharing expertise acquired by public laboratories.nORTOLANG is a service for the language, which is complementary to the service offered by Huma-Num (très grande infrastructure de recherche). Ortolang gives access to SLDR for speech, and CNRTL for text resources." @en ;
+    dct:identifier "r3d100011329"  ;
+    dcat:endpointURL https://www.ortolang.fr/en/home/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.697647043E a trsp:Profile ;
-    dct:title "CTS" @en ;
-    dct:description "CoreTrustSeal Standards and Certification Board. (2022). CoreTrustSeal Requirements 2023-2025 (V01.00). Zenodo." @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.7051012  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.7051012  ;
-    trsp:hasProfileType "trsp:profile-type-community"  .
+trsp:profile.trsp:profile.67700E6E2B a trsp:Profile ;
+    dct:title "ARP Research Data Repository" @en ;
+    dct:description "This repository supports the researchers of the Hungarian Research Network (HUN-REN), and to some extent the Hungarian scientists in general." @en ;
+    dct:identifier "10.25504/FAIRsharing.b7f3ff"  ;
+    dcat:endpointURL https://repo.researchdata.hu/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

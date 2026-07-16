@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.0C37B9DA93 a trsp:Profile ;
-    dct:title "PRoteomics IDEntifications Database" @en ;
-    dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." @en ;
-    dct:identifier "10.25504/FAIRsharing.e1byny"  ;
-    dcat:endpointURL https://www.ebi.ac.uk/biostudies/  ;
+trsp:profile.trsp:profile.3E1A5A4B73 a trsp:Profile ;
+    dct:title "KU Leuven RDR" @en ;
+    dct:description "RDR (pronounced 'Radar') is the curated institutional research data repository of KU Leuven. The repository contains published data resulting from KU Leuven research in a FAIR way and allows the published data to be as open as possible, but as closed as necessary. The institutional repository helps KU Leuven researchers publish, share, cite, and preserve their research data in a findable, accessible, interoperable, and reusable way, with support from university staff. The repository uses the open source Dataverse project software as its base." @en ;
+    dct:identifier https://rdr.kuleuven.be/  ;
+    dcat:endpointURL https://rdr.kuleuven.be/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

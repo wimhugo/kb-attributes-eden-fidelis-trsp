@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.6668C83282 a trsp:Profile ;
-    dct:title "Slovenian Social Science Data Archives" @en ;
-    dct:description "Slovenian Social Science Data Archives (ADP) was established in 1997 as an organizational unit of the Social Sciences Research Institute at the Faculty of Social Sciences, University of Ljubljana. It is a national research infrastructure for social sciences, whose main mission is to manage data and data services in order to support research, education, and general well-being.nnDigital curation of high-quality research data that are openly accessible to researchers and other interested public is at the essence of the ADP activities.nnWithin its mission, the ADP establishes itself as a national infrastructure that collects important data sources from a wide range of social sciences, interesting for analyzing the Slovenian society, deposits, preserves and promotes their further use in scientific, educational and other purposes.nnThe Ministry of Education, Science, and Sports of the Republic of Slovenia has appointed ADP as the national data service provider for social sciences within its membership in CESSDA. The long-term national importance of the ADP is clear also in the ongoing support of the ministry, which from the establishment of ADP onwards ensures funding. Since 2004, the funding of operations has been provided within the infrastructure program Network of research infrastructure centers at the University of Ljubljana (MRIC UL).nnADP reports about its activities to the Council of ADP and to the Slovenian Research Agency that funds the infrastructure research program of the University of Ljubljana (MRIC UL)." @en ;
-    dct:identifier https://www.adp.fdv.uni-lj.si/  ;
-    dcat:endpointURL https://www.adp.fdv.uni-lj.si/  ;
+trsp:profile.trsp:profile.009EC11C5C a trsp:Profile ;
+    dct:title "DisProt" @en ;
+    dct:description "Manually curated database of intrinsically disordered proteins (IDPs) and regions (IDRs). Provides structural, functional and experimental annotation for proteins lacking fixed 3D structure. Community resource for IDP bioinformatics research; annotates disorder using experimental evidence and three ontologies." @en ;
+    dct:identifier https://disprot.org/  ;
+    dcat:endpointURL https://disprot.org/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .

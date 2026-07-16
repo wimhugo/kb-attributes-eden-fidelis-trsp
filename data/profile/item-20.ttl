@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.668467EC38 a trsp:Profile ;
-    dct:title "TTRAM" @en ;
-    dct:description "The Transparent Trustworthy Repository Attributes Matrix (TTRAM) is derived from a review of the European repository landscape. The TTRAM examines 30 common repository activities and functions across digital object management; organisational infrastructure; technology and security." @en ;
-    dct:identifier https://doi.org/10.5281/zenodo.17973113  ;
-    dcat:endpointURL https://doi.org/10.5281/zenodo.17973113  ;
-    trsp:hasProfileType "trsp:profile-type-community"  .
+trsp:profile.trsp:profile.757212C93C a trsp:Profile ;
+    dct:title "COAR" @en ;
+    dct:description "Confederation of Open Access Repositories. (2022). COAR Community Framework for Good Practices in Repositories; Version 2 (Version 2). Zenodo." @en ;
+    dct:identifier https://doi.org/10.5281/zenodo.7108101  ;
+    dcat:endpointURL https://doi.org/10.5281/zenodo.7108101  ;
+    trsp:hasProfileType "trsp:profile-type-source"  .

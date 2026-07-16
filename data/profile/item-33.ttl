@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.0C1A1A6FE2 a trsp:Profile ;
-    dct:title "STATUS" @en ;
-    dct:description "Donaldson DR. Certification information on trustworthy digital repository websites: A content analysis. PLoS One. 2020 Dec 9;15(12):e0242525. doi: 10.1371/journal.pone.0242525. PMID: 33296371; PMCID: PMC7725354." @en ;
-    dct:identifier https://doi.org/10.1371/journal.pone.0242525  ;
-    dcat:endpointURL https://doi.org/10.1371/journal.pone.0242525  ;
-    trsp:hasProfileType "trsp:profile-type-source"  .
+trsp:profile.trsp:profile.00967B7916 a trsp:Profile ;
+    dct:title "Data Repository Platform (ARP)" @en ;
+    dct:description "Hungarian national research data repository providing archiving, DOI assignment and open access to research data from Hungarian institutions across all disciplines. Developed as part of the DART project (Developing Appropriate Research data management Techniques for Hungarian research)." @en ;
+    dct:identifier https://repo.researchdata.hu/  ;
+    dcat:endpointURL https://repo.researchdata.hu/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

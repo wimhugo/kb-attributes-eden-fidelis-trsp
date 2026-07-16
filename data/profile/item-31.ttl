@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.76BC362CF1 a trsp:Profile ;
-    dct:title "TRUST WG" @en ;
-    dct:description "RDA/WDS Trust Principles Outreach and Adoption WG" @en ;
-    dct:identifier https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;
-    dcat:endpointURL https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity  ;
-    trsp:hasProfileType "trsp:profile-type-source"  .
+trsp:profile.trsp:profile.005B248EEE a trsp:Profile ;
+    dct:title "DAIS - Digital Archive of the Serbian Academy of Sciences and Arts" @en ;
+    dct:description "Institutional digital repository of the Serbian Academy of Sciences and Arts. Preserves and provides open access to the scientific and scholarly publications, books, journals, proceedings and research outputs produced by SANU members and affiliated institutes." @en ;
+    dct:identifier https://dais.sanu.ac.rs/  ;
+    dcat:endpointURL https://dais.sanu.ac.rs/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .

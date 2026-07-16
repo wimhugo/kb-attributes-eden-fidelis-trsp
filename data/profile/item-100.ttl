@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.046B279494 a trsp:Profile ;
-    dct:title "Coscine" @en ;
-    dct:description "Coscine landing page" @en ;
-    dct:identifier https://about.coscine.de/  ;
-    dcat:endpointURL https://about.coscine.de/  ;
+trsp:profile.trsp:profile.003C4F4661 a trsp:Profile ;
+    dct:title "PIST" @en ;
+    dct:description "Tunisian Scientific and Technical Information Portal (Portail de l'Information Scientifique et Technique). National digital library aggregating Tunisian academic and scientific output including theses, articles, conference proceedings and Tunisian scientific journals. Managed by CNUDST under international bibliographic standards." @en ;
+    dct:identifier http://www.pist.tn/  ;
+    dcat:endpointURL http://www.pist.tn/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
