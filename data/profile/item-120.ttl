@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.610A896E75 a trsp:Profile ;
+trsp:profile.610A896E75 a trsp:Profile ;
     dct:title "RADaR - Digital Repository of Archived Publications of the Institute for Biological Research “Siniša Stanković”" @en ;
     dct:description "RADaR - Digital Repository of Archived Publications of the Institute for Biological Research “Siniša Stanković” is the institutional digital repository of the Institute for Biological Research “Siniša Stanković” – National Institute of Republic of Serbia, University of Belgrade.nThe aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the Institute for Biological Research “Siniša Stanković”.nThe repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB)." @en ;
     dct:identifier "4035"  ;
