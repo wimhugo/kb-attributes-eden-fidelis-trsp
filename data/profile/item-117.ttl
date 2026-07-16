@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.235D1D5D91 a trsp:Profile ;
-    dct:title "Open Data Repository of the National Academy of Sciences of Ukraine" @en ;
-    dct:description "The open data repository DataverseUA of the National Academy of Sciences of Ukraine is a digital platform for storing, classifying and publishing the Academy's scientific data. The aim of the project is to establish an open data repository service for research conducted by scientific institutions affiliated with the National Academy of Sciences of Ukraine. The repository is intended to provide researchers, innovators, technology companies, and the general public with an accessible and reliable environment where they can publish, discover, and reuse data." @en ;
-    dct:identifier "r3d100014746"  ;
-    dcat:endpointURL https://opendata.nas.gov.ua/  ;
+trsp:profile.trsp:profile.7254507349 a trsp:Profile ;
+    dct:title "Qualitative Data Repository" @en ;
+    dct:description "The Qualitative Data Repository (QDR) is a dedicated archive for storing and sharing digital data (and accompanying documentation) generated or collected through qualitative and multi-method research in the social sciences. QDR provides search tools to facilitate the discovery of data, and also serves as a portal to material beyond its own holdings, with links to U.S. and international archives. The repository’s initial emphasis is on political science. Four beliefs underpin the repository's mission: data that can be shared and reused should be; evidence-based claims should be made transparently; teaching is enriched by the use of well-documented data; and rigorous social science requires common understandings of its research methods." @en ;
+    dct:identifier "10.25504/FAIRsharing.bmz5ap"  ;
+    dcat:endpointURL https://qdr.syr.edu/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
