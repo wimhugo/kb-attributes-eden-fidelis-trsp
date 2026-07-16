@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.6FB247C22A a trsp:Profile ;
-    dct:title "Cellosaurus" @en ;
-    dct:description "The Cellosaurus is a knowledge resource on cell lines. It attempts to describe all cell lines used in biomedical research. Its scope includes: Immortalized cell lines; naturally immortal cell lines (example: stem cell lines); finite life cell lines when those are distributed and used widely; vertebrate cell line with an emphasis on human, mouse and rat cell lines; and invertebrate (insects and ticks) cell lines. Its scope does not include primary cell lines (with the exception of the finite life cell lines described above) and plant cell lines." @en ;
-    dct:identifier "10.25504/FAIRsharing.hkk309"  ;
-    dcat:endpointURL https://www.cellosaurus.org/  ;
+trsp:profile.trsp:profile.7AA756F28B a trsp:Profile ;
+    dct:title "DATICE" @en ;
+    dct:description "DATICE is a data service and archive for Icelandic social science research data. Our goal is to ensure open and free access to high quality data for the research community as well as the general public. The service is located within the Social Science Research Institute (SSRI) at the University of Iceland." @en ;
+    dct:identifier https://www.re3data.org/repository/r3d100013494  ;
+    dcat:endpointURL https://datice.is/is  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
