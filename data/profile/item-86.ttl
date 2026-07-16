@@ -10,6 +10,6 @@
 trsp:profile.004F9BAF7C a trsp:Profile ;
     dct:title "MorpheusML Model Repository" @en ;
     dct:description "Public repository for sharing and citing computational biology models created with the Morpheus multicellular simulation environment. Models are assigned persistent identifiers via identifiers.org and linked to publications for citation and reproducibility." @en ;
-    dct:identifier https://morpheus.gitlab.io/model/  ;
-    dcat:endpointURL https://morpheus.gitlab.io/model/  ;
+    dct:identifier <https://morpheus.gitlab.io/model/>  ;
+    dcat:endpointURL <https://morpheus.gitlab.io/model/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
