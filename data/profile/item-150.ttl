@@ -1,0 +1,15 @@
+@prefix trsp:   <https://example.org/trsp/> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix schema: <https://schema.org/> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+
+
+trsp:profile.trsp:profile.668467EC38 a trsp:Profile ;
+    dct:title "TTRAM" @en ;
+    dct:description "The Transparent Trustworthy Repository Attributes Matrix (TTRAM) is derived from a review of the European repository landscape. The TTRAM examines 30 common repository activities and functions across digital object management; organisational infrastructure; technology and security." @en ;
+    dct:identifier https://doi.org/10.5281/zenodo.17973113  ;
+    dcat:endpointURL https://doi.org/10.5281/zenodo.17973113  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .
