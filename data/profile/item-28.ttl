@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.4AFF1332EF a trsp:Profile ;
-    dct:title "GORC" @en ;
-    dct:description "Woodford; C.; Treloar; A.; Leggott; M.; Payne; K.; Jones; S.; Lopez Albacete; J.; Madalli; D.; Genova; F.; Dharmawardena; K.; Chibhira; N.; Åkerström; W. N.; Macneil; R.; Nurnberger; A.; Pfeiffenberger; H.; Tanifuji; M.; Zhang; Q.; Jones; N.; Sesink; L.; Wood-Charlson; E.; & RDA GORC International Model WG. (2023). The Global Open Research Commons International Model; Version 1 (1.0). Zenodo." @en ;
-    dct:identifier https://doi.org/10.15497/RDA00099  ;
-    dcat:endpointURL https://doi.org/10.15497/RDA00099  ;
-    trsp:hasProfileType "trsp:profile-type-source"  .
+trsp:profile.trsp:profile.697647043E a trsp:Profile ;
+    dct:title "CTS" @en ;
+    dct:description "CoreTrustSeal Standards and Certification Board. (2022). CoreTrustSeal Requirements 2023-2025 (V01.00). Zenodo." @en ;
+    dct:identifier https://doi.org/10.5281/zenodo.7051012  ;
+    dcat:endpointURL https://doi.org/10.5281/zenodo.7051012  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .
