@@ -11,5 +11,5 @@ trsp:profile.1798E19839 a trsp:Profile ;
     dct:title "DataverseNO" @en ;
     dct:description "DataverseNO  is a curated, FAIR-aligned national generic repository for open research data from all academic disciplines. DataverseNO commits to facilitate that published data remain accessible and (re)usable in a long-term perspective. The repository is owned and operated by UiT The Arctic University of Norway. DataverseNO accepts submissions from researchers primarily from Norwegian research institutions. Datasets in DataverseNO are grouped into institutional collections as well as special collections. The technical infrastructure of the repository is based on the open source application Dataverse (https://dataverse.org), which is developed by an international developer and user community led by Harvard University." @en ;
     dct:identifier "r3d100012538"  ;
-    dcat:endpointURL https://dataverse.no/dataverse/trolling  ;
+    dcat:endpointURL <https://dataverse.no/dataverse/trolling>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
