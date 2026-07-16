@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.0F27B7A25D a trsp:Profile ;
+trsp:profile.0F27B7A25D a trsp:Profile ;
     dct:title "PRoteomics IDEntifications Database" @en ;
     dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." @en ;
     dct:identifier "10.25504/FAIRsharing.e1byny"  ;
