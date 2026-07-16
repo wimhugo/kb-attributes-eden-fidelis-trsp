@@ -10,6 +10,6 @@
 trsp:profile.00804149FC a trsp:Profile ;
     dct:title "UTM-CSIC Data Centre" @en ;
     dct:description "Marine technology and oceanographic data centre of CSIC's UTM (Marine Technology Unit). Provides data management, archiving and open access to oceanographic expedition data, bathymetric data and marine research datasets from CSIC research vessels and affiliated projects." @en ;
-    dct:identifier https://data.utm.csic.es/  ;
-    dcat:endpointURL https://data.utm.csic.es/  ;
+    dct:identifier <https://data.utm.csic.es/>  ;
+    dcat:endpointURL <https://data.utm.csic.es/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
