@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.4AFF1332EF a trsp:Profile ;
+trsp:profile.4AFF1332EF a trsp:Profile ;
     dct:title "GORC" @en ;
     dct:description "Woodford; C.; Treloar; A.; Leggott; M.; Payne; K.; Jones; S.; Lopez Albacete; J.; Madalli; D.; Genova; F.; Dharmawardena; K.; Chibhira; N.; Åkerström; W. N.; Macneil; R.; Nurnberger; A.; Pfeiffenberger; H.; Tanifuji; M.; Zhang; Q.; Jones; N.; Sesink; L.; Wood-Charlson; E.; & RDA GORC International Model WG. (2023). The Global Open Research Commons International Model; Version 1 (1.0). Zenodo." @en ;
     dct:identifier https://doi.org/10.15497/RDA00099  ;
