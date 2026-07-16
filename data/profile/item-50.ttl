@@ -9,7 +9,7 @@
 
 trsp:profile.6BF0A22CB5 a trsp:Profile ;
     dct:title "DRAWG" @en ;
-    dct:description "Witt; M.; Cannon; M.; Lister; A.; Segundo; W.; Shearer; K.; Yamaji; K.; & Research Data Alliance Data Repository Attributes Working Group. (2024). RDA Common Descriptive Attributes of Research Data Repositories (1.0). Zenodo." @en ;
-    dct:identifier https://doi.org/10.15497/RDA00103  ;
-    dcat:endpointURL https://doi.org/10.15497/RDA00103  ;
+    dct:description "Witt", "M.", "Cannon", "M.", "Lister", "A.", "Segundo", "W.", "Shearer", "K.", "Yamaji", "K.", "& Research Data Alliance Data Repository Attributes Working Group. (2024). RDA Common Descriptive Attributes of Research Data Repositories (1.0). Zenodo." @en ;
+    dct:identifier <https://doi.org/10.15497/RDA00103>  ;
+    dcat:endpointURL <https://doi.org/10.15497/RDA00103>  ;
     trsp:hasProfileType "trsp:profile-type-source"  .
