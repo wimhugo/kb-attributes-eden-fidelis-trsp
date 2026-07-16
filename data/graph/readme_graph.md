@@ -1,3 +1,0 @@
-# How Graphs are Made in the Knowledge Base
-
-...
