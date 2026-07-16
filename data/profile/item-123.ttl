@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.39A738E4E3 a trsp:Profile ;
-    dct:title "DAIS" @en ;
-    dct:description "DAIS - Digital Archive of the Serbian Academy of Sciences and Arts is a joint digital repository of the Serbian Academy of Sciences and Arts (SASA) and the research institutes under the auspices of SASA. The aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the SASA and its institutes. The repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB)." @en ;
-    dct:identifier https://dais.sanu.ac.rs/?locale-attribute=en  ;
-    dcat:endpointURL https://dais.sanu.ac.rs/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.661B6E0023 a trsp:Profile ;
+    dct:title "re3data.org" @en ;
+    dct:description "Strecker; D.; Axtmann; A.; Bertelmann; R.; Cousijn; H.; Elger; K.; Ferguson; L. M.; Fichtmüller; D.; Jones; C.; Lindenmann; I.; Neidiger; C.; Nguyen; T. B.; Pal; J. K.; Pampel; H.; Petras; V.; Schnepf; E.; Semrau; A.; Ulrich; R.; Upmeier; A.; Vierkant; P.; Wang; H.; Weickert; G.; Weisweiler; N. L.; Williams; S. C.; Witt; M.; Wright; S. J. (2023): Metadata Schema for the Description of Research Data Repositories: version 4.0; re3data; 33 p." @en ;
+    dct:identifier https://doi.org/10.48440/re3.014  ;
+    dcat:endpointURL https://doi.org/10.48440/re3.014  ;
+    trsp:hasProfileType "trsp:profile-type-source"  .
