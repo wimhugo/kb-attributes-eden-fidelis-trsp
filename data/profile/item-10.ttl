@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.494FFE37F8 a trsp:Profile ;
+trsp:profile.494FFE37F8 a trsp:Profile ;
     dct:title "biomodels.org" @en ;
     dct:description "BioModels is a repository of freely-available mathematical models of biological and biomedical systems. It hosts a vast selection of physiologically and pharmaceuticallynrelevant mechanistic models in standard formats." @en ;
     dct:identifier https://biomodels.org/  ;
