@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.003E022560 a trsp:Profile ;
+trsp:profile.003E022560 a trsp:Profile ;
     dct:title "myLaminin" @en ;
     dct:description "Commercial research data management and archiving platform using blockchain and Web3 technology. Supports secure sensitive data archiving, multi-jurisdictional team collaboration, agreement management and regulatory compliance (HIPAA, PIPEDA, 21 CFR Part 11). SOC2 Type II certified." @en ;
     dct:identifier https://www.myLaminin.net  ;
