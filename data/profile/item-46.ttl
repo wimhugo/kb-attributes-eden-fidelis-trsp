@@ -9,7 +9,7 @@
 
 trsp:profile.009EC11C5C a trsp:Profile ;
     dct:title "DisProt" @en ;
-    dct:description "Manually curated database of intrinsically disordered proteins (IDPs) and regions (IDRs). Provides structural, functional and experimental annotation for proteins lacking fixed 3D structure. Community resource for IDP bioinformatics research; annotates disorder using experimental evidence and three ontologies." @en ;
-    dct:identifier https://disprot.org/  ;
-    dcat:endpointURL https://disprot.org/  ;
+    dct:description "Manually curated database of intrinsically disordered proteins (IDPs) and regions (IDRs). Provides structural, functional and experimental annotation for proteins lacking fixed 3D structure. Community resource for IDP bioinformatics research", "annotates disorder using experimental evidence and three ontologies." @en ;
+    dct:identifier <https://disprot.org/>  ;
+    dcat:endpointURL <https://disprot.org/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
