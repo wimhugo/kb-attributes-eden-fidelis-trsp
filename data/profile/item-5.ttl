@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.6EBCF639D3 a trsp:Profile ;
-    dct:title "EOSC PID" @en ;
-    dct:description "European Commission; Directorate-General for Research and Innovation; Hellström; M.; Heughebaert; A.; Kotarski; R.; et al.; A Persistent Identifier (PID) policy for the European Open Science Cloud (EOSC); Publications Office; 2020" @en ;
-    dct:identifier https://data.europa.eu/doi/10.2777/926037  ;
-    dcat:endpointURL https://data.europa.eu/doi/10.2777/926037  ;
-    trsp:hasProfileType "trsp:profile-type-community"  .
+trsp:profile.trsp:profile.002FA0AA0F a trsp:Profile ;
+    dct:title "ASAP" @en ;
+    dct:description "Automated Single-cell Analysis Portal (ASAP) – a collaborative web platform for analysing, visualising and publishing single-cell RNA-seq and multi-omics data. Allows researchers to import public datasets (GEO, ArrayExpress, SRA, BioProject) and private data, run analyses and share results. Incorporates scFAIR validation schema for single-cell data metadata." @en ;
+    dct:identifier https://asap.epfl.ch/  ;
+    dcat:endpointURL https://asap.epfl.ch/  ;
+    trsp:hasProfileType "trsp:profile-type-repository"  .
