@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.5F8F8C0526 a trsp:Profile ;
+trsp:profile.5F8F8C0526 a trsp:Profile ;
     dct:title "GUDe :: Home" @en ;
     dct:description "The Goethe University Data Repository (GUDe) provides a platform for its members to electronically archive, share, and publish their research data. GUDe is operated by the University Library of the Goethe University. The metadata of all public content is freely available and indexed by search engines as well as scientific web services. GUDe follows the FAIR principles for long-term accessibility (minimum 10 years), allows for reliable citation via DOIs as well as cooperative access to non-public data and operates on DSpace-CRIS v7." @en ;
     dct:identifier https://gude.uni-frankfurt.de/home  ;
