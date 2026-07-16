@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.18D00D3332 a trsp:Profile ;
-    dct:title "STOREDB" @en ;
-    dct:description "STOREDB provides infrastructure for sharing data and resources in radiation biology and epidemiology. It is a platform for the archiving and sharing of primary data and outputs of all kinds, including epidemiological and experimental data, from research on the effects of radiation. It also provides a directory of bioresources and databases containing information and materials that investigators are willing to share. STORE supports the creation of a radiation research commons." @en ;
-    dct:identifier "10.25504/FAIRsharing.6h8d2r"  ;
-    dcat:endpointURL https://www.storedb.org/store_v3/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.1E05BBE77F a trsp:Profile ;
+    dct:title "DPC CRPS" @en ;
+    dct:description "Digital Preservation Coalition (2022). Core requirements for a digital preservation system.  Part of the DPC Procurement Toolkit.  Mapping also available to DPC RAM." @en ;
+    dct:identifier https://www.dpconline.org/digipres/implement-digipres/procurement-toolkit/procurement-toolkit-core-requirements  ;
+    dcat:endpointURL https://www.dpconline.org/digipres/implement-digipres/procurement-toolkit/procurement-toolkit-core-requirements  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .
