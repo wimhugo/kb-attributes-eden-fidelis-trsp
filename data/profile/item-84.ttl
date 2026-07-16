@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.47BF9E27E4 a trsp:Profile ;
-    dct:title "PortFIR" @en ;
-    dct:description "PortFIR is a program for implementing Portuguese networks of excellence in nutrition and food safety, and a portal that includes sustainable and recognized quality databases on Food Composition and Contamination and Food Consumption." @en ;
-    dct:identifier https://portfir.insa.min-saude.pt/pt/ .  ;
-    dcat:endpointURL https://portfir.insa.min-saude.pt/pt/  ;
+trsp:profile.trsp:profile.004BA57DAA a trsp:Profile ;
+    dct:title "Lithuanian Data Archive for Social Sciences and Humanities (LiDA)" @en ;
+    dct:description "Lithuanian national data archive for social sciences and humanities. Archives, documents and provides access to Lithuanian SSH research datasets for secondary analysis, teaching and research. CESSDA Service Provider for Lithuania." @en ;
+    dct:identifier https://lida.dataverse.lt/  ;
+    dcat:endpointURL https://lida.dataverse.lt/  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
