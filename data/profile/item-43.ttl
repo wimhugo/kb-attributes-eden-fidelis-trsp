@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.70BF8F20D5 a trsp:Profile ;
-    dct:title "PRoteomics IDEntifications Database" @en ;
-    dct:description "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications." @en ;
-    dct:identifier "10.25504/FAIRsharing.e1byny"  ;
-    dcat:endpointURL https://www.ebi.ac.uk/ena/browser/  ;
-    trsp:hasProfileType "trsp:profile-type-repository"  .
+trsp:profile.trsp:profile.03B02C7454 a trsp:Profile ;
+    dct:title "DCAT-AP" @en ;
+    dct:description "DCAT-AP is a DCAT profile for sharing information about Catalogues containing Datasets and Data Services descriptions in Europe, under maintenance by the SEMIC action, Interoperable Europe." @en ;
+    dct:identifier https://semiceu.github.io/DCAT-AP/releases/3.0.0/  ;
+    dcat:endpointURL https://semiceu.github.io/DCAT-AP/releases/3.0.0/  ;
+    trsp:hasProfileType "trsp:profile-type-standard"  .
