@@ -10,6 +10,6 @@
 trsp:profile.3E1A5A4B73 a trsp:Profile ;
     dct:title "KU Leuven RDR" @en ;
     dct:description "RDR (pronounced 'Radar') is the curated institutional research data repository of KU Leuven. The repository contains published data resulting from KU Leuven research in a FAIR way and allows the published data to be as open as possible, but as closed as necessary. The institutional repository helps KU Leuven researchers publish, share, cite, and preserve their research data in a findable, accessible, interoperable, and reusable way, with support from university staff. The repository uses the open source Dataverse project software as its base." @en ;
-    dct:identifier https://rdr.kuleuven.be/  ;
-    dcat:endpointURL https://rdr.kuleuven.be/  ;
+    dct:identifier <https://rdr.kuleuven.be/>  ;
+    dcat:endpointURL <https://rdr.kuleuven.be/>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
