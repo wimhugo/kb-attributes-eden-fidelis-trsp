@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.003EEB3389 a trsp:Profile ;
+trsp:profile.003EEB3389 a trsp:Profile ;
     dct:title "PHAIDRA - University of Padua" @en ;
     dct:description "Institutional digital asset management and repository system of the University of Padua. Preserves and provides access to digital scholarly objects, research datasets, cultural heritage materials, and educational resources. PHAIDRA is open-source software adopted by multiple institutions." @en ;
     dct:identifier https://phaidra.cab.unipd.it/  ;
