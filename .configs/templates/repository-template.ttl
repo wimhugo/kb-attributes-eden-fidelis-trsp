@@ -4,6 +4,34 @@
 trsp:profile.TEMPLATE a trsp:Repository ;
     dct:title ""@en ;
     dct:description ""@en ;
+    dcat:landingPage ""^^xsd:anyURL ;
     dct:identifier "" ;
-    dcat:endpointURL "" ;
+    dcat:endpointURL ""^^xsd:anyURL ;
     trsp:hasProfileType <> ## trsp:profile-type-scheme .
+    att.48BF7E1522	"" ;
+    att.4570870110	"" ;
+    dct:publisher "" ;
+    att.6A715E3A22 "" ;
+    att.3B633179C5	"" ;
+    att.035ACCB10D	"" ;
+    att.241E6C58DF	"" ;
+    att.27C898E8A0	"" ;
+    att.27C898E8A0	"" ;
+    att.78CC017229	"" ;
+    att.394BC515E7	"" ;
+    att.6EF77F35F8	"" ;
+    att.7C68DBB456	"" ;
+    att.01D16EFB9B	"" ;
+    att.54317F78CB	"" ;
+    att.1BF23E39F5	"" ;
+    att.6AF56A372D	"" ;
+    att.2F993B25AD	"" ;
+    att.543A727F84	"" ;
+    dcat:service "" ;
+    att.7C68DBB456 "" ;
+    att.6B7CED5897 "" ;
+    att.768DAFA0DB "" ;
+    att.521A4A9E17 "" ;
+    att.1D00720769 "" ;
+    skos:note
+.
