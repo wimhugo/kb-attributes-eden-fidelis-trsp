@@ -10,6 +10,6 @@
 trsp:profile.370B8EC563 a trsp:Profile ;
     dct:title "TRAC" @en ;
     dct:description "(Page not found)" @en ;
-    dct:identifier https://www.crl.edu/trac-metrics  ;
-    dcat:endpointURL https://www.crl.edu/trac-metrics  ;
+    dct:identifier <https://www.crl.edu/trac-metrics>  ;
+    dcat:endpointURL <https://www.crl.edu/trac-metrics>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .
