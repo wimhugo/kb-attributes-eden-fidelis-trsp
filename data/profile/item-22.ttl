@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.0075D2D0B2 a trsp:Profile ;
+trsp:profile.0075D2D0B2 a trsp:Profile ;
     dct:title "CORA.Repositori de Dades de Recerca" @en ;
     dct:description "Catalan consortium research data repository for universities and research centres in Catalonia. Provides multidisciplinary data archiving, DOI assignment and open access. Part of the CORA (Consorci de Repositoris Acadèmics) open science infrastructure for Catalan institutions." @en ;
     dct:identifier https://dataverse.csuc.cat/  ;
