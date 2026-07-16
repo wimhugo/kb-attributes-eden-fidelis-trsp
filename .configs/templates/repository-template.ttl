@@ -1,6 +1,8 @@
 @prefix trsp: <https://example.org/trsp/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix schema: <http://schema.org/> .
+
 
 trsp:repo.{{}} a trsp:Repository ;
     dct:title {{}}@en ;
@@ -34,5 +36,5 @@ trsp:repo.{{}} a trsp:Repository ;
     trsp:att.768DAFA0DB {{}} ;
     trsp:att.521A4A9E17 {{}} ;
     trsp:att.1D00720769 {{}} ;
-    skos:note {{}}
+    schema:Comment {{}}
 .
