@@ -10,6 +10,6 @@
 trsp:profile.0048D487E7 a trsp:Profile ;
     dct:title "Sikt Research Data Archive" @en ;
     dct:description "Norwegian national archive for social science and humanities research data. Acquires, curates and disseminates social science datasets for secondary analysis. Also responsible for data protection officer function for Norwegian research institutions and CESSDA Service Provider for Norway." @en ;
-    dct:identifier https://sikt.no/en/archiving-research-data  ;
-    dcat:endpointURL https://sikt.no/en/archiving-research-data  ;
+    dct:identifier <https://sikt.no/en/archiving-research-data>  ;
+    dcat:endpointURL <https://sikt.no/en/archiving-research-data>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
