@@ -7,9 +7,9 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.43E99F8D75 a trsp:Profile ;
-    dct:title "SDSBB" @en ;
-    dct:description "Noardo; Francesca; Rob Atkinson; Lucy Bastin; Joan Maso; Ingo Simonis; Alejandro Villar; Marie-Françoise Voidrot; and Piotr Zaborowski. 2024. \"Standards for Data Space Building Blocks\" Remote Sensing 16; no. 20: 3824" @en ;
-    dct:identifier https://doi.org/10.3390/rs16203824  ;
-    dcat:endpointURL https://doi.org/10.3390/rs16203824  ;
+trsp:profile.trsp:profile.6AE564BF52 a trsp:Profile ;
+    dct:title "CARE" @en ;
+    dct:description "Carroll; S.R.; Garba; I.; Figueroa-Rodríguez; O.L.; Holbrook; J.; Lovett; R.; Materechera; S.; Parsons; M.; Raseroka; K.; Rodriguez-Lonebear; D.; Rowe; R.; Sara; R.; Walker; J.D.; Anderson; J. and Hudson; M. (2020) ‘The CARE Principles for Indigenous Data Governance’; Data Science Journal; 19(1); p. 43." @en ;
+    dct:identifier https://doi.org/10.5334/dsj-2020-043  ;
+    dcat:endpointURL https://doi.org/10.5334/dsj-2020-043  ;
     trsp:hasProfileType "trsp:profile-type-community"  .
