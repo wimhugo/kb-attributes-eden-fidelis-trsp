@@ -9,7 +9,7 @@
 
 trsp:profile.114F0465C3 a trsp:Profile ;
     dct:title "nestor" @en ;
-    dct:description "nestor criteria : Catalogue of Criteria for Trusted Digital Repositories; Version 2; 2009; Frankfurt am Main: nestor c/o Deutsche Nationalbibliothek; urn:nbn:de:0008-2010030806" @en ;
-    dct:identifier http://nbn-resolving.de/urn:nbn:de:0008-2010030806  ;
-    dcat:endpointURL http://nbn-resolving.de/urn:nbn:de:0008-2010030806  ;
+    dct:description "nestor criteria : Catalogue of Criteria for Trusted Digital Repositories", "Version 2", "2009", "Frankfurt am Main: nestor c/o Deutsche Nationalbibliothek", <urn:nbn:de:0008-2010030806> @en ;
+    dct:identifier <http://nbn-resolving.de/urn:nbn:de:0008-2010030806>  ;
+    dcat:endpointURL <http://nbn-resolving.de/urn:nbn:de:0008-2010030806>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .
