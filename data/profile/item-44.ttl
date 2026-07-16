@@ -10,6 +10,6 @@
 trsp:profile.29A444BA70 a trsp:Profile ;
     dct:title "Deposit your research data | Sikt" @en ;
     dct:description "Sikt tar imot og arkiverer forskingsdata om mennesker og samfunn, og gjør dem tilgjengelige for gjenbruk. Vi hjelper deg å dokumentere data og velge riktig tilgangsnivå." @en ;
-    dct:identifier https://sikt.no/en/archiving-research-data  ;
-    dcat:endpointURL https://sikt.no/en/archiving-research-data  ;
+    dct:identifier <https://sikt.no/en/archiving-research-data>  ;
+    dcat:endpointURL <https://sikt.no/en/archiving-research-data>  ;
     trsp:hasProfileType "trsp:profile-type-repository"  .
