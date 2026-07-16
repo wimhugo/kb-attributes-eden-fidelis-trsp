@@ -2,6 +2,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix schema: <http://schema.org/> .
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 
 trsp:repo.00B8A6AE14 a trsp:Repository ;
     dct:title "HOMEROS - OSCARS project"@en ;
