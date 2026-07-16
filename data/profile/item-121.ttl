@@ -7,7 +7,7 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
 
-trsp:profile.trsp:profile.00E4257818 a trsp:Profile ;
+trsp:profile.0.00E+00 a trsp:Profile ;
     dct:title "Radboud Data Repository" @en ;
     dct:description "Institutional research data repository of Radboud University providing long-term archiving and access for multidisciplinary research data. Supports FAIR principles and Dutch and European funder data sharing requirements. Particular strength in humanities, social sciences, and cognitive neuroscience." @en ;
     dct:identifier https://data.ru.nl/  ;
