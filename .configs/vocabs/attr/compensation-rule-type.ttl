@@ -25,12 +25,12 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
 
 trsp:compensation-rule-type-free
   a skos:Concept ;
-  skos:prefLabel "Compensation Rule"@en ;
+  skos:prefLabel "Free to Use"@en ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:compensation-rule-type-non-commercial
   a skos:Concept ;
-  skos:prefLabel "Compensation Rule"@en ;
+  skos:prefLabel "Non-Commercial"@en ;
   skos:altLabel "DL-DE BY-NC 1.0"@en ;
   skos:closeMatch <http://eurovoc.europa.eu/6783> ;
   skos:broadMatch <http://eurovoc.europa.eu/6783> ;
@@ -40,15 +40,15 @@ trsp:compensation-rule-type-non-commercial
 
 trsp:compensation-rule-type-free-registered
   a skos:Concept ;
-  skos:prefLabel "Compensation Rule"@en ;
+  skos:prefLabel "Registration Fee"@en ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:compensation-rule-type-cost-recovery
   a skos:Concept ;
-  skos:prefLabel "Compensation Rule"@en ;
+  skos:prefLabel "Cost Recovery"@en ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:compensation-rule-type-commercial
   a skos:Concept ;
-  skos:prefLabel "Compensation Rule"@en ;
+  skos:prefLabel "Commercial Income"@en ;
   skos:inScheme trsp:ConceptScheme .
