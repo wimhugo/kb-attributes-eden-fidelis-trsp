@@ -32,7 +32,7 @@ trsp:revenue-type-free
 
 trsp:revenue-type-payment
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Payment"@en ;
   skos:definition "One-time payment."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <http://purl.org/cerif/frapo/Purchaser> ;
@@ -42,17 +42,7 @@ trsp:revenue-type-payment
 
 trsp:revenue-type-recurring
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
-  skos:definition "Recurring payment for access."@en ;
-  dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:closeMatch <http://purl.org/cerif/frapo/Subscription> ;
-  skos:exactMatch <http://purl.org/cerif/frapo/Subscription> ;
-  rdfs:seeAlso <http://purl.org/cerif/frapo/Subscription> ;
-  skos:inScheme trsp:ConceptScheme .
-
-trsp:revenue-type-recurring
-  a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Recurring"@en ;
   skos:definition "Recurring payment for access."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <http://purl.org/cerif/frapo/Subscription> ;
@@ -62,21 +52,21 @@ trsp:revenue-type-recurring
 
 trsp:revenue-type-ai-training
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "AI-Training"@en ;
   skos:definition "Payment every time the content is used for AI training."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:revenue-type-crawl
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Crawling Revenue"@en ;
   skos:definition "Payment every time the content is crawled."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:inScheme trsp:ConceptScheme .
 
 trsp:revenue-type-ai-use
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "AI Use"@en ;
   skos:definition "Payment each time the content contributes to an AI-generated output, including use in inference, grounding, or generation processes."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <https://w3id.org/AIRO#AIUser> ;
@@ -86,14 +76,14 @@ trsp:revenue-type-ai-use
 
 trsp:revenue-type-contribution
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Good Faith"@en ;
   skos:definition "A good faith monetary or in-kind contribution that supports the development or maintenance of the assets, or the broader content ecosystem."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:revenue-type-contribution
+trsp:revenue-type-attribution
   a skos:Concept ;
-  skos:prefLabel "Revenue Type"@en ;
+  skos:prefLabel "Pay"@en ;
   skos:definition "Licensees MUST provide visible credit and a functional link to the original source."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
   skos:closeMatch <http://simile.mit.edu/2003/10/ontologies/vraCore3#attribution> ;
