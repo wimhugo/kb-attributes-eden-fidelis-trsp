@@ -29,6 +29,7 @@ trsp:aai-saml
 trsp:aai-oauth2
   a skos:Concept ;
   skos:prefLabel "OAuth-2"@en ;
+  skos:closeMatch idsc:OAUTH2_JWT ;
   skos:inScheme trsp:checklistAAI .
 
 trsp:aai-openid
