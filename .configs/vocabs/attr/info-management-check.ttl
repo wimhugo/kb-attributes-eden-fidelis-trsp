@@ -13,12 +13,37 @@ trsp:checklistInfoManagement
   dct:modified "2026-05-07"^^xsd:date ;
   owl:versionInfo "0.1" .
 
+trsp:iso20000
+  a skos:Concept ;
+  skos:prefLabel "ISO 20000"@en ;
+  skos:description "Certifiable IT service management standard"@en ;
+  skos:seeAlso <https://www.iso.org/standard/70636.html> ;
+  skos:inScheme trsp:checklistInfoManagement .
+
 trsp:iso27001
   a skos:Concept ;
   skos:prefLabel "ISO 27001"@en ;
+  skos:description "Information Security Management Systems (ISMS)"@en ;
+  skos:seeAlso <https://www.iso.org/standard/27001> ;
+  skos:inScheme trsp:checklistInfoManagement .
+
+trsp:cobit
+  a skos:Concept ;
+  skos:prefLabel "COBIT"@en ;
+  skos:description "Governance, control, audit, risk management"@en ;
+  skos:seeAlso <https://www.isaca.org/resources/cobit> ;
+  skos:inScheme trsp:checklistInfoManagement .
+
+trsp:itil
+  a skos:Concept ;
+  skos:prefLabel "ITIL"@en ;
+  skos:description "IT Service Management (ITSM) best practices"@en ;
+  skos:seeAlso <https://www.itil.com> ;
   skos:inScheme trsp:checklistInfoManagement .
 
 trsp:fitsm
   a skos:Concept ;
   skos:prefLabel "FitSM"@en ;
+  skos:description "Lightweight ITSM, especially research infrastructures"@en ;
+  skos:seeAlso <https://www.fitsm.eu> ;
   skos:inScheme trsp:checklistInfoManagement .
