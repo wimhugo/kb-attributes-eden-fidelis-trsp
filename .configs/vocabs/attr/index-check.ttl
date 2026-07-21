@@ -33,6 +33,11 @@ trsp:openalex
   skos:prefLabel "OpenAlex"@en ;
   skos:inScheme trsp:checklistIndex .
 
+trsp:eosc-cat
+  a skos:Concept ;
+  skos:prefLabel "EOSC Resource Catalogue"@en ;
+  skos:inScheme trsp:checklistIndex .
+
 trsp:other
   a skos:Concept ;
   skos:prefLabel "Other"@en ;
