@@ -174,10 +174,17 @@ trsp:hasProfileType a rdf:Property ;
     rdfs:domain trsp:Profile ;
     rdfs:range trsp:ProfileType .
 
-trsp:isConceptSchemeOf a rdf:Property ;
+trsp:hasConceptScheme a owl:ObjectProperty ;
+    rdfs:label "has concept scheme"@en ;
+    rdfs:domain trsp:Profile ;
+    rdfs:range skos:ConceptScheme ;
+    owl:inverseOf trsp:isConceptSchemeOf .
+
+trsp:isConceptSchemeOf a owl:ObjectProperty ;
     rdfs:label "is concept scheme of"@en ;
     rdfs:domain skos:ConceptScheme ;
-    rdfs:range trsp:Profile .
+    rdfs:range trsp:Profile ;
+    owl:inverseOf trsp:hasConceptScheme .
 
 trsp:hasAttributeAssertion a rdf:Property ;
     rdfs:label "has attribute assertion"@en ;
