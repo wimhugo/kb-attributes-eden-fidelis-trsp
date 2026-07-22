@@ -13,8 +13,8 @@
 @prefix fair: <https://w3id.org/fair/principles/terms/> .
 @prefix re3data: <https://schema.re3data.org/4-0#> .
 
-
 trsp:trsp-fidelis-profile a skos:ConceptScheme ;
+  trsp:isConceptSchemeOf trsp:profile.3C2D6C1C37 ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ; # Wim Hugo
   dct:contributor <https://orcid.org/0000-0003-1106-8441> ; # Wilko Steinhoff ;
@@ -34,7 +34,7 @@ trsp:fidelis:purpose
   a skos:Concept ;
   skos:prefLabel "Purpose"@en ;
   skos:description "Brief Description of Purpose"@en ;
-  skos:closeMatch att.035ACCB10D ;
+  skos:closeMatch trsp:att.035ACCB10D ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   owl:version "0.1" ;
@@ -44,7 +44,7 @@ trsp:fidelis:governanceStructure
   a skos:Concept ;
   skos:prefLabel "Governance Structure"@en ;
   skos:description "A descirption of the governance structure of the repository"@en ;
-  skos:closeMatch att.7C68DBB456 ;
+  skos:closeMatch trsp:att.7C68DBB456 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   owl:version "0.1" ;
@@ -54,7 +54,7 @@ trsp:fidelis:keyStakeholders
   a skos:Concept ;
   skos:prefLabel "Key Stakeholders"@en ;
   skos:description "The key stakeholders and the nature of the mutual dependency"@en ;
-  skos:closeMatch att.01D16EFB9B ;
+  skos:closeMatch trsp:att.01D16EFB9B ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   owl:version "0.1" ;
@@ -64,7 +64,7 @@ trsp:fidelis:memberships
   a skos:Concept ;
   skos:prefLabel "Memberships"@en ;
   skos:description "Any initiatives, networks, or infrastructures that the repository is a member of"@en ;
-  skos:closeMatch att.01D16EFB9B ;
+  skos:closeMatch trsp:att.01D16EFB9B ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
   owl:version "0.1" ;
@@ -74,7 +74,7 @@ trsp:fidelis:coretrustsealCertificationStatus
   a skos:Concept ;
   skos:prefLabel "CoreTrustSeal Certification Status"@en ;
   skos:description "Certfiied by CoreTrustSeal"@en ;
-  skos:exactmatch att.27C898E8A0 ;
+  skos:exactMatch trsp:att.27C898E8A0 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeChecklist ;
   trsp:hasBenchmark Included into Evidence-Checklist ;
@@ -85,7 +85,7 @@ trsp:fidelis:endorsedTrustPrinciples?
   a skos:Concept ;
   skos:prefLabel "Endorsed TRUST Principles?"@en ;
   skos:description "Has the repository endorsed the TRUST principles?"@en ;
-  skos:exactmatch att.78CC017229 ;
+  skos:exactMatch trsp:att.78CC017229 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeChecklist ;
   trsp:hasBenchmark trsp:principles-type.ttl ;
@@ -96,7 +96,7 @@ trsp:fidelis:certifications
   a skos:Concept ;
   skos:prefLabel "Certifications"@en ;
   skos:description "Any certifications that the repository has obtained"@en ;
-  skos:exactmatch att.27C898E8A0 ;
+  skos:exactMatch trsp:att.27C898E8A0 ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeChecklist ;
   trsp:hasBenchmark trsp:quality-assurance-check.ttl ;
@@ -107,7 +107,7 @@ trsp:fidelis:yearEstablished
   a skos:Concept ;
   skos:prefLabel "Year Established"@en ;
   skos:description "Year in which the repository was established"@en ;
-  skos:exactmatch att.48BF7E1522 ;
+  skos:exactMatch trsp:att.48BF7E1522 ;
   trsp:hasCardinalityType trsp:cardinality1_1 ;
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
   trsp:hasBenchmark "DateTime" ;
@@ -118,7 +118,7 @@ trsp:fidelis:url
   a skos:Concept ;
   skos:prefLabel "URL"@en ;
   skos:description "An endpoint URL for the repository"@en ;
-  skos:exactmatch att.7470DA5BBA ;
+  skos:exactMatch trsp:att.7470DA5BBA ;
   trsp:hasCardinalityType trsp:cardinality1_1 ;
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
   trsp:hasBenchmark "IRL" ;
@@ -129,7 +129,7 @@ trsp:fidelis:fileFormats
   a skos:Concept ;
   skos:prefLabel "File Formats"@en ;
   skos:description "List of file formats supported by the repository - can be categorised as 'Preferred', 'Dissemination', and 'Preservation' formats."@en ;
-  skos:exactmatch att.1BF23E39F5 ;
+  skos:exactMatch trsp:att.1BF23E39F5 ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark <https://type.labs.dans.knaw.nl/dans-formats> ;
@@ -140,7 +140,7 @@ trsp:fidelis:vocabulariesUsed
   a skos:Concept ;
   skos:prefLabel "Vocabularies Used"@en ;
   skos:description "List of vocabularies and semantic artefacts supported by the repository"@en ;
-  skos:exactmatch att.6AF56A372D ;
+  skos:exactMatch trsp:att.6AF56A372D ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark "None Exists" ;
@@ -151,7 +151,7 @@ trsp:fidelis:persistentIdentifierSystem
   a skos:Concept ;
   skos:prefLabel "Persistent Identifier System"@en ;
   skos:description "List of persistent identifiers supported by the repository"@en ;
-  skos:exactmatch att.2F993B25AD ;
+  skos:exactMatch trsp:att.2F993B25AD ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark "None Exists" ;
@@ -162,7 +162,7 @@ trsp:fidelis:licence
   a skos:Concept ;
   skos:prefLabel "Licence"@en ;
   skos:description "List of licences supported by the repository"@en ;
-  skos:exactmatch att.543A727F84 ;
+  skos:exactMatch trsp:att.543A727F84 ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark <https://lfs.labs.dansdemo.nl/docs#/> ;
@@ -173,7 +173,7 @@ trsp:fidelis:hostingInstitutionOrganisation
   a skos:Concept ;
   skos:prefLabel "Hosting Institution/ Organisation"@en ;
   skos:description "Organisation(s) hosting the repository"@en ;
-  skos:exactmatch att.41F4454A97 ;
+  skos:exactMatch trsp:att.41F4454A97 ;
   trsp:hasCardinalityType trsp:cardinality1_n ;
   trsp:hasMeasurementType trsp:measurementTypeRegistry ;
   trsp:hasBenchmark <https://api.ror.org/v2/organizations> ;
@@ -184,7 +184,7 @@ trsp:fidelis:repositoryName
   a skos:Concept ;
   skos:prefLabel "Repository name"@en ;
   skos:description "The name or title of the repository or service"@en ;
-  skos:exactmatch att.64DA341B5F ;
+  skos:exactMatch trsp:att.64DA341B5F ;
   trsp:hasCardinalityType trsp:cardinality1_1 ;
   trsp:hasMeasurementType trsp:measurementTypeFormat ;
   trsp:hasBenchmark "Text" ;
@@ -195,7 +195,7 @@ trsp:fidelis:governanceModel
   a skos:Concept ;
   skos:prefLabel "Governance Model"@en ;
   skos:description "Type of governance and management model"@en ;
-  skos:exactmatch att.494B22C440 ;
+  skos:exactMatch trsp:att.494B22C440 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark Consortium; Institutional; Community; Commercial ;
@@ -206,7 +206,7 @@ trsp:fidelis:dataAccessPolicy
   a skos:Concept ;
   skos:prefLabel "Data Access Policy"@en ;
   skos:description "The repository has a Data Access Policy"@en ;
-  skos:exactmatch att.6B7CED5897 ;
+  skos:exactMatch trsp:att.6B7CED5897 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:policies-check.ttl#access ;
@@ -217,7 +217,7 @@ trsp:fidelis:preservationPolicy
   a skos:Concept ;
   skos:prefLabel "Preservation Policy"@en ;
   skos:description "The repository has a Preservation Policy"@en ;
-  skos:exactmatch att.768DAFA0DB ;
+  skos:exactMatch trsp:att.768DAFA0DB ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:policies-check.ttl#preservation ;
@@ -228,7 +228,7 @@ trsp:fidelis:depositPolicy
   a skos:Concept ;
   skos:prefLabel "Deposit Policy"@en ;
   skos:description "The repository has a Deposit/ Accession Policy"@en ;
-  skos:exactmatch att.521A4A9E17 ;
+  skos:exactMatch trsp:att.521A4A9E17 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:policies-check.ttl#accession ;
@@ -239,7 +239,7 @@ trsp:fidelis:dataRetentionPolicy
   a skos:Concept ;
   skos:prefLabel "Data Retention Policy"@en ;
   skos:description "The repository has a Data Retention Policy"@en ;
-  skos:exactmatch att.1D00720769 ;
+  skos:exactMatch trsp:att.1D00720769 ;
   trsp:hasCardinalityType trsp:cardinality0_1 ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:policies-check.ttl#retention ;
@@ -250,7 +250,7 @@ trsp:fidelis:countryRegion
   a skos:Concept ;
   skos:prefLabel "Country/Region"@en ;
   skos:description "Country in which the repository is located"@en ;
-  skos:exactmatch att.4570870110 ;
+  skos:exactMatch trsp:att.4570870110 ;
   trsp:hasCardinalityType trsp:cardinality1_n ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:iso-3166-1.ttl ;
@@ -261,7 +261,7 @@ trsp:fidelis:primaryResearchDomains
   a skos:Concept ;
   skos:prefLabel "Primary Research Domains"@en ;
   skos:description "Primary research domain(s)"@en ;
-  skos:exactmatch att.3B633179C5 ;
+  skos:exactMatch trsp:att.3B633179C5 ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:subject-type.ttl ;
@@ -272,7 +272,7 @@ trsp:fidelis:eoscNodeParticipation
   a skos:Concept ;
   skos:prefLabel "EOSC Node Participation"@en ;
   skos:description "Part of current or aspiring EOSC Node?"@en ;
-  skos:exactmatch att.394BC515E7 ;
+  skos:exactMatch trsp:att.394BC515E7 ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:eosc-status-type-scheme ;
@@ -283,7 +283,7 @@ trsp:fidelis:fundingModel
   a skos:Concept ;
   skos:prefLabel "Funding Model"@en ;
   skos:description "What are the sources of revenue available to the repositopry?"@en ;
-  skos:exactmatch att.6EF77F35F8 ;
+  skos:exactMatch trsp:att.6EF77F35F8 ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:revenue-source-type.ttl ;
@@ -294,7 +294,7 @@ trsp:fidelis:dataTypesAccepted
   a skos:Concept ;
   skos:prefLabel "Data Types Accepted"@en ;
   skos:description "A list of object types accepted by the repository"@en ;
-  skos:exactmatch att.54317F78CB ;
+  skos:exactMatch trsp:att.54317F78CB ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:content-types.ttl ;
@@ -305,7 +305,7 @@ trsp:fidelis:apisAvailable
   a skos:Concept ;
   skos:prefLabel "APIs Available"@en ;
   skos:description "List of API service types/ protocols available"@en ;
-  skos:closeMatch att.7298144E24 ;
+  skos:closeMatch trsp:att.7298144E24 ;
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:api-list-check.ttl ;
@@ -316,7 +316,7 @@ trsp:fidelis:typeOfRepository
   a skos:Concept ;
   skos:prefLabel "Type of Repository"@en ;
   skos:description "Type of repository"@en ;
-  skos:exactmatch att.6A715E3A22 ;
+  skos:exactMatch trsp:att.6A715E3A22 ;
   trsp:hasCardinalityType trsp:cardinality1_n ;
   trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
   trsp:hasBenchmark trsp:repository-type.ttl ;

@@ -1,4 +1,4 @@
-@prefix trsp: <https://example.org/trsp/> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 @prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
@@ -6,6 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
 
 trsp:Ontology
     a owl:Ontology ;
@@ -172,6 +173,18 @@ trsp:hasProfileType a rdf:Property ;
     rdfs:label "has profile type"@en ;
     rdfs:domain trsp:Profile ;
     rdfs:range trsp:ProfileType .
+
+trsp:hasConceptScheme a owl:ObjectProperty ;
+    rdfs:label "has concept scheme"@en ;
+    rdfs:domain trsp:Profile ;
+    rdfs:range skos:ConceptScheme ;
+    owl:inverseOf trsp:isConceptSchemeOf .
+
+trsp:isConceptSchemeOf a owl:ObjectProperty ;
+    rdfs:label "is concept scheme of"@en ;
+    rdfs:domain skos:ConceptScheme ;
+    rdfs:range trsp:Profile ;
+    owl:inverseOf trsp:hasConceptScheme .
 
 trsp:hasAttributeAssertion a rdf:Property ;
     rdfs:label "has attribute assertion"@en ;
