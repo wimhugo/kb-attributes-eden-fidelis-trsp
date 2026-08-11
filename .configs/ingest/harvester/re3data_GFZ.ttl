@@ -4,6 +4,8 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix r3d: <http://www.re3data.org/schema/4-0> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance> .
 
 <urn:harvest:re3data:GFZ>
   prov:wasDerivedFrom <https://www.re3data.org/api/v40/repository/r3d100012335> ;
