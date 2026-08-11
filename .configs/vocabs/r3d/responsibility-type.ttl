@@ -9,17 +9,17 @@
 r3d:responsibilityTypes a skos:ConceptScheme ;
     skos:prefLabel "responsibilityTypes"@en .
 
-r3d:responsibilityTypes/funding a skos:Concept ;
+r3d:funding a skos:Concept ;
     skos:inScheme r3d:responsibilityTypes ;
     skos:prefLabel "funding"@en ;
     skos:definition "funding"@en .
 
-r3d:responsibilityTypes/general a skos:Concept ;
+r3d:general a skos:Concept ;
     skos:inScheme r3d:responsibilityTypes ;
     skos:prefLabel "general"@en ;
     skos:definition "general"@en .
 
-r3d:responsibilityTypes/technical a skos:Concept ;
+r3d:technical a skos:Concept ;
     skos:inScheme r3d:responsibilityTypes ;
     skos:prefLabel "technical"@en ;
     skos:definition "technical"@en .
