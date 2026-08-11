@@ -1,9 +1,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <urn:harvest:re3data:GFZ>
+  prov:wasDerivedFrom <https://www.re3data.org/api/v40/repository/r3d100012335> ;
+  dct:source <https://www.re3data.org/api/v40/repository/r3d100012335> ;
+  dct:provenance "Metadata harvested from the re3data API" ;
   rdf:type rdfs:Resource ;
   dct:identifier "GFZ" ;
   <urn:xml:version> "1.0" ;
