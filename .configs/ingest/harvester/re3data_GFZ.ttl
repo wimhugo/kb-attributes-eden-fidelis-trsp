@@ -13,5 +13,198 @@
   dct:provenance "Metadata harvested from the re3data API" ;
   rdf:type rdfs:Resource ;
   dct:identifier "GFZ" ;
-  <urn:xml:version> "1.0" ;
-  <urn:xml:encoding> "utf-8" .
+  r3d:repository _:b1 ;
+  xsi:schemaLocation "http://www.re3data.org/schema/4-0 http://schema.re3data.org/4-0/re3dataV4-0.xsd" .
+
+_:b1
+  r3d:identifiers _:b2 ;
+  r3d:repositoryName _:b3 ;
+  r3d:repositoryUrl "https://dataservices.gfz.de/" ;
+  r3d:repositoryIdentifier _:b4 ;
+  r3d:description _:b5 ;
+  r3d:repositoryContact _:b6 ;
+  r3d:repositoryContact _:b7 ;
+  r3d:type "disciplinary" ;
+  r3d:size "8.496 datasets" ;
+  r3d:repositoryLanguage "eng" ;
+  r3d:subject _:b8 ;
+  r3d:subject _:b9 ;
+  r3d:missionStatementUrl "https://dataservices.gfz.de/web/about-us" ;
+  r3d:contentType _:b10 ;
+  r3d:contentType _:b11 ;
+  r3d:contentType _:b12 ;
+  r3d:providerType "dataProvider" ;
+  r3d:providerType "serviceProvider" ;
+  r3d:keyword "Earth Science data" ;
+  r3d:keyword "FAIR" ;
+  r3d:keyword "agriculture" ;
+  r3d:keyword "archaeobotany" ;
+  r3d:keyword "atmosphere" ;
+  r3d:keyword "biosphere" ;
+  r3d:keyword "cryosphere" ;
+  r3d:keyword "geochemistry" ;
+  r3d:keyword "geodesy" ;
+  r3d:keyword "geology" ;
+  r3d:keyword "geophysics" ;
+  r3d:keyword "geoscience" ;
+  r3d:keyword "gravimetry" ;
+  r3d:keyword "hazard" ;
+  r3d:keyword "in-situ" ;
+  r3d:keyword "ocean" ;
+  r3d:keyword "paleoclimate" ;
+  r3d:keyword "soil" ;
+  r3d:keyword "soil moisture" ;
+  r3d:institution _:b13 ;
+  r3d:policy _:b18 ;
+  r3d:databaseAccess _:b19 ;
+  r3d:dataAccess _:b20 ;
+  r3d:dataAccess _:b21 ;
+  r3d:dataLicense _:b22 ;
+  r3d:dataLicense _:b23 ;
+  r3d:dataUpload _:b24 ;
+  r3d:software "other" ;
+  r3d:api _:b25 ;
+  r3d:pidSystem "DOI" ;
+  r3d:pidSystem "IGSN" ;
+  r3d:citationGuidelineUrl "https://dataservices.gfz-potsdam.de/web/about-us/terms-of-use" ;
+  r3d:aidSystem "ORCID" ;
+  r3d:enhancedPublication "yes" ;
+  r3d:profile _:b26 ;
+  r3d:profile _:b27 ;
+  r3d:metadataStandard _:b28 ;
+  r3d:metadataStandard _:b29 ;
+  r3d:metadataStandard _:b30 ;
+  r3d:metadataStandard _:b31 ;
+  r3d:remarks "Is covered by Elsevier. GFZ German Research Centre for Geosciences is covered by Clarivate Data Citation Index." ;
+  r3d:entryDate "2017-03-23" ;
+  r3d:lastUpdate "2026-03-24" .
+
+_:b2
+  r3d:re3data "r3d100012335" ;
+  r3d:doi "https://doi.org/10.17616/R3VQ0S" .
+
+_:b3
+  <urn:xml:%23text> "GFZ Data Services" ;
+  <urn:xml:language> "eng" .
+
+_:b4
+  r3d:repositoryIdentifierType "FAIRsharing" ;
+  r3d:repositoryIdentifierValue "10.25504/FAIRsharing.e0d571" .
+
+_:b5
+  <urn:xml:%23text> "GFZ Data Services is a repository for research data and scientific software across the Earth System Sciences, hosted at GFZ. The curated data are archived, persistently accessible and published with digital object identifier (DOI). They range from large dynamic datasets from global monitoring networks with real-time aquisition, to international services in geodesy and geophysics, to the full suite of small and highly heterogeneous datasets collected by individual researchers or small teams (\"long-tail data\"). In addition to the DOI registration and data archiving itself, GFZ Data Services team offers comprehensive consultation by domain scientists and IT specialists. Among others, GFZ Data Services is data publisher for the IAG Services ICGEM, IGETS and ISG (IAG = Int. Association for Geodesy; ICGEM = Int. Center for Global Earth Models; IGETS = Int. Geodynamics and Earth Tide Service; ISG = Int. Service for the Geoid), the World Stress Map, INTERMAGNET, GEOFON, the Geophysical Instrument Pool Potsdam GIPP, TERENO, EnMAP Flight Campaigns, the Potsdam Institute for Climate Impact Research PIK, the Specialised Information Service for Solid Earth Geosciences (FID GEO) and hosts the GFZ Catalogue for the International Generic Sample Number IGSN." ;
+  <urn:xml:language> "eng" .
+
+_:b6
+  r3d:repositoryContactInformation "datapub@gfz.de" ;
+  r3d:repositoryContactType "administrative" .
+
+_:b7
+  r3d:repositoryContactInformation "https://dataservices.gfz.de/web/about-us/team-contact" ;
+  r3d:repositoryContactType "support" .
+
+_:b8
+  r3d:subjectId "34" ;
+  r3d:subjectName "Geosciences" ;
+  <urn:xml:subjectScheme> "DFG" .
+
+_:b9
+  r3d:subjectId "3" ;
+  r3d:subjectName "Natural Sciences" ;
+  <urn:xml:subjectScheme> "DFG" .
+
+_:b10
+  r3d:contentTypeId "http://purl.org/coar/resource_type/c_ddb1" ;
+  r3d:contentTypeName "dataset" ;
+  <urn:xml:contentTypeScheme> "COAR" .
+
+_:b11
+  r3d:contentTypeId "http://purl.org/coar/resource_type/2H0M-X761" ;
+  r3d:contentTypeName "geospatial data" ;
+  <urn:xml:contentTypeScheme> "COAR" .
+
+_:b12
+  r3d:contentTypeId "http://purl.org/coar/resource_type/FF4C-28RK" ;
+  r3d:contentTypeName "observational data" ;
+  <urn:xml:contentTypeScheme> "COAR" .
+
+_:b13
+  r3d:institutionName _:b14 ;
+  r3d:institutionAdditionalName _:b15 ;
+  r3d:institutionAdditionalName _:b16 ;
+  r3d:institutionCountry "DEU" ;
+  r3d:responsibilityType "funding" ;
+  r3d:responsibilityType "general" ;
+  r3d:responsibilityType "technical" ;
+  r3d:institutionType "non-profit" ;
+  r3d:institutionUrl "https://www.gfz.de/en" ;
+  r3d:institutionIdentifier _:b17 .
+
+_:b14
+  <urn:xml:%23text> "GFZ Helmholtz Centre for Geosciences" ;
+  <urn:xml:language> "eng" .
+
+_:b15
+  <urn:xml:%23text> "GFZ" ;
+  <urn:xml:language> "deu" .
+
+_:b16
+  <urn:xml:%23text> "GFZ Helmholtz-Zentrum für Geoforschung" ;
+  <urn:xml:language> "deu" .
+
+_:b17
+  r3d:institutionIdentifierType "ROR" ;
+  r3d:institutionIdentifierUrl "https://ror.org/04z8jg394" .
+
+_:b18
+  r3d:policyName "Terms of Use" ;
+  r3d:policyUrl "https://dataservices.gfz.de/web/about-us/terms-of-use" .
+
+_:b19
+  r3d:databaseAccessType "open" .
+
+_:b20
+  r3d:dataAccessType "embargoed" .
+
+_:b21
+  r3d:dataAccessType "open" .
+
+_:b22
+  r3d:dataLicenseName "CC" ;
+  r3d:dataLicenseUrl "https://creativecommons.org/" .
+
+_:b23
+  r3d:dataLicenseName "other" ;
+  r3d:dataLicenseUrl "https://opensource.org/license" .
+
+_:b24
+  r3d:dataUploadType "open" .
+
+_:b25
+  r3d:apiType "OAI-PMH" ;
+  r3d:apiUrl "https://doidb.wdc-terra.org//oaip/oai?verb=Identify" ;
+  r3d:apiDocumentation "https://www.openarchives.org/OAI/openarchivesprotocol.html" .
+
+_:b26
+  r3d:profileName "Helmholtz Association" ;
+  r3d:profileUrl "https://os.helmholtz.de/open-research-data/forschungsdatenrepositorien/" .
+
+_:b27
+  r3d:profileName "Special Information Services / FID" ;
+  r3d:profileUrl "https://wikis.sub.uni-hamburg.de/webis/index.php/Profilbeschreibung" .
+
+_:b28
+  r3d:metadataStandardName "DataCite Metadata Schema" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m11" .
+
+_:b29
+  r3d:metadataStandardName "Dublin Core" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m15" .
+
+_:b30
+  r3d:metadataStandardName "ISO 19115" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m22" .
+
+_:b31
+  r3d:metadataStandardName "schema.org" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m101" .
