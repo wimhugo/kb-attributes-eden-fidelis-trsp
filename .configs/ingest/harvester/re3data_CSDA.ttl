@@ -1,0 +1,2042 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://www.w3.org/2000/svg> .
+
+<urn:harvest:re3data:CSDA>
+  prov:wasDerivedFrom <https://www.re3data.org/repository/r3d100010484> ;
+  dct:source <https://www.re3data.org/repository/r3d100010484> ;
+  dct:provenance "Metadata harvested from the re3data API" ;
+  rdf:type rdfs:Resource ;
+  dct:identifier "CSDA" ;
+  <urn:xml:head> _:b1 ;
+  <urn:xml:class> "r3d-html" .
+
+_:b1
+  <urn:xml:title> "Czech Social Science Data Archive | re3data.org" ;
+  <urn:xml:meta> _:b2 .
+
+_:b2
+  <urn:xml:link> _:b3 ;
+  <urn:xml:http-equiv> "X-UA-Compatible" ;
+  <urn:xml:content> "IE=edge" .
+
+_:b3
+  <urn:xml:link> _:b4 ;
+  <urn:xml:rel> "search" ;
+  <urn:xml:type> "application/opensearchdescription+xml" ;
+  <urn:xml:href> "/api/opensearch/opensearch.xml" ;
+  <urn:xml:title> "re3data.org search" .
+
+_:b4
+  <urn:xml:link> _:b5 ;
+  <urn:xml:rel> "stylesheet" ;
+  <urn:xml:href> "/build/588.00ce8873.css" .
+
+_:b5
+  <urn:xml:link> _:b6 ;
+  <urn:xml:body> _:b11 ;
+  <urn:xml:rel> "stylesheet" ;
+  <urn:xml:href> "/build/219.2a3d4eb6.css" .
+
+_:b6
+  <urn:xml:script> _:b7, _:b8, _:b9, _:b10 ;
+  <urn:xml:rel> "stylesheet" ;
+  <urn:xml:href> "/build/frontend.b5bcc6c3.css" .
+
+_:b7
+  <urn:xml:src> "/build/runtime.be063f77.js" .
+
+_:b8
+  <urn:xml:src> "/build/667.b1829ec9.js" .
+
+_:b9
+  <urn:xml:src> "/build/588.3e0a8c6f.js" .
+
+_:b10
+  <urn:xml:src> "/build/frontend.233f0f30.js" .
+
+_:b11
+  <urn:xml:section> _:b12 ;
+  <urn:xml:class> "r3d-body" .
+
+_:b12
+  <urn:xml:nav> _:b13 ;
+  <urn:xml:img> _:b512 ;
+  <urn:xml:id> "r3d-content" .
+
+_:b13
+  <urn:xml:div> _:b14, _:b73 ;
+  <urn:xml:section> _:b482 ;
+  <urn:xml:class> "navbar navbar-default navbar-fixed-top r3d-navbar" .
+
+_:b14
+  <urn:xml:div> _:b15 ;
+  <urn:xml:class> "container-fluid" .
+
+_:b15
+  <urn:xml:a> _:b16 ;
+  <urn:xml:div> _:b23 ;
+  <urn:xml:class> "navbar-header" .
+
+_:b16
+  <urn:xml:img> _:b17 ;
+  <urn:xml:button> _:b18 ;
+  <urn:xml:class> "navbar-left" ;
+  <urn:xml:href> "/" .
+
+_:b17
+  <urn:xml:alt> "Brand" ;
+  <urn:xml:src> "/images/img/re3datalogo_nosubtext_black.png" .
+
+_:b18
+  <urn:xml:span> _:b19, _:b20, _:b21, _:b22 ;
+  <urn:xml:type> "button" ;
+  <urn:xml:class> "navbar-toggle collapsed" ;
+  <urn:xml:data-toggle> "collapse" ;
+  <urn:xml:data-target> "#r3d-menu" .
+
+_:b19
+  <urn:xml:%23text> "Toggle navigation" ;
+  <urn:xml:class> "sr-only" .
+
+_:b20
+  <urn:xml:class> "icon-bar" .
+
+_:b21
+  <urn:xml:class> "icon-bar" .
+
+_:b22
+  <urn:xml:class> "icon-bar" .
+
+_:b23
+  <urn:xml:ul> _:b24 ;
+  <urn:xml:id> "r3d-menu" ;
+  <urn:xml:class> "collapse navbar-collapse" .
+
+_:b24
+  <urn:xml:li> _:b25, _:b27, _:b35, _:b37, _:b71, "" ;
+  <urn:xml:class> "nav navbar-nav navbar-right" .
+
+_:b25
+  <urn:xml:a> _:b26 .
+
+_:b26
+  <urn:xml:%23text> "Search" ;
+  <urn:xml:href> "/search" .
+
+_:b27
+  <urn:xml:a> _:b28 ;
+  <urn:xml:ul> _:b30 ;
+  <urn:xml:class> "dropdown" .
+
+_:b28
+  <urn:xml:span> _:b29 ;
+  <urn:xml:%23text> "Browse" ;
+  <urn:xml:href> "#" ;
+  <urn:xml:class> "dropdown-toggle" ;
+  <urn:xml:data-toggle> "dropdown" ;
+  <urn:xml:role> "button" ;
+  <urn:xml:aria-haspopup> "true" ;
+  <urn:xml:aria-expanded> "false" .
+
+_:b29
+  <urn:xml:class> "caret" .
+
+_:b30
+  <urn:xml:li> _:b31, _:b33 ;
+  <urn:xml:class> "dropdown-menu" .
+
+_:b31
+  <urn:xml:a> _:b32 .
+
+_:b32
+  <urn:xml:%23text> "Browse by subject" ;
+  <urn:xml:href> "/browse/by-subject/" .
+
+_:b33
+  <urn:xml:a> _:b34 .
+
+_:b34
+  <urn:xml:%23text> "Browse by country" ;
+  <urn:xml:href> "/browse/by-country/" .
+
+_:b35
+  <urn:xml:a> _:b36 .
+
+_:b36
+  <urn:xml:%23text> "Suggest" ;
+  <urn:xml:href> "/suggest" .
+
+_:b37
+  <urn:xml:a> _:b38 ;
+  <urn:xml:ul> _:b40 ;
+  <urn:xml:class> "dropdown" .
+
+_:b38
+  <urn:xml:span> _:b39 ;
+  <urn:xml:%23text> "Resources" ;
+  <urn:xml:href> "#" ;
+  <urn:xml:class> "dropdown-toggle" ;
+  <urn:xml:data-toggle> "dropdown" ;
+  <urn:xml:role> "button" ;
+  <urn:xml:aria-haspopup> "true" ;
+  <urn:xml:aria-expanded> "false" .
+
+_:b39
+  <urn:xml:class> "caret" .
+
+_:b40
+  <urn:xml:li> _:b41, _:b43, _:b45, _:b47, _:b49, _:b50, _:b52, _:b53, _:b55, _:b56, _:b58, _:b59, _:b61, _:b62, _:b64, _:b66, _:b67, _:b69 ;
+  <urn:xml:class> "dropdown-menu" .
+
+_:b41
+  <urn:xml:a> _:b42 .
+
+_:b42
+  <urn:xml:%23text> "Schema 4.0" ;
+  <urn:xml:href> "/schema" .
+
+_:b43
+  <urn:xml:a> _:b44 .
+
+_:b44
+  <urn:xml:%23text> "Schema 3.1" ;
+  <urn:xml:href> "/schema/3-1" .
+
+_:b45
+  <urn:xml:a> _:b46 .
+
+_:b46
+  <urn:xml:%23text> "Schema 3.0" ;
+  <urn:xml:href> "/schema/3-0" .
+
+_:b47
+  <urn:xml:a> _:b48 .
+
+_:b48
+  <urn:xml:%23text> "Schema 2.2" ;
+  <urn:xml:href> "/schema/2-2" .
+
+_:b49
+  <urn:xml:role> "separator" ;
+  <urn:xml:class> "divider" .
+
+_:b50
+  <urn:xml:a> _:b51 .
+
+_:b51
+  <urn:xml:%23text> "API" ;
+  <urn:xml:href> "/api/doc" .
+
+_:b52
+  <urn:xml:role> "separator" ;
+  <urn:xml:class> "divider" .
+
+_:b53
+  <urn:xml:a> _:b54 .
+
+_:b54
+  <urn:xml:%23text> "Data" ;
+  <urn:xml:href> "/data" .
+
+_:b55
+  <urn:xml:role> "separator" ;
+  <urn:xml:class> "divider" .
+
+_:b56
+  <urn:xml:a> _:b57 .
+
+_:b57
+  <urn:xml:%23text> "Analytics" ;
+  <urn:xml:href> "/analytics" .
+
+_:b58
+  <urn:xml:role> "separator" ;
+  <urn:xml:class> "divider" .
+
+_:b59
+  <urn:xml:a> _:b60 .
+
+_:b60
+  <urn:xml:%23text> "FAQ" ;
+  <urn:xml:href> "/faq" .
+
+_:b61
+  <urn:xml:role> "separator" ;
+  <urn:xml:class> "divider" .
+
+_:b62
+  <urn:xml:a> _:b63 .
+
+_:b63
+  <urn:xml:%23text> "Editorial Board" ;
+  <urn:xml:href> "/editorialboard" .
+
+_:b64
+  <urn:xml:a> _:b65 .
+
+_:b65
+  <urn:xml:%23text> "Working Group" ;
+  <urn:xml:href> "/workinggroup" .
+
+_:b66
+  <urn:xml:role> "separator" ;
+  <urn:xml:class> "divider" .
+
+_:b67
+  <urn:xml:a> _:b68 .
+
+_:b68
+  <urn:xml:%23text> "Publications" ;
+  <urn:xml:href> "/publications" .
+
+_:b69
+  <urn:xml:a> _:b70 .
+
+_:b70
+  <urn:xml:%23text> "About" ;
+  <urn:xml:href> "/about" .
+
+_:b71
+  <urn:xml:a> _:b72 .
+
+_:b72
+  <urn:xml:%23text> "Contact" ;
+  <urn:xml:href> "/contact" .
+
+_:b73
+  <urn:xml:div> _:b74, _:b83, _:b471, _:b479 ;
+  <urn:xml:class> "r3d-repository-view container" .
+
+_:b74
+  <urn:xml:div> _:b75, _:b76 ;
+  <urn:xml:class> "row col-md-12" .
+
+_:b75
+  <urn:xml:span> "Repository details" ;
+  <urn:xml:h1> "Czech Social Science Data Archive" ;
+  <urn:xml:class> "col-md-9 r3d-main-heading" .
+
+_:b76
+  <urn:xml:div> _:b77, _:b78, _:b79, _:b80, _:b81, _:b82 ;
+  <urn:xml:class> "col-md-3 r3d-main-icons" .
+
+_:b77
+  <urn:xml:class> "icon icon-info_active hint--top hint--bounce" ;
+  <urn:xml:data-hint> "The research data repository provides additional information on its service." .
+
+_:b78
+  <urn:xml:class> "icon icon-restricted_access_active hint--top hint--bounce" ;
+  <urn:xml:data-hint> "The research data repository provides restricted access to its data." .
+
+_:b79
+  <urn:xml:class> "icon icon-licenses_active hint--top hint--bounce" ;
+  <urn:xml:data-hint> "The licenses of the data are provided by the research data repository." .
+
+_:b80
+  <urn:xml:class> "icon icon-doi_active hint--top hint--bounce" ;
+  <urn:xml:data-hint> "The research data repository uses DOI to make its provided data persistent, unique and citable." .
+
+_:b81
+  <urn:xml:class> "icon icon-certificate_active hint--top hint--bounce" ;
+  <urn:xml:data-hint> "The research data repository is either certified or supports a repository standard" .
+
+_:b82
+  <urn:xml:class> "icon icon-policy_active hint--top hint--bounce" ;
+  <urn:xml:data-hint> "The research data repository provides a policy." .
+
+_:b83
+  <urn:xml:div> _:b84 ;
+  <urn:xml:class> "row col-md-12" .
+
+_:b84
+  <urn:xml:ul> _:b85 ;
+  <urn:xml:div> _:b94 ;
+  <urn:xml:class> "nav-tabs-custom" .
+
+_:b85
+  <urn:xml:li> _:b86, _:b88, _:b90, _:b92 ;
+  <urn:xml:class> "nav nav-tabs" .
+
+_:b86
+  <urn:xml:a> _:b87 ;
+  <urn:xml:class> "active" .
+
+_:b87
+  <urn:xml:%23text> "General" ;
+  <urn:xml:href> "#tab_general" ;
+  <urn:xml:data-toggle> "tab" .
+
+_:b88
+  <urn:xml:a> _:b89 .
+
+_:b89
+  <urn:xml:%23text> "Institutions" ;
+  <urn:xml:href> "#tab_institutions" ;
+  <urn:xml:data-toggle> "tab" .
+
+_:b90
+  <urn:xml:a> _:b91 .
+
+_:b91
+  <urn:xml:%23text> "Terms" ;
+  <urn:xml:href> "#tab_terms" ;
+  <urn:xml:data-toggle> "tab" .
+
+_:b92
+  <urn:xml:a> _:b93 .
+
+_:b93
+  <urn:xml:%23text> "Standards" ;
+  <urn:xml:href> "#tab_standards" ;
+  <urn:xml:data-toggle> "tab" .
+
+_:b94
+  <urn:xml:div> _:b95, _:b202, _:b281, _:b352 ;
+  <urn:xml:class> "tab-content" .
+
+_:b95
+  <urn:xml:div> _:b96, _:b99, _:b101, _:b105, _:b107, _:b111, _:b113, _:b123, _:b125, _:b128, _:b130, _:b136, _:b146, _:b147, _:b154, _:b156, _:b162, _:b164, _:b167, _:b169, _:b173, _:b175, _:b179, _:b181, _:b187, _:b189, _:b193, _:b195, _:b196 ;
+  <urn:xml:class> "tab-pane active" ;
+  <urn:xml:id> "tab_general" .
+
+_:b96
+  <urn:xml:div> _:b97, _:b98 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b97
+  <urn:xml:%23text> "Name of repository" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b98
+  <urn:xml:b> "Czech Social Science Data Archive" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b99
+  <urn:xml:div> _:b100 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b100
+  <urn:xml:class> "separator" .
+
+_:b101
+  <urn:xml:div> _:b102, _:b103 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b102
+  <urn:xml:%23text> "Additional name(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b103
+  <urn:xml:ul> _:b104 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b104
+  <urn:xml:li> "CSDA" .
+
+_:b105
+  <urn:xml:div> _:b106 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b106
+  <urn:xml:class> "separator" .
+
+_:b107
+  <urn:xml:div> _:b108, _:b109 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b108
+  <urn:xml:%23text> "Repository URL" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b109
+  <urn:xml:a> _:b110 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b110
+  <urn:xml:%23text> "https://archiv.soc.cas.cz/en/pristup-k-datum-2/nase-data" ;
+  <urn:xml:href> "https://archiv.soc.cas.cz/en/pristup-k-datum-2/nase-data" .
+
+_:b111
+  <urn:xml:div> _:b112 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b112
+  <urn:xml:class> "separator" .
+
+_:b113
+  <urn:xml:div> _:b114, _:b115 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b114
+  <urn:xml:%23text> "Subject(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b115
+  <urn:xml:ul> _:b116 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b116
+  <urn:xml:li> _:b117, _:b119, _:b121 .
+
+_:b117
+  <urn:xml:a> _:b118 ;
+  <urn:xml:class> "no-line-break" .
+
+_:b118
+  <urn:xml:%23text> "Humanities and Social Sciences" ;
+  <urn:xml:class> "label subjects" ;
+  <urn:xml:href> "/search?subjects[]=1" ;
+  <urn:xml:title> "Search with subject 'Humanities and Social Sciences'" .
+
+_:b119
+  <urn:xml:a> _:b120 ;
+  <urn:xml:class> "no-line-break" .
+
+_:b120
+  <urn:xml:%23text> "Social and Behavioural Sciences" ;
+  <urn:xml:class> "label subjects" ;
+  <urn:xml:href> "/search?subjects[]=12" ;
+  <urn:xml:title> "Search with subject 'Social and Behavioural Sciences'" .
+
+_:b121
+  <urn:xml:a> _:b122 ;
+  <urn:xml:class> "no-line-break" .
+
+_:b122
+  <urn:xml:%23text> "Social Sciences" ;
+  <urn:xml:class> "label subjects" ;
+  <urn:xml:href> "/search?subjects[]=123" ;
+  <urn:xml:title> "Search with subject 'Social Sciences'" .
+
+_:b123
+  <urn:xml:div> _:b124 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b124
+  <urn:xml:class> "separator" .
+
+_:b125
+  <urn:xml:div> _:b126, _:b127 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b126
+  <urn:xml:%23text> "Description" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b127
+  <urn:xml:%23text> "The Czech Social Science Data Archive (CSDA) of the Institute of Sociology of the Academy of Sciences of the Czech Republic accesses, processes, documents and stores data files from social science research projects and promotes their dissemination to make them widely available for secondary use in academic research and for educational purposes." ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b128
+  <urn:xml:div> _:b129 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b129
+  <urn:xml:class> "separator" .
+
+_:b130
+  <urn:xml:div> _:b131, _:b132, _:b134 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b131
+  <urn:xml:%23text> "Contact(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b132
+  <urn:xml:ul> _:b133 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b133
+  <urn:xml:li> "administrative:                                                             archiv@soc.cas.cz" .
+
+_:b134
+  <urn:xml:div> _:b135 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b135
+  <urn:xml:class> "separator" .
+
+_:b136
+  <urn:xml:div> _:b137, _:b138, _:b144 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b137
+  <urn:xml:%23text> "Content type(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b138
+  <urn:xml:ul> _:b139 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b139
+  <urn:xml:li> _:b140, _:b142 .
+
+_:b140
+  <urn:xml:a> _:b141 .
+
+_:b141
+  <urn:xml:%23text> "dataset" ;
+  <urn:xml:href> "http://purl.org/coar/resource_type/c_ddb1" .
+
+_:b142
+  <urn:xml:a> _:b143 .
+
+_:b143
+  <urn:xml:%23text> "survey data" ;
+  <urn:xml:href> "http://purl.org/coar/resource_type/NHD0-W6SY" .
+
+_:b144
+  <urn:xml:div> _:b145 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b145
+  <urn:xml:class> "separator" .
+
+_:b146
+  <urn:xml:%23text> "Certificate(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b147
+  <urn:xml:div> _:b148, _:b150, _:b151, _:b152, _:b153 ;
+  <urn:xml:class> "row col-sm-9" .
+
+_:b148
+  <urn:xml:a> _:b149 ;
+  <urn:xml:class> "col-sm-12" .
+
+_:b149
+  <urn:xml:%23text> "CoreTrustSeal" ;
+  <urn:xml:href> "https://doi.org/10.34894/5KVWGB" .
+
+_:b150
+  <urn:xml:%23text> "Start date" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b151
+  <urn:xml:%23text> "2026-02-24" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b152
+  <urn:xml:%23text> "End date" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b153
+  <urn:xml:%23text> "2029-02-23" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b154
+  <urn:xml:div> _:b155 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b155
+  <urn:xml:class> "separator" .
+
+_:b156
+  <urn:xml:div> _:b157, _:b158 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b157
+  <urn:xml:%23text> "Keyword(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b158
+  <urn:xml:ul> _:b159 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b159
+  <urn:xml:li> _:b160 .
+
+_:b160
+  <urn:xml:a> _:b161 ;
+  <urn:xml:class> "no-line-break" .
+
+_:b161
+  <urn:xml:%23text> "Czech social science surveys" ;
+  <urn:xml:class> "label keywords" ;
+  <urn:xml:href> "/search?keywords[]=Czech social science surveys" ;
+  <urn:xml:title> "Search with keyword 'Czech social science surveys'" .
+
+_:b162
+  <urn:xml:div> _:b163 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b163
+  <urn:xml:class> "separator" .
+
+_:b164
+  <urn:xml:div> _:b165, _:b166 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b165
+  <urn:xml:%23text> "Repository size" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b166
+  <urn:xml:%23text> "23 dataverses,1.173 datasets" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b167
+  <urn:xml:div> _:b168 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b168
+  <urn:xml:class> "separator" .
+
+_:b169
+  <urn:xml:div> _:b170, _:b171 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b170
+  <urn:xml:%23text> "Repository type(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b171
+  <urn:xml:ul> _:b172 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b172
+  <urn:xml:li> "disciplinary" .
+
+_:b173
+  <urn:xml:div> _:b174 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b174
+  <urn:xml:class> "separator" .
+
+_:b175
+  <urn:xml:div> _:b176, _:b177 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b176
+  <urn:xml:%23text> "Mission statement for designated community" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b177
+  <urn:xml:a> _:b178 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b178
+  <urn:xml:%23text> "https://archiv.soc.cas.cz/en/o-archivu-2/kdo-jsme" ;
+  <urn:xml:href> "https://archiv.soc.cas.cz/en/o-archivu-2/kdo-jsme" .
+
+_:b179
+  <urn:xml:div> _:b180 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b180
+  <urn:xml:class> "separator" .
+
+_:b181
+  <urn:xml:div> _:b182, _:b183 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b182
+  <urn:xml:%23text> "Research data repository language(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b183
+  <urn:xml:ul> _:b184 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b184
+  <urn:xml:li> _:b185, _:b186 .
+
+_:b185
+  <urn:xml:%23text> "English" ;
+  <urn:xml:class> "no-line-break" .
+
+_:b186
+  <urn:xml:%23text> "Czech" ;
+  <urn:xml:class> "no-line-break" .
+
+_:b187
+  <urn:xml:div> _:b188 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b188
+  <urn:xml:class> "separator" .
+
+_:b189
+  <urn:xml:div> _:b190, _:b191 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b190
+  <urn:xml:%23text> "Data and/or service provider" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b191
+  <urn:xml:ul> _:b192 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b192
+  <urn:xml:li> "dataProvider", "serviceProvider" .
+
+_:b193
+  <urn:xml:div> _:b194 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b194
+  <urn:xml:class> "separator" .
+
+_:b195
+  <urn:xml:h2> "Dates" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b196
+  <urn:xml:div> _:b197, _:b200 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b197
+  <urn:xml:div> _:b198, _:b199 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b198
+  <urn:xml:%23text> "Started" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b199
+  <urn:xml:%23text> "2011" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b200
+  <urn:xml:div> _:b201 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b201
+  <urn:xml:class> "separator" .
+
+_:b202
+  <urn:xml:div> _:b203, _:b204 ;
+  <urn:xml:class> "tab-pane" ;
+  <urn:xml:id> "tab_institutions" .
+
+_:b203
+  <urn:xml:h2> "Institutions (2)" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b204
+  <urn:xml:div> _:b205, _:b243 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b205
+  <urn:xml:div> _:b206, _:b212, _:b216, _:b218, _:b226, _:b230, _:b232, _:b236, _:b238, _:b241 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b206
+  <urn:xml:div> _:b207, _:b208, _:b210 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b207
+  <urn:xml:%23text> "Institution name" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b208
+  <urn:xml:a> _:b209 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b209
+  <urn:xml:b> "Czech Academy of Sciences, Institute of Sociology" ;
+  <urn:xml:href> "https://www.soc.cas.cz/en" .
+
+_:b210
+  <urn:xml:div> _:b211 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b211
+  <urn:xml:class> "separator" .
+
+_:b212
+  <urn:xml:div> _:b213, _:b214 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b213
+  <urn:xml:%23text> "Additional name(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b214
+  <urn:xml:ul> _:b215 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b215
+  <urn:xml:li> "ASCR", "Sociologický ústav AV ČR, v.v.i.", "Sociologický ústav AV ČR, v. v. i., Czech Acad Sci" .
+
+_:b216
+  <urn:xml:div> _:b217 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b217
+  <urn:xml:class> "separator" .
+
+_:b218
+  <urn:xml:div> _:b219, _:b220, _:b224 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b219
+  <urn:xml:%23text> "Institution identifier(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b220
+  <urn:xml:ul> _:b221 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b221
+  <urn:xml:li> _:b222 .
+
+_:b222
+  <urn:xml:a> _:b223 .
+
+_:b223
+  <urn:xml:%23text> "ROR:018hy5194" ;
+  <urn:xml:href> "https://ror.org/018hy5194" .
+
+_:b224
+  <urn:xml:div> _:b225 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b225
+  <urn:xml:class> "separator" .
+
+_:b226
+  <urn:xml:div> _:b227, _:b228 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b227
+  <urn:xml:%23text> "Country" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b228
+  <urn:xml:a> _:b229 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b229
+  <urn:xml:%23text> "Czech Republic" ;
+  <urn:xml:class> "label country" ;
+  <urn:xml:href> "/search?countries[]=CZE" ;
+  <urn:xml:title> "Search with country 'Czech Republic'" .
+
+_:b230
+  <urn:xml:div> _:b231 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b231
+  <urn:xml:class> "separator" .
+
+_:b232
+  <urn:xml:div> _:b233, _:b234 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b233
+  <urn:xml:%23text> "Type(s) of responsibility" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b234
+  <urn:xml:ul> _:b235 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b235
+  <urn:xml:li> "general" .
+
+_:b236
+  <urn:xml:div> _:b237 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b237
+  <urn:xml:class> "separator" .
+
+_:b238
+  <urn:xml:div> _:b239, _:b240 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b239
+  <urn:xml:%23text> "Type of institution" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b240
+  <urn:xml:%23text> "non-profit" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b241
+  <urn:xml:div> _:b242 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b242
+  <urn:xml:class> "separator" .
+
+_:b243
+  <urn:xml:div> _:b244, _:b250, _:b254, _:b256, _:b264, _:b268, _:b270, _:b274, _:b276, _:b279 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b244
+  <urn:xml:div> _:b245, _:b246, _:b248 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b245
+  <urn:xml:%23text> "Institution name" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b246
+  <urn:xml:a> _:b247 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b247
+  <urn:xml:b> "Ministry of Education, Youth and Sports" ;
+  <urn:xml:href> "https://msmt.gov.cz/" .
+
+_:b248
+  <urn:xml:div> _:b249 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b249
+  <urn:xml:class> "separator" .
+
+_:b250
+  <urn:xml:div> _:b251, _:b252 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b251
+  <urn:xml:%23text> "Additional name(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b252
+  <urn:xml:ul> _:b253 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b253
+  <urn:xml:li> "MŠMT ČR", "Ministerstvo školství, mládeže a tělovýchovy České republiky", "Ministerstvo skolstvi, mladeze a telovychovy Ceske republiky", "MSMT CR" .
+
+_:b254
+  <urn:xml:div> _:b255 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b255
+  <urn:xml:class> "separator" .
+
+_:b256
+  <urn:xml:div> _:b257, _:b258, _:b262 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b257
+  <urn:xml:%23text> "Institution identifier(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b258
+  <urn:xml:ul> _:b259 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b259
+  <urn:xml:li> _:b260 .
+
+_:b260
+  <urn:xml:a> _:b261 .
+
+_:b261
+  <urn:xml:%23text> "ROR:037n8p820" ;
+  <urn:xml:href> "https://ror.org/037n8p820" .
+
+_:b262
+  <urn:xml:div> _:b263 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b263
+  <urn:xml:class> "separator" .
+
+_:b264
+  <urn:xml:div> _:b265, _:b266 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b265
+  <urn:xml:%23text> "Country" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b266
+  <urn:xml:a> _:b267 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b267
+  <urn:xml:%23text> "Czech Republic" ;
+  <urn:xml:class> "label country" ;
+  <urn:xml:href> "/search?countries[]=CZE" ;
+  <urn:xml:title> "Search with country 'Czech Republic'" .
+
+_:b268
+  <urn:xml:div> _:b269 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b269
+  <urn:xml:class> "separator" .
+
+_:b270
+  <urn:xml:div> _:b271, _:b272 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b271
+  <urn:xml:%23text> "Type(s) of responsibility" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b272
+  <urn:xml:ul> _:b273 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b273
+  <urn:xml:li> "funding" .
+
+_:b274
+  <urn:xml:div> _:b275 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b275
+  <urn:xml:class> "separator" .
+
+_:b276
+  <urn:xml:div> _:b277, _:b278 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b277
+  <urn:xml:%23text> "Type of institution" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b278
+  <urn:xml:%23text> "non-profit" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b279
+  <urn:xml:div> _:b280 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b280
+  <urn:xml:class> "separator" .
+
+_:b281
+  <urn:xml:div> _:b282, _:b283, _:b298, _:b299, _:b306, _:b307, _:b320, _:b321, _:b329, _:b330, _:b343, _:b344 ;
+  <urn:xml:class> "tab-pane" ;
+  <urn:xml:id> "tab_terms" .
+
+_:b282
+  <urn:xml:h2> "Policies (2)" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b283
+  <urn:xml:div> _:b284, _:b291 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b284
+  <urn:xml:div> _:b285, _:b289 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b285
+  <urn:xml:div> _:b286, _:b287 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b286
+  <urn:xml:%23text> "Policy name" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b287
+  <urn:xml:a> _:b288 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b288
+  <urn:xml:%23text> "Data access" ;
+  <urn:xml:href> "https://archiv.soc.cas.cz/en/pristup-k-datum-2" .
+
+_:b289
+  <urn:xml:div> _:b290 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b290
+  <urn:xml:class> "separator" .
+
+_:b291
+  <urn:xml:div> _:b292, _:b296 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b292
+  <urn:xml:div> _:b293, _:b294 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b293
+  <urn:xml:%23text> "Policy name" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b294
+  <urn:xml:a> _:b295 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b295
+  <urn:xml:%23text> "CESSDA Data Access Policy" ;
+  <urn:xml:href> "https://dag.cessda.eu/Chapter-2/4-Data-Access-Policies" .
+
+_:b296
+  <urn:xml:div> _:b297 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b297
+  <urn:xml:class> "separator" .
+
+_:b298
+  <urn:xml:h2> "Database access" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b299
+  <urn:xml:div> _:b300 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b300
+  <urn:xml:div> _:b301, _:b304 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b301
+  <urn:xml:div> _:b302, _:b303 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b302
+  <urn:xml:%23text> "Type of access to research data repository" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b303
+  <urn:xml:%23text> "open" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b304
+  <urn:xml:div> _:b305 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b305
+  <urn:xml:class> "separator" .
+
+_:b306
+  <urn:xml:h2> "Data access (1)" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b307
+  <urn:xml:div> _:b308 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b308
+  <urn:xml:div> _:b309, _:b312, _:b314, _:b318 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b309
+  <urn:xml:div> _:b310, _:b311 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b310
+  <urn:xml:%23text> "Type of access to data" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b311
+  <urn:xml:%23text> "restricted" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b312
+  <urn:xml:div> _:b313 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b313
+  <urn:xml:class> "separator" .
+
+_:b314
+  <urn:xml:div> _:b315, _:b316 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b315
+  <urn:xml:%23text> "Data access restriction type(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b316
+  <urn:xml:ul> _:b317 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b317
+  <urn:xml:li> "registration" .
+
+_:b318
+  <urn:xml:div> _:b319 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b319
+  <urn:xml:class> "separator" .
+
+_:b320
+  <urn:xml:h2> "Data licenses (1)" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b321
+  <urn:xml:div> _:b322 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b322
+  <urn:xml:div> _:b323, _:b327 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b323
+  <urn:xml:div> _:b324, _:b325 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b324
+  <urn:xml:%23text> "Data license" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b325
+  <urn:xml:a> _:b326 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b326
+  <urn:xml:%23text> "other" ;
+  <urn:xml:href> "https://dag.cessda.eu/Chapter-2/4-Data-Access-Policies" .
+
+_:b327
+  <urn:xml:div> _:b328 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b328
+  <urn:xml:class> "separator" .
+
+_:b329
+  <urn:xml:h2> "Data upload (1)" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b330
+  <urn:xml:div> _:b331 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b331
+  <urn:xml:div> _:b332, _:b335, _:b337, _:b341 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b332
+  <urn:xml:div> _:b333, _:b334 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b333
+  <urn:xml:%23text> "Type of data upload" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b334
+  <urn:xml:%23text> "restricted" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b335
+  <urn:xml:div> _:b336 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b336
+  <urn:xml:class> "separator" .
+
+_:b337
+  <urn:xml:div> _:b338, _:b339 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b338
+  <urn:xml:%23text> "Data upload restriction type(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b339
+  <urn:xml:ul> _:b340 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b340
+  <urn:xml:li> "registration" .
+
+_:b341
+  <urn:xml:div> _:b342 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b342
+  <urn:xml:class> "separator" .
+
+_:b343
+  <urn:xml:h2> "Data upload license (1)" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b344
+  <urn:xml:div> _:b345 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b345
+  <urn:xml:div> _:b346, _:b350 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b346
+  <urn:xml:div> _:b347, _:b348 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b347
+  <urn:xml:%23text> "Data upload license name" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b348
+  <urn:xml:a> _:b349 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b349
+  <urn:xml:%23text> "Depositing data" ;
+  <urn:xml:href> "https://archiv.soc.cas.cz/en/ukladani-dat-2" .
+
+_:b350
+  <urn:xml:div> _:b351 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b351
+  <urn:xml:class> "separator" .
+
+_:b352
+  <urn:xml:div> _:b353, _:b389, _:b390, _:b402, _:b403, _:b453, _:b454 ;
+  <urn:xml:class> "tab-pane" ;
+  <urn:xml:id> "tab_standards" .
+
+_:b353
+  <urn:xml:div> _:b354, _:b358, _:b360, _:b364, _:b366, _:b369, _:b371, _:b375, _:b377, _:b381, _:b383 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b354
+  <urn:xml:div> _:b355, _:b356 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b355
+  <urn:xml:%23text> "Persistent identifier system(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b356
+  <urn:xml:ul> _:b357 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b357
+  <urn:xml:li> "DOI" .
+
+_:b358
+  <urn:xml:div> _:b359 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b359
+  <urn:xml:class> "separator" .
+
+_:b360
+  <urn:xml:div> _:b361, _:b362 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b361
+  <urn:xml:%23text> "Name of the repository software" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b362
+  <urn:xml:ul> _:b363 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b363
+  <urn:xml:li> "Dataverse" .
+
+_:b364
+  <urn:xml:div> _:b365 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b365
+  <urn:xml:class> "separator" .
+
+_:b366
+  <urn:xml:div> _:b367, _:b368 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b367
+  <urn:xml:%23text> "Versioning" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b368
+  <urn:xml:%23text> "yes" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b369
+  <urn:xml:div> _:b370 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b370
+  <urn:xml:class> "separator" .
+
+_:b371
+  <urn:xml:div> _:b372, _:b373 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b372
+  <urn:xml:%23text> "Data citation guideline" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b373
+  <urn:xml:a> _:b374 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b374
+  <urn:xml:%23text> "https://dataverse.org/best-practices/data-citation" ;
+  <urn:xml:href> "https://dataverse.org/best-practices/data-citation" .
+
+_:b375
+  <urn:xml:div> _:b376 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b376
+  <urn:xml:class> "separator" .
+
+_:b377
+  <urn:xml:div> _:b378, _:b379 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b378
+  <urn:xml:%23text> "Author identifier system(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b379
+  <urn:xml:ul> _:b380 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b380
+  <urn:xml:li> "ORCID" .
+
+_:b381
+  <urn:xml:div> _:b382 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b382
+  <urn:xml:class> "separator" .
+
+_:b383
+  <urn:xml:div> _:b384, _:b385, _:b387 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b384
+  <urn:xml:%23text> "Metric(s)" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b385
+  <urn:xml:ul> _:b386 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b386
+  <urn:xml:li> "Usage statistics" .
+
+_:b387
+  <urn:xml:div> _:b388 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b388
+  <urn:xml:class> "separator" .
+
+_:b389
+  <urn:xml:h2> "Application programming interfaces (1)" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b390
+  <urn:xml:div> _:b391 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b391
+  <urn:xml:div> _:b392, _:b393, _:b394, _:b395, _:b397, _:b398, _:b400 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b392
+  <urn:xml:%23text> "Type" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b393
+  <urn:xml:%23text> "OAI-PMH" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b394
+  <urn:xml:%23text> "Url" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b395
+  <urn:xml:a> _:b396 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b396
+  <urn:xml:%23text> "https://archivdv.soc.cas.cz/oai?verb=Identify" ;
+  <urn:xml:href> "https://archivdv.soc.cas.cz/oai?verb=Identify" .
+
+_:b397
+  <urn:xml:%23text> "Documentation" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b398
+  <urn:xml:a> _:b399 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b399
+  <urn:xml:%23text> "https://guides.dataverse.org/en/latest/admin/discoverability.html" ;
+  <urn:xml:href> "https://guides.dataverse.org/en/latest/admin/discoverability.html" .
+
+_:b400
+  <urn:xml:div> _:b401 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b401
+  <urn:xml:class> "separator" .
+
+_:b402
+  <urn:xml:h2> "Metadata standards (7)" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b403
+  <urn:xml:div> _:b404, _:b411, _:b418, _:b425, _:b432, _:b439, _:b446 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b404
+  <urn:xml:div> _:b405, _:b409 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b405
+  <urn:xml:div> _:b406, _:b407 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b406
+  <urn:xml:%23text> "Metadata standard" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b407
+  <urn:xml:a> _:b408 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b408
+  <urn:xml:%23text> "DataCite Metadata Schema" ;
+  <urn:xml:href> "https://rdamsc.bath.ac.uk/msc/m11" .
+
+_:b409
+  <urn:xml:div> _:b410 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b410
+  <urn:xml:class> "separator" .
+
+_:b411
+  <urn:xml:div> _:b412, _:b416 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b412
+  <urn:xml:div> _:b413, _:b414 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b413
+  <urn:xml:%23text> "Metadata standard" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b414
+  <urn:xml:a> _:b415 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b415
+  <urn:xml:%23text> "DDI (Data Documentation Initiative)" ;
+  <urn:xml:href> "https://rdamsc.bath.ac.uk/msc/m13" .
+
+_:b416
+  <urn:xml:div> _:b417 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b417
+  <urn:xml:class> "separator" .
+
+_:b418
+  <urn:xml:div> _:b419, _:b423 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b419
+  <urn:xml:div> _:b420, _:b421 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b420
+  <urn:xml:%23text> "Metadata standard" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b421
+  <urn:xml:a> _:b422 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b422
+  <urn:xml:%23text> "Dublin Core" ;
+  <urn:xml:href> "https://rdamsc.bath.ac.uk/msc/m15" .
+
+_:b423
+  <urn:xml:div> _:b424 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b424
+  <urn:xml:class> "separator" .
+
+_:b425
+  <urn:xml:div> _:b426, _:b430 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b426
+  <urn:xml:div> _:b427, _:b428 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b427
+  <urn:xml:%23text> "Metadata standard" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b428
+  <urn:xml:a> _:b429 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b429
+  <urn:xml:%23text> "JSON-LD (JavaScript Object Notation for Linked Data)" ;
+  <urn:xml:href> "https://rdamsc.bath.ac.uk/msc/m95" .
+
+_:b430
+  <urn:xml:div> _:b431 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b431
+  <urn:xml:class> "separator" .
+
+_:b432
+  <urn:xml:div> _:b433, _:b437 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b433
+  <urn:xml:div> _:b434, _:b435 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b434
+  <urn:xml:%23text> "Metadata standard" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b435
+  <urn:xml:a> _:b436 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b436
+  <urn:xml:%23text> "OAI-ORE (Open Archives Initiative Object Reuse and Exchange)" ;
+  <urn:xml:href> "https://rdamsc.bath.ac.uk/msc/m26" .
+
+_:b437
+  <urn:xml:div> _:b438 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b438
+  <urn:xml:class> "separator" .
+
+_:b439
+  <urn:xml:div> _:b440, _:b444 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b440
+  <urn:xml:div> _:b441, _:b442 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b441
+  <urn:xml:%23text> "Metadata standard" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b442
+  <urn:xml:a> _:b443 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b443
+  <urn:xml:%23text> "OpenAIRE Guidelines" ;
+  <urn:xml:href> "https://rdamsc.bath.ac.uk/msc/m92" .
+
+_:b444
+  <urn:xml:div> _:b445 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b445
+  <urn:xml:class> "separator" .
+
+_:b446
+  <urn:xml:div> _:b447, _:b451 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b447
+  <urn:xml:div> _:b448, _:b449 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b448
+  <urn:xml:%23text> "Metadata standard" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b449
+  <urn:xml:a> _:b450 ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b450
+  <urn:xml:%23text> "schema.org" ;
+  <urn:xml:href> "https://rdamsc.bath.ac.uk/msc/m101" .
+
+_:b451
+  <urn:xml:div> _:b452 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b452
+  <urn:xml:class> "separator" .
+
+_:b453
+  <urn:xml:h2> "Remarks" ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b454
+  <urn:xml:div> _:b455 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b455
+  <urn:xml:div> _:b456, _:b459, _:b461, _:b464, _:b466, _:b469 ;
+  <urn:xml:class> "row col-sm-12 content-block" .
+
+_:b456
+  <urn:xml:div> _:b457, _:b458 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b457
+  <urn:xml:%23text> "Remarks" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b458
+  <urn:xml:%23text> "CSDA is a member organisation of CESSDA ERIC https://www.cessda.eu/" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b459
+  <urn:xml:div> _:b460 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b460
+  <urn:xml:class> "separator" .
+
+_:b461
+  <urn:xml:div> _:b462, _:b463 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b462
+  <urn:xml:%23text> "Entry date" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b463
+  <urn:xml:%23text> "2013-08-14" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b464
+  <urn:xml:div> _:b465 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b465
+  <urn:xml:class> "separator" .
+
+_:b466
+  <urn:xml:div> _:b467, _:b468 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b467
+  <urn:xml:%23text> "Last update" ;
+  <urn:xml:class> "col-sm-3" .
+
+_:b468
+  <urn:xml:%23text> "2026-04-13" ;
+  <urn:xml:class> "col-sm-9" .
+
+_:b469
+  <urn:xml:div> _:b470 ;
+  <urn:xml:class> "row col-sm-12" .
+
+_:b470
+  <urn:xml:class> "separator" .
+
+_:b471
+  <urn:xml:div> _:b472, _:b475, _:b477 ;
+  <urn:xml:class> "row col-md-12" .
+
+_:b472
+  <urn:xml:a> _:b473 ;
+  <urn:xml:class> "col-md-4" .
+
+_:b473
+  <urn:xml:i> _:b474 ;
+  <urn:xml:%23text> "Back to search" ;
+  <urn:xml:style> "padding: 20px 0px;" ;
+  <urn:xml:href> "/search" ;
+  <urn:xml:class> "btn btn-small" .
+
+_:b474
+  <urn:xml:class> "icon icon-chevron-left" .
+
+_:b475
+  <urn:xml:a> _:b476 ;
+  <urn:xml:class> "col-md-4 text-center" .
+
+_:b476
+  <urn:xml:%23text> "Submit a change request" ;
+  <urn:xml:style> "padding: 20px 0px;" ;
+  <urn:xml:href> "/repository/change/r3d100010484" ;
+  <urn:xml:class> "btn btn-small" .
+
+_:b477
+  <urn:xml:a> _:b478 ;
+  <urn:xml:class> "col-md-4 text-right" .
+
+_:b478
+  <urn:xml:%23text> "Get a badge" ;
+  <urn:xml:style> "padding: 20px 0px;" ;
+  <urn:xml:href> "/resources/badge/100010484" ;
+  <urn:xml:class> "btn btn-small" .
+
+_:b479
+  <urn:xml:div> _:b480 ;
+  <urn:xml:class> "row col-md-12" .
+
+_:b480
+  <urn:xml:img> _:b481 ;
+  <urn:xml:h4> "Cite this re3data.org record:" ;
+  <urn:xml:%23text> "re3data.org: Czech Social Science Data Archive;
+                                    editing status 2026-04-13;
+                                re3data.org - Registry of Research Data Repositories. https://doi.org/10.17616/R35P6H
+                last accessed: 2026-08-11" ;
+  <urn:xml:style> "margin: 30px 0px;" .
+
+_:b481
+  <urn:xml:src> "/images/img/dcdoi.png" ;
+  <urn:xml:alt> "The DataCite logo" ;
+  <urn:xml:style> "height: 65px; float: left; margin-right: 20px;" .
+
+_:b482
+  <urn:xml:div> _:b483, _:b500, _:b501 ;
+  <urn:xml:id> "r3d-footer" ;
+  <urn:xml:class> "container-fluid" .
+
+_:b483
+  <urn:xml:ul> _:b484 ;
+  <urn:xml:class> "col-md-2 pull-left" .
+
+_:b484
+  <urn:xml:li> _:b485, _:b487, _:b489, _:b491 ;
+  <urn:xml:style> "list-style-type: none;" .
+
+_:b485
+  <urn:xml:a> _:b486 .
+
+_:b486
+  <urn:xml:%23text> "Legal notice / Impressum" ;
+  <urn:xml:href> "/legalnotice" .
+
+_:b487
+  <urn:xml:a> _:b488 .
+
+_:b488
+  <urn:xml:%23text> "Terms of Use & Privacy Policy" ;
+  <urn:xml:href> "/terms" .
+
+_:b489
+  <urn:xml:a> _:b490 .
+
+_:b490
+  <urn:xml:%23text> "About" ;
+  <urn:xml:href> "/about" .
+
+_:b491
+  <urn:xml:div> _:b492 .
+
+_:b492
+  <urn:xml:a> _:b493, _:b497 ;
+  <urn:xml:class> "rss-atom-buttons" ;
+  <urn:xml:style> "margin-top: 5px;" .
+
+_:b493
+  <urn:xml:svg> _:b494 ;
+  <urn:xml:href> "/subscribe?format=rss" ;
+  <urn:xml:class> "text-center" ;
+  <urn:xml:style> "text-decoration-line: none;" ;
+  <urn:xml:title> "Subscribe via RSS" ;
+  <urn:xml:rel> "nofollow" .
+
+_:b494
+  <urn:xml:path> _:b495, _:b496 ;
+  <urn:xml:width> "16" ;
+  <urn:xml:height> "16" ;
+  <urn:xml:fill> "currentColor" ;
+  <urn:xml:class> "bi bi-rss" ;
+  <urn:xml:viewBox> "0 0 16 16" .
+
+_:b495
+  <urn:xml:d> "M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" .
+
+_:b496
+  <urn:xml:d> "M5.5 12a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m-3-8.5a1 1 0 0 1 1-1c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1-1-1m0 4a1 1 0 0 1 1-1 6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1-1-1" .
+
+_:b497
+  <urn:xml:svg> _:b498 ;
+  <urn:xml:href> "/subscribe?format=atom" ;
+  <urn:xml:class> "text-center" ;
+  <urn:xml:style> "text-decoration-line: none;" ;
+  <urn:xml:title> "Subscribe via Atom" ;
+  <urn:xml:rel> "nofollow" .
+
+_:b498
+  <urn:xml:path> _:b499 ;
+  <urn:xml:width> "16" ;
+  <urn:xml:height> "16" ;
+  <urn:xml:fill> "currentColor" ;
+  <urn:xml:class> "bi bi-rss-fill" ;
+  <urn:xml:viewBox> "0 0 16 16" .
+
+_:b499
+  <urn:xml:d> "M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" .
+
+_:b500
+  <urn:xml:class> "col-md-2" .
+
+_:b501
+  <urn:xml:ul> _:b502 ;
+  <urn:xml:class> "col-md-8" .
+
+_:b502
+  <urn:xml:li> _:b503, _:b507, _:b511 ;
+  <urn:xml:style> "list-style-type: none;" .
+
+_:b503
+  <urn:xml:a> _:b504, _:b506 ;
+  <urn:xml:%23text> "To the extent possible under law,has waived all copyright and related or neighboring rights to
+                        the database entries of re3data.org." .
+
+_:b504
+  <urn:xml:img> _:b505 ;
+  <urn:xml:rel> "license" ;
+  <urn:xml:href> "https://creativecommons.org/publicdomain/zero/1.0/" .
+
+_:b505
+  <urn:xml:src> "https://i.creativecommons.org/p/zero/1.0/80x15.png" ;
+  <urn:xml:style> "border-style: none;" ;
+  <urn:xml:alt> "CC0" .
+
+_:b506
+  <urn:xml:%23text> "re3data.org" ;
+  <urn:xml:rel> "dct:publisher" ;
+  <urn:xml:href> "https://www.re3data.org" .
+
+_:b507
+  <urn:xml:a> _:b508, _:b510 ;
+  <urn:xml:%23text> "Except where otherwise noted, content on this site is licensed under a." .
+
+_:b508
+  <urn:xml:img> _:b509 ;
+  <urn:xml:rel> "license" ;
+  <urn:xml:href> "https://creativecommons.org/licenses/by/4.0/" .
+
+_:b509
+  <urn:xml:alt> "Creative Commons License" ;
+  <urn:xml:style> "border-width:0" ;
+  <urn:xml:src> "https://i.creativecommons.org/l/by/4.0/80x15.png" .
+
+_:b510
+  <urn:xml:%23text> "Creative Commons Attribution 4.0 International License" ;
+  <urn:xml:rel> "license" ;
+  <urn:xml:href> "https://creativecommons.org/licenses/by/4.0/" .
+
+_:b511
+  <urn:xml:b> "Cite this service:" ;
+  <urn:xml:%23text> "re3data.org - Registry of Research Data Repositories. https://doi.org/10.17616/R3D last accessed: 2026-08-11" ;
+  <urn:xml:style> "padding-top: 10px;" .
+
+_:b512
+  <urn:xml:style> "width: 0; height: 0; display: none;" ;
+  <urn:xml:src> "/images/img/ajax-loader.gif" ;
+  <urn:xml:alt> "" .
