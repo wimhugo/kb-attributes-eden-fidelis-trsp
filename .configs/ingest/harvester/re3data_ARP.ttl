@@ -1,0 +1,175 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix r3d: <http://www.re3data.org/schema/4-0> .
+@prefix xsi: <http://www.w3.org/2001/XMLSchema-instance> .
+
+<urn:harvest:re3data:ARP>
+  prov:wasDerivedFrom <https://www.re3data.org/api/v40/repository/r3d100014109> ;
+  dct:source <https://www.re3data.org/api/v40/repository/r3d100014109> ;
+  dct:provenance "Metadata harvested from the re3data API" ;
+  rdf:type rdfs:Resource ;
+  dct:identifier "ARP" ;
+  r3d:repository _:b1 ;
+  xsi:schemaLocation "http://www.re3data.org/schema/4-0 http://schema.re3data.org/4-0/re3dataV4-0.xsd" .
+
+_:b1
+  r3d:identifiers _:b2 ;
+  r3d:repositoryName "ARP Research Data Repository"@eng ;
+  r3d:additionalName "HUN-REN ARP"@eng, "HUN-REN Data Repository Platform"@eng ;
+  r3d:repositoryUrl "https://repo.researchdata.hu/" ;
+  r3d:repositoryIdentifier _:b3 ;
+  r3d:description "This repository supports the researchers of the Hungarian Research Network (HUN-REN), and to some extent the Hungarian scientists in general."@eng ;
+  r3d:type "institutional", "other" ;
+  r3d:size "157 dataverses, 114 datasets, 27.776 files" ;
+  r3d:repositoryLanguage "eng", "hun" ;
+  r3d:subject _:b4, _:b5, _:b6, _:b7 ;
+  r3d:missionStatementUrl "https://researchdata.hu/en/our-activities" ;
+  r3d:contentType _:b8 ;
+  r3d:providerType "dataProvider" ;
+  r3d:keyword "multidisciplinary" ;
+  r3d:institution _:b9, _:b11 ;
+  r3d:policy _:b13, _:b14, _:b15 ;
+  r3d:databaseAccess _:b16 ;
+  r3d:dataAccess _:b17, _:b18, _:b19, _:b20 ;
+  r3d:dataLicense _:b21 ;
+  r3d:dataUpload _:b22 ;
+  r3d:software "Dataverse" ;
+  r3d:versioning "yes" ;
+  r3d:api _:b23, _:b24, _:b25 ;
+  r3d:pidSystem "DOI", "hdl" ;
+  r3d:citationGuidelineUrl "https://dataverse.org/best-practices/data-citation" ;
+  r3d:metadataStandard _:b26, _:b27, _:b28, _:b29, _:b30 ;
+  r3d:remarks "" ;
+  r3d:entryDate "2023-01-08" ;
+  r3d:lastUpdate "2025-06-18" .
+
+_:b2
+  r3d:re3data "r3d100014109" ;
+  r3d:doi "https://doi.org/10.17616/R31NJNDP" .
+
+_:b3
+  r3d:repositoryIdentifierType "FAIRsharing" ;
+  r3d:repositoryIdentifierValue "10.25504/FAIRsharing.b7f3ff" .
+
+_:b4
+  r3d:subjectId "4" ;
+  r3d:subjectName "Engineering Sciences" ;
+  <urn:xml:subjectScheme> "DFG" .
+
+_:b5
+  r3d:subjectId "1" ;
+  r3d:subjectName "Humanities and Social Sciences" ;
+  <urn:xml:subjectScheme> "DFG" .
+
+_:b6
+  r3d:subjectId "2" ;
+  r3d:subjectName "Life Sciences" ;
+  <urn:xml:subjectScheme> "DFG" .
+
+_:b7
+  r3d:subjectId "3" ;
+  r3d:subjectName "Natural Sciences" ;
+  <urn:xml:subjectScheme> "DFG" .
+
+_:b8
+  r3d:contentTypeId "http://purl.org/coar/resource_type/c_ddb1" ;
+  r3d:contentTypeName "dataset" ;
+  <urn:xml:contentTypeScheme> "COAR" .
+
+_:b9
+  r3d:institutionName "HUN-REN Institute for Computer Science and Control"@hun ;
+  r3d:institutionAdditionalName "MTA SZTAKI"@hun, "Magyar Tudományos Akadémia Számítástechnikai és Automatizálási Kutatóintézete"@hun ;
+  r3d:institutionCountry "HUN" ;
+  r3d:responsibilityType "technical" ;
+  r3d:institutionType "non-profit" ;
+  r3d:institutionUrl "https://www.sztaki.hu/?en" ;
+  r3d:institutionIdentifier _:b10 .
+
+_:b10
+  r3d:institutionIdentifierType "ROR" ;
+  r3d:institutionIdentifierUrl "https://ror.org/0249v7n71" .
+
+_:b11
+  r3d:institutionName "Hungarian Research Network"@eng ;
+  r3d:institutionAdditionalName "HUN-REN"@hun, "Magyar Kutatási Hálózat"@hun ;
+  r3d:institutionCountry "HUN" ;
+  r3d:responsibilityType "general" ;
+  r3d:institutionType "non-profit" ;
+  r3d:institutionUrl "https://hun-ren.hu/en" ;
+  r3d:institutionIdentifier _:b12 .
+
+_:b12
+  r3d:institutionIdentifierType "ROR" ;
+  r3d:institutionIdentifierUrl "https://ror.org/04w6pnc49" .
+
+_:b13
+  r3d:policyName "Dataverse Community Norms" ;
+  r3d:policyUrl "https://dataverse.org/best-practices/dataverse-community-norms" .
+
+_:b14
+  r3d:policyName "Privacy Policy" ;
+  r3d:policyUrl "https://sztaki.hun-ren.hu/en/privacy-policy" .
+
+_:b15
+  r3d:policyName "User Guide" ;
+  r3d:policyUrl "https://guides.dataverse.org/en/6.1/user/" .
+
+_:b16
+  r3d:databaseAccessType "open" .
+
+_:b17
+  r3d:dataAccessType "closed" .
+
+_:b18
+  r3d:dataAccessType "embargoed" .
+
+_:b19
+  r3d:dataAccessType "open" .
+
+_:b20
+  r3d:dataAccessType "restricted" .
+
+_:b21
+  r3d:dataLicenseName "CC" ;
+  r3d:dataLicenseUrl "https://creativecommons.org/licenses/by-nc-nd/4.0/" .
+
+_:b22
+  r3d:dataUploadType "restricted" ;
+  r3d:dataUploadRestriction "institutional membership" .
+
+_:b23
+  r3d:apiType "OAI-PMH" ;
+  r3d:apiUrl "https://repo.researchdata.hu/oai?verb=Identify" ;
+  r3d:apiDocumentation "https://guides.dataverse.org/en/latest/admin/discoverability.html" .
+
+_:b24
+  r3d:apiType "REST" ;
+  r3d:apiUrl "https://guides.dataverse.org/en/latest/api/native-api.html" .
+
+_:b25
+  r3d:apiType "SWORD" ;
+  r3d:apiUrl "https://guides.dataverse.org/en/latest/api/index.html" .
+
+_:b26
+  r3d:metadataStandardName "DDI (Data Documentation Initiative)" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m13" .
+
+_:b27
+  r3d:metadataStandardName "DataCite Metadata Schema" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m11" .
+
+_:b28
+  r3d:metadataStandardName "Dublin Core" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m15" .
+
+_:b29
+  r3d:metadataStandardName "OAI-ORE (Open Archives Initiative Object Reuse and Exchange)" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m26" .
+
+_:b30
+  r3d:metadataStandardName "schema.org" ;
+  r3d:metadataStandardUrl "https://rdamsc.bath.ac.uk/msc/m101" .
