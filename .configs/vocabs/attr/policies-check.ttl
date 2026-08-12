@@ -104,7 +104,7 @@ trsp:licence
 
 trsp:preferredFormats
   a skos:Concept ;
-  skos:prefLabel "Preferred Formats Polocy"@en ;
+  skos:prefLabel "Preferred Formats Policy"@en ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:compliance
