@@ -7,14 +7,17 @@
 @prefix care: <https://purl.org/trsp/care/> .
 @prefix fair: <https://w3id.org/fair/principles/terms/> .
 @prefix gorc: <https://purl.org/gorc/> .
+@prefix schema: <http://schema.org/> . 
 @prefix eden: <www.example.com/eden> .   ## to be updated
 
 trsp:checklistPolicies
   a skos:ConceptScheme ;
   skos:prefLabel "Checklist of Policies"@en ;
   dct:title "Checklist of Policies"@en ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   dct:created "2026-05-03"^^xsd:date ;
-  dct:modified "2026-05-03"^^xsd:date ;
+  dct:modified "2026-08-13"^^xsd:date ;
+  schema:creativeWorkStatus "Candidate" ;
   owl:versionInfo "0.3" .
 
 trsp:versioning
