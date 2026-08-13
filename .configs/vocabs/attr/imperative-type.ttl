@@ -1,0 +1,43 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix care: <https://purl.org/trsp/care/> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix gorc: <https://purl.org/gorc/> .
+@prefix schema: <http://schema.org/> . 
+@prefix eden: <www.example.com/eden> .   ## to be updated
+
+trsp:typeImperative
+  a skos:ConceptScheme ;
+  skos:prefLabel "Imperative Vocabulary"@en ;
+  dct:title "Imperative Vocabulary"@en ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-08-13"^^xsd:date ;
+  schema:creativeWorkStatus "Candidate" ;
+  owl:versionInfo "0.3" .
+
+trsp:mandatory
+  a skos:Concept ;
+  skos:prefLabel "Mandatory"@en ;
+  skos:definition "W3C: MUST"@en ;
+  skos:seeAlso <https://datatracker.ietf.org/doc/html/rfc2119> ;
+  skos:inScheme trsp:typeImperative .
+
+trsp:recommended
+  a skos:Concept ;
+  skos:prefLabel "Recommended"@en ;
+  skos:definition "W3C: SHOULD"@en ;
+  skos:seeAlso <https://datatracker.ietf.org/doc/html/rfc2119> ;
+  skos:inScheme trsp:typeImperative .
+
+trsp:optional
+  a skos:Concept ;
+  skos:prefLabel "Optional"@en ;
+  skos:definition "W3C: MAY"@en ;
+  skos:seeAlso <https://datatracker.ietf.org/doc/html/rfc2119> ;
+  skos:inScheme trsp:typeImperative .
+
