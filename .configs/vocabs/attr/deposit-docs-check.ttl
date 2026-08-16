@@ -6,7 +6,7 @@
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 @prefix wd: <http://www.wikidata.org/entity/> .
 
-trsp:checklistDepositDocumentation
+trsp:typeChecklistDepositDocumentation
   a skos:ConceptScheme ;
   skos:prefLabel "Checklist for Deposit Documentation"@en ;
   dct:title "Checklist for Deposit Documentation"@en ;
@@ -14,19 +14,36 @@ trsp:checklistDepositDocumentation
   dct:modified "2026-05-03"^^xsd:date ;
   owl:versionInfo "0.2" .
 
-trsp:accurateMetadata
+trsp:typeAccurateMetadata
   a skos:Concept ;
   skos:prefLabel "Accurate Metadata"@en ;
-  skos:inScheme trsp:checklistDepositDocumentation .
+  skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
+  skos:inScheme trsp:typeChecklistDepositDocumentation .
 
-trsp:technicalValidation
+trsp:typeTechnicalValidation
   a skos:Concept ;
   skos:prefLabel "Technical Validation"@en ;
-  skos:inScheme trsp:checklistDepositDocumentation .
+  skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
+  skos:inScheme trsp:typeChecklistDepositDocumentation .
+  ### possibly move to curation checklist
 
-trsp:dataValidation
+trsp:typeDataValidation
   a skos:Concept ;
   skos:prefLabel "Data Validation"@en ;
+  skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
   skos:exactMatch wd:Q3306762 ;
   rdfs:seeAlso wd:Q3306762 ;
-  skos:inScheme trsp:checklistDepositDocumentation .
+  skos:inScheme trsp:typeChecklistDepositDocumentation .
+  ### possibly move to curation checklist
+
+trsp:typeCompleteMetadata
+  a skos:Concept ;
+  skos:prefLabel "Complete Metadata"@en ;
+  skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
+  skos:inScheme trsp:typeChecklistDepositDocumentation .
+
+trsp:typeCompletePackage
+  a skos:Concept ;
+  skos:prefLabel "Complete Package"@en ;
+  skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
+  skos:inScheme trsp:typeChecklistDepositDocumentation .
