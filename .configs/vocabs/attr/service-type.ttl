@@ -1,0 +1,31 @@
+## add EUDAT
+
+
+
+
+
+trsp:typePreservationServices
+
+trsp:typeWebsiteServices
+
+trsp:typeAAIServices
+
+trsp:typeRepository
+
+trsp:typeCatalogueServices
+skos:exactMatch dcat:catalog
+skos:broader trsp:typeRepository
+
+trsp:typePolicyLicenceRegistry
+skos:broader trsp:typeRegistry
+
+trsp:typeCrosswalksRegistry
+skos:broader trsp:typeRegistry
+
+trsp:typeMetadataSchemaRegistry
+skos:broader trsp:typeRegistry
+
+trsp:typeFormatGuidanceAPI
+skos:broader trsp:typeFileServices
+
+trsp:typeAAIService
