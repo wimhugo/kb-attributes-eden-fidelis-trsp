@@ -82,6 +82,12 @@ trsp:typeSemanticEnhancement
   skos:broader trsp:typeCurationActivity ;
   skos:inScheme trsp:checklistCurationType .
 
+trsp:typeDepositDocumentation
+  a skos:Concept ;
+  skos:prefLabel "Quality Assured Deposit Documentation"@en ;
+  skos:broader trsp:typeCurationActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
 ### to be extended
 
 
