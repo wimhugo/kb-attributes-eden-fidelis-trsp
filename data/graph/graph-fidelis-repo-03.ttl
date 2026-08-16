@@ -12,6 +12,7 @@ trsp:repo.00B8A6AE14 a trsp:Repository ;
     dcat:endpointURL <https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest> ;
     trsp:hasProfileType trsp:profile-type-repository ;
     trsp:supportedPolicies trsp:versioning, trsp:appraisal, trsp:retention, trsp:preferredFormats ;
+    trsp:supportedPolicies <p1>, <p2>, <p3>, <p4> ;
     trsp:att.48BF7E1522	"2023" ;
     trsp:att.4570870110	<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/GRC> ;
     dct:publisher <https://doi.org/10.3030/101129751> ;
@@ -38,6 +39,7 @@ trsp:repo.00B8A6AE14 a trsp:Repository ;
     trsp:att.1D00720769 "Long-term (via Zenodo CERN)" ;
     schema:Comment "Hosted as Zenodo community", "part of OSCARS Horizon Europe project (Grant 101129751)", "leverages Zenodo's CoreTrustSeal-certified infrastructure" ;
 .
+
 
 trsp:repo.0041142F56 a trsp:Repository ;
     dct:title "GrantHub Open Funding & Innovation Knowledge Repository"@en ;
