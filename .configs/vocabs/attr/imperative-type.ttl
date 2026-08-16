@@ -20,21 +20,21 @@ trsp:typeImperative
   schema:creativeWorkStatus "Candidate" ;
   owl:versionInfo "0.3" .
 
-trsp:mandatory
+trsp:typeMandatory
   a skos:Concept ;
   skos:prefLabel "Mandatory"@en ;
   skos:definition "W3C: MUST"@en ;
   skos:seeAlso <https://datatracker.ietf.org/doc/html/rfc2119> ;
   skos:inScheme trsp:typeImperative .
 
-trsp:recommended
+trsp:typeRecommended
   a skos:Concept ;
   skos:prefLabel "Recommended"@en ;
   skos:definition "W3C: SHOULD"@en ;
   skos:seeAlso <https://datatracker.ietf.org/doc/html/rfc2119> ;
   skos:inScheme trsp:typeImperative .
 
-trsp:optional
+trsp:typeOptional
   a skos:Concept ;
   skos:prefLabel "Optional"@en ;
   skos:definition "W3C: MAY"@en ;
