@@ -12,6 +12,7 @@ trsp:Ontology
     dct:title "TRSP Ontology"@en ;
     dct:description "TRSP Ontology: Schema definition and constraints for Attributes, Profiles, Repositories, and Services. Used by TRSP WG, EOSC EDEN, and EOSC FIDELIS."@en ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:modified 
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     dct:contributor <https://orcid.org/0000-0003-1106-8441> .
 
@@ -33,19 +34,46 @@ trsp:Profile a rdfs:Class ;
 trsp:Repository a rdfs:Class ; 
     rdfs:subClassOf trsp:Profile ; 
     rdfs:label "Repository"@en ;
-    skos:narrower dcat:Catalog;
+    skos:narrowMatch dcat:Catalog;
     skos:broader trsp:Profile ;
-    skos:related dcat:DataService ;
+    skos:closeMatch dcat:DataService ;
     rdfs:comment "A Repository is broadly defined as an archive, repository, or other collection of digital resources, and its supporting services and functionalities." .
 
 # Service
 trsp:Service a rdfs:Class ; 
     rdfs:subClassOf trsp:Profile ; 
     rdfs:label "Service"@en ;
-    skos:narrower dcat:DataService ;
-    skos:narrower dcat:Catalog ;
+    skos:narrowMatch dcat:DataService ;
+    skos:narrowMatch dcat:Catalog ;
     skos:broader trsp:Profile ;
-    rdfs:comment "A Service is defined as an interface that can be accessed primarily by machines. Repositories can offer or consume one or more Services" .
+    rdfs:comment "A Service is defined as any manual or automated service. Repositories can offer or consume one or more Services" .
+
+# API
+trsp:ServiceAPI a rdfs:Class ; 
+    rdfs:subClassOf trsp:Service ; 
+    rdfs:label "API Service"@en ;
+    skos:broader trsp:Profile ;
+    rdfs:comment "An API Service is defined as an interface that can be accessed primarily by machines. Repositories can offer or consume one or more Services" .
+
+# Evidence
+<p1> a trsp:Evidence ;
+    dct:title "My Versioning Policy"@en ;
+    trsp:evidenceType trsp:policyVersioning ;
+    trsp:evidenceIRL <https://evidenceurl.com> ;
+    trsp:validityStart "2026-07-12T00:00:00+00:00" ;
+    trsp:validityEnd "2026-07-12T00:00:00+00:00" ;
+    trsp:evidenceStatus "Draft" ;
+    dct:conformsTo <https://someSpecification.org> ;
+    trsp:authority <https:/myNetworkOrganisation.org> .
+
+# Checklist
+
+
+# Algorithm
+
+# Policy 
+
+
 
 ##################################################################
 # Properties that require values from controlled vocabulary
@@ -84,6 +112,14 @@ trsp:AttributeAssertion a rdfs:Class ; rdfs:label "Attribute assertion"@en .
 
 # ProfileAssertion - holds minimum properties of the relation between an Attribute and a Profile
 trsp:ProfileAssertion a rdfs:Class ; rdfs:label "Profile assertion"@en .
+
+#################################################################
+# Properties to be added
+#################################################################
+
+# imperative domain skos:Concept
+
+
 
 
 #################################################################
