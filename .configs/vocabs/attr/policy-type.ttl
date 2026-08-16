@@ -1,0 +1,110 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix openrel: <https://github.com/wimhugo/openrel/> .
+
+trsp:typePolicyLicence
+  a skos:ConceptScheme ;
+  skos:prefLabel "Policy and Licence Types"@en ;
+  dct:title "Policy and Licence Types"@en ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ;  # Wim Hugo
+  dct:created "2026-05-07"^^xsd:date ;
+  dct:modified "2026-08-16"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:typePolicyScope
+  a skos:Concept ;
+  skos:prefLabel "Policy Scope"@en ;
+  skos:definition "Policies, licences, access rules, and process rules can be local, community, or global in scope."@en ;
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:scopeLocal
+  a skos:Concept ;
+  skos:prefLabel "Local Scope"@en ;
+  skos:definition "Policies, licences, access rules, and process rules that are defined locally, optionally registered in an LFS instance, but private to the owner."@en ;
+  skos:broader trsp:typePolicyScope ;
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:scopeCommunity
+  a skos:Concept ;
+  skos:prefLabel "Community Scope"@en ;
+  skos:definition "Policies, licences, access rules, and process rules that are defined fpr a community, federation, infrastructure, network, or scientific discipline, optionally registered in an LFS instance, and publicly available."@en ;
+  skos:broader trsp:typePolicyScope ;
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:scopeGlobal
+  a skos:Concept ;
+  skos:prefLabel "Global Scope"@en ;
+  skos:definition "Licences and possibly policies that are considered global in scope, registered in SPDX and optionally in an LFS instance, and publicly available."@en ;
+  skos:broader trsp:typePolicyScope ;
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typePolicy
+  a skos:Concept ;
+  skos:prefLabel "Policy"@en ;
+  skos:definition "Policy concept, equivalent to the general Policy class in ODRL and OpenREL."@en ;
+  skos:closeMatch openrel:Policy ;
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeExplicitPolicy
+  a skos:Concept ;
+  skos:prefLabel "Explicit Policy"@en ;
+  skos:definition "Policy concept, equivalent to an explicit Policy in the context of RDMI."@en ;
+  skos:note "Often not encoded, and only available in human-readable format. May be encoded using OpenREL/ ODRL/ DPV and supporting vocabularies. Can be entirely machine-readable (OpenREL Library), partly machine-readable (LFS and SPDX), or human-readable only."@en ;
+  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
+  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
+  skos:source <https://spdx.org/licenses/> ;
+  skos:broadMatch openrel:Policy ;
+  skos:broader trsp:typePolicy
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeLicence
+  a skos:Concept ;
+  skos:prefLabel "Licence"@en ;
+  skos:definition "Licence concept, equivalent to the Licence class in ODRL and OpenREL. An explicit licence in the context of RDMI."@en ;
+  skos:note "Applicable to an asset (object, resource, etc.). Can be entirely machine-readable (OpenREL Library), partly machine-readable (LFS and SPDX), or human-readable only."@en ;
+  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
+  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
+  skos:source <https://spdx.org/licenses/> ;
+  skos:broader trsp:typePolicy ;
+  skos:exactMatch openrel:Licence ;
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeAccessRules
+  a skos:Concept ;
+  skos:prefLabel "Access Conditions"@en ;
+  skos:definition "Access conditions (rules), equivalent to the Access Rules class in OpenREL."@en ;
+  skos:note "Applicable to a repository, catalogue, and data subject context. Can be entirely machine-readable (OpenREL Library) and regsitered in LFS, or human-readable only."@en ;
+  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
+  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
+  skos:broader trsp:typePolicy ;
+  skos:exactMatch openrel:AccessRules ;
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeProcessRules
+  a skos:Concept ;
+  skos:prefLabel "Process Rules"@en ;
+  skos:definition "Process Rules, equivalent to the Process Rules class in OpenREL."@en ;
+  skos:note "Applicable to a software platform, data space, or federation of systems such as EOSC. Can be entirely machine-readable (OpenREL Library) and regsitered in LFS, or human-readable only."@en ;
+  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
+  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
+  skos:broader trsp:typePolicy ;
+  skos:exactMatch openrel:ProcessRules ;
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeProcessRules
+  a skos:Concept ;
+  skos:prefLabel "Process Rules"@en ;
+  skos:definition "Process Rules, equivalent to the Process Rules class in OpenREL."@en ;
+  skos:note "Applicable to a software platform, data space, or federation of systems such as EOSC. Can be entirely machine-readable (OpenREL Library) and regsitered in LFS, or human-readable only."@en ;
+  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
+  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
+  skos:broader trsp:typePolicy ;
+  skos:exactMatch openrel:ProcessRules ;
+  skos:inScheme trsp:typePolicyLicence .
+
+
+
