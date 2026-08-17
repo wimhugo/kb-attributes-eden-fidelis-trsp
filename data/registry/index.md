@@ -7,3 +7,6 @@ This folder contains working examplars of such registries as placeholders for re
 |Registry|Description|Link|
 |--------|-----------|----|
 |Standards|Standards applicable in the context of RDMI|[standards.ttl]()|
+|Affiliations|Repository Affiliations|[affiliations.ttl]()|
+|Packages|Exchange Packages|[packages.ttl]()|
+|Package Transformation|Crosswalks and Transformations|[package_transforms.ttl]()|
