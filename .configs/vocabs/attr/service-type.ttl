@@ -120,10 +120,10 @@ trsp:typeAutomated
 trsp:typeAI
   a skos:Concept ;
   skos:prefLabel "AI-assisted Service"@en ;
-  skos:broader typeAutomationLevel ;
+  skos:broader typeAutomated ;
   skos:inScheme trsp:typeService .
 
-trsp:typeAIModerated
+trsp:typeModerated
   a skos:Concept ;
   skos:prefLabel "AI with Human Moderation"@en ;
   skos:broader typeAutomationLevel ;
