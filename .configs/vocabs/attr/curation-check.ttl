@@ -11,6 +11,8 @@ trsp:checklistCurationType
   dct:title "Level of Curation"@en ;
   dct:created "2026-05-07"^^xsd:date ;
   dct:modified "2026-05-07"^^xsd:date ;
+  skos:hasTopConcept trsp:typeCurationLevel ,
+                     trsp:typeCurationActivity ;
   owl:versionInfo "0.1" .
 
 # Curation Level
@@ -42,32 +44,7 @@ trsp:typeAsDeposited
   a skos:Concept ;
   skos:prefLabel "Content distributed as deposited"@en ;
   skos:broader trsp:typeCurationLevel ;
-  skos:inScheme trsp:checklistCurationType .
-
-# Automation
-#----------------------------------------------------------
-trsp:typeAutomationLevel
-  a skos:Concept ;
-  skos:prefLabel "Levels of Automation"@en ;
-  skos:inScheme trsp:checklistCurationType .
-
-trsp:typeManual
-  a skos:Concept ;
-  skos:prefLabel "Manual Curation"@en ;
-  skos:broader typeAutomationLevel ;
-  skos:inScheme trsp:checklistCurationType .
-
-trsp:typeAutomated
-  a skos:Concept ;
-  skos:prefLabel "Automated Curation"@en ;
-  skos:broader typeAutomationLevel ;
-  skos:inScheme trsp:checklistCurationType .
-
-trsp:typeAI
-  a skos:Concept ;
-  skos:prefLabel "AI-assisted Curation"@en ;
-  skos:broader typeAutomationLevel ;
-  skos:inScheme trsp:checklistCurationType .
+  skos:inScheme trsp:checklistCurationType 
 
 # Curation Activity
 #----------------------------------------------------------
