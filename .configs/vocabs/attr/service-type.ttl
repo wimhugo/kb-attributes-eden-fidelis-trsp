@@ -4,6 +4,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix dcat: <http://data.europa.eu/r5r/> .
 
 trsp:typeService
   a skos:ConceptScheme ;
@@ -96,8 +97,46 @@ trsp:typeEoscScienceGateway
   skos:inScheme trsp:typeService .
 
 # --------------------------------------------------------------------------
+# Service Automation
+# --------------------------------------------------------------------------
+
+trsp:typeAutomationLevel
+  a skos:Concept ;
+  skos:prefLabel "Levels of Automation"@en ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeManual
+  a skos:Concept ;
+  skos:prefLabel "Manual Service"@en ;
+  skos:broader typeAutomationLevel 
+  skos:inScheme trsp:typeService .
+
+trsp:typeAutomated
+  a skos:Concept ;
+  skos:prefLabel "Automated Service"@en ;
+  skos:broader typeAutomationLevel ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeAI
+  a skos:Concept ;
+  skos:prefLabel "AI-assisted Service"@en ;
+  skos:broader typeAutomationLevel ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeAIModerated
+  a skos:Concept ;
+  skos:prefLabel "AI with Human Moderation"@en ;
+  skos:broader typeAutomationLevel ;
+  skos:inScheme trsp:typeService .
+
+# --------------------------------------------------------------------------
 # EDEN Service Specialisation
 # --------------------------------------------------------------------------
+
+trsp:typeConsultingService
+  skos:prefabel "Consulting Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
 
 trsp:typePreservationService
   skos:prefabel "Preservation Services"@en ;
@@ -106,6 +145,11 @@ trsp:typePreservationService
 
 trsp:typeWebsiteService
   skos:prefabel "Website Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeGuidanceService
+  skos:prefabel "Guidance Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
@@ -124,7 +168,7 @@ trsp:typePIDService
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
-trsp:trsp:typeRepository
+trsp:trsp:typeRepositoryService
   skos:prefabel "Repository Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
@@ -132,8 +176,19 @@ trsp:trsp:typeRepository
 trsp:typeCatalogueService
   skos:prefabel "Catalogue Services"@en ;
   skos:broader trsp:typeSpecialisation ;
-  skos:exactMatch dcat:catalog ;
-  skos:broader trsp:typeRepository ;
+  skos:exactMatch dcat:Catalog ;
+  skos:broader trsp:typeRepositoryService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeHarvestingService
+  skos:prefabel "Harvesting Services"@en ;
+  skos:broader trsp:typeCatalogueService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeDataService
+  skos:prefabel "Data Services"@en ;
+  skos:broader trsp:typeCatalogueService ;
+  skos:exactMatch dcat:DataService
   skos:inScheme trsp:typeService .
 
 trsp:typeRegistryService
@@ -144,6 +199,7 @@ trsp:typeRegistryService
 trsp:typePolicyLicenceRegistry
   skos:prefabel "Policy and Licence Registries"@en ;
   skos:broader trsp:typeRegistryService ;
+  skos:closeMatch dct:LicenseDocument ;
   skos:inScheme trsp:typeService .
 
 trsp:typeCrosswalksRegistry
