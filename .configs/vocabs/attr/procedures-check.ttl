@@ -13,84 +13,83 @@ trsp:checklistProceduresWorkflow
   dct:modified "2026-05-03"^^xsd:date ;
   owl:versionInfo "0.2" .
 
-trsp:versioning
+trsp:typeProcedureVersioning
   a skos:Concept ;
   skos:prefLabel "Versioning"@en ;
   skos:broadMatch <http://purl.org/pav/> ;
   rdfs:seeAlso <http://purl.org/pav/> ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:retention
+trsp:typeProcedureRetention
   a skos:Concept ;
   skos:prefLabel "Retention"@en ;
   skos:broadMatch <http://linkeddata.center/kees/v1#RetentionPolicy> ;
   rdfs:seeAlso <http://linkeddata.center/kees/v1#RetentionPolicy> ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:preservation
+trsp:typeProcedurePreservation
   a skos:Concept ;
   skos:prefLabel "Preservation"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:personalDataRemoval
+trsp:typeProcedurePersonalDataRemoval
   a skos:Concept ;
   skos:prefLabel "Personal Data Removal"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:interoperabilty
+trsp:typeProcedureInteroperabilty
   a skos:Concept ;
   skos:prefLabel "Interoperabilty"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:softwareDevelopment
+trsp:typeProcedureSoftwareDevelopment
   a skos:Concept ;
   skos:prefLabel "Software Development"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:compliance
+trsp:typeProcedureCompliance
   a skos:Concept ;
   skos:prefLabel "Compliance"@en ;
   skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0500023> ;
   rdfs:seeAlso <http://purl.obolibrary.org/obo/OBI_0500023> ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:qualityAssurance
+trsp:typeProcedureQualityAssurance
   a skos:Concept ;
   skos:prefLabel "Quality Assurance"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:registerAI
+trsp:typeProcedureRegisterAI
   a skos:Concept ;
   skos:prefLabel "Maintain AI-Related and Usage Records"@en ;
   skos:inScheme trsp:checklistPolicies .
 
-
-trsp:policyDevelopment
+trsp:typeProcedurePolicyDevelopment
   a skos:Concept ;
   skos:prefLabel "Policy Development"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:standardsAdoption
+trsp:typeProcedureStandardsAdoption
   a skos:Concept ;
   skos:prefLabel "Standards Adoption"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:legalProcesses
+trsp:typeProcedureLegalProcesses
   a skos:Concept ;
   skos:prefLabel "Legal Processes"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:changeManagement
+trsp:typeProcedureChangeManagement
   a skos:Concept ;
   skos:prefLabel "Change Management"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:dataBreach
+trsp:typeProcedureDataBreach
   a skos:Concept ;
   skos:prefLabel "Data Breach"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
-trsp:disasterRecovery
+trsp:typeProcedureDisasterRecovery
   a skos:Concept ;
   skos:prefLabel "Disaster Recovery"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
