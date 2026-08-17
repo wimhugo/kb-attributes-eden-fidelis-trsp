@@ -1,0 +1,250 @@
+@prefix rdmia: <https://example.org/rdmi-affiliation/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+rdmia:scheme a skos:ConceptScheme ;
+    skos:prefLabel "RDMI Repository / Infrastructure Affiliation Types"@en ;
+    dct:description "Controlled vocabulary for describing affiliation relationships between repositories or other RDMI resources and infrastructures, networks, federations, ecosystems, communities, and recognition schemes."@en ;
+    skos:hasTopConcept rdmia:affiliation .
+
+rdmia:affiliation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Research infrastructure affiliation"@en ;
+    skos:definition "A relationship connecting a repository, service, organisation, or other RDMI resource with a research infrastructure, network, federation, community, ecosystem, or recognition scheme."@en ;
+    skos:topConceptOf rdmia:scheme ;
+    skos:scopeNote "Umbrella concept. The affiliation should normally be represented as a relationship with a target entity, role/status, dates, and evidence."@en ;
+    skos:example "World Data System; EOSC Federation; ELIXIR; CESSDA ERIC; RDA"@en .
+
+rdmia:membership a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Membership"@en ;
+    skos:definition "Formal or recognised membership of an organisation, network, infrastructure, or community."@en ;
+    skos:broader rdmia:affiliation ;
+    skos:scopeNote "Use where the affiliated resource or its responsible organisation is explicitly accepted as a member."@en ;
+    skos:example "World Data System membership; RDA organisational membership"@en .
+
+rdmia:organisation-membership a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Organisation membership"@en ;
+    skos:definition "Membership held by an organisation in another organisation or formal community."@en ;
+    skos:broader rdmia:membership ;
+    skos:scopeNote "The repository may inherit relevance from its operator's membership, but that distinction should be retained."@en ;
+    skos:example "RDA organisational membership"@en .
+
+rdmia:repository-network-membership a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Repository network membership"@en ;
+    skos:definition "Membership of a network whose members are repositories, data centres, archives, or equivalent stewardship organisations."@en ;
+    skos:broader rdmia:membership ;
+    skos:scopeNote "Useful for networks that admit repositories against explicit membership criteria."@en ;
+    skos:example "World Data System"@en .
+
+rdmia:research-infrastructure-membership a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Research infrastructure membership"@en ;
+    skos:definition "Membership in, or formal constituent status within, a research infrastructure."@en ;
+    skos:broader rdmia:membership ;
+    skos:scopeNote "May apply to the legal operator, national node, service centre, repository, or other constituent part."@en ;
+    skos:example "CESSDA ERIC; CLARIN ERIC; DARIAH ERIC; ICOS ERIC"@en .
+
+rdmia:federation-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Federation participation"@en ;
+    skos:definition "Participation in a federated research or digital infrastructure in which independently operated nodes or providers interoperate under common governance or technical arrangements."@en ;
+    skos:broader rdmia:affiliation ;
+    skos:scopeNote "Use when federation participation is more precise than generic membership."@en ;
+    skos:example "EOSC Federation; EGI Federation"@en .
+
+rdmia:node-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Node participation"@en ;
+    skos:definition "Participation through operation of, or formal association with, a node in a federated infrastructure."@en ;
+    skos:broader rdmia:federation-participation ;
+    skos:scopeNote "Distinguish operating a node from merely onboarding a resource to a node."@en ;
+    skos:example "EOSC Node; national/thematic infrastructure node"@en .
+
+rdmia:service-provider-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Service provider participation"@en ;
+    skos:definition "Participation as a provider of an operational service made available through a federation or infrastructure."@en ;
+    skos:broader rdmia:federation-participation ;
+    skos:scopeNote "Use for services rather than datasets or metadata contributions."@en ;
+    skos:example "EOSC service provider; EGI service provider"@en .
+
+rdmia:resource-provider-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Resource provider participation"@en ;
+    skos:definition "Participation as a provider of data, software, compute, storage, instruments, or other research resources."@en ;
+    skos:broader rdmia:federation-participation ;
+    skos:scopeNote "Broader than service provision and may cover multiple resource types."@en ;
+    skos:example "EOSC resource provider"@en .
+
+rdmia:resource-onboarding a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Resource onboarding"@en ;
+    skos:definition "Affiliation created when a resource is formally onboarded, registered, or made available through an existing federation node or provider."@en ;
+    skos:broader rdmia:federation-participation ;
+    skos:scopeNote "Does not imply that the resource operator itself is a federation node."@en ;
+    skos:example "Service onboarded to an EOSC Node"@en .
+
+rdmia:ecosystem-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Data ecosystem participation"@en ;
+    skos:definition "Participation in a governed ecosystem that enables discovery, access, exchange, or reuse of research or other data resources."@en ;
+    skos:broader rdmia:affiliation ;
+    skos:scopeNote "Umbrella for data spaces, commons, observing systems, and disciplinary networks."@en ;
+    skos:example "European Data Spaces; research commons; GEO"@en .
+
+rdmia:data-space-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Data space participation"@en ;
+    skos:definition "Participation in a data space governed by common rules, infrastructure, interoperability arrangements, or data-sharing agreements."@en ;
+    skos:broader rdmia:ecosystem-participation ;
+    skos:scopeNote "Use for Common European Data Spaces and analogous governed data-sharing ecosystems."@en ;
+    skos:example "European Health Data Space ecosystem; Green Deal Data Space initiatives"@en .
+
+rdmia:data-commons-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Data commons participation"@en ;
+    skos:definition "Participation in a research data commons combining data, services, compute, governance, or shared community resources."@en ;
+    skos:broader rdmia:ecosystem-participation ;
+    skos:scopeNote "Appropriate where 'commons' is the explicit organisational or technical model."@en ;
+    skos:example "Domain or national research data commons"@en .
+
+rdmia:observing-network-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Observing network participation"@en ;
+    skos:definition "Participation in an observing system or coordinated network supplying observational data, products, or services."@en ;
+    skos:broader rdmia:ecosystem-participation ;
+    skos:scopeNote "Especially relevant to Earth/environmental observation infrastructures."@en ;
+    skos:example "GEO/GEOSS; WMO observing systems"@en .
+
+rdmia:disciplinary-data-network-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Disciplinary data network participation"@en ;
+    skos:definition "Participation in a domain-specific network for research data, repositories, services, or standards."@en ;
+    skos:broader rdmia:ecosystem-participation ;
+    skos:scopeNote "Use when the defining relationship is disciplinary rather than legal/federated."@en ;
+    skos:example "ELIXIR; SeaDataNet; ENVRI community"@en .
+
+rdmia:contribution a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Infrastructure contribution"@en ;
+    skos:definition "A relationship based primarily on contributing data, metadata, software, services, or other resources to a shared infrastructure or network."@en ;
+    skos:broader rdmia:affiliation ;
+    skos:scopeNote "Contribution need not imply membership."@en ;
+    skos:example "OpenAIRE data source; GEO data contribution"@en .
+
+rdmia:metadata-aggregator-contribution a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Metadata aggregator contribution"@en ;
+    skos:definition "Contribution of metadata to an external aggregation or research graph."@en ;
+    skos:broader rdmia:contribution ;
+    skos:scopeNote "The external system may harvest, ingest, or otherwise aggregate repository metadata."@en ;
+    skos:example "OpenAIRE Research Graph"@en .
+
+rdmia:catalogue-contribution a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Catalogue contribution"@en ;
+    skos:definition "Registration or contribution of resources to a shared catalogue or discovery service."@en ;
+    skos:broader rdmia:contribution ;
+    skos:scopeNote "Focuses on catalogue inclusion rather than bulk metadata graph aggregation."@en ;
+    skos:example "EOSC Resource Catalogue; domain catalogues"@en .
+
+rdmia:data-contribution a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Data contribution"@en ;
+    skos:definition "Provision of datasets or data products to a shared infrastructure, network, or observing system."@en ;
+    skos:broader rdmia:contribution ;
+    skos:scopeNote "Use where the primary object contributed is data rather than metadata."@en ;
+    skos:example "GEO/GEOSS; disciplinary data networks"@en .
+
+rdmia:software-contribution a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Software contribution"@en ;
+    skos:definition "Provision of research software, workflows, or related executable resources to a shared infrastructure or ecosystem."@en ;
+    skos:broader rdmia:contribution ;
+    skos:scopeNote "Useful where infrastructure participation is through software rather than data or services."@en ;
+    skos:example "EOSC software resource; workflow registries"@en .
+
+rdmia:recognition a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Recognition or selection"@en ;
+    skos:definition "Affiliation arising because a repository or resource has been selected, recognised, recommended, designated, or certified according to stated criteria."@en ;
+    skos:broader rdmia:affiliation ;
+    skos:scopeNote "This branch is closest to the re3data notion of a repository 'profile'."@en ;
+    skos:example "WDS Regular Member; ELIXIR Core Data Resource; CoreTrustSeal"@en .
+
+rdmia:recommended-repository a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Recommended repository"@en ;
+    skos:definition "Repository explicitly recommended by a community, publisher group, funder, infrastructure, or other authoritative body."@en ;
+    skos:broader rdmia:recognition ;
+    skos:scopeNote "Recommendation may be based on formal or informal criteria and should retain a reference to those criteria."@en ;
+    skos:example "COPDESS/AGU recommended repositories"@en .
+
+rdmia:recognised-core-resource a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Recognised or core resource"@en ;
+    skos:definition "Resource formally designated as especially important, authoritative, core, reference, or strategic by a community or infrastructure."@en ;
+    skos:broader rdmia:recognition ;
+    skos:scopeNote "Can apply to databases, repositories, services, or other resources."@en ;
+    skos:example "ELIXIR Core Data Resources"@en .
+
+rdmia:certified-repository a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Certified repository"@en ;
+    skos:definition "Repository recognised through successful completion of a defined certification or audit process."@en ;
+    skos:broader rdmia:recognition ;
+    skos:scopeNote "Certification itself should normally be modelled separately, with scheme, dates and evidence."@en ;
+    skos:example "CoreTrustSeal; ISO 16363 certification"@en .
+
+rdmia:accredited-provider a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Accredited or approved provider"@en ;
+    skos:definition "Provider approved or accredited to provide specified resources or services under an infrastructure or community scheme."@en ;
+    skos:broader rdmia:recognition ;
+    skos:scopeNote "Use when formal provider approval is the defining relationship."@en ;
+    skos:example "Approved service/provider programmes"@en .
+
+rdmia:community-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Research-data community participation"@en ;
+    skos:definition "Participation in a research-data, standards, policy, or practice community without necessarily being a formal infrastructure member."@en ;
+    skos:broader rdmia:affiliation ;
+    skos:scopeNote "Useful for communities whose primary purpose is coordination, standards, or practice rather than service federation."@en ;
+    skos:example "Research Data Alliance"@en .
+
+rdmia:standards-community-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Standards community participation"@en ;
+    skos:definition "Participation in a community developing, maintaining, adopting, or promoting technical or metadata standards."@en ;
+    skos:broader rdmia:community-participation ;
+    skos:scopeNote "May overlap with organisational membership but captures the functional nature of the affiliation."@en ;
+    skos:example "RDA working groups; OGC communities"@en .
+
+rdmia:practice-network-participation a skos:Concept ;
+    skos:inScheme rdmia:scheme ;
+    skos:prefLabel "Practice network participation"@en ;
+    skos:definition "Participation in a community of practice concerned with stewardship, preservation, FAIR practice, repository operation, or related RDMI activities."@en ;
+    skos:broader rdmia:community-participation ;
+    skos:scopeNote "Use for collaborative practice networks without a stronger membership/federation relation."@en ;
+    skos:example "Preservation and FAIR-data communities"@en .
+
+# Illustrative modelling pattern
+rdmia:AffiliationAssertion a rdfs:Class ;
+    rdfs:label "Affiliation assertion"@en .
+
+rdmia:affiliationType a rdf:Property ;
+    rdfs:label "affiliation type"@en .
+
+rdmia:affiliatedWith a rdf:Property ;
+    rdfs:label "affiliated with"@en .
+
+rdmia:affiliationRole a rdf:Property ;
+    rdfs:label "affiliation role"@en .
+
+rdmia:affiliationStatus a rdf:Property ;
+    rdfs:label "affiliation status"@en .
