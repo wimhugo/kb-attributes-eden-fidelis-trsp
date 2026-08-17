@@ -1,31 +1,177 @@
-## add EUDAT
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
+trsp:typeService
+  a skos:ConceptScheme ;
+  skos:prefLabel "Checklist for APIs"@en ;
+  dct:title "Checklist for APIs"@en ;
+  dct:description "List of API service types/ protocols available"@en ;
+  skos:hasTopConcept trsp:typePurpose ,
+                     trsp:typeSpecialisation ,
+                     trsp:typeAutomation ;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ;
+  dct:contributor <https://orcid.org/0000-0003-1106-8441> ;
+  dct:contributor <https://orcid.org/0000-0002-3200-2698> ;
+  owl:versionInfo "0.1" .
 
+trsp:typeSpecialisation
+  a skos:Concept ;
+  skos:prefLabel "Service Specialisation"@en ;
+  skos:note "Specialisation of service - as identified by EOSC EDEN."@en ;
+  skos:inScheme trsp:typeService .
 
+trsp:typePurpose
+  a skos:Concept ;
+  skos:prefLabel "Service Purpose"@en ;
+  skos:note "Purpose of service - general"@en ;
+  skos:inScheme trsp:typeService .
 
+trsp:typeAutomation
+  a skos:Concept ;
+  skos:prefLabel "Level and Type of Automation"@en ;
+  skos:inScheme trsp:typeService .
 
-trsp:typePreservationServices
+# --------------------------------------------------------------------------
+# EOSC Service Purpose
+# --------------------------------------------------------------------------
 
-trsp:typeWebsiteServices
+trsp:typeEoscPurpose
+  a skos:Concept ;
+  skos:prefLabel "EOSC Service Types"@en ;
+  skos:note "Differentiated on purpose of service, as identified by EOSC"@en ;
+  skos:broader trsp:typePurpose ;
+  skos:inScheme trsp:typeService .
 
-trsp:typeAAIServices
+trsp:typeEoscPublishDiscover
+  skos:prefabel "Publishing & Discovery"@en ;
+  skos:definition "Catch-all repositories (e.g., Zenodo-like), data repositories (e.g., PANGAEA), software repositories, scientific data collections (Copernicus, biobanks), metadata aggregators/catalogues, SKGs, service catalogues, instrument registries, etc.; both APIs and web portals, semantic artefact catalogues (e,g. OntoPortal-based SAC, or EBI-based catalogues or TIB Terminology services)"@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
 
-trsp:typeRepository
+trsp:typeEoscAssessMonitor
+  skos:prefabel "Research Assessment & Monitoring"@en ;
+  skos:definition "FAIR validators, Open Science monitoring tools, research impact and evaluation systems"@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
 
-trsp:typeCatalogueServices
-skos:exactMatch dcat:catalog
-skos:broader trsp:typeRepository
+trsp:typeEoscDataCuration
+  skos:prefabel "Data Management & Curation"@en ;
+  skos:definition "Data management plan tools (DMP tools), metadata editors, curation/annotation platforms, data policy management"@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
 
-trsp:typePolicyLicenceRegistry
-skos:broader trsp:typeRegistry
+trsp:typeEoscProcessingAnalysis
+  skos:prefabel "Data Processing & Analysis"@en ;
+  skos:definition "Jupyter notebooks, workflow engines, analysis platforms, AI/ML services, statistical tools"@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
 
-trsp:typeCrosswalksRegistry
-skos:broader trsp:typeRegistry
+trsp:typeEoscComputeService
+  skos:prefabel "Compute Services"@en ;
+  skos:definition "HPC clusters, cloud compute (IaaS), virtual machines, container orchestration (Kubernetes)"@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
 
-trsp:typeMetadataSchemaRegistry
-skos:broader trsp:typeRegistry
+trsp:typeEoscStorageService
+  skos:prefabel "Storage Services"@en ;
+  skos:definition "Object storage (S3), archival storage, file systems, backup services, long-term preservation platforms, security storage services"@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
 
-trsp:typeFormatGuidanceAPI
-skos:broader trsp:typeFileServices
+ trsp:typeEoscNetworkService
+  skos:prefabel "Networking Services"@en ;
+  skos:definition "Research networks (NRENs), VPNs, high-speed data transfer services, federated connectivity"@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscScienceGateway
+  skos:prefabel "ScienceGateway"@en ;
+  skos:definition "Web-based research platforms, such as virtual labs or Virtual Research Environments"@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+# --------------------------------------------------------------------------
+# EDEN Service Specialisation
+# --------------------------------------------------------------------------
+
+trsp:typePreservationService
+  skos:prefabel "Preservation Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeWebsiteService
+  skos:prefabel "Website Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeAssessmentService
+  skos:prefabel "Assessment Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
 
 trsp:typeAAIService
+  skos:prefabel "Authentication and Identification Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typePIDService
+  skos:prefabel "Persistent Identifier Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:trsp:typeRepository
+  skos:prefabel "Repository Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeCatalogueService
+  skos:prefabel "Catalogue Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:exactMatch dcat:catalog ;
+  skos:broader trsp:typeRepository ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeRegistryService
+  skos:prefabel "Registry Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typePolicyLicenceRegistry
+  skos:prefabel "Policy and Licence Registries"@en ;
+  skos:broader trsp:typeRegistryService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeCrosswalksRegistry
+  skos:prefabel "Crosswalks Registries"@en ;
+  skos:broader trsp:typeRegistry ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeMetadataSchemaRegistry
+  skos:prefabel "Metadata Schema Registries"@en ;
+  skos:broader trsp:typeRegistry ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileService
+  skos:prefabel "File/ Data-related Services"@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileFormatRegistry
+  skos:prefabel "File Type and Format Registries"@en ;
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+# --------------------------------------------------------------------------
+# EDEN Service Individuals (maybe just service class instances) - 1 example
+# --------------------------------------------------------------------------
+
+trsp:typeFormatGuidanceAPI
+  skos:prefLabel ""@en ;
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
