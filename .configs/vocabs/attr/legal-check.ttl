@@ -20,6 +20,36 @@ trsp:termsOfUse
   rdfs:seeAlso <http://www.data-knowledge.org/dk/hasTerms> ;
   skos:inScheme trsp:checklistLegalDocuments .
 
+trsp:confidentialityAgreement
+  a skos:Concept ;
+  skos:prefLabel "Confidentiality Agreement"@en ;
+  skos:definition "Agreements that enforce confidentiality for e.g. to protect business, professional, or company secrets"@en ;
+  skos:exactMatch dpv:ConfidentialityAgreement ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:accessRulePolicy
+  a skos:Concept ;
+  skos:prefLabel "Data Subject Rules "@en ;
+  skos:definition "A policy that includes data subject assertions (in ODRL terms) and described or encoded to reflect data subject permissions, prohibitions, and controller duties"@en ;
+  skos:closeMatch dpv:ControllerDataSubjectAgreement ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:processRulePolicy
+  a skos:Concept ;
+  skos:prefLabel "Processor Rules "@en ;
+  skos:definition "A policy that includes process rules imposed by a repository or its platforms, defining permissions, prohibitions, and controller/ processor duties"@en ;
+  skos:closeMatch dpv:ControllerProcessorAgreement ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:dataProcessingAgreement
+  a skos:Concept ;
+  skos:prefLabel "Data Processing Agreement"@en ;
+  skos:definition "A written or encoded policy in ODRL terms, defining the combination of Data Subject Rules, Licence, and Process Rules agreed with a Data Subject"@en ;
+  skos:note "DPV: An agreement outlining conditions, criteria, obligations, responsibilities, and specifics for carrying out processing of data"@en ;
+  skos:closeMatch dpv:ControllerProcessorAgreement ;
+  skos:inScheme trsp:checklistLegalDocuments .
+dpv:DataProcessingAgreement
+
 trsp:privacyStatement
   a skos:Concept ;
   skos:prefLabel "Privacy Statement"@en ;
