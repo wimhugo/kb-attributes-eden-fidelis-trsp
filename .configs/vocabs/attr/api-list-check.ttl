@@ -16,14 +16,26 @@ trsp:checklistAPI
   dct:contributor <https://orcid.org/0000-0002-3200-2698> ;
   owl:versionInfo "0.1" .
 
-trsp:oai-pmh
+trsp:typeHarvesterAPI
   a skos:Concept ;
-  skos:prefLabel "OAI-PMH Harvesting Endpoint"@en ;
+  skos:prefLabel "Harvesting Endpoints"@en ;
   skos:inScheme trsp:checklistAPI .
 
-trsp:csw
+trsp:typeOAIPMH
+  a skos:Concept ;
+  skos:prefLabel "OAI-PMH Harvesting Endpoint"@en ;
+  skos:broader trsp:typeHarvesterAPI ;
+  skos:inScheme trsp:checklistAPI .
+
+trsp:typeCSW
   a skos:Concept ;
   skos:prefLabel "OGC CS/W Harvesting Endpoint"@en ;
+  skos:broader trsp:typeHarvesterAPI ;
+  skos:inScheme trsp:checklistAPI .
+
+trsp:typeAPI
+  a skos:Concept ;
+  skos:prefLabel "Endpoint Types"@en ;
   skos:inScheme trsp:checklistAPI .
 
 trsp:rest
