@@ -46,6 +46,39 @@ trsp:typeAsDeposited
   skos:broader trsp:typeCurationLevel ;
   skos:inScheme trsp:checklistCurationType 
 
+# Automation
+#----------------------------------------------------------
+trsp:typeCurationAutomationLevel
+  a skos:Concept ;
+  skos:prefLabel "Levels of Automation"@en ;
+  skos:closeMatch trsp:typeAutomationLevel ;
+  # mirrors trsp:typeAutomationLevel
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCurationManual
+  a skos:Concept ;
+  skos:prefLabel "Manual Curation"@en ;
+  skos:broader typeCurationAutomationLevel 
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCurationAutomated
+  a skos:Concept ;
+  skos:prefLabel "Automated Curation"@en ;
+  skos:broader typeCurationAutomationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCurationAI
+  a skos:Concept ;
+  skos:prefLabel "AI-assisted Curation"@en ;
+  skos:broader typeCurationAutomationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCurationAIModerated
+  a skos:Concept ;
+  skos:prefLabel "AI with Human Moderated Curation"@en ;
+  skos:broader typeCurationAutomationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
 # Curation Activity
 #----------------------------------------------------------
 trsp:typeCurationActivity
