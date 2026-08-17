@@ -4,21 +4,36 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-trsp:scheme a skos:ConceptScheme ;
+trsp:typeAffiliation a skos:ConceptScheme ;
     skos:prefLabel "RDMI Repository / Infrastructure Affiliation Types"@en ;
     dct:description "Controlled vocabulary for describing affiliation relationships between repositories or other RDMI resources and infrastructures, networks, federations, ecosystems, communities, and recognition schemes."@en ;
     skos:hasTopConcept trsp:affiliation .
 
+# Illustrative modelling pattern - properties
+
+trsp:AffiliationAssertion a rdfs:Class ;
+    rdfs:label "Affiliation assertion"@en .
+trsp:affiliationType a rdf:Property ;
+    rdfs:label "affiliation type"@en .
+trsp:affiliatedWith a rdf:Property ;
+    rdfs:label "affiliated with"@en .
+trsp:affiliationRole a rdf:Property ;
+    rdfs:label "affiliation role"@en .
+trsp:affiliationStatus a rdf:Property ;
+    rdfs:label "affiliation status"@en .
+
+# Concepts
+
 trsp:affiliation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Research infrastructure affiliation"@en ;
     skos:definition "A relationship connecting a repository, service, organisation, or other RDMI resource with a research infrastructure, network, federation, community, ecosystem, or recognition scheme."@en ;
-    skos:topConceptOf trsp:scheme ;
+    skos:topConceptOf trsp:typeAffiliation ;
     skos:scopeNote "Umbrella concept. The affiliation should normally be represented as a relationship with a target entity, role/status, dates, and evidence."@en ;
     skos:example "World Data System; EOSC Federation; ELIXIR; CESSDA ERIC; RDA"@en .
 
 trsp:membership a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Membership"@en ;
     skos:definition "Formal or recognised membership of an organisation, network, infrastructure, or community."@en ;
     skos:broader trsp:affiliation ;
@@ -26,7 +41,7 @@ trsp:membership a skos:Concept ;
     skos:example "World Data System membership; RDA organisational membership"@en .
 
 trsp:organisation-membership a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Organisation membership"@en ;
     skos:definition "Membership held by an organisation in another organisation or formal community."@en ;
     skos:broader trsp:membership ;
@@ -34,7 +49,7 @@ trsp:organisation-membership a skos:Concept ;
     skos:example "RDA organisational membership"@en .
 
 trsp:repository-network-membership a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Repository network membership"@en ;
     skos:definition "Membership of a network whose members are repositories, data centres, archives, or equivalent stewardship organisations."@en ;
     skos:broader trsp:membership ;
@@ -42,7 +57,7 @@ trsp:repository-network-membership a skos:Concept ;
     skos:example "World Data System"@en .
 
 trsp:research-infrastructure-membership a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Research infrastructure membership"@en ;
     skos:definition "Membership in, or formal constituent status within, a research infrastructure."@en ;
     skos:broader trsp:membership ;
@@ -50,7 +65,7 @@ trsp:research-infrastructure-membership a skos:Concept ;
     skos:example "CESSDA ERIC; CLARIN ERIC; DARIAH ERIC; ICOS ERIC"@en .
 
 trsp:federation-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Federation participation"@en ;
     skos:definition "Participation in a federated research or digital infrastructure in which independently operated nodes or providers interoperate under common governance or technical arrangements."@en ;
     skos:broader trsp:affiliation ;
@@ -58,7 +73,7 @@ trsp:federation-participation a skos:Concept ;
     skos:example "EOSC Federation; EGI Federation"@en .
 
 trsp:node-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Node participation"@en ;
     skos:definition "Participation through operation of, or formal association with, a node in a federated infrastructure."@en ;
     skos:broader trsp:federation-participation ;
@@ -66,7 +81,7 @@ trsp:node-participation a skos:Concept ;
     skos:example "EOSC Node; national/thematic infrastructure node"@en .
 
 trsp:service-provider-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Service provider participation"@en ;
     skos:definition "Participation as a provider of an operational service made available through a federation or infrastructure."@en ;
     skos:broader trsp:federation-participation ;
@@ -74,7 +89,7 @@ trsp:service-provider-participation a skos:Concept ;
     skos:example "EOSC service provider; EGI service provider"@en .
 
 trsp:resource-provider-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Resource provider participation"@en ;
     skos:definition "Participation as a provider of data, software, compute, storage, instruments, or other research resources."@en ;
     skos:broader trsp:federation-participation ;
@@ -82,7 +97,7 @@ trsp:resource-provider-participation a skos:Concept ;
     skos:example "EOSC resource provider"@en .
 
 trsp:resource-onboarding a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Resource onboarding"@en ;
     skos:definition "Affiliation created when a resource is formally onboarded, registered, or made available through an existing federation node or provider."@en ;
     skos:broader trsp:federation-participation ;
@@ -90,7 +105,7 @@ trsp:resource-onboarding a skos:Concept ;
     skos:example "Service onboarded to an EOSC Node"@en .
 
 trsp:ecosystem-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Data ecosystem participation"@en ;
     skos:definition "Participation in a governed ecosystem that enables discovery, access, exchange, or reuse of research or other data resources."@en ;
     skos:broader trsp:affiliation ;
@@ -98,7 +113,7 @@ trsp:ecosystem-participation a skos:Concept ;
     skos:example "European Data Spaces; research commons; GEO"@en .
 
 trsp:data-space-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Data space participation"@en ;
     skos:definition "Participation in a data space governed by common rules, infrastructure, interoperability arrangements, or data-sharing agreements."@en ;
     skos:broader trsp:ecosystem-participation ;
@@ -106,7 +121,7 @@ trsp:data-space-participation a skos:Concept ;
     skos:example "European Health Data Space ecosystem; Green Deal Data Space initiatives"@en .
 
 trsp:data-commons-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Data commons participation"@en ;
     skos:definition "Participation in a research data commons combining data, services, compute, governance, or shared community resources."@en ;
     skos:broader trsp:ecosystem-participation ;
@@ -114,7 +129,7 @@ trsp:data-commons-participation a skos:Concept ;
     skos:example "Domain or national research data commons"@en .
 
 trsp:observing-network-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Observing network participation"@en ;
     skos:definition "Participation in an observing system or coordinated network supplying observational data, products, or services."@en ;
     skos:broader trsp:ecosystem-participation ;
@@ -122,7 +137,7 @@ trsp:observing-network-participation a skos:Concept ;
     skos:example "GEO/GEOSS; WMO observing systems"@en .
 
 trsp:disciplinary-data-network-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Disciplinary data network participation"@en ;
     skos:definition "Participation in a domain-specific network for research data, repositories, services, or standards."@en ;
     skos:broader trsp:ecosystem-participation ;
@@ -130,7 +145,7 @@ trsp:disciplinary-data-network-participation a skos:Concept ;
     skos:example "ELIXIR; SeaDataNet; ENVRI community"@en .
 
 trsp:contribution a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Infrastructure contribution"@en ;
     skos:definition "A relationship based primarily on contributing data, metadata, software, services, or other resources to a shared infrastructure or network."@en ;
     skos:broader trsp:affiliation ;
@@ -138,7 +153,7 @@ trsp:contribution a skos:Concept ;
     skos:example "OpenAIRE data source; GEO data contribution"@en .
 
 trsp:metadata-aggregator-contribution a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Metadata aggregator contribution"@en ;
     skos:definition "Contribution of metadata to an external aggregation or research graph."@en ;
     skos:broader trsp:contribution ;
@@ -146,7 +161,7 @@ trsp:metadata-aggregator-contribution a skos:Concept ;
     skos:example "OpenAIRE Research Graph"@en .
 
 trsp:catalogue-contribution a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Catalogue contribution"@en ;
     skos:definition "Registration or contribution of resources to a shared catalogue or discovery service."@en ;
     skos:broader trsp:contribution ;
@@ -154,7 +169,7 @@ trsp:catalogue-contribution a skos:Concept ;
     skos:example "EOSC Resource Catalogue; domain catalogues"@en .
 
 trsp:data-contribution a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Data contribution"@en ;
     skos:definition "Provision of datasets or data products to a shared infrastructure, network, or observing system."@en ;
     skos:broader trsp:contribution ;
@@ -162,7 +177,7 @@ trsp:data-contribution a skos:Concept ;
     skos:example "GEO/GEOSS; disciplinary data networks"@en .
 
 trsp:software-contribution a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Software contribution"@en ;
     skos:definition "Provision of research software, workflows, or related executable resources to a shared infrastructure or ecosystem."@en ;
     skos:broader trsp:contribution ;
@@ -170,7 +185,7 @@ trsp:software-contribution a skos:Concept ;
     skos:example "EOSC software resource; workflow registries"@en .
 
 trsp:recognition a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Recognition or selection"@en ;
     skos:definition "Affiliation arising because a repository or resource has been selected, recognised, recommended, designated, or certified according to stated criteria."@en ;
     skos:broader trsp:affiliation ;
@@ -178,7 +193,7 @@ trsp:recognition a skos:Concept ;
     skos:example "WDS Regular Member; ELIXIR Core Data Resource; CoreTrustSeal"@en .
 
 trsp:recommended-repository a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Recommended repository"@en ;
     skos:definition "Repository explicitly recommended by a community, publisher group, funder, infrastructure, or other authoritative body."@en ;
     skos:broader trsp:recognition ;
@@ -186,7 +201,7 @@ trsp:recommended-repository a skos:Concept ;
     skos:example "COPDESS/AGU recommended repositories"@en .
 
 trsp:recognised-core-resource a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Recognised or core resource"@en ;
     skos:definition "Resource formally designated as especially important, authoritative, core, reference, or strategic by a community or infrastructure."@en ;
     skos:broader trsp:recognition ;
@@ -194,7 +209,7 @@ trsp:recognised-core-resource a skos:Concept ;
     skos:example "ELIXIR Core Data Resources"@en .
 
 trsp:certified-repository a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Certified repository"@en ;
     skos:definition "Repository recognised through successful completion of a defined certification or audit process."@en ;
     skos:broader trsp:recognition ;
@@ -202,7 +217,7 @@ trsp:certified-repository a skos:Concept ;
     skos:example "CoreTrustSeal; ISO 16363 certification"@en .
 
 trsp:accredited-provider a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Accredited or approved provider"@en ;
     skos:definition "Provider approved or accredited to provide specified resources or services under an infrastructure or community scheme."@en ;
     skos:broader trsp:recognition ;
@@ -210,7 +225,7 @@ trsp:accredited-provider a skos:Concept ;
     skos:example "Approved service/provider programmes"@en .
 
 trsp:community-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Research-data community participation"@en ;
     skos:definition "Participation in a research-data, standards, policy, or practice community without necessarily being a formal infrastructure member."@en ;
     skos:broader trsp:affiliation ;
@@ -218,7 +233,7 @@ trsp:community-participation a skos:Concept ;
     skos:example "Research Data Alliance"@en .
 
 trsp:standards-community-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Standards community participation"@en ;
     skos:definition "Participation in a community developing, maintaining, adopting, or promoting technical or metadata standards."@en ;
     skos:broader trsp:community-participation ;
@@ -226,25 +241,10 @@ trsp:standards-community-participation a skos:Concept ;
     skos:example "RDA working groups; OGC communities"@en .
 
 trsp:practice-network-participation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:typeAffiliation ;
     skos:prefLabel "Practice network participation"@en ;
     skos:definition "Participation in a community of practice concerned with stewardship, preservation, FAIR practice, repository operation, or related RDMI activities."@en ;
     skos:broader trsp:community-participation ;
     skos:scopeNote "Use for collaborative practice networks without a stronger membership/federation relation."@en ;
     skos:example "Preservation and FAIR-data communities"@en .
 
-# Illustrative modelling pattern
-trsp:AffiliationAssertion a rdfs:Class ;
-    rdfs:label "Affiliation assertion"@en .
-
-trsp:affiliationType a rdf:Property ;
-    rdfs:label "affiliation type"@en .
-
-trsp:affiliatedWith a rdf:Property ;
-    rdfs:label "affiliated with"@en .
-
-trsp:affiliationRole a rdf:Property ;
-    rdfs:label "affiliation role"@en .
-
-trsp:affiliationStatus a rdf:Property ;
-    rdfs:label "affiliation status"@en .
