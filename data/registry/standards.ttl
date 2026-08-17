@@ -9,6 +9,10 @@ trsp:scheme a skos:ConceptScheme ;
     skos:prefLabel "RDMI Standards Registry — Starter Exemplar"@en ;
     dct:description "Curated placeholder registry for unambiguous references to web, repository, research-data, preservation, security and interoperability standards and specifications."@en .
 
+# Properties and classes
+
+trsp:Standard a rdfs:Class ;
+    rdfs:label "Standard"@en .
 trsp:authority a rdf:Property .
 trsp:identifierScheme a rdf:Property .
 trsp:version a rdf:Property .
