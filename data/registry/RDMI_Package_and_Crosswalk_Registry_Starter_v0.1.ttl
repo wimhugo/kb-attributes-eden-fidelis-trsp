@@ -1,0 +1,569 @@
+@prefix pkg: <https://example.org/rdmi-package/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pkg:packageTypeScheme a skos:ConceptScheme ;
+    skos:prefLabel "RDMI Package Types"@en .
+
+pkg:transformationTypeScheme a skos:ConceptScheme ;
+    skos:prefLabel "RDMI Package Transformation Types"@en .
+
+pkg:fidelityScheme a skos:ConceptScheme ;
+    skos:prefLabel "RDMI Package Transformation Fidelity"@en .
+
+pkg:automationScheme a skos:ConceptScheme ;
+    skos:prefLabel "RDMI Package Transformation Automation Levels"@en .
+
+pkg:PackageSpecification a rdfs:Class .
+pkg:PackageModel a rdfs:Class .
+pkg:PackageProfile a rdfs:Class .
+pkg:TransformationSpecification a rdfs:Class .
+pkg:TransformationImplementation a rdfs:Class .
+
+pkg:packageType a rdf:Property .
+pkg:packageRole a rdf:Property .
+pkg:profileOf a rdf:Property .
+pkg:sourcePackage a rdf:Property .
+pkg:targetPackage a rdf:Property .
+pkg:transformationType a rdf:Property .
+pkg:fidelity a rdf:Property .
+pkg:automationLevel a rdf:Property .
+pkg:requiresEnrichment a rdf:Property .
+pkg:implementedBy a rdf:Property .
+
+pkg:package-model a skos:Concept ;
+    skos:inScheme pkg:packageTypeScheme ;
+    skos:prefLabel "Package model"@en ;
+    skos:definition "Abstract model defining the semantic/lifecycle role of a package without requiring a concrete serialization."@en ;
+    skos:note "Abstract"@en .
+
+pkg:transfer-package a skos:Concept ;
+    skos:inScheme pkg:packageTypeScheme ;
+    skos:prefLabel "Transfer package"@en ;
+    skos:definition "Package optimized for reliable transfer of files and associated integrity metadata."@en ;
+    skos:note "Category"@en .
+
+pkg:research-object-package a skos:Concept ;
+    skos:inScheme pkg:packageTypeScheme ;
+    skos:prefLabel "Research object package"@en ;
+    skos:definition "Package that aggregates research artefacts with structured descriptive/contextual metadata."@en ;
+    skos:note "Category"@en .
+
+pkg:preservation-package a skos:Concept ;
+    skos:inScheme pkg:packageTypeScheme ;
+    skos:prefLabel "Preservation package"@en ;
+    skos:definition "Package used in a digital-preservation lifecycle, typically aligned with OAIS roles or archival processing."@en ;
+    skos:note "Category"@en .
+
+pkg:repository-deposit-package a skos:Concept ;
+    skos:inScheme pkg:packageTypeScheme ;
+    skos:prefLabel "Repository deposit package"@en ;
+    skos:definition "Package intended for submission or ingest into a repository."@en ;
+    skos:note "Category"@en .
+
+pkg:archival-storage-package a skos:Concept ;
+    skos:inScheme pkg:packageTypeScheme ;
+    skos:prefLabel "Archival storage package"@en ;
+    skos:definition "Package or object layout intended for persistent archival storage and version management."@en ;
+    skos:note "Category"@en .
+
+pkg:dissemination-package a skos:Concept ;
+    skos:inScheme pkg:packageTypeScheme ;
+    skos:prefLabel "Dissemination package"@en ;
+    skos:definition "Package intended for delivery or reuse by consumers."@en ;
+    skos:note "Category"@en .
+
+pkg:profiled-package a skos:Concept ;
+    skos:inScheme pkg:packageTypeScheme ;
+    skos:prefLabel "Profiled package"@en ;
+    skos:definition "Package specification that constrains or extends a more general package specification."@en ;
+    skos:note "Category"@en .
+
+pkg:oais-sip a pkg:PackageModel ;
+    rdfs:label "OAIS Submission Information Package (SIP)"@en ;
+    pkg:packageType pkg:repository-deposit-package ;
+    pkg:packageRole "Submission" ;
+    dct:conformsTo "ISO 14721:2025 / CCSDS 650.0-M-3" ;
+    pkg:metadataModel "OAIS Information Model" ;
+    pkg:fixitySupport "Model-dependent" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Model-dependent" ;
+    pkg:status "Current abstract role" ;
+    rdfs:seeAlso <https://public.ccsds.org/Pubs/650x0m3.pdf> ;
+    skos:note "Abstract OAIS information-package role; not a concrete serialization."@en .
+
+pkg:oais-aip a pkg:PackageModel ;
+    rdfs:label "OAIS Archival Information Package (AIP)"@en ;
+    pkg:packageType pkg:preservation-package ;
+    pkg:packageRole "Archival" ;
+    dct:conformsTo "ISO 14721:2025 / CCSDS 650.0-M-3" ;
+    pkg:metadataModel "OAIS Information Model" ;
+    pkg:fixitySupport "Model-dependent" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Model-dependent" ;
+    pkg:status "Current abstract role" ;
+    rdfs:seeAlso <https://public.ccsds.org/Pubs/650x0m3.pdf> ;
+    skos:note "Abstract OAIS archival package role."@en .
+
+pkg:oais-dip a pkg:PackageModel ;
+    rdfs:label "OAIS Dissemination Information Package (DIP)"@en ;
+    pkg:packageType pkg:dissemination-package ;
+    pkg:packageRole "Dissemination" ;
+    dct:conformsTo "ISO 14721:2025 / CCSDS 650.0-M-3" ;
+    pkg:metadataModel "OAIS Information Model" ;
+    pkg:fixitySupport "Model-dependent" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Model-dependent" ;
+    pkg:status "Current abstract role" ;
+    rdfs:seeAlso <https://public.ccsds.org/Pubs/650x0m3.pdf> ;
+    skos:note "Abstract OAIS dissemination package role."@en .
+
+pkg:bagit-1 a pkg:PackageSpecification ;
+    rdfs:label "BagIt 1.0"@en ;
+    pkg:packageType pkg:transfer-package ;
+    pkg:packageRole "Transfer / Deposit" ;
+    dct:conformsTo "RFC 8493" ;
+    pkg:metadataModel "BagIt tag files" ;
+    pkg:fixitySupport "Manifest checksums" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Yes via fetch.txt" ;
+    pkg:status "Current" ;
+    rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc8493> ;
+    skos:note "Filesystem packaging format for reliable transfer/storage."@en .
+
+pkg:bdbag a pkg:PackageProfile ;
+    rdfs:label "BDBag (Big Data Bag)"@en ;
+    pkg:packageType pkg:profiled-package ;
+    pkg:packageRole "Transfer / Distributed data" ;
+    dct:conformsTo "BDBag profile / tooling" ;
+    pkg:profileOf pkg:bagit-1 ;
+    pkg:metadataModel "BagIt + optional structured metadata" ;
+    pkg:fixitySupport "Required manifests" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Yes; central use case" ;
+    pkg:status "Community profile" ;
+    rdfs:seeAlso <https://github.com/fair-research/bdbag> ;
+    skos:note "Extends BagIt for large/distributed datasets; commonly called Big Data Bag."@en .
+
+pkg:ro-crate-13 a pkg:PackageSpecification ;
+    rdfs:label "RO-Crate 1.3"@en ;
+    pkg:packageType pkg:research-object-package ;
+    pkg:packageRole "Research object / Exchange" ;
+    dct:conformsTo "RO-Crate 1.3" ;
+    pkg:metadataModel "JSON-LD / Schema.org" ;
+    pkg:fixitySupport "Not core package requirement" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Yes" ;
+    pkg:status "Current Recommendation" ;
+    rdfs:seeAlso <https://w3id.org/ro/crate/1.3> ;
+    skos:note "Aggregates and describes research data and related resources."@en .
+
+pkg:workflow-ro-crate a pkg:PackageProfile ;
+    rdfs:label "Workflow RO-Crate"@en ;
+    pkg:packageType pkg:profiled-package ;
+    pkg:packageRole "Workflow exchange" ;
+    dct:conformsTo "Workflow RO-Crate profile" ;
+    pkg:profileOf pkg:ro-crate-13 ;
+    pkg:metadataModel "RO-Crate JSON-LD" ;
+    pkg:fixitySupport "Inherited / optional" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Yes" ;
+    pkg:status "Community profile" ;
+    rdfs:seeAlso <https://about.workflowhub.eu/Workflow-RO-Crate/> ;
+    skos:note "Specialized RO-Crate for executable workflows."@en .
+
+pkg:ocfl-object a pkg:PackageSpecification ;
+    rdfs:label "OCFL Object"@en ;
+    pkg:packageType pkg:archival-storage-package ;
+    pkg:packageRole "Archival storage" ;
+    dct:conformsTo "OCFL" ;
+    pkg:metadataModel "inventory.json" ;
+    pkg:fixitySupport "Digest-based inventory" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "No / storage-local" ;
+    pkg:status "Current specification family" ;
+    rdfs:seeAlso <https://ocfl.io/> ;
+    skos:note "Application-independent structured storage object; not primarily a transfer package."@en .
+
+pkg:eark-csip a pkg:PackageSpecification ;
+    rdfs:label "E-ARK Common Specification for Information Packages (CSIP)"@en ;
+    pkg:packageType pkg:preservation-package ;
+    pkg:packageRole "Common preservation package" ;
+    dct:conformsTo "E-ARK CSIP" ;
+    pkg:metadataModel "METS-centered" ;
+    pkg:fixitySupport "Checksum/file integrity requirements" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Profile-dependent" ;
+    pkg:status "Current specification family" ;
+    rdfs:seeAlso <https://earkcsip.dilcis.eu/> ;
+    skos:note "Common base extended by E-ARK SIP/AIP/DIP."@en .
+
+pkg:eark-sip a pkg:PackageProfile ;
+    rdfs:label "E-ARK Submission Information Package (SIP)"@en ;
+    pkg:packageType pkg:repository-deposit-package ;
+    pkg:packageRole "Submission" ;
+    dct:conformsTo "E-ARK SIP" ;
+    pkg:profileOf pkg:eark-csip ;
+    pkg:metadataModel "METS-centered" ;
+    pkg:fixitySupport "Yes" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Profile-dependent" ;
+    pkg:status "Current specification family" ;
+    rdfs:seeAlso <https://earksip.dilcis.eu/> ;
+    skos:note "Concrete OAIS-aligned submission profile."@en .
+
+pkg:eark-aip a pkg:PackageProfile ;
+    rdfs:label "E-ARK Archival Information Package (AIP)"@en ;
+    pkg:packageType pkg:preservation-package ;
+    pkg:packageRole "Archival" ;
+    dct:conformsTo "E-ARK AIP" ;
+    pkg:profileOf pkg:eark-csip ;
+    pkg:metadataModel "METS-centered" ;
+    pkg:fixitySupport "Yes" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Profile-dependent" ;
+    pkg:status "Current specification family" ;
+    rdfs:seeAlso <https://earkaip.dilcis.eu/> ;
+    skos:note "Concrete OAIS-aligned archival profile."@en .
+
+pkg:eark-dip a pkg:PackageProfile ;
+    rdfs:label "E-ARK Dissemination Information Package (DIP)"@en ;
+    pkg:packageType pkg:dissemination-package ;
+    pkg:packageRole "Dissemination" ;
+    dct:conformsTo "E-ARK DIP" ;
+    pkg:profileOf pkg:eark-csip ;
+    pkg:metadataModel "METS-centered" ;
+    pkg:fixitySupport "Yes" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Profile-dependent" ;
+    pkg:status "Current specification family" ;
+    rdfs:seeAlso <https://earkdip.dilcis.eu/> ;
+    skos:note "Concrete OAIS-aligned dissemination profile."@en .
+
+pkg:mets-package a pkg:PackageSpecification ;
+    rdfs:label "METS Package"@en ;
+    pkg:packageType pkg:preservation-package ;
+    pkg:packageRole "Packaging / structural metadata" ;
+    dct:conformsTo "METS 1.x" ;
+    pkg:metadataModel "METS XML" ;
+    pkg:fixitySupport "Depends on profile" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Profile-dependent" ;
+    pkg:status "Current schema family" ;
+    rdfs:seeAlso <https://www.loc.gov/standards/mets/> ;
+    skos:note "METS can act as the structural/metadata backbone of preservation packages."@en .
+
+pkg:frictionless-data-package a pkg:PackageSpecification ;
+    rdfs:label "Frictionless Data Package"@en ;
+    pkg:packageType pkg:research-object-package ;
+    pkg:packageRole "Data exchange" ;
+    dct:conformsTo "Frictionless Data Package" ;
+    pkg:metadataModel "datapackage.json" ;
+    pkg:fixitySupport "Resource checksums possible" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Yes" ;
+    pkg:status "Current specification family" ;
+    rdfs:seeAlso <https://specs.frictionlessdata.io/data-package/> ;
+    skos:note "Lightweight JSON metadata package for data resources."@en .
+
+pkg:dataverse-bagit-export a pkg:PackageProfile ;
+    rdfs:label "Dataverse BagIt export package"@en ;
+    pkg:packageType pkg:profiled-package ;
+    pkg:packageRole "Export / Transfer" ;
+    dct:conformsTo "Dataverse BagIt export" ;
+    pkg:profileOf pkg:bagit-1 ;
+    pkg:metadataModel "Repository-defined BagIt tags/metadata" ;
+    pkg:fixitySupport "BagIt manifests" ;
+    pkg:carriesPayload "Yes" ;
+    pkg:externalPayloadSupport "Depends on export" ;
+    pkg:status "Implementation profile" ;
+    rdfs:seeAlso <https://guides.dataverse.org/> ;
+    skos:note "Example of a repository-specific BagIt profile."@en .
+
+pkg:metadata-crosswalk a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Metadata crosswalk"@en ;
+    skos:definition "Transformation of metadata representations while leaving the package/container concept largely unchanged."@en .
+
+pkg:package-conversion a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Package conversion"@en ;
+    skos:definition "Conversion from one package specification to another."@en .
+
+pkg:package-enrichment a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Package enrichment"@en ;
+    skos:definition "Transformation that adds metadata, context, provenance, identifiers, or other information absent from the source."@en .
+
+pkg:package-projection a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Package projection"@en ;
+    skos:definition "Transformation to a less expressive or narrower target representation."@en .
+
+pkg:profile-transformation a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Profile transformation"@en ;
+    skos:definition "Transformation between profiles of a common underlying package model/specification."@en .
+
+pkg:role-transition a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Package role transition"@en ;
+    skos:definition "Lifecycle transformation from one OAIS/package role to another, e.g. SIP to AIP."@en .
+
+pkg:extraction a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Extraction / dissemination"@en ;
+    skos:definition "Creation of a user-facing or partial package from an archival/source package."@en .
+
+pkg:wrapping a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Wrapping / embedding"@en ;
+    skos:definition "Embedding one package within another container/profile without replacing the inner package."@en .
+
+pkg:normalization a skos:Concept ;
+    skos:inScheme pkg:transformationTypeScheme ;
+    skos:prefLabel "Normalization"@en ;
+    skos:definition "Reorganization into a canonical structure or profile while preserving intended information."@en .
+
+pkg:lossless a skos:Concept ;
+    skos:inScheme pkg:fidelityScheme ;
+    skos:prefLabel "Lossless"@en ;
+    skos:definition "All semantically relevant source information can be represented in the target without loss."@en .
+
+pkg:semantically-equivalent a skos:Concept ;
+    skos:inScheme pkg:fidelityScheme ;
+    skos:prefLabel "Semantically equivalent"@en ;
+    skos:definition "Meaning is preserved although structure or serialization changes."@en .
+
+pkg:structurally-equivalent a skos:Concept ;
+    skos:inScheme pkg:fidelityScheme ;
+    skos:prefLabel "Structurally equivalent"@en ;
+    skos:definition "Package structure and core payload relations are preserved, but metadata semantics may differ."@en .
+
+pkg:lossy a skos:Concept ;
+    skos:inScheme pkg:fidelityScheme ;
+    skos:prefLabel "Lossy"@en ;
+    skos:definition "Some source information cannot or will not be represented in the target."@en .
+
+pkg:enriching a skos:Concept ;
+    skos:inScheme pkg:fidelityScheme ;
+    skos:prefLabel "Enriching"@en ;
+    skos:definition "Target contains additional information not derivable solely by structural conversion from the source."@en .
+
+pkg:partial a skos:Concept ;
+    skos:inScheme pkg:fidelityScheme ;
+    skos:prefLabel "Partial"@en ;
+    skos:definition "Transformation applies only to a defined subset of the source or target model."@en .
+
+pkg:context-dependent a skos:Concept ;
+    skos:inScheme pkg:fidelityScheme ;
+    skos:prefLabel "Context dependent"@en ;
+    skos:definition "Fidelity depends on profiles, source metadata completeness, or local transformation rules."@en .
+
+pkg:unknown a skos:Concept ;
+    skos:inScheme pkg:fidelityScheme ;
+    skos:prefLabel "Unknown"@en ;
+    skos:definition "Fidelity has not been characterized."@en .
+
+pkg:automatic a skos:Concept ;
+    skos:inScheme pkg:automationScheme ;
+    skos:prefLabel "Automatic"@en ;
+    skos:definition "Transformation can be completed without human intervention given conforming inputs."@en .
+
+pkg:semi-automatic a skos:Concept ;
+    skos:inScheme pkg:automationScheme ;
+    skos:prefLabel "Semi-automatic"@en ;
+    skos:definition "Transformation is automated in part but may require human choices or metadata enrichment."@en .
+
+pkg:manual a skos:Concept ;
+    skos:inScheme pkg:automationScheme ;
+    skos:prefLabel "Manual"@en ;
+    skos:definition "Transformation principally requires human interpretation or editing."@en .
+
+pkg:implementation-dependent a skos:Concept ;
+    skos:inScheme pkg:automationScheme ;
+    skos:prefLabel "Implementation dependent"@en ;
+    skos:definition "Automation level depends on a specific implementation."@en .
+
+pkg:bagit-to-bdbag a pkg:TransformationSpecification ;
+    rdfs:label "BagIt → BDBag"@en ;
+    pkg:sourcePackage pkg:bagit-1 ;
+    pkg:targetPackage pkg:bdbag ;
+    pkg:transformationType pkg:package-enrichment ;
+    pkg:fidelity pkg:enriching ;
+    pkg:automationLevel pkg:semi-automatic ;
+    pkg:requiresEnrichment "yes" ;
+    pkg:status "Conceptual / profile conversion" ;
+    rdfs:seeAlso <https://github.com/fair-research/bdbag> ;
+    skos:note "Adds BDBag profile requirements and may add remote-reference/metadata conventions."@en .
+
+pkg:bdbag-to-bagit a pkg:TransformationSpecification ;
+    rdfs:label "BDBag → BagIt"@en ;
+    pkg:sourcePackage pkg:bdbag ;
+    pkg:targetPackage pkg:bagit-1 ;
+    pkg:transformationType pkg:package-projection ;
+    pkg:fidelity pkg:lossy ;
+    pkg:automationLevel pkg:automatic ;
+    pkg:requiresEnrichment "no" ;
+    pkg:status "Conceptual" ;
+    rdfs:seeAlso <https://github.com/fair-research/bdbag> ;
+    skos:note "A conforming BDBag is BagIt-based, but BDBag-specific semantics may be ignored by a generic BagIt consumer."@en .
+
+pkg:bagit-to-rocrate a pkg:TransformationSpecification ;
+    rdfs:label "BagIt → RO-Crate"@en ;
+    pkg:sourcePackage pkg:bagit-1 ;
+    pkg:targetPackage pkg:ro-crate-13 ;
+    pkg:transformationType pkg:package-enrichment ;
+    pkg:fidelity pkg:enriching ;
+    pkg:automationLevel pkg:semi-automatic ;
+    pkg:requiresEnrichment "usually" ;
+    pkg:status "Conceptual mapping" ;
+    rdfs:seeAlso <https://www.researchobject.org/ro-crate/> ;
+    skos:note "Payload can be carried forward, but semantically rich RO-Crate metadata generally requires enrichment."@en .
+
+pkg:rocrate-to-bagit a pkg:TransformationSpecification ;
+    rdfs:label "RO-Crate → BagIt"@en ;
+    pkg:sourcePackage pkg:ro-crate-13 ;
+    pkg:targetPackage pkg:bagit-1 ;
+    pkg:transformationType pkg:wrapping ;
+    pkg:fidelity pkg:structurally-equivalent ;
+    pkg:automationLevel pkg:automatic ;
+    pkg:requiresEnrichment "no" ;
+    pkg:status "Conceptual packaging pattern" ;
+    rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc8493> ;
+    skos:note "RO-Crate may be wrapped in a BagIt container; BagIt supplies fixity/transfer structure without replacing RO-Crate metadata."@en .
+
+pkg:rocrate-to-bdbag a pkg:TransformationSpecification ;
+    rdfs:label "RO-Crate → BDBag"@en ;
+    pkg:sourcePackage pkg:ro-crate-13 ;
+    pkg:targetPackage pkg:bdbag ;
+    pkg:transformationType pkg:wrapping ;
+    pkg:fidelity pkg:context-dependent ;
+    pkg:automationLevel pkg:semi-automatic ;
+    pkg:requiresEnrichment "possible" ;
+    pkg:status "Conceptual packaging pattern" ;
+    rdfs:seeAlso <https://github.com/fair-research/bdbag> ;
+    skos:note "Useful for large/distributed RO-Crates; alignment of metadata conventions needs profile rules."@en .
+
+pkg:oais-sip-to-aip a pkg:TransformationSpecification ;
+    rdfs:label "OAIS SIP → OAIS AIP"@en ;
+    pkg:sourcePackage pkg:oais-sip ;
+    pkg:targetPackage pkg:oais-aip ;
+    pkg:transformationType pkg:role-transition ;
+    pkg:fidelity pkg:context-dependent ;
+    pkg:automationLevel pkg:implementation-dependent ;
+    pkg:requiresEnrichment "possible" ;
+    pkg:status "Abstract OAIS lifecycle transformation" ;
+    rdfs:seeAlso <https://public.ccsds.org/Pubs/650x0m3.pdf> ;
+    skos:note "Repository ingest transforms submitted information into an archival package; concrete rules are repository-specific."@en .
+
+pkg:oais-aip-to-dip a pkg:TransformationSpecification ;
+    rdfs:label "OAIS AIP → OAIS DIP"@en ;
+    pkg:sourcePackage pkg:oais-aip ;
+    pkg:targetPackage pkg:oais-dip ;
+    pkg:transformationType pkg:extraction ;
+    pkg:fidelity pkg:partial ;
+    pkg:automationLevel pkg:implementation-dependent ;
+    pkg:requiresEnrichment "possible" ;
+    pkg:status "Abstract OAIS lifecycle transformation" ;
+    rdfs:seeAlso <https://public.ccsds.org/Pubs/650x0m3.pdf> ;
+    skos:note "DIP may contain all or part of one or more AIPs."@en .
+
+pkg:eark-sip-to-aip a pkg:TransformationSpecification ;
+    rdfs:label "E-ARK SIP → E-ARK AIP"@en ;
+    pkg:sourcePackage pkg:eark-sip ;
+    pkg:targetPackage pkg:eark-aip ;
+    pkg:transformationType pkg:role-transition ;
+    pkg:fidelity pkg:context-dependent ;
+    pkg:automationLevel pkg:implementation-dependent ;
+    pkg:requiresEnrichment "possible" ;
+    pkg:status "E-ARK lifecycle transformation" ;
+    rdfs:seeAlso <https://earkaip.dilcis.eu/> ;
+    skos:note "Concrete preservation workflow conversion based on shared CSIP structure."@en .
+
+pkg:eark-aip-to-dip a pkg:TransformationSpecification ;
+    rdfs:label "E-ARK AIP → E-ARK DIP"@en ;
+    pkg:sourcePackage pkg:eark-aip ;
+    pkg:targetPackage pkg:eark-dip ;
+    pkg:transformationType pkg:extraction ;
+    pkg:fidelity pkg:partial ;
+    pkg:automationLevel pkg:implementation-dependent ;
+    pkg:requiresEnrichment "possible" ;
+    pkg:status "E-ARK lifecycle transformation" ;
+    rdfs:seeAlso <https://earkdip.dilcis.eu/> ;
+    skos:note "Dissemination transformation from archival package to consumer-oriented package."@en .
+
+pkg:mets-to-eark-csip a pkg:TransformationSpecification ;
+    rdfs:label "METS package → E-ARK CSIP"@en ;
+    pkg:sourcePackage pkg:mets-package ;
+    pkg:targetPackage pkg:eark-csip ;
+    pkg:transformationType pkg:profile-transformation ;
+    pkg:fidelity pkg:context-dependent ;
+    pkg:automationLevel pkg:semi-automatic ;
+    pkg:requiresEnrichment "usually" ;
+    pkg:status "Conceptual / profile mapping" ;
+    rdfs:seeAlso <https://earkcsip.dilcis.eu/> ;
+    skos:note "E-ARK CSIP is METS-centered but imposes additional structural and metadata requirements."@en .
+
+pkg:eark-aip-to-rocrate a pkg:TransformationSpecification ;
+    rdfs:label "E-ARK AIP → RO-Crate"@en ;
+    pkg:sourcePackage pkg:eark-aip ;
+    pkg:targetPackage pkg:ro-crate-13 ;
+    pkg:transformationType pkg:package-conversion ;
+    pkg:fidelity pkg:context-dependent ;
+    pkg:automationLevel pkg:semi-automatic ;
+    pkg:requiresEnrichment "often" ;
+    pkg:status "Conceptual crosswalk" ;
+    rdfs:seeAlso <https://www.researchobject.org/ro-crate/> ;
+    skos:note "Potential dissemination/reuse transformation; preservation metadata may not map directly."@en .
+
+pkg:rocrate-to-eark-sip a pkg:TransformationSpecification ;
+    rdfs:label "RO-Crate → E-ARK SIP"@en ;
+    pkg:sourcePackage pkg:ro-crate-13 ;
+    pkg:targetPackage pkg:eark-sip ;
+    pkg:transformationType pkg:package-conversion ;
+    pkg:fidelity pkg:context-dependent ;
+    pkg:automationLevel pkg:semi-automatic ;
+    pkg:requiresEnrichment "usually" ;
+    pkg:status "Conceptual crosswalk" ;
+    rdfs:seeAlso <https://earksip.dilcis.eu/> ;
+    skos:note "Requires mapping RO-Crate entities/metadata into E-ARK/METS submission structures."@en .
+
+pkg:frictionless-to-rocrate a pkg:TransformationSpecification ;
+    rdfs:label "Frictionless Data Package → RO-Crate"@en ;
+    pkg:sourcePackage pkg:frictionless-data-package ;
+    pkg:targetPackage pkg:ro-crate-13 ;
+    pkg:transformationType pkg:metadata-crosswalk ;
+    pkg:fidelity pkg:enriching ;
+    pkg:automationLevel pkg:semi-automatic ;
+    pkg:requiresEnrichment "possible" ;
+    pkg:status "Conceptual crosswalk" ;
+    rdfs:seeAlso <https://www.researchobject.org/ro-crate/> ;
+    skos:note "Tabular/resource metadata can be represented in RO-Crate; richer contextual metadata may be added."@en .
+
+pkg:rocrate-to-frictionless a pkg:TransformationSpecification ;
+    rdfs:label "RO-Crate → Frictionless Data Package"@en ;
+    pkg:sourcePackage pkg:ro-crate-13 ;
+    pkg:targetPackage pkg:frictionless-data-package ;
+    pkg:transformationType pkg:package-projection ;
+    pkg:fidelity pkg:lossy ;
+    pkg:automationLevel pkg:semi-automatic ;
+    pkg:requiresEnrichment "no" ;
+    pkg:status "Conceptual crosswalk" ;
+    rdfs:seeAlso <https://specs.frictionlessdata.io/data-package/> ;
+    skos:note "Only the subset relevant to Frictionless resource/tabular metadata can be retained."@en .
+
+pkg:bagit-normalize a pkg:TransformationSpecification ;
+    rdfs:label "BagIt → repository-specific BagIt profile"@en ;
+    pkg:sourcePackage pkg:bagit-1 ;
+    pkg:targetPackage pkg:dataverse-bagit-export ;
+    pkg:transformationType pkg:profile-transformation ;
+    pkg:fidelity pkg:context-dependent ;
+    pkg:automationLevel pkg:implementation-dependent ;
+    pkg:requiresEnrichment "possible" ;
+    pkg:status "Example profile transformation" ;
+    rdfs:seeAlso <https://guides.dataverse.org/> ;
+    skos:note "Illustrates conversion from generic BagIt to a repository-specific constrained profile."@en .
