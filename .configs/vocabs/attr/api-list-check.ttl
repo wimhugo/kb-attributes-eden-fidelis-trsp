@@ -10,7 +10,7 @@ trsp:checklistAPI
   skos:prefLabel "Checklist for APIs"@en ;
   dct:title "Checklist for APIs"@en ;
   dct:description "List of API service types/ protocols available"@en ;
-  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:dateTime ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   dct:contributor <https://orcid.org/0000-0003-1106-8441> ;
   dct:contributor <https://orcid.org/0000-0002-3200-2698> ;
