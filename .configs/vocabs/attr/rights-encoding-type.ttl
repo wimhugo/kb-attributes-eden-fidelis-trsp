@@ -10,6 +10,7 @@ trsp:rights-encoding-type-scheme
   a skos:ConceptScheme ;
   skos:prefLabel "Rights Encoding Vocabulary"@en ;
   dct:title "Rights Encoding Vocabulary"@en ;
+  skos:definition "Rights Encoding Vocabularies in Use by the Repository or Service."@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-04"^^xsd:date ;
   owl:versionInfo "0.2" .
@@ -23,7 +24,7 @@ trsp:ccrel
 
 trsp:dalicc
   a skos:Concept ;
-  skos:prefLabel "ODRL"@en ;
+  skos:prefLabel "DALICC"@en ;
   rdfs:seeAlso <https://dalicc.net/ns#> ;
   skos:definition "Data Licence Clearance Center"@en ;
   skos:inScheme trsp:rights-encoding-type-scheme .
