@@ -1,35 +1,25 @@
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix ex: <https://vocab.example.org/> .
-@prefix trsp: <https://purl.org/trsp/> . # Assuming TRSP namespace for projects
+{{prefixBlock}}
 
 # The provenance event for a pipeline run
-[ a prov:Activity ;
-  prov:startedAtTime "2026-08-13T12:00:00Z"^^xsd:dateTime ;
-  prov:endedAtTime "2026-08-13T12:05:00Z"^^xsd:dateTime ;
+trsp:{{PROVENANCE_NODE_IRI}}
+a prov:Activity ;
+  prov:startedAtTime "{{START_TIME}}"^^xsd:dateTime ;
+  prov:endedAtTime "{{END_TIME}}"^^xsd:dateTime ;
   
   # Agent: The human curator
   prov:wasAssociatedWith [
     a prov:Agent, prov:Person ;
-    dct:creator <https://orcid.org/0000-0000-0000-0000> ;
-    prov:actedOnBehalfOf trsp:Project_123 # Pre-set to project IRI
+    dct:creator <{{ORCID}}> ;
+    prov:actedOnBehalfOf "{{PROJECT_LABEL}}"
   ] ;
 
   # Agent: The pipeline routine (Software Agent)
   prov:wasAssociatedWith [
     a prov:Agent, prov:SoftwareAgent ;
-    ex:pipelineName "Harvester" ;
-    ex:version "1.2.0" ;
+    prov:label "{{FUNCTION_LABEL}}" ;
+    dct:version "{{FUNCTION_VERSION}}" ;
     prov:wasInfluencedBy [
         a prov:Agent, prov:SoftwareAgent ;
         ex:name "Claude-Sonnet-4.6"
     ]
-  ] ;
-
-  # Entity relation (The output graph)
-  prov:generated [
-    a prov:Entity ;
-    prov:wasDerivedFrom ex:SourceData_v1 ;
-    ex:hasChecksum "sha256:abc123..."
-  ]
-] .
+  ] .
