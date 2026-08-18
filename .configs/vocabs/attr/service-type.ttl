@@ -49,48 +49,56 @@ trsp:typeEoscPurpose
   skos:inScheme trsp:typeService .
 
 trsp:typeEoscPublishDiscover
+  a skos:Concept ;
   skos:prefabel "Publishing & Discovery"@en ;
   skos:definition "Catch-all repositories (e.g., Zenodo-like), data repositories (e.g., PANGAEA), software repositories, scientific data collections (Copernicus, biobanks), metadata aggregators/catalogues, SKGs, service catalogues, instrument registries, etc.; both APIs and web portals, semantic artefact catalogues (e,g. OntoPortal-based SAC, or EBI-based catalogues or TIB Terminology services)"@en ;
   skos:broader trsp:typeEoscPurpose ;
   skos:inScheme trsp:typeService .
 
 trsp:typeEoscAssessMonitor
+  a skos:Concept ;
   skos:prefabel "Research Assessment & Monitoring"@en ;
   skos:definition "FAIR validators, Open Science monitoring tools, research impact and evaluation systems"@en ;
   skos:broader trsp:typeEoscPurpose ;
   skos:inScheme trsp:typeService .
 
 trsp:typeEoscDataCuration
+  a skos:Concept ;
   skos:prefabel "Data Management & Curation"@en ;
   skos:definition "Data management plan tools (DMP tools), metadata editors, curation/annotation platforms, data policy management"@en ;
   skos:broader trsp:typeEoscPurpose ;
   skos:inScheme trsp:typeService .
 
 trsp:typeEoscProcessingAnalysis
+  a skos:Concept ;
   skos:prefabel "Data Processing & Analysis"@en ;
   skos:definition "Jupyter notebooks, workflow engines, analysis platforms, AI/ML services, statistical tools"@en ;
   skos:broader trsp:typeEoscPurpose ;
   skos:inScheme trsp:typeService .
 
 trsp:typeEoscComputeService
+  a skos:Concept ;
   skos:prefabel "Compute Services"@en ;
   skos:definition "HPC clusters, cloud compute (IaaS), virtual machines, container orchestration (Kubernetes)"@en ;
   skos:broader trsp:typeEoscPurpose ;
   skos:inScheme trsp:typeService .
 
 trsp:typeEoscStorageService
+  a skos:Concept ;
   skos:prefabel "Storage Services"@en ;
   skos:definition "Object storage (S3), archival storage, file systems, backup services, long-term preservation platforms, security storage services"@en ;
   skos:broader trsp:typeEoscPurpose ;
   skos:inScheme trsp:typeService .
 
  trsp:typeEoscNetworkService
+  a skos:Concept ;
   skos:prefabel "Networking Services"@en ;
   skos:definition "Research networks (NRENs), VPNs, high-speed data transfer services, federated connectivity"@en ;
   skos:broader trsp:typeEoscPurpose ;
   skos:inScheme trsp:typeService .
 
 trsp:typeEoscScienceGateway
+  a skos:Concept ;
   skos:prefabel "ScienceGateway"@en ;
   skos:definition "Web-based research platforms, such as virtual labs or Virtual Research Environments"@en ;
   skos:broader trsp:typeEoscPurpose ;
@@ -134,46 +142,55 @@ trsp:typeModerated
 # --------------------------------------------------------------------------
 
 trsp:typeConsultingService
+  a skos:Concept ;
   skos:prefabel "Consulting Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typePreservationService
+  a skos:Concept ;
   skos:prefabel "Preservation Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeWebsiteService
+  a skos:Concept ;
   skos:prefabel "Website Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeGuidanceService
+  a skos:Concept ;
   skos:prefabel "Guidance Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeAssessmentService
+  a skos:Concept ;
   skos:prefabel "Assessment Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeAAIService
+  a skos:Concept ;
   skos:prefabel "Authentication and Identification Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typePIDService
+  a skos:Concept ;
   skos:prefabel "Persistent Identifier Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:trsp:typeRepositoryService
+  a skos:Concept ;
   skos:prefabel "Repository Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeCatalogueService
+  a skos:Concept ;
   skos:prefabel "Catalogue Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:exactMatch dcat:Catalog ;
@@ -181,43 +198,51 @@ trsp:typeCatalogueService
   skos:inScheme trsp:typeService .
 
 trsp:typeHarvestingService
+  a skos:Concept ;
   skos:prefabel "Harvesting Services"@en ;
   skos:broader trsp:typeCatalogueService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeDataService
+  a skos:Concept ;
   skos:prefabel "Data Services"@en ;
   skos:broader trsp:typeCatalogueService ;
   skos:exactMatch dcat:DataService
   skos:inScheme trsp:typeService .
 
 trsp:typeRegistryService
+  a skos:Concept ;
   skos:prefabel "Registry Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typePolicyLicenceRegistry
+  a skos:Concept ;
   skos:prefabel "Policy and Licence Registries"@en ;
   skos:broader trsp:typeRegistryService ;
   skos:closeMatch dct:LicenseDocument ;
   skos:inScheme trsp:typeService .
 
 trsp:typeCrosswalksRegistry
+  a skos:Concept ;
   skos:prefabel "Crosswalks Registries"@en ;
   skos:broader trsp:typeRegistry ;
   skos:inScheme trsp:typeService .
 
 trsp:typeMetadataSchemaRegistry
+  a skos:Concept ;
   skos:prefabel "Metadata Schema Registries"@en ;
   skos:broader trsp:typeRegistry ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFileService
+  a skos:Concept ;
   skos:prefabel "File/ Data-related Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFileFormatRegistry
+  a skos:Concept ;
   skos:prefabel "File Type and Format Registries"@en ;
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
@@ -227,6 +252,7 @@ trsp:typeFileFormatRegistry
 # --------------------------------------------------------------------------
 
 trsp:typeFormatGuidanceAPI
+  a skos:Concept ;
   skos:prefLabel ""@en ;
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
