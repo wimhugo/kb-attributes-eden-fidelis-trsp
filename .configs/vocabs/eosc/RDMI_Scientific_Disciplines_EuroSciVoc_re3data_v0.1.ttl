@@ -1,0 +1,2811 @@
+@prefix disc: <https://example.org/rdmi-discipline/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+disc:scheme a skos:ConceptScheme ;
+    skos:prefLabel "RDMI Scientific Disciplines Vocabulary"@en ;
+    dct:description "EuroSciVoc/OECD FoRD level-1 and level-2 backbone extended to preserve re3data/DFG subject categories."@en ;
+    skos:hasTopConcept disc:research-field .
+
+disc:research-field a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:topConceptOf disc:scheme ;
+    skos:prefLabel "Research field"@en .
+
+disc:ford-1 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Natural sciences"@en ;
+    skos:notation "1" ;
+    skos:broader disc:research-field ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-1.1 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mathematics"@en ;
+    skos:notation "1.1" ;
+    skos:broader disc:ford-1 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-1.2 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Computer and information sciences"@en ;
+    skos:notation "1.2" ;
+    skos:broader disc:ford-1 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-1.3 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Physical sciences"@en ;
+    skos:notation "1.3" ;
+    skos:broader disc:ford-1 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-1.4 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Chemical sciences"@en ;
+    skos:notation "1.4" ;
+    skos:broader disc:ford-1 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-1.5 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Earth and related environmental sciences"@en ;
+    skos:notation "1.5" ;
+    skos:broader disc:ford-1 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-1.6 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biological sciences"@en ;
+    skos:notation "1.6" ;
+    skos:broader disc:ford-1 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-1.7 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Other natural sciences"@en ;
+    skos:notation "1.7" ;
+    skos:broader disc:ford-1 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Engineering and technology"@en ;
+    skos:notation "2" ;
+    skos:broader disc:research-field ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.1 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Civil engineering"@en ;
+    skos:notation "2.1" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.2 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Electrical engineering, electronic engineering, information engineering"@en ;
+    skos:notation "2.2" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.3 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mechanical engineering"@en ;
+    skos:notation "2.3" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.4 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Chemical engineering"@en ;
+    skos:notation "2.4" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.5 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Materials engineering"@en ;
+    skos:notation "2.5" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.6 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Medical engineering"@en ;
+    skos:notation "2.6" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.7 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Environmental engineering"@en ;
+    skos:notation "2.7" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.8 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Environmental biotechnology"@en ;
+    skos:notation "2.8" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.9 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Industrial biotechnology"@en ;
+    skos:notation "2.9" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.10 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Nano-technology"@en ;
+    skos:notation "2.10" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-2.11 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Other engineering and technologies"@en ;
+    skos:notation "2.11" ;
+    skos:broader disc:ford-2 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-3 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Medical and health sciences"@en ;
+    skos:notation "3" ;
+    skos:broader disc:research-field ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-3.1 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Basic medicine"@en ;
+    skos:notation "3.1" ;
+    skos:broader disc:ford-3 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-3.2 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Clinical medicine"@en ;
+    skos:notation "3.2" ;
+    skos:broader disc:ford-3 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-3.3 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Health sciences"@en ;
+    skos:notation "3.3" ;
+    skos:broader disc:ford-3 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-3.4 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Health biotechnology"@en ;
+    skos:notation "3.4" ;
+    skos:broader disc:ford-3 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-3.5 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Other medical sciences"@en ;
+    skos:notation "3.5" ;
+    skos:broader disc:ford-3 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-4 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Agricultural sciences"@en ;
+    skos:notation "4" ;
+    skos:broader disc:research-field ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-4.1 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Agriculture, forestry, and fisheries"@en ;
+    skos:notation "4.1" ;
+    skos:broader disc:ford-4 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-4.2 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Animal and dairy science"@en ;
+    skos:notation "4.2" ;
+    skos:broader disc:ford-4 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-4.3 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Veterinary science"@en ;
+    skos:notation "4.3" ;
+    skos:broader disc:ford-4 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-4.4 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Agricultural biotechnology"@en ;
+    skos:notation "4.4" ;
+    skos:broader disc:ford-4 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-4.5 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Other agricultural sciences"@en ;
+    skos:notation "4.5" ;
+    skos:broader disc:ford-4 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Social sciences"@en ;
+    skos:notation "5" ;
+    skos:broader disc:research-field ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.1 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Psychology"@en ;
+    skos:notation "5.1" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.2 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Economics and business"@en ;
+    skos:notation "5.2" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.3 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Educational sciences"@en ;
+    skos:notation "5.3" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.4 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Sociology"@en ;
+    skos:notation "5.4" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.5 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Law"@en ;
+    skos:notation "5.5" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.6 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Political science"@en ;
+    skos:notation "5.6" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.7 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Social and economic geography"@en ;
+    skos:notation "5.7" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.8 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Media and communications"@en ;
+    skos:notation "5.8" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-5.9 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Other social sciences"@en ;
+    skos:notation "5.9" ;
+    skos:broader disc:ford-5 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-6 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Humanities"@en ;
+    skos:notation "6" ;
+    skos:broader disc:research-field ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-6.1 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "History and archaeology"@en ;
+    skos:notation "6.1" ;
+    skos:broader disc:ford-6 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-6.2 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Languages and literature"@en ;
+    skos:notation "6.2" ;
+    skos:broader disc:ford-6 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-6.3 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Philosophy, ethics and religion"@en ;
+    skos:notation "6.3" ;
+    skos:broader disc:ford-6 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-6.4 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Arts (arts, history of arts, performing arts, music)"@en ;
+    skos:notation "6.4" ;
+    skos:broader disc:ford-6 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:ford-6.5 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Other humanities"@en ;
+    skos:notation "6.5" ;
+    skos:broader disc:ford-6 ;
+    dct:source <http://publications.europa.eu/resource/dataset/euroscivoc> ;
+    skos:note "EuroSciVoc/FoRD-aligned backbone concept; local RDMI identifier."@en .
+
+disc:multidisciplinary a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Multidisciplinary / General"@en ;
+    skos:notation "0" ;
+    skos:broader disc:research-field ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "RDMI extension for multidisciplinary/general research."@en .
+
+disc:r3d-1 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Humanities and Social Sciences"@en ;
+    skos:notation "1" ;
+    skos:broader disc:multidisciplinary ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG aggregate spans Social sciences and Humanities."@en .
+disc:r3d-1 skos:relatedMatch disc:ford-5 .
+disc:r3d-1 skos:relatedMatch disc:ford-6 .
+
+disc:r3d-2 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Life Sciences"@en ;
+    skos:notation "2" ;
+    skos:broader disc:multidisciplinary ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG Life Sciences spans biological, medical/health, and agricultural fields."@en .
+disc:r3d-2 skos:relatedMatch disc:ford-1.6 .
+disc:r3d-2 skos:relatedMatch disc:ford-3 .
+disc:r3d-2 skos:relatedMatch disc:ford-4 .
+
+disc:r3d-12 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Social and Behavioural Sciences"@en ;
+    skos:notation "12" ;
+    skos:broader disc:ford-5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12 skos:narrowMatch disc:ford-5 .
+
+disc:r3d-21 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biology"@en ;
+    skos:notation "21" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-22 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Medicine"@en ;
+    skos:notation "22" ;
+    skos:broader disc:ford-3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22 skos:narrowMatch disc:ford-3 .
+
+disc:r3d-23 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Agriculture, Forestry and Veterinary Medicine"@en ;
+    skos:notation "23" ;
+    skos:broader disc:ford-4.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23 skos:narrowMatch disc:ford-4.3 .
+
+disc:r3d-34 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Geosciences"@en ;
+    skos:notation "34" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-41 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mechanical and Industrial Engineering"@en ;
+    skos:notation "41" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-42 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Thermal Engineering/Process Engineering"@en ;
+    skos:notation "42" ;
+    skos:broader disc:ford-2.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42 skos:narrowMatch disc:ford-2.4 .
+
+disc:r3d-43 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Materials Science and Engineering"@en ;
+    skos:notation "43" ;
+    skos:broader disc:ford-2.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43 skos:narrowMatch disc:ford-2.5 .
+
+disc:r3d-44 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Computer Science, Systems and Electrical Engineering"@en ;
+    skos:notation "44" ;
+    skos:broader disc:ford-1.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG aggregate spans computer/information sciences and electrical/information engineering."@en .
+disc:r3d-44 skos:narrowMatch disc:ford-1.2 .
+
+disc:r3d-45 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Construction Engineering and Architecture"@en ;
+    skos:notation "45" ;
+    skos:broader disc:ford-2.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-45 skos:narrowMatch disc:ford-2.1 .
+
+disc:r3d-111 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Ancient Cultures"@en ;
+    skos:notation "111" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-111 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-112 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "History"@en ;
+    skos:notation "112" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-112 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-113 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Art History, Music, Theatre and Media Studies"@en ;
+    skos:notation "113" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-113 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-114 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Linguistics"@en ;
+    skos:notation "114" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-114 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-115 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Literary Studies"@en ;
+    skos:notation "115" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-115 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-116 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Social and Cultural Anthropology, Non-European Cultures, Jewish Studies and Religious Studies"@en ;
+    skos:notation "116" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG aggregate combines anthropology/cultural studies and religion."@en .
+disc:r3d-116 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-117 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Theology"@en ;
+    skos:notation "117" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-117 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-118 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Philosophy"@en ;
+    skos:notation "118" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-118 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-121 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Educational Research"@en ;
+    skos:notation "121" ;
+    skos:broader disc:ford-5.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-121 skos:narrowMatch disc:ford-5.3 .
+
+disc:r3d-211 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Basic Research in Biology and Medicine"@en ;
+    skos:notation "211" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-211 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-212 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Plant Sciences"@en ;
+    skos:notation "212" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-212 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-213 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Zoology"@en ;
+    skos:notation "213" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-213 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-221 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Microbiology, Virology and Immunology"@en ;
+    skos:notation "221" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-221 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-222 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Medicine"@en ;
+    skos:notation "222" ;
+    skos:broader disc:ford-3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-222 skos:narrowMatch disc:ford-3 .
+
+disc:r3d-223 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Neurosciences"@en ;
+    skos:notation "223" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-223 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-231 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Agriculture, Forestry and Veterinary Medicine"@en ;
+    skos:notation "231" ;
+    skos:broader disc:ford-4.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-231 skos:narrowMatch disc:ford-4.3 .
+
+disc:r3d-311 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Molecular Chemistry"@en ;
+    skos:notation "311" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-311 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-312 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Chemical Solid State and Surface Research"@en ;
+    skos:notation "312" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-312 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-313 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Physical Chemistry"@en ;
+    skos:notation "313" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-313 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-314 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Analytical Chemistry"@en ;
+    skos:notation "314" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-314 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-315 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biological Chemistry and Food Chemistry"@en ;
+    skos:notation "315" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-315 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-316 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Polymer Research"@en ;
+    skos:notation "316" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-316 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-317 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Theoretical Chemistry"@en ;
+    skos:notation "317" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-317 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-321 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Condensed Matter Physics"@en ;
+    skos:notation "321" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-321 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-322 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter, Biological Physics"@en ;
+    skos:notation "322" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-322 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-323 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas"@en ;
+    skos:notation "323" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-323 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-324 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Particles, Nuclei and Fields"@en ;
+    skos:notation "324" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-324 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-325 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Astrophysics and Astronomy"@en ;
+    skos:notation "325" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-325 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-341 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Atmospheric Science, Oceanography and Climate Research"@en ;
+    skos:notation "341" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-341 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-342 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Geology and Palaeontology"@en ;
+    skos:notation "342" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-342 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-343 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Geophysics and Geodesy"@en ;
+    skos:notation "343" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-343 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-344 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mineralogy, Petrology and Geochemistry"@en ;
+    skos:notation "344" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-344 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-345 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Geography"@en ;
+    skos:notation "345" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-345 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-346 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Water Research"@en ;
+    skos:notation "346" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-346 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-411 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Production Technology"@en ;
+    skos:notation "411" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-411 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-412 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mechanics and Constructive Mechanical Engineering"@en ;
+    skos:notation "412" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-412 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-421 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Process Engineering, Technical Chemistry"@en ;
+    skos:notation "421" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-421 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-422 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering"@en ;
+    skos:notation "422" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-422 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-432 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Materials Science"@en ;
+    skos:notation "432" ;
+    skos:broader disc:ford-2.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-432 skos:narrowMatch disc:ford-2.5 .
+
+disc:r3d-441 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Systems Engineering"@en ;
+    skos:notation "441" ;
+    skos:broader disc:ford-2.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-441 skos:narrowMatch disc:ford-2.2 .
+
+disc:r3d-442 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Electrical Engineering and Information Technology"@en ;
+    skos:notation "442" ;
+    skos:broader disc:ford-2.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-442 skos:narrowMatch disc:ford-2.2 .
+
+disc:r3d-451 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Construction Engineering and Architecture"@en ;
+    skos:notation "451" ;
+    skos:broader disc:ford-2.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-451 skos:narrowMatch disc:ford-2.1 .
+
+disc:r3d-11101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Prehistory and World Archaeology"@en ;
+    skos:notation "11101" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11101 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Greek and Latin Philology"@en ;
+    skos:notation "11102" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11102 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-11103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Ancient History"@en ;
+    skos:notation "11103" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11103 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Classical, Roman, Christian and Islamic Archaeology"@en ;
+    skos:notation "11104" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11104 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Egyptology and Ancient Near Eastern Studies"@en ;
+    skos:notation "11105" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11105 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Medieval History"@en ;
+    skos:notation "11201" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11201 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Early Modern History"@en ;
+    skos:notation "11202" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11202 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11203 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Modern and Contemporary History"@en ;
+    skos:notation "11203" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11203 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11204 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "History of Science"@en ;
+    skos:notation "11204" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11204 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11301 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Art History"@en ;
+    skos:notation "11301" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11301 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11302 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Musicology"@en ;
+    skos:notation "11302" ;
+    skos:broader disc:ford-6.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11302 skos:narrowMatch disc:ford-6.4 .
+
+disc:r3d-11303 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Theatre and Media Studies"@en ;
+    skos:notation "11303" ;
+    skos:broader disc:ford-6.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11303 skos:narrowMatch disc:ford-6.4 .
+
+disc:r3d-11401 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "General and Comparative Linguistics, Experimental Linguistics, Typology, Non-European Languages"@en ;
+    skos:notation "11401" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11401 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-11402 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Individual Linguistics, Historical Linguistics"@en ;
+    skos:notation "11402" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11402 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-11403 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Applied Linguistics, Computational Linguistics"@en ;
+    skos:notation "11403" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11403 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-11501 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "German Medieval Studies (Medieval German Literature)"@en ;
+    skos:notation "11501" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11501 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-11502 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "German Literary and Cultural Studies (Modern German Literature)"@en ;
+    skos:notation "11502" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11502 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-11503 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "European and American Literary and Cultural Studies"@en ;
+    skos:notation "11503" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11503 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-11504 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "General and Comparative Literary Studies; Cultural Studies"@en ;
+    skos:notation "11504" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11504 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-11601 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Social and Cultural Anthropology and Ethnology"@en ;
+    skos:notation "11601" ;
+    skos:broader disc:ford-5.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG aggregate combines anthropology/cultural studies and religion."@en .
+disc:r3d-11601 skos:relatedMatch disc:ford-5.4 .
+disc:r3d-11601 skos:relatedMatch disc:ford-6.3 .
+disc:r3d-11601 skos:relatedMatch disc:ford-6.5 .
+
+disc:r3d-11602 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Asian Studies"@en ;
+    skos:notation "11602" ;
+    skos:broader disc:ford-5.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG aggregate combines anthropology/cultural studies and religion."@en .
+disc:r3d-11602 skos:relatedMatch disc:ford-5.4 .
+disc:r3d-11602 skos:relatedMatch disc:ford-6.3 .
+disc:r3d-11602 skos:relatedMatch disc:ford-6.5 .
+
+disc:r3d-11603 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "African, American and Oceania Studies"@en ;
+    skos:notation "11603" ;
+    skos:broader disc:ford-5.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG aggregate combines anthropology/cultural studies and religion."@en .
+disc:r3d-11603 skos:relatedMatch disc:ford-5.4 .
+disc:r3d-11603 skos:relatedMatch disc:ford-6.3 .
+disc:r3d-11603 skos:relatedMatch disc:ford-6.5 .
+
+disc:r3d-11604 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Islamic Studies, Arabian Studies, Semitic Studies"@en ;
+    skos:notation "11604" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG aggregate combines anthropology/cultural studies and religion."@en .
+disc:r3d-11604 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-11605 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Religious Studies and Jewish Studies"@en ;
+    skos:notation "11605" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "DFG aggregate combines anthropology/cultural studies and religion."@en .
+disc:r3d-11605 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-11701 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Protestant Theology"@en ;
+    skos:notation "11701" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11701 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-11702 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Roman Catholic Theology"@en ;
+    skos:notation "11702" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11702 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-11801 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "History of Philosophy"@en ;
+    skos:notation "11801" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11801 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-11802 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Theoretical Philosophy"@en ;
+    skos:notation "11802" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11802 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-11803 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Practical Philosophy"@en ;
+    skos:notation "11803" ;
+    skos:broader disc:ford-6.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-11803 skos:narrowMatch disc:ford-6.3 .
+
+disc:r3d-12101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "General Education and History of Education"@en ;
+    skos:notation "12101" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12101 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-12102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "General and Domain-Specific Teaching and Learning"@en ;
+    skos:notation "12102" ;
+    skos:broader disc:ford-5.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12102 skos:narrowMatch disc:ford-5.3 .
+
+disc:r3d-12103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Education Systems and Educational Institutions"@en ;
+    skos:notation "12103" ;
+    skos:broader disc:ford-5.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12103 skos:narrowMatch disc:ford-5.3 .
+
+disc:r3d-12104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Educational Research on Socialisation, Welfare and Professionalism"@en ;
+    skos:notation "12104" ;
+    skos:broader disc:ford-5.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12104 skos:narrowMatch disc:ford-5.3 .
+
+disc:r3d-12201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "General, Cognitive and Mathematical Psychology"@en ;
+    skos:notation "12201" ;
+    skos:broader disc:ford-5.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12201 skos:narrowMatch disc:ford-5.1 .
+
+disc:r3d-12202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biological Psychology and Cognitive Neuroscience"@en ;
+    skos:notation "12202" ;
+    skos:broader disc:ford-5.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12202 skos:narrowMatch disc:ford-5.1 .
+
+disc:r3d-12203 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Developmental and Educational Psychology"@en ;
+    skos:notation "12203" ;
+    skos:broader disc:ford-5.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12203 skos:narrowMatch disc:ford-5.3 .
+
+disc:r3d-12204 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Social Psychology, Industrial and Organisational Psychology"@en ;
+    skos:notation "12204" ;
+    skos:broader disc:ford-5.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12204 skos:narrowMatch disc:ford-5.1 .
+
+disc:r3d-12205 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Personality Psychology, Clinical and Medical Psychology, Methodology"@en ;
+    skos:notation "12205" ;
+    skos:broader disc:ford-5.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12205 skos:narrowMatch disc:ford-5.1 .
+
+disc:r3d-12301 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Sociological Theory"@en ;
+    skos:notation "12301" ;
+    skos:broader disc:ford-5.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12301 skos:narrowMatch disc:ford-5.4 .
+
+disc:r3d-12302 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Empirical Social Research"@en ;
+    skos:notation "12302" ;
+    skos:broader disc:ford-5.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12302 skos:narrowMatch disc:ford-5.4 .
+
+disc:r3d-12303 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Communication Sciences"@en ;
+    skos:notation "12303" ;
+    skos:broader disc:ford-5.8 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12303 skos:narrowMatch disc:ford-5.8 .
+
+disc:r3d-12401 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Economic Theory"@en ;
+    skos:notation "12401" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12401 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-12402 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Economic Policy, Applied Economics"@en ;
+    skos:notation "12402" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12402 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-12403 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Accounting und Finance"@en ;
+    skos:notation "12403" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12403 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-12404 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Management and Marketing"@en ;
+    skos:notation "12404" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12404 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-12405 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Operations Management and Computer Science for Business Administration"@en ;
+    skos:notation "12405" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12405 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-12406 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Statistics and Econometrics"@en ;
+    skos:notation "12406" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12406 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-12407 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Economic and Social History"@en ;
+    skos:notation "12407" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12407 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-12501 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Principles of Law and Jurisprudence"@en ;
+    skos:notation "12501" ;
+    skos:broader disc:ford-5.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12501 skos:narrowMatch disc:ford-5.5 .
+
+disc:r3d-12502 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Private Law"@en ;
+    skos:notation "12502" ;
+    skos:broader disc:ford-5.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12502 skos:narrowMatch disc:ford-5.5 .
+
+disc:r3d-12503 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Public Law"@en ;
+    skos:notation "12503" ;
+    skos:broader disc:ford-5.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12503 skos:narrowMatch disc:ford-5.5 .
+
+disc:r3d-12504 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Criminal Law"@en ;
+    skos:notation "12504" ;
+    skos:broader disc:ford-5.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12504 skos:narrowMatch disc:ford-5.5 .
+
+disc:r3d-12505 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Criminology"@en ;
+    skos:notation "12505" ;
+    skos:broader disc:ford-5.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-12505 skos:narrowMatch disc:ford-5.5 .
+
+disc:r3d-21101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biochemistry"@en ;
+    skos:notation "21101" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21101 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-21102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biophysics"@en ;
+    skos:notation "21102" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21102 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-21103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Cell Biology"@en ;
+    skos:notation "21103" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21103 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Structural Biology"@en ;
+    skos:notation "21104" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21104 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "General Genetics and Functional Genome Biology"@en ;
+    skos:notation "21105" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21105 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-21106 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Developmental Biology"@en ;
+    skos:notation "21106" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21106 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21107 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Bioinformatics and Theoretical Biology"@en ;
+    skos:notation "21107" ;
+    skos:broader disc:ford-1.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "Spans more than one backbone concept."@en .
+disc:r3d-21107 skos:relatedMatch disc:ford-1.2 .
+disc:r3d-21107 skos:relatedMatch disc:ford-3.1 .
+
+disc:r3d-21201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Evolution and Systematics of Plants and Fungi"@en ;
+    skos:notation "21201" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21201 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Ecology and Biodiversity of Plants and Ecosystems"@en ;
+    skos:notation "21202" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21202 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21203 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Organismic Interactions, Chemical Ecology and Microbiomes of Plant Systems"@en ;
+    skos:notation "21203" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21203 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21204 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Plant Physiology"@en ;
+    skos:notation "21204" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21204 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-21205 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Plant Biochemistry and Biophysics"@en ;
+    skos:notation "21205" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21205 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-21206 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Plant Cell and Developmental Biology"@en ;
+    skos:notation "21206" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21206 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21207 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Plant Genetics and Genomics"@en ;
+    skos:notation "21207" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21207 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-21301 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Systematics and Morphology (Zoology)"@en ;
+    skos:notation "21301" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21301 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21302 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Evolution, Anthropology"@en ;
+    skos:notation "21302" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21302 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21303 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Ecology and Biodiversity of Animals and Ecosystems, Organismic Interactions"@en ;
+    skos:notation "21303" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21303 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21304 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Sensory and Behavioural Biology"@en ;
+    skos:notation "21304" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21304 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-21305 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Animal Physiology and Biochemistry"@en ;
+    skos:notation "21305" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21305 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-21306 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Evolutionary Cell and Developmental Biology (Zoology)"@en ;
+    skos:notation "21306" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-21306 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-22101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Metabolism, Biochemistry and Genetics of Microorganisms"@en ;
+    skos:notation "22101" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22101 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Microbial Ecology and Applied Microbiology"@en ;
+    skos:notation "22102" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22102 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Medical Microbiology and Mycology, Hygiene, Molecular Infection Biology"@en ;
+    skos:notation "22103" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22103 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Virology"@en ;
+    skos:notation "22104" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22104 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Immunology"@en ;
+    skos:notation "22105" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22105 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22106 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Parasitology and Biology of Tropical Infectious Disease Pathogens"@en ;
+    skos:notation "22106" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22106 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-22201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Epidemiology and Medical Biometry/Statistics"@en ;
+    skos:notation "22201" ;
+    skos:broader disc:ford-3.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22201 skos:narrowMatch disc:ford-3.3 .
+
+disc:r3d-22202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Public Heatlh, Healthcare Research, Social and Occupational Medicine"@en ;
+    skos:notation "22202" ;
+    skos:broader disc:ford-3.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22202 skos:narrowMatch disc:ford-3.3 .
+
+disc:r3d-22203 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Human Genetics"@en ;
+    skos:notation "22203" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22203 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22204 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Anatomy and Physiology"@en ;
+    skos:notation "22204" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22204 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22205 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Nutritional Sciences"@en ;
+    skos:notation "22205" ;
+    skos:broader disc:ford-3.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22205 skos:narrowMatch disc:ford-3.3 .
+
+disc:r3d-22206 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Pathology"@en ;
+    skos:notation "22206" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22206 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22207 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Medical Informatics and Medical Bioinformatics"@en ;
+    skos:notation "22207" ;
+    skos:broader disc:ford-1.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "Spans more than one backbone concept."@en .
+disc:r3d-22207 skos:relatedMatch disc:ford-1.2 .
+disc:r3d-22207 skos:relatedMatch disc:ford-3.1 .
+
+disc:r3d-22208 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Pharmacy"@en ;
+    skos:notation "22208" ;
+    skos:broader disc:ford-3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22208 skos:narrowMatch disc:ford-3 .
+
+disc:r3d-22209 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Pharmacology"@en ;
+    skos:notation "22209" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22209 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22210 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Toxicology, Laboratory Medicine"@en ;
+    skos:notation "22210" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22210 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22211 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Anaesthesiology"@en ;
+    skos:notation "22211" ;
+    skos:broader disc:ford-3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22211 skos:narrowMatch disc:ford-3 .
+
+disc:r3d-22212 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Cardiology, Angiology"@en ;
+    skos:notation "22212" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22212 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22213 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Pneumology, Thoracic Surgery"@en ;
+    skos:notation "22213" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22213 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22214 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Hematology, Oncology"@en ;
+    skos:notation "22214" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22214 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22215 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Gastroenterology"@en ;
+    skos:notation "22215" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22215 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22216 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Nephrology"@en ;
+    skos:notation "22216" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22216 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22217 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Endocrinology, Diabetology, Metabolism"@en ;
+    skos:notation "22217" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22217 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22218 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Rheumatology"@en ;
+    skos:notation "22218" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22218 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22219 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Dermatology"@en ;
+    skos:notation "22219" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22219 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22220 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Pediatric and Adolescent Medicine"@en ;
+    skos:notation "22220" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22220 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22221 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Gynaecology and Obstetrics"@en ;
+    skos:notation "22221" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22221 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22222 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Clinical Immunology and Allergology"@en ;
+    skos:notation "22222" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22222 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22223 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Reproductive Medicine, Urology"@en ;
+    skos:notation "22223" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22223 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22224 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biogerontology and Geriatric Medicine"@en ;
+    skos:notation "22224" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22224 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22225 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "General and Visceral Surgery"@en ;
+    skos:notation "22225" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22225 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22226 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Cardiac and Vascular Surgery"@en ;
+    skos:notation "22226" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22226 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22227 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Orthopaedics, Traumatology, Reconstructive Surgery"@en ;
+    skos:notation "22227" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22227 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22228 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Dentistry, Oral Surgery"@en ;
+    skos:notation "22228" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22228 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22229 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Otolaryngology, Phoniatrics and Audiology"@en ;
+    skos:notation "22229" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22229 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22230 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Radiology"@en ;
+    skos:notation "22230" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22230 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22231 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Clinical Infectiology and Tropical Medicine"@en ;
+    skos:notation "22231" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22231 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22232 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Medical Physics, Biomedical Technology"@en ;
+    skos:notation "22232" ;
+    skos:broader disc:ford-3.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22232 skos:narrowMatch disc:ford-3.4 .
+
+disc:r3d-22233 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Nuclear Medicine, Radiotherapy, Radiobiology"@en ;
+    skos:notation "22233" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22233 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22301 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Developmental Neurobiology"@en ;
+    skos:notation "22301" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22301 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22302 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Molecular Biology and Physiology of Neurons and Glial Cells"@en ;
+    skos:notation "22302" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22302 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22303 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Experimental and Theoretical Network Neuroscience"@en ;
+    skos:notation "22303" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22303 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22304 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Cognitive, Systems and Behavioural Neurobiology"@en ;
+    skos:notation "22304" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22304 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22305 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Experimental Models for the Understanding of Nervous System Diseases"@en ;
+    skos:notation "22305" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22305 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22306 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Molecular and Cellular Neurology and Neuropathology"@en ;
+    skos:notation "22306" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22306 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22307 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Clinical Neurology; Neurosurgery and Neuroradiology"@en ;
+    skos:notation "22307" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22307 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22308 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Human Cognitive and Systems Neuroscience"@en ;
+    skos:notation "22308" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22308 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-22309 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biological Psychiatry"@en ;
+    skos:notation "22309" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22309 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22310 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Clinical Psychiatry, Psychotherapy, Child and Adolescent Psychiatry"@en ;
+    skos:notation "22310" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22310 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-22311 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Ophthalmology"@en ;
+    skos:notation "22311" ;
+    skos:broader disc:ford-3.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-22311 skos:narrowMatch disc:ford-3.2 .
+
+disc:r3d-23101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Soil Sciences"@en ;
+    skos:notation "23101" ;
+    skos:broader disc:ford-4.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23101 skos:narrowMatch disc:ford-4.1 .
+
+disc:r3d-23102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Plant Breeding and Plant Pathology"@en ;
+    skos:notation "23102" ;
+    skos:broader disc:ford-3.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23102 skos:narrowMatch disc:ford-3.1 .
+
+disc:r3d-23103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Plant Cultivation, Plant Nutrition, Agricultural Technology"@en ;
+    skos:notation "23103" ;
+    skos:broader disc:ford-3.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23103 skos:narrowMatch disc:ford-3.3 .
+
+disc:r3d-23104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Ecology of Land Use"@en ;
+    skos:notation "23104" ;
+    skos:broader disc:ford-4.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23104 skos:narrowMatch disc:ford-4.1 .
+
+disc:r3d-23105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Agricultural Economics, Agricultural Policy, Agricultural Sociology"@en ;
+    skos:notation "23105" ;
+    skos:broader disc:ford-5.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23105 skos:narrowMatch disc:ford-5.4 .
+
+disc:r3d-23106 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Forestry"@en ;
+    skos:notation "23106" ;
+    skos:broader disc:ford-4.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23106 skos:narrowMatch disc:ford-4.1 .
+
+disc:r3d-23107 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Animal Breeding, Animal Nutrition, Animal Husbandry"@en ;
+    skos:notation "23107" ;
+    skos:broader disc:ford-3.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23107 skos:narrowMatch disc:ford-3.3 .
+
+disc:r3d-23108 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Veterinary Medical Science"@en ;
+    skos:notation "23108" ;
+    skos:broader disc:ford-4.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-23108 skos:narrowMatch disc:ford-4.3 .
+
+disc:r3d-31101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Inorganic Molecular Chemistry - Synthesis and Characterisation"@en ;
+    skos:notation "31101" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31101 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Organic Molecular Chemistry - Synthesis and Characterisation"@en ;
+    skos:notation "31102" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31102 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Solid State and Surface Chemistry, Material Synthesis"@en ;
+    skos:notation "31201" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31201 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Physical Chemistry of Solids and Surfaces, Material Characterisation"@en ;
+    skos:notation "31202" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31202 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31301 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Physical Chemistry of Molecules, Liquids and Interfaces, Biophysical Chemistry"@en ;
+    skos:notation "31301" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31301 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31401 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Analytical Chemistry"@en ;
+    skos:notation "31401" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31401 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31501 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biological and Biomimetic Chemistry"@en ;
+    skos:notation "31501" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31501 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31502 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Food Chemistry"@en ;
+    skos:notation "31502" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31502 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31601 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Preparatory and Physical Chemistry of Polymers"@en ;
+    skos:notation "31601" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31601 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31602 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Experimental and Theoretical Physics of Polymers"@en ;
+    skos:notation "31602" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31602 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-31603 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Polymer Materials"@en ;
+    skos:notation "31603" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31603 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31701 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Theoretical Chemistry: Electron Structure, Dynamics, Simulation"@en ;
+    skos:notation "31701" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31701 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-31702 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Theoretical Chemistry: Molecules, Materials, Surfaces"@en ;
+    skos:notation "31702" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-31702 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-32101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Experimental Condensed Matter Physics"@en ;
+    skos:notation "32101" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-32101 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-32102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Theoretical Condensed Matter Physics"@en ;
+    skos:notation "32102" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-32102 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-32201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter, Biological Physics"@en ;
+    skos:notation "32201" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-32201 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-32301 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas"@en ;
+    skos:notation "32301" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-32301 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-32401 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Nuclear and Elementary Particle Physics, Quantum Mechanics, Relativity, Fields"@en ;
+    skos:notation "32401" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-32401 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-32501 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Astrophysics and Astronomy"@en ;
+    skos:notation "32501" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-32501 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-34101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Atmospheric Science"@en ;
+    skos:notation "34101" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34101 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-34102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Oceanography"@en ;
+    skos:notation "34102" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34102 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-34201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Geology"@en ;
+    skos:notation "34201" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34201 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-34202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Palaeontology"@en ;
+    skos:notation "34202" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34202 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-34301 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Geophysics"@en ;
+    skos:notation "34301" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34301 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-34302 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartography"@en ;
+    skos:notation "34302" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34302 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-34401 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mineralogy, Petrology and Geochemistry"@en ;
+    skos:notation "34401" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34401 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-34501 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Physical Geography"@en ;
+    skos:notation "34501" ;
+    skos:broader disc:ford-1.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34501 skos:narrowMatch disc:ford-1.5 .
+
+disc:r3d-34502 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Human Geography"@en ;
+    skos:notation "34502" ;
+    skos:broader disc:ford-5.7 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34502 skos:narrowMatch disc:ford-5.7 .
+
+disc:r3d-34601 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management"@en ;
+    skos:notation "34601" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-34601 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-41101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Metal-Cutting and Abrasive Manufacturing Engineering"@en ;
+    skos:notation "41101" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41101 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-41102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Primary Shaping and Reshaping Technology, Additive Manufacturing"@en ;
+    skos:notation "41102" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41102 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-41103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Joining and Separation Technology"@en ;
+    skos:notation "41103" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41103 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-41104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Plastics Engineering"@en ;
+    skos:notation "41104" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41104 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-41105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Production Systems, Operations Management, Quality Management and Factory Planning"@en ;
+    skos:notation "41105" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41105 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-41106 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Production Automation and Assembly Technology"@en ;
+    skos:notation "41106" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41106 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-41201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Engineering Design, Machine Elements, Product Development"@en ;
+    skos:notation "41201" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41201 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-41202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mechanics"@en ;
+    skos:notation "41202" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41202 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-41203 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Lightweight Construction, Textile Technology"@en ;
+    skos:notation "41203" ;
+    skos:broader disc:ford-2.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41203 skos:narrowMatch disc:ford-2.1 .
+
+disc:r3d-41204 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Acoustics"@en ;
+    skos:notation "41204" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-41204 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-42101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Chemical and Thermal Process Engineering"@en ;
+    skos:notation "42101" ;
+    skos:broader disc:ford-2.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42101 skos:narrowMatch disc:ford-2.4 .
+
+disc:r3d-42102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Technical Chemistry"@en ;
+    skos:notation "42102" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42102 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-42103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mechanical Process Engineering"@en ;
+    skos:notation "42103" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42103 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-42104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biological Process Engineering"@en ;
+    skos:notation "42104" ;
+    skos:broader disc:ford-1.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42104 skos:narrowMatch disc:ford-1.6 .
+
+disc:r3d-42105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Systems Process Engineering"@en ;
+    skos:notation "42105" ;
+    skos:broader disc:ford-2.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42105 skos:narrowMatch disc:ford-2.4 .
+
+disc:r3d-42201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Energy Process Engineering"@en ;
+    skos:notation "42201" ;
+    skos:broader disc:ford-2.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42201 skos:narrowMatch disc:ford-2.4 .
+
+disc:r3d-42202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Technical Thermodynamics"@en ;
+    skos:notation "42202" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42202 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-42203 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Fluid Mechanics"@en ;
+    skos:notation "42203" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42203 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-42204 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Hydraulic and Turbo Engines and Piston Engines"@en ;
+    skos:notation "42204" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-42204 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-43101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Metallurgical, Thermal and Thermomechanical Treatment of Materials"@en ;
+    skos:notation "43101" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43101 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-43102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Materials in Sintering Processes and Generative Manufacturing Processes"@en ;
+    skos:notation "43102" ;
+    skos:broader disc:ford-2.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43102 skos:narrowMatch disc:ford-2.5 .
+
+disc:r3d-43103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Coating and Surface Technology"@en ;
+    skos:notation "43103" ;
+    skos:broader disc:ford-2.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43103 skos:narrowMatch disc:ford-2.5 .
+
+disc:r3d-43104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Mechanical Properties of Metallic Materials and their Microstructural Origins"@en ;
+    skos:notation "43104" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43104 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-43105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Glass, Ceramics and Derived Composites"@en ;
+    skos:notation "43105" ;
+    skos:broader disc:ford-2.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43105 skos:narrowMatch disc:ford-2.5 .
+
+disc:r3d-43106 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Polymeric and Biogenic Materials and Derived Composites"@en ;
+    skos:notation "43106" ;
+    skos:broader disc:ford-1.4 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43106 skos:narrowMatch disc:ford-1.4 .
+
+disc:r3d-43201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Synthesis and Properties of Functional Materials"@en ;
+    skos:notation "43201" ;
+    skos:broader disc:ford-2.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43201 skos:narrowMatch disc:ford-2.5 .
+
+disc:r3d-43202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biomaterials"@en ;
+    skos:notation "43202" ;
+    skos:broader disc:ford-2.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43202 skos:narrowMatch disc:ford-2.5 .
+
+disc:r3d-43203 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Thermodynamics and Kinetics as well as Properties of Phases and Microstructure of Materials"@en ;
+    skos:notation "43203" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43203 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-43204 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Computer-Aided Design of Materials and Simulation of Materials Behaviour from Atomic to Microscopic Scale"@en ;
+    skos:notation "43204" ;
+    skos:broader disc:ford-2.5 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-43204 skos:narrowMatch disc:ford-2.5 .
+
+disc:r3d-44101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Automation, Mechatronics, Control Systems, Intelligent Technical Systems, Robotics"@en ;
+    skos:notation "44101" ;
+    skos:broader disc:ford-2.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44101 skos:narrowMatch disc:ford-2.2 .
+
+disc:r3d-44102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Measurement Systems"@en ;
+    skos:notation "44102" ;
+    skos:broader disc:ford-2.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44102 skos:narrowMatch disc:ford-2.2 .
+
+disc:r3d-44103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Microsystems"@en ;
+    skos:notation "44103" ;
+    skos:broader disc:ford-2.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44103 skos:narrowMatch disc:ford-2.2 .
+
+disc:r3d-44104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Traffic and Transport Systems, Intelligent and Automated Traffic"@en ;
+    skos:notation "44104" ;
+    skos:broader disc:ford-2.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44104 skos:narrowMatch disc:ford-2.2 .
+
+disc:r3d-44105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Human Factors, Ergonomics, Human-Machine Systems"@en ;
+    skos:notation "44105" ;
+    skos:broader disc:ford-2.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44105 skos:narrowMatch disc:ford-2.2 .
+
+disc:r3d-44106 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Biomedical Systems Technology"@en ;
+    skos:notation "44106" ;
+    skos:broader disc:ford-2.6 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44106 skos:narrowMatch disc:ford-2.6 .
+
+disc:r3d-44201 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Electronic Semiconductors, Components and Circuits, Integrated Systems, Sensor Technology, Theoretical Electrical Engineering"@en ;
+    skos:notation "44201" ;
+    skos:broader disc:ford-2.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44201 skos:narrowMatch disc:ford-2.2 .
+
+disc:r3d-44202 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Communication Technology and Networks, High-Frequency Technology and Photonic Systems, Signnal Processing and Machine Learning for Information Technology"@en ;
+    skos:notation "44202" ;
+    skos:broader disc:ford-5.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44202 skos:narrowMatch disc:ford-5.3 .
+
+disc:r3d-44203 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Electrical Energy Systems, Power Management, Power Electronics, Electrical Machines and Drives"@en ;
+    skos:notation "44203" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44203 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-44204 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Hardware Systems and Architectures for Information Technology and Artificial Intelligence, Quantum Engineering Systems"@en ;
+    skos:notation "44204" ;
+    skos:broader disc:ford-1.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44204 skos:narrowMatch disc:ford-1.2 .
+
+disc:r3d-44301 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Theoretical Computer Science"@en ;
+    skos:notation "44301" ;
+    skos:broader disc:ford-1.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44301 skos:narrowMatch disc:ford-1.2 .
+
+disc:r3d-44302 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Software Engineering and Programming Languages"@en ;
+    skos:notation "44302" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44302 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-44303 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Security and Dependability, Operating, Communication and Distributed Systems"@en ;
+    skos:notation "44303" ;
+    skos:broader disc:ford-1.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44303 skos:narrowMatch disc:ford-1.2 .
+
+disc:r3d-44304 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Artificial Intelligence and Machine Learning Methods"@en ;
+    skos:notation "44304" ;
+    skos:broader disc:ford-5.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44304 skos:narrowMatch disc:ford-5.3 .
+
+disc:r3d-44305 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Image and Language Processing, Computer Graphics and Visualisation, Human Computer Interaction, Ubiquitous and Wearable Computing"@en ;
+    skos:notation "44305" ;
+    skos:broader disc:ford-6.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44305 skos:narrowMatch disc:ford-6.2 .
+
+disc:r3d-44306 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Data Management, Data-Intensive Systems, Computer Science Methods in Business Informatics"@en ;
+    skos:notation "44306" ;
+    skos:broader disc:ford-5.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44306 skos:narrowMatch disc:ford-5.2 .
+
+disc:r3d-44307 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Computer Architecture, Embedded and Massively Parallel Systems"@en ;
+    skos:notation "44307" ;
+    skos:broader disc:ford-1.2 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-44307 skos:narrowMatch disc:ford-1.2 .
+
+disc:r3d-45101 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Architecture, Building and Construction History, Construction Research, Sustainable Building Technology"@en ;
+    skos:notation "45101" ;
+    skos:broader disc:ford-6.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-45101 skos:narrowMatch disc:ford-6.1 .
+
+disc:r3d-45102 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning"@en ;
+    skos:notation "45102" ;
+    skos:broader disc:ford-2.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-45102 skos:narrowMatch disc:ford-2.1 .
+
+disc:r3d-45103 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Construction Material Sciences, Chemistry, Building Physics"@en ;
+    skos:notation "45103" ;
+    skos:broader disc:ford-1.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-45103 skos:narrowMatch disc:ford-1.3 .
+
+disc:r3d-45104 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Structural Engineering, Building Informatics and Construction Operation"@en ;
+    skos:notation "45104" ;
+    skos:broader disc:ford-2.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-45104 skos:narrowMatch disc:ford-2.1 .
+
+disc:r3d-45105 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Applied Mechanics, Statics and Dynamics"@en ;
+    skos:notation "45105" ;
+    skos:broader disc:ford-2.3 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-45105 skos:narrowMatch disc:ford-2.3 .
+
+disc:r3d-45106 a skos:Concept ;
+    skos:inScheme disc:scheme ;
+    skos:prefLabel "Geotechnics, Hydraulic Engineering"@en ;
+    skos:notation "45106" ;
+    skos:broader disc:ford-2.1 ;
+    dct:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/r3d/subject-type.ttl> ;
+    skos:note "More specific than the EuroSciVoc/FoRD L1-L2 backbone."@en .
+disc:r3d-45106 skos:narrowMatch disc:ford-2.1 .
