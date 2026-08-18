@@ -38,13 +38,14 @@ trsp:typeEnhancedCuration
   a skos:Concept ;
   skos:prefLabel "Enhanced curation"@en ;
   skos:broader trsp:typeCurationLevel ;
+  skos:exactMatch <https://ex.com> ;
   skos:inScheme trsp:checklistCurationType .
 
 
 trsp:typeBasicCuration
   a skos:Concept ;
   skos:prefLabel "Basic curation"@en ;
-  skos:broader trsp:typeCurationLevel ;
+  skos:broader trsp:typeCurationLevel 
   skos:inScheme trsp:checklistCurationType .
 
 
