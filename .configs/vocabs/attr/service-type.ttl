@@ -9,8 +9,8 @@
 trsp:typeService
   a skos:ConceptScheme ;
   skos:prefLabel "Checklist for APIs"@en ;
-  dct:title "Checklist for APIs"@en ;
-  dct:description "List of API service types/ protocols available"@en ;
+  dct:title "Checklist for API and Service Types"@en ;
+  dct:description "List of API abd Service types/ protocols available."@en ;
   skos:hasTopConcept trsp:typePurpose ,
                      trsp:typeSpecialisation ,
                      trsp:typeAutomation ;
