@@ -7,7 +7,7 @@
 
 trsp:checklistLegalDocuments
   a skos:ConceptScheme ;
-  skos:prefLabel "Checklist of Legal Documents"@en ;
+  skos:prefLabel "Checklist of Legal Documentation Available."@en ;
   dct:title "Checklist of Legal Documents"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-08-17"^^xsd:date ;
