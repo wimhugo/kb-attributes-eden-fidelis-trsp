@@ -14,10 +14,7 @@ trsp:checklistCurationType
   owl:versionInfo "0.1" .
 
 #----------------------------------------------------------
-
 # Curation Level .
-
-
 #----------------------------------------------------------
 
 trsp:typeCurationLevel
@@ -48,13 +45,10 @@ trsp:typeAsDeposited
   a skos:Concept ;
   skos:prefLabel "Content distributed as deposited"@en ;
   skos:broader trsp:typeCurationLevel ;
-  skos:inScheme trsp:checklistCurationType
+  skos:inScheme trsp:checklistCurationType 
 
 #----------------------------------------------------------
-
-# Automation  .
-
-
+# Automation
 #----------------------------------------------------------
 
 trsp:typeCurationAutomationLevel
@@ -89,10 +83,7 @@ trsp:typeCurationAIModerated
   skos:inScheme trsp:checklistCurationType .
 
 #----------------------------------------------------------
-
-# Curation Activity .
-
-
+# Curation Activity
 #----------------------------------------------------------
 
 trsp:typeCurationActivity
@@ -100,8 +91,7 @@ trsp:typeCurationActivity
   skos:prefLabel "Curation Activity"@en ;
   skos:inScheme trsp:checklistCurationType .
 
-# Enhancement ---------------------------------------------- .
-
+# Enhancement ----------------------------------------------
 
 trsp:typeImprovementActivity
   a skos:Concept ;
@@ -115,8 +105,7 @@ trsp:typeSemanticEnhancement
   skos:broader trsp:typeImprovementActivity ;
   skos:inScheme trsp:checklistCurationType .
 
-# QA ------------------------------------------------------- .
-
+# QA -------------------------------------------------------
 
 trsp:typeQualityActivity
   a skos:Concept ;
@@ -124,8 +113,7 @@ trsp:typeQualityActivity
   skos:broader trsp:typeCurationActivity ;
   skos:inScheme trsp:checklistCurationType .
 
-## Deposit  .
-
+## Deposit
 
 trsp:typeDepositDocumentation
   a skos:Concept ;
@@ -144,8 +132,7 @@ trsp:typeMandatoryMetadata
   skos:broader trsp:typeDepositDocumentation ;
   skos:inScheme trsp:checklistCurationType .
 
-## Integrity/ authenticity .
-
+## Integrity/ authenticity
 
 trsp:typeIntegrityChecks
   a skos:Concept ;
@@ -183,8 +170,7 @@ trsp:typeCheckedForVirusMalware
   skos:broader trsp:typeQualityActivity ;
   skos:inScheme trsp:checklistCurationType .
 
-## Legal and ethical .
-
+## Legal and ethical
 
 trsp:typeLegalEthicsChecks
   a skos:Concept ;
