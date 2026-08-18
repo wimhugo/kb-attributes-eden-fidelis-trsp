@@ -1,5 +1,5 @@
 # context
-@base <http://www.w3.org/ns/openrel/0/> .
+@base <http://www.w3.org/ns/trsp/0/> .
 @prefix : <http://www.w3.org/ns/openrel/0/> .
 # RDF-related
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
