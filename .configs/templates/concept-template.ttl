@@ -1,0 +1,25 @@
+
+trsp:[[CONCEPT_SCHEME_IRI]]
+  a skos:ConceptScheme ;
+  dct:title [[SCHEME_TITLE]]@en ;
+  skos:prefLabel [[SCHEME_PREF_LABEL]]@en ;
+  skos:definition [[SCHEME_DEFINITION]]@en ;
+  dct:description [[SCHEME_DESCRIPTION]]@en ;
+  skos:hasTopConcept {{ZERO_OR_MORE_TOP_CONCEPTS}} ;
+  prov:wasAssociatedWith {{ZERO_OR_MORE_PROV_NODES}} ;
+  dct:rights [[RIGHTS_IRL]] ;
+  owl:versionInfo [[SCHEME_VERSION]]@en ;
+  foaf:homepage  [[SCHEME_HOMEPAGE_IRL]] .
+
+trsp:[[CONCEPT_IRI]]
+  a skos:Concept ;
+  skos:prefLabel [[CONCEPT_PREF_LABEL]]@en ;
+  skos:definition [[CONCEPT_DEFINITION]]@en ;
+  dct:description [[CONCEPT_DESCRIPTION]]@en ;
+  skos:broader [[OPTIONAL_PARENT_CONCEPT_IRI]] ;
+  skos:broadMatch [[OPTIONAL_BROADMATCH_IRI]] ;
+  skos:closeMatch [[OPTIONAL_CLOSEMATCH_IRI]] ;
+  skos:narrowMatch [[OPTIONAL_NARROWMATCH_IRI]] ;
+  skos:exactMatch [[OPTIONAL_EXACTMATCH_IRI]] ;
+  skos:inScheme trsp:[[[[CONCEPT_SCHEME_IRI]] .
+  
