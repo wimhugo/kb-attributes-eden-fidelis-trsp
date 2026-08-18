@@ -7,7 +7,7 @@
 
 trsp:checklistCurationType
   a skos:ConceptScheme ;
-  skos:prefLabel "Level of Curation"@en ;
+  skos:prefLabel "Curation Levels, Automation, and Activities."@en ;
   dct:title "Level of Curation"@en ;
   dct:created "2026-05-07"^^xsd:date ;
   dct:modified "2026-05-07"^^xsd:date ;
