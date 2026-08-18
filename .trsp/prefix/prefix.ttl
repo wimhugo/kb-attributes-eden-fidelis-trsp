@@ -18,10 +18,10 @@
 @prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 @prefix coar: <http://purl.org/coar/> .
 # quality, assessment
-# fgv
-# fte
-# cat
-# dqv
+@prefix fgv: <https://w3id.org/fgv#> .
+@prefix ftr: <https://w3id.org/ftr#> .
+@prefix cat: <https://github.com/FC4E-CAT/fc4e-cat-api> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
 # rights-related
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix cc: <http://creativecommons.org/ns#> .
