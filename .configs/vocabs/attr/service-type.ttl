@@ -116,7 +116,7 @@ trsp:typeAutomationLevel
 trsp:typeManual
   a skos:Concept ;
   skos:prefLabel "Manual Service"@en ;
-  skos:broader typeAutomationLevel 
+  skos:broader typeAutomationLevel ;
   skos:inScheme trsp:typeService .
 
 trsp:typeAutomated
