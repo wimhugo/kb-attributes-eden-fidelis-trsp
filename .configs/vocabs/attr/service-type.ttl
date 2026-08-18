@@ -13,7 +13,7 @@ trsp:typeService
   dct:description "List of API abd Service types/ protocols available."@en ;
   skos:hasTopConcept trsp:typePurpose ,
                      trsp:typeSpecialisation ,
-                     trsp:typeAutomationLevel ;
+                     trsp:typeAutomation ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   dct:contributor <https://orcid.org/0000-0003-1106-8441> ;
@@ -111,6 +111,7 @@ trsp:typeEoscScienceGateway
 trsp:typeAutomationLevel
   a skos:Concept ;
   skos:prefLabel "Levels of Automation"@en ;
+  skos:broader trsp:typeAutomation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeManual
