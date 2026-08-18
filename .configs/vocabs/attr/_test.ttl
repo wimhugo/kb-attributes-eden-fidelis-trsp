@@ -6,13 +6,13 @@
 
 trsp:checklistCurationType
   a skos:ConceptScheme ;
-  skos:prefLabel "Curation Levels, Automation, and Activities."@en ;
   dct:title "Level of Curation"@en ;
   dct:created "2026-05-07"^^xsd:date ;
   dct:modified "2026-05-07"^^xsd:date ;
   skos:hasTopConcept trsp:typeCurationLevel ,
                      trsp:typeCurationActivity ,
                      trsp:typeCurationAutomationLevel ;
+  skos:prefLabel "Curation Levels, Automation, and Activities."@en ;
   owl:versionInfo "0.1" .
 
 
