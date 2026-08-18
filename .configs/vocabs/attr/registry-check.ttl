@@ -8,8 +8,8 @@
 trsp:checklistRegistry
   a skos:ConceptScheme ;
   skos:prefLabel "Checklist for Registries"@en ;
-  dct:title "Checklist for Registry Sources"@en ;
-  dct:description "List of registry sources of identifiers for specific entities"@en ;
+  dct:title "Checklist for Registry Source Typess"@en ;
+  dct:description "List of registry source types for identifiers"@en ;
   dct:created "2026-07-02T00:00:00+00:00"^^xsd:datetime ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   skos:note "This is just a subset of entries that can be obtained from https://cat.argo.grnet.gr/pid-selection."@en ;
