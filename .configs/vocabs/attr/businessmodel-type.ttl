@@ -11,8 +11,8 @@
 
 trsp:typeBusinessModel 
   a skos:ConceptScheme ;
-  dct:title "TRSP Attributes Business Model Types"@en ;
-  skos:prefLabel "TRSP Attributes Business Model Types"@en ;
+  dct:title "Business Model Types"@en ;
+  skos:prefLabel "Business Model Types"@en ;
   dct:description "Business Model Types derived from annotation sources"@en ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:dateTime ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
@@ -24,7 +24,7 @@ trsp:typeBusinessModel
 
 trsp:typeForProfitBusiness
     a skos:Concept ;
-    skos:inScheme trsp:typeBusinessModel  ;
+    skos:inScheme trsp:typeBusinessModel ;
     skos:prefLabel "For-Profit"@en ;
     skos:notation "For-Profit" ;
     skos:altLabel "Commercial Organisation", "Commercial Business", "Commercial Enterprise" ;
