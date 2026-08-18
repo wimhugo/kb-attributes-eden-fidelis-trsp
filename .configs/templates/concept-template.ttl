@@ -3,8 +3,8 @@
 
 trsp:[[CONCEPT_SCHEME_IRI]]
   a skos:ConceptScheme ;
-  dct:title "[[SCHEME_TITLE]]@en ;
-  skos:prefLabel [[SCHEME_PREF_LABEL]]"@en ;
+  dct:title "[[SCHEME_TITLE]]"@en ;
+  skos:prefLabel "[[SCHEME_PREF_LABEL]]"@en ;
   skos:definition "[[SCHEME_DEFINITION]]"@en ;
   dct:description "[[SCHEME_DESCRIPTION]]"@en ;
   skos:hasTopConcept [[ZERO_OR_MORE_TOP_CONCEPTS]] ;
