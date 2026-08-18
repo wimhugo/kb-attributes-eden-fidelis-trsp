@@ -193,7 +193,6 @@ trsp:trsp:typeRepositoryService
 trsp:typeCatalogueService
   a skos:Concept ;
   skos:prefabel "Catalogue Services"@en ;
-  skos:broader trsp:typeSpecialisation ;
   skos:exactMatch dcat:Catalog ;
   skos:broader trsp:typeRepositoryService ;
   skos:inScheme trsp:typeService .
@@ -227,13 +226,13 @@ trsp:typePolicyLicenceRegistry
 trsp:typeCrosswalksRegistry
   a skos:Concept ;
   skos:prefabel "Crosswalks Registries"@en ;
-  skos:broader trsp:typeRegistry ;
+  skos:broader trsp:typeRegistryService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeMetadataSchemaRegistry
   a skos:Concept ;
   skos:prefabel "Metadata Schema Registries"@en ;
-  skos:broader trsp:typeRegistry ;
+  skos:broader trsp:typeRegistryService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFileService
