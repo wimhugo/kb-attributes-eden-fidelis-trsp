@@ -184,7 +184,7 @@ trsp:typePIDService
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
-trsp:trsp:typeRepositoryService
+trsp:typeRepositoryService
   a skos:Concept ;
   skos:prefLabel "Repository Services"@en ;
   skos:broader trsp:typeSpecialisation ;
@@ -253,7 +253,7 @@ trsp:typeFileFormatRegistry
 
 trsp:typeFormatGuidanceAPI
   a skos:Concept ;
-  skos:prefLabel ""@en ;
+  skos:prefLabel "Format Guidance API"@en ;
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
