@@ -1,1421 +1,1423 @@
-@prefix rt: <https://example.org/rdmi-resource-type/> .
+@prefix trsp: <https://example.org/rdmi-resource-type/> .
 @prefix rtp: <https://example.org/rdmi-resource-type/property/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-rt:scheme a skos:ConceptScheme ;
+trsp:typeResource a skos:ConceptScheme ;
     skos:prefLabel "RDMI Resource Types Vocabulary"@en ;
     dct:description "Combined resource-type vocabulary using DataCite ResourceTypeGeneral as the backbone, enriched with COAR Resource Types and cross-vocabulary mappings."@en ;
-    skos:hasTopConcept rt:resource .
+    skos:hasTopConcept trsp:resource .
 
 rtp:primarySource a rdf:Property .
 rtp:dataciteResourceTypeGeneral a rdf:Property .
 rtp:zenodoType a rdf:Property .
 
-rt:resource a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:resource a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Resource"@en ;
     skos:definition "A resource or research output classified by its nature or genre."@en ;
-    skos:topConceptOf rt:scheme ;
+    skos:topConceptOf trsp:typeResource ;
     rtp:primarySource "RDMI" ;
     skos:note "Top concept for the combined vocabulary."@en .
 
-rt:audiovisual a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:audiovisual a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Audiovisual"@en ;
     skos:definition "A series of visual representations imparting an impression of motion when shown in succession. May or may not include sound."@en ;
-    skos:broader rt:image ;
+    skos:broader trsp:image ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Audiovisual" ;
     rtp:zenodoType "video" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#audiovisual> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:award a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:award a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Award"@en ;
     skos:definition "An umbrella term for resources provided to individuals or organizations in support of research, academic output, or training, such as funding, grants, sponsorships, scholarships, recognition, or non-monetary resources."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Award" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#award> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:book a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:book a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Book"@en ;
     skos:definition "A medium for recording information in the form of writing or images, typically composed of many pages bound together and protected by a cover."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Book" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#book> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:book-chapter a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:book-chapter a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Book Chapter"@en ;
     skos:definition "One of the main divisions of a book."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "BookChapter" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#bookchapter> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:collection a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:collection a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Collection"@en ;
     skos:definition "An aggregation of resources, which may encompass collections of one resource type as well as those of mixed types."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Collection" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#collection> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:computational-notebook a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:computational-notebook a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Computational Notebook"@en ;
     skos:definition "A virtual notebook environment used for literate programming."@en ;
-    skos:broader rt:interactive-resource ;
+    skos:broader trsp:interactive-resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "ComputationalNotebook" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#computationalnotebook> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:conference-paper a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:conference-paper a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Conference Paper"@en ;
     skos:definition "An article written with the goal of being accepted to a conference."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "ConferencePaper" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#conferencepaper> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:conference-proceeding a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:conference-proceeding a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Conference Proceeding"@en ;
     skos:definition "A collection of academic papers published in the context of an academic conference."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "ConferenceProceeding" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#conferenceproceeding> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:data-paper a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:data-paper a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Data Paper"@en ;
     skos:definition "A factual and objective publication focused on identifying and describing specific data, datasets, or data collections to facilitate discoverability."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "DataPaper" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#datapaper> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:dataset a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:dataset a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Dataset"@en ;
     skos:definition "Data encoded in a defined structure."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Dataset" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#dataset> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:dissertation a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:dissertation a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Dissertation"@en ;
     skos:definition "A written essay, treatise, or thesis, especially one written by a candidate for a doctoral degree."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Dissertation" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#dissertation> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:event a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:event a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Event"@en ;
     skos:definition "A non-persistent, time-based occurrence."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Event" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#event> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:image a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:image a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Image"@en ;
     skos:definition "A visual representation other than text."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Image" ;
     rtp:zenodoType "image" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#image> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:instrument a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:instrument a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Instrument"@en ;
     skos:definition "A device, tool, or apparatus used to obtain, measure, and/or analyze data."@en ;
-    skos:broader rt:physical-object ;
+    skos:broader trsp:physical-object ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Instrument" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#instrument> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:interactive-resource a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:interactive-resource a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Interactive Resource"@en ;
     skos:definition "A resource requiring interaction from the user to be understood, executed, or experienced."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "InteractiveResource" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#interactiveresource> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:journal a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:journal a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Journal"@en ;
     skos:definition "A scholarly publication consisting of articles that is published regularly throughout the year."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Journal" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#journal> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:journal-article a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:journal-article a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Journal Article"@en ;
     skos:definition "A written composition on a topic of interest that forms a separate part of a journal."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "JournalArticle" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#journalarticle> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:model a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:model a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Model"@en ;
     skos:definition "An abstract, conceptual, graphical, mathematical, or visualization model representing empirical objects, phenomena, or physical processes."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Model" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#model> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:output-management-plan a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:output-management-plan a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Output Management Plan"@en ;
     skos:definition "A formal document outlining how research outputs are to be handled during and after a research project."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "OutputManagementPlan" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#outputmanagementplan> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:peer-review a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:peer-review a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Peer Review"@en ;
     skos:definition "Evaluation of scientific, academic, or professional work by others working in the same field."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "PeerReview" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#peerreview> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:physical-object a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:physical-object a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Physical Object"@en ;
     skos:definition "A physical object or substance."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "PhysicalObject" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#physicalobject> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:poster a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:poster a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Poster"@en ;
     skos:definition "A display poster, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Poster" ;
     rtp:zenodoType "poster" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#poster> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:preprint a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:preprint a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Preprint"@en ;
     skos:definition "A version of a scholarly or scientific paper that precedes formal peer review and journal publication."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Preprint" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#preprint> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:presentation a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:presentation a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Presentation"@en ;
     skos:definition "A set of slides containing text, tables, or figures, designed to communicate ideas or research results to an audience."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Presentation" ;
     rtp:zenodoType "presentation" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#presentation> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:project a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:project a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Project"@en ;
     skos:definition "A planned endeavor or activity, frequently collaborative, intended to achieve a particular aim using allocated resources."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Project" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#project> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:report a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:report a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Report"@en ;
     skos:definition "A document that presents information in an organized format for a specific audience and purpose."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Report" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#report> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:service a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:service a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Service"@en ;
     skos:definition "An organized system of apparatus, applications, staff, etc., for supplying functions required by end users."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Service" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#service> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:software a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:software a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Software"@en ;
     skos:definition "A computer program other than a computational notebook, in source-code or compiled form."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Software" ;
     rtp:zenodoType "software" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#software> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:sound a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:sound a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Sound"@en ;
     skos:definition "A resource primarily intended to be heard."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Sound" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#sound> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:standard a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:standard a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Standard"@en ;
     skos:definition "Something established by authority, custom, or general consent as a model, example, or point of reference."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Standard" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#standard> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:study-registration a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:study-registration a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Study Registration"@en ;
     skos:definition "A detailed, time-stamped description of a research plan, often shared before the study is conducted."@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "StudyRegistration" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#studyregistration> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:text a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:text a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Text"@en ;
     skos:definition "A resource consisting primarily of words for reading that is not covered by another textual resource type in the list."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Text" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#text> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:workflow a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:workflow a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Workflow"@en ;
     skos:definition "A structured series of executable steps designed to produce an outcome in a reproducible manner."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Workflow" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#workflow> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:other a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:other a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Other"@en ;
     skos:definition "A resource that does not fit another controlled ResourceTypeGeneral value."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "DataCite 4.7" ;
     rtp:dataciteResourceTypeGeneral "Other" ;
     rtp:zenodoType "other" ;
     rdfs:seeAlso <https://datacite-metadata-schema.readthedocs.io/en/4.7/appendices/appendix-1/resourceTypeGeneral/#other> ;
     skos:note "DataCite ResourceTypeGeneral backbone concept."@en .
 
-rt:metadata a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:metadata a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Metadata"@en ;
     skos:definition "A resource comprising structured or unstructured information that describes, identifies, contextualises, administers, preserves, or otherwise provides information about another resource or set of resources."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "RDMI" ;
     skos:note "RDMI-defined independent resource type. Deliberately has no narrower concepts in this release."@en .
 
-rt:coar-aggregated-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+# COAR Concepts
+
+trsp:coar-aggregated-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Aggregated data"@en ;
     skos:definition "Statistics that relate to broad classes, groups, or categories. The data are averaged, totaled, or otherwise derived from individual-level data, and it is no longer possible to distinguish the characteristics of individuals within those classes, groups, or categories. For example, the number and age group of the unemployed in specific geographic regions, or national level statistics on the occurrence of specific offences, originally derived from the statistics of individual police districts. [Source: https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/ACF7-8YT9> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-annotation a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-annotation a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Annotation"@en ;
     skos:definition "An annotation in the sense of a legal note is a legally explanatory comment on a decision handed down by a court or arbitral tribunal. [Source: DRIVER info:eu-repo definition]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_1162> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-archival-collection a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-archival-collection a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Archival collection"@en ;
     skos:definition "A collection of historical records and primary source documents. Documents may be tangible or digital. Adapted from “archive (groupings)” in Getty AAT: https://www.getty.edu/vow/AATFullDisplay?find=maiolica&logic=AND&note=&subjectid=300375748"@en ;
-    skos:broader rt:collection ;
+    skos:broader trsp:collection ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/YC9F-HGCF> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-artistic-work a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-artistic-work a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Artistic work"@en ;
     skos:definition "A work of visual arts and performing arts, including musical works; dramatic works; pantomimes and choreographic works; motion picture and other audiovisual works; pictorial, graphic, sculptural and architectural works. Adapted from Law Insider: https://www.lawinsider.com/dictionary/artistic-works"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/F8RT-TJK0> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-bachelor-thesis a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-bachelor-thesis a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Bachelor thesis"@en ;
     skos:definition "A thesis reporting a research project undertaken as part of an undergraduate course of education leading to a bachelor's degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2181]"@en ;
-    skos:broader rt:coar-thesis ;
+    skos:broader trsp:coar-thesis ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_7a1f> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-bibliography a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-bibliography a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Bibliography"@en ;
     skos:definition "A list of the books and articles that have been used by someone when writing a particular book or article [Source: https://dictionary.cambridge.org/dictionary/english/bibliography]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_86bc> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-blog-post a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-blog-post a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Blog post"@en ;
     skos:definition "A piece of writing or other item of content published on a blog. [Source: https://www.lexico.com/definition/blog_post]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_6947> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-book-review a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-book-review a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Book review"@en ;
     skos:definition "A written review and critical analysis of the content, scope and quality of a book or other monographic work. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e2300]"@en ;
-    skos:broader rt:coar-review ;
+    skos:broader trsp:coar-review ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_ba08> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-cartographic-material a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-cartographic-material a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Cartographic material"@en ;
     skos:definition "Any material representing the whole or part of the earth or any celestial body at any scale. Cartographic materials include two- and three-dimensional maps and plans (including maps of imaginary places); aeronautical, navigational, and celestial charts; atlases; globes; block diagrams; sections; aerial photographs with a cartographic purpose; bird's-eye views (map views), etc. [Source: http://www.loc.gov/marc/cfmap.html]"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_12cc> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-clinical-study a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-clinical-study a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Clinical study"@en ;
     skos:definition "A work that reports on the results of a research study to evaluate interventions or exposures on biomedical or health-related outcomes. The two main types of clinical studies are interventional studies (clinical trials) and observational studies. While most clinical studies concern humans, this publication type may be used for clinical veterinary articles meeting the requisites for humans. [Source: https://www.ncbi.nlm.nih.gov/mesh/2009830]"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_7877> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-clinical-trial-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-clinical-trial-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Clinical trial data"@en ;
     skos:definition "Data resulting from a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of those interventions on health-related biomedical or behavioral outcomes. [Source: Adapted from https://grants.nih.gov/policy/clinical-trials/definition.htm]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_cb28> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-commentary a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-commentary a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Commentary"@en ;
     skos:definition "A commentary is a more in-depth analysis written to draw attention to a work already published. Commentaries are somewhat like “reviews” in that the author presents his or her analysis of a work and why it  would be of interest to a specific audience. [Source: https://www.enago.com/academy/perspective-opinion-and-commentary-pieces]"@en ;
-    skos:broader rt:coar-review ;
+    skos:broader trsp:coar-review ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/D97F-VB57> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-compiled-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-compiled-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Compiled data"@en ;
     skos:definition "Data collected or assembled from multiple, often heterogeneous sources that have one or more reference points in common, and at least one of the sources was originally produced for other purposes. The data are incorporated in a new entity. For example, providing data on the number of universities in the last 150 years using a variety of available sources (e.g. finance documents, official statistics, university registers), combining survey data with information about geographical areas from official statistics (e.g. population density, doctors per capita, etc.), or using RSS to collect blog posts or tweets, etc. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/FXF3-D3G7> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-conference-output a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-conference-output a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Conference output"@en ;
     skos:definition "All kind of digital resources contributed to a conference, like conference presentation (slides), conference report, conference lecture, abstracts, demonstrations. For conference papers, posters or proceedings the specific sub-concepts should be used. [COAR definition]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_c94f> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-conference-paper-not-in-proceedings a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-conference-paper-not-in-proceedings a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Conference paper not in proceedings"@en ;
     skos:definition "A paper, typically the realization of a research paper reporting original research findings. Use this label when the paper is not published in a proceeding. [Source: Adapted from http://purl.org/spar/fabio/ConferencePaper]"@en ;
-    skos:broader rt:coar-conference-output ;
+    skos:broader trsp:coar-conference-output ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18cp> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-conference-poster a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-conference-poster a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Conference poster"@en ;
     skos:definition "A display poster, published within a conference proceeding, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event. [Source: Adapted https://sparontologies.github.io/fabio/current/fabio.html#d4e2648]"@en ;
-    skos:broader rt:conference-proceeding ;
+    skos:broader trsp:conference-proceeding ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_6670> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-conference-poster-not-in-proceedings a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-conference-poster-not-in-proceedings a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Conference poster not in proceedings"@en ;
     skos:definition "A display poster, typically containing text with illustrative figures and/or tables, usually reporting research results or proposing hypotheses, submitted for acceptance to and/or presented at a conference, seminar, symposium, workshop or similar event. Use this label when the poster is not published in a proceeding. [Source: http://purl.org/spar/fabio/ConferencePoster]"@en ;
-    skos:broader rt:coar-conference-output ;
+    skos:broader trsp:coar-conference-output ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18co> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-conference-presentation a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-conference-presentation a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Conference presentation"@en ;
     skos:definition "A set of slides containing text, tables or figures, designed to communicate ideas or research results, for projection and viewing by an audience at a conference, symposium, seminar, lecture, workshop or other gatherings. [Source: Adapted from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e4880]"@en ;
-    skos:broader rt:coar-conference-output ;
+    skos:broader trsp:coar-conference-output ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/R60J-J5BD> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-contribution-to-journal a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-contribution-to-journal a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Contribution to journal"@en ;
     skos:definition "A contribution to a journal denotes a work published in a journal. If applicable sub-terms should be chosen."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_3e5a> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-corrigendum a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-corrigendum a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Corrigendum"@en ;
     skos:definition "A formal correction to an error introduced by the author into a previously published document. (adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e2712)"@en ;
-    skos:broader rt:coar-journal-article ;
+    skos:broader trsp:coar-journal-article ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_7acd> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-court-documents a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-court-documents a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Court documents"@en ;
     skos:definition "A set of judicial proceedings that record, physically or digitally, and in an orderly fashion, the development of a process or procedural actions so that they may be recorded and examined by the parties. This would include the set of judicial proceedings and any item within that set as a physical or electronic court document. Adapted from https://dpej.rae.es/lema/expediente-judicial with input from https://www.supremecourt.gov/case_documents.aspx"@en ;
-    skos:broader rt:collection ;
+    skos:broader trsp:collection ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/1YTN-RJZE> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-data-management-plan a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-data-management-plan a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Data management plan"@en ;
     skos:definition "A formal statement describing how research data will be managed and documented throughout a research project and the terms regarding the subsequent deposit of the data with a data repository for long-term management and preservation. [Source: https://casrai.org/rdm-glossary]"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_ab20> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-design a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-design a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Design"@en ;
     skos:definition "Plans, drawing or set of drawings showing how something e.g. building, product is to be made and how it will work and look. [Source: Adapted from https://dictionary.cambridge.org/dictionary/english/design]"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/542X-3S04> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-design-patent a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-design-patent a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Design patent"@en ;
     skos:definition "A patent granted to any person who has invented any new and non-obvious ornamental design for an article of manufacture. The design patent protects only the appearance of an article, but not its structural or functional features. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/design-patent-application-guide#def]"@en ;
-    skos:broader rt:coar-patent ;
+    skos:broader trsp:coar-patent ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/C53B-JCY5> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-editorial a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-editorial a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Editorial"@en ;
     skos:definition "A brief essay expressing the opinion or position of the chief editor(s) of a (academic) journal with respect to a current political, social, cultural, or professional issue. [Source: Adapted from ODLIS [Source: http://www.abc-clio.com/ODLIS/odlis_e.aspx ]"@en ;
-    skos:broader rt:journal ;
+    skos:broader trsp:journal ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_b239> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-encoded-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-encoded-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Encoded data"@en ;
     skos:definition "Qualitative data (textual, video, audio or still-image) originally produced for other purposes into quantitative data (expressed in unit-by-variable matrices) by using coding techniques in accordance with pre-defined categorization schemes. For example, coded party manifesto data like the \"European Parliament Election Study 2009, Manifesto Study\" (doi:10.4232/1.10204)\". [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/AM6W-6QAW> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-experimental-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-experimental-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Experimental data"@en ;
     skos:definition "Data resulting from the experimental research method involving the manipulation of some or all of the independent variables included in the hypotheses. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/63NG-B465> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-genomic-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-genomic-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Genomic data"@en ;
     skos:definition "Genomic data refers to the genome and DNA data of an organism. They are used in bioinformatics for collecting, storing and processing the genomes of living things. Genomic data is a more extensive term than sequencing data. However genomic data mostly come from sequencing techniques. It may include non-sequencing data such as data from microarrays, data from real-time PCR panels and data from pharmacogenomics studies. [Source: Adapted from https://www.techopedia.com/definition/31247/genomic-data]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/A8F1-NPV9> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-geospatial-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-geospatial-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Geospatial data"@en ;
     skos:definition "Geospatial data are any type of data with spatial coordinates that allow them to be mapped to the Earth's surface. They can represent physical objects, discrete areas or continuous surfaces. Discrete geospatial data are usually represented using vector data consisting of points, lines and polygons, while continuous geospatial data are usually represented by raster data, consisting of a grid of cells that each has its own value. Any number of applications in a wide range of areas produce geospatial data, such as GIS, Remote Sensing equipment, GPS units, archaeological total stations, manual mapping and computer-aided design (CAD), in a number of formats, including images, vector, text, and tabular data. Vector-based geospatial data include tables listing archaeological sites along with their coordinates, text-based files (e.g., XML) containing coordinates and topology for historic road networks, voting figures for political parties by administrative area. Raster-based geospatial data include satellite images, aerial photographs, scanned maps, and digital maps of elevations, vegetation, land-use, sea surface temperatures, air pollution, soil-types, etc. [Source: https://ddialliance.org/Specification/DDI-CV/GeneralDataFormat_2.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/2H0M-X761> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-industrial-design a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-industrial-design a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Industrial design"@en ;
     skos:definition "Industrial designs are applied to a wide variety of industrial products and handicrafts. They refer to the ornamental or aesthetic aspects of a useful article,including compositions of lines or colors or any three-dimensional forms that give a special appearance to a product or handicraft. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]"@en ;
-    skos:broader rt:coar-design ;
+    skos:broader trsp:coar-design ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/JBNF-DYAD> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-internal-report a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-internal-report a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Internal report"@en ;
     skos:definition "An internal report is a record of findings collected for internal use. It is not designed to be made public and may include confidential or proprietary information."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18ww> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-interview a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-interview a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Interview"@en ;
     skos:definition "A discussion between a reporter, host, panel, or audience and a newsmaker, author, or celebrity, recorded (edited or unedited) in print, on film or video, as transcript or as a sound recording. (Adapted from ODLIS)"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_26e4> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-journal-article a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-journal-article a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Journal article"@en ;
     skos:definition "An article, typically the realization of a research paper reporting original research findings, published in a journal issue. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e3646]"@en ;
-    skos:broader rt:journal ;
+    skos:broader trsp:journal ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_6501> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-knowledge-organization-system a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-knowledge-organization-system a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Knowledge organization system"@en ;
     skos:definition "All types of schemes for organizing information and promoting knowledge management. Knowledge organization systems include classification schemes that organize materials at a general level (such as books on a shelf), subject headings that provide more detailed access, and authority files that control variant versions of key information (such as geographic names and personal names). They also include less-traditional schemes, such as semantic artifacts, semantic networks and ontologies. https://www.clir.org/pubs/reports/pub91/1knowledge/"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/GSZA-Y7V7> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-knowledge-synthesis-protocol a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-knowledge-synthesis-protocol a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Knowledge synthesis protocol"@en ;
     skos:definition "In the context of systematic reviews and meta-analyses, a protocol is a document that presents an explicit plan for a systematic review. The protocol details the rationale and a priori methodological and analytical approach of the review. https://www.bmj.com/content/349/bmj.g7647"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/DX5J-TA9R> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-laboratory-notebook a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-laboratory-notebook a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Laboratory notebook"@en ;
     skos:definition "A laboratory notebook (colloq. lab notebook or lab book) is a primary record of research. Researchers use a lab notebook to document their hypotheses, experiments and initial analysis or interpretation of these experiments. This label is used both for traditional and electronic laboratory notebook. [Source: Adapted from https://en.wikipedia.org/wiki/Lab_notebook]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/H41Y-FW7B> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-layout-design a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-layout-design a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Layout design"@en ;
     skos:definition "Layout-design (topography) means the three-dimensional disposition, however expressed, of \nthe elements of an integrated circuit (at least one of which is an active element) and of some or all of the interconnections of an integrated circuit, or such a three-dimensional disposition prepared for \nan integrated circuit intended for manufacture [Source: https://www.wipo.int/edocs/lexdocs/laws/en/hk/hk028en.pdf]"@en ;
-    skos:broader rt:coar-design ;
+    skos:broader trsp:coar-design ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/BW7T-YM2G> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-learning-object a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-learning-object a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Learning object"@en ;
     skos:definition "A digital resource that can be reused to enhance teaching and learning.\nSource https://icas-ca.org/archive/projects/coerc/oer-glossary/"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_e059> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-lecture a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-lecture a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Lecture"@en ;
     skos:definition "Transcription of an oral presentation/talk intended to present information or teach people about a particular subject, for example by a university or college teacher. [Source: Adopted from https://en.wikipedia.org/wiki/Lecture]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_8544> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-letter a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-letter a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Letter"@en ;
     skos:definition "A brief description of important new research, also known as “communication”. [Source: https://cerif.eurocris.org/vocab/html/OutputTypes.html#Letter]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_0857> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-letter-to-the-editor a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-letter-to-the-editor a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Letter to the editor"@en ;
     skos:definition "A letter addressed to the editor and comments on or discussed an item previously published by that periodical, or of interest to its readership. [Source: Adapted from hhttps://sparontologies.github.io/fabio/current/fabio.html#d4e3803]"@en ;
-    skos:broader rt:journal ;
+    skos:broader trsp:journal ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_545b> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-magazine a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-magazine a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Magazine"@en ;
     skos:definition "A popular interest periodical usually containing articles on a variety of topics, written by various authors in a nonscholarly style or a trade publication, unlike a consumer publication, covers a specific topic for people who work in that particular field or industry. [Source: Adapted from https://www.thebalance.com/what-is-a-trade-publication-exactly-2316039 and http://www.abc-clio.com/ODLIS/odlis_m.aspx]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_2cd9> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-magazine-article a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-magazine-article a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Magazine article"@en ;
     skos:definition "An Item appearing in a magazine (a general interest or specific focus periodical). This item is often shorter in length, is submitted by in-house and external authors. Adapted from MAGAZINE Definition & Meaning - Black's Law Dictionary (thelawdictionary.org)"@en ;
-    skos:broader rt:coar-magazine ;
+    skos:broader trsp:coar-magazine ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/43KC-T6DC> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-manuscript a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-manuscript a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Manuscript"@en ;
     skos:definition "A manuscript is a work of any kind (text, inscription, music score, map, etc.) written entirely by hand. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_0040> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-map a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-map a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Map"@en ;
     skos:definition "Defined as a representation normally to scale and on a flat medium, of a selection of material or abstract features on, or in relation to, the surface of the earth or of another celestial body. [Source: https://www.loc.gov/marc/bibliographic/bd007a.html]"@en ;
-    skos:broader rt:coar-cartographic-material ;
+    skos:broader trsp:coar-cartographic-material ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_12cd> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-master-thesis a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-master-thesis a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Master thesis"@en ;
     skos:definition "A thesis reporting a research project undertaken as part of a graduate course of education leading to a master's degree. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4057]"@en ;
-    skos:broader rt:coar-thesis ;
+    skos:broader trsp:coar-thesis ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_bdcc> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-measurement-and-test-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-measurement-and-test-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Measurement and test data"@en ;
     skos:definition "Data resulting from assessing specific properties (or characteristics) of beings, things, phenomena, (and/ or processes) by applying pre-established standards and/or specialized instruments or techniques. [Source: Adapted from  https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/DD58-GFSX> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-memorandum a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-memorandum a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Memorandum"@en ;
     skos:definition "A formal note distributed internally to one or more persons in a company, agency, organization, or institution, with a header indicating the date it was sent and stating to whom it is addressed (To:), from whom it is sent (From:), and the subject of the text (Re:). Unlike a letter, a memo does not require a full salutation or signature at the end of the text--the sender may simply initial his or her name in the header. [Source: https://products.abc-clio.com/ODLIS/odlis_m.aspx#memorandum]"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18wz> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-musical-composition a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-musical-composition a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Musical composition"@en ;
     skos:definition "Musical composition can refer to an original piece of music, the structure of a musical piece, or the process of creating a new piece of music. [Source: https://en.wikipedia.org/wiki/Musical_composition ]"@en ;
-    skos:broader rt:sound ;
+    skos:broader trsp:sound ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18cd> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-musical-notation a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-musical-notation a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Musical notation"@en ;
     skos:definition "Symbols used to write music, as in a music score, and to express mathematical concepts.\n[Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_n.aspx]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18cw> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-newspaper a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-newspaper a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Newspaper"@en ;
     skos:definition "A non-peer reviewed periodical, usually published daily or weekly, consisting primarily of editorials and news items concerning current or recent events and matters of public interest. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e4291]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_2fe3> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-newspaper-article a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-newspaper-article a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Newspaper article"@en ;
     skos:definition "Work consisting of a news item appearing in a general-interest newspaper or other general news periodical, containing information of current and timely interest in a field. (Adapted from http://www.reference.md/files/D018/mD018431.html )"@en ;
-    skos:broader rt:coar-newspaper ;
+    skos:broader trsp:coar-newspaper ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_998f> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-observational-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-observational-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Observational data"@en ;
     skos:definition "Data resulting from observational research, which involves collecting observations as they occur (for example, observing behaviors, events, development of condition or disease, etc.), without attempting to manipulate any of the independent variables. [Source:  Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/FF4C-28RK> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-other-periodical a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-other-periodical a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Other periodical"@en ;
     skos:definition "A resource type that is not included in existing terms under the top concept \"Text\". [COAR definition]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/QX5C-AR31> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-other-type-of-report a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-other-type-of-report a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Other type of report"@en ;
     skos:definition "Other types of report may include Business Plans Technical Specifications, data management plans, recommendation reports, white papers, annual reports, auditor's reports, workplace reports, census reports, trip reports, progress reports, investigative reports, budget reports, policy reports, demographic reports, credit reports, appraisal reports, inspection reports, military reports, bound reports, etc. [Source: https://en.wikipedia.org/wiki/Report]"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18wq> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-patent a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-patent a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Patent"@en ;
     skos:definition "A patent or patent application."@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_15cd> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-pct-application a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-pct-application a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Pct application"@en ;
     skos:definition "A patent application filed through the WIPO-administered Patent Cooperation Treaty (PCT), also known as an international application. [Source: Adapted from https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]"@en ;
-    skos:broader rt:coar-patent ;
+    skos:broader trsp:coar-patent ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/SB3Y-W4EH> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-periodical a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-periodical a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Periodical"@en ;
     skos:definition "A periodical is a serial publication with its own distinctive title, characterized by a variety of contents and contributors, and issued at regular intervals. (Adapted from ODLIS) [Source: http://www.abc-clio.com/ODLIS/odlis_p.aspx]"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_2659> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-physical-sample a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-physical-sample a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Physical sample"@en ;
     skos:definition "Physical samples include biological specimens, rock or mineral specimens, soil or sediment cores, plants and seeds, water quality samples, archaeological artefacts, or DNA and human tissue samples. Samples may be used in analyses and can be destroyed in this process, whereas specimens are preserved curated objects that can be continuously studied.\nSource: 23 Things Physical Samples https://eprints.gla.ac.uk/309016/1/309016.pdf"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/S7R1-K5P0> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-plant-patent a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-plant-patent a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Plant patent"@en ;
     skos:definition "A patent granted to anyone who has invented or discovered and asexually reproduced any distinct and new variety of plant, including cultivated sports, mutants, hybrids, and newly found seedlings, other than a tuber-propagated plant or a plant found in an uncultivated state. [Source: Adapted from https://www.uspto.gov/patents/basics/types-patent-applications/general-information-about-35-usc-161#heading-1]"@en ;
-    skos:broader rt:coar-patent ;
+    skos:broader trsp:coar-patent ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/Z907-YMBB> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-plant-variety-protection a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-plant-variety-protection a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Plant variety protection"@en ;
     skos:definition "Plant variety protection, also called a \"plant breeder's right\" (PBR), is a form of intellectual property right granted to the breeder of a new plant variety . According to this right, certain acts concerning the exploitation of the protected variety require the prior authorization of the breeder. Plant variety protection is an independent sui generis form of protection, tailored to protect new plant varieties and has certain features in common with other intellectual property rights. [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]"@en ;
-    skos:broader rt:coar-patent ;
+    skos:broader trsp:coar-patent ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/GPQ7-G5VE> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-policy-report a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-policy-report a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Policy report"@en ;
     skos:definition "A policy report presents what is known about a particular issue or problem. It assembles facts and evidence to help readers understand complex issues and form a response. It might aim to be neutral, or it might aim to persuade readers in a particular direction. [Source: https://www.uow.edu.au/student/learning-co-op/assessments/policy-report/#]"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_186u> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-project-deliverable a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-project-deliverable a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Project deliverable"@en ;
     skos:definition "A document containing a project report, intended to be delivered to a customer or funding agency describing the results achieved within a specific project. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e5183]"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18op> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-recorded-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-recorded-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Recorded data"@en ;
     skos:definition "Data registered by mechanical or electronic means, in a form that allows the information to be retrieved and/or reproduced. For example, images or sounds on disc or magnetic tape. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/CQMR-7K63> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-report-part a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-report-part a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Report part"@en ;
     skos:definition "part of a report"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_ba1f> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-report-to-funding-agency a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-report-to-funding-agency a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Report to funding agency"@en ;
     skos:definition "A report to a funding agency is a document written by beneficiaries of project grants. The reporting documents can be e.g. periodic reports about progress of scientific and technical work and final report. For deliverables use ‘Project deliverable’. [Source: http://ec.europa.eu/research/participants/fp7documents/funding-guide/6_projects/reports/reports_en.htm ]"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18hj> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-research-article a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-research-article a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Research article"@en ;
     skos:definition "A research article is a primary source, that is, it reports the methods and results of an original study performed by the authors. (adapted from http://apus.libanswers.com/faq/2324)"@en ;
-    skos:broader rt:coar-journal-article ;
+    skos:broader trsp:coar-journal-article ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_2df8fbb1> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-research-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-research-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Research data"@en ;
     skos:definition "Data that are used as primary sources to support technical or scientific enquiry, research, scholarship, or artistic activity, and that are used as evidence in the research process and/or are commonly accepted in the research community as necessary to validate research findings and results. [Source: https://casrai.org/term/research-data]"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/EHVM-H119> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-research-proposal a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-research-proposal a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Research proposal"@en ;
     skos:definition "A research proposal is a document proposing a research project, generally in the sciences or academia, and generally constitutes a request for sponsorship of that research. [Source: https://en.wikipedia.org/wiki/Research_proposal]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_baaf> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-research-protocol a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-research-protocol a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Research protocol"@en ;
     skos:definition "The protocol is a detailed plan of the research study including a project summary, project description covering the rationale, objectives, methodology, data management and analysis, ethical considerations, gender issues and references. [Source: Adapted from https://www.who.int/publications/i/item/a-practical-guide-for-health-researchers]"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/YZ1N-ZFT9> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-research-report a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-research-report a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Research report"@en ;
     skos:definition "It is publication that reports on the findings of a research project or alternatively scientific observations on or about a subject. [Source: Adapted from https://en.wikipedia.org/wiki/Research_report]"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18ws> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-research-software a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-research-software a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Research software"@en ;
     skos:definition "Software that is used to generate, process or analyse results that you intend to appear in a publication (either in a journal, conference paper, monograph, book or thesis). Research software can be anything from a few lines of code written by yourself, to a professionally developed software package. [Source: https://datashare.ed.ac.uk/handle/10283/785]"@en ;
-    skos:broader rt:software ;
+    skos:broader trsp:software ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "software" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_c950> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-review a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-review a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Review"@en ;
     skos:definition "A review of others' published work. [Source: Adapted from https://sparontologies.github.io/fabio/current/fabio.html#d4e5273]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_efa0> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-review-article a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-review-article a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Review article"@en ;
     skos:definition "A review article is a secondary source, that is, it is written about other articles, and does not report original research of its own. [Source: Adapted from http://apus.libanswers.com/faq/2324]"@en ;
-    skos:broader rt:coar-journal-article ;
+    skos:broader trsp:coar-journal-article ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_dcae04bc> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-simulation-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-simulation-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Simulation data"@en ;
     skos:definition "Data resulting from modeling or imitative representation of real-world processes, events, or systems, often using computer programs. For example, a program modeling household consumption responses to indirect tax changes; or a dataset on hypothetical patients and their drug exposure, background conditions, and known adverse events. [Source: Adapted from https://ddialliance.org/Specification/DDI-CV/ModeOfCollection_3.0.html]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/W2XT-7017> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-software-paper a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-software-paper a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Software paper"@en ;
     skos:definition "A software paper should include the rationale for the development of the tool and details of the code used for its construction. [Source: Adapted from https://f1000research.com/for-authors/article-guidelines/software-tool-articles ]"@en ;
-    skos:broader rt:coar-journal-article ;
+    skos:broader trsp:coar-journal-article ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_7bab> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-software-patent a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-software-patent a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Software patent"@en ;
     skos:definition "In order to obtain a patent, a software invention must not fall under other non-patentable subject matter (for example, abstract ideas or mathematical theories) and has to fulfill the other substantive patentability criteria (for example, novelty, inventive step [non-obviousness] and industrial applicability [usefulness]). [Source: https://www.wipo.int/patents/en/faq_patents.html]"@en ;
-    skos:broader rt:coar-patent ;
+    skos:broader trsp:coar-patent ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/MW8G-3CR8> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-source-code a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-source-code a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Source code"@en ;
     skos:definition "Source code is any collection of code, with or without comments, written using a human-readable programming language, usually as plain text. [Source: https://en.wikipedia.org/wiki/Source_code]"@en ;
-    skos:broader rt:software ;
+    skos:broader trsp:software ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "software" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/QH80-2R4E> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-still-image a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-still-image a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Still image"@en ;
     skos:definition "A recorded static visual representation. This class of image includes diagrams, drawings, graphs, graphic designs, plans, photographs and prints. [Source: Adapted from  http://purl.org/spar/fabio/StillImage]"@en ;
-    skos:broader rt:image ;
+    skos:broader trsp:image ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "image" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_ecc8> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-survey-data a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-survey-data a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Survey data"@en ;
     skos:definition "Data resulting from a survey, which is defined as an investigation about the characteristics of a given population by means of collecting data from a sample of that population and estimating their characteristics through the systematic use of statistical methodology. Included are censuses, sample surveys, the collection of data from administrative records and derived statistical activities as well as questionnaires. [Source: Adapted from https://stats.oecd.org/glossary/detail.asp?ID=2620]"@en ;
-    skos:broader rt:dataset ;
+    skos:broader trsp:dataset ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "dataset" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/NHD0-W6SY> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-technical-documentation a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-technical-documentation a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Technical documentation"@en ;
     skos:definition "Technical documentation refers to any type of documentation that describes handling, functionality and architecture of a technical product or a product under development or use. [Source: https://en.wikipedia.org/wiki/Technical_documentation]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_71bd> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-technical-report a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-technical-report a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Technical report"@en ;
     skos:definition "A document that describes the process, progress, or results of technical or scientific research or the state of a technical or scientific research problem. It might also include recommendations and conclusions of the research. [Source: http://guides.library.cornell.edu/ecommons/types]"@en ;
-    skos:broader rt:report ;
+    skos:broader trsp:report ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_18gh> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-thesis a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-thesis a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Thesis"@en ;
     skos:definition "A book authored by a student containing a formal presentations of research outputs submitted for examination in completion of a course of study at an institution of higher education, to fulfil the requirements for an academic degree. Also known as a dissertation. [Source: https://sparontologies.github.io/fabio/current/fabio.html#d4e5748]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_46ec> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-trademark a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-trademark a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Trademark"@en ;
     skos:definition "A sign used to distinguish the goods or services of one undertaking from those\nof others. A trademark may consist of words and combinations of words (for\ninstance, names or slogans), logos, figures and images, letters, numbers,\nsounds, or, in rare instances, smells or moving images, or a combination thereof. [Source: https://www.wipo.int/trademarks/en]"@en ;
-    skos:broader rt:resource ;
+    skos:broader trsp:resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/H6QP-SC1X> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-transcription a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-transcription a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Transcription"@en ;
     skos:definition "A written record of words spoken in court proceedings or in a speech, interview, broadcast, or sound recording. [Source: Adapted from https://products.abc-clio.com/ODLIS/odlis_t.aspx]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/6NC7-GK9S> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-utility-model a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-utility-model a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Utility model"@en ;
     skos:definition "A special form of patent right granted by a state or jurisdiction to an inventor or the inventor’s assignee for a fixed period of time. The terms and conditions for granting a utility model are slightly different from those for normal patents (including a shorter term of protection and less stringent patentability requirements). The term can also describe what are known in certain countries as “petty patents,” “short-term patents” or “innovation patents.” [Source: https://www.wipo.int/edocs/pubdocs/en/wipo_pub_943_2018.pdf]"@en ;
-    skos:broader rt:coar-patent ;
+    skos:broader trsp:coar-patent ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/9DKX-KSAF> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-video a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-video a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Video"@en ;
     skos:definition "Media that makes use of images (usually \"moving\"), with or without sound, over a period of playback time. [Source :https://support.contributors.jstor.org/hc/en-us/articles/11971132444439-JSTOR-Content-and-Resource-Types]"@en ;
-    skos:broader rt:audiovisual ;
+    skos:broader trsp:audiovisual ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "image" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_12ce> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-website a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-website a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Website"@en ;
     skos:definition "A collection of related web pages containing text, images, videos and/or other digital assets that are addressed relative to a common Uniform Resource Locator (URL). A web site is hosted on at least one web server, accessible via a network such as the Internet or a private local area network.\n[Source: http://purl.org/spar/fabio/WebSite]"@en ;
-    skos:broader rt:interactive-resource ;
+    skos:broader trsp:interactive-resource ;
     rtp:primarySource "COAR 3.2" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_7ad9> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:coar-working-paper a skos:Concept ;
-    skos:inScheme rt:scheme ;
+trsp:coar-working-paper a skos:Concept ;
+    skos:inScheme trsp:typeResource ;
     skos:prefLabel "Working paper"@en ;
     skos:definition "A working or discussion paper circulated publicly or among a group of peers. Certain disciplines, for example economics, issue working papers in series. [Source: http://www.ukoln.ac.uk/repositories/digirep/index/Eprints_Type_Vocabulary_Encoding_Scheme#:~:text=http%3A//purl.org/eprint/type/WorkingPaper]"@en ;
-    skos:broader rt:text ;
+    skos:broader trsp:text ;
     rtp:primarySource "COAR 3.2" ;
     rtp:zenodoType "publication" ;
     rdfs:seeAlso <http://purl.org/coar/resource_type/c_8042> ;
     skos:note "COAR concept incorporated for additional granularity."@en .
 
-rt:book skos:exactMatch <http://purl.org/coar/resource_type/c_2f33> .
-rt:coar-memorandum skos:exactMatch <http://purl.org/coar/resource_type/c_18wz> .
-rt:coar-internal-report skos:exactMatch <http://purl.org/coar/resource_type/c_18ww> .
-rt:coar-contribution-to-journal skos:exactMatch <http://purl.org/coar/resource_type/c_3e5a> .
-rt:software skos:exactMatch <http://purl.org/coar/resource_type/c_5ce6> .
-rt:coar-review skos:exactMatch <http://purl.org/coar/resource_type/c_efa0> .
-rt:coar-research-report skos:exactMatch <http://purl.org/coar/resource_type/c_18ws> .
-rt:coar-trademark skos:exactMatch <http://purl.org/coar/resource_type/H6QP-SC1X> .
-rt:coar-bachelor-thesis skos:exactMatch <http://purl.org/coar/resource_type/c_7a1f> .
-rt:coar-design-patent skos:exactMatch <http://purl.org/coar/resource_type/C53B-JCY5> .
-rt:coar-working-paper skos:exactMatch <http://purl.org/coar/resource_type/c_8042> .
-rt:coar-utility-model skos:exactMatch <http://purl.org/coar/resource_type/9DKX-KSAF> .
-rt:coar-experimental-data skos:exactMatch <http://purl.org/coar/resource_type/63NG-B465> .
-rt:coar-interview skos:exactMatch <http://purl.org/coar/resource_type/c_26e4> .
-rt:coar-patent skos:exactMatch <http://purl.org/coar/resource_type/c_15cd> .
-rt:coar-encoded-data skos:exactMatch <http://purl.org/coar/resource_type/AM6W-6QAW> .
-rt:book-chapter skos:exactMatch <http://purl.org/coar/resource_type/c_3248> .
-rt:image skos:exactMatch <http://purl.org/coar/resource_type/c_c513> .
-rt:peer-review skos:exactMatch <http://purl.org/coar/resource_type/H9BQ-739P> .
-rt:coar-cartographic-material skos:exactMatch <http://purl.org/coar/resource_type/c_12cc> .
-rt:coar-software-patent skos:exactMatch <http://purl.org/coar/resource_type/MW8G-3CR8> .
-rt:instrument skos:closeMatch <http://purl.org/coar/resource_type/8KJG-QS0Y> .
-rt:coar-physical-sample skos:exactMatch <http://purl.org/coar/resource_type/S7R1-K5P0> .
-rt:coar-bibliography skos:exactMatch <http://purl.org/coar/resource_type/c_86bc> .
-rt:coar-geospatial-data skos:exactMatch <http://purl.org/coar/resource_type/2H0M-X761> .
-rt:coar-simulation-data skos:exactMatch <http://purl.org/coar/resource_type/W2XT-7017> .
-rt:coar-recorded-data skos:exactMatch <http://purl.org/coar/resource_type/CQMR-7K63> .
-rt:coar-compiled-data skos:exactMatch <http://purl.org/coar/resource_type/FXF3-D3G7> .
-rt:coar-magazine skos:exactMatch <http://purl.org/coar/resource_type/c_2cd9> .
-rt:coar-newspaper-article skos:exactMatch <http://purl.org/coar/resource_type/c_998f> .
-rt:coar-measurement-and-test-data skos:exactMatch <http://purl.org/coar/resource_type/DD58-GFSX> .
-rt:coar-pct-application skos:exactMatch <http://purl.org/coar/resource_type/SB3Y-W4EH> .
-rt:coar-research-proposal skos:exactMatch <http://purl.org/coar/resource_type/c_baaf> .
-rt:coar-periodical skos:exactMatch <http://purl.org/coar/resource_type/c_2659> .
-rt:coar-learning-object skos:exactMatch <http://purl.org/coar/resource_type/c_e059> .
-rt:coar-lecture skos:exactMatch <http://purl.org/coar/resource_type/c_8544> .
-rt:coar-newspaper skos:exactMatch <http://purl.org/coar/resource_type/c_2fe3> .
-rt:coar-research-software skos:exactMatch <http://purl.org/coar/resource_type/c_c950> .
-rt:coar-data-management-plan skos:exactMatch <http://purl.org/coar/resource_type/c_ab20> .
-rt:coar-design skos:exactMatch <http://purl.org/coar/resource_type/542X-3S04> .
-rt:coar-blog-post skos:exactMatch <http://purl.org/coar/resource_type/c_6947> .
-rt:coar-industrial-design skos:exactMatch <http://purl.org/coar/resource_type/JBNF-DYAD> .
-rt:coar-journal-article skos:exactMatch <http://purl.org/coar/resource_type/c_6501> .
-rt:coar-policy-report skos:exactMatch <http://purl.org/coar/resource_type/c_186u> .
-rt:coar-other-periodical skos:exactMatch <http://purl.org/coar/resource_type/QX5C-AR31> .
-rt:coar-archival-collection skos:exactMatch <http://purl.org/coar/resource_type/YC9F-HGCF> .
-rt:audiovisual skos:closeMatch <http://purl.org/coar/resource_type/c_8a7e> .
-rt:workflow skos:exactMatch <http://purl.org/coar/resource_type/c_393c> .
-rt:coar-letter skos:exactMatch <http://purl.org/coar/resource_type/c_0857> .
-rt:coar-aggregated-data skos:exactMatch <http://purl.org/coar/resource_type/ACF7-8YT9> .
-rt:coar-conference-output skos:exactMatch <http://purl.org/coar/resource_type/c_c94f> .
-rt:coar-source-code skos:exactMatch <http://purl.org/coar/resource_type/QH80-2R4E> .
-rt:coar-other-type-of-report skos:exactMatch <http://purl.org/coar/resource_type/c_18wq> .
-rt:coar-court-documents skos:exactMatch <http://purl.org/coar/resource_type/1YTN-RJZE> .
-rt:coar-clinical-trial-data skos:exactMatch <http://purl.org/coar/resource_type/c_cb28> .
-rt:coar-still-image skos:exactMatch <http://purl.org/coar/resource_type/c_ecc8> .
-rt:coar-letter-to-the-editor skos:exactMatch <http://purl.org/coar/resource_type/c_545b> .
-rt:coar-transcription skos:exactMatch <http://purl.org/coar/resource_type/6NC7-GK9S> .
-rt:coar-project-deliverable skos:exactMatch <http://purl.org/coar/resource_type/c_18op> .
-rt:coar-clinical-study skos:exactMatch <http://purl.org/coar/resource_type/c_7877> .
-rt:data-paper skos:exactMatch <http://purl.org/coar/resource_type/c_beb9> .
-rt:coar-survey-data skos:exactMatch <http://purl.org/coar/resource_type/NHD0-W6SY> .
-rt:dataset skos:exactMatch <http://purl.org/coar/resource_type/c_ddb1> .
-rt:coar-thesis skos:exactMatch <http://purl.org/coar/resource_type/c_46ec> .
-rt:coar-annotation skos:exactMatch <http://purl.org/coar/resource_type/c_1162> .
-rt:coar-research-article skos:exactMatch <http://purl.org/coar/resource_type/c_2df8fbb1> .
-rt:coar-software-paper skos:exactMatch <http://purl.org/coar/resource_type/c_7bab> .
-rt:coar-conference-presentation skos:exactMatch <http://purl.org/coar/resource_type/R60J-J5BD> .
-rt:journal skos:exactMatch <http://purl.org/coar/resource_type/c_0640> .
-rt:sound skos:exactMatch <http://purl.org/coar/resource_type/c_18cc> .
-rt:coar-master-thesis skos:exactMatch <http://purl.org/coar/resource_type/c_bdcc> .
-rt:coar-knowledge-synthesis-protocol skos:exactMatch <http://purl.org/coar/resource_type/DX5J-TA9R> .
-rt:coar-report-to-funding-agency skos:exactMatch <http://purl.org/coar/resource_type/c_18hj> .
-rt:coar-conference-paper-not-in-proceedings skos:exactMatch <http://purl.org/coar/resource_type/c_18cp> .
-rt:coar-knowledge-organization-system skos:exactMatch <http://purl.org/coar/resource_type/GSZA-Y7V7> .
-rt:coar-conference-poster-not-in-proceedings skos:exactMatch <http://purl.org/coar/resource_type/c_18co> .
-rt:coar-technical-report skos:exactMatch <http://purl.org/coar/resource_type/c_18gh> .
-rt:coar-review-article skos:exactMatch <http://purl.org/coar/resource_type/c_dcae04bc> .
-rt:coar-report-part skos:exactMatch <http://purl.org/coar/resource_type/c_ba1f> .
-rt:coar-manuscript skos:exactMatch <http://purl.org/coar/resource_type/c_0040> .
-rt:report skos:exactMatch <http://purl.org/coar/resource_type/c_93fc> .
-rt:coar-research-data skos:exactMatch <http://purl.org/coar/resource_type/EHVM-H119> .
-rt:coar-conference-poster skos:exactMatch <http://purl.org/coar/resource_type/c_6670> .
-rt:coar-observational-data skos:exactMatch <http://purl.org/coar/resource_type/FF4C-28RK> .
-rt:coar-plant-patent skos:exactMatch <http://purl.org/coar/resource_type/Z907-YMBB> .
-rt:conference-paper skos:exactMatch <http://purl.org/coar/resource_type/c_5794> .
-rt:coar-laboratory-notebook skos:exactMatch <http://purl.org/coar/resource_type/H41Y-FW7B> .
-rt:coar-layout-design skos:exactMatch <http://purl.org/coar/resource_type/BW7T-YM2G> .
-rt:coar-plant-variety-protection skos:exactMatch <http://purl.org/coar/resource_type/GPQ7-G5VE> .
-rt:coar-editorial skos:exactMatch <http://purl.org/coar/resource_type/c_b239> .
-rt:coar-technical-documentation skos:exactMatch <http://purl.org/coar/resource_type/c_71bd> .
-rt:coar-video skos:exactMatch <http://purl.org/coar/resource_type/c_12ce> .
-rt:dissertation skos:closeMatch <http://purl.org/coar/resource_type/c_db06> .
-rt:preprint skos:exactMatch <http://purl.org/coar/resource_type/c_816b> .
-rt:collection skos:exactMatch <http://purl.org/coar/resource_type/RMP5-3GQ6> .
-rt:coar-corrigendum skos:exactMatch <http://purl.org/coar/resource_type/c_7acd> .
-rt:text skos:exactMatch <http://purl.org/coar/resource_type/c_18cf> .
-rt:other skos:exactMatch <http://purl.org/coar/resource_type/c_1843> .
-rt:coar-map skos:exactMatch <http://purl.org/coar/resource_type/c_12cd> .
-rt:coar-website skos:exactMatch <http://purl.org/coar/resource_type/c_7ad9> .
-rt:interactive-resource skos:exactMatch <http://purl.org/coar/resource_type/c_e9a0> .
-rt:coar-artistic-work skos:exactMatch <http://purl.org/coar/resource_type/F8RT-TJK0> .
-rt:coar-genomic-data skos:exactMatch <http://purl.org/coar/resource_type/A8F1-NPV9> .
-rt:coar-musical-composition skos:exactMatch <http://purl.org/coar/resource_type/c_18cd> .
-rt:coar-musical-notation skos:exactMatch <http://purl.org/coar/resource_type/c_18cw> .
-rt:coar-commentary skos:exactMatch <http://purl.org/coar/resource_type/D97F-VB57> .
-rt:coar-book-review skos:exactMatch <http://purl.org/coar/resource_type/c_ba08> .
-rt:coar-magazine-article skos:exactMatch <http://purl.org/coar/resource_type/43KC-T6DC> .
-rt:coar-research-protocol skos:exactMatch <http://purl.org/coar/resource_type/YZ1N-ZFT9> .
-rt:conference-proceeding skos:exactMatch <http://purl.org/coar/resource_type/c_f744> .
-rt:audiovisual skos:closeMatch <http://purl.org/dc/dcmitype/MovingImage> .
-rt:book skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:book-chapter skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:collection skos:exactMatch <http://purl.org/dc/dcmitype/Collection> .
-rt:computational-notebook skos:broadMatch <http://purl.org/dc/dcmitype/InteractiveResource> .
-rt:conference-paper skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:conference-proceeding skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:data-paper skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:dataset skos:exactMatch <http://purl.org/dc/dcmitype/Dataset> .
-rt:dissertation skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:event skos:exactMatch <http://purl.org/dc/dcmitype/Event> .
-rt:image skos:exactMatch <http://purl.org/dc/dcmitype/Image> .
-rt:interactive-resource skos:exactMatch <http://purl.org/dc/dcmitype/InteractiveResource> .
-rt:journal skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:journal-article skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:output-management-plan skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:peer-review skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:physical-object skos:exactMatch <http://purl.org/dc/dcmitype/PhysicalObject> .
-rt:preprint skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:report skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:service skos:exactMatch <http://purl.org/dc/dcmitype/Service> .
-rt:software skos:exactMatch <http://purl.org/dc/dcmitype/Software> .
-rt:sound skos:exactMatch <http://purl.org/dc/dcmitype/Sound> .
-rt:standard skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:study-registration skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
-rt:text skos:exactMatch <http://purl.org/dc/dcmitype/Text> .
-rt:coar-still-image skos:exactMatch <http://purl.org/dc/dcmitype/StillImage> .
-rt:audiovisual skos:exactMatch <http://purl.org/dc/dcmitype/MovingImage> .
-rt:book skos:relatedMatch <https://schema.org/Book> .
-rt:software skos:broadMatch <https://schema.org/SoftwareApplication> .
-rt:image skos:broadMatch <https://schema.org/MediaObject> .
-rt:coar-cartographic-material skos:broadMatch <https://schema.org/Map> .
-rt:coar-newspaper-article skos:broadMatch <https://schema.org/Article> .
-rt:coar-blog-post skos:broadMatch <https://schema.org/Blog> .
-rt:coar-journal-article skos:broadMatch <https://schema.org/Article> .
-rt:dataset skos:exactMatch <https://schema.org/Dataset> .
-rt:sound skos:broadMatch <https://schema.org/MediaObject> .
-rt:coar-video skos:broadMatch <https://schema.org/Movie> .
-rt:coar-website skos:exactMatch <https://schema.org/WebSite> .
-rt:coar-artistic-work skos:broadMatch <https://schema.org/CreativeWork> .
-rt:coar-musical-composition skos:exactMatch <https://schema.org/MusicComposition> .
-rt:book skos:exactMatch <https://schema.org/Book> .
-rt:book-chapter skos:closeMatch <https://schema.org/Chapter> .
-rt:journal-article skos:closeMatch <https://schema.org/ScholarlyArticle> .
-rt:conference-paper skos:closeMatch <https://schema.org/ScholarlyArticle> .
-rt:data-paper skos:closeMatch <https://schema.org/ScholarlyArticle> .
-rt:preprint skos:closeMatch <https://schema.org/ScholarlyArticle> .
-rt:image skos:closeMatch <https://schema.org/ImageObject> .
-rt:audiovisual skos:closeMatch <https://schema.org/VideoObject> .
-rt:sound skos:closeMatch <https://schema.org/AudioObject> .
-rt:event skos:exactMatch <https://schema.org/Event> .
-rt:service skos:exactMatch <https://schema.org/Service> .
-rt:software skos:closeMatch <https://schema.org/SoftwareSourceCode> .
-rt:report skos:closeMatch <https://schema.org/Report> .
-rt:award skos:closeMatch <https://schema.org/Grant> .
-rt:presentation skos:closeMatch <https://schema.org/PresentationDigitalDocument> .
+trsp:book skos:exactMatch <http://purl.org/coar/resource_type/c_2f33> .
+trsp:coar-memorandum skos:exactMatch <http://purl.org/coar/resource_type/c_18wz> .
+trsp:coar-internal-report skos:exactMatch <http://purl.org/coar/resource_type/c_18ww> .
+trsp:coar-contribution-to-journal skos:exactMatch <http://purl.org/coar/resource_type/c_3e5a> .
+trsp:software skos:exactMatch <http://purl.org/coar/resource_type/c_5ce6> .
+trsp:coar-review skos:exactMatch <http://purl.org/coar/resource_type/c_efa0> .
+trsp:coar-research-report skos:exactMatch <http://purl.org/coar/resource_type/c_18ws> .
+trsp:coar-trademark skos:exactMatch <http://purl.org/coar/resource_type/H6QP-SC1X> .
+trsp:coar-bachelor-thesis skos:exactMatch <http://purl.org/coar/resource_type/c_7a1f> .
+trsp:coar-design-patent skos:exactMatch <http://purl.org/coar/resource_type/C53B-JCY5> .
+trsp:coar-working-paper skos:exactMatch <http://purl.org/coar/resource_type/c_8042> .
+trsp:coar-utility-model skos:exactMatch <http://purl.org/coar/resource_type/9DKX-KSAF> .
+trsp:coar-experimental-data skos:exactMatch <http://purl.org/coar/resource_type/63NG-B465> .
+trsp:coar-interview skos:exactMatch <http://purl.org/coar/resource_type/c_26e4> .
+trsp:coar-patent skos:exactMatch <http://purl.org/coar/resource_type/c_15cd> .
+trsp:coar-encoded-data skos:exactMatch <http://purl.org/coar/resource_type/AM6W-6QAW> .
+trsp:book-chapter skos:exactMatch <http://purl.org/coar/resource_type/c_3248> .
+trsp:image skos:exactMatch <http://purl.org/coar/resource_type/c_c513> .
+trsp:peer-review skos:exactMatch <http://purl.org/coar/resource_type/H9BQ-739P> .
+trsp:coar-cartographic-material skos:exactMatch <http://purl.org/coar/resource_type/c_12cc> .
+trsp:coar-software-patent skos:exactMatch <http://purl.org/coar/resource_type/MW8G-3CR8> .
+trsp:instrument skos:closeMatch <http://purl.org/coar/resource_type/8KJG-QS0Y> .
+trsp:coar-physical-sample skos:exactMatch <http://purl.org/coar/resource_type/S7R1-K5P0> .
+trsp:coar-bibliography skos:exactMatch <http://purl.org/coar/resource_type/c_86bc> .
+trsp:coar-geospatial-data skos:exactMatch <http://purl.org/coar/resource_type/2H0M-X761> .
+trsp:coar-simulation-data skos:exactMatch <http://purl.org/coar/resource_type/W2XT-7017> .
+trsp:coar-recorded-data skos:exactMatch <http://purl.org/coar/resource_type/CQMR-7K63> .
+trsp:coar-compiled-data skos:exactMatch <http://purl.org/coar/resource_type/FXF3-D3G7> .
+trsp:coar-magazine skos:exactMatch <http://purl.org/coar/resource_type/c_2cd9> .
+trsp:coar-newspaper-article skos:exactMatch <http://purl.org/coar/resource_type/c_998f> .
+trsp:coar-measurement-and-test-data skos:exactMatch <http://purl.org/coar/resource_type/DD58-GFSX> .
+trsp:coar-pct-application skos:exactMatch <http://purl.org/coar/resource_type/SB3Y-W4EH> .
+trsp:coar-research-proposal skos:exactMatch <http://purl.org/coar/resource_type/c_baaf> .
+trsp:coar-periodical skos:exactMatch <http://purl.org/coar/resource_type/c_2659> .
+trsp:coar-learning-object skos:exactMatch <http://purl.org/coar/resource_type/c_e059> .
+trsp:coar-lecture skos:exactMatch <http://purl.org/coar/resource_type/c_8544> .
+trsp:coar-newspaper skos:exactMatch <http://purl.org/coar/resource_type/c_2fe3> .
+trsp:coar-research-software skos:exactMatch <http://purl.org/coar/resource_type/c_c950> .
+trsp:coar-data-management-plan skos:exactMatch <http://purl.org/coar/resource_type/c_ab20> .
+trsp:coar-design skos:exactMatch <http://purl.org/coar/resource_type/542X-3S04> .
+trsp:coar-blog-post skos:exactMatch <http://purl.org/coar/resource_type/c_6947> .
+trsp:coar-industrial-design skos:exactMatch <http://purl.org/coar/resource_type/JBNF-DYAD> .
+trsp:coar-journal-article skos:exactMatch <http://purl.org/coar/resource_type/c_6501> .
+trsp:coar-policy-report skos:exactMatch <http://purl.org/coar/resource_type/c_186u> .
+trsp:coar-other-periodical skos:exactMatch <http://purl.org/coar/resource_type/QX5C-AR31> .
+trsp:coar-archival-collection skos:exactMatch <http://purl.org/coar/resource_type/YC9F-HGCF> .
+trsp:audiovisual skos:closeMatch <http://purl.org/coar/resource_type/c_8a7e> .
+trsp:workflow skos:exactMatch <http://purl.org/coar/resource_type/c_393c> .
+trsp:coar-letter skos:exactMatch <http://purl.org/coar/resource_type/c_0857> .
+trsp:coar-aggregated-data skos:exactMatch <http://purl.org/coar/resource_type/ACF7-8YT9> .
+trsp:coar-conference-output skos:exactMatch <http://purl.org/coar/resource_type/c_c94f> .
+trsp:coar-source-code skos:exactMatch <http://purl.org/coar/resource_type/QH80-2R4E> .
+trsp:coar-other-type-of-report skos:exactMatch <http://purl.org/coar/resource_type/c_18wq> .
+trsp:coar-court-documents skos:exactMatch <http://purl.org/coar/resource_type/1YTN-RJZE> .
+trsp:coar-clinical-trial-data skos:exactMatch <http://purl.org/coar/resource_type/c_cb28> .
+trsp:coar-still-image skos:exactMatch <http://purl.org/coar/resource_type/c_ecc8> .
+trsp:coar-letter-to-the-editor skos:exactMatch <http://purl.org/coar/resource_type/c_545b> .
+trsp:coar-transcription skos:exactMatch <http://purl.org/coar/resource_type/6NC7-GK9S> .
+trsp:coar-project-deliverable skos:exactMatch <http://purl.org/coar/resource_type/c_18op> .
+trsp:coar-clinical-study skos:exactMatch <http://purl.org/coar/resource_type/c_7877> .
+trsp:data-paper skos:exactMatch <http://purl.org/coar/resource_type/c_beb9> .
+trsp:coar-survey-data skos:exactMatch <http://purl.org/coar/resource_type/NHD0-W6SY> .
+trsp:dataset skos:exactMatch <http://purl.org/coar/resource_type/c_ddb1> .
+trsp:coar-thesis skos:exactMatch <http://purl.org/coar/resource_type/c_46ec> .
+trsp:coar-annotation skos:exactMatch <http://purl.org/coar/resource_type/c_1162> .
+trsp:coar-research-article skos:exactMatch <http://purl.org/coar/resource_type/c_2df8fbb1> .
+trsp:coar-software-paper skos:exactMatch <http://purl.org/coar/resource_type/c_7bab> .
+trsp:coar-conference-presentation skos:exactMatch <http://purl.org/coar/resource_type/R60J-J5BD> .
+trsp:journal skos:exactMatch <http://purl.org/coar/resource_type/c_0640> .
+trsp:sound skos:exactMatch <http://purl.org/coar/resource_type/c_18cc> .
+trsp:coar-master-thesis skos:exactMatch <http://purl.org/coar/resource_type/c_bdcc> .
+trsp:coar-knowledge-synthesis-protocol skos:exactMatch <http://purl.org/coar/resource_type/DX5J-TA9R> .
+trsp:coar-report-to-funding-agency skos:exactMatch <http://purl.org/coar/resource_type/c_18hj> .
+trsp:coar-conference-paper-not-in-proceedings skos:exactMatch <http://purl.org/coar/resource_type/c_18cp> .
+trsp:coar-knowledge-organization-system skos:exactMatch <http://purl.org/coar/resource_type/GSZA-Y7V7> .
+trsp:coar-conference-poster-not-in-proceedings skos:exactMatch <http://purl.org/coar/resource_type/c_18co> .
+trsp:coar-technical-report skos:exactMatch <http://purl.org/coar/resource_type/c_18gh> .
+trsp:coar-review-article skos:exactMatch <http://purl.org/coar/resource_type/c_dcae04bc> .
+trsp:coar-report-part skos:exactMatch <http://purl.org/coar/resource_type/c_ba1f> .
+trsp:coar-manuscript skos:exactMatch <http://purl.org/coar/resource_type/c_0040> .
+trsp:report skos:exactMatch <http://purl.org/coar/resource_type/c_93fc> .
+trsp:coar-research-data skos:exactMatch <http://purl.org/coar/resource_type/EHVM-H119> .
+trsp:coar-conference-poster skos:exactMatch <http://purl.org/coar/resource_type/c_6670> .
+trsp:coar-observational-data skos:exactMatch <http://purl.org/coar/resource_type/FF4C-28RK> .
+trsp:coar-plant-patent skos:exactMatch <http://purl.org/coar/resource_type/Z907-YMBB> .
+trsp:conference-paper skos:exactMatch <http://purl.org/coar/resource_type/c_5794> .
+trsp:coar-laboratory-notebook skos:exactMatch <http://purl.org/coar/resource_type/H41Y-FW7B> .
+trsp:coar-layout-design skos:exactMatch <http://purl.org/coar/resource_type/BW7T-YM2G> .
+trsp:coar-plant-variety-protection skos:exactMatch <http://purl.org/coar/resource_type/GPQ7-G5VE> .
+trsp:coar-editorial skos:exactMatch <http://purl.org/coar/resource_type/c_b239> .
+trsp:coar-technical-documentation skos:exactMatch <http://purl.org/coar/resource_type/c_71bd> .
+trsp:coar-video skos:exactMatch <http://purl.org/coar/resource_type/c_12ce> .
+trsp:dissertation skos:closeMatch <http://purl.org/coar/resource_type/c_db06> .
+trsp:preprint skos:exactMatch <http://purl.org/coar/resource_type/c_816b> .
+trsp:collection skos:exactMatch <http://purl.org/coar/resource_type/RMP5-3GQ6> .
+trsp:coar-corrigendum skos:exactMatch <http://purl.org/coar/resource_type/c_7acd> .
+trsp:text skos:exactMatch <http://purl.org/coar/resource_type/c_18cf> .
+trsp:other skos:exactMatch <http://purl.org/coar/resource_type/c_1843> .
+trsp:coar-map skos:exactMatch <http://purl.org/coar/resource_type/c_12cd> .
+trsp:coar-website skos:exactMatch <http://purl.org/coar/resource_type/c_7ad9> .
+trsp:interactive-resource skos:exactMatch <http://purl.org/coar/resource_type/c_e9a0> .
+trsp:coar-artistic-work skos:exactMatch <http://purl.org/coar/resource_type/F8RT-TJK0> .
+trsp:coar-genomic-data skos:exactMatch <http://purl.org/coar/resource_type/A8F1-NPV9> .
+trsp:coar-musical-composition skos:exactMatch <http://purl.org/coar/resource_type/c_18cd> .
+trsp:coar-musical-notation skos:exactMatch <http://purl.org/coar/resource_type/c_18cw> .
+trsp:coar-commentary skos:exactMatch <http://purl.org/coar/resource_type/D97F-VB57> .
+trsp:coar-book-review skos:exactMatch <http://purl.org/coar/resource_type/c_ba08> .
+trsp:coar-magazine-article skos:exactMatch <http://purl.org/coar/resource_type/43KC-T6DC> .
+trsp:coar-research-protocol skos:exactMatch <http://purl.org/coar/resource_type/YZ1N-ZFT9> .
+trsp:conference-proceeding skos:exactMatch <http://purl.org/coar/resource_type/c_f744> .
+trsp:audiovisual skos:closeMatch <http://purl.org/dc/dcmitype/MovingImage> .
+trsp:book skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:book-chapter skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:collection skos:exactMatch <http://purl.org/dc/dcmitype/Collection> .
+trsp:computational-notebook skos:broadMatch <http://purl.org/dc/dcmitype/InteractiveResource> .
+trsp:conference-paper skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:conference-proceeding skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:data-paper skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:dataset skos:exactMatch <http://purl.org/dc/dcmitype/Dataset> .
+trsp:dissertation skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:event skos:exactMatch <http://purl.org/dc/dcmitype/Event> .
+trsp:image skos:exactMatch <http://purl.org/dc/dcmitype/Image> .
+trsp:interactive-resource skos:exactMatch <http://purl.org/dc/dcmitype/InteractiveResource> .
+trsp:journal skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:journal-article skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:output-management-plan skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:peer-review skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:physical-object skos:exactMatch <http://purl.org/dc/dcmitype/PhysicalObject> .
+trsp:preprint skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:report skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:service skos:exactMatch <http://purl.org/dc/dcmitype/Service> .
+trsp:software skos:exactMatch <http://purl.org/dc/dcmitype/Software> .
+trsp:sound skos:exactMatch <http://purl.org/dc/dcmitype/Sound> .
+trsp:standard skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:study-registration skos:broadMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:text skos:exactMatch <http://purl.org/dc/dcmitype/Text> .
+trsp:coar-still-image skos:exactMatch <http://purl.org/dc/dcmitype/StillImage> .
+trsp:audiovisual skos:exactMatch <http://purl.org/dc/dcmitype/MovingImage> .
+trsp:book skos:relatedMatch <https://schema.org/Book> .
+trsp:software skos:broadMatch <https://schema.org/SoftwareApplication> .
+trsp:image skos:broadMatch <https://schema.org/MediaObject> .
+trsp:coar-cartographic-material skos:broadMatch <https://schema.org/Map> .
+trsp:coar-newspaper-article skos:broadMatch <https://schema.org/Article> .
+trsp:coar-blog-post skos:broadMatch <https://schema.org/Blog> .
+trsp:coar-journal-article skos:broadMatch <https://schema.org/Article> .
+trsp:dataset skos:exactMatch <https://schema.org/Dataset> .
+trsp:sound skos:broadMatch <https://schema.org/MediaObject> .
+trsp:coar-video skos:broadMatch <https://schema.org/Movie> .
+trsp:coar-website skos:exactMatch <https://schema.org/WebSite> .
+trsp:coar-artistic-work skos:broadMatch <https://schema.org/CreativeWork> .
+trsp:coar-musical-composition skos:exactMatch <https://schema.org/MusicComposition> .
+trsp:book skos:exactMatch <https://schema.org/Book> .
+trsp:book-chapter skos:closeMatch <https://schema.org/Chapter> .
+trsp:journal-article skos:closeMatch <https://schema.org/ScholarlyArticle> .
+trsp:conference-paper skos:closeMatch <https://schema.org/ScholarlyArticle> .
+trsp:data-paper skos:closeMatch <https://schema.org/ScholarlyArticle> .
+trsp:preprint skos:closeMatch <https://schema.org/ScholarlyArticle> .
+trsp:image skos:closeMatch <https://schema.org/ImageObject> .
+trsp:audiovisual skos:closeMatch <https://schema.org/VideoObject> .
+trsp:sound skos:closeMatch <https://schema.org/AudioObject> .
+trsp:event skos:exactMatch <https://schema.org/Event> .
+trsp:service skos:exactMatch <https://schema.org/Service> .
+trsp:software skos:closeMatch <https://schema.org/SoftwareSourceCode> .
+trsp:report skos:closeMatch <https://schema.org/Report> .
+trsp:award skos:closeMatch <https://schema.org/Grant> .
+trsp:presentation skos:closeMatch <https://schema.org/PresentationDigitalDocument> .
