@@ -1,0 +1,209 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:checklistCurationType
+  a skos:ConceptScheme ;
+  skos:prefLabel "Curation Levels, Automation, and Activities."@en ;
+  dct:title "Level of Curation"@en ;
+  dct:created "2026-05-07"^^xsd:date ;
+  dct:modified "2026-05-07"^^xsd:date ;
+  skos:hasTopConcept trsp:typeCurationLevel ,
+                     trsp:typeCurationActivity ,
+                     trsp:typeCurationAutomationLevel ;
+  owl:versionInfo "0.1" .
+
+#----------------------------------------------------------
+# Curation Level
+#----------------------------------------------------------
+trsp:typeCurationLevel
+  a skos:Concept ;
+  skos:prefLabel "Levels of Curation"@en ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeDatalevelCuration
+  a skos:Concept ;
+  skos:prefLabel "Data-level curation"@en ;
+  skos:broader trsp:typeCurationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeEnhancedCuration
+  a skos:Concept ;
+  skos:prefLabel "Enhanced curation"@en ;
+  skos:broader trsp:typeCurationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeBasicCuration
+  a skos:Concept ;
+  skos:prefLabel "Basic curation"@en ;
+  skos:broader trsp:typeCurationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeAsDeposited
+  a skos:Concept ;
+  skos:prefLabel "Content distributed as deposited"@en ;
+  skos:broader trsp:typeCurationLevel ;
+  skos:inScheme trsp:checklistCurationType 
+
+#----------------------------------------------------------
+# Automation
+#----------------------------------------------------------
+trsp:typeCurationAutomationLevel
+  a skos:Concept ;
+  skos:prefLabel "Levels of Automation"@en ;
+  skos:closeMatch trsp:typeAutomationLevel ;
+  # mirrors trsp:typeAutomationLevel
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCurationManual
+  a skos:Concept ;
+  skos:prefLabel "Manual Curation"@en ;
+  skos:broader typeCurationAutomationLevel 
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCurationAutomated
+  a skos:Concept ;
+  skos:prefLabel "Automated Curation"@en ;
+  skos:broader typeCurationAutomationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCurationAI
+  a skos:Concept ;
+  skos:prefLabel "AI-assisted Curation"@en ;
+  skos:broader typeCurationAutomationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCurationAIModerated
+  a skos:Concept ;
+  skos:prefLabel "AI with Human Moderated Curation"@en ;
+  skos:broader typeCurationAutomationLevel ;
+  skos:inScheme trsp:checklistCurationType .
+
+#----------------------------------------------------------
+# Curation Activity
+#----------------------------------------------------------
+trsp:typeCurationActivity
+  a skos:Concept ;
+  skos:prefLabel "Curation Activity"@en ;
+  skos:inScheme trsp:checklistCurationType .
+
+# Enhancement ----------------------------------------------
+
+trsp:typeImprovementActivity
+  a skos:Concept ;
+  skos:prefLabel "Improvement and Enhancement Activity"@en ;
+  skos:broader trsp:typeCurationActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeSemanticEnhancement
+  a skos:Concept ;
+  skos:prefLabel "Semantic Enhancement"@en ;
+  skos:broader trsp:typeImprovementActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+# QA -------------------------------------------------------
+
+trsp:typeQualityActivity
+  a skos:Concept ;
+  skos:prefLabel "Improvement and Enhancement Activity"@en ;
+  skos:broader trsp:typeCurationActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+## Deposit
+
+trsp:typeDepositDocumentation
+  a skos:Concept ;
+  skos:prefLabel "Quality Assured Deposit Documentation"@en ;
+  skos:broader trsp:typeQualityActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCompleteDocs
+  a skos:Concept ;
+  skos:prefLabel "Documentation Completeness"@en ;
+  skos:broader trsp:typeDepositDocumentation ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeMandatoryMetadata
+  skos:prefLabel "Mandatory Metadata Verified"@en ;
+  skos:broader trsp:typeDepositDocumentation ;
+  skos:inScheme trsp:checklistCurationType .
+
+## Integrity/ authenticity
+
+trsp:typeIntegrityChecks
+  a skos:Concept ;
+  skos:prefLabel "Integrity Verification"@en ;
+  skos:broader trsp:typeQualityActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForAiContent
+  a skos:Concept ;
+  skos:prefLabel "Checked for AI-generated Content"@en ;
+  skos:broader trsp:typeQualityActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForDuplicatePublication
+  a skos:Concept ;
+  skos:prefLabel "Checked for Duplicate Publication"@en ;
+  skos:broader trsp:typeQualityActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForIrrelevantContent
+  a skos:Concept ;
+  skos:prefLabel "Checked for Irrelevant Content"@en ;
+  skos:broader trsp:typeQualityActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForMaliciousContent
+  a skos:Concept ;
+  skos:prefLabel "Checked for Malicious Content"@en ;
+  skos:broader trsp:typeQualityActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForVirusMalware
+  a skos:Concept ;
+  skos:prefLabel "Virus and Malware Checking"@en ;
+  skos:broader trsp:typeQualityActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+## Legal and ethical
+
+trsp:typeLegalEthicsChecks
+  a skos:Concept ;
+  skos:prefLabel "Legal and Ethical Verification"@en ;
+  skos:broader trsp:typeQualityActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForConsentForms
+  a skos:Concept ;
+  skos:prefLabel "Consent Forms Verified, Linked"@en ;
+  skos:broader trsp:typeLegalEthicsChecks ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForIllegalContent
+  a skos:Concept ;
+  skos:prefLabel "Checked for Illegal Content"@en ;
+  skos:broader trsp:typeLegalEthicsChecks ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForLicenceAssent
+  a skos:Concept ;
+  skos:prefLabel "Verification of Licence Assent"@en ;
+  skos:note "Can be assented to by the depositor, data subject, and/ or end user"@en ;
+  skos:broader trsp:typeLegalEthicsChecks ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeCheckedForLicenceCombination
+  a skos:Concept ;
+  skos:prefLabel "Licence Combination Supported/ Verified"@en ;
+  skos:broader trsp:typeLegalEthicsChecks ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeheckedForPlagiarism
+  a skos:Concept ;
+  skos:prefLabel "Plagiarism Verification"@en ;
+  skos:broader trsp:typeLegalEthicsChecks ;
+  skos:inScheme trsp:checklistCurationType .
