@@ -7,7 +7,7 @@
 
 trsp:institution-role-type-scheme
   a skos:ConceptScheme ;
-  skos:prefLabel "Instiution Role"@en ;
+  skos:prefLabel "Institution Role"@en ;
   dct:title "Institution Role"@en ;
   dct:created "2026-07-16"^^xsd:date ;
   owl:versionInfo "0.1" .
