@@ -7,7 +7,7 @@
 
 trsp:checklistQualityAssurance
   a skos:ConceptScheme ;
-  skos:prefLabel "Quality"@en ;
+  skos:prefLabel "Quality Assurance, Assessment, COnformance, and Certification Frameworks."@en ;
   dct:title "Quality"@en ;
   dct:created "2026-05-07"^^xsd:date ;
   dct:modified "2026-05-07"^^xsd:date ;
