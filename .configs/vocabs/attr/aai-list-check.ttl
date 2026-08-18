@@ -11,7 +11,7 @@ trsp:checklistAAI
   skos:prefLabel "Checklist for AAI Protocols"@en ;
   dct:title "Checklist for AAI"@en ;
   dct:description "List of AAI protocols available"@en ;
-  dct:created "2026-07-03T00:00:00+00:00"^^xsd:datetime ;
+  dct:created "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   rdfs:seeAlso trsp:att.2C32459481 ;
   rdfs:seeAlso trsp:att.337C35222E ;  
