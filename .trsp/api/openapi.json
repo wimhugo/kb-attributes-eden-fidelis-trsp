@@ -7,7 +7,7 @@
   },
   "servers": [
     {
-      "url": "https://your_server_name.org"
+      "url": "https://your_server_url.org"
     }
   ],
   "paths": {
