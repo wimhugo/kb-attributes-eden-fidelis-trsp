@@ -4,7 +4,7 @@
 
 <{{annotation_iri}}>
     a oa:Annotation ;
-    dct:subject {{tags}} ;
+    dct:subject "{{tags}}" ;
     oa:hasBody [
         a oa:TextualBody ;
         rdf:value
