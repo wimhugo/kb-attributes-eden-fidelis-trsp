@@ -1,0 +1,347 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "TRSP Knowledge Base",
+    "version": "1.0.0",
+    "description": "A Knowledge Base of Attributes and their relations to Repositories and Services, used by RDA TRSP WG, EOSC EDEN, and EOSC FIDELIS"
+  },
+  "servers": [
+    {
+      "url": "https://your_server_name.org"
+    }
+  ],
+  "paths": {
+    "/api/resource/vocabs/attr": {
+      "get": {
+        "summary": "TRSP Attribute Characterisation",
+        "description": "A list of attribute characterisation vocabularies, used to qualify attributes, populate checklists, and identify registry entries.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Vocabulary summaries.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Section not found."
+          }
+        }
+      }
+    },
+    "/api/resource/vocabs/attr/{iri}": {
+      "get": {
+        "summary": "TRSP Attribute Characterisation (detail)",
+        "description": "Full content of the source file whose root IRI matches {iri}.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "File content (TTL, JSON-LD, or hierarchy SVG).",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              },
+              "image/svg+xml": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No matching vocabulary."
+          }
+        }
+      }
+    },
+    "/api/trsp-attribute-vocabularies/aai/{iri}": {
+      "get": {
+        "summary": "AAI Protocol Detail",
+        "description": "Returns a list of AAI protocols that a repository or service may use to describe the supported protocols.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        }
+      }
+    },
+    "/api/trsp-attribute-vocabularies/apis/{iri}": {
+      "get": {
+        "summary": "API Scope Detail",
+        "description": "Returns a list of typical APIs that a repository or service may be offering.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        }
+      }
+    },
+    "/api/trsp-attribute-vocabularies/apis": {
+      "get": {
+        "summary": "API Scope",
+        "description": "Returns a list of typical APIs that a repository or service may be offering.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/trsp-attribute-vocabularies/aai": {
+      "get": {
+        "summary": "AAI Protocols",
+        "description": "Returns a list of AAI protocols that a repository or service may use to describe the supported protocols.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
