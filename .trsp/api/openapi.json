@@ -11,6 +11,5022 @@
     }
   ],
   "paths": {
+    "/api/re3data/access-type": {
+      "get": {
+        "summary": "Data Access Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/access-type/{iri}": {
+      "get": {
+        "summary": "Data Access Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/data-protection": {
+      "get": {
+        "summary": "Data Protection Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/data-protection/{iri}": {
+      "get": {
+        "summary": "Data Protection Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/data-upload": {
+      "get": {
+        "summary": "Data Upload Restriction",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3datare3data/data-upload/{iri}": {
+      "get": {
+        "summary": "Data Upload Restriction Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/upload-type": {
+      "get": {
+        "summary": "Data Upload Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/upload-type/{iri}": {
+      "get": {
+        "summary": "Data Upload Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/database-access": {
+      "get": {
+        "summary": "Database Access Restriction",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/database-access/{iri}": {
+      "get": {
+        "summary": "Database Access Restriction Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/db-access-type": {
+      "get": {
+        "summary": "Database Access Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/db-access-type/{iri}": {
+      "get": {
+        "summary": "Database Access Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/deposit-documentation": {
+      "get": {
+        "summary": "Deposit Documentation Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/deposit-documentation/{iri}": {
+      "get": {
+        "summary": "Deposit Documentation Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/node-status": {
+      "get": {
+        "summary": "EOSC Node Status",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/node-status/{iri}": {
+      "get": {
+        "summary": "EOSC Node Status Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/ethics": {
+      "get": {
+        "summary": "Ethics Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/ethics/{iri}": {
+      "get": {
+        "summary": "Ethics Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/imperative": {
+      "get": {
+        "summary": "Imperative Types",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/imperative/{iri}": {
+      "get": {
+        "summary": "Imperative Types Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/info-management": {
+      "get": {
+        "summary": "Information and Service Management Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/info-management/{iri}": {
+      "get": {
+        "summary": "Information and Service Management Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/ingest-source": {
+      "get": {
+        "summary": "Ingest Metadata Source Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/ingest-source/{iri}": {
+      "get": {
+        "summary": "Ingest Metadata Source Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/institution-role": {
+      "get": {
+        "summary": "Institution Role",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/institution-role/{iri}": {
+      "get": {
+        "summary": "Institution Role Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/institution-type": {
+      "get": {
+        "summary": "Institution Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/institution-type/{iri}": {
+      "get": {
+        "summary": "Institution Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/legal": {
+      "get": {
+        "summary": "Legal Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/legal/{iri}": {
+      "get": {
+        "summary": "Legal Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/metrics": {
+      "get": {
+        "summary": "Metrics Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/metrics/{iri}": {
+      "get": {
+        "summary": "Metrics Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/package-type": {
+      "get": {
+        "summary": "Package Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/package-type/{iri}": {
+      "get": {
+        "summary": "Package Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/pid-resolution": {
+      "get": {
+        "summary": "PID Resolution Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/pid-resolution/{iri}": {
+      "get": {
+        "summary": "PID Resolution Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/policies": {
+      "get": {
+        "summary": "Policies Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/policies/{iri}": {
+      "get": {
+        "summary": "Policies Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/policy-type": {
+      "get": {
+        "summary": "Policy Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/policy-type/{iri}": {
+      "get": {
+        "summary": "Policy Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/principles": {
+      "get": {
+        "summary": "Principles Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/principles/{iri}": {
+      "get": {
+        "summary": "Principles Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/procedures": {
+      "get": {
+        "summary": "Procedures Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/procedures/{iri}": {
+      "get": {
+        "summary": "Procedures Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/re3datas/provider-type": {
+      "get": {
+        "summary": "Provider Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/provider-type/{iri}": {
+      "get": {
+        "summary": "Provider Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/quality": {
+      "get": {
+        "summary": "Quality Assessment Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/quality/{iri}": {
+      "get": {
+        "summary": "Quality Assessment Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/registry": {
+      "get": {
+        "summary": "Registry Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/registry/{iri}": {
+      "get": {
+        "summary": "Registry Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/related-type": {
+      "get": {
+        "summary": "Related Repository Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/related-type/{iri}": {
+      "get": {
+        "summary": "Related Repository Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/repository-status": {
+      "get": {
+        "summary": "Repository Status",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/repository-status/{iri}": {
+      "get": {
+        "summary": "Repository Status Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/repository-type": {
+      "get": {
+        "summary": "Repository Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/repository-type/{iri}": {
+      "get": {
+        "summary": "Repository Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/resource-type": {
+      "get": {
+        "summary": "Resource Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/resource-type/{iri}": {
+      "get": {
+        "summary": "Resource Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/responsibility": {
+      "get": {
+        "summary": "Responsibility Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/responsibility/{iri}": {
+      "get": {
+        "summary": "Responsibility Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/reusability": {
+      "get": {
+        "summary": "Reusability Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/reusability/{iri}": {
+      "get": {
+        "summary": "Reusability Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/revenue-source": {
+      "get": {
+        "summary": "Revenue Source",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/revenue-source/{iri}": {
+      "get": {
+        "summary": "Revenue Source Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/revenue-type": {
+      "get": {
+        "summary": "Revenue Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/revenue-type/{iri}": {
+      "get": {
+        "summary": "Revenue Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/rights-encoding": {
+      "get": {
+        "summary": "Rights Encoding Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/rights-encoding/{iri}": {
+      "get": {
+        "summary": "Rights Encoding Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/service-api": {
+      "get": {
+        "summary": "Service and API Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/service-api/{iri}": {
+      "get": {
+        "summary": "Service and API Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/skg-index": {
+      "get": {
+        "summary": "SKG Index Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/skg-index/{iri}": {
+      "get": {
+        "summary": "SKG Index Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/subject": {
+      "get": {
+        "summary": "Subject Type",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/subject/{iri}": {
+      "get": {
+        "summary": "Subject Type Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/versioning": {
+      "get": {
+        "summary": "Versioning Strategy",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/versioning/{iri}": {
+      "get": {
+        "summary": "Versioning Strategy Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/legislation": {
+      "get": {
+        "summary": "Applicable Legislation",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/legislation/{iri}": {
+      "get": {
+        "summary": "Applicable Legislation Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/businessmodel": {
+      "get": {
+        "summary": "Business Model",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/businessmodel/{iri}": {
+      "get": {
+        "summary": "Business Model Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/compensation": {
+      "get": {
+        "summary": "Compensation Rule",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/compensation/{iri}": {
+      "get": {
+        "summary": "Compensation Rule Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/crosswalksupport": {
+      "get": {
+        "summary": "Crosswalks Support Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/crosswalksupport/{iri}": {
+      "get": {
+        "summary": "Crosswalks Support Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/curation": {
+      "get": {
+        "summary": "Curation Checklist",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/trsp/curation/{iri}": {
+      "get": {
+        "summary": "Curation Checklist Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/data-access": {
+      "get": {
+        "summary": "Data Access Restriction",
+        "description": "List of members with summary properties.",
+        "parameters": [
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member list.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
+    "/api/re3data/data-access/{iri}": {
+      "get": {
+        "summary": "Data Access Restriction Detail",
+        "description": "Single member with all properties.",
+        "parameters": [
+          {
+            "name": "iri",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Concept or vocabulary IRI (URL-encoded)."
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "ttl",
+                "json",
+                "svg"
+              ]
+            },
+            "description": "Override Accept-header content negotiation."
+          },
+          {
+            "name": "Accept",
+            "in": "header",
+            "required": false,
+            "schema": {
+              "type": "string"
+            },
+            "description": "text/turtle, application/ld+json, or image/svg+xml."
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Member detail.",
+            "content": {
+              "text/turtle": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/ld+json": {
+                "schema": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Member not found."
+          }
+        },
+        "tags": [
+          "re3data Vocabularies"
+        ]
+      }
+    },
     "/api/resource/vocabs/attr": {
       "get": {
         "summary": "TRSP Attribute Characterisation",
@@ -59,7 +5075,10 @@
           "404": {
             "description": "Section not found."
           }
-        }
+        },
+        "tags": [
+          "Resource Scope"
+        ]
       }
     },
     "/api/resource/vocabs/attr/{iri}": {
@@ -124,7 +5143,10 @@
           "404": {
             "description": "No matching vocabulary."
           }
-        }
+        },
+        "tags": [
+          "Resource Scope"
+        ]
       }
     },
     "/api/trsp-attribute-vocabularies/aai/{iri}": {
@@ -184,7 +5206,10 @@
           "404": {
             "description": "Member not found."
           }
-        }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
       }
     },
     "/api/trsp-attribute-vocabularies/apis/{iri}": {
@@ -244,7 +5269,10 @@
           "404": {
             "description": "Member not found."
           }
-        }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
       }
     },
     "/api/trsp-attribute-vocabularies/apis": {
@@ -292,7 +5320,10 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
       }
     },
     "/api/trsp-attribute-vocabularies/aai": {
@@ -340,8 +5371,25 @@
               }
             }
           }
-        }
+        },
+        "tags": [
+          "TRSP Attribute Vocabularies"
+        ]
       }
     }
-  }
+  },
+  "tags": [
+    {
+      "name": "re3data Vocabularies",
+      "description": "Endpoints in the re3data Vocabularies API section."
+    },
+    {
+      "name": "TRSP Attribute Vocabularies",
+      "description": "Endpoints in the TRSP Attribute Vocabularies API section."
+    },
+    {
+      "name": "Resource Scope",
+      "description": "Endpoints in the Resource Scope API section."
+    }
+  ]
 }
