@@ -1,0 +1,10 @@
+{
+  "name": "TRSP Knowledge Base",
+  "description": "A Knowledge Base of Attributes and their relations to Repositories and Services, used by RDA TRSP WG, EOSC EDEN, and EOSC FIDELIS",
+  "namespace_uri": "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp",
+  "published_namespace_uri": "https://w3id.org/trsp",
+  "namespace_prefix": "trsp",
+  "github_repo_url": "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp",
+  "github_repo_branch": "main",
+  "api_definition_path": ".trsp/api"
+}
