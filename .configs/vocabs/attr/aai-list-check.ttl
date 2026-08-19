@@ -1,38 +1,54 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix idsc: <https://w3id.org/idsa/code/> .
 
-trsp:checklistAAI
-  a skos:ConceptScheme ;
-  skos:prefLabel "Checklist for AAI Protocols"@en ;
+trsp:checklistAAI a skos:ConceptScheme ;
   dct:title "Checklist for AAI"@en ;
+  skos:prefLabel "Checklist for AAI Protocols"@en ;
+# ⚠ refine: missing skos:definition
+#   skos:definition "[[definition]]"@en ;
   dct:description "List of AAI protocols available"@en ;
+  owl:versionInfo "0.1" ;
   dct:created "2026-07-03T00:00:00+00:00"^^xsd:dateTime ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   rdfs:seeAlso trsp:att.2C32459481 ;
-  rdfs:seeAlso trsp:att.337C35222E ;  
-  dct:references <https://doi.org/10.5281/zenodo.17232536> ;
-  owl:versionInfo "0.1" .
+  rdfs:seeAlso trsp:att.337C35222E ;
+# ⚠ refine: missing skos:altLabel
+#   skos:altLabel "[[altLabel]]"@en ;
+  dct:references <https://doi.org/10.5281/zenodo.17232536> .
 
-trsp:aai-saml
-  a skos:Concept ;
+trsp:aai-saml a skos:Concept ;
   skos:prefLabel "SAML"@en ;
   skos:definition "Security Assertion Markup Language (SAML)"@en ;
-  skos:closeMatch idsc:SAML_1_1;
-  skos:closeMatch idsc:SAML_2_0;
+  skos:closeMatch idsc:SAML_1_1 ;
+  skos:closeMatch idsc:SAML_2_0 ;
+# ⚠ refine: missing dct:title
+#   dct:title "[[title]]"@en ;
+# ⚠ refine: missing skos:altLabel
+#   skos:altLabel "[[altLabel]]"@en ;
   skos:inScheme trsp:checklistAAI .
 
-trsp:aai-oauth2
-  a skos:Concept ;
+trsp:aai-oauth2 a skos:Concept ;
   skos:prefLabel "OAuth-2"@en ;
+# ⚠ refine: missing skos:definition
+#   skos:definition "[[definition]]"@en ;
   skos:closeMatch idsc:OAUTH2_JWT ;
+# ⚠ refine: missing dct:title
+#   dct:title "[[title]]"@en ;
+# ⚠ refine: missing skos:altLabel
+#   skos:altLabel "[[altLabel]]"@en ;
   skos:inScheme trsp:checklistAAI .
 
-trsp:aai-openid
-  a skos:Concept ;
+trsp:aai-openid a skos:Concept ;
   skos:prefLabel "OpenIDConnect"@en ;
+# ⚠ refine: missing skos:definition
+#   skos:definition "[[definition]]"@en ;
+# ⚠ refine: missing dct:title
+#   dct:title "[[title]]"@en ;
+# ⚠ refine: missing skos:altLabel
+#   skos:altLabel "[[altLabel]]"@en ;
   skos:inScheme trsp:checklistAAI .
