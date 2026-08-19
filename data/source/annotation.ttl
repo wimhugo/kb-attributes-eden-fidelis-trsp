@@ -5,7 +5,7 @@
 
 <https://hypothes.is/a/_7_QDPQ2EfCHfm85XXLzzQ>
     a oa:Annotation ;
-    dct:subject "TRSP", "TRUST", "Meatadata", "Community Norms" ;
+    dct:subject "TRSP", "TRUST", "Metadata", "Community Norms" ;
     oa:hasBody [
         a oa:TextualBody ;
         rdf:value
