@@ -8,7 +8,7 @@
     oa:hasBody [
         a oa:TextualBody ;
         rdf:value
-            "{{body_text}}."
+            "{{body_text}}"
     ] ;
 
     oa:hasTarget [
