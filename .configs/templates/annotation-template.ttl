@@ -1,27 +1,25 @@
-@prefix oa: <http://www.w3.org/ns/oa#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix dct:  <http://purl.org/dc/terms/> .
 
-<{{annotation_iri}}>
+{{annotation_iri}}
     a oa:Annotation ;
-    dct:subject "{{tags}}" ;
+    dct:subject {{tags}} ;
     oa:hasBody [
         a oa:TextualBody ;
         rdf:value
-            "{{body_text}}"
+            {{body_text}}
     ] ;
 
     oa:hasTarget [
         a oa:SpecificResource ;
 
         oa:hasSource
-            <{{source_uri}}> ;
+            {{source_uri}} ;
 
         oa:hasSelector [
             a oa:TextQuoteSelector ;
             oa:exact
-                "{{selector_exact}}" ;
-            oa:prefix "{{selector_prefix}}" ;
-            oa:suffix "{{selector_suffix}}"
+                {{selector_exact}} ;
+            oa:prefix {{selector_prefix}} ;
+            oa:suffix {{selector_suffix}}
         ]
     ] .
