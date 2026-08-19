@@ -75,7 +75,7 @@ trsp:legislationAIA
   dcterms:source <https://eur-lex.europa.eu/eli/reg/2024/1689/oj> ;
   skos:inScheme trsp:legislationType .
 
-trsp:legislatioEIDAS
+trsp:legislationEIDAS
   a skos:Concept ;
   skos:prefLabel "eIDAS Regulation"@en ;
   skos:definition "Framework for electronic identification, trust services, electronic signatures, seals, and timestamps; relevant for repository authentication, provenance, and trusted workflows."@en ;
