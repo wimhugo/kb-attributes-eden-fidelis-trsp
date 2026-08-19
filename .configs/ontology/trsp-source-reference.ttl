@@ -1,0 +1,48 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix oa:   <http://www.w3.org/ns/oa#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#----------------------------------------------------------------
+# Source Reference Classes
+#----------------------------------------------------------------
+
+trsp:SourceReference
+    a owl:Class ;
+    rdfs:label "Source reference"@en ;
+    skos:definition	"A contextual reference showing that a source, optionally including a specific annotation, supports or motivates one or more attribute definitions."@en ;
+    rdfs:isDefinedBy trsp: ;
+    skos:note
+    rdfs:comment ""@en .
+
+#----------------------------------------------------------------
+# Source Reference Properties
+#----------------------------------------------------------------
+
+trsp:hasSourceReference
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:AttributeDefinition ;
+    rdfs:range trsp:SourceReference ;
+    rdfs:label "has source reference"@en .
+
+trsp:hasAttribute
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range trsp:AttributeDefinition ;
+    owl:inverseOf trsp:hasSourceReference ;
+    rdfs:label "has attribute"@en .
+
+trsp:hasProfileSource
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "profile source"@en ;
+    skos:definition	 "The profile, framework, checklist, vocabulary, or other structured source context from which this reference arose."@en .
+
+trsp:hasAnnotation
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range oa:Annotation ;
+    rdfs:label "has annotation"@en .
