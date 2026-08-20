@@ -44,7 +44,7 @@ trsp:att.4cb9ed25fe
 trsp:att.0849a7f1e2
   a skos:Concept ;
   skos:prefLabel "Social Sustainability"@en ;
-  skos:description "Aspects such as open governance, community involvement and engagement, planning and continuity arrangements, forum and working group participation and creation. Frequent user surveys, publication of roadmaps."@en ;
+  skos:definition "Aspects such as open governance, community involvement and engagement, planning and continuity arrangements, forum and working group participation and creation. Frequent user surveys, publication of roadmaps."@en ;
   schema:category "Sustainability|Social Sustainability" ;
   owl:versionInfo "0.1" ;
   skos:broader att.4CB9ED25FE ;
@@ -106,7 +106,7 @@ trsp:att.0cf10c6cfb
 trsp:att.139cd89a8a
   a skos:Concept ;
   skos:prefLabel "Community Engagement"@en ;
-  skos:description "Demonstrable longer-term funding and income sources. Structural income is adequate. Revenue is justifiable, the source is clearly defined, and revenue does not come from selling the data or metadata holdings. Recovering justifiable cost, for example for disseminating or storing large data sets, is acceptable."@en ;
+  skos:definition "Demonstrable longer-term funding and income sources. Structural income is adequate. Revenue is justifiable, the source is clearly defined, and revenue does not come from selling the data or metadata holdings. Recovering justifiable cost, for example for disseminating or storing large data sets, is acceptable."@en ;
   schema:category "Sustainability|Financial Sustainability|Community Engagement" ;
   dcat:keyword "POSI" ;
   dcat:keyword "CTS" ;
@@ -146,7 +146,7 @@ trsp:att.410ba123b3
 trsp:att.0e0c905d2a
   a skos:Concept ;
   skos:prefLabel "Data is free"@en ;
-  skos:description "Identified primarily as a requirement for public infrastructure services by POSI, this criterion ensures that the data gathered by services is available without cost to the community, and serves as insurance should the service no longer be available."@en ;
+  skos:definition "Identified primarily as a requirement for public infrastructure services by POSI, this criterion ensures that the data gathered by services is available without cost to the community, and serves as insurance should the service no longer be available."@en ;
   schema:category "Sustainability|Financial Sustainability|Revenue|Data is free" ;
   dcat:keyword "POSI" ;
   owl:versionInfo "0.1" ;
@@ -172,7 +172,7 @@ trsp:att.5cf6ab3b6e
 trsp:att.7da1b3367b
   a skos:Concept ;
   skos:prefLabel "Technical Sustainability"@en ;
-  skos:description "Open availability of the technical means to reestablish the service elsewhere"@en ;
+  skos:definition "Open availability of the technical means to reestablish the service elsewhere"@en ;
   schema:category "Sustainability|Technical Sustainability" ;
   dcat:keyword "POSI" ;
   dcat:keyword "CTS" ;
@@ -223,7 +223,7 @@ trsp:att.65a95f223f
 trsp:att.4a4b5a22fe
   a skos:Concept ;
   skos:prefLabel "Schema"@en ;
-  skos:description "Establishing appropriate metadata schema, as well as assisting to identify applicable file formats and schema"@en ;
+  skos:definition "Establishing appropriate metadata schema, as well as assisting to identify applicable file formats and schema"@en ;
   schema:category "Responsibility|Schema" ;
   owl:versionInfo "0.1" ;
   skos:broader att.65A95F223F ;
@@ -269,7 +269,7 @@ trsp:att.40296310dd
 trsp:att.00c02c55dc
   a skos:Concept ;
   skos:prefLabel "Quality Control - Deposit Documentation"@en ;
-  skos:description "Ensuring that deposit documentation is adequate, meets well-defined quality standards or guidelines, and is technically sound (schema validation, file formats, ...)"@en ;
+  skos:definition "Ensuring that deposit documentation is adequate, meets well-defined quality standards or guidelines, and is technically sound (schema validation, file formats, ...)"@en ;
   schema:category "Responsibility|Stewardship|Quality Control - Deposit Documentation" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -336,7 +336,7 @@ trsp:att.3c8326fc1d
 trsp:att.570534f4b8
   a skos:Concept ;
   skos:prefLabel "Long-term Preservation"@en ;
-  skos:description "Format and bit-level preservation"@en ;
+  skos:definition "Format and bit-level preservation"@en ;
   schema:category "Responsibility|Stewardship|Long-term Preservation" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -381,7 +381,7 @@ trsp:att.497c7ace99
 trsp:att.3319eedc99
   a skos:Concept ;
   skos:prefLabel "Transfer"@en ;
-  skos:description "Allow transfer of stewardship"@en ;
+  skos:definition "Allow transfer of stewardship"@en ;
   schema:category "Responsibility|Stewardship|Transfer" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -393,7 +393,7 @@ trsp:att.3319eedc99
 trsp:att.3532a00a80
   a skos:Concept ;
   skos:prefLabel "Confidentiality and Ethics"@en ;
-  skos:description "Determine if ethical norms have been adhered to, if consent has been granted by subjects, confidentiality respected, and similar concerns"@en ;
+  skos:definition "Determine if ethical norms have been adhered to, if consent has been granted by subjects, confidentiality respected, and similar concerns"@en ;
   schema:category "Responsibility|Stewardship|Confidentiality and Ethics" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -426,7 +426,7 @@ trsp:att.16855d3cb9
 trsp:att.72f38a16d8
   a skos:Concept ;
   skos:prefLabel "Integrity and Authenticity"@en ;
-  skos:description "Validation of provenance and authenticity, protection and recording of provenance, verification of depositors/ content editors"@en ;
+  skos:definition "Validation of provenance and authenticity, protection and recording of provenance, verification of depositors/ content editors"@en ;
   schema:category "Responsibility|Stewardship|Integrity and Authenticity" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -474,7 +474,7 @@ trsp:att.27f5c3bd10
 trsp:att.06f21028d1
   a skos:Concept ;
   skos:prefLabel "Rights Management"@en ;
-  skos:description "Aspects such as protection of the rights of the subjects of research, the owners of works, the end users, the depositors, and the curators of the holdings. Provisions to transfer rights of depositors/ subjects to curators in event of unavailability of the latter."@en ;
+  skos:definition "Aspects such as protection of the rights of the subjects of research, the owners of works, the end users, the depositors, and the curators of the holdings. Provisions to transfer rights of depositors/ subjects to curators in event of unavailability of the latter."@en ;
   schema:category "Responsibility|Stewardship|Rights Management" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -540,7 +540,7 @@ trsp:att.24650a32ba
 trsp:att.5f45ff82f5
   a skos:Concept ;
   skos:prefLabel "Artefacts/ Legal: documented information"@en ;
-  skos:description "The policies and legal agreements that shape the service, dealing with aspects of use, roles and responsibilities, handling sensitive data, licensing, and regulatory aspects. Linked to rights management."@en ;
+  skos:definition "The policies and legal agreements that shape the service, dealing with aspects of use, roles and responsibilities, handling sensitive data, licensing, and regulatory aspects. Linked to rights management."@en ;
   schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -592,7 +592,7 @@ trsp:att.419ee6d029
 trsp:att.297ed3685c
   a skos:Concept ;
   skos:prefLabel "Process"@en ;
-  skos:description "Verification is in place for confirmation of ownership and IP rights, the right to publish, and the right to select a licence"@en ;
+  skos:definition "Verification is in place for confirmation of ownership and IP rights, the right to publish, and the right to select a licence"@en ;
   schema:category "Responsibility|Stewardship|Process" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -631,7 +631,7 @@ trsp:att.697c57fe46
 trsp:att.4a43a19133
   a skos:Concept ;
   skos:prefLabel "Typical Value-added Services"@en ;
-  skos:description "User-directed services: APIs and API documentation, data dumps, guidelines for implementation and use, user guides, ..."@en ;
+  skos:definition "User-directed services: APIs and API documentation, data dumps, guidelines for implementation and use, user guides, ..."@en ;
   schema:category "Responsibility|Typical Value-added Services" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -642,7 +642,7 @@ trsp:att.4a43a19133
 trsp:att.532324de1d
   a skos:Concept ;
   skos:prefLabel "Inventory of Available Services"@en ;
-  skos:description "This is an important aspect related to services and softwar e platforms - providing both human- and machine readable inventories of available services/ service elements and accompanying it with proper documentation. It os a prerequisite for incproating the services and/ or software platforms into autoomated workflows."@en ;
+  skos:definition "This is an important aspect related to services and softwar e platforms - providing both human- and machine readable inventories of available services/ service elements and accompanying it with proper documentation. It os a prerequisite for incproating the services and/ or software platforms into autoomated workflows."@en ;
   schema:category "Responsibility|Typical Value-added Services|Inventory of Available Services" ;
   dcat:keyword "TRSP" ;
   dcat:keyword "TTRAM" ;
@@ -680,7 +680,7 @@ trsp:att.0d3c935a8a
 trsp:att.03110a5773
   a skos:Concept ;
   skos:prefLabel "Machine-Readable Policies"@en ;
-  skos:description "For services, the focus is on automation, and as a result, aspects such as policies and what they entail should be machine-readable. Somne policy provisions find expression in licences or conditions of use, and as such will be more useful as machine-readable, standardised resources."@en ;
+  skos:definition "For services, the focus is on automation, and as a result, aspects such as policies and what they entail should be machine-readable. Somne policy provisions find expression in licences or conditions of use, and as such will be more useful as machine-readable, standardised resources."@en ;
   schema:category "Responsibility|Typical Value-added Services|Standard APIs|Machine-Readable Policies" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
@@ -726,7 +726,7 @@ trsp:att.5dc262fe75
 trsp:att.1f4ae0b0f8
   a skos:Concept ;
   skos:prefLabel "Metrics"@en ;
-  skos:description "Implementing relevant metrics and making these available to users."@en ;
+  skos:definition "Implementing relevant metrics and making these available to users."@en ;
   schema:category "Responsibility|Typical Value-added Services|Metrics" ;
   dcat:keyword "TRUST" ;
   owl:versionInfo "0.1" ;
@@ -743,7 +743,7 @@ trsp:att.693d7b796f
 trsp:att.371d70b854
   a skos:Concept ;
   skos:prefLabel "Certification and Assessment"@en ;
-  skos:description "Certification schemes and/or community badges that assess certain aspects of the repository (e.g., its fitness, trustworthiness, adoption)'"@en ;
+  skos:definition "Certification schemes and/or community badges that assess certain aspects of the repository (e.g., its fitness, trustworthiness, adoption)'"@en ;
   schema:category "Transparency|Certification and Assessment" ;
   dcat:keyword "CTM" ;
   dcat:keyword "DRAWG" ;
@@ -762,7 +762,7 @@ trsp:att.26cd4b30b3
 trsp:att.7af3a65add
   a skos:Concept ;
   skos:prefLabel "Mission and Mandate"@en ;
-  skos:description "The organisation is mandated to perform the services it offers, and this is clearly stated in publicly available documentation. The organisation is focused on the mission and does not divert resources to other focus areas. The mission is mandated and approved at an appropriate level (e.g. board level)."@en ;
+  skos:definition "The organisation is mandated to perform the services it offers, and this is clearly stated in publicly available documentation. The organisation is focused on the mission and does not divert resources to other focus areas. The mission is mandated and approved at an appropriate level (e.g. board level)."@en ;
   schema:category "Transparency|Benefits and Constraints|Mission and Mandate" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "CTS" ;
@@ -791,7 +791,7 @@ trsp:att.43abb27ebe
 trsp:att.18d74ed687
   a skos:Concept ;
   skos:prefLabel "Legal and Regulatory"@en ;
-  skos:description "Disclaimers, Privacy, Terms and Conditions"@en ;
+  skos:definition "Disclaimers, Privacy, Terms and Conditions"@en ;
   schema:category "Transparency|Benefits and Constraints|Legal and Regulatory" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "CTS" ;
@@ -802,7 +802,7 @@ trsp:att.18d74ed687
 trsp:att.13132a45e7
   a skos:Concept ;
   skos:prefLabel "Policy"@en ;
-  skos:description "Policy/ high level information is available"@en ;
+  skos:definition "Policy/ high level information is available"@en ;
   schema:category "Transparency|Benefits and Constraints|Policy" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "CTS" ;
@@ -821,7 +821,7 @@ trsp:att.2744ced24f
 trsp:att.6105038322
   a skos:Concept ;
   skos:prefLabel "Appraisal/ Accession Policy"@en ;
-  skos:description "Policies related to appropriateness of accession, rights, authenticity, provenance, and dissemination risk"@en ;
+  skos:definition "Policies related to appropriateness of accession, rights, authenticity, provenance, and dissemination risk"@en ;
   schema:category "Transparency|Benefits and Constraints|Policy|Appraisal/ Accession Policy" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "CTS" ;
@@ -875,7 +875,7 @@ trsp:att.3619ef1b84
 trsp:att.1b94296bad
   a skos:Concept ;
   skos:prefLabel "Supported Formats"@en ;
-  skos:description "Ensuring that guidance and/or enforcement is in place to ensure optimal file formats for dissemination and preservation"@en ;
+  skos:definition "Ensuring that guidance and/or enforcement is in place to ensure optimal file formats for dissemination and preservation"@en ;
   schema:category "Transparency|Benefits and Constraints|Policy|Supported Formats" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "CTS" ;
@@ -886,7 +886,7 @@ trsp:att.1b94296bad
 trsp:att.060e8af1a4
   a skos:Concept ;
   skos:prefLabel "Context"@en ;
-  skos:description "It is important to define context clearly and publicly - scope of services offered, the target end user community, and information that can be used by end users to select the most appropriate service or repository."@en ;
+  skos:definition "It is important to define context clearly and publicly - scope of services offered, the target end user community, and information that can be used by end users to select the most appropriate service or repository."@en ;
   schema:category "Transparency|Benefits and Constraints|Context" ;
   dcat:keyword "TRUST" ;
   dcat:keyword "CTS" ;
@@ -946,7 +946,7 @@ trsp:att.3e5f32a9e8
 trsp:att.613f28af34
   a skos:Concept ;
   skos:prefLabel "Scope of Services"@en ;
-  skos:description "Services that are offered range throughout the value chain, and can include automation or centralisation of common services. Services should be documented and appropriate. Pre-deposit services include QA and FAIR improvement, linking to DMPs, format conversions, etc. Value-added services include linking to tools, citation indices, and SKGs."@en ;
+  skos:definition "Services that are offered range throughout the value chain, and can include automation or centralisation of common services. Services should be documented and appropriate. Pre-deposit services include QA and FAIR improvement, linking to DMPs, format conversions, etc. Value-added services include linking to tools, citation indices, and SKGs."@en ;
   schema:category "Transparency|Scope of Services" ;
   owl:versionInfo "0.1" ;
   skos:broader att.693D7B796F ;
@@ -1143,7 +1143,7 @@ trsp:att.67de43d8df
 trsp:att.56c67a542a
   a skos:Concept ;
   skos:prefLabel "Technology"@en ;
-  skos:description "A repository depends on the interaction of people, processes, and technologies to support secure, persistent, and reliable services. Its activities and functions are supported by software, hardware, and technical services.'"@en ;
+  skos:definition "A repository depends on the interaction of people, processes, and technologies to support secure, persistent, and reliable services. Its activities and functions are supported by software, hardware, and technical services.'"@en ;
   schema:category "Technology" ;
   owl:versionInfo "0.1" ;
   skos:inScheme trsp:ConceptScheme .
@@ -1353,7 +1353,7 @@ trsp:att.5abd0e52c7
 trsp:att.1bf97ae324
   a skos:Concept ;
   skos:prefLabel "Submission Processing"@en ;
-  skos:description "The considerations that end users value highly include the timeous publication of research outputs and the PID for the output."@en ;
+  skos:definition "The considerations that end users value highly include the timeous publication of research outputs and the PID for the output."@en ;
   schema:category "Performance|Submission Processing" ;
   owl:versionInfo "0.1" ;
   skos:broader att.5ABD0E52C7 ;
@@ -1362,7 +1362,7 @@ trsp:att.1bf97ae324
 trsp:att.79ca40de94
   a skos:Concept ;
   skos:prefLabel "Deposit Properties"@en ;
-  skos:description "The mechanics of deposit limitations may also be important considerations for end users."@en ;
+  skos:definition "The mechanics of deposit limitations may also be important considerations for end users."@en ;
   schema:category "Performance|Deposit Properties" ;
   dcat:keyword "TRSP" ;
   owl:versionInfo "0.1" ;
@@ -1372,7 +1372,7 @@ trsp:att.79ca40de94
 trsp:att.7f7c2776ac
   a skos:Concept ;
   skos:prefLabel "File and Dataset Properties"@en ;
-  skos:description "Software platforms should provide easy API access to file and dataset properties in addition to dataset metadata - for example file sizes and checksums, file types, storage types, download links, and similar."@en ;
+  skos:definition "Software platforms should provide easy API access to file and dataset properties in addition to dataset metadata - for example file sizes and checksums, file types, storage types, download links, and similar."@en ;
   schema:category "Performance|Deposit Properties|File and Dataset Properties" ;
   dcat:keyword "TRSP" ;
   owl:versionInfo "0.1" ;
@@ -1382,7 +1382,7 @@ trsp:att.7f7c2776ac
 trsp:att.1095e8cf4a
   a skos:Concept ;
   skos:prefLabel "Performance Assessment"@en ;
-  skos:description "The extent to which formal assessments/ audits of performance have been obtained. These aspects relate to performance assessments that are associated with digital services in general, also soutside teh research output management landscape. It covers aspects of process quality (such as ISO 9000), information security (ISO 27001), and service management (FitSM)."@en ;
+  skos:definition "The extent to which formal assessments/ audits of performance have been obtained. These aspects relate to performance assessments that are associated with digital services in general, also soutside teh research output management landscape. It covers aspects of process quality (such as ISO 9000), information security (ISO 27001), and service management (FitSM)."@en ;
   schema:category "Performance|Performance Assessment" ;
   owl:versionInfo "0.1" ;
   skos:broader att.5ABD0E52C7 ;
@@ -1391,7 +1391,7 @@ trsp:att.1095e8cf4a
 trsp:att.57326a13eb
   a skos:Concept ;
   skos:prefLabel "Scalability/ Big Data Readiness"@en ;
-  skos:description "The extent to which the service or software can cope with increases in volume or intensity."@en ;
+  skos:definition "The extent to which the service or software can cope with increases in volume or intensity."@en ;
   schema:category "Performance|Scalability/ Big Data Readiness" ;
   owl:versionInfo "0.1" ;
   skos:broader att.5ABD0E52C7 ;
@@ -1400,7 +1400,7 @@ trsp:att.57326a13eb
 trsp:att.72cbe64acc
   a skos:Concept ;
   skos:prefLabel "Availability"@en ;
-  skos:description "For services and systems integrators, aspects such as uptime and rate limits may be important."@en ;
+  skos:definition "For services and systems integrators, aspects such as uptime and rate limits may be important."@en ;
   schema:category "Performance|Availability|Availability" ;
   owl:versionInfo "0.1" ;
   skos:broader att.5CA7C2BE56 ;
@@ -1409,7 +1409,7 @@ trsp:att.72cbe64acc
 trsp:att.305548d83d
   a skos:Concept ;
   skos:prefLabel "Income and Expenditure"@en ;
-  skos:description "Moved non-accounting values to 'Financial Sustainability' and 'Attributes'"@en ;
+  skos:definition "Moved non-accounting values to 'Financial Sustainability' and 'Attributes'"@en ;
   schema:category "Income and Expenditure" ;
   owl:versionInfo "0.1" ;
   skos:inScheme trsp:ConceptScheme .
@@ -1521,7 +1521,7 @@ trsp:att.27e790a86b
 trsp:att.6fb10117a8
   a skos:Concept ;
   skos:prefLabel "Community Engagement"@en ;
-  skos:description "Aspects include the involvement of the commumity in the governance, technology, standards development and specification, and usability of the service. It overlaps with social sustainability aspects/ governance."@en ;
+  skos:definition "Aspects include the involvement of the commumity in the governance, technology, standards development and specification, and usability of the service. It overlaps with social sustainability aspects/ governance."@en ;
   schema:category "User Focus|Community Engagement" ;
   owl:versionInfo "0.1" ;
   skos:broader att.27E790A86B ;
@@ -1530,7 +1530,7 @@ trsp:att.6fb10117a8
 trsp:att.56b57bdcc5
   a skos:Concept ;
   skos:prefLabel "Guidance"@en ;
-  skos:description "These elements list commonly supported use cases, and can be useful in describing the details of services offered. Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
+  skos:definition "These elements list commonly supported use cases, and can be useful in describing the details of services offered. Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
   schema:category "User Focus|Guidance" ;
   dcat:keyword "EDEN" ;
   owl:versionInfo "0.1" ;
@@ -1616,7 +1616,7 @@ trsp:att.394d659c0c
 trsp:att.234960b12d
   a skos:Concept ;
   skos:prefLabel "Discovery"@en ;
-  skos:description "Similary, these elements list commonly supported use cases, and can be useful in describing the details of services offered.  Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
+  skos:definition "Similary, these elements list commonly supported use cases, and can be useful in describing the details of services offered.  Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
   schema:category "User Focus|Discovery" ;
   dcat:keyword "CTS" ;
   dcat:keyword "TRUST" ;
@@ -1668,7 +1668,7 @@ trsp:att.5f06eec902
 trsp:att.6a8a5e1219
   a skos:Concept ;
   skos:prefLabel "Application and Reuse"@en ;
-  skos:description "Similary, these elements list commonly supported use cases, and can be useful in describing the details of services offered.  Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
+  skos:definition "Similary, these elements list commonly supported use cases, and can be useful in describing the details of services offered.  Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
   schema:category "User Focus|Application and Reuse" ;
   dcat:keyword "CTS" ;
   owl:versionInfo "0.1" ;
@@ -1678,7 +1678,7 @@ trsp:att.6a8a5e1219
 trsp:att.6e790e641f
   a skos:Concept ;
   skos:prefLabel "Context"@en ;
-  skos:description "Linking LOD references (DOIs, ORCIDS, ...) to additional external context in SKGs, registries, and vocabularies"@en ;
+  skos:definition "Linking LOD references (DOIs, ORCIDS, ...) to additional external context in SKGs, registries, and vocabularies"@en ;
   schema:category "User Focus|Context" ;
   owl:versionInfo "0.1" ;
   skos:broader att.27E790A86B ;
@@ -1687,7 +1687,7 @@ trsp:att.6e790e641f
 trsp:att.70c4c7b218
   a skos:Concept ;
   skos:prefLabel "Annotation, Metrics, Feedback and Use"@en ;
-  skos:description "Allow end users to annotate and rate metadata and data, and provide them with links to external resources (other versions, citation metrics, ...)"@en ;
+  skos:definition "Allow end users to annotate and rate metadata and data, and provide them with links to external resources (other versions, citation metrics, ...)"@en ;
   schema:category "User Focus|Annotation, Metrics, Feedback and Use" ;
   owl:versionInfo "0.1" ;
   skos:broader att.27E790A86B ;
