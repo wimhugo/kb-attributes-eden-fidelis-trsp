@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex: <https://vocab.example.org/> .
 
-trsp:profile-test-type-scheme a skos:ConceptScheme ;
+trsp:typeRevenue a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
@@ -28,7 +28,7 @@ trsp:revenue-type-free
   skos:prefLabel "Revenue Type"@en ;
   skos:definition "No payment or attribution required."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeRevenue .
 
 trsp:revenue-type-payment
   a skos:Concept ;
@@ -38,7 +38,7 @@ trsp:revenue-type-payment
   skos:closeMatch <http://purl.org/cerif/frapo/Purchaser> ;
   skos:broadMatch <http://purl.org/cerif/frapo/Purchaser> ;
   rdfs:seeAlso <http://purl.org/cerif/frapo/Purchaser> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeRevenue .
 
 trsp:revenue-type-recurring
   a skos:Concept ;
@@ -48,21 +48,21 @@ trsp:revenue-type-recurring
   skos:closeMatch <http://purl.org/cerif/frapo/Subscription> ;
   skos:exactMatch <http://purl.org/cerif/frapo/Subscription> ;
   rdfs:seeAlso <http://purl.org/cerif/frapo/Subscription> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeRevenue .
 
 trsp:revenue-type-ai-training
   a skos:Concept ;
   skos:prefLabel "AI-Training"@en ;
   skos:definition "Payment every time the content is used for AI training."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeRevenue .
 
 trsp:revenue-type-crawl
   a skos:Concept ;
   skos:prefLabel "Crawling Revenue"@en ;
   skos:definition "Payment every time the content is crawled."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeRevenue .
 
 trsp:revenue-type-ai-use
   a skos:Concept ;
@@ -72,14 +72,14 @@ trsp:revenue-type-ai-use
   skos:closeMatch <https://w3id.org/AIRO#AIUser> ;
   skos:broadMatch <https://w3id.org/AIRO#AIUser> ;
   rdfs:seeAlso <https://w3id.org/AIRO#AIUser> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeRevenue .
 
 trsp:revenue-type-contribution
   a skos:Concept ;
   skos:prefLabel "Good Faith"@en ;
   skos:definition "A good faith monetary or in-kind contribution that supports the development or maintenance of the assets, or the broader content ecosystem."@en ;
   dcterms:source <https://rslstandard.org/rsl#_3-7-payment-compensation-terms> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeRevenue .
 
 trsp:revenue-type-attribution
   a skos:Concept ;
@@ -89,4 +89,4 @@ trsp:revenue-type-attribution
   skos:closeMatch <http://simile.mit.edu/2003/10/ontologies/vraCore3#attribution> ;
   skos:exactMatch <http://simile.mit.edu/2003/10/ontologies/vraCore3#attribution> ;
   rdfs:seeAlso <http://simile.mit.edu/2003/10/ontologies/vraCore3#attribution> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeRevenue .
