@@ -6,7 +6,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ex: <https://vocab.example.org/> .
 
-trsp:profile-test-type-scheme a skos:ConceptScheme ;
+trsp:typeCompensation a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
@@ -26,7 +26,7 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
 trsp:compensation-rule-type-free
   a skos:Concept ;
   skos:prefLabel "Free to Use"@en ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeCompensation .
 
 trsp:compensation-rule-type-non-commercial
   a skos:Concept ;
@@ -36,19 +36,19 @@ trsp:compensation-rule-type-non-commercial
   skos:broadMatch <http://eurovoc.europa.eu/6783> ;
   rdfs:seeAlso <http://eurovoc.europa.eu/6783> ;
   dcterms:source "EuroVoc contributors. (n.d.). non-commercial sector. In EuroVoc. Retrieved from http://eurovoc.europa.eu/6783" ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeCompensation .
 
 trsp:compensation-rule-type-free-registered
   a skos:Concept ;
   skos:prefLabel "Registration Fee"@en ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeCompensation .
 
 trsp:compensation-rule-type-cost-recovery
   a skos:Concept ;
   skos:prefLabel "Cost Recovery"@en ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeCompensation .
 
 trsp:compensation-rule-type-commercial
   a skos:Concept ;
   skos:prefLabel "Commercial Income"@en ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:typeCompensation .
