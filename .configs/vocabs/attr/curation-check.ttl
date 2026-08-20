@@ -11,75 +11,76 @@ trsp:checklistCurationType
   dct:title "Level of Curation"@en ;
   dct:created "2026-05-07"^^xsd:date ;
   dct:modified "2026-05-07"^^xsd:date ;
-  skos:hasTopConcept trsp:typeCurationLevel ,
+  skos:hasTopConcept trsp:typeLORCAP ,
                      trsp:typeCurationActivity ,
-                     trsp:typeCurationAutomationLevel ;
+                     trsp:typePreservationActivity ,
+                     trsp:typeAutomationLevel ;
   owl:versionInfo "0.1" .
 
 #----------------------------------------------------------
 # Curation Level
 #----------------------------------------------------------
-trsp:typeCurationLevel
+trsp:typeLORCAP
   a skos:Concept ;
-  skos:prefLabel "Levels of Curation"@en ;
+  skos:prefLabel "Levels of Curation and Preservation"@en ;
   skos:inScheme trsp:checklistCurationType .
 
 trsp:typeDatalevelCuration
   a skos:Concept ;
-  skos:prefLabel "Data-level curation"@en ;
-  skos:broader trsp:typeCurationLevel ;
+  skos:prefLabel "Data-level"@en ;
+  skos:broader trsp:typeLORCAP ;
   skos:inScheme trsp:checklistCurationType .
 
 trsp:typeEnhancedCuration
   a skos:Concept ;
-  skos:prefLabel "Enhanced curation"@en ;
-  skos:broader trsp:typeCurationLevel ;
+  skos:prefLabel "Enhanced"@en ;
+  skos:broader ttrsp:typeLORCAP ;
   skos:inScheme trsp:checklistCurationType .
 
 trsp:typeBasicCuration
   a skos:Concept ;
-  skos:prefLabel "Basic curation"@en ;
-  skos:broader trsp:typeCurationLevel ;
+  skos:prefLabel "Basic"@en ;
+  skos:broader trsp:typeLORCAP ;
   skos:inScheme trsp:checklistCurationType .
 
 trsp:typeAsDeposited
   a skos:Concept ;
   skos:prefLabel "Content distributed as deposited"@en ;
-  skos:broader trsp:typeCurationLevel ;
+  skos:broader trsp:typeLORCAP ;
   skos:inScheme trsp:checklistCurationType 
 
 #----------------------------------------------------------
 # Automation
 #----------------------------------------------------------
-trsp:typeCurationAutomationLevel
+trsp:typeAutomationLevel
   a skos:Concept ;
   skos:prefLabel "Levels of Automation"@en ;
   skos:closeMatch trsp:typeAutomationLevel ;
   # mirrors trsp:typeAutomationLevel
   skos:inScheme trsp:checklistCurationType .
 
-trsp:typeCurationManual
+trsp:typeManual
   a skos:Concept ;
   skos:prefLabel "Manual Curation"@en ;
-  skos:broader typeCurationAutomationLevel 
+  skos:broader trsp:typeAutomationLevel ; 
   skos:inScheme trsp:checklistCurationType .
 
-trsp:typeCurationAutomated
+trsp:typeAutomated
   a skos:Concept ;
   skos:prefLabel "Automated Curation"@en ;
-  skos:broader typeCurationAutomationLevel ;
+  skos:broader trsp:typeAutomationLevel ; 
   skos:inScheme trsp:checklistCurationType .
 
-trsp:typeCurationAI
+trsp:typeAI
   a skos:Concept ;
   skos:prefLabel "AI-assisted Curation"@en ;
-  skos:broader typeCurationAutomationLevel ;
+  skos:broader trsp:typeAutomationLevel ; 
   skos:inScheme trsp:checklistCurationType .
 
-trsp:typeCurationAIModerated
+trsp:typeAIModerated
   a skos:Concept ;
   skos:prefLabel "AI with Human Moderated Curation"@en ;
-  skos:broader typeCurationAutomationLevel ;
+  skos:broader trsp:typeAutomationLevel ; 
   skos:inScheme trsp:checklistCurationType .
 
 #----------------------------------------------------------
@@ -202,10 +203,30 @@ trsp:typeCheckedForLicenceCombination
   skos:broader trsp:typeLegalEthicsChecks ;
   skos:inScheme trsp:checklistCurationType .
 
-trsp:typeheckedForPlagiarism
+trsp:typeCheckedForPlagiarism
   a skos:Concept ;
   skos:prefLabel "Plagiarism Verification"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
+  skos:inScheme trsp:checklistCurationType .
+
+#----------------------------------------------------------
+# Preservation Activity
+#----------------------------------------------------------
+trsp:typePreservationActivity
+  a skos:Concept ;
+  skos:prefLabel "Curation Activity"@en ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeBitLevelPreservation
+  a skos:Concept ;
+  skos:prefLabel "Bit-Level Preservation"@en ;
+  skos:broader trsp:typePreservationActivity ;
+  skos:inScheme trsp:checklistCurationType .
+
+trsp:typeFormatPreservation
+  a skos:Concept ;
+  skos:prefLabel "Format Preservation"@en ;
+  skos:broader trsp:typePreservationActivity ;
   skos:inScheme trsp:checklistCurationType .
 
 
