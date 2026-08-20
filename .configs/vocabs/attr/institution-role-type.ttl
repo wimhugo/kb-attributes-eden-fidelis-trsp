@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
-trsp:institution-role-type-scheme
+trsp:typeInstitutionRole
   a skos:ConceptScheme ;
   skos:prefLabel "Institution Role"@en ;
   dct:title "Institution Role"@en ;
@@ -15,29 +15,39 @@ trsp:institution-role-type-scheme
 trsp:host
   a skos:Concept ;
   skos:prefLabel "Hosting Institution"@en ;
-  skos:inScheme trsp:institution-role-type-scheme .
+  skos:inScheme trsp:typeInstitutionRole .
 
 trsp:publisher
   a skos:Concept ;
   skos:prefLabel "Publisher"@en ;
-  skos:inScheme trsp:institution-role-type-scheme .
+  skos:inScheme trsp:typeInstitutionRole .
 
 trsp:funder
   a skos:Concept ;
   skos:prefLabel "Funding Institution"@en ;
-  skos:inScheme trsp:institution-role-type-scheme .
+  skos:inScheme trsp:typeInstitutionRole .
 
 trsp:membership
   a skos:Concept ;
   skos:prefLabel "Membership Institution"@en ;
-  skos:inScheme trsp:institution-role-type-scheme .
+  skos:inScheme trsp:typeInstitutionRole .
 
 trsp:user
   a skos:Concept ;
   skos:prefLabel "End User Institution"@en ;
-  skos:inScheme trsp:institution-role-type-scheme .
+  skos:inScheme trsp:typeInstitutionRole .
 
 trsp:stakeholder
   a skos:Concept ;
   skos:prefLabel "Stakeholder Institution"@en ;
-  skos:inScheme trsp:institution-role-type-scheme .
+  skos:inScheme trsp:typeInstitutionRole .
+
+trsp:infrastructureClient
+  a skos:Concept ;
+  skos:prefLabel "Infrastructure Client"@en ;
+  skos:inScheme trsp:typeInstitutionRole .
+
+trsp:infrastructureProvider
+  a skos:Concept ;
+  skos:prefLabel "Infrastructure Provider"@en ;
+  skos:inScheme trsp:typeInstitutionRole .
