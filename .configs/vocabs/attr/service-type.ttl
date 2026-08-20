@@ -216,6 +216,14 @@ trsp:typeRegistryService
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
+trsp:typeRepositoryRegistry
+  a skos:Concept ;
+  skos:prefLabel "Repository Registries"@en ;
+  skos:note "COAR, FAIRsharing, re3data, ..." ;
+  skos:broader trsp:typeRegistryService ;
+  skos:closeMatch dct:LicenseDocument ;
+  skos:inScheme trsp:typeService .
+
 trsp:typePolicyLicenceRegistry
   a skos:Concept ;
   skos:prefLabel "Policy and Licence Registries"@en ;
