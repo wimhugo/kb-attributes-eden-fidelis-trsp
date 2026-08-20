@@ -4,14 +4,14 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-trsp:att4cb9ed25fe
+trsp:att.4cb9ed25fe
   a skos:Concept ;
   skos:prefLabel "Sustainability"@en ;
   schema:category "Sustainability" ;
   owl:versionInfo "0.1" ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0849a7f1e2
+trsp:att.0849a7f1e2
   a skos:Concept ;
   skos:prefLabel "Social Sustainability"@en ;
   skos:description "Aspects such as open governance, community involvement and engagement, planning and continuity arrangements, forum and working group participation and creation. Frequent user surveys, publication of roadmaps."@en ;
@@ -20,7 +20,7 @@ trsp:att0849a7f1e2
   skos:broader att.4CB9ED25FE ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att539a68df8a
+trsp:att.539a68df8a
   a skos:Concept ;
   skos:prefLabel "Governance"@en ;
   schema:category "Sustainability|Social Sustainability|Governance" ;
@@ -32,7 +32,7 @@ trsp:att539a68df8a
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4e4fd79526
+trsp:att.4e4fd79526
   a skos:Concept ;
   skos:prefLabel "Expert Guidance"@en ;
   schema:category "Sustainability|Social Sustainability|Expert Guidance" ;
@@ -41,7 +41,7 @@ trsp:att4e4fd79526
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6237ed1101
+trsp:att.6237ed1101
   a skos:Concept ;
   skos:prefLabel "Living Will"@en ;
   schema:category "Sustainability|Social Sustainability|Living Will" ;
@@ -50,7 +50,7 @@ trsp:att6237ed1101
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5fbaf6dc9f
+trsp:att.5fbaf6dc9f
   a skos:Concept ;
   skos:prefLabel "Planning/ Continuity"@en ;
   schema:category "Sustainability|Social Sustainability|Planning/ Continuity" ;
@@ -61,7 +61,7 @@ trsp:att5fbaf6dc9f
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0cf10c6cfb
+trsp:att.0cf10c6cfb
   a skos:Concept ;
   skos:prefLabel "Community Engagement"@en ;
   schema:category "Sustainability|Social Sustainability|Community Engagement" ;
@@ -73,7 +73,7 @@ trsp:att0cf10c6cfb
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att139cd89a8a
+trsp:att.139cd89a8a
   a skos:Concept ;
   skos:prefLabel "Community Engagement"@en ;
   skos:description "Demonstrable longer-term funding and income sources. Structural income is adequate. Revenue is justifiable, the source is clearly defined, and revenue does not come from selling the data or metadata holdings. Recovering justifiable cost, for example for disseminating or storing large data sets, is acceptable."@en ;
@@ -85,7 +85,7 @@ trsp:att139cd89a8a
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3e8808255f
+trsp:att.3e8808255f
   a skos:Concept ;
   skos:prefLabel "Business Model"@en ;
   schema:category "Sustainability|Financial Sustainability|Business Model" ;
@@ -96,7 +96,7 @@ trsp:att3e8808255f
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1eb263b2ce
+trsp:att.1eb263b2ce
   a skos:Concept ;
   skos:prefLabel "Revenue"@en ;
   schema:category "Sustainability|Financial Sustainability|Revenue" ;
@@ -104,7 +104,7 @@ trsp:att1eb263b2ce
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att410ba123b3
+trsp:att.410ba123b3
   a skos:Concept ;
   skos:prefLabel "Justifiable Cost"@en ;
   schema:category "Sustainability|Financial Sustainability|Revenue|Justifiable Cost" ;
@@ -113,7 +113,7 @@ trsp:att410ba123b3
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0e0c905d2a
+trsp:att.0e0c905d2a
   a skos:Concept ;
   skos:prefLabel "Data is free"@en ;
   skos:description "Identified primarily as a requirement for public infrastructure services by POSI, this criterion ensures that the data gathered by services is available without cost to the community, and serves as insurance should the service no longer be available."@en ;
@@ -123,7 +123,7 @@ trsp:att0e0c905d2a
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att678439cd93
+trsp:att.678439cd93
   a skos:Concept ;
   skos:prefLabel "Source"@en ;
   schema:category "Sustainability|Financial Sustainability|Revenue|Source" ;
@@ -131,7 +131,7 @@ trsp:att678439cd93
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5cf6ab3b6e
+trsp:att.5cf6ab3b6e
   a skos:Concept ;
   skos:prefLabel "Adequacy of Structural Income"@en ;
   schema:category "Sustainability|Financial Sustainability|Adequacy of Structural Income" ;
@@ -139,7 +139,7 @@ trsp:att5cf6ab3b6e
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7da1b3367b
+trsp:att.7da1b3367b
   a skos:Concept ;
   skos:prefLabel "Technical Sustainability"@en ;
   skos:description "Open availability of the technical means to reestablish the service elsewhere"@en ;
@@ -151,7 +151,7 @@ trsp:att7da1b3367b
   skos:broader att.4CB9ED25FE ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att79d95e290a
+trsp:att.79d95e290a
   a skos:Concept ;
   skos:prefLabel "Data Continuity"@en ;
   schema:category "Sustainability|Technical Sustainability|Data Continuity" ;
@@ -159,7 +159,7 @@ trsp:att79d95e290a
   skos:broader att.792636C88D ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4b417e2d31
+trsp:att.4b417e2d31
   a skos:Concept ;
   skos:prefLabel "Open Source"@en ;
   schema:category "Sustainability|Technical Sustainability|Open Source" ;
@@ -167,7 +167,7 @@ trsp:att4b417e2d31
   skos:broader att.792636C88D ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att04f0db0243
+trsp:att.04f0db0243
   a skos:Concept ;
   skos:prefLabel "Planning"@en ;
   schema:category "Sustainability|Planning" ;
@@ -175,7 +175,7 @@ trsp:att04f0db0243
   skos:broader att.4CB9ED25FE ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att375960b05e
+trsp:att.375960b05e
   a skos:Concept ;
   skos:prefLabel "Infrastructure Links"@en ;
   schema:category "Sustainability|Infrastructure Links" ;
@@ -183,14 +183,14 @@ trsp:att375960b05e
   skos:broader att.4CB9ED25FE ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att65a95f223f
+trsp:att.65a95f223f
   a skos:Concept ;
   skos:prefLabel "Responsibility"@en ;
   schema:category "Responsibility" ;
   owl:versionInfo "0.1" ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4a4b5a22fe
+trsp:att.4a4b5a22fe
   a skos:Concept ;
   skos:prefLabel "Schema"@en ;
   skos:description "Establishing appropriate metadata schema, as well as assisting to identify applicable file formats and schema"@en ;
@@ -199,7 +199,7 @@ trsp:att4a4b5a22fe
   skos:broader att.65A95F223F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att365f68cb18
+trsp:att.365f68cb18
   a skos:Concept ;
   skos:prefLabel "Metadata and Data"@en ;
   schema:category "Responsibility|Schema|Metadata and Data" ;
@@ -209,7 +209,7 @@ trsp:att365f68cb18
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7ad9748a7d
+trsp:att.7ad9748a7d
   a skos:Concept ;
   skos:prefLabel "Applicable and appropriate"@en ;
   schema:category "Responsibility|Schema|Applicable and appropriate" ;
@@ -219,7 +219,7 @@ trsp:att7ad9748a7d
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att03e69b6858
+trsp:att.03e69b6858
   a skos:Concept ;
   skos:prefLabel "Digital Representation of Physical Objects"@en ;
   schema:category "Responsibility|Schema|Digital Representation of Physical Objects" ;
@@ -228,7 +228,7 @@ trsp:att03e69b6858
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att40296310dd
+trsp:att.40296310dd
   a skos:Concept ;
   skos:prefLabel "Stewardship"@en ;
   schema:category "Responsibility|Stewardship" ;
@@ -236,7 +236,7 @@ trsp:att40296310dd
   skos:broader att.65A95F223F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att00c02c55dc
+trsp:att.00c02c55dc
   a skos:Concept ;
   skos:prefLabel "Quality Control - Deposit Documentation"@en ;
   skos:description "Ensuring that deposit documentation is adequate, meets well-defined quality standards or guidelines, and is technically sound (schema validation, file formats, ...)"@en ;
@@ -248,7 +248,7 @@ trsp:att00c02c55dc
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att700343d2b3
+trsp:att.700343d2b3
   a skos:Concept ;
   skos:prefLabel "Accurate Entity Metadata"@en ;
   schema:category "Responsibility|Stewardship|Quality Control - Deposit Documentation|Accurate Entity Metadata" ;
@@ -259,7 +259,7 @@ trsp:att700343d2b3
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att00edbed146
+trsp:att.00edbed146
   a skos:Concept ;
   skos:prefLabel "Technical validation"@en ;
   schema:category "Responsibility|Stewardship|Quality Control - Deposit Documentation|Technical validation" ;
@@ -270,7 +270,7 @@ trsp:att00edbed146
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att2af9c821f9
+trsp:att.2af9c821f9
   a skos:Concept ;
   skos:prefLabel "Data Validation"@en ;
   schema:category "Responsibility|Stewardship|Quality Control - Deposit Documentation|Data Validation" ;
@@ -279,7 +279,7 @@ trsp:att2af9c821f9
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att22831d6953
+trsp:att.22831d6953
   a skos:Concept ;
   skos:prefLabel "Provenance"@en ;
   schema:category "Responsibility|Stewardship|Provenance" ;
@@ -287,7 +287,7 @@ trsp:att22831d6953
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0fee58fd17
+trsp:att.0fee58fd17
   a skos:Concept ;
   skos:prefLabel "Versioning - Procedure"@en ;
   schema:category "Responsibility|Stewardship|Provenance|Versioning - Procedure" ;
@@ -295,7 +295,7 @@ trsp:att0fee58fd17
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3c8326fc1d
+trsp:att.3c8326fc1d
   a skos:Concept ;
   skos:prefLabel "Update Functionality"@en ;
   schema:category "Responsibility|Stewardship|Provenance|Update Functionality" ;
@@ -303,7 +303,7 @@ trsp:att3c8326fc1d
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att570534f4b8
+trsp:att.570534f4b8
   a skos:Concept ;
   skos:prefLabel "Long-term Preservation"@en ;
   skos:description "Format and bit-level preservation"@en ;
@@ -315,7 +315,7 @@ trsp:att570534f4b8
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att00577fc6fc
+trsp:att.00577fc6fc
   a skos:Concept ;
   skos:prefLabel "Resolution Authenticity or Efficiency"@en ;
   schema:category "Responsibility|Stewardship|Long-term Preservation|Resolution Authenticity or Efficiency" ;
@@ -328,7 +328,7 @@ trsp:att00577fc6fc
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att76e3f555fc
+trsp:att.76e3f555fc
   a skos:Concept ;
   skos:prefLabel "Bit-Level Preservation"@en ;
   schema:category "Responsibility|Stewardship|Long-term Preservation|Bit-Level Preservation" ;
@@ -339,7 +339,7 @@ trsp:att76e3f555fc
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att497c7ace99
+trsp:att.497c7ace99
   a skos:Concept ;
   skos:prefLabel "Re-appraisal"@en ;
   schema:category "Responsibility|Stewardship|Long-term Preservation|Re-appraisal" ;
@@ -348,7 +348,7 @@ trsp:att497c7ace99
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3319eedc99
+trsp:att.3319eedc99
   a skos:Concept ;
   skos:prefLabel "Transfer"@en ;
   skos:description "Allow transfer of stewardship"@en ;
@@ -360,7 +360,7 @@ trsp:att3319eedc99
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3532a00a80
+trsp:att.3532a00a80
   a skos:Concept ;
   skos:prefLabel "Confidentiality and Ethics"@en ;
   skos:description "Determine if ethical norms have been adhered to, if consent has been granted by subjects, confidentiality respected, and similar concerns"@en ;
@@ -372,7 +372,7 @@ trsp:att3532a00a80
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4de2dd546e
+trsp:att.4de2dd546e
   a skos:Concept ;
   skos:prefLabel "Confidentiality"@en ;
   schema:category "Responsibility|Stewardship|Confidentiality and Ethics|Confidentiality" ;
@@ -382,7 +382,7 @@ trsp:att4de2dd546e
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att16855d3cb9
+trsp:att.16855d3cb9
   a skos:Concept ;
   skos:prefLabel "Ethics"@en ;
   schema:category "Responsibility|Stewardship|Confidentiality and Ethics|Ethics" ;
@@ -393,7 +393,7 @@ trsp:att16855d3cb9
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att72f38a16d8
+trsp:att.72f38a16d8
   a skos:Concept ;
   skos:prefLabel "Integrity and Authenticity"@en ;
   skos:description "Validation of provenance and authenticity, protection and recording of provenance, verification of depositors/ content editors"@en ;
@@ -404,7 +404,7 @@ trsp:att72f38a16d8
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att2080c1d4ee
+trsp:att.2080c1d4ee
   a skos:Concept ;
   skos:prefLabel "Integrity"@en ;
   schema:category "Responsibility|Stewardship|Integrity and Authenticity|Integrity" ;
@@ -412,7 +412,7 @@ trsp:att2080c1d4ee
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att608015d600
+trsp:att.608015d600
   a skos:Concept ;
   skos:prefLabel "Authenticity - determine and protect"@en ;
   schema:category "Responsibility|Stewardship|Integrity and Authenticity|Authenticity - determine and protect" ;
@@ -422,7 +422,7 @@ trsp:att608015d600
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att76b25efa00
+trsp:att.76b25efa00
   a skos:Concept ;
   skos:prefLabel "Identify Depositors"@en ;
   schema:category "Responsibility|Stewardship|Integrity and Authenticity|Identify Depositors" ;
@@ -431,7 +431,7 @@ trsp:att76b25efa00
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att27f5c3bd10
+trsp:att.27f5c3bd10
   a skos:Concept ;
   skos:prefLabel "Version Maintenance"@en ;
   schema:category "Responsibility|Stewardship|Integrity and Authenticity|Version Maintenance" ;
@@ -441,7 +441,7 @@ trsp:att27f5c3bd10
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att06f21028d1
+trsp:att.06f21028d1
   a skos:Concept ;
   skos:prefLabel "Rights Management"@en ;
   skos:description "Aspects such as protection of the rights of the subjects of research, the owners of works, the end users, the depositors, and the curators of the holdings. Provisions to transfer rights of depositors/ subjects to curators in event of unavailability of the latter."@en ;
@@ -453,7 +453,7 @@ trsp:att06f21028d1
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3d6a6043d4
+trsp:att.3d6a6043d4
   a skos:Concept ;
   skos:prefLabel "Documentation"@en ;
   schema:category "Responsibility|Stewardship|Rights Management|Documentation" ;
@@ -461,7 +461,7 @@ trsp:att3d6a6043d4
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att297ad6f574
+trsp:att.297ad6f574
   a skos:Concept ;
   skos:prefLabel "Considerations"@en ;
   schema:category "Responsibility|Stewardship|Rights Management|Considerations" ;
@@ -471,7 +471,7 @@ trsp:att297ad6f574
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7c56b5ed00
+trsp:att.7c56b5ed00
   a skos:Concept ;
   skos:prefLabel "Encoding"@en ;
   schema:category "Responsibility|Stewardship|Rights Management|Encoding" ;
@@ -479,7 +479,7 @@ trsp:att7c56b5ed00
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att553a464ec8
+trsp:att.553a464ec8
   a skos:Concept ;
   skos:prefLabel "Depositor Rights"@en ;
   schema:category "Responsibility|Stewardship|Rights Management|Depositor Rights" ;
@@ -487,7 +487,7 @@ trsp:att553a464ec8
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5a6c15e767
+trsp:att.5a6c15e767
   a skos:Concept ;
   skos:prefLabel "Other Actor Rights"@en ;
   schema:category "Responsibility|Stewardship|Rights Management|Other Actor Rights" ;
@@ -495,7 +495,7 @@ trsp:att5a6c15e767
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att24650a32ba
+trsp:att.24650a32ba
   a skos:Concept ;
   skos:prefLabel "Subject Rights"@en ;
   schema:category "Responsibility|Stewardship|Rights Management|Subject Rights" ;
@@ -507,7 +507,7 @@ trsp:att24650a32ba
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5f45ff82f5
+trsp:att.5f45ff82f5
   a skos:Concept ;
   skos:prefLabel "Artefacts/ Legal: documented information"@en ;
   skos:description "The policies and legal agreements that shape the service, dealing with aspects of use, roles and responsibilities, handling sensitive data, licensing, and regulatory aspects. Linked to rights management."@en ;
@@ -518,7 +518,7 @@ trsp:att5f45ff82f5
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att12c140c8cd
+trsp:att.12c140c8cd
   a skos:Concept ;
   skos:prefLabel "Contracts, agreements, roles, responsibilities"@en ;
   schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information|Contracts, agreements, roles, responsibilities" ;
@@ -528,7 +528,7 @@ trsp:att12c140c8cd
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1a4e593402
+trsp:att.1a4e593402
   a skos:Concept ;
   skos:prefLabel "Service Level Agreement"@en ;
   schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information|Service Level Agreement" ;
@@ -537,7 +537,7 @@ trsp:att1a4e593402
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5ce6a2bbce
+trsp:att.5ce6a2bbce
   a skos:Concept ;
   skos:prefLabel "Risk Management"@en ;
   schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information|Risk Management" ;
@@ -548,7 +548,7 @@ trsp:att5ce6a2bbce
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att419ee6d029
+trsp:att.419ee6d029
   a skos:Concept ;
   skos:prefLabel "Licences"@en ;
   schema:category "Responsibility|Stewardship|Artefacts/ Legal: documented information|Licences" ;
@@ -559,7 +559,7 @@ trsp:att419ee6d029
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att297ed3685c
+trsp:att.297ed3685c
   a skos:Concept ;
   skos:prefLabel "Process"@en ;
   skos:description "Verification is in place for confirmation of ownership and IP rights, the right to publish, and the right to select a licence"@en ;
@@ -570,7 +570,7 @@ trsp:att297ed3685c
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4d039ca977
+trsp:att.4d039ca977
   a skos:Concept ;
   skos:prefLabel "Monitoring"@en ;
   schema:category "Responsibility|Stewardship|Process|Monitoring" ;
@@ -578,7 +578,7 @@ trsp:att4d039ca977
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4aa1880060
+trsp:att.4aa1880060
   a skos:Concept ;
   skos:prefLabel "Curation & Preservation Workflows"@en ;
   schema:category "Responsibility|Stewardship|Process|Curation & Preservation Workflows" ;
@@ -589,7 +589,7 @@ trsp:att4aa1880060
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att697c57fe46
+trsp:att.697c57fe46
   a skos:Concept ;
   skos:prefLabel "Licence-Related Processes"@en ;
   schema:category "Responsibility|Stewardship|Process|Licence-Related Processes" ;
@@ -598,7 +598,7 @@ trsp:att697c57fe46
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4a43a19133
+trsp:att.4a43a19133
   a skos:Concept ;
   skos:prefLabel "Typical Value-added Services"@en ;
   skos:description "User-directed services: APIs and API documentation, data dumps, guidelines for implementation and use, user guides, ..."@en ;
@@ -609,7 +609,7 @@ trsp:att4a43a19133
   skos:broader att.65A95F223F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att532324de1d
+trsp:att.532324de1d
   a skos:Concept ;
   skos:prefLabel "Inventory of Available Services"@en ;
   skos:description "This is an important aspect related to services and softwar e platforms - providing both human- and machine readable inventories of available services/ service elements and accompanying it with proper documentation. It os a prerequisite for incproating the services and/ or software platforms into autoomated workflows."@en ;
@@ -620,7 +620,7 @@ trsp:att532324de1d
   skos:broader att.699F35CDBC ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att05cdc6d747
+trsp:att.05cdc6d747
   a skos:Concept ;
   skos:prefLabel "Standard APIs"@en ;
   schema:category "Responsibility|Typical Value-added Services|Standard APIs" ;
@@ -630,7 +630,7 @@ trsp:att05cdc6d747
   skos:broader att.699F35CDBC ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4a2cf0af0a
+trsp:att.4a2cf0af0a
   a skos:Concept ;
   skos:prefLabel "Considerations"@en ;
   schema:category "Responsibility|Typical Value-added Services|Standard APIs|Considerations" ;
@@ -638,7 +638,7 @@ trsp:att4a2cf0af0a
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0d3c935a8a
+trsp:att.0d3c935a8a
   a skos:Concept ;
   skos:prefLabel "Automated Curation"@en ;
   schema:category "Responsibility|Typical Value-added Services|Standard APIs|Automated Curation" ;
@@ -647,7 +647,7 @@ trsp:att0d3c935a8a
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att03110a5773
+trsp:att.03110a5773
   a skos:Concept ;
   skos:prefLabel "Machine-Readable Policies"@en ;
   skos:description "For services, the focus is on automation, and as a result, aspects such as policies and what they entail should be machine-readable. Somne policy provisions find expression in licences or conditions of use, and as such will be more useful as machine-readable, standardised resources."@en ;
@@ -657,7 +657,7 @@ trsp:att03110a5773
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att28a2220e45
+trsp:att.28a2220e45
   a skos:Concept ;
   skos:prefLabel "Machine-Readable Licences"@en ;
   schema:category "Responsibility|Typical Value-added Services|Standard APIs|Machine-Readable Licences" ;
@@ -666,7 +666,7 @@ trsp:att28a2220e45
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att2922ed695e
+trsp:att.2922ed695e
   a skos:Concept ;
   skos:prefLabel "Access to Metadata and Data"@en ;
   schema:category "Responsibility|Typical Value-added Services|Standard APIs|Access to Metadata and Data" ;
@@ -674,7 +674,7 @@ trsp:att2922ed695e
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att50af53c9b2
+trsp:att.50af53c9b2
   a skos:Concept ;
   skos:prefLabel "Community Support"@en ;
   schema:category "Responsibility|Typical Value-added Services|Community Support" ;
@@ -684,7 +684,7 @@ trsp:att50af53c9b2
   skos:broader att.699F35CDBC ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5dc262fe75
+trsp:att.5dc262fe75
   a skos:Concept ;
   skos:prefLabel "Guidelines and Support"@en ;
   schema:category "Responsibility|Typical Value-added Services|Community Support|Guidelines and Support" ;
@@ -693,7 +693,7 @@ trsp:att5dc262fe75
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1f4ae0b0f8
+trsp:att.1f4ae0b0f8
   a skos:Concept ;
   skos:prefLabel "Metrics"@en ;
   skos:description "Implementing relevant metrics and making these available to users."@en ;
@@ -703,14 +703,14 @@ trsp:att1f4ae0b0f8
   skos:broader att.699F35CDBC ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att693d7b796f
+trsp:att.693d7b796f
   a skos:Concept ;
   skos:prefLabel "Transparency"@en ;
   schema:category "Transparency" ;
   owl:versionInfo "0.1" ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att371d70b854
+trsp:att.371d70b854
   a skos:Concept ;
   skos:prefLabel "Certification and Assessment"@en ;
   skos:description "Certification schemes and/or community badges that assess certain aspects of the repository (e.g., its fitness, trustworthiness, adoption)'"@en ;
@@ -721,7 +721,7 @@ trsp:att371d70b854
   skos:broader att.693D7B796F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att26cd4b30b3
+trsp:att.26cd4b30b3
   a skos:Concept ;
   skos:prefLabel "Benefits and Constraints"@en ;
   schema:category "Transparency|Benefits and Constraints" ;
@@ -729,7 +729,7 @@ trsp:att26cd4b30b3
   skos:broader att.693D7B796F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7af3a65add
+trsp:att.7af3a65add
   a skos:Concept ;
   skos:prefLabel "Mission and Mandate"@en ;
   skos:description "The organisation is mandated to perform the services it offers, and this is clearly stated in publicly available documentation. The organisation is focused on the mission and does not divert resources to other focus areas. The mission is mandated and approved at an appropriate level (e.g. board level)."@en ;
@@ -740,7 +740,7 @@ trsp:att7af3a65add
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att035accb10d
+trsp:att.035accb10d
   a skos:Concept ;
   skos:prefLabel "Mission"@en ;
   schema:category "Transparency|Benefits and Constraints|Mission and Mandate|Mission" ;
@@ -749,7 +749,7 @@ trsp:att035accb10d
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att43abb27ebe
+trsp:att.43abb27ebe
   a skos:Concept ;
   skos:prefLabel "Single Focus"@en ;
   schema:category "Transparency|Benefits and Constraints|Mission and Mandate|Single Focus" ;
@@ -758,7 +758,7 @@ trsp:att43abb27ebe
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att18d74ed687
+trsp:att.18d74ed687
   a skos:Concept ;
   skos:prefLabel "Legal and Regulatory"@en ;
   skos:description "Disclaimers, Privacy, Terms and Conditions"@en ;
@@ -769,7 +769,7 @@ trsp:att18d74ed687
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att13132a45e7
+trsp:att.13132a45e7
   a skos:Concept ;
   skos:prefLabel "Policy"@en ;
   skos:description "Policy/ high level information is available"@en ;
@@ -780,7 +780,7 @@ trsp:att13132a45e7
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att2744ced24f
+trsp:att.2744ced24f
   a skos:Concept ;
   skos:prefLabel "Policy Management"@en ;
   schema:category "Transparency|Benefits and Constraints|Policy|Policy Management" ;
@@ -788,7 +788,7 @@ trsp:att2744ced24f
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6105038322
+trsp:att.6105038322
   a skos:Concept ;
   skos:prefLabel "Appraisal/ Accession Policy"@en ;
   skos:description "Policies related to appropriateness of accession, rights, authenticity, provenance, and dissemination risk"@en ;
@@ -800,7 +800,7 @@ trsp:att6105038322
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att2e979c3b25
+trsp:att.2e979c3b25
   a skos:Concept ;
   skos:prefLabel "Data Policy"@en ;
   schema:category "Transparency|Benefits and Constraints|Policy|Data Policy" ;
@@ -809,7 +809,7 @@ trsp:att2e979c3b25
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0e2db53e0e
+trsp:att.0e2db53e0e
   a skos:Concept ;
   skos:prefLabel "Disclosure Risk"@en ;
   schema:category "Transparency|Benefits and Constraints|Policy|Disclosure Risk" ;
@@ -820,7 +820,7 @@ trsp:att0e2db53e0e
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att2847f75853
+trsp:att.2847f75853
   a skos:Concept ;
   skos:prefLabel "Privacy Policy"@en ;
   schema:category "Transparency|Benefits and Constraints|Policy|Privacy Policy" ;
@@ -831,7 +831,7 @@ trsp:att2847f75853
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3619ef1b84
+trsp:att.3619ef1b84
   a skos:Concept ;
   skos:prefLabel "Rights Management"@en ;
   schema:category "Transparency|Benefits and Constraints|Policy|Rights Management" ;
@@ -842,7 +842,7 @@ trsp:att3619ef1b84
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1b94296bad
+trsp:att.1b94296bad
   a skos:Concept ;
   skos:prefLabel "Supported Formats"@en ;
   skos:description "Ensuring that guidance and/or enforcement is in place to ensure optimal file formats for dissemination and preservation"@en ;
@@ -853,7 +853,7 @@ trsp:att1b94296bad
   skos:broader att.545686D0F9 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att060e8af1a4
+trsp:att.060e8af1a4
   a skos:Concept ;
   skos:prefLabel "Context"@en ;
   skos:description "It is important to define context clearly and publicly - scope of services offered, the target end user community, and information that can be used by end users to select the most appropriate service or repository."@en ;
@@ -865,7 +865,7 @@ trsp:att060e8af1a4
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0b3d7477e7
+trsp:att.0b3d7477e7
   a skos:Concept ;
   skos:prefLabel "Source of Repository Attributes"@en ;
   schema:category "Transparency|Benefits and Constraints|Context|Source of Repository Attributes" ;
@@ -874,7 +874,7 @@ trsp:att0b3d7477e7
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4bfd6fb9b3
+trsp:att.4bfd6fb9b3
   a skos:Concept ;
   skos:prefLabel "Target User Community"@en ;
   schema:category "Transparency|Benefits and Constraints|Context|Target User Community" ;
@@ -886,7 +886,7 @@ trsp:att4bfd6fb9b3
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att64fde59bad
+trsp:att.64fde59bad
   a skos:Concept ;
   skos:prefLabel "Coverage"@en ;
   schema:category "Transparency|Benefits and Constraints|Context|Coverage" ;
@@ -895,7 +895,7 @@ trsp:att64fde59bad
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att761c0fb70d
+trsp:att.761c0fb70d
   a skos:Concept ;
   skos:prefLabel "Repository Characterisation"@en ;
   schema:category "Transparency|Benefits and Constraints|Context|Repository Characterisation" ;
@@ -904,7 +904,7 @@ trsp:att761c0fb70d
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3e5f32a9e8
+trsp:att.3e5f32a9e8
   a skos:Concept ;
   skos:prefLabel "Capabilities"@en ;
   schema:category "Transparency|Benefits and Constraints|Context|Capabilities" ;
@@ -913,7 +913,7 @@ trsp:att3e5f32a9e8
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att613f28af34
+trsp:att.613f28af34
   a skos:Concept ;
   skos:prefLabel "Scope of Services"@en ;
   skos:description "Services that are offered range throughout the value chain, and can include automation or centralisation of common services. Services should be documented and appropriate. Pre-deposit services include QA and FAIR improvement, linking to DMPs, format conversions, etc. Value-added services include linking to tools, citation indices, and SKGs."@en ;
@@ -922,7 +922,7 @@ trsp:att613f28af34
   skos:broader att.693D7B796F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att38da273fcf
+trsp:att.38da273fcf
   a skos:Concept ;
   skos:prefLabel "Pre-deposit"@en ;
   schema:category "Transparency|Scope of Services|Pre-deposit" ;
@@ -931,7 +931,7 @@ trsp:att38da273fcf
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3754546590
+trsp:att.3754546590
   a skos:Concept ;
   skos:prefLabel "Deposit/ Appraisal/ Ingest"@en ;
   schema:category "Transparency|Scope of Services|Deposit/ Appraisal/ Ingest" ;
@@ -941,7 +941,7 @@ trsp:att3754546590
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4dcdbad9b4
+trsp:att.4dcdbad9b4
   a skos:Concept ;
   skos:prefLabel "Semantic Enhancement"@en ;
   schema:category "Transparency|Scope of Services|Deposit/ Appraisal/ Ingest|Semantic Enhancement" ;
@@ -949,7 +949,7 @@ trsp:att4dcdbad9b4
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att66c6612ea5
+trsp:att.66c6612ea5
   a skos:Concept ;
   skos:prefLabel "Curation"@en ;
   schema:category "Transparency|Scope of Services|Curation" ;
@@ -960,7 +960,7 @@ trsp:att66c6612ea5
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att156b52fb19
+trsp:att.156b52fb19
   a skos:Concept ;
   skos:prefLabel "Preservation"@en ;
   schema:category "Transparency|Scope of Services|Preservation" ;
@@ -971,7 +971,7 @@ trsp:att156b52fb19
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att34e5521dd7
+trsp:att.34e5521dd7
   a skos:Concept ;
   skos:prefLabel "Discovery"@en ;
   schema:category "Transparency|Scope of Services|Discovery" ;
@@ -982,7 +982,7 @@ trsp:att34e5521dd7
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att354e278d69
+trsp:att.354e278d69
   a skos:Concept ;
   skos:prefLabel "Proper Citation"@en ;
   schema:category "Transparency|Scope of Services|Discovery|Proper Citation" ;
@@ -992,7 +992,7 @@ trsp:att354e278d69
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att540f680a1e
+trsp:att.540f680a1e
   a skos:Concept ;
   skos:prefLabel "Service APIs"@en ;
   schema:category "Transparency|Scope of Services|Discovery|Service APIs" ;
@@ -1001,7 +1001,7 @@ trsp:att540f680a1e
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att536467081e
+trsp:att.536467081e
   a skos:Concept ;
   skos:prefLabel "Value-Added"@en ;
   schema:category "Transparency|Scope of Services|Value-Added" ;
@@ -1010,7 +1010,7 @@ trsp:att536467081e
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att50da0aa84e
+trsp:att.50da0aa84e
   a skos:Concept ;
   skos:prefLabel "Crosswalks and Conversions"@en ;
   schema:category "Transparency|Scope of Services|Value-Added|Crosswalks and Conversions" ;
@@ -1019,7 +1019,7 @@ trsp:att50da0aa84e
   skos:broader att.24C6E69FBF ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att110c424081
+trsp:att.110c424081
   a skos:Concept ;
   skos:prefLabel "Annotation"@en ;
   schema:category "Transparency|Scope of Services|Value-Added|Annotation" ;
@@ -1028,7 +1028,7 @@ trsp:att110c424081
   skos:broader att.24C6E69FBF ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0674156b7e
+trsp:att.0674156b7e
   a skos:Concept ;
   skos:prefLabel "Consulting Services"@en ;
   schema:category "Transparency|Scope of Services|Value-Added|Consulting Services" ;
@@ -1036,7 +1036,7 @@ trsp:att0674156b7e
   skos:broader att.24C6E69FBF ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att08dace15b1
+trsp:att.08dace15b1
   a skos:Concept ;
   skos:prefLabel "Interoperability"@en ;
   schema:category "Transparency|Scope of Services|Interoperability" ;
@@ -1045,7 +1045,7 @@ trsp:att08dace15b1
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att696b580e35
+trsp:att.696b580e35
   a skos:Concept ;
   skos:prefLabel "Interoperability Management"@en ;
   schema:category "Transparency|Scope of Services|Interoperability|Interoperability Management" ;
@@ -1054,7 +1054,7 @@ trsp:att696b580e35
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att15dbb60ac2
+trsp:att.15dbb60ac2
   a skos:Concept ;
   skos:prefLabel "Legal Interoperability"@en ;
   schema:category "Transparency|Scope of Services|Interoperability|Legal Interoperability" ;
@@ -1063,7 +1063,7 @@ trsp:att15dbb60ac2
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att09c8cbe4de
+trsp:att.09c8cbe4de
   a skos:Concept ;
   skos:prefLabel "Semantic Interoperability"@en ;
   schema:category "Transparency|Scope of Services|Interoperability|Semantic Interoperability" ;
@@ -1072,7 +1072,7 @@ trsp:att09c8cbe4de
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att71a5d27d84
+trsp:att.71a5d27d84
   a skos:Concept ;
   skos:prefLabel "Technical Interoperability"@en ;
   schema:category "Transparency|Scope of Services|Interoperability|Technical Interoperability" ;
@@ -1081,7 +1081,7 @@ trsp:att71a5d27d84
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att39ed69c36b
+trsp:att.39ed69c36b
   a skos:Concept ;
   skos:prefLabel "Package Exchange"@en ;
   schema:category "Transparency|Scope of Services|Interoperability|Package Exchange" ;
@@ -1090,7 +1090,7 @@ trsp:att39ed69c36b
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7362d6d981
+trsp:att.7362d6d981
   a skos:Concept ;
   skos:prefLabel "Reuse"@en ;
   schema:category "Transparency|Scope of Services|Reuse" ;
@@ -1101,7 +1101,7 @@ trsp:att7362d6d981
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att67de43d8df
+trsp:att.67de43d8df
   a skos:Concept ;
   skos:prefLabel "Rich Metadata"@en ;
   schema:category "Transparency|Scope of Services|Reuse|Rich Metadata" ;
@@ -1110,7 +1110,7 @@ trsp:att67de43d8df
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att56c67a542a
+trsp:att.56c67a542a
   a skos:Concept ;
   skos:prefLabel "Technology"@en ;
   skos:description "A repository depends on the interaction of people, processes, and technologies to support secure, persistent, and reliable services. Its activities and functions are supported by software, hardware, and technical services.'"@en ;
@@ -1118,7 +1118,7 @@ trsp:att56c67a542a
   owl:versionInfo "0.1" ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6a837d5a94
+trsp:att.6a837d5a94
   a skos:Concept ;
   skos:prefLabel "Reliable"@en ;
   schema:category "Technology|Reliable" ;
@@ -1128,7 +1128,7 @@ trsp:att6a837d5a94
   skos:broader att.56C67A542A ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att752453ed45
+trsp:att.752453ed45
   a skos:Concept ;
   skos:prefLabel "Accessible"@en ;
   schema:category "Technology|Accessible" ;
@@ -1137,7 +1137,7 @@ trsp:att752453ed45
   skos:broader att.56C67A542A ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0ed3d624b3
+trsp:att.0ed3d624b3
   a skos:Concept ;
   skos:prefLabel "Accessibility Measures"@en ;
   schema:category "Technology|Accessible|Accessibility Measures" ;
@@ -1145,7 +1145,7 @@ trsp:att0ed3d624b3
   skos:broader att.752453ED45 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att70deca9f26
+trsp:att.70deca9f26
   a skos:Concept ;
   skos:prefLabel "Multi-Language Support"@en ;
   schema:category "Technology|Accessible|Multi-Language Support" ;
@@ -1154,7 +1154,7 @@ trsp:att70deca9f26
   skos:broader att.752453ED45 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6d262193a1
+trsp:att.6d262193a1
   a skos:Concept ;
   skos:prefLabel "Secure"@en ;
   schema:category "Technology|Secure" ;
@@ -1164,7 +1164,7 @@ trsp:att6d262193a1
   skos:broader att.56C67A542A ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1ae2618c36
+trsp:att.1ae2618c36
   a skos:Concept ;
   skos:prefLabel "e-Infrastructure security and Integrity"@en ;
   schema:category "Technology|Secure|e-Infrastructure security and Integrity" ;
@@ -1173,7 +1173,7 @@ trsp:att1ae2618c36
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6f82b396bd
+trsp:att.6f82b396bd
   a skos:Concept ;
   skos:prefLabel "Sovereignty Considerations"@en ;
   schema:category "Technology|Secure|Sovereignty Considerations" ;
@@ -1182,7 +1182,7 @@ trsp:att6f82b396bd
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5efdb0d148
+trsp:att.5efdb0d148
   a skos:Concept ;
   skos:prefLabel "Object Storage"@en ;
   schema:category "Technology|Secure|Object Storage" ;
@@ -1191,7 +1191,7 @@ trsp:att5efdb0d148
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att43246175ea
+trsp:att.43246175ea
   a skos:Concept ;
   skos:prefLabel "Certified"@en ;
   schema:category "Technology|Certified" ;
@@ -1199,7 +1199,7 @@ trsp:att43246175ea
   skos:broader att.56C67A542A ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att22f180559a
+trsp:att.22f180559a
   a skos:Concept ;
   skos:prefLabel "Research Data Management"@en ;
   schema:category "Technology|Certified|Research Data Management" ;
@@ -1207,7 +1207,7 @@ trsp:att22f180559a
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1593e1ae08
+trsp:att.1593e1ae08
   a skos:Concept ;
   skos:prefLabel "Software Development Quality"@en ;
   schema:category "Technology|Certified|Software Development Quality" ;
@@ -1216,7 +1216,7 @@ trsp:att1593e1ae08
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7f2af694bc
+trsp:att.7f2af694bc
   a skos:Concept ;
   skos:prefLabel "Process Quality"@en ;
   schema:category "Technology|Certified|Process Quality" ;
@@ -1225,7 +1225,7 @@ trsp:att7f2af694bc
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6fb4481988
+trsp:att.6fb4481988
   a skos:Concept ;
   skos:prefLabel "Service Quality and Security"@en ;
   schema:category "Technology|Certified|Service Quality and Security" ;
@@ -1235,7 +1235,7 @@ trsp:att6fb4481988
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att35579be2fc
+trsp:att.35579be2fc
   a skos:Concept ;
   skos:prefLabel "Services"@en ;
   schema:category "Technology|Services" ;
@@ -1243,7 +1243,7 @@ trsp:att35579be2fc
   skos:broader att.56C67A542A ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att46058de67b
+trsp:att.46058de67b
   a skos:Concept ;
   skos:prefLabel "External/ Micro-Services"@en ;
   schema:category "Technology|Services|External/ Micro-Services" ;
@@ -1251,7 +1251,7 @@ trsp:att46058de67b
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1db4b1e4f0
+trsp:att.1db4b1e4f0
   a skos:Concept ;
   skos:prefLabel "Ownership"@en ;
   schema:category "Technology|Services|External/ Micro-Services|Ownership" ;
@@ -1259,7 +1259,7 @@ trsp:att1db4b1e4f0
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3720038519
+trsp:att.3720038519
   a skos:Concept ;
   skos:prefLabel "Dependencies"@en ;
   schema:category "Technology|Services|External/ Micro-Services|Dependencies" ;
@@ -1267,7 +1267,7 @@ trsp:att3720038519
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0afac21629
+trsp:att.0afac21629
   a skos:Concept ;
   skos:prefLabel "Performance"@en ;
   schema:category "Technology|Services|External/ Micro-Services|Performance" ;
@@ -1275,7 +1275,7 @@ trsp:att0afac21629
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att216fec031c
+trsp:att.216fec031c
   a skos:Concept ;
   skos:prefLabel "Service Maturity/ Readiness"@en ;
   schema:category "Technology|Services|Service Maturity/ Readiness" ;
@@ -1284,7 +1284,7 @@ trsp:att216fec031c
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3219437e8f
+trsp:att.3219437e8f
   a skos:Concept ;
   skos:prefLabel "Software and Service Quality"@en ;
   schema:category "Technology|Services|Service Maturity/ Readiness|Software and Service Quality" ;
@@ -1293,7 +1293,7 @@ trsp:att3219437e8f
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7592d43f0b
+trsp:att.7592d43f0b
   a skos:Concept ;
   skos:prefLabel "Open Source"@en ;
   schema:category "Technology|Open Source" ;
@@ -1304,7 +1304,7 @@ trsp:att7592d43f0b
   skos:broader att.56C67A542A ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att21f3c82f8b
+trsp:att.21f3c82f8b
   a skos:Concept ;
   skos:prefLabel "Legal"@en ;
   schema:category "Technology|Legal" ;
@@ -1312,7 +1312,7 @@ trsp:att21f3c82f8b
   skos:broader att.56C67A542A ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5abd0e52c7
+trsp:att.5abd0e52c7
   a skos:Concept ;
   skos:prefLabel "Performance"@en ;
   schema:category "Performance" ;
@@ -1320,7 +1320,7 @@ trsp:att5abd0e52c7
   skos:broader att.5ABD0E52C7 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1bf97ae324
+trsp:att.1bf97ae324
   a skos:Concept ;
   skos:prefLabel "Submission Processing"@en ;
   skos:description "The considerations that end users value highly include the timeous publication of research outputs and the PID for the output."@en ;
@@ -1329,7 +1329,7 @@ trsp:att1bf97ae324
   skos:broader att.5ABD0E52C7 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att79ca40de94
+trsp:att.79ca40de94
   a skos:Concept ;
   skos:prefLabel "Deposit Properties"@en ;
   skos:description "The mechanics of deposit limitations may also be important considerations for end users."@en ;
@@ -1339,7 +1339,7 @@ trsp:att79ca40de94
   skos:broader att.5ABD0E52C7 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7f7c2776ac
+trsp:att.7f7c2776ac
   a skos:Concept ;
   skos:prefLabel "File and Dataset Properties"@en ;
   skos:description "Software platforms should provide easy API access to file and dataset properties in addition to dataset metadata - for example file sizes and checksums, file types, storage types, download links, and similar."@en ;
@@ -1349,7 +1349,7 @@ trsp:att7f7c2776ac
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att1095e8cf4a
+trsp:att.1095e8cf4a
   a skos:Concept ;
   skos:prefLabel "Performance Assessment"@en ;
   skos:description "The extent to which formal assessments/ audits of performance have been obtained. These aspects relate to performance assessments that are associated with digital services in general, also soutside teh research output management landscape. It covers aspects of process quality (such as ISO 9000), information security (ISO 27001), and service management (FitSM)."@en ;
@@ -1358,7 +1358,7 @@ trsp:att1095e8cf4a
   skos:broader att.5ABD0E52C7 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att57326a13eb
+trsp:att.57326a13eb
   a skos:Concept ;
   skos:prefLabel "Scalability/ Big Data Readiness"@en ;
   skos:description "The extent to which the service or software can cope with increases in volume or intensity."@en ;
@@ -1367,7 +1367,7 @@ trsp:att57326a13eb
   skos:broader att.5ABD0E52C7 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att72cbe64acc
+trsp:att.72cbe64acc
   a skos:Concept ;
   skos:prefLabel "Availability"@en ;
   skos:description "For services and systems integrators, aspects such as uptime and rate limits may be important."@en ;
@@ -1376,7 +1376,7 @@ trsp:att72cbe64acc
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att305548d83d
+trsp:att.305548d83d
   a skos:Concept ;
   skos:prefLabel "Income and Expenditure"@en ;
   skos:description "Moved non-accounting values to 'Financial Sustainability' and 'Attributes'"@en ;
@@ -1384,7 +1384,7 @@ trsp:att305548d83d
   owl:versionInfo "0.1" ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att0da8e81794
+trsp:att.0da8e81794
   a skos:Concept ;
   skos:prefLabel "Financial Planning"@en ;
   schema:category "Income and Expenditure|Financial Planning" ;
@@ -1393,7 +1393,7 @@ trsp:att0da8e81794
   skos:broader att.305548D83D ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3cf9d1eda3
+trsp:att.3cf9d1eda3
   a skos:Concept ;
   skos:prefLabel "Capital Costs"@en ;
   schema:category "Income and Expenditure|Capital Costs" ;
@@ -1401,7 +1401,7 @@ trsp:att3cf9d1eda3
   skos:broader att.305548D83D ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att2e1e7576aa
+trsp:att.2e1e7576aa
   a skos:Concept ;
   skos:prefLabel "Hardware and Networking"@en ;
   schema:category "Income and Expenditure|Capital Costs|Hardware and Networking" ;
@@ -1409,7 +1409,7 @@ trsp:att2e1e7576aa
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5ffceeb1f9
+trsp:att.5ffceeb1f9
   a skos:Concept ;
   skos:prefLabel "Systems Development"@en ;
   schema:category "Income and Expenditure|Capital Costs|Systems Development" ;
@@ -1417,7 +1417,7 @@ trsp:att5ffceeb1f9
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6d12041533
+trsp:att.6d12041533
   a skos:Concept ;
   skos:prefLabel "Research and Development"@en ;
   schema:category "Income and Expenditure|Capital Costs|Research and Development" ;
@@ -1425,7 +1425,7 @@ trsp:att6d12041533
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att357d9538d7
+trsp:att.357d9538d7
   a skos:Concept ;
   skos:prefLabel "Other"@en ;
   schema:category "Income and Expenditure|Capital Costs|Other" ;
@@ -1433,7 +1433,7 @@ trsp:att357d9538d7
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att355cb4d570
+trsp:att.355cb4d570
   a skos:Concept ;
   skos:prefLabel "Other"@en ;
   schema:category "Income and Expenditure|Operating Costs|Other" ;
@@ -1441,7 +1441,7 @@ trsp:att355cb4d570
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4840647866
+trsp:att.4840647866
   a skos:Concept ;
   skos:prefLabel "Hardware and Networking"@en ;
   schema:category "Income and Expenditure|Operating Costs|Hardware and Networking" ;
@@ -1449,7 +1449,7 @@ trsp:att4840647866
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att66003293b3
+trsp:att.66003293b3
   a skos:Concept ;
   skos:prefLabel "Personnel"@en ;
   schema:category "Income and Expenditure|Operating Costs|Personnel" ;
@@ -1457,7 +1457,7 @@ trsp:att66003293b3
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4a04909c47
+trsp:att.4a04909c47
   a skos:Concept ;
   skos:prefLabel "Facilities and Offices"@en ;
   schema:category "Income and Expenditure|Operating Costs|Facilities and Offices" ;
@@ -1465,7 +1465,7 @@ trsp:att4a04909c47
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3ecdbaa77f
+trsp:att.3ecdbaa77f
   a skos:Concept ;
   skos:prefLabel "Other"@en ;
   schema:category "Income and Expenditure|Operating Costs|Other" ;
@@ -1473,7 +1473,7 @@ trsp:att3ecdbaa77f
   skos:broader att.055D3C1243 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att650ba75f4f
+trsp:att.650ba75f4f
   a skos:Concept ;
   skos:prefLabel "Other"@en ;
   schema:category "Income and Expenditure|Revenue|Other" ;
@@ -1481,14 +1481,14 @@ trsp:att650ba75f4f
   skos:broader att.435A79A35F ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att27e790a86b
+trsp:att.27e790a86b
   a skos:Concept ;
   skos:prefLabel "User Focus"@en ;
   schema:category "User Focus" ;
   owl:versionInfo "0.1" ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6fb10117a8
+trsp:att.6fb10117a8
   a skos:Concept ;
   skos:prefLabel "Community Engagement"@en ;
   skos:description "Aspects include the involvement of the commumity in the governance, technology, standards development and specification, and usability of the service. It overlaps with social sustainability aspects/ governance."@en ;
@@ -1497,7 +1497,7 @@ trsp:att6fb10117a8
   skos:broader att.27E790A86B ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att56b57bdcc5
+trsp:att.56b57bdcc5
   a skos:Concept ;
   skos:prefLabel "Guidance"@en ;
   skos:description "These elements list commonly supported use cases, and can be useful in describing the details of services offered. Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
@@ -1507,7 +1507,7 @@ trsp:att56b57bdcc5
   skos:broader att.27E790A86B ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att06d09133ae
+trsp:att.06d09133ae
   a skos:Concept ;
   skos:prefLabel "General Depositor Guidance"@en ;
   schema:category "User Focus|Guidance|General Depositor Guidance" ;
@@ -1515,7 +1515,7 @@ trsp:att06d09133ae
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7c41966ab5
+trsp:att.7c41966ab5
   a skos:Concept ;
   skos:prefLabel "Guidance on Data and Metadata Preparation"@en ;
   schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation" ;
@@ -1523,7 +1523,7 @@ trsp:att7c41966ab5
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att74fdfb3e00
+trsp:att.74fdfb3e00
   a skos:Concept ;
   skos:prefLabel "Metadata Schema"@en ;
   schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|Metadata Schema" ;
@@ -1531,7 +1531,7 @@ trsp:att74fdfb3e00
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att48b32fb000
+trsp:att.48b32fb000
   a skos:Concept ;
   skos:prefLabel "Integrations (DMP, RO-Crate, ...)"@en ;
   schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|Integrations (DMP, RO-Crate, ...)" ;
@@ -1539,7 +1539,7 @@ trsp:att48b32fb000
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att176cc246a8
+trsp:att.176cc246a8
   a skos:Concept ;
   skos:prefLabel "FAIR Assessment"@en ;
   schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|FAIR Assessment" ;
@@ -1548,7 +1548,7 @@ trsp:att176cc246a8
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att2687a2f0b8
+trsp:att.2687a2f0b8
   a skos:Concept ;
   skos:prefLabel "FAIR Aggregation"@en ;
   schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|FAIR Aggregation" ;
@@ -1556,7 +1556,7 @@ trsp:att2687a2f0b8
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3f6736bf1c
+trsp:att.3f6736bf1c
   a skos:Concept ;
   skos:prefLabel "Format guidance and conversion"@en ;
   schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|Format guidance and conversion" ;
@@ -1565,7 +1565,7 @@ trsp:att3f6736bf1c
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att7c3a4c601f
+trsp:att.7c3a4c601f
   a skos:Concept ;
   skos:prefLabel "Licence guidance and selection"@en ;
   schema:category "User Focus|Guidance|Guidance on Data and Metadata Preparation|Licence guidance and selection" ;
@@ -1575,7 +1575,7 @@ trsp:att7c3a4c601f
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att394d659c0c
+trsp:att.394d659c0c
   a skos:Concept ;
   skos:prefLabel "API Documentation"@en ;
   schema:category "User Focus|Guidance|API Documentation" ;
@@ -1583,7 +1583,7 @@ trsp:att394d659c0c
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att234960b12d
+trsp:att.234960b12d
   a skos:Concept ;
   skos:prefLabel "Discovery"@en ;
   skos:description "Similary, these elements list commonly supported use cases, and can be useful in describing the details of services offered.  Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
@@ -1594,7 +1594,7 @@ trsp:att234960b12d
   skos:broader att.27E790A86B ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6b61f7af54
+trsp:att.6b61f7af54
   a skos:Concept ;
   skos:prefLabel "Find"@en ;
   schema:category "User Focus|Discovery|Find" ;
@@ -1602,7 +1602,7 @@ trsp:att6b61f7af54
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6a47f71f59
+trsp:att.6a47f71f59
   a skos:Concept ;
   skos:prefLabel "Explore"@en ;
   schema:category "User Focus|Discovery|Explore" ;
@@ -1610,7 +1610,7 @@ trsp:att6a47f71f59
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att38699ab445
+trsp:att.38699ab445
   a skos:Concept ;
   skos:prefLabel "Understand"@en ;
   schema:category "User Focus|Discovery|Understand" ;
@@ -1618,7 +1618,7 @@ trsp:att38699ab445
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5e44673c02
+trsp:att.5e44673c02
   a skos:Concept ;
   skos:prefLabel "Provenance"@en ;
   schema:category "User Focus|Discovery|Provenance" ;
@@ -1627,7 +1627,7 @@ trsp:att5e44673c02
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att5f06eec902
+trsp:att.5f06eec902
   a skos:Concept ;
   skos:prefLabel "Harvestable"@en ;
   schema:category "User Focus|Discovery|Harvestable" ;
@@ -1635,7 +1635,7 @@ trsp:att5f06eec902
   skos:broader att.5CA7C2BE56 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6a8a5e1219
+trsp:att.6a8a5e1219
   a skos:Concept ;
   skos:prefLabel "Application and Reuse"@en ;
   skos:description "Similary, these elements list commonly supported use cases, and can be useful in describing the details of services offered.  Indirectly, it may influence the decision of a depositor to select a repository, and affects end user ratings."@en ;
@@ -1645,7 +1645,7 @@ trsp:att6a8a5e1219
   skos:broader att.27E790A86B ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att6e790e641f
+trsp:att.6e790e641f
   a skos:Concept ;
   skos:prefLabel "Context"@en ;
   skos:description "Linking LOD references (DOIs, ORCIDS, ...) to additional external context in SKGs, registries, and vocabularies"@en ;
@@ -1654,7 +1654,7 @@ trsp:att6e790e641f
   skos:broader att.27E790A86B ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att70c4c7b218
+trsp:att.70c4c7b218
   a skos:Concept ;
   skos:prefLabel "Annotation, Metrics, Feedback and Use"@en ;
   skos:description "Allow end users to annotate and rate metadata and data, and provide them with links to external resources (other versions, citation metrics, ...)"@en ;
@@ -1663,7 +1663,7 @@ trsp:att70c4c7b218
   skos:broader att.27E790A86B ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att3e9295c9a1
+trsp:att.3e9295c9a1
   a skos:Concept ;
   skos:prefLabel "User Support Mechanisms"@en ;
   schema:category "User Focus|User Support Mechanisms" ;
@@ -1671,7 +1671,7 @@ trsp:att3e9295c9a1
   skos:broader att.27E790A86B ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:att4721cbc19a
+trsp:att.4721cbc19a
   a skos:Concept ;
   skos:prefLabel "Object Maintenance"@en ;
   schema:category "User Focus|Object Maintenance" ;
