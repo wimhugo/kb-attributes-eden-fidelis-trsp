@@ -29,6 +29,14 @@ trsp:trsp-attributes a skos:ConceptScheme ;
   dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Attribute Definition Vocabulary"@en;
+  skos:hasTopConcept  trsp:att.4CB9ED25FE ,
+                      trsp:att.65A95F223F ,
+                      trsp:att.693D7B796F ,
+                      trsp:att.56C67A542A ,
+                      trsp:att.4DD56E646D ,
+                      trsp:att.5ABD0E52C7 ,
+                      trsp:att.305548D83D ,
+                      trsp:att.27E790A86B ;
   skos:prefLabel "TRSP Attributes"@en .
   owl:versionInfo "0.4"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
