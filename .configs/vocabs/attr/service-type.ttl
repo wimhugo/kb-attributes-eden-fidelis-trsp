@@ -235,6 +235,12 @@ trsp:typeMetadataSchemaRegistry
   skos:broader trsp:typeRegistryService ;
   skos:inScheme trsp:typeService .
 
+trsp:typeVocabularyRegistry
+  a skos:Concept ;
+  skos:prefLabel "Semantic Artefact Registries or Servers"@en ;
+  skos:broader trsp:typeRegistryService ;
+  skos:inScheme trsp:typeService .
+
 trsp:typeFileService
   a skos:Concept ;
   skos:prefLabel "File/ Data-related Services"@en ;
