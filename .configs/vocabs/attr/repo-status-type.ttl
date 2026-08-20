@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
-trsp:repo-status-type-scheme
+trsp:typeRepoStatus
   a skos:ConceptScheme ;
   skos:prefLabel "Repository Status"@en ;
   dct:title "Repository Status"@en ;
@@ -16,14 +16,14 @@ trsp:repo-status-type-scheme
 trsp:operational
   a skos:Concept ;
   skos:prefLabel "Operational"@en ;
-  skos:inScheme trsp:repo-status-type-scheme .
+  skos:inScheme trsp:typeRepoStatus .
 
 trsp:beta
   a skos:Concept ;
   skos:prefLabel "Beta"@en ;
-  skos:inScheme trsp:repo-status-type-scheme .
+  skos:inScheme trsp:typeRepoStatus .
 
 trsp:planned
   a skos:Concept ;
   skos:prefLabel "Planned"@en ;
-  skos:inScheme trsp:repo-status-type-scheme .
+  skos:inScheme trsp:typeRepoStatus .
