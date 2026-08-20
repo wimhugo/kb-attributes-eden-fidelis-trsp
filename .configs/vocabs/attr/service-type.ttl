@@ -262,12 +262,30 @@ trsp:typeFileFormatRegistry
   skos:inScheme trsp:typeService .
 
 # --------------------------------------------------------------------------
-# EDEN Service Individuals (maybe just service class instances) - 1 example
+# EDEN Service Individuals (maybe just service class instances) - 2 examples
 # --------------------------------------------------------------------------
 
 trsp:typeFormatGuidanceAPI
   a skos:Concept ;
   skos:prefLabel "Format Guidance API"@en ;
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileFormatConversion
+  a skos:Concept ;
+  skos:prefLabel "File Format Conversion Service"@en ;
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileFormatValidation
+  a skos:Concept ;
+  skos:prefLabel "File Format Validation Service"@en ;
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileRepairService
+  a skos:Concept ;
+  skos:prefLabel "File Repair Service"@en ;
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
