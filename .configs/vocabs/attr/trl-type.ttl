@@ -1,1 +1,162 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix tech: <https://w3id.org/dpv/tech#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
 
+trsp:typeTRL
+    a skos:ConceptScheme ;
+    skos:prefLabel "EU Technology Readiness Levels"@en ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> ;
+    dct:description "Technology Readiness Level vocabulary using EU/EIC labels, EIC Research/Development/Deployment groupings, and alignment with DPV Technology."@en .
+
+trsp:technology-readiness-level
+    a skos:Concept ;
+    skos:inScheme trsp:typeTRL ;
+    skos:topConceptOf trsp:typeTRL ;
+    skos:prefLabel "Technology Readiness Level"@en ;
+    skos:exactMatch tech:TechnologyReadinessLevel ;
+    dct:source <https://w3c.github.io/dpv/2.3/tech> .
+
+trsp:levelNumber
+    a owl:DatatypeProperty ;
+    rdfs:label "TRL level number"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Numeric ordinal value of a Technology Readiness Level."@en .
+
+# DPV already provides tech:hasTRL for linking a technology to a TRL.
+# It is reused directly rather than duplicated locally.
+
+trsp:research
+    a skos:Concept ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:technology-readiness-level ;
+    skos:prefLabel "Research"@en ;
+    skos:definition "Early-stage research covering TRL 1 to TRL 3, from observation of basic principles through experimental proof of concept."@en ;
+    skos:notation "TRL 1–3" ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> .
+
+trsp:development
+    a skos:Concept ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:technology-readiness-level ;
+    skos:prefLabel "Development"@en ;
+    skos:definition "Technology development covering TRL 4 to TRL 6, from laboratory validation through demonstration in a relevant environment."@en ;
+    skos:notation "TRL 4–6" ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> .
+
+trsp:deployment
+    a skos:Concept ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:technology-readiness-level ;
+    skos:prefLabel "Deployment"@en ;
+    skos:definition "Deployment-oriented maturity covering TRL 7 to TRL 9, from operational prototype demonstration through proof of the actual system in an operational environment."@en ;
+    skos:notation "TRL 7–9" ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> .
+
+trsp:trl-1
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:research ;
+    skos:notation "TRL 1" ;
+    skos:prefLabel "Basic principles observed"@en ;
+    skos:definition "The basic principles underlying the technology have been observed."@en ;
+    trsp:levelNumber 1 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+trsp:trl-2
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:research ;
+    skos:notation "TRL 2" ;
+    skos:prefLabel "Technology concept formulated"@en ;
+    skos:definition "A technology concept or application has been formulated from the observed principles."@en ;
+    trsp:levelNumber 2 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+trsp:trl-3
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:research ;
+    skos:notation "TRL 3" ;
+    skos:prefLabel "Experimental proof of concept"@en ;
+    skos:definition "Critical functions or characteristics have been demonstrated through experimental proof of concept."@en ;
+    trsp:levelNumber 3 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+trsp:trl-4
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:development ;
+    skos:notation "TRL 4" ;
+    skos:prefLabel "Technology validated in lab"@en ;
+    skos:definition "The technology has been validated in a laboratory environment."@en ;
+    trsp:levelNumber 4 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+trsp:trl-5
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:development ;
+    skos:notation "TRL 5" ;
+    skos:prefLabel "Technology validated in relevant environment"@en ;
+    skos:definition "The technology has been validated in an environment representative of its intended application."@en ;
+    trsp:levelNumber 5 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+trsp:trl-6
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:development ;
+    skos:notation "TRL 6" ;
+    skos:prefLabel "Technology demonstrated in relevant environment"@en ;
+    skos:definition "The technology has been demonstrated in an environment representative of its intended application."@en ;
+    trsp:levelNumber 6 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+trsp:trl-7
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:deployment ;
+    skos:notation "TRL 7" ;
+    skos:prefLabel "System prototype demonstration in operational environment"@en ;
+    skos:definition "A system prototype has been demonstrated in an operational environment."@en ;
+    trsp:levelNumber 7 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+trsp:trl-8
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:deployment ;
+    skos:notation "TRL 8" ;
+    skos:prefLabel "System complete and qualified"@en ;
+    skos:definition "The system is complete and has been qualified for its intended use."@en ;
+    trsp:levelNumber 8 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+trsp:trl-9
+    a skos:Concept, tech:TechnologyReadinessLevel ;
+    skos:inScheme trsp:typeTRL ;
+    skos:broader trsp:deployment ;
+    skos:notation "TRL 9" ;
+    skos:prefLabel "Actual system proven in operational environment"@en ;
+    skos:definition "The actual system has been proven through successful operation in its intended environment."@en ;
+    trsp:levelNumber 9 ;
+    dct:source <https://eic.ec.europa.eu/programme-finder-13_en> ;
+    dct:source <https://www.iso.org/standard/56064.html> .
+
+# Example use
+trsp:exampleTechnology
+    tech:hasTRL trsp:trl-6 .
