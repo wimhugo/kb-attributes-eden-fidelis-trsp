@@ -11,7 +11,8 @@ trsp:checklistQualityAssurance
   dct:title "Quality"@en ;
   skos:hasTopConcept trsp:infoSecurity ,
                      trsp:processQuality ,
-                     trsp:trustedRepository ;
+                     trsp:softwareQuality ,
+                     trsp:qualityRDMI ;
   dct:created "2026-05-07"^^xsd:date ;
   dct:modified "2026-05-07"^^xsd:date ;
   owl:versionInfo "0.1" .
@@ -28,11 +29,18 @@ trsp:processQuality
   dct:description ""@en ;
   skos:inScheme trsp:checklistQualityAssurance .
 
-trsp:trustedRepository
+trsp:qualityRDMI
   a skos:Concept ;
-  skos:prefLabel "Trustworthy Repository Certifications, Assessments, and Appraisals"@en ;
+  skos:prefLabel "TRUST, FAIR, CARE, POSI Certifications, Assessments, and Appraisals"@en ;
   dct:description ""@en ;
   skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:softwareQuality
+  a skos:Concept ;
+  skos:prefLabel "Sotware Quality Frameworks, Certifications, Assessments, and Appraisals"@en ;
+  dct:description ""@en ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
 
 trsp:iso9000
   a skos:Concept ;
@@ -62,7 +70,7 @@ trsp:cts
   a skos:Concept ;
   skos:prefLabel "CoreTrustSeal Certification"@en ;
   dct:description "The CoreTrustSeal Requirements describe the characteristics required to be a trustworthy repository for digital data and metadata. Each Requirement is accompanied by Guidance text describing the response statements and evidence that applicants must provide to enable an objective review. Applicants must respond to all of the Requirements. "@en ;
-  skos:broader trsp:trustedRepository ;
+  skos:broader trsp:qualityRDMI ;
   skos:source <https://doi.org/10.5281/zenodo.7051012> ;
   skos:inScheme trsp:checklistQualityAssurance .
 
@@ -70,7 +78,7 @@ trsp:selfAssessment
   a skos:Concept ;
   skos:prefLabel "Repository SelfAssessment"@en ;
   dct:description "Repository published a self-assessment based on a guideline."@en ;
-  skos:broader trsp:trustedRepository ;
+  skos:broader trsp:qualityRDMI ;
   skos:inScheme trsp:checklistQualityAssurance .
 
 trsp:selfTRSP
@@ -93,7 +101,7 @@ trsp:clarin
   a skos:Concept ;
   skos:prefLabel "CLARIN ERIC Certification"@en ;
   dct:description "CLARIN's distributed network is made up of centres. There are several types of centres: B-centres, C-centres and K-centres, each offering different kinds of expertise and services. "@en ;
-  skos:broader trsp:trustedRepository ;
+  skos:broader trsp:qualityRDMI ;
   skos:source <https://doi.org/10.5281/zenodo.7051012> ;
   skos:inScheme trsp:checklistQualityAssurance .
 
@@ -125,7 +133,7 @@ trsp:nestor
   a skos:Concept ;
   skos:prefLabel "nestor Certification"@en ;
   dct:description "Catalogue of Criteria for Trusted Digital Repositories"@en ;
-  skos:broader trsp:trustedRepository ;
+  skos:broader trsp:qualityRDMI ;
   skos:source <https://d-nb.info/1189191830/34> ;
   skos:inScheme trsp:checklistQualityAssurance .
 
@@ -133,6 +141,6 @@ trsp:iso16363
   a skos:Concept ;
   skos:prefLabel "ISO 16363 Certification"@en ;
   dct:description "Recommended practice on which to base an audit and certification process for assessing the trustworthiness of digital repositories."@en ;
-  skos:broader trsp:trustedRepository ;
+  skos:broader trsp:qualityRDMI ;
   skos:source <https://www.iso.org/standard/87472.html> ;
   skos:inScheme trsp:checklistQualityAssurance .
