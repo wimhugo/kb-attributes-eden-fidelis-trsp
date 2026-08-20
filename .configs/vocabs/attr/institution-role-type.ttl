@@ -12,32 +12,32 @@ trsp:typeInstitutionRole
   dct:created "2026-07-16"^^xsd:date ;
   owl:versionInfo "0.1" .
 
-trsp:host
+trsp:hostInstitution
   a skos:Concept ;
   skos:prefLabel "Hosting Institution"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
-trsp:publisher
+trsp:publisherInstitution
   a skos:Concept ;
   skos:prefLabel "Publisher"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
-trsp:funder
+trsp:funderInstitution
   a skos:Concept ;
   skos:prefLabel "Funding Institution"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
-trsp:membership
+trsp:membershipInstitution
   a skos:Concept ;
-  skos:prefLabel "Membership Institution"@en ;
+  skos:prefLabel "Membership or Network Institution"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
-trsp:user
+trsp:userInstitution
   a skos:Concept ;
   skos:prefLabel "End User Institution"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
-trsp:stakeholder
+trsp:stakeholderInstitution
   a skos:Concept ;
   skos:prefLabel "Stakeholder Institution"@en ;
   skos:inScheme trsp:typeInstitutionRole .
