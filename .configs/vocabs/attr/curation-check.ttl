@@ -105,6 +105,12 @@ trsp:typeSemanticEnhancement
   skos:broader trsp:typeImprovementActivity ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
+trsp:typeSemanticAnnotation
+  a skos:Concept ;
+  skos:prefLabel "Semantic Annotation"@en ;
+  skos:broader trsp:typeImprovementActivity ;
+  skos:inScheme trsp:checklistCurationPreservationType .
+
 # QA -------------------------------------------------------
 
 trsp:typeQualityActivity
