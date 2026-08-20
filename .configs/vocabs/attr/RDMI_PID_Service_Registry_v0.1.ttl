@@ -1,0 +1,874 @@
+@prefix pidreg: <https://example.org/pid-registry/> .
+@prefix pid_graph: <https://example.org/pid-graph/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Core registry model
+#################################################################
+
+pidreg:PIDService
+    a owl:Class ;
+    rdfs:label "Persistent identifier service"@en ;
+    rdfs:comment "An identifiable PID system, service, registry, identifier family, or provider-oriented PID implementation that defines, assigns, maintains, resolves, or otherwise supports persistent identifiers."@en .
+
+pidreg:ResolutionCapability
+    a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "PID resolution capability"@en .
+
+pidreg:resolutionCapabilityScheme
+    a skos:ConceptScheme ;
+    skos:prefLabel "PID resolution capabilities"@en .
+
+pidreg:hasResolutionCapability
+    a owl:ObjectProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:range pidreg:ResolutionCapability ;
+    rdfs:label "has resolution capability"@en .
+
+pidreg:pidmrSupported
+    a owl:DatatypeProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "PIDMR supported"@en .
+
+pidreg:registeredIn
+    a owl:ObjectProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:label "registered in"@en .
+
+pidreg:authority
+    a owl:ObjectProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:label "authority"@en .
+
+pidreg:provider
+    a owl:ObjectProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:label "provider"@en .
+
+pidreg:conformsToStandard
+    a owl:ObjectProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:label "conforms to standard"@en .
+
+pidreg:resolverEndpoint
+    a owl:DatatypeProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "resolver endpoint"@en .
+
+pidreg:apiEndpoint
+    a owl:DatatypeProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:range xsd:anyURI ;
+    rdfs:label "API endpoint"@en .
+
+pidreg:identifiesEntityType
+    a owl:ObjectProperty ;
+    rdfs:domain pidreg:PIDService ;
+    rdfs:label "identifies entity type"@en .
+
+#################################################################
+# Standardized PIDMR resolution capabilities
+#################################################################
+
+pidreg:landing-page
+    a pidreg:ResolutionCapability, skos:Concept ;
+    skos:inScheme pidreg:resolutionCapabilityScheme ;
+    skos:prefLabel "Landing page resolution"@en ;
+    skos:definition "Resolution of a PID to a human-oriented landing page describing or representing the identified resource."@en ;
+    dct:source <https://faircore4eosc.eu/eosc-core-components/eosc-pid-meta-resolver-pidmr> .
+
+pidreg:metadata
+    a pidreg:ResolutionCapability, skos:Concept ;
+    skos:inScheme pidreg:resolutionCapabilityScheme ;
+    skos:prefLabel "Machine-readable metadata resolution"@en ;
+    skos:definition "Resolution of a PID to structured metadata describing the identified resource, where supported by the PID system or provider."@en ;
+    dct:source <https://faircore4eosc.eu/eosc-core-components/eosc-pid-meta-resolver-pidmr> .
+
+pidreg:resource
+    a pidreg:ResolutionCapability, skos:Concept ;
+    skos:inScheme pidreg:resolutionCapabilityScheme ;
+    skos:prefLabel "Digital object / resource resolution"@en ;
+    skos:definition "Resolution of a PID directly to the referenced digital object or resource, where supported by the PID system or provider."@en ;
+    dct:source <https://faircore4eosc.eu/eosc-core-components/eosc-pid-meta-resolver-pidmr> .
+
+#################################################################
+# PIDMR as a resolver service
+#################################################################
+
+pidreg:PIDMR
+    a pidreg:PIDService ;
+    skos:prefLabel "EOSC PID Meta Resolver"@en ;
+    skos:altLabel "PIDMR"@en ;
+    dct:source <https://pidmr.argo.grnet.gr/supported-pids> ;
+    pidreg:hasResolutionCapability
+        pidreg:landing-page,
+        pidreg:metadata,
+        pidreg:resource ;
+    pidreg:apiEndpoint "https://pidmr.argo.grnet.gr/"^^xsd:anyURI .
+
+#################################################################
+# Registry instances from the uploaded inventory
+#################################################################
+
+pid_graph:7E709E59
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:8C3CC433
+    a pidreg:PIDService ;
+    skos:prefLabel "EU PIC"@en ;
+    skos:definition "A Participant Identification Code (PIC) is a 9-digit number that serves as a unique identifier for legal entities participating in European funding programmes. A PIC number has no expiry date."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7C278907
+    a pidreg:PIDService ;
+    skos:prefLabel "Virta-id"@en ;
+    skos:definition "The Virta-ID is associated with the VIRTA Higher Education Achievement Register (VIRTA-opintotietopalvelu) in Finland. This service was built as part of the Raketti project during 2012 and 2013 and officially launched in 2014. It serves as a national data repository for Finnish higher education institutions, aiming to improve student admissions and facilitate various administrative and academic processes."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:92768060
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:ISTC"@en ;
+    skos:definition "Unique identifier for text-based works"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:4502C312
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:ISMN"@en ;
+    skos:definition "identifier for printed music (not in book form) developed by ISO."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:60F6C8F3
+    a pidreg:PIDService ;
+    skos:prefLabel "HomoloGene ID"@en ;
+    skos:definition "HomoloGene, a tool of the United States National Center for Biotechnology Information (NCBI), is a system for automated detection of homologs."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:AF81E099
+    a pidreg:PIDService ;
+    skos:prefLabel "Nucleotide GI number"@en ;
+    skos:definition "The Nucleotide database is a collection of sequences from several sources, including GenBank, RefSeq, TPA and PDB. Genome, gene and transcript sequence data provide the foundation for biomedical research and discovery."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:774111F8
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:LSID"@en ;
+    skos:definition "Life Science Identifiers are a way to name and locate pieces of information on the web. Essentially, an LSID is a unique identifier for some data, and the LSID protocol specifies a standard way to locate the data (as well as a standard way of describing that data)"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:335BCBF11
+    a pidreg:PIDService ;
+    skos:prefLabel "RAI ID"@en ;
+    skos:definition "Research Analysis Identifier (RAI) of experiments will become a new Persistent Identifier (PID) that can be used in addition to existing PIDs. This identifier combines the result with the dataset and algorithm employed by a researcher to process the dataset."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:C9B802B5
+    a pidreg:PIDService ;
+    skos:prefLabel "SF-edu-ID"@en ;
+    skos:definition "The Register of educational institutions is a chargeable product of Statistics Finland containing the addresses of all educational institutions in Finland. The Register is updated yearly in the spring. The Register contains data collected 2023."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7D9E4E44
+    a pidreg:PIDService ;
+    skos:prefLabel "Magnet"@en ;
+    skos:definition "Magnet is a URI scheme that defines the format of magnet links, a de facto standard for identifying files (URN) by their content, via cryptographic hash value rather than by their location."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:A514F388
+    a pidreg:PIDService ;
+    skos:prefLabel "CONFIDENT"@en ;
+    skos:definition "ConfIDent makes conferences and other formats of scientific events persistently accessible in high quality."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:2EAAEA03
+    a pidreg:PIDService ;
+    skos:prefLabel "IdRef ID/SUDOC"@en ;
+    skos:definition "Identifier for authority control in the French collaborative library catalog (see also P1025). Format: 8 digits followed by a digit or \"X\""@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:15BEDB40
+    a pidreg:PIDService ;
+    skos:prefLabel "ARK"@en ;
+    skos:definition "Multi-purpose persistent identifier for information objects of any type. Archival Resource Keys (ARKs) serve as persistent identifiers, or stable, trusted references for information objects. Among other things, they aim to be web addresses (URLs) that don’t return 404 Page Not Found errors. The ARK Alliance is an open global community supporting the ARK infrastructure on behalf of research and scholarship. End users, especially researchers, rely on ARKs for long term access to the global scientific and cultural record. Since 2001 some 8.2 billion ARKs have been created by over 1000 organizations — libraries, data centers, archives, museums, publishers, government agencies, and vendors. They identify anything digital, physical, or abstract. ARKs are open, mainstream, non-paywalled, decentralized persistent identifiers that can be created by an organization as soon as it is registered with a NAAN (Name Assigning Authority Number). Once registered, an ARK organization can create unlimited numbers of ARKs and publicize them via the n2t.net global resolver or via their own local resolver."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:03A715EA
+    a pidreg:PIDService ;
+    skos:prefLabel "arXiv"@en ;
+    skos:definition "Article identifier scheme used by arXiv. arXiv is an e-print service in the fields of physics, mathematics, non-linear science, computer science, and quantitative biology."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:68ADD24A
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:AT"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:F00A6677
+    a pidreg:PIDService ;
+    skos:prefLabel "Bitbucket"@en ;
+    skos:definition "Bitbucket is a Git-based source code repository hosting service owned by Atlassian."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:208E9775
+    a pidreg:PIDService ;
+    skos:prefLabel "URL"@en ;
+    skos:definition "A uniform resource locator (URL), colloquially known as an address on the Web, is a reference to a resource that specifies its location on a computer network and a mechanism for retrieving it"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:F12AD34E1
+    a pidreg:PIDService ;
+    skos:prefLabel "CURIE"@en ;
+    skos:definition "A data type whose purpose is specifically to allow for the definition of scoped names that map to URIs"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:B7EB7BAA
+    a pidreg:PIDService ;
+    skos:prefLabel "COL"@en ;
+    skos:definition "Identifier of a taxon or synonym in the Catalogue of Life"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:C6B514CF
+    a pidreg:PIDService ;
+    skos:prefLabel "HAL article ID"@en ;
+    skos:definition "identifier for an article in the HAL (Hyper Articles en Ligne) open access repository"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:47118C40
+    a pidreg:PIDService ;
+    skos:prefLabel "ResearcherID"@en ;
+    skos:definition "ResearcherID is an identifying system for scientific authors. The system was introduced in January 2008 by Thomson Reuters Corporation."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:AC2CDAA9
+    a pidreg:PIDService ;
+    skos:prefLabel "WOS"@en ;
+    skos:definition "Unique academic work identifier assigned in Web of Science bibliographic database (Web of Science Core Collection only and do not include WOS: prefix)"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:77FF1083
+    a pidreg:PIDService ;
+    skos:prefLabel "GND"@en ;
+    skos:definition "Identifier for the German National Library"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:9C827E94
+    a pidreg:PIDService ;
+    skos:prefLabel "OpenURL"@en ;
+    skos:definition "An OpenURL is similar to a web address, but instead of referring to a physical website, it refers to an article, book, patent, or other resource within a website"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:F12AD34E
+    a pidreg:PIDService ;
+    skos:prefLabel "URI"@en ;
+    skos:definition "String of characters used to identify a name of a resource on a network such as the internet"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:5CEA29B9
+    a pidreg:PIDService ;
+    skos:prefLabel "GRID"@en ;
+    skos:definition "International coverage of the world's leading research organisations, indexing 92% of funding allocated globally."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:998B7874
+    a pidreg:PIDService ;
+    skos:prefLabel "DCO-ID"@en ;
+    skos:definition "Digital object registration includes DCO-ID generation based on the global Handle System infrastructure and metadata collection using VIVO."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:3E6F3EE6
+    a pidreg:PIDService ;
+    skos:prefLabel "DOI"@en ;
+    skos:definition "The Digital Object Identifier System is for identifying content objects in the digital environment."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:3E6F3EE61
+    a pidreg:PIDService ;
+    skos:prefLabel "DOI: Crossref"@en ;
+    skos:definition "One of the official Digital Object Identifier Registration Agencies of the International DOI Foundation"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:3E6F3EE62
+    a pidreg:PIDService ;
+    skos:prefLabel "DOI: DataCite"@en ;
+    skos:definition "The global consortium DataCite was established in 2009 to overcome the challenges of data citation. The aim of the consortium is to establish easy access to data, to increase the acceptance of data publication and to support data archiving."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:3FA62023
+    a pidreg:PIDService ;
+    skos:prefLabel "ePIC"@en ;
+    skos:definition "The ePIC system is one of several MPAs based on the Handle System, and offers EU-based mirroring and resolution of handles."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:73B0A225
+    a pidreg:PIDService ;
+    skos:prefLabel "Handle"@en ;
+    skos:definition "Handle System identifier, which is a superset of the DOI"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:0E85921A
+    a pidreg:PIDService ;
+    skos:prefLabel "IGSN"@en ;
+    skos:definition "IGSN is a globally unique and persistent identifier for material samples and specimens. IGSNs are obtained from IGSN e.V. Agents."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:152D52742
+    a pidreg:PIDService ;
+    skos:prefLabel "PIDINST"@en ;
+    skos:definition "PIDINST is a persistent identifier scheme designed to uniquely and permanently identify scientific instruments, such as sensors, spectrometers, microscopes, and data collection platforms. It enables instruments to be referenced in datasets, publications, and metadata to support transparency, reproducibility, and provenance tracking in research."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:0D27745F
+    a pidreg:PIDService ;
+    skos:prefLabel "RAID"@en ;
+    skos:definition "A unique and persistent identifier for research projects"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:BDE0B4B72
+    a pidreg:PIDService ;
+    skos:prefLabel "DAI"@en ;
+    skos:definition "A unique number to all academic authors in the Netherlands as a form of authority control"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7E709E594
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:NL"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:6081C2D5
+    a pidreg:PIDService ;
+    skos:prefLabel "EIDR"@en ;
+    skos:definition "Identifier for a film or television work, edit or manifestation, in the Entertainment Identifier Registry"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:08EE6DB9
+    a pidreg:PIDService ;
+    skos:prefLabel "OMID"@en ;
+    skos:definition "Every entity in OpenCitations Meta (https://opencitations.net/meta) is assigned persistent internal identifier called OpenCitations Meta Identifier (OMID). The OMID has structure [[entity_type_abbreviation]]/[[supplier_prefix]][[sequential_number]]. For example, the first journal article ever processed has OMID br/0601 (the full URI is https://w3id.org/oc/meta/br/0601), where br is the abbreviation of bibliographic resource, and 060 corresponds to the supplier prefix, helpful in recognising at a glance the index it belongs to (i.e., OpenCitations Meta). Finally, 1 indicates that this is the index's first bibliographic resource ever minted."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:152D52741
+    a pidreg:PIDService ;
+    skos:prefLabel "PIC"@en ;
+    skos:definition "The PIC is a unique identifier for your organisation that is used to track and manage participants in EU-funded programs, projects, and initiatives"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:C2BEAE03
+    a pidreg:PIDService ;
+    skos:prefLabel "GeoNames ID"@en ;
+    skos:definition "Identifier in the GeoNames geographical database."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7E709E592
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:DE"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:C2BEAE031
+    a pidreg:PIDService ;
+    skos:prefLabel "GePRIS"@en ;
+    skos:definition "Identifies authors by the first 2-4 letters of their surname plus numbers (e.g. XX 1234 or YY 67) generated by Elektra, the DFG's internal administrative grant-processing procedure. This disambiguation is for DFG's internal processes only."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:4A58E4401
+    a pidreg:PIDService ;
+    skos:prefLabel "GitHub"@en ;
+    skos:definition ""@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:4A58E4402
+    a pidreg:PIDService ;
+    skos:prefLabel "GitLab"@en ;
+    skos:definition ""@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:025992EB
+    a pidreg:PIDService ;
+    skos:prefLabel "EAN13"@en ;
+    skos:definition "Standard describing a barcode symbology and numbering"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:BFEB0A72
+    a pidreg:PIDService ;
+    skos:prefLabel "UPC"@en ;
+    skos:definition "Barcode symbology used for tracking trade items in stores"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:4EA08A5A
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:IT"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:83FC72F3
+    a pidreg:PIDService ;
+    skos:prefLabel "IMDb company ID"@en ;
+    skos:definition "D for a company or organization listed in the Internet Movie Database"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:DDB8E5B0
+    a pidreg:PIDService ;
+    skos:prefLabel "IMDb name ID"@en ;
+    skos:definition "ID that characterize a person on Internet Movie Database"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:9D46195A
+    a pidreg:PIDService ;
+    skos:prefLabel "IMDb title ID"@en ;
+    skos:definition "ID that characterize a movie on Internet Movie Database"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7EBD4614
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:ISRC"@en ;
+    skos:definition "international standard code for uniquely identifying sound recordings and music video recordings"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:52EBCE9D
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:ISBN"@en ;
+    skos:definition "The International Standard Book Number (ISBN) is for identifying printed books."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:C2989F23
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:OID"@en ;
+    skos:definition "OIDs provide a persistent identification of objects based on a hierarchical structure of Registration Authorities (RA), where each parent has an object identifier and allocates object identifiers to child nodes."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:8A464A0E
+    a pidreg:PIDService ;
+    skos:prefLabel "ISLRN"@en ;
+    skos:definition "The International Standard Language Resource Number (ISLRN) is a new, unique and universal identification schema for Language Resources which provides Language Resources with unique names using a standardized nomenclature. It also ensures Language Resources are identified, and consequently recognized with proper references in activities within Human Language Technologies, as well as in documents and scientific papers."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:D75629BE
+    a pidreg:PIDService ;
+    skos:prefLabel "PURL"@en ;
+    skos:definition "A PURL is a Persistent Uniform Resource Locator"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:D1BA9B24
+    a pidreg:PIDService ;
+    skos:prefLabel "dPID"@en ;
+    skos:definition "DIDs (dPIDs) are a new type of identifier that enables verifiable, self-sovereign digital identity using blockchain and DLT. DIDs are an effort by the W3C Credentials Community Group and the wider Internet identity community to define identifiers that can be registered, updated, resolved, and revoked without any dependency on a central authority or intermediary."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:DE9F6BF4
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:ISAN"@en ;
+    skos:definition "International Standard Audiovisual Number (ISAN) is a unique identifier for audiovisual works and related versions, similar to ISBN for books"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:710BC55E
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:ISNI"@en ;
+    skos:definition "16-digit identifier for people and organisations ISNI is the ISO certified global standard number for identifying the millions of contributors to creative works and those active in their distribution, including researchers, inventors, writers, artists, visual creators, performers, producers, publishers, aggregators, and more. It is part of a family of international standard identifiers that includes identifiers of works, recordings, products and right holders in all repertoires, e.g. DOI, ISAN, ISBN, ISRC, ISSN, ISTC, and ISWC. The mission of the ISNI International Authority (ISNI-IA) is to assign to the public name(s) of a researcher, inventor, writer, artist, performer, publisher, etc. a persistent unique identifying number in order to resolve the problem of name ambiguity in search and discovery; and diffuse each assigned ISNI across all repertoires in the global supply chain so that every published work can be unambiguously attributed to its creator wherever that work is described."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:986D97DF
+    a pidreg:PIDService ;
+    skos:prefLabel "SBN/ ICCU"@en ;
+    skos:definition "identifier issued by National Library Service (SBN) of Italy"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:6FA60579
+    a pidreg:PIDService ;
+    skos:prefLabel "InChI"@en ;
+    skos:definition "The IUPAC International Chemical Identifier (InChI) is a non-proprietary identifier for chemical substances that can be used in printed and electronic data sources. It is derived solely from a structural representation of that substance, such that a single compound always yields the same identifier."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:D2BC44A7
+    a pidreg:PIDService ;
+    skos:prefLabel "InChiKey"@en ;
+    skos:definition "The IUPAC International Chemical Identifier (InChI, see MIR:00000383) is an identifier for chemical substances, and is derived solely from a structural representation of that substance. Since these can be quite unwieldly, particularly for web use, the InChIKey was developed. These are of a fixed length (25 character) and were created as a condensed, more web friendly, digital representation of the InChI."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7D3DC0E1
+    a pidreg:PIDService ;
+    skos:prefLabel "VIAF"@en ;
+    skos:definition "Identifier for the Virtual International Authority File database [format: up to 22 digits]"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:03A715EA1
+    a pidreg:PIDService ;
+    skos:prefLabel "BibCode"@en ;
+    skos:definition "Bibliographic reference code for a journal, maintained by Harvard"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:C8042C4B
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:HR"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:E20D377D
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:SI"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7380A573
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:SK"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7E709E593
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:FI"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:E1F68A70
+    a pidreg:PIDService ;
+    skos:prefLabel "Korean national author ID"@en ;
+    skos:definition "The Korean National Author ID system is an identifier used in South Korea to uniquely identify authors, particularly those involved in academic and scholarly publishing."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:8EB6C97D
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:NO"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:882397A9
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:SE"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:369FA36F
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:CZ"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:487BCE7F
+    a pidreg:PIDService ;
+    skos:prefLabel "Korean national research ID"@en ;
+    skos:definition ""@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:56ADD30B
+    a pidreg:PIDService ;
+    skos:prefLabel "Korean research funding ID"@en ;
+    skos:definition ""@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:9A92E859
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:HU"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:075D8338
+    a pidreg:PIDService ;
+    skos:prefLabel "AID"@en ;
+    skos:definition "PubChem BioAssay contains small-molecule and RNAi screening data along with associated annotation information from contributing organizations. BioAssay contains a collection of bioactivity and toxicity data that has greatly supported research in fields such as medicinal chemistry, drug discovery, pharmaceutical genomics and informatics research. As a primary archive, the provenance of all records belongs to the submitter."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:27D128A4
+    a pidreg:PIDService ;
+    skos:prefLabel "CID"@en ;
+    skos:definition "PubChem Compound records are derived summaries that give users access to a rich set of related content. Compound records contain unique chemical structures extracted from contributed Substance records through a process called ‘standardization’. Each Compound record points to at least one Substance record."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:52A9C539
+    a pidreg:PIDService ;
+    skos:prefLabel "dbGaP ID"@en ;
+    skos:definition "The database of Genotypes and Phenotypes (dbGaP) was developed to archive and distribute the data and results from studies that have investigated the interaction of genotype and phenotype in Humans."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:CB69320B
+    a pidreg:PIDService ;
+    skos:prefLabel "dbVar ID"@en ;
+    skos:definition "dbVar is NCBI's database of human genomic Structural Variation — large variants >50 bp including insertions, deletions, duplications, inversions, mobile elements, translocations, and complex variants"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:10C00601
+    a pidreg:PIDService ;
+    skos:prefLabel "GDS ID"@en ;
+    skos:definition "This database stores curated gene expression DataSets, as well as original Series and Platform records in the Gene Expression Omnibus (GEO) repository. Enter search terms to locate experiments of interest. DataSet records contain additional resources including cluster tools and differential expression queries."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:B9A4AB49
+    a pidreg:PIDService ;
+    skos:prefLabel "Gene ID"@en ;
+    skos:definition "Gene integrates information from a wide range of species. A record may include nomenclature, Reference Sequences (RefSeqs), maps, pathways, variations, phenotypes, and links to genome-, phenotype-, and locus-specific resources worldwide."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:D800044E
+    a pidreg:PIDService ;
+    skos:prefLabel "Genome ID"@en ;
+    skos:definition "This resource organizes information on genomes including sequences, maps, chromosomes, assemblies, and annotations."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:B0DD2B6E
+    a pidreg:PIDService ;
+    skos:prefLabel "GEO ID"@en ;
+    skos:definition "This database stores individual gene expression profiles from curated DataSets in the Gene Expression Omnibus (GEO) repository. Search for specific profiles of interest based on gene annotation or pre-computed profile characteristics."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:B36773C9
+    a pidreg:PIDService ;
+    skos:prefLabel "MeSH ID"@en ;
+    skos:definition "MeSH (Medical Subject Headings) is the NLM controlled vocabulary thesaurus used for indexing articles for PubMed."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:FE96C149
+    a pidreg:PIDService ;
+    skos:prefLabel "MMDB-ID"@en ;
+    skos:definition "The Conserved Domain Database (CDD) brings together several collections of multiple sequence alignments representing conserved domains, in addition to NCBI-curated domains that use 3D-structure information explicitly to define domain boundaries and provide insights into sequence/structure/function relationships."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:50E7B5FE
+    a pidreg:PIDService ;
+    skos:prefLabel "NLM Catalog ID"@en ;
+    skos:definition "The NLM Catalog provides access to NLM bibliographic data for journals, books, audiovisuals, computer software, electronic resources and other materials. Links to the library's holdings in LocatorPlus, NLM's online public access catalog, are also provided."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:D8E9EA2D
+    a pidreg:PIDService ;
+    skos:prefLabel "PMCID"@en ;
+    skos:definition "PubMed Central® (PMC) is a free full-text archive of biomedical and life sciences journal literature at the U.S. National Institutes of Health's National Library of Medicine (NIH/NLM)"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:08629E50
+    a pidreg:PIDService ;
+    skos:prefLabel "PMID"@en ;
+    skos:definition "A PMID (PubMed identifier or PubMed unique identifier) is a unique integer value, starting at 1, assigned to each PubMed record."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:AE530285
+    a pidreg:PIDService ;
+    skos:prefLabel "PopSet ID"@en ;
+    skos:definition "The PopSet database is a collection of related DNA sequences derived from population, phylogenetic, mutation and ecosystem studies that have been submitted to GenBank."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:D0FEC2B9
+    a pidreg:PIDService ;
+    skos:prefLabel "Probe ID"@en ;
+    skos:definition "The NCBI Probe Database is a public registry of nucleic acid reagents designed for use in a wide variety of biomedical research applications, together with information on reagent distributors, probe effectiveness, and computed sequence similarities."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:A2F84B54
+    a pidreg:PIDService ;
+    skos:prefLabel "Protein Cluster ID"@en ;
+    skos:definition "This collection of related protein sequences (clusters) consists of proteins derived from the annotations of whole genomes, organelles and plasmids. It currently limited to Archaea, Bacteria, Plants, Fungi, Protozoans, and Viruses"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:4A58E440
+    a pidreg:PIDService ;
+    skos:prefLabel "Protein GI number"@en ;
+    skos:definition "The Protein database is a collection of sequences from several sources, including translations from annotated coding regions in GenBank, RefSeq and TPA, as well as records from SwissProt, PIR, PRF, and PDB. Protein sequences are the fundamental determinants of biological structure and function."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:187B413B
+    a pidreg:PIDService ;
+    skos:prefLabel "PSSM-ID"@en ;
+    skos:definition "CDD is a protein annotation resource that consists of a collection of well-annotated multiple sequence alignment models for ancient domains and full-length proteins."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:D9D0AD30
+    a pidreg:PIDService ;
+    skos:prefLabel "rs number"@en ;
+    skos:definition "dbSNP contains human single nucleotide variations, microsatellites, and small-scale insertions and deletions along with publication, population frequency, molecular consequence, and genomic and RefSeq mapping information for both common variations and clinical mutations."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:8930C278
+    a pidreg:PIDService ;
+    skos:prefLabel "SID"@en ;
+    skos:definition "PubChem Substance is the primary archive for community-provided information about chemical entities."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:22104FE0
+    a pidreg:PIDService ;
+    skos:prefLabel "SRA ID"@en ;
+    skos:definition "Sequence Read Archive (SRA) data, available through multiple cloud providers and NCBI servers, is the largest publicly available repository of high throughput sequencing data. The archive accepts data from all branches of life as well as metagenomic and environmental surveys. SRA stores raw sequencing data and alignment information to enhance reproducibility and facilitate new discoveries through data analysis."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:1D9178F5
+    a pidreg:PIDService ;
+    skos:prefLabel "TaxID"@en ;
+    skos:definition "The Taxonomy Database is a curated classification and nomenclature for all of the organisms in the public sequence databases. This currently represents about 10% of the described species of life on the planet."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:C454BB2B
+    a pidreg:PIDService ;
+    skos:prefLabel "Toolkit ID"@en ;
+    skos:definition "The NCBI C++ Toolkit is a public-domain collection of portable libraries, consisting of a cross-platform application framework and a set of utilities and supporting classes to work with biological data."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:F8110591
+    a pidreg:PIDService ;
+    skos:prefLabel "NZBN"@en ;
+    skos:definition "The NZBN (New Zealand Business Number) is a unique identifier assigned to businesses and other organisations in New Zealand."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:88E37094
+    a pidreg:PIDService ;
+    skos:prefLabel "BusinessID"@en ;
+    skos:definition "In Finland, a code given to businesses and organizations"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:3DA72078
+    a pidreg:PIDService ;
+    skos:prefLabel "VAT number"@en ;
+    skos:definition "Identifier of person or company, used for value added tax purposes"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:C7CE618B
+    a pidreg:PIDService ;
+    skos:prefLabel "XRI"@en ;
+    skos:definition "An Extensible Resource Identifier (abbreviated XRI) is a scheme and resolution protocol for abstract identifiers compatible with Uniform Resource Identifiers and Internationalized Resource Identifiers, developed by the XRI Technical Committee at OASIS"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:AB1807F6
+    a pidreg:PIDService ;
+    skos:prefLabel "OCLC Control Number"@en ;
+    skos:definition "OCLC assigns a unique number to each bibliographic record input into WorldCat."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:6AE88038
+    a pidreg:PIDService ;
+    skos:prefLabel "OpenCitations Corpus"@en ;
+    skos:definition "The OpenCitations Corpus is open repository of scholarly citation data made available under a Creative Commons public domain dedication (CC0), which provides accurate bibliographic references harvested from the scholarly literature that others may freely build upon, enhance and reuse for any purpose, without restriction under copyright or database law."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:152D5274
+    a pidreg:PIDService ;
+    skos:prefLabel "ORCID"@en ;
+    skos:definition "ORCID (Open Researcher and Contributor ID) is an open, non-profit, community-based effort to create and maintain a registry of unique identifiers for individual researchers. ORCID records hold non-sensitive information such as name, email, organization name, and research activities."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:1F0B6419
+    a pidreg:PIDService ;
+    skos:prefLabel "RIN"@en ;
+    skos:definition "A commercial protocol sharing tool, which allows scientists to check in protocols the way that computer scientists check in code"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:59B443C3
+    a pidreg:PIDService ;
+    skos:prefLabel "JuFo-id"@en ;
+    skos:definition "Identifier in the Julkaisufoorumi (Finnish Publication Forum)"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:42740FD8
+    a pidreg:PIDService ;
+    skos:prefLabel "Ringgold ID"@en ;
+    skos:definition "Identifier for organisations in the publishing industry supply chain"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:109F4044
+    a pidreg:PIDService ;
+    skos:prefLabel "ScopusAuthorID"@en ;
+    skos:definition "Identifier for an author assigned in Scopus bibliographic database"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:8A580D4C
+    a pidreg:PIDService ;
+    skos:prefLabel "SWHID"@en ;
+    skos:definition "Persistent identifier of a software source code artifact as archived in the Software Heritage Archive"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7E709E591
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:NBN:CH"@en ;
+    skos:definition "National Bibliography Number (NBN) is a group of publication identifier systems used by national libraries in countries such as Germany, Italy, Finland, Norway, The Netherlands and Sweden"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:E775ECFD
+    a pidreg:PIDService ;
+    skos:prefLabel "URN"@en ;
+    skos:definition "Uniform Resource Identifier (URI) that uses the urn scheme"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:7725DE2B
+    a pidreg:PIDService ;
+    skos:prefLabel "W3ID"@en ;
+    skos:definition "Secure, permanent URLs for your Web application that will stand the test of time."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:335BCBF1
+    a pidreg:PIDService ;
+    skos:prefLabel "QID"@en ;
+    skos:definition "Unique identifier (UID) used in Wikidata"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:52184C71
+    a pidreg:PIDService ;
+    skos:prefLabel "QID / WDQID"@en ;
+    skos:definition "Wikidata is a collaboratively edited knowledge base operated by the Wikimedia Foundation. It is intended to provide a common source of certain types of data which can be used by Wikimedia projects such as Wikipedia. Wikidata functions as a document-oriented database, centred on individual items. Items represent topics, for which basic information is stored that identifies each topic."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:BE0AA447
+    a pidreg:PIDService ;
+    skos:prefLabel "Wikipedia"@en ;
+    skos:definition "Wikipedia is a multilingual, web-based, free-content encyclopedia project based on an openly editable model. It is written collaboratively by largely anonymous Internet volunteers who write without pay."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:962AFA12
+    a pidreg:PIDService ;
+    skos:prefLabel "ICD"@en ;
+    skos:definition "The International Classification of Diseases is the international standard diagnostic classification for all general epidemiological and many health management purposes."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:BDE0B4B7
+    a pidreg:PIDService ;
+    skos:prefLabel "CrossRef Funders"@en ;
+    skos:definition "The Funder Registry is an open registry of persistent identifiers for grant-giving organizations around the world."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:BDE0B4B71
+    a pidreg:PIDService ;
+    skos:prefLabel "CrossRef Grant"@en ;
+    skos:definition "The Crossref Grant Linking System (GLS) is a service for research funders to contribute to open science infrastructure. As members of Crossref, funders create unique links and open metadata about their support of all kinds, from financial grants to prizes to use of facilities."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:5AB84DF2
+    a pidreg:PIDService ;
+    skos:prefLabel "eISSN"@en ;
+    skos:definition "ISSN for an electronic publication"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:016841FF
+    a pidreg:PIDService ;
+    skos:prefLabel "LCCN"@en ;
+    skos:definition "Library of Congress name authority (persons, families, corporate bodies, events, places, works and expressions) and subject authority identifier"@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:8FDADD4C
+    a pidreg:PIDService ;
+    skos:prefLabel "re3data"@en ;
+    skos:definition "Re3data is a global registry of research data repositories that covers research data repositories from different academic disciplines."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:6AAA1ABD
+    a pidreg:PIDService ;
+    skos:prefLabel "ROR"@en ;
+    skos:definition "ROR (Research Organization Registry) is a global, community-led registry of open persistent identifiers for research organizations. ROR is jointly operated by California Digital Library, Crossref, and Datacite."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pid_graph:9FF848E5
+    a pidreg:PIDService ;
+    skos:prefLabel "URN:ISSN"@en ;
+    skos:definition "The International Standard Serial Number (ISSN) is a unique eight-digit number used to identify a print or electronic periodical publication, rather than individual articles or books."@en ;
+    dct:source pidreg:uploadedInventory .
+
+pidreg:uploadedInventory
+    a dct:Dataset ;
+    dct:title "Uploaded comprehensive PID inventory"@en ;
+    dct:description "Primary source for the starter RDMI PID Service Registry."@en .
