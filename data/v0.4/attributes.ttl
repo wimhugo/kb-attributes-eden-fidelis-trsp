@@ -8,7 +8,7 @@
 @prefix schema: <http://schema.org/> .
 
 trsp:trsp-attributes a skos:ConceptScheme ;
-  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:dateTime;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ; # Wim Hugo
   dct:contributor <https://orcid.org/0000-0003-1106-8441> ; # Wilko Steinhoff
   dct:contributor "Lauren Maxwell" ;
@@ -18,8 +18,8 @@ trsp:trsp-attributes a skos:ConceptScheme ;
   dct:contributor "Mohan Ramamurthy" ;
   dct:contributor "RDA TRSP WG" ;
   dct:description "A comprehensive inventory of repository and repository services attributes"@en 
-  dct:modified "2026-05-07T00:00:00+00:00"^^xsd:datetime;
-  dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime ;
+  dct:modified "2026-05-07T00:00:00+00:00"^^xsd:dateTime;
+  dct:modified "2026-04-29T00:00:00+00:00"^^xsd:dateTime ;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "TRSP Attribute Definition Vocabulary"@en;
   skos:hasTopConcept  trsp:att.4CB9ED25FE ,
