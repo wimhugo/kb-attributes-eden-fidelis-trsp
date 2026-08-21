@@ -29,24 +29,26 @@ trsp:iriConstraint
     a skos:Concept ;
     skos:inScheme trsp:typeConstraint ;
     skos:prefLabel "IRI Constraint"@en ;
-    skos:definition "Benchmark evidence can be any local or external URI or URL"@en ;
+    skos:definition "Benchmark evidence can be any local or external URI or URL."@en ;
     .
 
-trsp:datatypeConstraint
+trsp:dataTypeConstraint
     a skos:Concept ;
     skos:inScheme trsp:typeConstraint ;
     skos:prefLabel  "Data Type constraint"@en ;
-    skos:definition "Benchmark evidence can be any local or external URI or URL"@en ;
+    skos:definition "Benchmark evidence can be any valid data type."@en ;
     .
 
 trsp:vocabularyConstraint
     a skos:Concept ;
     skos:inScheme trsp:typeConstraint ;
     skos:prefLabel  "Vocabulary constraint"@en ;
+    skos:definition "Benchmark evidence must match a concept scheme value or one or more concept values."@en ;
     .
 
 trsp:classConstraint
     a skos:Concept ;
     skos:inScheme trsp:typeConstraint ;
     skos:prefLabel  "Class constraint"@en ;
+    skos:definition "Benchmark evidence must match a specific list of classes."@en ;
     .
