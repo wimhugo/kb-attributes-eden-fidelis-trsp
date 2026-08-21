@@ -6,7 +6,7 @@
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 @prefix duo: <http://purl.obolibrary.org/obo/duo.owl> .
 
-trsp:rights-encoding-type-scheme
+trsp:typeRightsEncoding
   a skos:ConceptScheme ;
   skos:prefLabel "Rights Encoding Vocabulary"@en ;
   dct:title "Rights Encoding Vocabulary"@en ;
@@ -20,58 +20,58 @@ trsp:ccrel
   skos:prefLabel "CCREL"@en ;
   rdfs:seeAlso <http://creativecommons.org/ns#> ;
   skos:definition "Creative Commons Rights Encoding Language"@en ;
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
 
 trsp:dalicc
   a skos:Concept ;
   skos:prefLabel "DALICC"@en ;
   rdfs:seeAlso <https://dalicc.net/ns#> ;
   skos:definition "Data Licence Clearance Center"@en ;
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
 
 trsp:odrl
   a skos:Concept ;
   skos:prefLabel "ODRL"@en ;
   skos:definition "Open Digital Rights Language"@en ;
   rdfs:seeAlso <http://www.w3.org/ns/odrl/2/core> ;
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
 
 trsp:rsl
   a skos:Concept ;
   skos:prefLabel "RSL"@en ;
   rdfs:seeAlso <http://www.w3.org/ns/odrl/2/core> ;
   skos:definition "Really Simple Licencing"@en ;
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
 
 trsp:openrel
   a skos:Concept ;
   skos:prefLabel "OpenREL"@en ;
   skos:definition "Open Rights Encoding Language"@en ;
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
 
 trsp:rightsstatementsorg
   a skos:Concept ;
   skos:prefLabel "Rightsstatements.org"@en ;
   skos:definition "Rights Statement Definitions"@en ;  
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
 
 trsp:idsc
   a skos:Concept ;
   skos:prefLabel "IDSC"@en ;
   skos:definition "International Data Spaces Core (Vocabulary)"@en ;
   rdfs:seeAlso <https://w3id.org/idsa/code/> ;
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
 
 trsp:dpv
   a skos:Concept ;
   skos:prefLabel "DPV"@en ;
   skos:definition "Data Privacy Vocabulary"@en ;
   rdfs:seeAlso <https://w3id.org/dpv> ;
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
 
 trsp:duo
   a skos:Concept ;
   skos:prefLabel "DUO"@en ;
   skos:definition "Data Use Ontology"@en ;
   rdfs:seeAlso <http://purl.obolibrary.org/obo/duo.owl> ;
-  skos:inScheme trsp:rights-encoding-type-scheme .
+  skos:inScheme trsp:typeRightsEncoding .
