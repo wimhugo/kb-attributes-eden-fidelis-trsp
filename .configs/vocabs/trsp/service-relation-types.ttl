@@ -14,7 +14,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-trsp:service-relation-scheme a skos:ConceptScheme ;
+trsp:typeServiceRelation a skos:ConceptScheme ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     dct:contributor <https://orcid.org/0000-0003-1106-8441>;
@@ -31,18 +31,18 @@ trsp:offeredByRepository a skos:Concept ;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     skos:prefLabel "Service offered by repository"@en ;
     skos:definition "Service is offered by a repository to users or clients, for example an OAI-PMH endpoint or a file metadata service."@en ;
-    skos:inScheme trsp:service-relation-scheme .
+    skos:inScheme trsp:typeServiceRelation .
 
 trsp:aggregatedIndexedBy a skos:Concept ;
     dct:created "2026-08-20T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     skos:prefLabel "Aggregation and Indexing"@en ;
     skos:definition "Services that harvest, aggregate, and/ or index the repository or service."@en ;
-    skos:inScheme trsp:service-relation-scheme .
+    skos:inScheme trsp:typeServiceRelation .
 
 trsp:usedByRepository a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     skos:prefLabel "Service used by repository"@en ;
-    skos:definition "An external Service is used by a repository to assist its workflows or users, for example a file conversion or metadata crosswalks service"@en ;
-    skos:inScheme trsp:service-relation-scheme .
+    skos:definition "An external service is used by a repository to assist its workflows or users, for example an external PID, file conversion, or metadata crosswalks service."@en ;
+    skos:inScheme trsp:typeServiceRelation .
