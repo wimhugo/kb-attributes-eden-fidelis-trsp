@@ -8,7 +8,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-trsp:relation-type-scheme a skos:ConceptScheme;
+trsp:typeRepoRelation a skos:ConceptScheme;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
@@ -25,7 +25,7 @@ trsp:relationTypeAssertion a skos:Concept, trsp:ProfileType ;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     skos:prefLabel "Assertion Type"@en ;
     dct:description "The relation asserts a value/ measurement for a property or a relationship to a profile"@en;
-    skos:inScheme trsp:relation-type-scheme .
+    skos:inScheme trsp:typeRepoRelation .
 
 trsp:relationTypeAnnotation a skos:Concept, trsp:ProfileType ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
