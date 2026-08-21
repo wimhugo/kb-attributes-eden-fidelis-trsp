@@ -14,7 +14,7 @@
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-trsp:profile-aggregation-type-scheme a skos:ConceptScheme ;
+trsp:typeAggregation a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
@@ -26,128 +26,141 @@ trsp:profile-aggregation-type-scheme a skos:ConceptScheme ;
   owl:versionInfo "0.0.1"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
+trsp:aggregationEquals a skos:Concept ;
+    dct:created "2026-08-21T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:inScheme trsp:typeAggregation ;
+    skos:prefLabel "Equals"@en ;
+    skos:definition "No aggregation, identity."@en .
 
-trsp:aggregationSum a skos:Concept, trsp:AggregationType ;
+trsp:aggregationSum a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Sum"@en ;
     skos:definition "Add the return array values together."@en .
 
-trsp:aggregationCount a skos:Concept, trsp:AggregationType ;
+trsp:aggregationCount a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Count"@en ;
     skos:definition "Count of elements in the return array."@en .
 
-trsp:aggregationMax a skos:Concept, trsp:AggregationType ;
+trsp:aggregationMax a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Maximum"@en ;
-    skos:definition "Maximum value of elements in the return array."@en .
+    skos:definition "Maximum value of the elements in the return array."@en .
 
-trsp:aggregationMin a skos:Concept, trsp:AggregationType ;
+trsp:aggregationMin a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Minimum"@en ;
-    skos:definition "Minimum value of elements in the return array."@en .
+    skos:definition "Minimum value of the elements in the return array."@en .
 
-trsp:aggregationAve a skos:Concept, trsp:AggregationType ;
+trsp:aggregationAve a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Average"@en ;
     skos:definition "Average of the return array values."@en .
 
-trsp:aggregationFirst a skos:Concept, trsp:AggregationType ;
+trsp:aggregationMedian a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
+    skos:prefLabel "Median"@en ;
+    skos:definition "Median of the return array values."@en .
+
+trsp:aggregationFirst a skos:Concept ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "First"@en ;
     skos:definition "First element in the return array (ordered ascending)."@en .
 
-trsp:aggregationLast a skos:Concept, trsp:AggregationType ;
+trsp:aggregationLast a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Last"@en ;
     skos:definition "Last element in the return array (ordered ascending)."@en .
 
-trsp:aggregationCoverage a skos:Concept, trsp:AggregationType ;
+trsp:aggregationCoverage a skos:Concept ;
     dct:created "2026-06-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Coverage"@en ;
-    skos:definition "First and last element in the return array (ordered ascending), or a bounding box of values in a 2 or 3-coordinate space."@en ;
+    skos:definition "Range (Min or Max), first and last element in the return array (ordered ascending), or a bounding box of values in a 2 or 3-coordinate space."@en ;
     skos:note "In the case of an ordered list of issue dates associated with a catalogue record, the value for the catalogue is the coverage (range) of first and last issue dates. It can be used to infer the start date of the resource (smallest date value), or the last update to the resource." .
 
-trsp:aggregationLast a skos:Concept, trsp:AggregationType ;
+trsp:aggregationLast a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Last"@en ;
     skos:definition "Last element in the return array (ordered ascending)."@en .
 
-trsp:aggregationMedian a skos:Concept, trsp:AggregationType ;
+trsp:aggregationMedian a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Median"@en ;
     skos:definition "Median of elements in the return array (ordered ascending)."@en .
 
-trsp:aggregationList a skos:Concept, trsp:AggregationType ;
+trsp:aggregationList a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "List"@en ;
     skos:definition "A delimited list of unique elements in the return array (ordered ascending)."@en .
 
-trsp:aggregationUnion a skos:Concept, trsp:AggregationType ;
+trsp:aggregationUnion a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Union"@en ;
     skos:definition "A range or coverage spanning the elements in the return array (ordered ascending)."@en .
 
-trsp:aggregationNER a skos:Concept, trsp:AggregationType ;
+trsp:aggregationNER a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Named Entity Recognition"@en ;
     skos:definition "Perform matching of array elements or value to a controlled vocabulary"@en .
 
-trsp:aggregationExists a skos:Concept, trsp:AggregationType ;
+trsp:aggregationExists a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Exists"@en ;
     skos:definition "True if any value or array is returned"@en .
 
-trsp:aggregationInherit a skos:Concept, trsp:AggregationType ;
+trsp:aggregationInherit a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Inherit"@en ;
     skos:definition "The value returned is assigned directly"@en .
 
-trsp:aggregationCategoryCount a skos:Concept, trsp:AggregationType ;
+trsp:aggregationCategoryCount a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Category Count"@en ;
     skos:definition "Return a count of unique elements in the array"@en .
 
-trsp:aggregationMap a skos:Concept, trsp:AggregationType ;
+trsp:aggregationMap a skos:Concept ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Map"@en ;
     skos:definition "Map elements or ranges in the source array to a target array"@en .
 
-trsp:aggregationMatch a skos:Concept, trsp:AggregationType ;
-    skos:inScheme trsp:profile-aggregation-type-scheme ;
+trsp:aggregationMatch a skos:Concept ;
+    skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Matches Benchmark"@en ;
     skos:definition "Exactly one value in the return array is selected if it matches a benchmark ."@en .
