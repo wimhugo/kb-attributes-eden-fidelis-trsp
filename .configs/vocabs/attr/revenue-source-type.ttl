@@ -8,7 +8,7 @@
 @prefix re3data: <https://schema.re3data.org/4-0#> .
 @prefix fair: <https://w3id.org/fair/principles/terms/> .
 
-trsp:revenue-method-type-scheme
+trsp:typeRevenueSource
   a skos:ConceptScheme ;
   skos:prefLabel "Revenue Source Type"@en ;
   dct:title "Revenue Source Type"@en ;
