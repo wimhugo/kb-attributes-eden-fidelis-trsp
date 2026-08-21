@@ -1,0 +1,56 @@
+@prefix trsp:  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Contact assertion
+#################################################################
+
+trsp:Contact
+    a owl:Class ;
+    rdfs:label "Contact"@en ;
+    rdfs:comment """
+        A contact relationship applicable to a repository,
+        service, or other resource.
+        """@en 
+  .
+
+### Move to 'trsp:Property'
+trsp:hasContact
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Profile
+    rdfs:range trsp:Contact ;
+    rdfs:label "has contact"@en 
+.
+
+trsp:contactRole
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Contact ;
+    rdfs:range skos:Concept ;
+    rdfs:label "contact role"@en 
+  .
+
+trsp:contactEntity
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Contact ;
+    rdfs:label "contact entity"@en ;
+    rdfs:comment """
+        A structured person, organisation, group, or other
+        contact entity, preferably represented using vCard.
+        """@en
+  .
+
+trsp:contactText
+    a owl:DatatypeProperty ;
+    rdfs:domain trsp:Contact ;
+    rdfs:range xsd:string ;
+    rdfs:label "contact text"@en ;
+    rdfs:comment """
+        Unstructured contact information used when a structured
+        contact resource is unavailable.
+        """@en
+    .
