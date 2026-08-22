@@ -5,7 +5,7 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-trsp:scheme a skos:ConceptScheme ;
+trsp:standardsRegistry a skos:ConceptScheme ;
     skos:prefLabel "RDMI Standards Registry — Starter Exemplar"@en ;
     dct:description "Curated placeholder registry for unambiguous references to web, repository, research-data, preservation, security and interoperability standards and specifications."@en .
 
@@ -23,7 +23,7 @@ trsp:standardFamily a rdf:Property .
 trsp:canonicalReferenceQuality a rdf:Property .
 
 trsp:w3c-rdf11-concepts a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "RDF 1.1 Concepts and Abstract Syntax"@en ;
     skos:altLabel "RDF 1.1"@en ;
     dct:identifier "RDF 1.1 Concepts" ;
@@ -41,7 +41,7 @@ trsp:w3c-rdf11-concepts a skos:Concept ;
     skos:note "Core RDF data model."@en .
 
 trsp:w3c-rdf11-turtle a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "RDF 1.1 Turtle"@en ;
     skos:altLabel "Turtle 1.1"@en ;
     dct:identifier "RDF 1.1 Turtle" ;
@@ -59,7 +59,7 @@ trsp:w3c-rdf11-turtle a skos:Concept ;
     skos:note "Turtle RDF serialization."@en .
 
 trsp:w3c-rdf-schema11 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "RDF Schema 1.1"@en ;
     skos:altLabel "RDFS 1.1"@en ;
     dct:identifier "RDF Schema 1.1" ;
@@ -77,7 +77,7 @@ trsp:w3c-rdf-schema11 a skos:Concept ;
     skos:note "RDF vocabulary description language."@en .
 
 trsp:w3c-owl2-overview a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "OWL 2 Web Ontology Language Document Overview"@en ;
     skos:altLabel "OWL 2"@en ;
     dct:identifier "OWL 2 Overview" ;
@@ -95,7 +95,7 @@ trsp:w3c-owl2-overview a skos:Concept ;
     skos:note "Ontology language family entry point."@en .
 
 trsp:w3c-skos-reference a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "SKOS Simple Knowledge Organization System Reference"@en ;
     skos:altLabel "SKOS"@en ;
     dct:identifier "SKOS Reference" ;
@@ -113,7 +113,7 @@ trsp:w3c-skos-reference a skos:Concept ;
     skos:note "Core SKOS specification."@en .
 
 trsp:w3c-sparql11-query a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "SPARQL 1.1 Query Language"@en ;
     skos:altLabel "SPARQL 1.1 Query"@en ;
     dct:identifier "SPARQL 1.1 Query Language" ;
@@ -131,7 +131,7 @@ trsp:w3c-sparql11-query a skos:Concept ;
     skos:note "RDF graph query language."@en .
 
 trsp:w3c-sparql11-protocol a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "SPARQL 1.1 Protocol"@en ;
     skos:altLabel "SPARQL 1.1 Protocol"@en ;
     dct:identifier "SPARQL 1.1 Protocol" ;
@@ -149,7 +149,7 @@ trsp:w3c-sparql11-protocol a skos:Concept ;
     skos:note "Protocol for SPARQL query/update over HTTP."@en .
 
 trsp:w3c-json-ld11 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "JSON-LD 1.1"@en ;
     skos:altLabel "JSON-LD 1.1"@en ;
     dct:identifier "JSON-LD 1.1" ;
@@ -167,7 +167,7 @@ trsp:w3c-json-ld11 a skos:Concept ;
     skos:note "JSON-based Linked Data syntax."@en .
 
 trsp:w3c-shacl a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Shapes Constraint Language (SHACL)"@en ;
     skos:altLabel "SHACL"@en ;
     dct:identifier "SHACL" ;
@@ -185,7 +185,7 @@ trsp:w3c-shacl a skos:Concept ;
     skos:note "RDF graph validation language."@en .
 
 trsp:w3c-prov-o a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "PROV-O: The PROV Ontology"@en ;
     skos:altLabel "PROV-O"@en ;
     dct:identifier "PROV-O" ;
@@ -203,7 +203,7 @@ trsp:w3c-prov-o a skos:Concept ;
     skos:note "OWL ontology for provenance."@en .
 
 trsp:w3c-dcat3 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Data Catalog Vocabulary (DCAT) - Version 3"@en ;
     skos:altLabel "DCAT 3"@en ;
     dct:identifier "DCAT 3" ;
@@ -221,7 +221,7 @@ trsp:w3c-dcat3 a skos:Concept ;
     skos:note "Current W3C DCAT recommendation."@en .
 
 trsp:w3c-dqv a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Data on the Web Best Practices: Data Quality Vocabulary"@en ;
     skos:altLabel "DQV"@en ;
     dct:identifier "DQV" ;
@@ -239,7 +239,7 @@ trsp:w3c-dqv a skos:Concept ;
     skos:note "Quality vocabulary; not a W3C Recommendation."@en .
 
 trsp:w3c-odrl22 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "ODRL Information Model 2.2"@en ;
     skos:altLabel "ODRL 2.2"@en ;
     dct:identifier "ODRL Information Model 2.2" ;
@@ -257,7 +257,7 @@ trsp:w3c-odrl22 a skos:Concept ;
     skos:note "Rights expression information model."@en .
 
 trsp:w3c-vcard-rdf a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "vCard Ontology - for describing People and Organizations"@en ;
     skos:altLabel "vCard RDF"@en ;
     dct:identifier "vCard Ontology" ;
@@ -275,7 +275,7 @@ trsp:w3c-vcard-rdf a skos:Concept ;
     skos:note "RDF/OWL representation of vCard."@en .
 
 trsp:w3c-dx-prof a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "The Profiles Vocabulary"@en ;
     skos:altLabel "PROF"@en ;
     dct:identifier "Profiles Vocabulary" ;
@@ -293,7 +293,7 @@ trsp:w3c-dx-prof a skos:Concept ;
     skos:note "Vocabulary for describing profiles of standards."@en .
 
 trsp:w3c-activitypub a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "ActivityPub"@en ;
     skos:altLabel "ActivityPub"@en ;
     dct:identifier "ActivityPub" ;
@@ -311,7 +311,7 @@ trsp:w3c-activitypub a skos:Concept ;
     skos:note "Federated social-networking protocol."@en .
 
 trsp:w3c-web-annotation a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Web Annotation Data Model"@en ;
     skos:altLabel "Web Annotation"@en ;
     dct:identifier "Web Annotation Data Model" ;
@@ -329,7 +329,7 @@ trsp:w3c-web-annotation a skos:Concept ;
     skos:note "RDF-oriented annotation model."@en .
 
 trsp:dpv-23 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Data Privacy Vocabulary 2.3"@en ;
     skos:altLabel "DPV 2.3"@en ;
     dct:identifier "DPV 2.3" ;
@@ -347,7 +347,7 @@ trsp:dpv-23 a skos:Concept ;
     skos:note "Current DPV release series; Community Group specification."@en .
 
 trsp:rfc3986 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Uniform Resource Identifier (URI): Generic Syntax"@en ;
     skos:altLabel "URI Generic Syntax"@en ;
     dct:identifier "RFC 3986" ;
@@ -365,7 +365,7 @@ trsp:rfc3986 a skos:Concept ;
     skos:note "Canonical URI syntax reference."@en .
 
 trsp:rfc9110 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "HTTP Semantics"@en ;
     skos:altLabel "HTTP Semantics"@en ;
     dct:identifier "RFC 9110" ;
@@ -383,7 +383,7 @@ trsp:rfc9110 a skos:Concept ;
     skos:note "Semantics shared across HTTP versions."@en .
 
 trsp:rfc9112 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "HTTP/1.1"@en ;
     skos:altLabel "HTTP/1.1"@en ;
     dct:identifier "RFC 9112" ;
@@ -401,7 +401,7 @@ trsp:rfc9112 a skos:Concept ;
     skos:note "HTTP/1.1 message syntax and routing."@en .
 
 trsp:rfc9113 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "HTTP/2"@en ;
     skos:altLabel "HTTP/2"@en ;
     dct:identifier "RFC 9113" ;
@@ -419,7 +419,7 @@ trsp:rfc9113 a skos:Concept ;
     skos:note "HTTP/2 protocol."@en .
 
 trsp:rfc9114 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "HTTP/3"@en ;
     skos:altLabel "HTTP/3"@en ;
     dct:identifier "RFC 9114" ;
@@ -437,7 +437,7 @@ trsp:rfc9114 a skos:Concept ;
     skos:note "HTTP over QUIC."@en .
 
 trsp:rfc8446 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "The Transport Layer Security (TLS) Protocol Version 1.3"@en ;
     skos:altLabel "TLS 1.3"@en ;
     dct:identifier "RFC 8446" ;
@@ -455,7 +455,7 @@ trsp:rfc8446 a skos:Concept ;
     skos:note "TLS 1.3."@en .
 
 trsp:rfc6749 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "The OAuth 2.0 Authorization Framework"@en ;
     skos:altLabel "OAuth 2.0"@en ;
     dct:identifier "RFC 6749" ;
@@ -473,7 +473,7 @@ trsp:rfc6749 a skos:Concept ;
     skos:note "Authorization framework."@en .
 
 trsp:rfc6750 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "The OAuth 2.0 Authorization Framework: Bearer Token Usage"@en ;
     skos:altLabel "OAuth 2 Bearer"@en ;
     dct:identifier "RFC 6750" ;
@@ -491,7 +491,7 @@ trsp:rfc6750 a skos:Concept ;
     skos:note "Bearer-token usage."@en .
 
 trsp:rfc7519 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "JSON Web Token (JWT)"@en ;
     skos:altLabel "JWT"@en ;
     dct:identifier "RFC 7519" ;
@@ -509,7 +509,7 @@ trsp:rfc7519 a skos:Concept ;
     skos:note "Compact claims representation."@en .
 
 trsp:rfc8288 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Web Linking"@en ;
     skos:altLabel "Web Linking"@en ;
     dct:identifier "RFC 8288" ;
@@ -527,7 +527,7 @@ trsp:rfc8288 a skos:Concept ;
     skos:note "Defines Web Links."@en .
 
 trsp:rfc9264 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Linkset: Media Types and a Link Relation Type for Link Sets"@en ;
     skos:altLabel "Linkset"@en ;
     dct:identifier "RFC 9264" ;
@@ -545,7 +545,7 @@ trsp:rfc9264 a skos:Concept ;
     skos:note "Machine-readable link sets."@en .
 
 trsp:rfc4918 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "HTTP Extensions for Web Distributed Authoring and Versioning (WebDAV)"@en ;
     skos:altLabel "WebDAV"@en ;
     dct:identifier "RFC 4918" ;
@@ -563,7 +563,7 @@ trsp:rfc4918 a skos:Concept ;
     skos:note "Distributed authoring/versioning over HTTP."@en .
 
 trsp:rfc8493 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "The BagIt File Packaging Format (V1.0)"@en ;
     skos:altLabel "BagIt"@en ;
     dct:identifier "RFC 8493" ;
@@ -581,7 +581,7 @@ trsp:rfc8493 a skos:Concept ;
     skos:note "File packaging format."@en .
 
 trsp:rfc2119 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Key words for use in RFCs to Indicate Requirement Levels"@en ;
     skos:altLabel "RFC 2119 Keywords"@en ;
     dct:identifier "RFC 2119" ;
@@ -599,7 +599,7 @@ trsp:rfc2119 a skos:Concept ;
     skos:note "MUST/SHOULD/MAY terminology."@en .
 
 trsp:rfc8174 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Ambiguity of Uppercase vs Lowercase in RFC 2119 Key Words"@en ;
     skos:altLabel "RFC 8174"@en ;
     dct:identifier "RFC 8174" ;
@@ -617,7 +617,7 @@ trsp:rfc8174 a skos:Concept ;
     skos:note "Updates RFC 2119."@en .
 
 trsp:iana-media-types a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Media Types Registry"@en ;
     skos:altLabel "IANA Media Types"@en ;
     dct:identifier "Media Types" ;
@@ -634,7 +634,7 @@ trsp:iana-media-types a skos:Concept ;
     skos:note "Registry rather than a standard."@en .
 
 trsp:iana-link-relations a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Link Relations Registry"@en ;
     skos:altLabel "IANA Link Relations"@en ;
     dct:identifier "Link Relations" ;
@@ -651,7 +651,7 @@ trsp:iana-link-relations a skos:Concept ;
     skos:note "Authoritative link relation registry."@en .
 
 trsp:iana-uri-schemes a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Uniform Resource Identifier (URI) Schemes Registry"@en ;
     skos:altLabel "IANA URI Schemes"@en ;
     dct:identifier "URI Schemes" ;
@@ -668,7 +668,7 @@ trsp:iana-uri-schemes a skos:Concept ;
     skos:note "Authoritative URI scheme registry."@en .
 
 trsp:iso-14721-2025 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Space data and information transfer systems — Open archival information system (OAIS) — Reference model"@en ;
     skos:altLabel "ISO 14721:2025"@en ;
     dct:identifier "ISO 14721:2025" ;
@@ -686,7 +686,7 @@ trsp:iso-14721-2025 a skos:Concept ;
     skos:note "Current OAIS edition."@en .
 
 trsp:iso-16363-2025 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Space data and information transfer systems — Audit and certification of trustworthy digital repositories"@en ;
     skos:altLabel "ISO 16363:2025"@en ;
     dct:identifier "ISO 16363:2025" ;
@@ -704,7 +704,7 @@ trsp:iso-16363-2025 a skos:Concept ;
     skos:note "Current TDR audit standard."@en .
 
 trsp:iso-16919-2025 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Space data and information transfer systems — Requirements for bodies providing audit and certification of candidate trustworthy digital repositories"@en ;
     skos:altLabel "ISO 16919:2025"@en ;
     dct:identifier "ISO 16919:2025" ;
@@ -722,7 +722,7 @@ trsp:iso-16919-2025 a skos:Concept ;
     skos:note "TDR certification-body requirements."@en .
 
 trsp:ccsds-650-0-m-3 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Reference Model for an Open Archival Information System (OAIS)"@en ;
     skos:altLabel "CCSDS 650.0-M-3"@en ;
     dct:identifier "CCSDS 650.0-M-3" ;
@@ -740,7 +740,7 @@ trsp:ccsds-650-0-m-3 a skos:Concept ;
     skos:note "Open CCSDS OAIS source."@en .
 
 trsp:ccsds-652-0-m-2 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Audit and Certification of Trustworthy Digital Repositories"@en ;
     skos:altLabel "CCSDS 652.0-M-2"@en ;
     dct:identifier "CCSDS 652.0-M-2" ;
@@ -758,7 +758,7 @@ trsp:ccsds-652-0-m-2 a skos:Concept ;
     skos:note "Open counterpart to ISO 16363:2025."@en .
 
 trsp:iso-27001-2022 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Information security, cybersecurity and privacy protection — Information security management systems — Requirements"@en ;
     skos:altLabel "ISO/IEC 27001:2022"@en ;
     dct:identifier "ISO/IEC 27001:2022" ;
@@ -776,7 +776,7 @@ trsp:iso-27001-2022 a skos:Concept ;
     skos:note "ISMS requirements."@en .
 
 trsp:iso-27002-2022 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Information security, cybersecurity and privacy protection — Information security controls"@en ;
     skos:altLabel "ISO/IEC 27002:2022"@en ;
     dct:identifier "ISO/IEC 27002:2022" ;
@@ -794,7 +794,7 @@ trsp:iso-27002-2022 a skos:Concept ;
     skos:note "Information-security controls guidance."@en .
 
 trsp:iso-27005-2022 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Information security, cybersecurity and privacy protection — Guidance on managing information security risks"@en ;
     skos:altLabel "ISO/IEC 27005:2022"@en ;
     dct:identifier "ISO/IEC 27005:2022" ;
@@ -812,7 +812,7 @@ trsp:iso-27005-2022 a skos:Concept ;
     skos:note "Risk-management guidance."@en .
 
 trsp:iso-27701-2025 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Information security, cybersecurity and privacy protection — Privacy information management systems — Requirements and guidance"@en ;
     skos:altLabel "ISO/IEC 27701:2025"@en ;
     dct:identifier "ISO/IEC 27701:2025" ;
@@ -830,7 +830,7 @@ trsp:iso-27701-2025 a skos:Concept ;
     skos:note "Privacy information management."@en .
 
 trsp:iso-20000-1-2018 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Information technology — Service management — Part 1: Service management system requirements"@en ;
     skos:altLabel "ISO/IEC 20000-1:2018"@en ;
     dct:identifier "ISO/IEC 20000-1:2018" ;
@@ -848,7 +848,7 @@ trsp:iso-20000-1-2018 a skos:Concept ;
     skos:note "Service management requirements."@en .
 
 trsp:ogc-wms-130 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Web Map Service"@en ;
     skos:altLabel "WMS 1.3.0"@en ;
     dct:identifier "WMS 1.3.0" ;
@@ -866,7 +866,7 @@ trsp:ogc-wms-130 a skos:Concept ;
     skos:note "Map-image web service."@en .
 
 trsp:ogc-wfs-200 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Web Feature Service"@en ;
     skos:altLabel "WFS 2.0"@en ;
     dct:identifier "WFS 2.0" ;
@@ -884,7 +884,7 @@ trsp:ogc-wfs-200 a skos:Concept ;
     skos:note "Feature-query/transaction service."@en .
 
 trsp:ogc-csw-202 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Catalogue Service for the Web"@en ;
     skos:altLabel "CSW 2.0.2"@en ;
     dct:identifier "CSW 2.0.2" ;
@@ -902,7 +902,7 @@ trsp:ogc-csw-202 a skos:Concept ;
     skos:note "Legacy catalogue/discovery standard."@en .
 
 trsp:ogc-geosparql-11 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "OGC GeoSPARQL — A Geographic Query Language for RDF Data"@en ;
     skos:altLabel "GeoSPARQL 1.1"@en ;
     dct:identifier "OGC GeoSPARQL 1.1" ;
@@ -920,7 +920,7 @@ trsp:ogc-geosparql-11 a skos:Concept ;
     skos:note "Geospatial SPARQL/RDF extension."@en .
 
 trsp:ogc-api-common-1 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "OGC API — Common — Part 1: Core"@en ;
     skos:altLabel "OGC API Common 1"@en ;
     dct:identifier "OGC API Common Part 1" ;
@@ -938,7 +938,7 @@ trsp:ogc-api-common-1 a skos:Concept ;
     skos:note "Shared API building blocks."@en .
 
 trsp:ogc-api-features-1 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "OGC API — Features — Part 1: Core"@en ;
     skos:altLabel "OGC API Features 1"@en ;
     dct:identifier "OGC API Features Part 1" ;
@@ -956,7 +956,7 @@ trsp:ogc-api-features-1 a skos:Concept ;
     skos:note "Feature-access API."@en .
 
 trsp:ogc-api-records-1 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "OGC API — Records — Part 1: Core"@en ;
     skos:altLabel "OGC API Records 1"@en ;
     dct:identifier "OGC 20-004r1" ;
@@ -974,7 +974,7 @@ trsp:ogc-api-records-1 a skos:Concept ;
     skos:note "Modern catalogue-record API."@en .
 
 trsp:ogc-api-maps-1 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "OGC API — Maps — Part 1: Core"@en ;
     skos:altLabel "OGC API Maps 1"@en ;
     dct:identifier "OGC API Maps Part 1" ;
@@ -992,7 +992,7 @@ trsp:ogc-api-maps-1 a skos:Concept ;
     skos:note "Map rendering API."@en .
 
 trsp:oai-pmh-20 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Open Archives Initiative Protocol for Metadata Harvesting"@en ;
     skos:altLabel "OAI-PMH 2.0"@en ;
     dct:identifier "OAI-PMH 2.0" ;
@@ -1010,7 +1010,7 @@ trsp:oai-pmh-20 a skos:Concept ;
     skos:note "Repository metadata harvesting."@en .
 
 trsp:resourcesync-2017 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "ResourceSync Framework Specification"@en ;
     skos:altLabel "ResourceSync"@en ;
     dct:identifier "ANSI/NISO Z39.99-2017" ;
@@ -1028,7 +1028,7 @@ trsp:resourcesync-2017 a skos:Concept ;
     skos:note "Web resource synchronization."@en .
 
 trsp:datacite-schema-46 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "DataCite Metadata Schema"@en ;
     skos:altLabel "DataCite 4.6"@en ;
     dct:identifier "DataCite Metadata Schema 4.6" ;
@@ -1046,7 +1046,7 @@ trsp:datacite-schema-46 a skos:Concept ;
     skos:note "DOI metadata schema."@en .
 
 trsp:dcat-ap-301 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "DCAT Application Profile for data portals in Europe"@en ;
     skos:altLabel "DCAT-AP 3.0.1"@en ;
     dct:identifier "DCAT-AP 3.0.1" ;
@@ -1064,7 +1064,7 @@ trsp:dcat-ap-301 a skos:Concept ;
     skos:note "European application profile of DCAT."@en .
 
 trsp:premis-30 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "PREMIS Data Dictionary for Preservation Metadata"@en ;
     skos:altLabel "PREMIS 3.0"@en ;
     dct:identifier "PREMIS 3.0" ;
@@ -1082,7 +1082,7 @@ trsp:premis-30 a skos:Concept ;
     skos:note "Preservation metadata dictionary."@en .
 
 trsp:premis-owl3 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "PREMIS OWL Ontology"@en ;
     skos:altLabel "PREMIS OWL 3"@en ;
     dct:identifier "PREMIS OWL 3" ;
@@ -1100,7 +1100,7 @@ trsp:premis-owl3 a skos:Concept ;
     skos:note "RDF/OWL representation of PREMIS 3."@en .
 
 trsp:mets-1121 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Metadata Encoding and Transmission Standard Schema"@en ;
     skos:altLabel "METS 1.12.1"@en ;
     dct:identifier "METS 1.12.1" ;
@@ -1118,7 +1118,7 @@ trsp:mets-1121 a skos:Concept ;
     skos:note "XML packaging/structural metadata."@en .
 
 trsp:ro-crate-13 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "RO-Crate Specification"@en ;
     skos:altLabel "RO-Crate 1.3"@en ;
     dct:identifier "RO-Crate 1.3" ;
@@ -1136,7 +1136,7 @@ trsp:ro-crate-13 a skos:Concept ;
     skos:note "JSON-LD research-object packaging."@en .
 
 trsp:sword-30 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "SWORD 3.0 Specification"@en ;
     skos:altLabel "SWORD 3.0"@en ;
     dct:identifier "SWORD 3.0" ;
@@ -1154,7 +1154,7 @@ trsp:sword-30 a skos:Concept ;
     skos:note "Repository deposit protocol."@en .
 
 trsp:signposting-fair a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "FAIR Signposting Profile"@en ;
     skos:altLabel "FAIR Signposting"@en ;
     dct:identifier "FAIR Signposting Profile" ;
@@ -1171,7 +1171,7 @@ trsp:signposting-fair a skos:Concept ;
     skos:note "Typed-link profile for scholarly objects."@en .
 
 trsp:signposting-fairicat a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "FAIR Interoperability Catalog (FAIRiCat)"@en ;
     skos:altLabel "FAIRiCat"@en ;
     dct:identifier "FAIRiCat" ;
@@ -1188,7 +1188,7 @@ trsp:signposting-fairicat a skos:Concept ;
     skos:note "Advertises interoperability affordances."@en .
 
 trsp:fitsm-1-30 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "FitSM-1: Requirements"@en ;
     skos:altLabel "FitSM-1 3.0"@en ;
     dct:identifier "FitSM-1 3.0" ;
@@ -1206,7 +1206,7 @@ trsp:fitsm-1-30 a skos:Concept ;
     skos:note "Lightweight service-management requirements."@en .
 
 trsp:nist-sp800-53-r5 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Security and Privacy Controls for Information Systems and Organizations"@en ;
     skos:altLabel "NIST SP 800-53 Rev. 5"@en ;
     dct:identifier "NIST SP 800-53 Rev. 5" ;
@@ -1224,7 +1224,7 @@ trsp:nist-sp800-53-r5 a skos:Concept ;
     skos:note "Control catalogue."@en .
 
 trsp:nist-sp800-53a-r5 a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Assessing Security and Privacy Controls in Information Systems and Organizations"@en ;
     skos:altLabel "NIST SP 800-53A Rev. 5"@en ;
     dct:identifier "NIST SP 800-53A Rev. 5" ;
@@ -1242,7 +1242,7 @@ trsp:nist-sp800-53a-r5 a skos:Concept ;
     skos:note "Assessment procedures."@en .
 
 trsp:nist-oscal a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "Open Security Controls Assessment Language"@en ;
     skos:altLabel "OSCAL"@en ;
     dct:identifier "OSCAL" ;
@@ -1260,7 +1260,7 @@ trsp:nist-oscal a skos:Concept ;
     skos:note "Machine-readable controls/assessment models."@en .
 
 trsp:rda-fdmm a skos:Concept ;
-    skos:inScheme trsp:scheme ;
+    skos:inScheme trsp:standardsRegistry ;
     skos:prefLabel "FAIR Data Maturity Model: specification and guidelines"@en ;
     skos:altLabel "RDA FAIR Data Maturity Model"@en ;
     dct:identifier "FAIR Data Maturity Model" ;
