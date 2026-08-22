@@ -40,19 +40,19 @@ trsp:typeAPI
   skos:prefLabel "Endpoint Types"@en ;
   skos:inScheme trsp:checklistAPI .
 
-trsp:rest
+trsp:typeRestAPI
   a skos:Concept ;
   skos:prefLabel "REST API"@en ;
   skos:broader trsp:typeAPI ;
   skos:inScheme trsp:checklistAPI .
 
-trsp:sparql
+trsp:typeSparqlAPI
   a skos:Concept ;
   skos:prefLabel "SPARQL Endpoint"@en ;
   skos:broader trsp:typeAPI ;
   skos:inScheme trsp:checklistAPI .
 
-trsp:graphql
+trsp:typeGraphqlAPI
   a skos:Concept ;
   skos:prefLabel "GraphQL Endpoint"@en ;
   skos:broader trsp:typeAPI ;
