@@ -40,6 +40,12 @@ trsp:typeAPI
   skos:prefLabel "Endpoint Types"@en ;
   skos:inScheme trsp:checklistAPI .
 
+trsp:typeNoAPI
+  a skos:Concept ;
+  skos:prefLabel "No API"@en ;
+  skos:broader trsp:typeAPI ;
+  skos:inScheme trsp:checklistAPI .
+
 trsp:typeRestAPI
   a skos:Concept ;
   skos:prefLabel "REST API"@en ;
