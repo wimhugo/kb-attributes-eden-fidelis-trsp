@@ -13,14 +13,14 @@ trsp:standardsRegistry a skos:ConceptScheme ;
 
 trsp:Standard a rdfs:Class ;
     rdfs:label "Standard"@en .
-trsp:authority a rdf:Property .
-trsp:identifierScheme a rdf:Property .
-trsp:version a rdf:Property .
-trsp:resourceType a rdf:Property .
-trsp:status a rdf:Property .
-trsp:canonicalURL a rdf:Property .
-trsp:standardFamily a rdf:Property .
-trsp:canonicalReferenceQuality a rdf:Property .
+    trsp:authority a rdf:Property .
+    trsp:identifierScheme a rdf:Property .
+    trsp:version a rdf:Property .
+    trsp:resourceType a rdf:Property .
+    trsp:status a rdf:Property .
+    trsp:canonicalURL a rdf:Property .
+    trsp:standardFamily a rdf:Property .
+    trsp:canonicalReferenceQuality a rdf:Property .
 
 trsp:w3c-rdf11-concepts a skos:Concept ;
     skos:inScheme trsp:standardsRegistry ;
