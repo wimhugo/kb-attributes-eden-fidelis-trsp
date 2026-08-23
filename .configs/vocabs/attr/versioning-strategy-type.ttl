@@ -5,7 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
-trsp:versioning-strategy-type-scheme
+trsp:typeVersioningStrategy
   a skos:ConceptScheme ;
   skos:prefLabel "Versioning Strategy Vocabulary"@en ;
   dct:title "Versioning Strategy Vocabulary"@en ;
@@ -16,19 +16,19 @@ trsp:versioning-strategy-type-scheme
 trsp:stableCitationReference
   a skos:Concept ;
   skos:prefLabel "Stable Citation/ Reference"@en ;
-  skos:inScheme trsp:versioning-strategy-type-scheme .
+  skos:inScheme trsp:typeVersioningStrategy .
 
 trsp:reproducibilityAndAuthenticity
   a skos:Concept ;
   skos:prefLabel "Reproducibility and Authenticity"@en ;
-  skos:inScheme trsp:versioning-strategy-type-scheme .
+  skos:inScheme trsp:typeVersioningStrategy .
 
 trsp:contentEvolution
   a skos:Concept ;
   skos:prefLabel "Content Evolution"@en ;
-  skos:inScheme trsp:versioning-strategy-type-scheme .
+  skos:inScheme trsp:typeVersioningStrategy .
 
 trsp:dynamicContentGrowth
   a skos:Concept ;
   skos:prefLabel "Dynamic Content Growth"@en ;
-  skos:inScheme trsp:versioning-strategy-type-scheme .
+  skos:inScheme trsp:typeVersioningStrategy .
