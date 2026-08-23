@@ -6,36 +6,122 @@
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 
-trsp:checklistPrinciples
+trsp:checklistPrinciplesDeclarations
   a skos:ConceptScheme ;
-  skos:prefLabel "Principles Vocabulary"@en ;
-  dct:title "Principles Vocabulary"@en ;
+  skos:prefLabel "Principles and Declarations Vocabulary"@en ;
+  skos:topConcept trsp:typePrinciple ,
+                  trsp:typeDeclaration ;
+  dct:title "Principles and Declarations Vocabulary"@en ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.2" .
+  dct:modified "2026-08-23"^^xsd:date ;
+  owl:versionInfo "0.3" .
 
-trsp:fair
+trsp:typePrinciple
+  a skos:Concept ;
+  skos:prefLabel "Principles"@en ;
+  skos:inScheme trsp:checklistPrinciples .
+
+trsp:typeDeclation
+  a skos:Concept ;
+  skos:prefLabel "Declarations"@en ;
+  skos:inScheme trsp:checklistPrinciples .
+
+trsp:typeFAIR
   a skos:Concept ;
   skos:prefLabel "FAIR"@en ;
-  skos:exactMatch <https://w3id.org/fair/principles/> ;
+  skos:broader trsp:typePrinciple ;
+  skos:definition "A set of principles stating that research data and associated digital research objects should be Findable, Accessible, Interoperable, and Reusable, with particular emphasis on machine-actionability and effective data stewardship."@en ;
+  dct:source <https://www.nature.com/articles/sdata201618> ;
+  skos:seeAlso <https://w3id.org/fair/principles/> ;
   skos:inScheme trsp:checklistPrinciples .
 
-trsp:trust
+trsp:typeTRUST
   a skos:Concept ;
   skos:prefLabel "TRUST"@en ;
-  skos:exactMatch <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:broader trsp:typePrinciple ;
+  skos:definition "A set of principles for trustworthy digital repositories organized around Transparency, Responsibility, User Focus, Sustainability, and Technology, providing a framework for reliable stewardship and preservation of digital research resources."@en ;
+  dct:source <https://www.nature.com/articles/s41597-020-0486-7> ;
+  skos:seeAlso <https://doi.org/10.1038/s41597-020-0486-7> ;
   skos:inScheme trsp:checklistPrinciples .
 
-trsp:care
+trsp:typeCARE
   a skos:Concept ;
   skos:prefLabel "CARE"@en ;
-  skos:exactMatch <https://doi.org/10.1038/s41597-020-0486-7>
+  skos:broader trsp:typePrinciple ;
+  skos:definition "A set of principles for the governance and stewardship of Indigenous data, emphasizing Collective Benefit, Authority to Control, Responsibility, and Ethics, and complementing data-centric principles such as FAIR by addressing people, purpose, power, and Indigenous rights and interests."@en ;
+  dct:source <https://www.gida-global.org/careprinciples> ;
   skos:inScheme trsp:checklistPrinciples .
 
-trsp:posi
+trsp:typePOSI
   a skos:Concept ;
   skos:prefLabel "POSI"@en ;
-  skos:exactMatch <https://openscholarlyinfrastructure.org/> ;
-  skos:closeMatch <https://doi.org/10.25504/FAIRsharing.b16f42> ;
+  skos:broader trsp:typePrinciple ;
+  skos:definition "A set of principles for the governance, sustainability, and long-term stewardship of open scholarly infrastructure, addressing community governance, transparent and sustainable operation, openness of software and data, preservation, interoperability, and organizational continuity."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/>
   rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.b16f42> ;
-  skos:inScheme trsp:checklistPrinciplese .
+  skos:inScheme trsp:checklistPrinciples .
+
+trsp:berlinDeclaration
+  a skos:Concept ;
+  skos:prefLabel "Berlin Declaration (Open Access)"@en ;
+  skos:broader trsp:typeDeclaration ;
+  skos:definition "A declaration promoting open access to scientific knowledge and cultural heritage and encouraging research institutions, funders, libraries, archives, and museums to support open dissemination through sustainable digital infrastructures."@en ;
+  skos:exactMatch <https://openaccess.mpg.de/Berlin-Declaration> ;
+  skos:inScheme trsp:checklistPrinciples .
+
+trsp:budapestOpenAccess
+    a skos:Concept ;
+    skos:prefLabel "Budapest Open Access Initiative"@en ;
+    skos:broader trsp:typeDeclaration ;
+    skos:definition "A declaration establishing principles and strategies for open access to peer-reviewed scholarly literature, advocating free online availability and unrestricted lawful use of research publications."@en ;
+    dct:source <https://www.budapestopenaccessinitiative.org/read/> .
+
+trsp:bethesdaStatement
+    a skos:Concept ;
+    skos:prefLabel "Bethesda Statement on Open Access Publishing"@en ;
+    skos:broader trsp:typeDeclaration ;
+    skos:definition "A statement defining open access publication and recommending actions by research institutions, funding agencies, libraries, publishers, scientists, and scholarly societies to support the transition to open access."@en ;
+    dct:source <https://legacy.earlham.edu/~peters/fos/bethesda.htm> .
+
+trsp:dora
+    a skos:Concept ;
+    skos:prefLabel "San Francisco Declaration on Research Assessment"@en ;
+    skos:broader trsp:typeDeclaration ;
+    skos:definition "A declaration promoting improved approaches to research assessment and recommending that journal-based metrics should not be used as surrogate measures of the quality of individual research outputs or researchers."@en ;
+    dct:source <https://sfdora.org/read/> .
+
+trsp:leidenManifesto
+    a skos:Concept ;
+    skos:prefLabel "Leiden Manifesto for Research Metrics"@en ;
+    skos:broader trsp:typeDeclaration ;
+    skos:definition "A set of ten principles for the responsible use of quantitative indicators in research evaluation, emphasizing expert judgement, transparency, disciplinary differences, appropriate indicators, and scrutiny of data and analytical methods."@en ;
+    dct:source <https://www.leidenmanifesto.org/> .
+
+trsp:sorbonneDeclaration
+    a skos:Concept ;
+    skos:prefLabel "Sorbonne Declaration on Research Data Rights"@en ;
+    skos:broader trsp:typeDeclaration ;
+    skos:definition "A declaration by research university networks promoting responsible sharing and reuse of research data, implementation of FAIR data practices, data management planning, long-term preservation, researcher recognition, and appropriate legal and financial frameworks for research data."@en ;
+    dct:source <https://sorbonnedatadeclaration.ent.upmc.fr/> .
+
+trsp:unescoOpenScience
+    a skos:Concept ;
+    skos:prefLabel "UNESCO Recommendation on Open Science"@en ;
+    skos:broader trsp:typeDeclaration ;
+    skos:definition "An international standard-setting instrument establishing a common definition, values, principles, and areas of action for open science, encompassing open scientific knowledge, research data, software, infrastructure, engagement, and dialogue with other knowledge systems."@en ;
+    dct:source <https://www.unesco.org/en/legal-affairs/recommendation-open-science> .
+
+trsp:barcelonaDeclaration
+    a skos:Concept ;
+    skos:prefLabel "Barcelona Declaration on Open Research Information"@en ;
+    skos:broader trsp:typeDeclaration ;
+    skos:definition "A declaration committing research-performing, research-funding, and research-evaluating organizations to make openness the default for research information, use systems supporting open research information, sustain open infrastructures, and collaborate in the transition from closed to open research information."@en ;
+    dct:source <https://barcelona-declaration.org/> .
+
+trsp:bariManifesto
+    a skos:Concept ;
+    skos:prefLabel "Bari Manifesto"@en ;
+    skos:broader trsp:typeDeclaration ;
+    skos:definition "A set of ten principles for interoperability in biodiversity research infrastructures, providing guidance for the production and management of Essential Biodiversity Variable data products and addressing data management planning, data structures, metadata, services, data quality, workflows, provenance, ontologies and vocabularies, data preservation, and accessibility."@en ;
+    dct:source <https://doi.org/10.1016/j.ecoinf.2018.11.003> .
