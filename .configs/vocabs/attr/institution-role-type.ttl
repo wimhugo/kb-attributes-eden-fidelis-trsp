@@ -63,7 +63,18 @@ trsp:certificationAuthority
   skos:prefLabel "Certification Authority"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
-trsp:statdardsAuthority
+trsp:standardsAuthority
   a skos:Concept ;
   skos:prefLabel "Standards AUuthority"@en ;
+  skos:inScheme trsp:typeInstitutionRole .
+
+trsp:researchOrganisation
+  a skos:Concept ;
+  skos:prefLabel "Research-Performing Organisation"@en ;
+  skos:inScheme trsp:typeInstitutionRole .
+
+trsp:collaborativeInfrastructure
+  a skos:Concept ;
+  skos:prefLabel "Collaborative Infrastructure"@en ;
+  skos:note "ERICs, EUDAT, OpenAIRE, EGI, Géant, ..."@en ;
   skos:inScheme trsp:typeInstitutionRole .
