@@ -51,3 +51,19 @@ trsp:infrastructureProvider
   a skos:Concept ;
   skos:prefLabel "Infrastructure Provider"@en ;
   skos:inScheme trsp:typeInstitutionRole .
+
+trsp:assessmentInstitution
+  a skos:Concept ;
+  skos:prefLabel "Assessment Provider" ;
+  skos:definition "Institutions providing assessment services"@en ;
+  skos:inScheme trsp:typeInstitutionRole .
+
+trsp:certificationAuthority
+  a skos:Concept ;
+  skos:prefLabel "Certification Authority"@en ;
+  skos:inScheme trsp:typeInstitutionRole .
+
+trsp:statdardsAuthority
+  a skos:Concept ;
+  skos:prefLabel "Standards AUuthority"@en ;
+  skos:inScheme trsp:typeInstitutionRole .
