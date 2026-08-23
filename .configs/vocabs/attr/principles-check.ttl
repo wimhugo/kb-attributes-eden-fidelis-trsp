@@ -22,7 +22,7 @@ trsp:typePrinciple
   skos:prefLabel "Principles"@en ;
   skos:inScheme trsp:checklistPrinciples .
 
-trsp:typeDeclation
+trsp:typeDeclaration
   a skos:Concept ;
   skos:prefLabel "Declarations"@en ;
   skos:inScheme trsp:checklistPrinciples .
