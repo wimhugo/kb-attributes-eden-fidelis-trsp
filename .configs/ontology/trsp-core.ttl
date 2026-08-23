@@ -10,9 +10,9 @@
 trsp:Ontology
     a owl:Ontology ;
     dct:title "TRSP Ontology"@en ;
-    dct:description "TRSP Ontology: Schema definition and constraints for Attributes, Profiles, Repositories, and Services. Used by TRSP WG, EOSC EDEN, and EOSC FIDELIS."@en ;
+    dct:description "TRSP Ontology: Schema definition, concept schemes, and constraints for Attributes, Profiles, Repositories, and Services. Used by TRSP WG, EOSC EDEN, and EOSC FIDELIS."@en ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
-    dct:modified 
+    dct:modified "2026-08-23T00:00:00+00:00"^^xsd:datetime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     dct:contributor <https://orcid.org/0000-0003-1106-8441> .
 
@@ -23,21 +23,20 @@ trsp:Ontology
 # Attribute
 trsp:Attribute a rdfs:Class ; 
     rdfs:label "Attribute"@en ;
-    rdfs:comment "Attributes describe the characteristics, actions, and features of repositories and services, and are based on an inventory of repository and service attributes gathered by the RDA TRSP WG."@en .
+  skos:definition "Attributes describe the characteristics, actions, and features of repositories and services, and are based on an inventory of repository and service attributes gathered by the RDA TRSP WG."@en .
 
 # Profile
 trsp:Profile a rdfs:Class ; 
     rdfs:label "Profile"@en ;
-    rdfs:comment "Profiles define entities that exhibit or publish attributes, and can be Repositories, Services, or other authoritative sources" .
+  skos:definition "Profiles define entities that exhibit or publish attributes, and can be Repositories, Services, or other authoritative sources" .
 
 # Repository
 trsp:Repository a rdfs:Class ; 
     rdfs:subClassOf trsp:Profile ; 
     rdfs:label "Repository"@en ;
     skos:narrowMatch dcat:Catalog;
-    skos:broader trsp:Profile ;
     skos:closeMatch dcat:DataService ;
-    rdfs:comment "A Repository is broadly defined as an archive, repository, or other collection of digital resources, and its supporting services and functionalities." .
+  skos:definition "A Repository is broadly defined as an archive, repository, or other collection of digital resources, and its supporting services and functionalities." .
 
 # Service
 trsp:Service a rdfs:Class ; 
@@ -45,26 +44,36 @@ trsp:Service a rdfs:Class ;
     rdfs:label "Service"@en ;
     skos:narrowMatch dcat:DataService ;
     skos:narrowMatch dcat:Catalog ;
-    skos:broader trsp:Profile ;
-    rdfs:comment "A Service is defined as any manual or automated service. Repositories can offer or consume one or more Services" .
+  skos:definition "A Service is defined as any manual or automated service. Repositories can offer or consume one or more Services" .
 
 # API
 trsp:ServiceAPI a rdfs:Class ; 
     rdfs:subClassOf trsp:Service ; 
     rdfs:label "API Service"@en ;
     skos:broader trsp:Profile ;
-    rdfs:comment "An API Service is defined as an interface that can be accessed primarily by machines. Repositories can offer or consume one or more Services" .
+  skos:definition "An API Service is defined as an interface that can be accessed primarily by machines. Repositories can offer or consume one or more such Services" .
 
 # Evidence
-<p1> a trsp:Evidence ;
-    dct:title "My Versioning Policy"@en ;
-    trsp:evidenceType trsp:policyVersioning ;
-    trsp:evidenceIRL <https://evidenceurl.com> ;
-    trsp:validityStart "2026-07-12T00:00:00+00:00" ;
-    trsp:validityEnd "2026-07-12T00:00:00+00:00" ;
-    trsp:evidenceStatus "Draft" ;
-    dct:conformsTo <https://someSpecification.org> ;
-    trsp:authority <https:/myNetworkOrganisation.org> .
+trsp:Evidence a rdfs:Class ; 
+    rdfs:label "Evidence"@en ;
+    skos:definition "Evidence can be offered as references to local or external IRIs, qualified by type where necessary"@en ;
+    skos:note ""@en ;
+.
+
+# Standard
+
+# Feauture
+
+# Evidence
+#<p1> a trsp:Evidence ;
+#    dct:title "My Versioning Policy"@en ;
+#    trsp:evidenceType trsp:policyVersioning ;
+#    trsp:evidenceIRL <https://evidenceurl.com> ;
+#    trsp:validityStart "2026-07-12T00:00:00+00:00" ;
+#    trsp:validityEnd "2026-07-12T00:00:00+00:00" ;
+#    trsp:evidenceStatus "Draft" ;
+#    dct:conformsTo <https://someSpecification.org> ;
+#    trsp:authority <https:/myNetworkOrganisation.org> .
 
 # Checklist
 
@@ -72,6 +81,8 @@ trsp:ServiceAPI a rdfs:Class ;
 # Algorithm
 
 # Policy 
+
+# DateInterval
 
 
 
