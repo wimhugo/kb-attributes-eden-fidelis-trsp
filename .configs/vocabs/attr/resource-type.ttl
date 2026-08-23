@@ -10,9 +10,9 @@ trsp:typeResource a skos:ConceptScheme ;
     dct:description "Combined resource-type vocabulary using DataCite ResourceTypeGeneral as the backbone, enriched with COAR Resource Types and cross-vocabulary mappings."@en ;
     skos:hasTopConcept trsp:resource .
 
-rtp:primarySource a rdf:Property .
-rtp:dataciteResourceTypeGeneral a rdf:Property .
-rtp:zenodoType a rdf:Property .
+trsp:primarySource a rdf:Property .
+trsp:dataciteResourceTypeGeneral a rdf:Property .
+trsp:zenodoType a rdf:Property .
 
 trsp:resource a skos:Concept ;
     skos:inScheme trsp:typeResource ;
