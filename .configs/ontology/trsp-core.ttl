@@ -31,20 +31,52 @@ trsp:Profile a rdfs:Class ;
   skos:definition "Profiles define entities that exhibit or publish attributes, and can be Repositories, Services, or other authoritative sources" .
 
 # Repository
-trsp:Repository a rdfs:Class ; 
+trsp:RepositoryProfile a rdfs:Class ; 
     rdfs:subClassOf trsp:Profile ; 
-    rdfs:label "Repository"@en ;
+    rdfs:label "Repository Profile"@en ;
     skos:narrowMatch dcat:Catalog;
     skos:closeMatch dcat:DataService ;
   skos:definition "A Repository is broadly defined as an archive, repository, or other collection of digital resources, and its supporting services and functionalities." .
 
 # Service
-trsp:Service a rdfs:Class ; 
+trsp:ServiceProfile a rdfs:Class ; 
     rdfs:subClassOf trsp:Profile ; 
-    rdfs:label "Service"@en ;
+    rdfs:label "Service Profile"@en ;
     skos:narrowMatch dcat:DataService ;
     skos:narrowMatch dcat:Catalog ;
   skos:definition "A Service is defined as any manual or automated service. Repositories can offer or consume one or more Services" .
+
+# Source
+trsp:SourceProfile a rdfs:Class ; 
+    rdfs:subClassOf trsp:Profile ; 
+    rdfs:label "Source Profile"@en ;
+    skos:narrowMatch dcat:DataService ;
+    skos:narrowMatch dcat:Catalog ;
+  skos:definition "A Source of authoritative defintions of actions, attributes, characteristics, and functions of Repositories and Services" .
+
+# Standard
+trsp:SourceProfile a rdfs:Class ; 
+    rdfs:subClassOf trsp:Profile ; 
+    rdfs:label "Standards Profile"@en ;
+    skos:narrowMatch dcat:DataService ;
+    skos:narrowMatch dcat:Catalog ;
+  skos:definition "A Source of authoritative defintions of actions, attributes, characteristics, and functions of Repositories and Services" .
+
+# Community
+trsp:CommunityProfile a rdfs:Class ; 
+    rdfs:subClassOf trsp:Profile ; 
+    rdfs:label "Community Profile"@en ;
+    skos:narrowMatch dcat:DataService ;
+    skos:narrowMatch dcat:Catalog ;
+  skos:definition "A set of Attributes of a Repository or Service defined by a Community" .
+
+# Community
+trsp:CommunityProfile a rdfs:Class ; 
+    rdfs:subClassOf trsp:Profile ; 
+    rdfs:label "Community Profile"@en ;
+    skos:narrowMatch dcat:DataService ;
+    skos:narrowMatch dcat:Catalog ;
+  skos:definition "A set of Attributes of a Repository or Service defined by a Community" .
 
 # API
 trsp:ServiceAPI a rdfs:Class ; 
@@ -62,7 +94,7 @@ trsp:Evidence a rdfs:Class ;
 
 # Standard
 
-# Feauture
+# Feature
 
 # Evidence
 #<p1> a trsp:Evidence ;
@@ -77,12 +109,17 @@ trsp:Evidence a rdfs:Class ;
 
 # Checklist
 
-
 # Algorithm
 
 # Policy 
 
 # DateInterval
+
+# Source/ Reference
+#trsp:SourceReference
+
+# Attribute/ Property Definition
+# trsp:PropertyDefinition
 
 
 
