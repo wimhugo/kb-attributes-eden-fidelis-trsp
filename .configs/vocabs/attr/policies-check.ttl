@@ -9,16 +9,51 @@
 @prefix gorc: <https://purl.org/gorc/> .
 @prefix schema: <http://schema.org/> . 
 @prefix eden: <www.example.com/eden> .   ## to be updated
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix openrel: <https://github.com/wimhugo/openrel/blob/main/.openrel/vocabs/openrel/> .
 
 trsp:checklistPolicies
   a skos:ConceptScheme ;
-  skos:prefLabel "Checklist of Policies"@en ;
-  dct:title "Checklist of Policies"@en ;
+  skos:prefLabel "Checklist of Policies and Licences"@en ;
+  dct:title "Checklist of Policies and Licences"@en ;
+  skos:hasTopConcept trsp:typeLicence ,
+                     trsp:typeExplicitPolicy ,
+                     trsp:typeProcessRules ,
+                     trsp:typeAccessRules ,
+                     trsp:typeOtherODRL ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   dct:created "2026-05-03"^^xsd:date ;
   dct:modified "2026-08-13"^^xsd:date ;
   schema:creativeWorkStatus "Candidate" ;
   owl:versionInfo "0.3" .
+
+trsp:typeLicence
+  a skos:Concept ;
+  skos:prefLabel "Explicit Licence " ;
+  skos:definition "An explicit licence for a resource (dataset, publication, or software), as generally understood by the RDMI ecosystem."@en ;
+  rdfs:seeAlso openrel:Licence ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:typeExplicitPolicy
+  a skos:Concept ;
+  skos:prefLabel "Explicit Policy "@en ;
+  rdfs:seeAlso openrel:Policy ;
+  rdfs:seeAlso odrl:Policy ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:typeAccessRules
+  a skos:Concept ;
+  skos:prefLabel "Access Rules" ;
+  skos:definition "Access Rules, defining constraints to protect data subjects or define conditions imposed by the curator/ repository."@en ; 
+  rdfs:seeAlso openrel:AccessRules ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:typeProcessRules
+  a skos:Concept ;
+  skos:prefLabel "Process Rules" ;
+  skos:definition "Process Rules, defining constraints imposed by the software platform or infrastructure federation."@en ; 
+  rdfs:seeAlso openrel:ProcessRules ;
+  skos:inScheme trsp:checklistPolicies .
 
 trsp:versioning
   a skos:Concept ;
