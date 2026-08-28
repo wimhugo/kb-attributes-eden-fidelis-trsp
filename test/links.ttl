@@ -1,1 +1,1790 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 
+src.00385C380D
+  trsp:hasSemanticLink 1DD721CC5B .
+
+src.014D60AE8B
+  trsp:hasSemanticLink 5FFCEEB1F9 .
+
+src.00A6AB3A13
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00EBAB59F5
+  trsp:hasSemanticLink trsp:policy .
+
+src.00D3CE9E5B
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.012F6869FC
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0162B96F93
+  trsp:hasSemanticLink 54CF71ED24 .
+
+src.0124224D11
+  trsp:hasSemanticLink 41F4454A97 .
+
+src.00A5D8005E
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0000107632
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0187DEEB86
+  trsp:hasSemanticLink trsp:cts .
+
+src.00192AEE91
+  trsp:hasSemanticLink 693D7B796F .
+
+src.0115BFE159
+  trsp:hasSemanticLink 4C6A46FB4C .
+
+src.0055697BD5
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.001F1A79EB
+  trsp:hasSemanticLink 693D7B796F .
+
+src.015A112469
+  trsp:hasSemanticLink trsp:metadata .
+
+src.00E85A49AD
+  trsp:hasSemanticLink trsp:cts .
+
+src.0109326395
+  trsp:hasSemanticLink 72F38A16D8 .
+
+src.00E5E0ACE1
+  trsp:hasSemanticLink trsp:cts .
+
+src.006D099B00
+  trsp:hasSemanticLink 570534F4B8 .
+
+src.00B333A48D
+  trsp:hasSemanticLink 26CD4B30B3 .
+
+src.007A85B84B
+  trsp:hasSemanticLink 693D7B796F .
+
+src.007135A1EF
+  trsp:hasSemanticLink 51E4556DFE .
+
+src.00D9C6B13D
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00778A6E7F
+  trsp:hasSemanticLink 693D7B796F .
+
+src.00344A9CD4
+  trsp:hasSemanticLink trsp:sustainability, trsp:structural .
+
+src.0113E2DB1C
+  trsp:hasSemanticLink 6D12041533 .
+
+src.0130559AB7
+  trsp:hasSemanticLink trsp:cts .
+
+src.005FC18387
+  trsp:hasSemanticLink 78CC017229 .
+
+src.0052A47B9B
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.002901723B
+  trsp:hasSemanticLink 5842EC5239 .
+
+src.01671CAFA4
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.014C920CA5
+  trsp:hasSemanticLink trsp:sustainability, trsp:cts, trsp:resource .
+
+src.0021648BF1
+  trsp:hasSemanticLink trsp:sustainability, trsp:cts .
+
+src.0156FDB3F4
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.009C0D6927
+  trsp:hasSemanticLink trsp:rights .
+
+src.0036D7768C
+  trsp:hasSemanticLink 693D7B796F .
+
+src.00B4815BBF
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0171BE32D2
+  trsp:hasSemanticLink trsp:cts .
+
+src.019BA24193
+  trsp:hasSemanticLink 5EBEB8EB16 .
+
+src.00A2551E50
+  trsp:hasSemanticLink 3319EEDC99 .
+
+src.01380EC4FE
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00CC12FE4F
+  trsp:hasSemanticLink trsp:cts .
+
+src.00050B6013
+  trsp:hasSemanticLink 48E7481CDD .
+
+src.00326355CD
+  trsp:hasSemanticLink 48E7481CDD .
+
+src.018D9E8F60
+  trsp:hasSemanticLink trsp:rights, trsp:cts .
+
+src.0100D112EF
+  trsp:hasSemanticLink 291848CB10 .
+
+src.001EF9B504
+  trsp:hasSemanticLink trsp:rights, trsp:cts .
+
+src.009CCE6BFB
+  trsp:hasSemanticLink trsp:rights, trsp:cts .
+
+src.0153D3B572
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.00DBB384B7
+  trsp:hasSemanticLink 3B633179C5 .
+
+src.00FDC48876
+  trsp:hasSemanticLink trsp:appraisal, trsp:cts .
+
+src.01338EAF3B
+  trsp:hasSemanticLink trsp:cts .
+
+src.00C6AA2978
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00F9DADEB2
+  trsp:hasSemanticLink trsp:cts .
+
+src.003E18884A
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.006A5218DC
+  trsp:hasSemanticLink 22D6F28F7C .
+
+src.00CE5B5C48
+  trsp:hasSemanticLink 0C3FB3218D .
+
+src.00E3B3AE58
+  trsp:hasSemanticLink 16855D3CB9 .
+
+src.0018506934
+  trsp:hasSemanticLink trsp:cts .
+
+src.013FD0D017
+  trsp:hasSemanticLink 54CF71ED24 .
+
+src.00875C1C3C
+  trsp:hasSemanticLink trsp:access, trsp:licence, trsp:licence .
+
+src.01423A462A
+  trsp:hasSemanticLink 570534F4B8 .
+
+src.00D59DBBC4
+  trsp:hasSemanticLink 11DF98311A .
+
+src.01149F03B3
+  trsp:hasSemanticLink 4AA1880060 .
+
+src.014F27C9B1
+  trsp:hasSemanticLink trsp:cts .
+
+src.0146B6F67E
+  trsp:hasSemanticLink 3319EEDC99 .
+
+src.00FCFA5599
+  trsp:hasSemanticLink 761C0FB70D .
+
+src.00F8F355D1
+  trsp:hasSemanticLink trsp:cts .
+
+src.0144B66FB5
+  trsp:hasSemanticLink 291848CB10 .
+
+src.00793447E6
+  trsp:hasSemanticLink 00C02C55DC .
+
+src.00C5797E15
+  trsp:hasSemanticLink 693D7B796F .
+
+src.0067BFAC0B
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00D8221C5E
+  trsp:hasSemanticLink 26CD4B30B3 .
+
+src.004503414F
+  trsp:hasSemanticLink 22831D6953 .
+
+src.016DE2ABAE
+  trsp:hasSemanticLink 78CC017229 .
+
+src.006A2AD019
+  trsp:hasSemanticLink trsp:other, trsp:other .
+
+src.005AB9EF49
+  trsp:hasSemanticLink 2F993B25AD .
+
+src.014169B743
+  trsp:hasSemanticLink 532324DE1D .
+
+src.0196B25865
+  trsp:hasSemanticLink trsp:cts .
+
+src.003113FE24
+  trsp:hasSemanticLink trsp:versioning, trsp:cts, trsp:policy .
+
+src.00737C3260
+  trsp:hasSemanticLink trsp:cts .
+
+src.00D5346178
+  trsp:hasSemanticLink 1C44587E88 .
+
+src.00DA2CF52E
+  trsp:hasSemanticLink r3d:technical, trsp:sustainability .
+
+src.00C591F6B3
+  trsp:hasSemanticLink trsp:cts .
+
+src.00878F132B
+  trsp:hasSemanticLink 65A95F223F .
+
+src.017CE2D666
+  trsp:hasSemanticLink trsp:sustainability, trsp:cts, trsp:guidance .
+
+src.00B53625E8
+  trsp:hasSemanticLink trsp:cts .
+
+src.0172C24420
+  trsp:hasSemanticLink trsp:licence, trsp:cts, trsp:policy, trsp:licence .
+
+src.014EB3443B
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.019C039B6D
+  trsp:hasSemanticLink 22831D6953 .
+
+src.0174F6A3CC
+  trsp:hasSemanticLink 3754546590 .
+
+src.01602556E2
+  trsp:hasSemanticLink trsp:rights, trsp:cts .
+
+src.014678E047
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00D9CFCF7A
+  trsp:hasSemanticLink trsp:metadata .
+
+src.006CC02B64
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.007167A39D
+  trsp:hasSemanticLink trsp:versioning .
+
+src.0000A77F75
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00D381B048
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00EEE297C9
+  trsp:hasSemanticLink trsp:rights .
+
+src.01019CBCC9
+  trsp:hasSemanticLink 225686595E .
+
+src.0051869B39
+  trsp:hasSemanticLink r3d:technical, trsp:sustainability .
+
+src.0161CEEF5D
+  trsp:hasSemanticLink 3E85A87190 .
+
+src.0155D07EE2
+  trsp:hasSemanticLink trsp:cts .
+
+src.00633F3F8D
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.013639F547
+  trsp:hasSemanticLink 22D6F28F7C .
+
+src.016E56AB0A
+  trsp:hasSemanticLink 19C2EB7DAB .
+
+src.003665B715
+  trsp:hasSemanticLink trsp:access, trsp:cts .
+
+src.007DA8EDA8
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.013E5D78BF
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.005C1B4672
+  trsp:hasSemanticLink trsp:rights .
+
+src.00572AB548
+  trsp:hasSemanticLink 4A43A19133 .
+
+src.017A0262C2
+  trsp:hasSemanticLink 3720038519 .
+
+src.001762B627
+  trsp:hasSemanticLink 57C5A7579F .
+
+src.0102383165
+  trsp:hasSemanticLink trsp:cts .
+
+src.00774C0EB6
+  trsp:hasSemanticLink trsp:sustainability, trsp:cts .
+
+src.003F1F6948
+  trsp:hasSemanticLink trsp:rights .
+
+src.00F65F621C
+  trsp:hasSemanticLink 3A6BADBDB9 .
+
+src.019EA3C8D8
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.012E19E5FF
+  trsp:hasSemanticLink 64FDE59BAD .
+
+src.00C08F2128
+  trsp:hasSemanticLink trsp:cts .
+
+src.0101E91454
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.002C9B0BCC
+  trsp:hasSemanticLink 65A95F223F .
+
+src.0019B1A86D
+  trsp:hasSemanticLink trsp:rights .
+
+src.003DD8C8F3
+  trsp:hasSemanticLink 687D20F962 .
+
+src.019751B31E
+  trsp:hasSemanticLink trsp:cts .
+
+src.0160CCC7DA
+  trsp:hasSemanticLink trsp:cts .
+
+src.00A5C9BF25
+  trsp:hasSemanticLink 1A4192F248 .
+
+src.00E3531E10
+  trsp:hasSemanticLink 167C47D292 .
+
+src.0053D20004
+  trsp:hasSemanticLink trsp:access, trsp:cts, trsp:policy .
+
+src.0171A14227
+  trsp:hasSemanticLink trsp:rights .
+
+src.0133EB1C5A
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0021C8244B
+  trsp:hasSemanticLink trsp:policy .
+
+src.002EC5E1C4
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.006A293A9B
+  trsp:hasSemanticLink r3d:technical, trsp:sustainability .
+
+src.00803DA6CB
+  trsp:hasSemanticLink 62E1C089DB .
+
+src.00F844E0D7
+  trsp:hasSemanticLink trsp:cts .
+
+src.013DC62E84
+  trsp:hasSemanticLink 0C1737084B .
+
+src.003F759884
+  trsp:hasSemanticLink 26CD4B30B3 .
+
+src.0131095E38
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00E60E1C33
+  trsp:hasSemanticLink 50AF53C9B2 .
+
+src.00783F30CF
+  trsp:hasSemanticLink trsp:cts .
+
+src.00DFEDFD6E
+  trsp:hasSemanticLink 64FDE59BAD .
+
+src.010CE3B16E
+  trsp:hasSemanticLink 4570870110 .
+
+src.00FDB59868
+  trsp:hasSemanticLink trsp:sustainability, trsp:rsl .
+
+src.009183C7D0
+  trsp:hasSemanticLink r3d:funding, trsp:sustainability, trsp:structural .
+
+src.013694E3C0
+  trsp:hasSemanticLink 00C02C55DC .
+
+src.005C67595C
+  trsp:hasSemanticLink 00C02C55DC .
+
+src.01799842A4
+  trsp:hasSemanticLink trsp:metadata .
+
+src.004A339881
+  trsp:hasSemanticLink trsp:metadata .
+
+src.001356BF5A
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0023797614
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00E5546632
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0061769575
+  trsp:hasSemanticLink r3d:funding, trsp:sustainability, trsp:structural .
+
+src.011B13E86A
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.007B3E47B9
+  trsp:hasSemanticLink trsp:metadata .
+
+src.001A989089
+  trsp:hasSemanticLink 687D20F962 .
+
+src.00BFB87868
+  trsp:hasSemanticLink 030C7CAA30 .
+
+src.0043587A93
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.005F7FABCE
+  trsp:hasSemanticLink 26CD4B30B3 .
+
+src.0062500B5F
+  trsp:hasSemanticLink 26CD4B30B3 .
+
+src.00AEF6E518
+  trsp:hasSemanticLink 3E85A87190 .
+
+src.006B37D02E
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0071574029
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00000AB526
+  trsp:hasSemanticLink 297ED3685C .
+
+src.005CCB367C
+  trsp:hasSemanticLink 0613B795FE .
+
+src.003AED0096
+  trsp:hasSemanticLink 3219437E8F .
+
+src.019364B3F2
+  trsp:hasSemanticLink r3d:general, trsp:guidance .
+
+src.010D6A758F
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.015763F351
+  trsp:hasSemanticLink trsp:rights .
+
+src.00119C7BDA
+  trsp:hasSemanticLink r3d:funding, trsp:sustainability, trsp:structural .
+
+src.01480EFA1C
+  trsp:hasSemanticLink 76E3F555FC .
+
+src.00C9719713
+  trsp:hasSemanticLink 76E3F555FC .
+
+src.005FC4D5A1
+  trsp:hasSemanticLink 76E3F555FC .
+
+src.001807A800
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00E76066A2
+  trsp:hasSemanticLink 078274837C .
+
+src.004A35957D
+  trsp:hasSemanticLink 07BAFD06A8 .
+
+src.00798ECD04
+  trsp:hasSemanticLink 08417EDDFC .
+
+src.007925980C
+  trsp:hasSemanticLink 08417EDDFC .
+
+src.0055EC5AB0
+  trsp:hasSemanticLink trsp:cts, trsp:policy .
+
+src.0027115C1A
+  trsp:hasSemanticLink trsp:cts, trsp:policy .
+
+src.01211C22B8
+  trsp:hasSemanticLink 167C47D292 .
+
+src.00F5DA8252
+  trsp:hasSemanticLink 3B633179C5 .
+
+src.01686BEF5B
+  trsp:hasSemanticLink 09B9B96513 .
+
+src.00CD172B59
+  trsp:hasSemanticLink 09B9B96513 .
+
+src.0062631690
+  trsp:hasSemanticLink 09BFA24214 .
+
+src.00689D061E
+  trsp:hasSemanticLink 0AB11676B0 .
+
+src.001934E0D4
+  trsp:hasSemanticLink 0AB11676B0 .
+
+src.0147916345
+  trsp:hasSemanticLink trsp:metadata .
+
+src.0000A4B3FB
+  trsp:hasSemanticLink 0C1737084B .
+
+src.0065E2919F
+  trsp:hasSemanticLink 0C3FB3218D .
+
+src.0124627CF8
+  trsp:hasSemanticLink 0C85A9C228 .
+
+src.00E024B149
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.00B8B8D3B7
+  trsp:hasSemanticLink 693D7B796F .
+
+src.00E56C4A63
+  trsp:hasSemanticLink trsp:versioning .
+
+src.00F695AE56
+  trsp:hasSemanticLink 3E85A87190 .
+
+src.01A061CC28
+  trsp:hasSemanticLink 0EF898B591 .
+
+src.016AC789E6
+  trsp:hasSemanticLink 3E85A87190 .
+
+src.008D4A4219
+  trsp:hasSemanticLink trsp:crosswalks .
+
+src.00BB624688
+  trsp:hasSemanticLink trsp:crosswalks .
+
+src.00C0F1DA76
+  trsp:hasSemanticLink 1095E8CF4A .
+
+src.018FE51BC7
+  trsp:hasSemanticLink 41F4454A97 .
+
+src.00F18A4804
+  trsp:hasSemanticLink 1146FD1520 .
+
+src.01447D48CE
+  trsp:hasSemanticLink 1146FD1520 .
+
+src.000FA587FA
+  trsp:hasSemanticLink 1146FD1520 .
+
+src.0052652112
+  trsp:hasSemanticLink 1146FD1520 .
+
+src.019CCAFA83
+  trsp:hasSemanticLink 115BEEC616 .
+
+src.00D1F7197B
+  trsp:hasSemanticLink trsp:policy .
+
+src.0060B389B2
+  trsp:hasSemanticLink trsp:policy .
+
+src.00DAC3E4BF
+  trsp:hasSemanticLink 761C0FB70D .
+
+src.01320AA4E7
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00C5C839A6
+  trsp:hasSemanticLink trsp:policy .
+
+src.00BD995EEA
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.000A11C2B8
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0184812A92
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00568598DB
+  trsp:hasSemanticLink trsp:versioning, trsp:policy .
+
+src.0174112592
+  trsp:hasSemanticLink trsp:metadata, trsp:licence, trsp:licence .
+
+src.0155871ECB
+  trsp:hasSemanticLink trsp:policy .
+
+src.0045BBC31A
+  trsp:hasSemanticLink trsp:policy .
+
+src.003D89877E
+  trsp:hasSemanticLink trsp:policy .
+
+src.00B3B3A218
+  trsp:hasSemanticLink 14605C9B1C .
+
+src.008CA86922
+  trsp:hasSemanticLink 3219437E8F .
+
+src.00A48545E7
+  trsp:hasSemanticLink 167C47D292 .
+
+src.007D1D5660
+  trsp:hasSemanticLink 167C47D292 .
+
+src.01472CBCCE
+  trsp:hasSemanticLink trsp:monitoring .
+
+src.004830F89D
+  trsp:hasSemanticLink 72F38A16D8 .
+
+src.018D44981E
+  trsp:hasSemanticLink 72F38A16D8 .
+
+src.00C8B42952
+  trsp:hasSemanticLink 72F38A16D8 .
+
+src.0177718CD1
+  trsp:hasSemanticLink 3219437E8F .
+
+src.00F7C91211
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.0096D99F48
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.000E1BE0C3
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.00313A16D0
+  trsp:hasSemanticLink 19AF20660A .
+
+src.00A9AF80E3
+  trsp:hasSemanticLink 19C2EB7DAB .
+
+src.007AFE93A2
+  trsp:hasSemanticLink 1A387A8E23 .
+
+src.00A68018F4
+  trsp:hasSemanticLink 1A4192F248 .
+
+src.004886EE36
+  trsp:hasSemanticLink 22831D6953 .
+
+src.01990D23AA
+  trsp:hasSemanticLink 22831D6953 .
+
+src.014FB1B55A
+  trsp:hasSemanticLink 1ADEEC1D3A .
+
+src.013EF2CAE1
+  trsp:hasSemanticLink 72F38A16D8 .
+
+src.01272AA961
+  trsp:hasSemanticLink trsp:rights .
+
+src.006A0C9398
+  trsp:hasSemanticLink 1B5925483C .
+
+src.00F4930BC9
+  trsp:hasSemanticLink 1B5925483C .
+
+src.005FFC184D
+  trsp:hasSemanticLink trsp:rights .
+
+src.000A1C894C
+  trsp:hasSemanticLink trsp:policy .
+
+src.0085A23579
+  trsp:hasSemanticLink trsp:policy .
+
+src.00845237DF
+  trsp:hasSemanticLink 1C495E8A94 .
+
+src.013C18583A
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.00A0D23864
+  trsp:hasSemanticLink trsp:cts .
+
+src.00A931E403
+  trsp:hasSemanticLink trsp:retention, trsp:cts, trsp:policy .
+
+src.0014049E4A
+  trsp:hasSemanticLink trsp:retention, trsp:cts, trsp:policy .
+
+src.006D0CF7A3
+  trsp:hasSemanticLink trsp:retention, trsp:cts, trsp:policy .
+
+src.0139210A08
+  trsp:hasSemanticLink 1DB0A6F7DB .
+
+src.0007B8BEC3
+  trsp:hasSemanticLink 1DD721CC5B .
+
+src.00563363FE
+  trsp:hasSemanticLink 1DD721CC5B .
+
+src.003D795592
+  trsp:hasSemanticLink 1EBE22F750 .
+
+src.00A8094DA9
+  trsp:hasSemanticLink trsp:guidance .
+
+src.014D48EFF6
+  trsp:hasSemanticLink 1F522CDA86 .
+
+src.014736F76B
+  trsp:hasSemanticLink trsp:rights .
+
+src.0120EC97B8
+  trsp:hasSemanticLink trsp:rights .
+
+src.000D335989
+  trsp:hasSemanticLink trsp:guidance .
+
+src.00D89C4D8D
+  trsp:hasSemanticLink trsp:guidance .
+
+src.005306D267
+  trsp:hasSemanticLink trsp:cts .
+
+src.004EE859E9
+  trsp:hasSemanticLink trsp:access .
+
+src.012ED91E18
+  trsp:hasSemanticLink trsp:aip, trsp:crosswalks .
+
+src.008DDEBCE4
+  trsp:hasSemanticLink trsp:aip, trsp:crosswalks .
+
+src.005C8B06D4
+  trsp:hasSemanticLink trsp:aip, trsp:crosswalks .
+
+src.00061CCE11
+  trsp:hasSemanticLink trsp:cts .
+
+src.006654F021
+  trsp:hasSemanticLink 225686595E .
+
+src.00F7D9766A
+  trsp:hasSemanticLink 22E9D90455 .
+
+src.017ECFFAAA
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.012A9DB1BA
+  trsp:hasSemanticLink 3E5F32A9E8 .
+
+src.00967630B6
+  trsp:hasSemanticLink trsp:sustainability, trsp:membership .
+
+src.00B95BF416
+  trsp:hasSemanticLink trsp:rights .
+
+src.001B92DD70
+  trsp:hasSemanticLink trsp:compliance, trsp:monitoring .
+
+src.01151BD9A2
+  trsp:hasSemanticLink trsp:compliance, trsp:monitoring .
+
+src.003FF904A1
+  trsp:hasSemanticLink 34C7F266CD .
+
+src.000C9E575E
+  trsp:hasSemanticLink 34C7F266CD .
+
+src.0075D7069A
+  trsp:hasSemanticLink r3d:technical .
+
+src.0057D0B24F
+  trsp:hasSemanticLink r3d:technical .
+
+src.01948EB642
+  trsp:hasSemanticLink trsp:sustainability, trsp:structural .
+
+src.0039882C52
+  trsp:hasSemanticLink trsp:sustainability, trsp:structural .
+
+src.0034E9A5DE
+  trsp:hasSemanticLink r3d:general, trsp:guidance .
+
+src.0006C76948
+  trsp:hasSemanticLink 78CC017229 .
+
+src.011B88990E
+  trsp:hasSemanticLink 78CC017229 .
+
+src.00D17B4EC2
+  trsp:hasSemanticLink 27F5C3BD10 .
+
+src.002E70FA83
+  trsp:hasSemanticLink 761C0FB70D .
+
+src.004725EA9C
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.009A72D4BA
+  trsp:hasSemanticLink 6D12041533 .
+
+src.015C13B33D
+  trsp:hasSemanticLink trsp:policy .
+
+src.002BB854A2
+  trsp:hasSemanticLink trsp:policy .
+
+src.012950DB5A
+  trsp:hasSemanticLink trsp:policy .
+
+src.019D74941E
+  trsp:hasSemanticLink trsp:policy .
+
+src.00D179447E
+  trsp:hasSemanticLink 291848CB10 .
+
+src.0182F99807
+  trsp:hasSemanticLink 2923D6DE38 .
+
+src.001F6D1642
+  trsp:hasSemanticLink 2923D6DE38 .
+
+src.00706897CA
+  trsp:hasSemanticLink 6D12041533 .
+
+src.00C19759E6
+  trsp:hasSemanticLink 6D12041533 .
+
+src.017D61080D
+  trsp:hasSemanticLink 29A8E8970A .
+
+src.009943560A
+  trsp:hasSemanticLink 29A8E8970A .
+
+src.001E2917C7
+  trsp:hasSemanticLink trsp:rights .
+
+src.0004407A6A
+  trsp:hasSemanticLink trsp:guidance .
+
+src.007C11C9BD
+  trsp:hasSemanticLink trsp:guidance .
+
+src.00EF3F09A2
+  trsp:hasSemanticLink 2B5E85FAE5 .
+
+src.011C8BBC2C
+  trsp:hasSemanticLink 2B5E85FAE5 .
+
+src.0031DB7F70
+  trsp:hasSemanticLink trsp:appraisal, trsp:access, trsp:policy .
+
+src.00D36A4662
+  trsp:hasSemanticLink 2C32459481 .
+
+src.004CDEB375
+  trsp:hasSemanticLink trsp:rights .
+
+src.00B48F3D8A
+  trsp:hasSemanticLink 2DA1C98050 .
+
+src.01289A3272
+  trsp:hasSemanticLink trsp:resource .
+
+src.0176504CFA
+  trsp:hasSemanticLink 2ED61F28AC .
+
+src.015844B242
+  trsp:hasSemanticLink trsp:access, trsp:licence, trsp:licence .
+
+src.0068C5A888
+  trsp:hasSemanticLink trsp:access, trsp:licence, trsp:licence .
+
+src.0070406245
+  trsp:hasSemanticLink trsp:access, trsp:licence, trsp:licence .
+
+src.00E3F7B2D3
+  trsp:hasSemanticLink 2F5B9B4823 .
+
+src.012F1EA7BD
+  trsp:hasSemanticLink 2F993B25AD .
+
+src.00022B603A
+  trsp:hasSemanticLink 2F993B25AD .
+
+src.0066D47CE2
+  trsp:hasSemanticLink 2F993B25AD .
+
+src.0108F42653
+  trsp:hasSemanticLink 2F993B25AD .
+
+src.00D81062FF
+  trsp:hasSemanticLink 301A364D55 .
+
+src.0198E647AE
+  trsp:hasSemanticLink 50AF53C9B2 .
+
+src.0085AFA35B
+  trsp:hasSemanticLink 32048A7179 .
+
+src.010F3206E2
+  trsp:hasSemanticLink 297ED3685C .
+
+src.00C5D61BB3
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.00DA33262D
+  trsp:hasSemanticLink 32846CB4DF .
+
+src.0023660648
+  trsp:hasSemanticLink 2C32459481 .
+
+src.019B65E575
+  trsp:hasSemanticLink 2C32459481 .
+
+src.0143F97C7B
+  trsp:hasSemanticLink trsp:sustainability, trsp:resource .
+
+src.004597D815
+  trsp:hasSemanticLink trsp:sustainability, trsp:resource .
+
+src.00F147F80E
+  trsp:hasSemanticLink 34D1282F11 .
+
+src.019A8CE193
+  trsp:hasSemanticLink 693D7B796F .
+
+src.000003A572
+  trsp:hasSemanticLink trsp:policy .
+
+src.00596C7298
+  trsp:hasSemanticLink 3532A00A80 .
+
+src.008A128E59
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.00F8BFEBF2
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.016FCAD771
+  trsp:hasSemanticLink trsp:policy .
+
+src.009B894778
+  trsp:hasSemanticLink trsp:policy .
+
+src.0060D4463C
+  trsp:hasSemanticLink 50AF53C9B2 .
+
+src.0076B54DAD
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00D99C300D
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.018FD19FA7
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.0194C065BE
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.01755DA5A6
+  trsp:hasSemanticLink 46058DE67B .
+
+src.0001892CB0
+  trsp:hasSemanticLink 693D7B796F .
+
+src.00082CA6C1
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.00D19F8DD5
+  trsp:hasSemanticLink 4A4B5A22FE .
+
+src.013CD78CD4
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.00707D1116
+  trsp:hasSemanticLink 3219437E8F .
+
+src.016F5998BE
+  trsp:hasSemanticLink 693D7B796F .
+
+src.000E481389
+  trsp:hasSemanticLink 41F4454A97 .
+
+src.00B4DF2FD9
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.007A32D354
+  trsp:hasSemanticLink trsp:policy .
+
+src.001C5E99B5
+  trsp:hasSemanticLink 3A2655ABB6 .
+
+src.00EDF84CB8
+  trsp:hasSemanticLink trsp:cts .
+
+src.00ACD4BD91
+  trsp:hasSemanticLink trsp:metadata, trsp:crosswalks .
+
+src.004876D348
+  trsp:hasSemanticLink trsp:metadata, trsp:crosswalks .
+
+src.0092CCA937
+  trsp:hasSemanticLink 693D7B796F .
+
+src.0049022A2F
+  trsp:hasSemanticLink 3B633179C5 .
+
+src.00F13097CE
+  trsp:hasSemanticLink trsp:guidance .
+
+src.0084AC4199
+  trsp:hasSemanticLink trsp:guidance .
+
+src.016071ADF2
+  trsp:hasSemanticLink trsp:guidance .
+
+src.000B050AC3
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.00B9C1C2B0
+  trsp:hasSemanticLink 3219437E8F .
+
+src.00462AAC3A
+  trsp:hasSemanticLink trsp:metadata .
+
+src.017873D2AB
+  trsp:hasSemanticLink trsp:policy .
+
+src.0135DB9242
+  trsp:hasSemanticLink trsp:policy .
+
+src.012F5C198C
+  trsp:hasSemanticLink trsp:policy .
+
+src.002F06AE05
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.0036068A6C
+  trsp:hasSemanticLink trsp:monitoring .
+
+src.001362F2D4
+  trsp:hasSemanticLink trsp:monitoring .
+
+src.0028360BFC
+  trsp:hasSemanticLink trsp:access .
+
+src.004D779462
+  trsp:hasSemanticLink trsp:appraisal, trsp:licence, trsp:licence .
+
+src.01552F1B67
+  trsp:hasSemanticLink trsp:appraisal, trsp:licence, trsp:licence .
+
+src.002CD348DE
+  trsp:hasSemanticLink r3d:funding, trsp:sustainability, trsp:structural .
+
+src.01323A8337
+  trsp:hasSemanticLink 41F4454A97 .
+
+src.006107E3C2
+  trsp:hasSemanticLink 41F4454A97 .
+
+src.0139200DC9
+  trsp:hasSemanticLink 41F4454A97 .
+
+src.00A72F03D9
+  trsp:hasSemanticLink trsp:metadata, trsp:access .
+
+src.001BAFB988
+  trsp:hasSemanticLink 50AF53C9B2 .
+
+src.006E34BCAD
+  trsp:hasSemanticLink trsp:policy .
+
+src.000C780E39
+  trsp:hasSemanticLink trsp:policy .
+
+src.00D4124E7A
+  trsp:hasSemanticLink 44434AB8BA .
+
+src.00E1D86DEA
+  trsp:hasSemanticLink 44841F89C3 .
+
+src.0077EF1624
+  trsp:hasSemanticLink 4570870110 .
+
+src.0056E17F59
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.00133E06CE
+  trsp:hasSemanticLink trsp:metadata .
+
+src.00503DE282
+  trsp:hasSemanticLink trsp:metadata, trsp:policy .
+
+src.013F6B519B
+  trsp:hasSemanticLink 34F02B2DA3 .
+
+src.0091D15FDA
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.0089E53BC2
+  trsp:hasSemanticLink 4813ACF624 .
+
+src.0049F24052
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.019FEB9E34
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.0182877E7D
+  trsp:hasSemanticLink trsp:other, trsp:other, trsp:rights .
+
+src.0199BE42F6
+  trsp:hasSemanticLink trsp:other, trsp:other, trsp:rights .
+
+src.009EA76364
+  trsp:hasSemanticLink trsp:other, trsp:other, trsp:rights .
+
+src.000C6DEB49
+  trsp:hasSemanticLink trsp:other, trsp:other, trsp:rights .
+
+src.0082F84B65
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0161F8CCCC
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.013FEE580B
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.00D739C468
+  trsp:hasSemanticLink trsp:other, trsp:other, trsp:rights .
+
+src.011FD55321
+  trsp:hasSemanticLink trsp:other, trsp:other, trsp:rights .
+
+src.000C14A046
+  trsp:hasSemanticLink trsp:other, trsp:other, trsp:rights .
+
+src.0129F2FB44
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.00FB5A1F5F
+  trsp:hasSemanticLink 4A98F89201 .
+
+src.00F8A61B8C
+  trsp:hasSemanticLink 4A98F89201 .
+
+src.00B214697F
+  trsp:hasSemanticLink 4A98F89201 .
+
+src.00E5AE5996
+  trsp:hasSemanticLink 760BF58AAB .
+
+src.005F05B026
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.014848B377
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0137564F37
+  trsp:hasSemanticLink trsp:cts .
+
+src.0147AE0E8E
+  trsp:hasSemanticLink 4B8DBC2795 .
+
+src.011BD05295
+  trsp:hasSemanticLink 4B8DBC2795 .
+
+src.010E3F73F8
+  trsp:hasSemanticLink 3219437E8F .
+
+src.0190B702A1
+  trsp:hasSemanticLink 060E8AF1A4 .
+
+src.0087628C31
+  trsp:hasSemanticLink 357D9538D7 .
+
+src.00389EC2A5
+  trsp:hasSemanticLink 4C6A46FB4C .
+
+src.011CF4567E
+  trsp:hasSemanticLink 4CB4F7ED15 .
+
+src.01694ACF13
+  trsp:hasSemanticLink 4CD4FDE817 .
+
+src.00CACA8912
+  trsp:hasSemanticLink 3219437E8F .
+
+src.0188CEC69A
+  trsp:hasSemanticLink 4CB4F7ED15 .
+
+src.00C7CBF24D
+  trsp:hasSemanticLink trsp:sustainability, trsp:guidance .
+
+src.018CDA1C9F
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.0199F4A6B4
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.001FAE92FC
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.012D95457A
+  trsp:hasSemanticLink trsp:metadata .
+
+src.003BCB5630
+  trsp:hasSemanticLink 4EF949B147 .
+
+src.001FB3974F
+  trsp:hasSemanticLink trsp:licence, trsp:policy, trsp:licence .
+
+src.0034D30EBC
+  trsp:hasSemanticLink trsp:licence, trsp:policy, trsp:licence .
+
+src.01468C8A5F
+  trsp:hasSemanticLink 4F90C51D4C .
+
+src.00A85BC336
+  trsp:hasSemanticLink 357D9538D7 .
+
+src.00AAA77BFA
+  trsp:hasSemanticLink trsp:monitoring .
+
+src.01914EB2A2
+  trsp:hasSemanticLink trsp:monitoring .
+
+src.00109161F1
+  trsp:hasSemanticLink 357D9538D7 .
+
+src.018890E44A
+  trsp:hasSemanticLink 50AF53C9B2 .
+
+src.00183B1DC9
+  trsp:hasSemanticLink trsp:policy .
+
+src.0056778E12
+  trsp:hasSemanticLink trsp:policy .
+
+src.01115A0A4D
+  trsp:hasSemanticLink 22831D6953 .
+
+src.0050790C41
+  trsp:hasSemanticLink 297AD6F574 .
+
+src.018656E30B
+  trsp:hasSemanticLink 297AD6F574 .
+
+src.00725657E7
+  trsp:hasSemanticLink trsp:metadata, trsp:cts .
+
+src.010BA77C37
+  trsp:hasSemanticLink trsp:metadata, trsp:cts .
+
+src.005BB9F871
+  trsp:hasSemanticLink 51E4556DFE .
+
+src.01095E6203
+  trsp:hasSemanticLink trsp:appraisal, trsp:access, trsp:rights, trsp:policy .
+
+src.000981ADEF
+  trsp:hasSemanticLink 52FDC90AA3 .
+
+src.004152F311
+  trsp:hasSemanticLink 52FDC90AA3 .
+
+src.01774C48F1
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00BE1C5473
+  trsp:hasSemanticLink 54317F78CB .
+
+src.017B6E0AD1
+  trsp:hasSemanticLink 54317F78CB .
+
+src.01277D0842
+  trsp:hasSemanticLink trsp:cts .
+
+src.000FDA2B42
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.006D620023
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.0081F5BADC
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.0167096AD7
+  trsp:hasSemanticLink trsp:policy .
+
+src.015C469263
+  trsp:hasSemanticLink 357D9538D7 .
+
+src.003A1E8C52
+  trsp:hasSemanticLink 357D9538D7 .
+
+src.0146EBC169
+  trsp:hasSemanticLink trsp:rights .
+
+src.01428858D0
+  trsp:hasSemanticLink trsp:rights .
+
+src.007564251D
+  trsp:hasSemanticLink trsp:rights .
+
+src.006E189325
+  trsp:hasSemanticLink r3d:technical .
+
+src.0160C953D7
+  trsp:hasSemanticLink 3E85A87190 .
+
+src.001D611752
+  trsp:hasSemanticLink 3E85A87190 .
+
+src.0075D9F630
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.002EBC5010
+  trsp:hasSemanticLink trsp:guidance .
+
+src.000B2F520F
+  trsp:hasSemanticLink 357D9538D7 .
+
+src.014D77A89E
+  trsp:hasSemanticLink 570534F4B8 .
+
+src.00020F24DF
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.0040C001C3
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.00F24A91E6
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.014C2345D8
+  trsp:hasSemanticLink 59CAA27CE9 .
+
+src.00C0A5766D
+  trsp:hasSemanticLink 5AF211B2C5 .
+
+src.000AB23962
+  trsp:hasSemanticLink 5BAF2CF9AA .
+
+src.0140A5A0D0
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.006930D875
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.009F24F768
+  trsp:hasSemanticLink trsp:rights .
+
+src.005F23892D
+  trsp:hasSemanticLink trsp:rights .
+
+src.014FC7B91D
+  trsp:hasSemanticLink trsp:access, trsp:rights .
+
+src.00F9263D99
+  trsp:hasSemanticLink trsp:metadata, trsp:ro-crate, trsp:guidance .
+
+src.0081A857A2
+  trsp:hasSemanticLink trsp:metadata, trsp:ro-crate, trsp:guidance .
+
+src.0105C8B084
+  trsp:hasSemanticLink 5E73BD05DF .
+
+src.00DBF6CE35
+  trsp:hasSemanticLink trsp:cts .
+
+src.009286FF33
+  trsp:hasSemanticLink 5F7C942B1E .
+
+src.00B5469BAA
+  trsp:hasSemanticLink trsp:access .
+
+src.002B755E44
+  trsp:hasSemanticLink trsp:access .
+
+src.0149FF8E74
+  trsp:hasSemanticLink 60FD6669A5 .
+
+src.00F4E66C48
+  trsp:hasSemanticLink trsp:appraisal, trsp:access, trsp:policy .
+
+src.005919BC5E
+  trsp:hasSemanticLink 61C5AB7572 .
+
+src.017B00648B
+  trsp:hasSemanticLink trsp:guidance .
+
+src.008AF9269F
+  trsp:hasSemanticLink trsp:guidance .
+
+src.003744D355
+  trsp:hasSemanticLink 63101DF501 .
+
+src.009FF7FFFB
+  trsp:hasSemanticLink 63101DF501 .
+
+src.0103ACE0C7
+  trsp:hasSemanticLink trsp:access .
+
+src.0124808104
+  trsp:hasSemanticLink trsp:policy .
+
+src.0018044077
+  trsp:hasSemanticLink trsp:policy .
+
+src.0134EDB587
+  trsp:hasSemanticLink 6D12041533 .
+
+src.00007742AB
+  trsp:hasSemanticLink trsp:compliance .
+
+src.013E194BAF
+  trsp:hasSemanticLink trsp:compliance .
+
+src.0084ACBD7E
+  trsp:hasSemanticLink 05CDC6D747 .
+
+src.0160DA040B
+  trsp:hasSemanticLink 64E3E49E89 .
+
+src.00C1A3CC09
+  trsp:hasSemanticLink 64FDE59BAD .
+
+src.017A614BE8
+  trsp:hasSemanticLink r3d:technical, trsp:metadata .
+
+src.002ECE7D04
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.00DEA51832
+  trsp:hasSemanticLink 66C51E0B90 .
+
+src.014E83EDD8
+  trsp:hasSemanticLink 50AF53C9B2 .
+
+src.00E3F3A701
+  trsp:hasSemanticLink trsp:metadata .
+
+src.00F806AE6B
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.00279EDBA8
+  trsp:hasSemanticLink trsp:metadata .
+
+src.0109DBF1DA
+  trsp:hasSemanticLink 67E6C4912C .
+
+src.00648AC097
+  trsp:hasSemanticLink trsp:cts .
+
+src.015161811B
+  trsp:hasSemanticLink trsp:resource .
+
+src.003AB02483
+  trsp:hasSemanticLink trsp:resource .
+
+src.0032A9780D
+  trsp:hasSemanticLink trsp:crosswalks .
+
+src.0092B29462
+  trsp:hasSemanticLink 69C41A039A .
+
+src.007F31F3ED
+  trsp:hasSemanticLink trsp:crosswalks .
+
+src.009EEF793D
+  trsp:hasSemanticLink trsp:crosswalks .
+
+src.018C557B16
+  trsp:hasSemanticLink trsp:rights .
+
+src.009013A1CC
+  trsp:hasSemanticLink 761C0FB70D .
+
+src.004B3B6C50
+  trsp:hasSemanticLink 761C0FB70D .
+
+src.0075E589CD
+  trsp:hasSemanticLink 3219437E8F .
+
+src.0126DF86E2
+  trsp:hasSemanticLink 6AA7258DA9 .
+
+src.015DDFE315
+  trsp:hasSemanticLink 6AF0D4DC26 .
+
+src.0003FF3A90
+  trsp:hasSemanticLink 6AF56A372D .
+
+src.008CAAFB64
+  trsp:hasSemanticLink 6AF56A372D .
+
+src.001F76E050
+  trsp:hasSemanticLink trsp:access, trsp:policy .
+
+src.01882035DC
+  trsp:hasSemanticLink trsp:access, trsp:policy .
+
+src.00D2610574
+  trsp:hasSemanticLink trsp:access, trsp:policy .
+
+src.014283F7CE
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.00B0253CC1
+  trsp:hasSemanticLink trsp:metadata .
+
+src.004FEB9628
+  trsp:hasSemanticLink trsp:metadata .
+
+src.009679B2C1
+  trsp:hasSemanticLink trsp:rights, trsp:policy .
+
+src.0185E3ADFB
+  trsp:hasSemanticLink trsp:rights, trsp:policy .
+
+src.0182A0C59B
+  trsp:hasSemanticLink trsp:crosswalks .
+
+src.001F4E5848
+  trsp:hasSemanticLink trsp:crosswalks .
+
+src.00048836F1
+  trsp:hasSemanticLink 6CCE23A07E .
+
+src.009B495A61
+  trsp:hasSemanticLink trsp:access, trsp:cts, trsp:policy .
+
+src.004596DEDA
+  trsp:hasSemanticLink 6D7D249110 .
+
+src.015650D5C6
+  trsp:hasSemanticLink 6D7D249110 .
+
+src.00C860FD7F
+  trsp:hasSemanticLink 6DB955E068 .
+
+src.004C0E8B57
+  trsp:hasSemanticLink 6E3855425F .
+
+src.0058E3C641
+  trsp:hasSemanticLink 6E3855425F .
+
+src.011E9DD54F
+  trsp:hasSemanticLink 357D9538D7 .
+
+src.00B0EF7BAF
+  trsp:hasSemanticLink r3d:funding, trsp:sustainability, trsp:structural .
+
+src.001774A7BA
+  trsp:hasSemanticLink 6EED29CAE5 .
+
+src.00F9B81B95
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0084065085
+  trsp:hasSemanticLink 6F05B292BD .
+
+src.00411B341B
+  trsp:hasSemanticLink trsp:sustainability, trsp:structural .
+
+src.0178123946
+  trsp:hasSemanticLink 50AF53C9B2 .
+
+src.016336BB10
+  trsp:hasSemanticLink 3219437E8F .
+
+src.00A18347F0
+  trsp:hasSemanticLink 1F4AE0B0F8 .
+
+src.00C5D31D00
+  trsp:hasSemanticLink 1F4AE0B0F8 .
+
+src.0049EED432
+  trsp:hasSemanticLink 3E85A87190 .
+
+src.00B31AFDEA
+  trsp:hasSemanticLink trsp:metadata .
+
+src.00D48D0808
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.00AC499AB9
+  trsp:hasSemanticLink trsp:appraisal .
+
+src.0007AF3F97
+  trsp:hasSemanticLink trsp:metadata, trsp:access .
+
+src.015AAD9381
+  trsp:hasSemanticLink trsp:metadata, trsp:access .
+
+src.010146CC09
+  trsp:hasSemanticLink 72DE0527E3 .
+
+src.004096D31C
+  trsp:hasSemanticLink 72DE0527E3 .
+
+src.000E421363
+  trsp:hasSemanticLink 72F38A16D8 .
+
+src.015A1454E1
+  trsp:hasSemanticLink 693D7B796F .
+
+src.004910563D
+  trsp:hasSemanticLink 761C0FB70D .
+
+src.013B65AA35
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.012A685EAE
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.00FA019E3A
+  trsp:hasSemanticLink trsp:metadata .
+
+src.0101536AA5
+  trsp:hasSemanticLink 756D3790E0 .
+
+src.007D8FBE4D
+  trsp:hasSemanticLink r3d:funding, trsp:sustainability, trsp:structural .
+
+src.00E18F6EE8
+  trsp:hasSemanticLink trsp:policy .
+
+src.013B6DB902
+  trsp:hasSemanticLink 761C0FB70D .
+
+src.00611F7851
+  trsp:hasSemanticLink trsp:policy .
+
+src.002A281153
+  trsp:hasSemanticLink trsp:policy .
+
+src.00EE2F86C6
+  trsp:hasSemanticLink trsp:licence, trsp:licence .
+
+src.018D59DC16
+  trsp:hasSemanticLink trsp:other, trsp:other, trsp:rights .
+
+src.00FFD28784
+  trsp:hasSemanticLink trsp:access .
+
+src.0089731156
+  trsp:hasSemanticLink trsp:access .
+
+src.001D5924ED
+  trsp:hasSemanticLink 78CC017229 .
+
+src.004B11B259
+  trsp:hasSemanticLink 78CC017229 .
+
+src.010440EB2B
+  trsp:hasSemanticLink 78CC017229 .
+
+src.00B6DBCCC1
+  trsp:hasSemanticLink r3d:technical, trsp:sustainability .
+
+src.0055877EE4
+  trsp:hasSemanticLink 79C13FD633 .
+
+src.0008600567
+  trsp:hasSemanticLink r3d:technical, trsp:sustainability .
+
+src.017976EDBD
+  trsp:hasSemanticLink trsp:resource .
+
+src.017C5BB1E9
+  trsp:hasSemanticLink 693D7B796F .
+
+src.000A5225EA
+  trsp:hasSemanticLink trsp:metadata .
+
+src.003A1D56DF
+  trsp:hasSemanticLink trsp:cts .
+
+src.00332A051C
+  trsp:hasSemanticLink trsp:metadata, trsp:licence, trsp:licence, trsp:guidance .
+
+src.0171781378
+  trsp:hasSemanticLink trsp:sustainability .
+
+src.0118E3C14C
+  trsp:hasSemanticLink trsp:rights .
+
+src.00ADEC0A9D
+  trsp:hasSemanticLink 693D7B796F .
+
+src.0131D8A72B
+  trsp:hasSemanticLink 693D7B796F .
+
+src.005332748C
+  trsp:hasSemanticLink trsp:cts .
+
+src.00BFDB0C2A
+  trsp:hasSemanticLink trsp:cts .
+
+src.00FA801609
+  trsp:hasSemanticLink trsp:licence, trsp:policy, trsp:licence .
+
+src.01953744E0
+  trsp:hasSemanticLink trsp:metadata, trsp:guidance .
+
+src.0149E23948
+  trsp:hasSemanticLink trsp:appraisal, trsp:access, trsp:policy .
+
+src.01899A99A8
+  trsp:hasSemanticLink trsp:metadata, trsp:licence, trsp:licence .
+
+src.00090C7FD8
+  trsp:hasSemanticLink trsp:versioning .
+
+src.015C3D9C3C
+  trsp:hasSemanticLink trsp:versioning .
