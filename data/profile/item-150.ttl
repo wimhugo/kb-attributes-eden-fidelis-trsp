@@ -26,7 +26,7 @@ ttram:AF01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality1_1 ;
     trsp:hasMeasurementType trsp:measurementTypeFormat ;
     trsp:hasBenchmark "Text" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF01-01 a trsp:Property ;
     rdf:label "Contact details" ;
@@ -37,7 +37,7 @@ ttram:AF01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF01-02 a trsp:Property ;
     rdf:label "Catalogue identifiers" ;
@@ -48,7 +48,7 @@ ttram:AF01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF01-02-01 a trsp:Property ;
     rdf:label "Catalogue URL" ;
@@ -59,7 +59,7 @@ ttram:AF01-02-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality1_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF01-03 a trsp:Property ;
     rdf:label "Organisation Identifier(s)" ;
@@ -71,7 +71,7 @@ ttram:AF01-03 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality1_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "RoR" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF01-04 a trsp:Property ;
     rdf:label "Organisation Alternative Names" ;
@@ -83,7 +83,7 @@ ttram:AF01-04 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality1_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "RoR" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF01-05 a trsp:Property ;
     rdf:label "Organisation Name" ;
@@ -95,7 +95,7 @@ ttram:AF01-05 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality1_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "RoR" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02 a trsp:Property ;
     rdf:label "Mission & Scope" ;
@@ -106,7 +106,7 @@ ttram:AF02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-01 a trsp:Property ;
     rdf:label "Organisation Mission Statement" ;
@@ -117,7 +117,7 @@ ttram:AF02-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-02 a trsp:Property ;
     rdf:label "LoRCAP" ;
@@ -129,7 +129,7 @@ ttram:AF02-02 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality1_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistCurationType ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-03 a trsp:Property ;
     rdf:label "Repository Type" ;
@@ -141,7 +141,7 @@ ttram:AF02-03 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality1_1 ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
     trsp:hasBenchmark r3d:repository-type ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-04 a trsp:Property ;
     rdf:label "Designated Community" ;
@@ -152,7 +152,7 @@ ttram:AF02-04 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-05 a trsp:Property ;
     rdf:label "Permitted/Restricted Object(s)" ;
@@ -164,7 +164,7 @@ ttram:AF02-05 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
     trsp:hasBenchmark r3d:content-types.ttl ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-05-01 a trsp:Property ;
     rdf:label "Depositor Characteristics" ;
@@ -175,7 +175,7 @@ ttram:AF02-05-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-05-02 a trsp:Property ;
     rdf:label "User Characteristics" ;
@@ -186,7 +186,7 @@ ttram:AF02-05-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-06 a trsp:Property ;
     rdf:label "Geographic coverage" ;
@@ -198,7 +198,7 @@ ttram:AF02-06 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
     trsp:hasBenchmark iso:iso-3166-1.ttl ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-06-01 a trsp:Property ;
     rdf:label "Linguistic coverage" ;
@@ -209,7 +209,7 @@ ttram:AF02-06-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-07 a trsp:Property ;
     rdf:label "FAIR-enabling" ;
@@ -220,7 +220,7 @@ ttram:AF02-07 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-07-01 a trsp:Property ;
     rdf:label "Endorses TRUST" ;
@@ -232,7 +232,7 @@ ttram:AF02-07-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistPrinciples ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF02-07-02 a trsp:Property ;
     rdf:label "Endorses CARE" ;
@@ -244,7 +244,7 @@ ttram:AF02-07-02 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistPrinciples ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF03 a trsp:Property ;
     rdf:label "Conceive, Create, Collect" ;
@@ -255,7 +255,7 @@ ttram:AF03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF03-01 a trsp:Property ;
     rdf:label "Pre-deposit guidance" ;
@@ -266,7 +266,7 @@ ttram:AF03-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF03-02 a trsp:Property ;
     rdf:label "Funding Information" ;
@@ -277,7 +277,7 @@ ttram:AF03-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF03-03 a trsp:Property ;
     rdf:label "Project Information" ;
@@ -288,7 +288,7 @@ ttram:AF03-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF03-04 a trsp:Property ;
     rdf:label "Data Management Plan (DMP)" ;
@@ -299,7 +299,7 @@ ttram:AF03-04 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04 a trsp:Property ;
     rdf:label "Deposit & Appraisal" ;
@@ -310,7 +310,7 @@ ttram:AF04 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04-01 a trsp:Property ;
     rdf:label "Deposit quality control documentation" ;
@@ -321,7 +321,7 @@ ttram:AF04-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04-02 a trsp:Property ;
     rdf:label "Collections Development and Appraisal Policy" ;
@@ -332,7 +332,7 @@ ttram:AF04-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04-03 a trsp:Property ;
     rdf:label "Deposit Compliance Criteria" ;
@@ -344,7 +344,7 @@ ttram:AF04-03 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistDepositDocumentation ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04-04 a trsp:Property ;
     rdf:label "Deposit Procedures" ;
@@ -355,7 +355,7 @@ ttram:AF04-04 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04-05 a trsp:Property ;
     rdf:label "Acceptable/Preferred File Formats List" ;
@@ -366,7 +366,7 @@ ttram:AF04-05 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04-06 a trsp:Property ;
     rdf:label "ReAppraisal Plan" ;
@@ -377,7 +377,7 @@ ttram:AF04-06 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04-06-01 a trsp:Property ;
     rdf:label "Collection Data Management Plan" ;
@@ -388,7 +388,7 @@ ttram:AF04-06-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF04-07 a trsp:Property ;
     rdf:label "Deposit licence" ;
@@ -400,7 +400,7 @@ ttram:AF04-07 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Licence Facade, SPDX" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF05 a trsp:Property ;
     rdf:label "Curation, Quality & Compliance" ;
@@ -412,7 +412,7 @@ ttram:AF05 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Schema URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF05-01 a trsp:Property ;
     rdf:label "Initial Curation Workflow" ;
@@ -423,7 +423,7 @@ ttram:AF05-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF05-02 a trsp:Property ;
     rdf:label "Quality and Standards Statements" ;
@@ -434,7 +434,7 @@ ttram:AF05-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF05-03 a trsp:Property ;
     rdf:label "Standard operating procedures" ;
@@ -446,7 +446,7 @@ ttram:AF05-03 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistProceduresWorkflow ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF05-04 a trsp:Property ;
     rdf:label "Compliance policies and procedures" ;
@@ -457,7 +457,7 @@ ttram:AF05-04 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF05-04-01 a trsp:Property ;
     rdf:label "Quality assurance policies" ;
@@ -468,7 +468,7 @@ ttram:AF05-04-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF05-04-02 a trsp:Property ;
     rdf:label "Quality assurance procedures" ;
@@ -480,7 +480,7 @@ ttram:AF05-04-02 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistProceduresWorkflow ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF06 a trsp:Property ;
     rdf:label "Discovery & Identification" ;
@@ -492,7 +492,7 @@ ttram:AF06 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
     trsp:hasBenchmark iso:iso-3166-1.ttl ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF06-01 a trsp:Property ;
     rdf:label "Persistent identifiers used" ;
@@ -504,7 +504,7 @@ ttram:AF06-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "PID-KB" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF06-01-01 a trsp:Property ;
     rdf:label "Links to external resources" ;
@@ -515,7 +515,7 @@ ttram:AF06-01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality1_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF06-02 a trsp:Property ;
     rdf:label "Persistent Identifier system(s)" ;
@@ -527,7 +527,7 @@ ttram:AF06-02 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "PID-KB" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF06-03 a trsp:Property ;
     rdf:label "PID Policy" ;
@@ -538,7 +538,7 @@ ttram:AF06-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF06-04 a trsp:Property ;
     rdf:label "Discovery metadata and documentation" ;
@@ -549,7 +549,7 @@ ttram:AF06-04 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF06-05 a trsp:Property ;
     rdf:label "Resource discovery catalogues" ;
@@ -561,7 +561,7 @@ ttram:AF06-05 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Vocabularies, Semantic Artefacts" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF06-06 a trsp:Property ;
     rdf:label "Harvesting protocols" ;
@@ -572,7 +572,7 @@ ttram:AF06-06 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF07 a trsp:Property ;
     rdf:label "Access" ;
@@ -583,7 +583,7 @@ ttram:AF07 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF07-01 a trsp:Property ;
     rdf:label "Access routes and methods documentation" ;
@@ -595,7 +595,7 @@ ttram:AF07-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistUSerSchemaCrosswalks ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF07-02 a trsp:Property ;
     rdf:label "Access Management Policy" ;
@@ -606,7 +606,7 @@ ttram:AF07-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF07-03 a trsp:Property ;
     rdf:label "Machine- and human-readable access routes" ;
@@ -617,7 +617,7 @@ ttram:AF07-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF07-04 a trsp:Property ;
     rdf:label "Licence(s)" ;
@@ -629,7 +629,7 @@ ttram:AF07-04 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Licence Facade, SPDX" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF07-04-01 a trsp:Property ;
     rdf:label "Terms of access" ;
@@ -640,7 +640,7 @@ ttram:AF07-04-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF08 a trsp:Property ;
     rdf:label "Reuse" ;
@@ -651,7 +651,7 @@ ttram:AF08 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF08-01 a trsp:Property ;
     rdf:label "Reuse-enabling methods" ;
@@ -663,7 +663,7 @@ ttram:AF08-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistReuse ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF08-01-01 a trsp:Property ;
     rdf:label "Designated Community definitions" ;
@@ -674,7 +674,7 @@ ttram:AF08-01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF08-01-02 a trsp:Property ;
     rdf:label "Digital object models." ;
@@ -685,7 +685,7 @@ ttram:AF08-01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF08-02 a trsp:Property ;
     rdf:label "Terms and Conditions for Use" ;
@@ -696,7 +696,7 @@ ttram:AF08-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF08-03 a trsp:Property ;
     rdf:label "Designated Community Consultation information" ;
@@ -707,7 +707,7 @@ ttram:AF08-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF09 a trsp:Property ;
     rdf:label "Workflows" ;
@@ -719,7 +719,7 @@ ttram:AF09 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistDepositDocumentation ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF09-01 a trsp:Property ;
     rdf:label "Standard operating procedures" ;
@@ -731,7 +731,7 @@ ttram:AF09-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistProceduresWorkflow ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF09-01-01 a trsp:Property ;
     rdf:label "Workflow/business process diagrams" ;
@@ -743,7 +743,7 @@ ttram:AF09-01-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistProceduresWorkflow ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF10 a trsp:Property ;
     rdf:label "Preservation" ;
@@ -754,7 +754,7 @@ ttram:AF10 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF10-01 a trsp:Property ;
     rdf:label "Preservation policies, strategies, and plans" ;
@@ -765,7 +765,7 @@ ttram:AF10-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF10-01-01 a trsp:Property ;
     rdf:label "Preservation procedures" ;
@@ -776,7 +776,7 @@ ttram:AF10-01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF10-01-02 a trsp:Property ;
     rdf:label "Reappraisal workflow" ;
@@ -787,7 +787,7 @@ ttram:AF10-01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF11 a trsp:Property ;
     rdf:label "Provenance and Authenticity" ;
@@ -798,7 +798,7 @@ ttram:AF11 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF11-01 a trsp:Property ;
     rdf:label "Provenance at Submission" ;
@@ -809,7 +809,7 @@ ttram:AF11-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF11-01-01 a trsp:Property ;
     rdf:label "Curation and Preservation Provenance" ;
@@ -820,7 +820,7 @@ ttram:AF11-01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF12 a trsp:Property ;
     rdf:label "Support" ;
@@ -832,7 +832,7 @@ ttram:AF12 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Tool URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF12-01 a trsp:Property ;
     rdf:label "Support Services Offered" ;
@@ -843,7 +843,7 @@ ttram:AF12-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF13 a trsp:Property ;
     rdf:label "Governance" ;
@@ -854,7 +854,7 @@ ttram:AF13 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF13-01 a trsp:Property ;
     rdf:label "Organisational Structure Documentation" ;
@@ -865,7 +865,7 @@ ttram:AF13-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF13-01-01 a trsp:Property ;
     rdf:label "Host Organisation" ;
@@ -877,7 +877,7 @@ ttram:AF13-01-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality1_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "RoR" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF13-01-02 a trsp:Property ;
     rdf:label "Repository Funder" ;
@@ -888,7 +888,7 @@ ttram:AF13-01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF14 a trsp:Property ;
     rdf:label "Policy & Standards" ;
@@ -899,7 +899,7 @@ ttram:AF14 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF14-01 a trsp:Property ;
     rdf:label "List of policies" ;
@@ -910,7 +910,7 @@ ttram:AF14-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF14-01-01 a trsp:Property ;
     rdf:label "List of supported standards" ;
@@ -922,7 +922,7 @@ ttram:AF14-01-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark "Custom with Evidence" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF14-01-02 a trsp:Property ;
     rdf:label "Procedure for developing policies" ;
@@ -933,7 +933,7 @@ ttram:AF14-01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF14-01-03 a trsp:Property ;
     rdf:label "Procedure for adopting standards" ;
@@ -944,7 +944,7 @@ ttram:AF14-01-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF15 a trsp:Property ;
     rdf:label "Rights" ;
@@ -955,7 +955,7 @@ ttram:AF15 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF15-01 a trsp:Property ;
     rdf:label "Rights Policy" ;
@@ -966,7 +966,7 @@ ttram:AF15-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF15-01-01 a trsp:Property ;
     rdf:label "Licences for deposit, access and reuse" ;
@@ -978,7 +978,7 @@ ttram:AF15-01-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Licence Facade, SPDX" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF15-01-02 a trsp:Property ;
     rdf:label "Non-Compliance Policy" ;
@@ -987,7 +987,7 @@ ttram:AF15-01-02 a trsp:Property ;
     skos:exactMatch "#N/A" ;
     schema:category "Organisational Infrastructure|Rights|Non-Compliance Policy" ;
     dct:subject "TTRAM" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF15-01-03 a trsp:Property ;
     rdf:label "Sufficient rights to permit LoRCAP" ;
@@ -998,7 +998,7 @@ ttram:AF15-01-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF15-01-04 a trsp:Property ;
     rdf:label "Rights related to succession plans" ;
@@ -1009,7 +1009,7 @@ ttram:AF15-01-04 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF16 a trsp:Property ;
     rdf:label "Resources" ;
@@ -1020,7 +1020,7 @@ ttram:AF16 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF16-01 a trsp:Property ;
     rdf:label "Budget and financial plans" ;
@@ -1031,7 +1031,7 @@ ttram:AF16-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF16-01-01 a trsp:Property ;
     rdf:label "Financial Strategy and Projections" ;
@@ -1042,7 +1042,7 @@ ttram:AF16-01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF16-01-02 a trsp:Property ;
     rdf:label "Income and expenditure reports" ;
@@ -1053,7 +1053,7 @@ ttram:AF16-01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF17 a trsp:Property ;
     rdf:label "People & Expertise" ;
@@ -1064,7 +1064,7 @@ ttram:AF17 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF17-01 a trsp:Property ;
     rdf:label "Skills Statement" ;
@@ -1075,7 +1075,7 @@ ttram:AF17-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF17-01-01 a trsp:Property ;
     rdf:label "Skills Development Plan" ;
@@ -1086,7 +1086,7 @@ ttram:AF17-01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF17-01-02 a trsp:Property ;
     rdf:label "Staff Roles" ;
@@ -1097,7 +1097,7 @@ ttram:AF17-01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF17-01-03 a trsp:Property ;
     rdf:label "Skills List" ;
@@ -1108,7 +1108,7 @@ ttram:AF17-01-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF18 a trsp:Property ;
     rdf:label "Third Party Dependencies" ;
@@ -1119,7 +1119,7 @@ ttram:AF18 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF18-01 a trsp:Property ;
     rdf:label "Lists of partners" ;
@@ -1130,7 +1130,7 @@ ttram:AF18-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF18-01-01 a trsp:Property ;
     rdf:label "Partnership Statement" ;
@@ -1141,7 +1141,7 @@ ttram:AF18-01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF18-01-02 a trsp:Property ;
     rdf:label "Partner Management Plan" ;
@@ -1152,7 +1152,7 @@ ttram:AF18-01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF18-01-03 a trsp:Property ;
     rdf:label "External Service Providers" ;
@@ -1163,7 +1163,7 @@ ttram:AF18-01-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF19 a trsp:Property ;
     rdf:label "Continuity of Service" ;
@@ -1174,7 +1174,7 @@ ttram:AF19 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF19-01 a trsp:Property ;
     rdf:label "Business Continuity Plan" ;
@@ -1185,7 +1185,7 @@ ttram:AF19-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF19-02 a trsp:Property ;
     rdf:label "Disaster Recovery Plan" ;
@@ -1196,7 +1196,7 @@ ttram:AF19-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF19-03 a trsp:Property ;
     rdf:label "Succession Plan" ;
@@ -1207,7 +1207,7 @@ ttram:AF19-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF20 a trsp:Property ;
     rdf:label "External Engagement" ;
@@ -1219,7 +1219,7 @@ ttram:AF20 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Service URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF20-01 a trsp:Property ;
     rdf:label "Community Skills List" ;
@@ -1228,7 +1228,7 @@ ttram:AF20-01 a trsp:Property ;
     skos:exactMatch trsp:att.01D16EFB9B ;
     schema:category "Organisational Infrastructure|External Engagement|Community Skills List" ;
     dct:subject "TTRAM" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF20-01-01 a trsp:Property ;
     rdf:label "Community Engagement Plan" ;
@@ -1239,7 +1239,7 @@ ttram:AF20-01-01 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF20-01-02 a trsp:Property ;
     rdf:label "Engagement with policy makers and funders" ;
@@ -1250,7 +1250,7 @@ ttram:AF20-01-02 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF20-01-03 a trsp:Property ;
     rdf:label "Surveys of depositor and user needs" ;
@@ -1261,7 +1261,7 @@ ttram:AF20-01-03 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF21 a trsp:Property ;
     rdf:label "Release & Publishing" ;
@@ -1272,7 +1272,7 @@ ttram:AF21 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF21-01 a trsp:Property ;
     rdf:label "Records management policy" ;
@@ -1372,7 +1372,7 @@ ttram:AF22-01-04 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Schema Crosswalk URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF23 a trsp:Property ;
     rdf:label "Legal & Ethical" ;
@@ -1384,7 +1384,7 @@ ttram:AF23 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
     trsp:hasBenchmark iso:iso-3166-1.ttl ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF23-01 a trsp:Property ;
     rdf:label "Legal/ ethical compliance statements" ;
@@ -1451,7 +1451,7 @@ ttram:AF24 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Schema URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF24-01 a trsp:Property ;
     rdf:label "Self-Assessments" ;
@@ -1463,7 +1463,7 @@ ttram:AF24-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Assessment URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF24-01-01 a trsp:Property ;
     rdf:label "Change Management Procedures" ;
@@ -1475,7 +1475,7 @@ ttram:AF24-01-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistInfoManagement ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF24-01-02 a trsp:Property ;
     rdf:label "Certifications" ;
@@ -1487,7 +1487,7 @@ ttram:AF24-01-02 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Certification URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF25 a trsp:Property ;
     rdf:label "Analysis & Impact" ;
@@ -1499,7 +1499,7 @@ ttram:AF25 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Repository URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF25-01 a trsp:Property ;
     rdf:label "Business information analysis" ;
@@ -1522,7 +1522,7 @@ ttram:AF25-02 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistMetrics ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF26 a trsp:Property ;
     rdf:label "Training" ;
@@ -1677,7 +1677,7 @@ ttram:AF29-01-02 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistInfoManagement ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF29-01-03 a trsp:Property ;
     rdf:label "Service Management Framework(s)" ;
@@ -1689,7 +1689,7 @@ ttram:AF29-01-03 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistInfoManagement ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF29-01-04 a trsp:Property ;
     rdf:label "Repository-related software and source code" ;
@@ -1734,7 +1734,7 @@ ttram:AF30-01-01 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeChecklist ;
     trsp:hasBenchmark trsp:checklistAAI ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
 
 ttram:AF30-01-02 a trsp:Property ;
     rdf:label "Related Certifications" ;
@@ -1746,4 +1746,4 @@ ttram:AF30-01-02 a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
     trsp:hasBenchmark "Certification URIs" ;
-    owl:version "0,1" .
+    owl:version "0.4.1" .
