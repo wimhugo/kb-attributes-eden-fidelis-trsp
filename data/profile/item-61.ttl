@@ -6,6 +6,7 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix pidreg: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/registry/pid.ttl> .
 
 
 trsp:profile.3C2D6C1C37 a trsp:Profile ;
