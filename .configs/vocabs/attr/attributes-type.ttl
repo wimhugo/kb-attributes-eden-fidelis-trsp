@@ -11,7 +11,13 @@
 @prefix schema: <http://schema.org/> .
 # @prefix gorc: <https://purl.org/gorc/> .
 # @prefix fair: <https://w3id.org/fair/principles/terms/> .
-# @prefix re3data: <https://schema.re3data.org/4-0#> .
+@prefix r3d: <https://schema.re3data.org/4-0#> .
+@prefix openrel: <https://github.com/wimhugo/openrel/> .
+@prefix dpv: <https://w3id.org/dpv> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix geo: <http://w3.org> .
+@prefix ogc: <http://www.opengis.net/def/> .
 
 trsp:trsp-attributes a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:dateTime;
@@ -4471,7 +4477,7 @@ trsp:att.19C2EB7DAB
   trsp:hasCardinalityType trsp:cardinality1_n ;
   trsp:hasMeasurementType trsp:measurementTypeData ;
   trsp:hasBenchmark trsp:iriConstraint ;
-  trsp:algorithmClass ^^xsd:anyURL ;
+  trsp:algorithmClass ^^xsd:anyURI ;
   skos:inScheme trsp:trsp-attributes .
 
 trsp:att.225686595E
@@ -5178,7 +5184,7 @@ trsp:att.642C080D89
   a skos:Concept ;
   trsp:property "supportedAccessTypes" ;
   skos:prefLabel "Supported Access Types" ;
-  skos:definition "\"The access regulation to the research data sets provided by the RDR (wrapper  element).\""@en ;
+  skos:definition "The access regulation to the research data sets provided by the RDR (wrapper element)."@en ;
   dct:subject "Transparency,Benefits and Constraints,Context,Capabilities,Supported Policies,Supported Access Types,R3D" ;
   schema:category "Transparency|Benefits and Constraints|Context|Capabilities|Supported Policies|Supported Access Types" ;
   dcat:keyword "R3D" ;
@@ -8984,7 +8990,7 @@ trsp:att.5BDCFB83B0
   trsp:hasCardinalityType trsp:cardinality0_n ;
   trsp:hasMeasurementType trsp:measurementTypeData ;
   trsp:hasBenchmark trsp:iriConstraint ;
-  trsp:algorithmClass ^^xsd:anyURL ;
+  trsp:algorithmClass ^^xsd:anyURI ;
   skos:inScheme trsp:trsp-attributes .
 
 trsp:att.568D8C8984
