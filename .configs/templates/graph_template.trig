@@ -80,14 +80,13 @@ trsp:serviceGraph {
      <[[SERVICE_IRI]]> a dcat:Service ;
          dct:title "[[SERVICE_TITLE]]" ;
          dct:description "[[SERVICE_DESCRIPTION]]" ;
-         # - must come from .configs/vocabs/eosc/service-type.ttl, can be more than one value
          trsp:hasContact <[[CONTACT_NODE]]> ;
          trsp:hasInstitution <[[INSTITUTION_NODE]]> ;
-         trsp:serviceMaturityAssessment [[TRSP_TYPE]] ;
+         trsp:serviceMaturityAssessment [[TRSP_TRL_TYPE]] ;
          # - must come from .configs/vocabs/attr/trl-type.ttl
          trsp:typeAPI [[TRSP_API_TYPE]] ; 
          # - must come from .configs/vocabs/attr/api-list-check.ttl
-         trsp:identifierAPI <[[REGISTRY_IRI]]>^^xsd:anyURI ;
+         trsp:identifierAPI <[[REGISTRY_IRI]]> ;
          trsp:endpointAPI <[[API_URL]]> ;
          trsp:apiConformsTo <[[SPEC_URL]]> ;
          trsp:apiFormatSupport [[IRI_LIST]] ;
@@ -120,7 +119,6 @@ trsp:institutionsGraph {
          foaf:name "[[INSTITUTION_NAME]]" ;
          foaf:homepage <[[HOME_PAGE]]> ;
          trsp:hasIdentifier <[[IDENTIFIER]]> ;
-         # - must come from .configs/vocabs/attr/institution-role-type.ttl
     .
 }
 
@@ -128,15 +126,17 @@ trsp:institutionsGraph {
 trsp:checklistGraph {
     # --- Checklist nodes are inserted here ---
 
-    # <[[CHECKLIST_IRI]]> a trsp:Checklist ;
-    #     trsp:checklistSource <[[CHECKLIST_IRI]]> ;# must come from one of '.configs/vocabs/attr' vocabularies
-    #     trsp:checkItems  
-    #        [ a trsp:ChecklistItem ;
-    #          trsp:checklistIRI [[TRSP_CHECK_TYPE]] ; # a concept IRI from a vocabulary at '.configs/vocabs/attr vocabularies'
-    #          trsp:evidenceIRI <[[EVIDENCE_IRI]]> ],
-    #        [ a trsp:ChecklistItem ;
-    #          trsp:checklistIRI [[TRSP_TYPE]] ; # a concept IRI from a vocabulary at '.configs/vocabs/attr vocabularies'
-    #          trsp:evidenceIRI <[[EVIDENCE_IRI]]> ]
-    #     .
+     <[[CHECKLIST_IRI]]> a trsp:Checklist ;
+         trsp:checklistSource <[[CHECKLIST_IRI]]> ;# must come from one of '.configs/vocabs/attr' vocabularies
+         trsp:checkItems  
+            [ a trsp:ChecklistItem ;
+              trsp:checklistIRI [[TRSP_CHECK_TYPE]] ; 
+              # a concept IRI from a vocabulary at '.configs/vocabs/attr vocabularies'
+              trsp:evidenceIRI <[[EVIDENCE_IRI]]> ],
+            [ a trsp:ChecklistItem ;
+              trsp:checklistIRI [[TRSP_CHECK_TYPE]] ; 
+              # a concept IRI from a vocabulary at '.configs/vocabs/attr vocabularies'
+              trsp:evidenceIRI <[[EVIDENCE_IRI]]> ]
+         .
 }
 
