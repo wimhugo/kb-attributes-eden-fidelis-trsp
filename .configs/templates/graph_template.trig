@@ -3,10 +3,6 @@
 # Sections are populated from TTL source files via the pipeline.
 # ============================================================
 
-and the trsp:checkItems example is missing its closing bracket.
-Also note the template declares trsp:mainNodesGraph twice — legal in TriG (the graphs merge),
-but the generator can emit one block or two without worrying.
-
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -26,8 +22,8 @@ trsp:provenanceGraph {
         dct:title "[[GRAPH_NAME]]" ;
         dct:description "[[GRAPH_TITLE]]" ;
         dct:creator <[[CREATOR_IRI]]> ;
-        dct:created "[[CREATED_DATE]]"^^xsd:date ;
-        dct:modified "[[MODIFIED_DATE]]"^^xsd:date ;
+        dct:created "[[CREATED_DATE]]"^^xsd:dateTime ;
+        dct:modified "[[MODIFIED_DATE]]"^^xsd:dateTime ;
         dct:hasVersion "[[VERSION]]" ;
         dct:publisher <[[INSTITUTION_NODE]]> ;
         prov:wasGeneratedBy <[[ACTIVITY_NODE]]> .
