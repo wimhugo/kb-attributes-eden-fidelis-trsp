@@ -6126,7 +6126,7 @@ trsp:att.6CA1A54238
   trsp:hasBenchmark trsp:classConstraint ;
   trsp:algorithmClass trsp:Service ;
   trsp:algorithmConstraint trsp:registryPackages
-pkg:TransformationSpecification ;
+trsp:TransformationSpecification ;
   skos:inScheme trsp:trsp-attributes .
 
 trsp:att.699F35CDBC
