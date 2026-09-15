@@ -127,7 +127,7 @@ trsp:checklistGraph {
     # --- Checklist nodes are inserted here ---
 
      <[[CHECKLIST_IRI]]> a trsp:Checklist ;
-         trsp:checklistSource <[[CHECKLIST_IRI]]> ;# must come from one of '.configs/vocabs/attr' vocabularies
+         trsp:checklistSource <[[CHECKLIST_SOURCE_IRI]]> ;# must come from one of '.configs/vocabs/attr' vocabularies
          trsp:checkItems  
             [ a trsp:ChecklistItem ;
               trsp:checklistIRI [[TRSP_CHECK_TYPE]] ; 
