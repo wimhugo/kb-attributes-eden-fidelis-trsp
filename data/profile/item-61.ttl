@@ -9,6 +9,13 @@
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
 
+trsp:profile.3C2D6C1C37 a trsp:Profile ;
+    dct:title "FIDELIS" @en ;
+    dct:description "The FIDELIS project will establish and consolidate a European network of FAIR-enabling trustworthy digital repositories that will live on after the project finishes and represent its member repositories to key stakeholders on important matters." @en ;
+    dct:identifier <https://eden-fidelis.eu/>  ;
+    dcat:endpointURL <https://eden-fidelis.eu/>  ;
+    trsp:hasProfileType "trsp:profile-type-community"  .
+
 fidelis:purpose a trsp:Property ;
     rdf:label "Purpose" ;
     skos:definition "Brief Description of Purpose" ;
