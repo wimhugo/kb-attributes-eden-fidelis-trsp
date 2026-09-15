@@ -1,0 +1,71 @@
+# ============================================================
+# TRSP Graph Template (TriG format)
+# Sections are populated from TTL source files via the pipeline.
+# ============================================================
+
+# @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix trsp: <https://w3id.org/openrel/> .
+
+# ==================================================================================================================
+# SECTION 1: PROVENANCE AND METADATA
+# Describes the dataset itself — who generated it, when, and how.
+# ==================================================================================================================
+
+trsp:provenanceGraph {
+    <<27996357+wimhugo@users.noreply.github.com>> a prov:Activity ;
+        prov:startedAtTime "2026-09-15T16:34:00.027Z"^^xsd:dateTime ;
+        rdfs:label "Automated graph curation" .
+}
+
+# ==================================================================================================================
+# SECTION 2: MAIN NODES (Repository Nodes)
+# Primary entities being curated. Each main node references
+# support nodes by IRI (contacts, institutions, services, checklists, etc.).
+# Populated from TTL source files containing repository, person, institution, checklists, etc. properties.
+# ==================================================================================================================
+trsp:repoGraph {
+    # --- Repository nodes are inserted here ---
+
+
+
+}
+
+# ==================================================================================================================
+# SECTION 3: MAIN NODES (Service Nodes)
+# Primary entities being curated. Each main node references
+# support nodes by IRI (contacts, institutions, services, checklists, etc.).
+# Populated from TTL source files containing repository, person, institution, checklists, etc. properties.
+# ==================================================================================================================
+trsp:serviceGraph {
+    # --- Service nodes are inserted here ---
+}
+
+# ==================================================================================================================
+# SECTION 4: SUPPORT NODE SECTIONS
+# Reusable complex objects referenced by main nodes.
+# Populated from dedicated TTL files — one file per support type.
+# ==================================================================================================================
+
+# --- 4a: Contact Persons (vcard objects) ---
+trsp:supportContactsGraph {
+    # --- Contact person nodes are inserted here ---
+}
+
+# --- 4b: Institutions (foaf objects, reused across repositories) ---
+trsp:institutionsGraph {
+    # --- Institution nodes are inserted here ---
+
+}
+
+# --- 4c: Checklists (openrel checklist objects) ---
+trsp:checklistGraph {
+    # --- Checklist nodes are inserted here ---
+}
+
