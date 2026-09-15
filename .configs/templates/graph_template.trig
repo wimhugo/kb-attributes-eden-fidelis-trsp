@@ -60,11 +60,12 @@ trsp:repoGraph {
             trsp:serviceIRI <[[SERVICE_NODE]]> ;
             trsp:serviceRelation [[TRSP_RELATION_TYPE]]
          ];
-         trsp:linkedInstitution [
-            a trsp:InstitutionRole ;
-            trsp:responsibilityType [[TRSP_ROLE_TYPE]] ;
-            trsp:linkedInstitution <[[INSTITUTION_NODE]]> ;
-        ]
+         trsp:linkedInstitution {{LINKED_INSTITUTION}}
+         #   [
+         #   a trsp:InstitutionRole ;
+         #   trsp:responsibilityType [[TRSP_ROLE_TYPE]] ;
+         #   trsp:linkedInstitution <[[INSTITUTION_NODE]]> ;
+        #]
         .
 }
 
@@ -117,7 +118,7 @@ trsp:institutionsGraph {
 
      <[[INSTITUTION_NODE]]> a foaf:Organization ; # This can be a registry identifier if applicable
          foaf:name "[[INSTITUTION_NAME]]" ;
-         foaf:homepage <[[HOME_PAGE]]> ;
+         foaf:homePage <[[HOME_PAGE]]> ;
          trsp:hasIdentifier <[[IDENTIFIER]]> ;
     .
 }
