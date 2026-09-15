@@ -18,6 +18,7 @@
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix geo: <http://w3.org> .
 @prefix ogc: <http://www.opengis.net/def/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
 
 trsp:trsp-attributes a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:dateTime;
