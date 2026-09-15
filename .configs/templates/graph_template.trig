@@ -3,7 +3,7 @@
 # Sections are populated from TTL source files via the pipeline.
 # ============================================================
 
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+# @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -17,10 +17,11 @@
 # SECTION 1: PROVENANCE AND METADATA
 # Describes the dataset itself — who generated it, when, and how.
 # ==================================================================================================================
+
 trsp:provenanceGraph {
     trsp:dataset a dct:Dataset ;
-        dct:title "[[GRAPH_NAME]]" ;
-        dct:description "[[GRAPH_TITLE]]" ;
+        dct:title "[[GRAPH_TITLE]]" ;
+        dct:description "[[GRAPH_DESCRIPTION]]" ;
         dct:creator <[[CREATOR_IRI]]> ;
         dct:created "[[CREATED_DATE]]"^^xsd:dateTime ;
         dct:modified "[[MODIFIED_DATE]]"^^xsd:dateTime ;
@@ -29,8 +30,8 @@ trsp:provenanceGraph {
         prov:wasGeneratedBy <[[ACTIVITY_NODE]]> .
 
     <[[ACTIVITY_NODE]]> a prov:Activity ;
-        cst:creator <[[CREATOR_IRI]]> ;
-        prov:startedAtTime "START_DATE"^^xsd:dateTime ;
+        dct:creator <[[CREATOR_IRI]]> ;
+        prov:startedAtTime "[[START_DATE]]"^^xsd:dateTime ;
         prov:wasAssociatedWith <[[INSTITUTION_NODE]]> ;
         rdfs:label "Automated graph curation" .
 }
@@ -46,22 +47,22 @@ trsp:repoGraph {
 
      <[[REPO_IRI]]> a dcat:Repository ;
          dct:title "[[REPOSITORY_NAME]]" ;
-         dct:description "[[REPOSITORY_DESCRIPTION]]." ;
+         dct:description "[[REPOSITORY_DESCRIPTION]]" ;
          trsp:hasContact <[[CONTACT_NODE]]> ;
          trsp:hasEvidence [ 
             a trsp:Evidence ;
-            trsp:evidenceType [[TRSP_TYPE]] ;
+            trsp:evidenceType [[TRSP_EVIDENCE_TYPE]] ;
             trsp:evidenceIRI <[[EVIDENCE_NODE]]> 
          ];
          trsp:hasService [ 
             a trsp:Service ;
-            trsp:serviceType [[TRSP_TYPE]] ;
+            trsp:serviceType [[TRSP_SERVICE_TYPE]] ;
             trsp:serviceIRI <[[SERVICE_NODE]]> ;
-            trsp:serviceRelation [[TRSP_TYPE]]
+            trsp:serviceRelation [[TRSP_RELATION_TYPE]]
          ];
          trsp:linkedInstitution [
             a trsp:InstitutionRole ;
-            trsp:responsibilityType [[TRSP_TYPE]] ;
+            trsp:responsibilityType [[TRSP_ROLE_TYPE]] ;
             trsp:linkedInstitution <[[INSTITUTION_NODE]]> ;
         ]
         .
@@ -79,13 +80,12 @@ trsp:serviceGraph {
      <[[SERVICE_IRI]]> a dcat:Service ;
          dct:title "[[SERVICE_TITLE]]" ;
          dct:description "[[SERVICE_DESCRIPTION]]" ;
-         trsp:serviceType [[TRSP_TYPE]] ; 
          # - must come from .configs/vocabs/eosc/service-type.ttl, can be more than one value
          trsp:hasContact <[[CONTACT_NODE]]> ;
          trsp:hasInstitution <[[INSTITUTION_NODE]]> ;
          trsp:serviceMaturityAssessment [[TRSP_TYPE]] ;
          # - must come from .configs/vocabs/attr/trl-type.ttl
-         trsp:typeAPI [[TRSP_TYPE]] ; 
+         trsp:typeAPI [[TRSP_API_TYPE]] ; 
          # - must come from .configs/vocabs/attr/api-list-check.ttl
          trsp:identifierAPI <[[REGISTRY_IRI]]>^^xsd:anyURI ;
          trsp:endpointAPI <[[API_URL]]> ;
@@ -109,18 +109,17 @@ trsp:supportContactsGraph {
      <[[CONTACT_IRI]]> a vcard:Individual ;
          vcard:fn "[[NAME]]" ;
          vcard:hasEmail <mailto:[[MAIL_TO]]> ;
-         vcard:hasTelephone <tel[[PHONE]]> .
+         vcard:hasTelephone <tel:[[PHONE]]> .
 }
 
 # --- 4b: Institutions (foaf objects, reused across repositories) ---
-trsp:InstitutionsGraph {
+trsp:institutionsGraph {
     # --- Institution nodes are inserted here ---
 
      <[[INSTITUTION_NODE]]> a foaf:Organization ; # This can be a registry identifier if applicable
          foaf:name "[[INSTITUTION_NAME]]" ;
          foaf:homepage <[[HOME_PAGE]]> ;
-         trsp:hasIdentifier <[[IDENTIFIER]]>^^xsd:anyURI ;
-         trsp:institutionRole [[TRSP_TYPE]] 
+         trsp:hasIdentifier <[[IDENTIFIER]]> ;
          # - must come from .configs/vocabs/attr/institution-role-type.ttl
     .
 }
@@ -133,11 +132,11 @@ trsp:checklistGraph {
     #     trsp:checklistSource <[[CHECKLIST_IRI]]> ;# must come from one of '.configs/vocabs/attr' vocabularies
     #     trsp:checkItems  
     #        [ a trsp:ChecklistItem ;
-    #          trsp:checklistIRI [[TRSP_TYPE]] ; # a concept IRI from a vocabulary at '.configs/vocabs/attr vocabularies'
-    #          trsp:evidenceIRI <[[EVIDENCE_IRI]]>^^xsd:anyURI ],
+    #          trsp:checklistIRI [[TRSP_CHECK_TYPE]] ; # a concept IRI from a vocabulary at '.configs/vocabs/attr vocabularies'
+    #          trsp:evidenceIRI <[[EVIDENCE_IRI]]> ],
     #        [ a trsp:ChecklistItem ;
     #          trsp:checklistIRI [[TRSP_TYPE]] ; # a concept IRI from a vocabulary at '.configs/vocabs/attr vocabularies'
-    #          trsp:evidenceIRI <[[EVIDENCE_IRI]]>^^xsd:anyURI ]
+    #          trsp:evidenceIRI <[[EVIDENCE_IRI]]> ]
     #     .
 }
 
