@@ -5,6 +5,7 @@
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
 
 
 trsp:profile.3C2D6C1C37 a trsp:Profile ;
