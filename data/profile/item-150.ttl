@@ -10,8 +10,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
 
-
-
 trsp:profile.668467EC38 a trsp:Profile ;
     dct:title "TTRAM" @en ;
     dct:description "The Transparent Trustworthy Repository Attributes Matrix (TTRAM) is derived from a review of the European repository landscape. The TTRAM examines 30 common repository activities and functions across digital object management", "organisational infrastructure", "technology and security." @en ;
@@ -494,7 +492,7 @@ ttram:AF06 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
-    trsp:hasBenchmark iso:iso-3166-1.ttl ;
+    trsp:hasBenchmark <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
     owl:version "0.4.1" .
 
 ttram:AF06-01 a trsp:Property ;
@@ -1386,7 +1384,7 @@ ttram:AF23 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
-    trsp:hasBenchmark iso:iso-3166-1.ttl ;
+    trsp:hasBenchmark <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
     owl:version "0.4.1" .
 
 ttram:AF23-01 a trsp:Property ;
