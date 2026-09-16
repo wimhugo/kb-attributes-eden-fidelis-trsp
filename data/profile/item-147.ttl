@@ -1944,7 +1944,7 @@ trsp:identifier a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality1_n ;
     trsp:hasMeasurementType trsp:measurementTypeData ;
     trsp:hasBenchmark trsp:iriConstraint ;
-    trsp:algorithmClass "^^xsd:anyURL" .
+    trsp:algorithmClass "^^xsd:anyURI" .
 
 trsp:contactType a trsp:Property ;
     skos:prefLabel "Contact Type" ;
@@ -6490,7 +6490,7 @@ trsp:profileRegistered a trsp:Property ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeData ;
     trsp:hasBenchmark trsp:iriConstraint ;
-    trsp:algorithmClass "^^xsd:anyURL" .
+    trsp:algorithmClass "^^xsd:anyURI" .
 
 trsp:contentAvailableFree a trsp:Property ;
     skos:prefLabel "Content is available free" ;
@@ -6912,7 +6912,7 @@ trsp:metadataValidatedProfile a trsp:Property ;
 
 trsp:supportedAccessTypes a trsp:Property ;
     skos:prefLabel "Supported Access Types" ;
-    skos:definition "\"The access regulation to the research data sets provided by the RDR (wrapper  element).\"" ;
+    skos:definition "The access regulation to the research data sets provided by the RDR (wrapper  element)." ;
     trsp:linkedProperty trsp:supportedAccessTypes ;
     skos:broader "att.69C41A039A" ;
     skos:exactMatch trsp:att.642C080D89 ;
