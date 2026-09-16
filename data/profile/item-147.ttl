@@ -5,6 +5,15 @@
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix r3d: <https://schema.re3data.org/4-0#> .
+@prefix openrel: <https://github.com/wimhugo/openrel/> .
+@prefix dpv: <https://w3id.org/dpv> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix geo: <http://w3.org> .
+@prefix ogc: <http://www.opengis.net/def/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+
 
 
 trsp:profile.1EE89F448D a trsp:Profile ;
