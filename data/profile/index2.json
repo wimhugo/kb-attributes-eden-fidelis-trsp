@@ -10,7 +10,8 @@
       "identifier": "https://data.4tu.nl/",
       "endPointURL": "https://data.4tu.nl/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "1aa258a562.json"
+      "file": "item-1.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "245EF9D7AE",
@@ -19,7 +20,8 @@
       "identifier": "https://agroportal.eu/",
       "endPointURL": "https://agroportal.eu/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "245ef9d7ae.json"
+      "file": "item-2.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00BA218182",
@@ -28,7 +30,8 @@
       "identifier": "https://arche.acdh.oeaw.ac.at/browser/",
       "endPointURL": "https://arche.acdh.oeaw.ac.at/browser/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00ba218182.json"
+      "file": "item-3.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "67700E6E2B",
@@ -37,7 +40,8 @@
       "identifier": "10.25504/FAIRsharing.b7f3ff",
       "endPointURL": "https://repo.researchdata.hu/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "67700e6e2b.json"
+      "file": "item-4.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "002FA0AA0F",
@@ -46,7 +50,8 @@
       "identifier": "https://asap.epfl.ch/",
       "endPointURL": "https://asap.epfl.ch/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "002fa0aa0f.json"
+      "file": "item-5.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "20B1E7D98D",
@@ -55,7 +60,8 @@
       "identifier": "https://aussda.at/",
       "endPointURL": "https://aussda.at/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "20b1e7d98d.json"
+      "file": "item-6.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "39DF75675C",
@@ -64,7 +70,8 @@
       "identifier": "https://anc.plus.ac.at",
       "endPointURL": "https://anc.plus.ac.at/index.html",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "39df75675c.json"
+      "file": "item-7.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "582A25D377",
@@ -73,7 +80,8 @@
       "identifier": "10.25504/FAIRsharing.aSszvY",
       "endPointURL": "https://bacdive.dsmz.de/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "582a25d377.json"
+      "file": "item-8.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "5513301B31",
@@ -82,7 +90,8 @@
       "identifier": "https://www.bgee.org/",
       "endPointURL": "https://www.bgee.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "5513301b31.json"
+      "file": "item-9.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "494FFE37F8",
@@ -91,7 +100,8 @@
       "identifier": "https://biomodels.org/",
       "endPointURL": "https://biomodels.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "494ffe37f8.json"
+      "file": "item-10.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4B0F63A94A",
@@ -100,7 +110,8 @@
       "identifier": "https://borealisdata.ca/",
       "endPointURL": "https://borealisdata.ca/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "4b0f63a94a.json"
+      "file": "item-11.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "644820F945",
@@ -109,7 +120,8 @@
       "identifier": "https://library.camtree.org/home",
       "endPointURL": "https://library.camtree.org/home",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "644820f945.json"
+      "file": "item-12.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6AE564BF52",
@@ -118,7 +130,8 @@
       "identifier": "https://doi.org/10.5334/dsj-2020-043",
       "endPointURL": "https://doi.org/10.5334/dsj-2020-043",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "6ae564bf52.json"
+      "file": "item-13.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "14554765CB",
@@ -127,7 +140,8 @@
       "identifier": "www.cathdb.info",
       "endPointURL": "https://www.cathdb.info/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "14554765cb.json"
+      "file": "item-14.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6FB247C22A",
@@ -136,7 +150,8 @@
       "identifier": "10.25504/FAIRsharing.hkk309",
       "endPointURL": "https://www.cellosaurus.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "6fb247c22a.json"
+      "file": "item-15.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "67FF569AA0",
@@ -145,7 +160,8 @@
       "identifier": "https://www.re3data.org/repository/r3d100013811",
       "endPointURL": "https://cer.ihtm.bg.ac.rs/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "67ff569aa0.json"
+      "file": "item-16.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6B38C46111",
@@ -154,7 +170,8 @@
       "identifier": "https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing",
       "endPointURL": "https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "6b38c46111.json"
+      "file": "item-17.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "5C32EF8367",
@@ -163,7 +180,8 @@
       "identifier": "https://www.clarin.eu/",
       "endPointURL": "https://www.clarin.eu/content/national-consortia",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "5c32ef8367.json"
+      "file": "item-18.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "644301C176",
@@ -172,7 +190,8 @@
       "identifier": "https://ngr.coar-repositories.org/",
       "endPointURL": "https://ngr.coar-repositories.org/",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "644301c176.json"
+      "file": "item-19.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "757212C93C",
@@ -181,7 +200,8 @@
       "identifier": "https://doi.org/10.5281/zenodo.7108101",
       "endPointURL": "https://doi.org/10.5281/zenodo.7108101",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "757212c93c.json"
+      "file": "item-20.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "18B13EC70C",
@@ -190,7 +210,8 @@
       "identifier": "https://cds.climate.copernicus.eu/",
       "endPointURL": "https://cds.climate.copernicus.eu/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "18b13ec70c.json"
+      "file": "item-21.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0075D2D0B2",
@@ -199,7 +220,8 @@
       "identifier": "https://dataverse.csuc.cat/",
       "endPointURL": "https://dataverse.csuc.cat/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0075d2d0b2.json"
+      "file": "item-22.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "046B279494",
@@ -208,7 +230,8 @@
       "identifier": "https://about.coscine.de/",
       "endPointURL": "https://about.coscine.de/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "046b279494.json"
+      "file": "item-23.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6C825F4502",
@@ -217,7 +240,8 @@
       "identifier": "https://doi.org/10.5281/zenodo.17984753",
       "endPointURL": "https://doi.org/10.5281/zenodo.17984753",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "6c825f4502.json"
+      "file": "item-24.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "007F9FADF2",
@@ -226,7 +250,8 @@
       "identifier": "https://cris.uns.ac.rs/en",
       "endPointURL": "https://cris.uns.ac.rs/en",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "007f9fadf2.json"
+      "file": "item-25.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "31C7106603",
@@ -235,7 +260,8 @@
       "identifier": "https://www.crossda.hr/",
       "endPointURL": "https://www.crossda.hr/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "31c7106603.json"
+      "file": "item-26.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "3FE210C50F",
@@ -244,7 +270,8 @@
       "identifier": "https://doi.org/10.5281/zenodo.4084763",
       "endPointURL": "https://doi.org/10.5281/zenodo.4084763",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "3fe210c50f.json"
+      "file": "item-27.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "697647043E",
@@ -253,7 +280,8 @@
       "identifier": "https://doi.org/10.5281/zenodo.7051012",
       "endPointURL": "https://doi.org/10.5281/zenodo.7051012",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "697647043e.json"
+      "file": "item-28.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "53D9892B4E",
@@ -262,7 +290,8 @@
       "identifier": "https://archiv.soc.cas.cz/en/pristup-k-datum-2/nase-data",
       "endPointURL": "https://archiv.soc.cas.cz/en/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "53d9892b4e.json"
+      "file": "item-29.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "39A738E4E3",
@@ -271,7 +300,8 @@
       "identifier": "https://dais.sanu.ac.rs/?locale-attribute=en",
       "endPointURL": "https://dais.sanu.ac.rs/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "39a738e4e3.json"
+      "file": "item-30.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "005B248EEE",
@@ -280,7 +310,8 @@
       "identifier": "https://dais.sanu.ac.rs/",
       "endPointURL": "https://dais.sanu.ac.rs/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "005b248eee.json"
+      "file": "item-31.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0180636A61",
@@ -289,7 +320,8 @@
       "identifier": "https://dass.credi.ba/",
       "endPointURL": "https://dass.credi.ba/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0180636a61.json"
+      "file": "item-32.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00967B7916",
@@ -298,7 +330,8 @@
       "identifier": "https://repo.researchdata.hu/",
       "endPointURL": "https://repo.researchdata.hu/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00967b7916.json"
+      "file": "item-33.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4B12A4A8E3",
@@ -307,7 +340,8 @@
       "identifier": "https://dans.knaw.nl/nl/life-sciences/",
       "endPointURL": "https://dans.knaw.nl/nl/life-sciences/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "4b12a4a8e3.json"
+      "file": "item-34.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "552C7DD5F0",
@@ -316,7 +350,8 @@
       "identifier": "https://dans.knaw.nl/nl/social-sciences-and-humanities/",
       "endPointURL": "https://dans.knaw.nl/nl/social-sciences-and-humanities/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "552c7dd5f0.json"
+      "file": "item-35.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4E16B3E617",
@@ -325,7 +360,8 @@
       "identifier": "10.25504/FAIRsharing.bb17f3",
       "endPointURL": "https://data.sciencespo.fr/dataverse/cdsp",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "4e16b3e617.json"
+      "file": "item-36.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "346AA2D576",
@@ -334,7 +370,8 @@
       "identifier": "https://datarepositorium.uminho.pt/",
       "endPointURL": "https://datarepositorium.uminho.pt/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "346aa2d576.json"
+      "file": "item-37.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "2BD9FB0372",
@@ -343,7 +380,8 @@
       "identifier": "https://site.uit.no/dataverseno/",
       "endPointURL": "https://site.uit.no/dataverseno/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "2bd9fb0372.json"
+      "file": "item-38.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0CBE4E6DFC",
@@ -352,7 +390,8 @@
       "identifier": "r3d100014655",
       "endPointURL": "https://dv.dataverse.lv/dataverse/root",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0cbe4e6dfc.json"
+      "file": "item-39.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "1798E19839",
@@ -361,7 +400,8 @@
       "identifier": "r3d100012538",
       "endPointURL": "https://dataverse.no/dataverse/trolling",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "1798e19839.json"
+      "file": "item-40.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00624373BF",
@@ -370,7 +410,8 @@
       "identifier": "https://opendata.nas.gov.ua",
       "endPointURL": "https://opendata.nas.gov.ua",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00624373bf.json"
+      "file": "item-41.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "7AA756F28B",
@@ -379,7 +420,8 @@
       "identifier": "https://www.re3data.org/repository/r3d100013494",
       "endPointURL": "https://datice.is/is",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "7aa756f28b.json"
+      "file": "item-42.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "03B02C7454",
@@ -388,7 +430,8 @@
       "identifier": "https://semiceu.github.io/DCAT-AP/releases/3.0.0/",
       "endPointURL": "https://semiceu.github.io/DCAT-AP/releases/3.0.0/",
       "hasProfileType": "trsp:profile-type-standard",
-      "file": "03b02c7454.json"
+      "file": "item-43.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "29A444BA70",
@@ -397,7 +440,8 @@
       "identifier": "https://sikt.no/en/archiving-research-data",
       "endPointURL": "https://sikt.no/en/archiving-research-data",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "29a444ba70.json"
+      "file": "item-44.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4841BDEC9E",
@@ -406,7 +450,8 @@
       "identifier": "https://doi.org/10.18452/24679",
       "endPointURL": "https://doi.org/10.18452/24679",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "4841bdec9e.json"
+      "file": "item-45.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "009EC11C5C",
@@ -415,7 +460,8 @@
       "identifier": "https://disprot.org/",
       "endPointURL": "https://disprot.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "009ec11c5c.json"
+      "file": "item-46.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "001961A5E1",
@@ -424,7 +470,8 @@
       "identifier": "https://registry.dome-ml.org/intro",
       "endPointURL": "https://registry.dome-ml.org/intro",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "001961a5e1.json"
+      "file": "item-47.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "1E05BBE77F",
@@ -433,7 +480,8 @@
       "identifier": "https://www.dpconline.org/digipres/implement-digipres/procurement-toolkit/procurement-toolkit-core-requirements",
       "endPointURL": "https://www.dpconline.org/digipres/implement-digipres/procurement-toolkit/procurement-toolkit-core-requirements",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "1e05bbe77f.json"
+      "file": "item-48.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "74820191F5",
@@ -442,7 +490,8 @@
       "identifier": "http://doi.org/10.7207/dpcram24-03",
       "endPointURL": "http://doi.org/10.7207/dpcram24-03",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "74820191f5.json"
+      "file": "item-49.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6BF0A22CB5",
@@ -451,7 +500,8 @@
       "identifier": "https://doi.org/10.15497/RDA00103",
       "endPointURL": "https://doi.org/10.15497/RDA00103",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "6bf0a22cb5.json"
+      "file": "item-50.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "29A21B39F5",
@@ -460,7 +510,8 @@
       "identifier": "r3d100013488",
       "endPointURL": "https://data.dtu.dk/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "29a21b39f5.json"
+      "file": "item-51.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "004A879024",
@@ -469,7 +520,8 @@
       "identifier": "https://edatos.consorciomadrono.es",
       "endPointURL": "https://edatos.consorciomadrono.es",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "004a879024.json"
+      "file": "item-52.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "61E7538E10",
@@ -478,7 +530,8 @@
       "identifier": "https://eden-fidelis.eu/",
       "endPointURL": "https://eden-fidelis.eu/",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "61e7538e10.json"
+      "file": "item-53.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "005134C65D",
@@ -487,7 +540,8 @@
       "identifier": "https://datashare.ed.ac.uk/",
       "endPointURL": "https://datashare.ed.ac.uk/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "005134c65d.json"
+      "file": "item-54.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "25E02CC352",
@@ -496,7 +550,8 @@
       "identifier": "https://doi.org/10.12688/f1000research.9656.2",
       "endPointURL": "https://doi.org/10.12688/f1000research.9656.2",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "25e02cc352.json"
+      "file": "item-55.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6EBCF639D3",
@@ -505,7 +560,8 @@
       "identifier": "https://data.europa.eu/doi/10.2777/926037",
       "endPointURL": "https://data.europa.eu/doi/10.2777/926037",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "6ebcf639d3.json"
+      "file": "item-56.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "2BBC8312C3",
@@ -514,7 +570,8 @@
       "identifier": "https://www.oapen.org/article/13934224-erc-oa-requirement",
       "endPointURL": "https://www.oapen.org/article/13934224-erc-oa-requirement",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "2bbc8312c3.json"
+      "file": "item-57.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00D32E62E3",
@@ -523,7 +580,8 @@
       "identifier": "https://data.esrf.fr/",
       "endPointURL": "https://data.esrf.fr/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00d32e62e3.json"
+      "file": "item-58.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "1DF058A6F6",
@@ -532,7 +590,8 @@
       "identifier": "https://www.fairdata.fi/",
       "endPointURL": "https://www.fairdata.fi/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "1df058a6f6.json"
+      "file": "item-59.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "09D755CCE9",
@@ -541,7 +600,8 @@
       "identifier": "https://doi.org/10.5281/zenodo.6875035",
       "endPointURL": "https://doi.org/10.5281/zenodo.6875035",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "09d755cce9.json"
+      "file": "item-60.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "3C2D6C1C37",
@@ -550,7 +610,8 @@
       "identifier": "https://eden-fidelis.eu/",
       "endPointURL": "https://eden-fidelis.eu/",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "3c2d6c1c37.json"
+      "file": "item-61.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "66B58B3D2D",
@@ -559,7 +620,8 @@
       "identifier": "10.25504/FAIRsharing.2okP6D",
       "endPointURL": "https://www.fsd.tuni.fi/en/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "66b58b3d2d.json"
+      "file": "item-62.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00318846F4",
@@ -568,7 +630,8 @@
       "identifier": "https://fiver.ifvcns.rs/",
       "endPointURL": "https://fiver.ifvcns.rs/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00318846f4.json"
+      "file": "item-63.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "700C58D59C",
@@ -577,7 +640,8 @@
       "identifier": "https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/",
       "endPointURL": "https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "700c58d59c.json"
+      "file": "item-64.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "006C9BFF2E",
@@ -586,7 +650,8 @@
       "identifier": "https://www.gesis.org/en/data-services/share-data",
       "endPointURL": "https://www.gesis.org/en/data-services/share-data",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "006c9bff2e.json"
+      "file": "item-65.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "20E6BA37EF",
@@ -595,7 +660,8 @@
       "identifier": "https://www.re3data.org/repository/r3d100012335",
       "endPointURL": "https://dataservices.gfz-potsdam.de/web/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "20e6ba37ef.json"
+      "file": "item-66.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "226704C31B",
@@ -604,7 +670,8 @@
       "identifier": "https://glittr.org/",
       "endPointURL": "https://glittr.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "226704c31b.json"
+      "file": "item-67.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4AFF1332EF",
@@ -613,7 +680,8 @@
       "identifier": "https://doi.org/10.15497/RDA00099",
       "endPointURL": "https://doi.org/10.15497/RDA00099",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "4aff1332ef.json"
+      "file": "item-68.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0041142F56",
@@ -622,7 +690,8 @@
       "identifier": "https://www.granthub.cz/",
       "endPointURL": "https://www.granthub.cz/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0041142f56.json"
+      "file": "item-69.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "546FD5B0D8",
@@ -631,7 +700,8 @@
       "identifier": "https://doi.org/10.5281/zenodo.8350509",
       "endPointURL": "https://doi.org/10.5281/zenodo.8350509",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "546fd5b0d8.json"
+      "file": "item-70.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "5F8F8C0526",
@@ -640,7 +710,8 @@
       "identifier": "https://gude.uni-frankfurt.de/home",
       "endPointURL": "https://gude.uni-frankfurt.de/home",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "5f8f8c0526.json"
+      "file": "item-71.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "2F48DA2962",
@@ -649,7 +720,8 @@
       "identifier": "eden://harvester/",
       "endPointURL": "https://github.com/EOSC-EDEN/wp2-repo-harvester",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "2f48da2962.json"
+      "file": "item-72.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6DF1A59550",
@@ -658,7 +730,8 @@
       "identifier": "https://naehrwertdaten.ch/de/",
       "endPointURL": "https://naehrwertdaten.ch/de/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "6df1a59550.json"
+      "file": "item-73.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00B8A6AE14",
@@ -667,7 +740,8 @@
       "identifier": "https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest",
       "endPointURL": "https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00b8a6ae14.json"
+      "file": "item-74.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00B1563729",
@@ -676,7 +750,8 @@
       "identifier": "https://infraart.inoe.ro/",
       "endPointURL": "https://infraart.inoe.ro/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00b1563729.json"
+      "file": "item-75.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "5177117B6B",
@@ -685,7 +760,8 @@
       "identifier": "https://inspirehep.net/",
       "endPointURL": "https://inspirehep.net/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "5177117b6b.json"
+      "file": "item-76.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "719B779075",
@@ -694,7 +770,8 @@
       "identifier": "https://www.iso.org/standard/56510.html",
       "endPointURL": "https://www.iso.org/standard/56510.html",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "719b779075.json"
+      "file": "item-77.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "02C745403B",
@@ -703,7 +780,8 @@
       "identifier": "https://www.jisc.ac.uk/digital-preservation-systems-dynamic-purchasing-system-dps",
       "endPointURL": "https://www.jisc.ac.uk/digital-preservation-systems-dynamic-purchasing-system-dps",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "02c745403b.json"
+      "file": "item-78.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "3E1A5A4B73",
@@ -712,7 +790,8 @@
       "identifier": "https://rdr.kuleuven.be/",
       "endPointURL": "https://rdr.kuleuven.be/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "3e1a5a4b73.json"
+      "file": "item-79.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "5E53C20361",
@@ -721,7 +800,8 @@
       "identifier": "10.25504/FAIRsharing.c5e881",
       "endPointURL": "https://lida.dataverse.lt/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "5e53c20361.json"
+      "file": "item-80.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "GH23JK45LM",
@@ -730,7 +810,8 @@
       "identifier": "https://lindat.mff.cuni.cz/repository/home",
       "endPointURL": "https://lindat.mff.cuni.cz/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "gh23jk45lm.json"
+      "file": "item-81.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "2E14441342",
@@ -739,7 +820,8 @@
       "identifier": "10.25504/FAIRsharing.25a72c",
       "endPointURL": "https://www.ldc.upenn.edu/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "2e14441342.json"
+      "file": "item-82.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6258E6CBD8",
@@ -748,7 +830,8 @@
       "identifier": "https://www.lipidmaps.org/",
       "endPointURL": "https://www.lipidmaps.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "6258e6cbd8.json"
+      "file": "item-83.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "004BA57DAA",
@@ -757,7 +840,8 @@
       "identifier": "https://lida.dataverse.lt/",
       "endPointURL": "https://lida.dataverse.lt/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "004ba57daa.json"
+      "file": "item-84.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "330680B402",
@@ -766,7 +850,8 @@
       "identifier": "urn:uuid:f5378897-0353-47d5-83a3-7a859793365b",
       "endPointURL": "https://modelarchive.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "330680b402.json"
+      "file": "item-85.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "004F9BAF7C",
@@ -775,7 +860,8 @@
       "identifier": "https://morpheus.gitlab.io/model/",
       "endPointURL": "https://morpheus.gitlab.io/model/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "004f9baf7c.json"
+      "file": "item-86.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "003E022560",
@@ -784,7 +870,8 @@
       "identifier": "https://www.myLaminin.net",
       "endPointURL": "https://www.myLaminin.net",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "003e022560.json"
+      "file": "item-87.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "47A2ACE9A8",
@@ -793,7 +880,8 @@
       "identifier": "https://ndsa.org/publications/levels-of-digital-preservation/",
       "endPointURL": "https://ndsa.org/publications/levels-of-digital-preservation/",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "47a2ace9a8.json"
+      "file": "item-88.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "114F0465C3",
@@ -802,7 +890,8 @@
       "identifier": "http://nbn-resolving.de/urn:nbn:de:0008-2010030806",
       "endPointURL": "http://nbn-resolving.de/urn:nbn:de:0008-2010030806",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "114f0465c3.json"
+      "file": "item-89.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4A3880251E",
@@ -811,7 +900,8 @@
       "identifier": "https://omabrowser.org/standalone",
       "endPointURL": "https://omabrowser.org/oma/home/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "4a3880251e.json"
+      "file": "item-90.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4BAE18BFED",
@@ -820,7 +910,8 @@
       "identifier": "urn:uuid:cc80e0eb-e62e-4489-918c-b15e84045254",
       "endPointURL": "https://www.kielipankki.fi/language-bank/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "4bae18bfed.json"
+      "file": "item-91.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "235D1D5D91",
@@ -829,7 +920,8 @@
       "identifier": "r3d100014746",
       "endPointURL": "https://opendata.nas.gov.ua/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "235d1d5d91.json"
+      "file": "item-92.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4DD6232782",
@@ -838,7 +930,8 @@
       "identifier": "https://doi.org/10.5281/zenodo.15534446",
       "endPointURL": "https://doi.org/10.5281/zenodo.15534446",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "4dd6232782.json"
+      "file": "item-93.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "165CB267FA",
@@ -847,7 +940,8 @@
       "identifier": "https://www.orthodb.org/",
       "endPointURL": "https://www.orthodb.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "165cb267fa.json"
+      "file": "item-94.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "7996C467D4",
@@ -856,7 +950,8 @@
       "identifier": "r3d100011329",
       "endPointURL": "https://www.ortolang.fr/en/home/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "7996c467d4.json"
+      "file": "item-95.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "54A6CD95F4",
@@ -865,7 +960,8 @@
       "identifier": "2287",
       "endPointURL": "https://radar.brookes.ac.uk/radar/hierarchy.do?topic=86e2c9d7-ef43-4b54-a387-3223d30acd3b",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "54a6cd95f4.json"
+      "file": "item-96.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "17556897C2",
@@ -874,7 +970,8 @@
       "identifier": "https://www.paradisec.org.au/",
       "endPointURL": "https://www.paradisec.org.au/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "17556897c2.json"
+      "file": "item-97.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0589F80CF6",
@@ -883,7 +980,8 @@
       "identifier": "https://doi.org/10.1594/PANGAEA",
       "endPointURL": "https://pangaea.de/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0589f80cf6.json"
+      "file": "item-98.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "003EEB3389",
@@ -892,7 +990,8 @@
       "identifier": "https://phaidra.cab.unipd.it/",
       "endPointURL": "https://phaidra.cab.unipd.it/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "003eeb3389.json"
+      "file": "item-99.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "003C4F4661",
@@ -901,7 +1000,8 @@
       "identifier": "http://www.pist.tn/",
       "endPointURL": "http://www.pist.tn/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "003c4f4661.json"
+      "file": "item-100.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "47BF9E27E4",
@@ -910,7 +1010,8 @@
       "identifier": "https://portfir.insa.min-saude.pt/pt/ .",
       "endPointURL": "https://portfir.insa.min-saude.pt/pt/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "47bf9e27e4.json"
+      "file": "item-101.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "635C7081B0",
@@ -919,7 +1020,8 @@
       "identifier": "https://doi.org/10.24343/C34W2H",
       "endPointURL": "https://doi.org/10.24343/C34W2H",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "635c7081b0.json"
+      "file": "item-102.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "70BF8F20D5",
@@ -928,7 +1030,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/ena/browser/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "70bf8f20d5.json"
+      "file": "item-103.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "2FA58C19A1",
@@ -937,7 +1040,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/intact/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "2fa58c19a1.json"
+      "file": "item-104.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "035B1CF480",
@@ -946,7 +1050,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/pride/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "035b1cf480.json"
+      "file": "item-105.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "2D7DE43001",
@@ -955,7 +1060,8 @@
       "identifier": "https://www.ebi.ac.uk/gwas/",
       "endPointURL": "https://www.ebi.ac.uk/gwas/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "2d7de43001.json"
+      "file": "item-106.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "78E1E6CCAB",
@@ -964,7 +1070,8 @@
       "identifier": "https://www.ebi.ac.uk/empiar/",
       "endPointURL": "https://www.ebi.ac.uk/empiar/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "78e1e6ccab.json"
+      "file": "item-107.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "219074EA4E",
@@ -973,7 +1080,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/biosamples/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "219074ea4e.json"
+      "file": "item-108.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0C37B9DA93",
@@ -982,7 +1090,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/biostudies/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0c37b9da93.json"
+      "file": "item-109.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "7643298FE1",
@@ -991,7 +1100,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/metabolights/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "7643298fe1.json"
+      "file": "item-110.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "05460B697E",
@@ -1000,7 +1110,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/bioimage-archive/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "05460b697e.json"
+      "file": "item-111.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "2FCC2EFF8F",
@@ -1009,7 +1120,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/biostudies/arrayexpress",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "2fcc2eff8f.json"
+      "file": "item-112.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "39B264CAC4",
@@ -1018,7 +1130,8 @@
       "identifier": "https://www.ebi.ac.uk/emdb/",
       "endPointURL": "https://www.ebi.ac.uk/emdb/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "39b264cac4.json"
+      "file": "item-113.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4523803A61",
@@ -1027,7 +1140,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/pdbe/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "4523803a61.json"
+      "file": "item-114.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0F27B7A25D",
@@ -1036,7 +1150,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/eva/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0f27b7a25d.json"
+      "file": "item-115.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "67CE4CF672",
@@ -1045,7 +1160,8 @@
       "identifier": "10.25504/FAIRsharing.e1byny",
       "endPointURL": "https://www.ebi.ac.uk/chembl/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "67ce4cf672.json"
+      "file": "item-116.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "7254507349",
@@ -1054,7 +1170,8 @@
       "identifier": "10.25504/FAIRsharing.bmz5ap",
       "endPointURL": "https://qdr.syr.edu/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "7254507349.json"
+      "file": "item-117.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "18262F5444",
@@ -1063,7 +1180,8 @@
       "identifier": "10.25504/FAIRsharing.277cff",
       "endPointURL": "https://data.progedo.fr/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "18262f5444.json"
+      "file": "item-118.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4D0B570EB7",
@@ -1072,7 +1190,8 @@
       "identifier": "https://data.progedo.fr/",
       "endPointURL": "https://www.progedo.fr/en/home/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "4d0b570eb7.json"
+      "file": "item-119.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "610A896E75",
@@ -1081,7 +1200,8 @@
       "identifier": "4035",
       "endPointURL": "https://radar.ibiss.bg.ac.rs/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "610a896e75.json"
+      "file": "item-120.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "A321Z987GH",
@@ -1090,7 +1210,8 @@
       "identifier": "https://data.ru.nl/",
       "endPointURL": "https://data.ru.nl/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "a321z987gh.json"
+      "file": "item-121.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "03C39F30F2",
@@ -1099,7 +1220,8 @@
       "identifier": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity",
       "endPointURL": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "03c39f30f2.json"
+      "file": "item-122.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "661B6E0023",
@@ -1108,7 +1230,8 @@
       "identifier": "https://doi.org/10.48440/re3.014",
       "endPointURL": "https://doi.org/10.48440/re3.014",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "661b6e0023.json"
+      "file": "item-123.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "39C8A335A1",
@@ -1117,7 +1240,8 @@
       "identifier": "nif-0000-03390",
       "endPointURL": "https://reactome.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "39c8a335a1.json"
+      "file": "item-124.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "27DEC264D7",
@@ -1126,7 +1250,8 @@
       "identifier": "https://recherche.data.gouv.fr/en/page/about-recherche-data-gouv",
       "endPointURL": "https://recherche.data.gouv.fr/en/page/about-recherche-data-gouv",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "27dec264d7.json"
+      "file": "item-125.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "2B5B8DBB59",
@@ -1135,7 +1260,8 @@
       "identifier": "https://doi.org/10.1108/JD-08-2023-0157",
       "endPointURL": "https://doi.org/10.1108/JD-08-2023-0157",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "2b5b8dbb59.json"
+      "file": "item-126.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0094967DCB",
@@ -1144,7 +1270,8 @@
       "identifier": "https://riunet.upv.es/home",
       "endPointURL": "https://riunet.upv.es/home",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0094967dcb.json"
+      "file": "item-127.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "007276AA14",
@@ -1153,7 +1280,8 @@
       "identifier": "10160",
       "endPointURL": "https://rivec.institut-palanka.rs/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "007276aa14.json"
+      "file": "item-128.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "408BAAA2BA",
@@ -1162,7 +1290,8 @@
       "identifier": "https://www.re3data.org/repository/r3d100013832",
       "endPointURL": "https://www.rohub.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "408baaa2ba.json"
+      "file": "item-129.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "745403B02C",
@@ -1171,7 +1300,8 @@
       "identifier": "http://schema.org/",
       "endPointURL": "http://schema.org/",
       "hasProfileType": "trsp:profile-type-standard",
-      "file": "745403b02c.json"
+      "file": "item-130.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "43E99F8D75",
@@ -1180,7 +1310,8 @@
       "identifier": "https://doi.org/10.3390/rs16203824",
       "endPointURL": "https://doi.org/10.3390/rs16203824",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "43e99f8d75.json"
+      "file": "item-131.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0048D487E7",
@@ -1189,7 +1320,8 @@
       "identifier": "https://sikt.no/en/archiving-research-data",
       "endPointURL": "https://sikt.no/en/archiving-research-data",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0048d487e7.json"
+      "file": "item-132.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "298D90251D",
@@ -1198,7 +1330,8 @@
       "identifier": "r3d100014833",
       "endPointURL": "https://sasd.sav.sk/en/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "298d90251d.json"
+      "file": "item-133.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "6668C83282",
@@ -1207,7 +1340,8 @@
       "identifier": "https://www.adp.fdv.uni-lj.si/",
       "endPointURL": "https://www.adp.fdv.uni-lj.si/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "6668c83282.json"
+      "file": "item-134.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "1704A232F6",
@@ -1216,7 +1350,8 @@
       "identifier": "https://www.sodha.be/",
       "endPointURL": "https://www.sodha.be/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "1704a232f6.json"
+      "file": "item-135.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00E8A65B68",
@@ -1225,7 +1360,8 @@
       "identifier": "https://www.socib.es/en/what-we-do/metocean-data/socib-data-repository",
       "endPointURL": "https://www.socib.es/en/what-we-do/metocean-data/socib-data-repository",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00e8a65b68.json"
+      "file": "item-136.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0C1A1A6FE2",
@@ -1234,7 +1370,8 @@
       "identifier": "https://doi.org/10.1371/journal.pone.0242525",
       "endPointURL": "https://doi.org/10.1371/journal.pone.0242525",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "0c1a1a6fe2.json"
+      "file": "item-137.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "18D00D3332",
@@ -1243,7 +1380,8 @@
       "identifier": "10.25504/FAIRsharing.6h8d2r",
       "endPointURL": "https://www.storedb.org/store_v3/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "18d00d3332.json"
+      "file": "item-138.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "7B721A758B",
@@ -1252,7 +1390,8 @@
       "identifier": "https://cds.unistra.fr/",
       "endPointURL": "https://cds.unistra.fr/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "7b721a758b.json"
+      "file": "item-139.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "7A31FBDEE1",
@@ -1261,7 +1400,8 @@
       "identifier": "r3d100010604",
       "endPointURL": "https://string-db.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "7a31fbdee1.json"
+      "file": "item-140.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "005BC63AA9",
@@ -1270,7 +1410,8 @@
       "identifier": "https://www.swissubase.ch/",
       "endPointURL": "https://www.swissubase.ch/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "005bc63aa9.json"
+      "file": "item-141.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "4DF95C0BF2",
@@ -1279,7 +1420,8 @@
       "identifier": "https://www.tarki.hu/eng",
       "endPointURL": "https://www.tarki.hu/eng",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "4df95c0bf2.json"
+      "file": "item-142.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "16233DE04E",
@@ -1288,7 +1430,8 @@
       "identifier": "512",
       "endPointURL": "https://ega-archive.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "16233de04e.json"
+      "file": "item-143.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "003C955045",
@@ -1297,7 +1440,8 @@
       "identifier": "https://www.kielipankki.fi/language-bank/",
       "endPointURL": "https://www.kielipankki.fi/language-bank/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "003c955045.json"
+      "file": "item-144.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "370B8EC563",
@@ -1306,7 +1450,8 @@
       "identifier": "https://www.crl.edu/trac-metrics",
       "endPointURL": "https://www.crl.edu/trac-metrics",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "370b8ec563.json"
+      "file": "item-145.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "0086D1355E",
@@ -1315,7 +1460,8 @@
       "identifier": "https://trolling.uit.no/",
       "endPointURL": "https://trolling.uit.no/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "0086d1355e.json"
+      "file": "item-146.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "1EE89F448D",
@@ -1324,7 +1470,8 @@
       "identifier": "https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf",
       "endPointURL": "https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf",
       "hasProfileType": "trsp:profile-type-standard",
-      "file": "1ee89f448d.json"
+      "file": "item-147.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "PLK1JHG9VB",
@@ -1333,7 +1480,8 @@
       "identifier": "https://doi.org/10.1038/s41597-020-0486-7",
       "endPointURL": "https://doi.org/10.1038/s41597-020-0486-7",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "plk1jhg9vb.json"
+      "file": "item-148.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "76BC362CF1",
@@ -1342,7 +1490,8 @@
       "identifier": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity",
       "endPointURL": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity",
       "hasProfileType": "trsp:profile-type-source",
-      "file": "76bc362cf1.json"
+      "file": "item-149.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "668467EC38",
@@ -1351,7 +1500,8 @@
       "identifier": "https://doi.org/10.5281/zenodo.17973113",
       "endPointURL": "https://doi.org/10.5281/zenodo.17973113",
       "hasProfileType": "trsp:profile-type-community",
-      "file": "668467ec38.json"
+      "file": "item-150.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "1B6B7677B4",
@@ -1360,7 +1510,8 @@
       "identifier": "https://ukdataservice.ac.uk/about/",
       "endPointURL": "https://ukdataservice.ac.uk/about/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "1b6b7677b4.json"
+      "file": "item-151.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "1C10548269",
@@ -1369,7 +1520,8 @@
       "identifier": "https://www.uniprot.org/",
       "endPointURL": "https://www.uniprot.org/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "1c10548269.json"
+      "file": "item-152.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "00804149FC",
@@ -1378,7 +1530,8 @@
       "identifier": "https://data.utm.csic.es/",
       "endPointURL": "https://data.utm.csic.es/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "00804149fc.json"
+      "file": "item-153.ttl",
+      "hasProfileData": ""
     },
     {
       "id": "79BBDA6F70",
@@ -1387,8 +1540,9 @@
       "identifier": "https://www.wdc-climate.de/ui/",
       "endPointURL": "https://www.wdc-climate.de/ui/",
       "hasProfileType": "trsp:profile-type-repository",
-      "file": "79bbda6f70.json"
+      "file": "item-154.ttl",
+      "hasProfileData": ""
     }
   ],
-  "dateModified": "2026-09-16T04:41:25.386Z"
+  "dateModified": "2026-09-16T04:49:40.536Z"
 }
