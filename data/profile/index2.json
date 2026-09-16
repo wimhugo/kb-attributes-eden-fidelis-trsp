@@ -1,778 +1,1394 @@
 {
-  "@context": "https://schema.org",
+  "@context": "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp",
   "@type": "ItemList",
   "numberOfItems": 154,
   "itemListElement": [
     {
-      "file": "item-1.ttl",
-      "id": "trsp:profile.1AA258A562",
-      "label": "4TU.ResearchData"
-    },
-    {
-      "file": "item-2.ttl",
-      "id": "trsp:profile.245EF9D7AE",
-      "label": "AgroPortal"
-    },
-    {
-      "file": "item-3.ttl",
-      "id": "trsp:profile.00BA218182",
-      "label": "ARCHE - A Resource Centre for the HumanitiEs"
-    },
-    {
-      "file": "item-4.ttl",
-      "id": "trsp:profile.67700E6E2B",
-      "label": "ARP Research Data Repository"
-    },
-    {
-      "file": "item-5.ttl",
-      "id": "trsp:profile.002FA0AA0F",
-      "label": "ASAP"
-    },
-    {
-      "file": "item-6.ttl",
-      "id": "trsp:profile.20B1E7D98D",
-      "label": "AUSSDA - The Austrian Social Science Data Archive"
-    },
-    {
-      "file": "item-7.ttl",
-      "id": "trsp:profile.39DF75675C",
-      "label": "Austrian NeuroCloud"
-    },
-    {
-      "file": "item-8.ttl",
-      "id": "trsp:profile.582A25D377",
-      "label": "BacDive - The Bacterial Diversity Database"
-    },
-    {
-      "file": "item-9.ttl",
-      "id": "trsp:profile.5513301B31",
-      "label": "Bgee DataBase for Gene Expression Evolution"
-    },
-    {
-      "file": "item-10.ttl",
-      "id": "trsp:profile.494FFE37F8",
-      "label": "biomodels.org"
-    },
-    {
-      "file": "item-11.ttl",
-      "id": "trsp:profile.4B0F63A94A",
-      "label": "Borealis"
-    },
-    {
-      "file": "item-12.ttl",
-      "id": "trsp:profile.644820F945",
-      "label": "Camtree Digital Library :: Home"
-    },
-    {
-      "file": "item-13.ttl",
-      "id": "trsp:profile.6AE564BF52",
-      "label": "CARE"
-    },
-    {
-      "file": "item-14.ttl",
-      "id": "trsp:profile.14554765CB",
-      "label": "CATH - Protein Structure Classification"
-    },
-    {
-      "file": "item-15.ttl",
-      "id": "trsp:profile.6FB247C22A",
-      "label": "Cellosaurus"
-    },
-    {
-      "file": "item-16.ttl",
-      "id": "trsp:profile.67FF569AA0",
-      "label": "Central Repository ICTM"
-    },
-    {
-      "file": "item-17.ttl",
-      "id": "trsp:profile.6B38C46111",
-      "label": "CESSDA"
-    },
-    {
-      "file": "item-18.ttl",
-      "id": "trsp:profile.5C32EF8367",
-      "label": "CLARIN-ERIC"
-    },
-    {
-      "file": "item-19.ttl",
-      "id": "trsp:profile.644301C176",
-      "label": "COAR"
-    },
-    {
-      "file": "item-20.ttl",
-      "id": "trsp:profile.757212C93C",
-      "label": "COAR"
-    },
-    {
-      "file": "item-21.ttl",
-      "id": "trsp:profile.18B13EC70C",
-      "label": "Copernicus Climate Change Service Portal"
-    },
-    {
-      "file": "item-22.ttl",
-      "id": "trsp:profile.0075D2D0B2",
-      "label": "CORA.Repositori de Dades de Recerca"
-    },
-    {
-      "file": "item-23.ttl",
-      "id": "trsp:profile.046B279494",
-      "label": "Coscine"
-    },
-    {
-      "file": "item-24.ttl",
-      "id": "trsp:profile.6C825F4502",
-      "label": "CPP"
-    },
-    {
-      "file": "item-25.ttl",
-      "id": "trsp:profile.007F9FADF2",
-      "label": "CRIS UNS"
-    },
-    {
-      "file": "item-26.ttl",
-      "id": "trsp:profile.31C7106603",
-      "label": "Croatian Social Science Data Archive"
-    },
-    {
-      "file": "item-27.ttl",
-      "id": "trsp:profile.3FE210C50F",
-      "label": "CTM"
-    },
-    {
-      "file": "item-28.ttl",
-      "id": "trsp:profile.697647043E",
-      "label": "CTS"
-    },
-    {
-      "file": "item-29.ttl",
-      "id": "trsp:profile.53D9892B4E",
-      "label": "Czech Social Science Data Archive"
-    },
-    {
-      "file": "item-30.ttl",
-      "id": "trsp:profile.39A738E4E3",
-      "label": "DAIS"
-    },
-    {
-      "file": "item-31.ttl",
-      "id": "trsp:profile.005B248EEE",
-      "label": "DAIS - Digital Archive of the Serbian Academy of Sciences and Arts"
-    },
-    {
-      "file": "item-32.ttl",
-      "id": "trsp:profile.0180636A61",
-      "label": "DASS-BiH"
-    },
-    {
-      "file": "item-33.ttl",
-      "id": "trsp:profile.00967B7916",
-      "label": "Data Repository Platform (ARP)"
-    },
-    {
-      "file": "item-34.ttl",
-      "id": "trsp:profile.4B12A4A8E3",
-      "label": "Data Station Life Sciences | DANS"
-    },
-    {
-      "file": "item-35.ttl",
-      "id": "trsp:profile.552C7DD5F0",
-      "label": "Data Station Social Sciences and Humanities | DANS"
-    },
-    {
-      "file": "item-36.ttl",
-      "id": "trsp:profile.4E16B3E617",
-      "label": "data.sciencespo"
-    },
-    {
-      "file": "item-37.ttl",
-      "id": "trsp:profile.346AA2D576",
-      "label": "DataRepositoriUM"
-    },
-    {
-      "file": "item-38.ttl",
-      "id": "trsp:profile.2BD9FB0372",
-      "label": "dataverse.no"
-    },
-    {
-      "file": "item-39.ttl",
-      "id": "trsp:profile.0CBE4E6DFC",
-      "label": "DataverseLV"
-    },
-    {
-      "file": "item-40.ttl",
-      "id": "trsp:profile.1798E19839",
-      "label": "DataverseNO"
-    },
-    {
-      "file": "item-41.ttl",
-      "id": "trsp:profile.00624373BF",
-      "label": "DataverseUA"
-    },
-    {
-      "file": "item-42.ttl",
-      "id": "trsp:profile.7AA756F28B",
-      "label": "DATICE"
-    },
-    {
-      "file": "item-43.ttl",
-      "id": "trsp:profile.03B02C7454",
-      "label": "DCAT-AP"
-    },
-    {
-      "file": "item-44.ttl",
-      "id": "trsp:profile.29A444BA70",
-      "label": "Deposit your research data | Sikt"
-    },
-    {
-      "file": "item-45.ttl",
-      "id": "trsp:profile.4841BDEC9E",
-      "label": "DINI"
-    },
-    {
-      "file": "item-46.ttl",
-      "id": "trsp:profile.009EC11C5C",
-      "label": "DisProt"
-    },
-    {
-      "file": "item-47.ttl",
-      "id": "trsp:profile.001961A5E1",
-      "label": "DOME Registry"
-    },
-    {
-      "file": "item-48.ttl",
-      "id": "trsp:profile.1E05BBE77F",
-      "label": "DPC CRPS"
-    },
-    {
-      "file": "item-49.ttl",
-      "id": "trsp:profile.74820191F5",
-      "label": "DPC RAM"
-    },
-    {
-      "file": "item-50.ttl",
-      "id": "trsp:profile.6BF0A22CB5",
-      "label": "DRAWG"
-    },
-    {
-      "file": "item-51.ttl",
-      "id": "trsp:profile.29A21B39F5",
-      "label": "DTU Data"
-    },
-    {
-      "file": "item-52.ttl",
-      "id": "trsp:profile.004A879024",
-      "label": "e-cienciaDatos"
-    },
-    {
-      "file": "item-53.ttl",
-      "id": "trsp:profile.61E7538E10",
-      "label": "EDEN"
-    },
-    {
-      "file": "item-54.ttl",
-      "id": "trsp:profile.005134C65D",
-      "label": "Edinburgh DataShare"
-    },
-    {
-      "file": "item-55.ttl",
-      "id": "trsp:profile.25E02CC352",
-      "label": "ELIXIR"
-    },
-    {
-      "file": "item-56.ttl",
-      "id": "trsp:profile.6EBCF639D3",
-      "label": "EOSC PID"
-    },
-    {
-      "file": "item-57.ttl",
-      "id": "trsp:profile.2BBC8312C3",
-      "label": "ERC-HE"
-    },
-    {
-      "file": "item-58.ttl",
-      "id": "trsp:profile.00D32E62E3",
-      "label": "ESRF Data Portal"
-    },
-    {
-      "file": "item-59.ttl",
-      "id": "trsp:profile.1DF058A6F6",
-      "label": "Fairdata"
-    },
-    {
-      "file": "item-60.ttl",
-      "id": "trsp:profile.09D755CCE9",
-      "label": "FAIRsharing"
-    },
-    {
-      "file": "item-61.ttl",
-      "id": "trsp:profile.3C2D6C1C37",
-      "label": "FIDELIS"
-    },
-    {
-      "file": "item-62.ttl",
-      "id": "trsp:profile.66B58B3D2D",
-      "label": "Finnish Social Science Data Archive"
-    },
-    {
-      "file": "item-63.ttl",
-      "id": "trsp:profile.00318846F4",
-      "label": "FiVeR"
-    },
-    {
-      "file": "item-64.ttl",
-      "id": "trsp:profile.700C58D59C",
-      "label": "Gen Repo IG"
-    },
-    {
-      "file": "item-65.ttl",
-      "id": "trsp:profile.006C9BFF2E",
-      "label": "GESIS - Leibniz Institute for the Social Sciences"
-    },
-    {
-      "file": "item-66.ttl",
-      "id": "trsp:profile.20E6BA37EF",
-      "label": "GFZ Data Services"
-    },
-    {
-      "file": "item-67.ttl",
-      "id": "trsp:profile.226704C31B",
-      "label": "Glittr.org"
-    },
-    {
-      "file": "item-68.ttl",
-      "id": "trsp:profile.4AFF1332EF",
-      "label": "GORC"
-    },
-    {
-      "file": "item-69.ttl",
-      "id": "trsp:profile.0041142F56",
-      "label": "GrantHub Open Funding & Innovation Knowledge Repository"
-    },
-    {
-      "file": "item-70.ttl",
-      "id": "trsp:profile.546FD5B0D8",
-      "label": "GREI"
-    },
-    {
-      "file": "item-71.ttl",
-      "id": "trsp:profile.5F8F8C0526",
-      "label": "GUDe :: Home"
-    },
-    {
-      "file": "item-72.ttl",
-      "id": "trsp:profile.2F48DA2962",
-      "label": "HARVESTER"
-    },
-    {
-      "file": "item-73.ttl",
-      "id": "trsp:profile.6DF1A59550",
-      "label": "Home - The Swiss Food Composition Database"
-    },
-    {
-      "file": "item-74.ttl",
-      "id": "trsp:profile.00B8A6AE14",
-      "label": "HOMEROS - OSCARS project"
-    },
-    {
-      "file": "item-75.ttl",
-      "id": "trsp:profile.00B1563729",
-      "label": "INFRA-ART Spectral Library"
-    },
-    {
-      "file": "item-76.ttl",
-      "id": "trsp:profile.5177117B6B",
-      "label": "Inspire-HEP"
-    },
-    {
-      "file": "item-77.ttl",
-      "id": "trsp:profile.719B779075",
-      "label": "ISO"
-    },
-    {
-      "file": "item-78.ttl",
-      "id": "trsp:profile.02C745403B",
-      "label": "JISC DPS"
-    },
-    {
-      "file": "item-79.ttl",
-      "id": "trsp:profile.3E1A5A4B73",
-      "label": "KU Leuven RDR"
-    },
-    {
-      "file": "item-80.ttl",
-      "id": "trsp:profile.5E53C20361",
-      "label": "LiDA"
-    },
-    {
-      "file": "item-81.ttl",
-      "id": "trsp:profile.GH23JK45LM",
-      "label": "LINDAT/CLARIAH-CZ repository"
-    },
-    {
-      "file": "item-82.ttl",
-      "id": "trsp:profile.2E14441342",
-      "label": "Linguistic Data Consortium"
-    },
-    {
-      "file": "item-83.ttl",
-      "id": "trsp:profile.6258E6CBD8",
-      "label": "LIPID MAPS"
-    },
-    {
-      "file": "item-84.ttl",
-      "id": "trsp:profile.004BA57DAA",
-      "label": "Lithuanian Data Archive for Social Sciences and Humanities (LiDA)"
-    },
-    {
-      "file": "item-85.ttl",
-      "id": "trsp:profile.330680B402",
-      "label": "ModelArchive"
-    },
-    {
-      "file": "item-86.ttl",
-      "id": "trsp:profile.004F9BAF7C",
-      "label": "MorpheusML Model Repository"
-    },
-    {
-      "file": "item-87.ttl",
-      "id": "trsp:profile.003E022560",
-      "label": "myLaminin"
-    },
-    {
-      "file": "item-88.ttl",
-      "id": "trsp:profile.47A2ACE9A8",
-      "label": "NDSA"
-    },
-    {
-      "file": "item-89.ttl",
-      "id": "trsp:profile.114F0465C3",
-      "label": "nestor"
-    },
-    {
-      "file": "item-90.ttl",
-      "id": "trsp:profile.4A3880251E",
-      "label": "OMA Standalone"
-    },
-    {
-      "file": "item-91.ttl",
-      "id": "trsp:profile.4BAE18BFED",
-      "label": "Online course: Data Clinic"
-    },
-    {
-      "file": "item-92.ttl",
-      "id": "trsp:profile.235D1D5D91",
-      "label": "Open Data Repository of the National Academy of Sciences of Ukraine"
-    },
-    {
-      "file": "item-93.ttl",
-      "id": "trsp:profile.4DD6232782",
-      "label": "OPENAIRE"
-    },
-    {
-      "file": "item-94.ttl",
-      "id": "trsp:profile.165CB267FA",
-      "label": "OrthoDB"
-    },
-    {
-      "file": "item-95.ttl",
-      "id": "trsp:profile.7996C467D4",
-      "label": "Ortolang"
-    },
-    {
-      "file": "item-96.ttl",
-      "id": "trsp:profile.54A6CD95F4",
-      "label": "Oxford Brookes University: RADAR"
-    },
-    {
-      "file": "item-97.ttl",
-      "id": "trsp:profile.17556897C2",
-      "label": "Pacific and Regional Archive for Digital Sources in Endangered Cultures"
-    },
-    {
-      "file": "item-98.ttl",
-      "id": "trsp:profile.0589F80CF6",
-      "label": "PANGAEA"
-    },
-    {
-      "file": "item-99.ttl",
-      "id": "trsp:profile.003EEB3389",
-      "label": "PHAIDRA - University of Padua"
-    },
-    {
-      "file": "item-100.ttl",
-      "id": "trsp:profile.003C4F4661",
-      "label": "PIST"
-    },
-    {
-      "file": "item-101.ttl",
-      "id": "trsp:profile.47BF9E27E4",
-      "label": "PortFIR"
-    },
-    {
-      "file": "item-102.ttl",
-      "id": "trsp:profile.635C7081B0",
-      "label": "POSI"
-    },
-    {
-      "file": "item-103.ttl",
-      "id": "trsp:profile.70BF8F20D5",
-      "label": "PRoteomics IDEntifications Database"
-    },
-    {
-      "file": "item-104.ttl",
-      "id": "trsp:profile.2FA58C19A1",
-      "label": "PRoteomics IDEntifications Database"
-    },
-    {
-      "file": "item-105.ttl",
-      "id": "trsp:profile.035B1CF480",
-      "label": "PRoteomics IDEntifications database"
-    },
-    {
-      "file": "item-106.ttl",
-      "id": "trsp:profile.2D7DE43001",
-      "label": "PRoteomics IDEntifications database"
-    },
-    {
-      "file": "item-107.ttl",
-      "id": "trsp:profile.78E1E6CCAB",
-      "label": "PRoteomics IDEntifications Database"
-    },
-    {
-      "file": "item-108.ttl",
-      "id": "trsp:profile.219074EA4E",
-      "label": "PRoteomics IDEntifications database"
-    },
-    {
-      "file": "item-109.ttl",
-      "id": "trsp:profile.0C37B9DA93",
-      "label": "PRoteomics IDEntifications Database"
-    },
-    {
-      "file": "item-110.ttl",
-      "id": "trsp:profile.7643298FE1",
-      "label": "PRoteomics IDEntifications database"
-    },
-    {
-      "file": "item-111.ttl",
-      "id": "trsp:profile.05460B697E",
-      "label": "PRoteomics IDEntifications database"
-    },
-    {
-      "file": "item-112.ttl",
-      "id": "trsp:profile.2FCC2EFF8F",
-      "label": "PRoteomics IDEntifications Database"
-    },
-    {
-      "file": "item-113.ttl",
-      "id": "trsp:profile.39B264CAC4",
-      "label": "PRoteomics IDEntifications database"
-    },
-    {
-      "file": "item-114.ttl",
-      "id": "trsp:profile.4523803A61",
-      "label": "PRoteomics IDEntifications Database"
-    },
-    {
-      "file": "item-115.ttl",
-      "id": "trsp:profile.0F27B7A25D",
-      "label": "PRoteomics IDEntifications Database"
-    },
-    {
-      "file": "item-116.ttl",
-      "id": "trsp:profile.67CE4CF672",
-      "label": "PRoteomics IDEntifications database"
-    },
-    {
-      "file": "item-117.ttl",
-      "id": "trsp:profile.7254507349",
-      "label": "Qualitative Data Repository"
-    },
-    {
-      "file": "item-118.ttl",
-      "id": "trsp:profile.18262F5444",
-      "label": "Quetelet-Progedo"
-    },
-    {
-      "file": "item-119.ttl",
-      "id": "trsp:profile.4D0B570EB7",
-      "label": "Quetelet-Progedo"
-    },
-    {
-      "file": "item-120.ttl",
-      "id": "trsp:profile.610A896E75",
-      "label": "RADaR - Digital Repository of Archived Publications of the Institute for Biological Research “Siniša Stanković”"
-    },
-    {
-      "file": "item-121.ttl",
-      "id": "trsp:profile.A321Z987GH",
-      "label": "Radboud Data Repository"
-    },
-    {
-      "file": "item-122.ttl",
-      "id": "trsp:profile.03C39F30F2",
-      "label": "RDA/  WDS IG"
-    },
-    {
-      "file": "item-123.ttl",
-      "id": "trsp:profile.661B6E0023",
-      "label": "re3data.org"
-    },
-    {
-      "file": "item-124.ttl",
-      "id": "trsp:profile.39C8A335A1",
-      "label": "Reactome"
-    },
-    {
-      "file": "item-125.ttl",
-      "id": "trsp:profile.27DEC264D7",
-      "label": "Recherche Data Gouv"
-    },
-    {
-      "file": "item-126.ttl",
-      "id": "trsp:profile.2B5B8DBB59",
-      "label": "RISK"
-    },
-    {
-      "file": "item-127.ttl",
-      "id": "trsp:profile.0094967DCB",
-      "label": "RiuNet"
-    },
-    {
-      "file": "item-128.ttl",
-      "id": "trsp:profile.007276AA14",
-      "label": "RIVeC"
-    },
-    {
-      "file": "item-129.ttl",
-      "id": "trsp:profile.408BAAA2BA",
-      "label": "ROHub"
-    },
-    {
-      "file": "item-130.ttl",
-      "id": "trsp:profile.745403B02C",
-      "label": "schema.org"
-    },
-    {
-      "file": "item-131.ttl",
-      "id": "trsp:profile.43E99F8D75",
-      "label": "SDSBB"
-    },
-    {
-      "file": "item-132.ttl",
-      "id": "trsp:profile.0048D487E7",
-      "label": "Sikt Research Data Archive"
-    },
-    {
-      "file": "item-133.ttl",
-      "id": "trsp:profile.298D90251D",
-      "label": "Slovak Archive of Social Data"
-    },
-    {
-      "file": "item-134.ttl",
-      "id": "trsp:profile.6668C83282",
-      "label": "Slovenian Social Science Data Archives"
-    },
-    {
-      "file": "item-135.ttl",
-      "id": "trsp:profile.1704A232F6",
-      "label": "Social Sciences and Digital Humanities Archive"
-    },
-    {
-      "file": "item-136.ttl",
-      "id": "trsp:profile.00E8A65B68",
-      "label": "SOCIB Data Repository"
-    },
-    {
-      "file": "item-137.ttl",
-      "id": "trsp:profile.0C1A1A6FE2",
-      "label": "STATUS"
-    },
-    {
-      "file": "item-138.ttl",
-      "id": "trsp:profile.18D00D3332",
-      "label": "STOREDB"
-    },
-    {
-      "file": "item-139.ttl",
-      "id": "trsp:profile.7B721A758B",
-      "label": "Strasbourg Astronomical Data Center"
-    },
-    {
-      "file": "item-140.ttl",
-      "id": "trsp:profile.7A31FBDEE1",
-      "label": "STRING"
-    },
-    {
-      "file": "item-141.ttl",
-      "id": "trsp:profile.005BC63AA9",
-      "label": "SWISSUbase"
-    },
-    {
-      "file": "item-142.ttl",
-      "id": "trsp:profile.4DF95C0BF2",
-      "label": "TARKI Data Archive"
-    },
-    {
-      "file": "item-143.ttl",
-      "id": "trsp:profile.16233DE04E",
-      "label": "The European Genome-phenome Archive"
-    },
-    {
-      "file": "item-144.ttl",
-      "id": "trsp:profile.003C955045",
-      "label": "The Language Bank of Finland"
-    },
-    {
-      "file": "item-145.ttl",
-      "id": "trsp:profile.370B8EC563",
-      "label": "TRAC"
-    },
-    {
-      "file": "item-146.ttl",
-      "id": "trsp:profile.0086D1355E",
-      "label": "Tromso, Repository of Language and Linguistics (TROLLing)"
-    },
-    {
-      "file": "item-147.ttl",
-      "id": "trsp:profile.1EE89F448D",
-      "label": "TRSP"
-    },
-    {
-      "file": "item-148.ttl",
-      "id": "trsp:profile.PLK1JHG9VB",
-      "label": "TRUST"
-    },
-    {
-      "file": "item-149.ttl",
-      "id": "trsp:profile.76BC362CF1",
-      "label": "TRUST WG"
-    },
-    {
-      "file": "item-150.ttl",
-      "id": "trsp:profile.668467EC38",
-      "label": "TTRAM"
-    },
-    {
-      "file": "item-151.ttl",
-      "id": "trsp:profile.1B6B7677B4",
-      "label": "UK Data Service"
-    },
-    {
-      "file": "item-152.ttl",
-      "id": "trsp:profile.1C10548269",
-      "label": "UniProt Knowledgebase"
-    },
-    {
-      "file": "item-153.ttl",
-      "id": "trsp:profile.00804149FC",
-      "label": "UTM-CSIC Data Centre"
-    },
-    {
-      "file": "item-154.ttl",
-      "id": "trsp:profile.79BBDA6F70",
-      "label": "World Data Center for Climate"
+      "id": "1AA258A562",
+      "label": "4TU.ResearchData",
+      "description": "4TU.ResearchData is an international data repository for science, engineering and design, open to anyone in the world to upload and download data. Its services include curation, sharing, long-term access and preservation of research datasets. These services are available to anyone around the world. In addition, 4TU.ResearchData also offers training and resources to researchers to support them in making research data findable, accessible, interoperable and reproducible (FAIR).",
+      "identifier": "https://data.4tu.nl/",
+      "endPointURL": "https://data.4tu.nl/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "1aa258a562.json"
+    },
+    {
+      "id": "245EF9D7AE",
+      "label": "AgroPortal",
+      "description": "AgroPortal is a research data repository dedicated to ontologies and semantic artefacts in the agri-food domain. It provides a catalog of agricultural, food, and environmental ontologies, enabling semantic interoperability and supporting the adoption of FAIR principles. Offering ontology hosting, versioning, metadata management, semantic search, and annotation and recommendation services, AgroPortal supports researchers and data managers in structuring and linking their data. It facilitates ontology alignment, promotes open science, and integrates with linked open data to enhance knowledge organization in agriculture and related fields.",
+      "identifier": "https://agroportal.eu/",
+      "endPointURL": "https://agroportal.eu/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "245ef9d7ae.json"
+    },
+    {
+      "id": "00BA218182",
+      "label": "ARCHE - A Resource Centre for the HumanitiEs",
+      "description": "Austrian national repository for digital humanities research data and cultural heritage resources. Provides long-term archiving and open access to linguistic corpora, historical data, cultural heritage datasets and humanities research outputs. Austrian node of CLARIN ERIC and DARIAH-EU.",
+      "identifier": "https://arche.acdh.oeaw.ac.at/browser/",
+      "endPointURL": "https://arche.acdh.oeaw.ac.at/browser/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00ba218182.json"
+    },
+    {
+      "id": "67700E6E2B",
+      "label": "ARP Research Data Repository",
+      "description": "This repository supports the researchers of the Hungarian Research Network (HUN-REN), and to some extent the Hungarian scientists in general.",
+      "identifier": "10.25504/FAIRsharing.b7f3ff",
+      "endPointURL": "https://repo.researchdata.hu/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "67700e6e2b.json"
+    },
+    {
+      "id": "002FA0AA0F",
+      "label": "ASAP",
+      "description": "Automated Single-cell Analysis Portal (ASAP) – a collaborative web platform for analysing, visualising and publishing single-cell RNA-seq and multi-omics data. Allows researchers to import public datasets (GEO, ArrayExpress, SRA, BioProject) and private data, run analyses and share results. Incorporates scFAIR validation schema for single-cell data metadata.",
+      "identifier": "https://asap.epfl.ch/",
+      "endPointURL": "https://asap.epfl.ch/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "002fa0aa0f.json"
+    },
+    {
+      "id": "20B1E7D98D",
+      "label": "AUSSDA - The Austrian Social Science Data Archive",
+      "description": "AUSSDA - The Austrian Social Science Data Archive is a certified, national research infrastructure for the social science community. We offer sustainable and easy-to-use services in the field of digital archiving and preservation. The main beneficiaries are researchers, students, educational institutions and media professionals.nWe implement international standards to make research data findable, accessible, interoperable and reusable according to the FAIR principles. AUSSDA supports the open science movement to maximize the potential for data reuse. We stand for integrity in archiving and advocate for compliance with data protection and ethical principles in research data management.nAUSSDA represents Austria as a national service provider in CESSDA ERIC, has locations at the University of Vienna and the WU Wien and at the universities of Graz, Linz, Innsbruck, Krems, Klagenfurt and Salzburg as well as at the OeAW (Austrian Academy of Sciences) and works within a network of national and international partners.",
+      "identifier": "https://aussda.at/",
+      "endPointURL": "https://aussda.at/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "20b1e7d98d.json"
+    },
+    {
+      "id": "39DF75675C",
+      "label": "Austrian NeuroCloud",
+      "description": "The ANC is a FAIR-enabling open repository providing tools and services for the storage, maintenance, and utilization (e.g., through (re)-analysis or integration) of neurocognitive research data. The ANC fully supports the mission of the European Open Science Cloud (EOSC) and is committed to the European Union's open science policy, legal standards, and best open science practices. We aspire to provide the framework necessary for researchers to facilitate data operations along the entire research data lifecycle. This includes planning and designing research studies (with an increasing amount of funding agencies requiring a stringent data management plan), organizing and preparing data (by adhering to accepted community standards), processing and analyzing data (using a system of integrated tools), and finally storing and sharing the research data (promoting the ongoing shift in research culture towards heightened transparency, data reusability, and result reproducibility).",
+      "identifier": "https://anc.plus.ac.at",
+      "endPointURL": "https://anc.plus.ac.at/index.html",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "39df75675c.json"
+    },
+    {
+      "id": "582A25D377",
+      "label": "BacDive - The Bacterial Diversity Database",
+      "description": "The Bacterial Diversity Metadatabase BacDive is the worldwide largest database for standardized bacterial phenotypic information. Its mission is to mobilize research data on strain level from internal files in culture collections (e.g. CABI, CIP, CCUG, DSMZ) as well as from primary literature and make it freely accessible. Today BacDive offers data on 93,254 bacterial and archaeal strains, including 19,313 type strains and thereby covers approx. 90% of the validly described species. Within over 600 data fields the topics taxonomy, morphology, physiology, origin, molecular data, and cultivation conditions are covered. The database offers systematic access to phenotypic data. BacDive thereby enables queries like \\",
+      "identifier": "10.25504/FAIRsharing.aSszvY",
+      "endPointURL": "https://bacdive.dsmz.de/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "582a25d377.json"
+    },
+    {
+      "id": "5513301B31",
+      "label": "Bgee DataBase for Gene Expression Evolution",
+      "description": "Bgee is a database for retrieval and comparison of gene expression patterns across multiple animal species. It provides an intuitive answer to the question -where is a gene expressed?- and supports research in cancer and agriculture, as well as evolutionary biology.",
+      "identifier": "https://www.bgee.org/",
+      "endPointURL": "https://www.bgee.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "5513301b31.json"
+    },
+    {
+      "id": "494FFE37F8",
+      "label": "biomodels.org",
+      "description": "BioModels is a repository of freely-available mathematical models of biological and biomedical systems. It hosts a vast selection of physiologically and pharmaceuticallynrelevant mechanistic models in standard formats.",
+      "identifier": "https://biomodels.org/",
+      "endPointURL": "https://biomodels.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "494ffe37f8.json"
+    },
+    {
+      "id": "4B0F63A94A",
+      "label": "Borealis",
+      "description": "Borealis, the Canadian Dataverse Repository, is a bilingual, multidisciplinary, secure, Canadian research data repository, supported by academic libraries and research institutions across Canada. Borealis supports open discovery, management, sharing, and preservation of Canadian research data.",
+      "identifier": "https://borealisdata.ca/",
+      "endPointURL": "https://borealisdata.ca/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "4b0f63a94a.json"
+    },
+    {
+      "id": "644820F945",
+      "label": "Camtree Digital Library :: Home",
+      "description": "Repository and exchange platform dedicated to teacher-practitioner research and inquiry. Enables classroom-based teachers to share evidence from their own research to improve educational practice. Unique focus on practitioner-led educational knowledge creation and dissemination.",
+      "identifier": "https://library.camtree.org/home",
+      "endPointURL": "https://library.camtree.org/home",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "644820f945.json"
+    },
+    {
+      "id": "6AE564BF52",
+      "label": "CARE",
+      "description": "Carroll; S.R.; Garba; I.; Figueroa-Rodríguez; O.L.; Holbrook; J.; Lovett; R.; Materechera; S.; Parsons; M.; Raseroka; K.; Rodriguez-Lonebear; D.; Rowe; R.; Sara; R.; Walker; J.D.; Anderson; J. and Hudson; M. (2020) ‘The CARE Principles for Indigenous Data Governance’; Data Science Journal; 19(1); p. 43.",
+      "identifier": "https://doi.org/10.5334/dsj-2020-043",
+      "endPointURL": "https://doi.org/10.5334/dsj-2020-043",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "6ae564bf52.json"
+    },
+    {
+      "id": "14554765CB",
+      "label": "CATH - Protein Structure Classification",
+      "description": "CATH is a classification of protein structures downloaded from the Protein Data Bank. We group protein domains into superfamilies when there is sufficient evidence they have diverged from a common ancestor.",
+      "identifier": "www.cathdb.info",
+      "endPointURL": "https://www.cathdb.info/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "14554765cb.json"
+    },
+    {
+      "id": "6FB247C22A",
+      "label": "Cellosaurus",
+      "description": "The Cellosaurus is a knowledge resource on cell lines. It attempts to describe all cell lines used in biomedical research. Its scope includes: Immortalized cell lines; naturally immortal cell lines (example: stem cell lines); finite life cell lines when those are distributed and used widely; vertebrate cell line with an emphasis on human, mouse and rat cell lines; and invertebrate (insects and ticks) cell lines. Its scope does not include primary cell lines (with the exception of the finite life cell lines described above) and plant cell lines.",
+      "identifier": "10.25504/FAIRsharing.hkk309",
+      "endPointURL": "https://www.cellosaurus.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "6fb247c22a.json"
+    },
+    {
+      "id": "67FF569AA0",
+      "label": "Central Repository ICTM",
+      "description": "CeR i.e. Central Repository ICTM is a digital repository of the Institute of Chemistry, Technology and Metallurgy, University of Belgrade, Serbia. CeR provides open access to the publications, as well as to other outputs of the research projects implemented in this institution.",
+      "identifier": "https://www.re3data.org/repository/r3d100013811",
+      "endPointURL": "https://cer.ihtm.bg.ac.rs/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "67ff569aa0.json"
+    },
+    {
+      "id": "6B38C46111",
+      "label": "CESSDA",
+      "description": "CESSDA; CESSDA Trust and Landscape Report 2024",
+      "identifier": "https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing",
+      "endPointURL": "https://docs.google.com/document/d/131oqNWGwZGlCdvSOCKLgUFOoP1bbIFFfmpANW4alH7E/edit?usp=sharing",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "6b38c46111.json"
+    },
+    {
+      "id": "5C32EF8367",
+      "label": "CLARIN-ERIC",
+      "description": "CLARIN is a European Research Infrastructure for the Humanities and Social Sciences, focusing on language resources (data and tools). It is being implemented and constantly improved at leading institutions in a large and growing number of European countries, aiming at improving Europe's multi-linguality competence. CLARIN provides several services, such as access to language data and tools to analyze data, and offers to deposit research data, as well as direct access to knowledge about relevant topics in relation to (research on and with) language resources. The main tool is the 'Virtual Language Observatory' providing metadata and access to the different national CLARIN centers and their data.",
+      "identifier": "https://www.clarin.eu/",
+      "endPointURL": "https://www.clarin.eu/content/national-consortia",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "5c32ef8367.json"
+    },
+    {
+      "id": "644301C176",
+      "label": "COAR",
+      "description": "Next Generation Repositories.",
+      "identifier": "https://ngr.coar-repositories.org/",
+      "endPointURL": "https://ngr.coar-repositories.org/",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "644301c176.json"
+    },
+    {
+      "id": "757212C93C",
+      "label": "COAR",
+      "description": "Confederation of Open Access Repositories. (2022). COAR Community Framework for Good Practices in Repositories; Version 2 (Version 2). Zenodo.",
+      "identifier": "https://doi.org/10.5281/zenodo.7108101",
+      "endPointURL": "https://doi.org/10.5281/zenodo.7108101",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "757212c93c.json"
+    },
+    {
+      "id": "18B13EC70C",
+      "label": "Copernicus Climate Change Service Portal",
+      "description": "The C3S portal offers access to the reference products generated by the Copernicus Climate Change Service that are derived from Sentinel reference products (Sentinel 1 and 3 primarily) along with other satellite observations and in-situ measurements. The C3S portal provides authoritative information concerning past, present, and future (forecasting) global climate.",
+      "identifier": "https://cds.climate.copernicus.eu/",
+      "endPointURL": "https://cds.climate.copernicus.eu/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "18b13ec70c.json"
+    },
+    {
+      "id": "0075D2D0B2",
+      "label": "CORA.Repositori de Dades de Recerca",
+      "description": "Catalan consortium research data repository for universities and research centres in Catalonia. Provides multidisciplinary data archiving, DOI assignment and open access. Part of the CORA (Consorci de Repositoris Acadèmics) open science infrastructure for Catalan institutions.",
+      "identifier": "https://dataverse.csuc.cat/",
+      "endPointURL": "https://dataverse.csuc.cat/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0075d2d0b2.json"
+    },
+    {
+      "id": "046B279494",
+      "label": "Coscine",
+      "description": "Coscine landing page",
+      "identifier": "https://about.coscine.de/",
+      "endPointURL": "https://about.coscine.de/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "046b279494.json"
+    },
+    {
+      "id": "6C825F4502",
+      "label": "CPP",
+      "description": "Molloy; L.; Lindlar; M.; Benauer; M.; Andreassen; H. N.; Presser; K.; & Anu; M. (2025). EOSC EDEN D1.1 - Overview of Identification; Selection and Appraisal Practices for Long-Term Preservation of Data. Zenodo.",
+      "identifier": "https://doi.org/10.5281/zenodo.17984753",
+      "endPointURL": "https://doi.org/10.5281/zenodo.17984753",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "6c825f4502.json"
+    },
+    {
+      "id": "007F9FADF2",
+      "label": "CRIS UNS",
+      "description": "Current Research Information System (CRIS) of the University of Novi Sad. A comprehensive institutional research information system that stores, manages and provides access to bibliographic records of scientific and research outputs from all UNS faculties and institutes. Based on the CERIF data model.",
+      "identifier": "https://cris.uns.ac.rs/en",
+      "endPointURL": "https://cris.uns.ac.rs/en",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "007f9fadf2.json"
+    },
+    {
+      "id": "31C7106603",
+      "label": "Croatian Social Science Data Archive",
+      "description": "The Croatian Social Science Data Archive (CROSSDA) is a national infrastructure public service whose role is to ensure the long-term preservation and dissemination of social science research data. CROSSDA is committed to providing data management support for researchers during the entire lifecycle of the project, from hypothesis development and grant preparation to data collection and data analysis. The data archive will make sure that the data are preserved and reusable in the long-term. CROSSDA is the national service provider for Croatia in the Consortium of European Social Science Data Archives CESSDA ERIC.",
+      "identifier": "https://www.crossda.hr/",
+      "endPointURL": "https://www.crossda.hr/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "31c7106603.json"
+    },
+    {
+      "id": "3FE210C50F",
+      "label": "CTM",
+      "description": "Sansone; S.-A.; McQuilton; P.; Cousijn; H.; Cannon; M.; Chan; W. M.; Callaghan; S.; Carnevale; I.; Cranston; I.; Edmunds; S.; Everitt; N.; Ganley; E.; Graf; C.; Hrynaszkiewicz; I.; Khodiyar; V.; Leary; A.; Lemberger; T.; MacCallum; C.; McNeice; K.; Murray; H.; … Threlfall; J. (2020). Data Repository Selection: Criteria That Matter. Zenodo.",
+      "identifier": "https://doi.org/10.5281/zenodo.4084763",
+      "endPointURL": "https://doi.org/10.5281/zenodo.4084763",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "3fe210c50f.json"
+    },
+    {
+      "id": "697647043E",
+      "label": "CTS",
+      "description": "CoreTrustSeal Standards and Certification Board. (2022). CoreTrustSeal Requirements 2023-2025 (V01.00). Zenodo.",
+      "identifier": "https://doi.org/10.5281/zenodo.7051012",
+      "endPointURL": "https://doi.org/10.5281/zenodo.7051012",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "697647043e.json"
+    },
+    {
+      "id": "53D9892B4E",
+      "label": "Czech Social Science Data Archive",
+      "description": "The Czech Social Science Data Archive (CSDA) of the Institute of Sociology of the Academy of Sciences of the Czech Republic accesses, processes, documents and stores data files from social science research projects and promotes their dissemination to make them widely available for secondary use in academic research and for educational purposes.",
+      "identifier": "https://archiv.soc.cas.cz/en/pristup-k-datum-2/nase-data",
+      "endPointURL": "https://archiv.soc.cas.cz/en/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "53d9892b4e.json"
+    },
+    {
+      "id": "39A738E4E3",
+      "label": "DAIS",
+      "description": "DAIS - Digital Archive of the Serbian Academy of Sciences and Arts is a joint digital repository of the Serbian Academy of Sciences and Arts (SASA) and the research institutes under the auspices of SASA. The aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the SASA and its institutes. The repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB).",
+      "identifier": "https://dais.sanu.ac.rs/?locale-attribute=en",
+      "endPointURL": "https://dais.sanu.ac.rs/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "39a738e4e3.json"
+    },
+    {
+      "id": "005B248EEE",
+      "label": "DAIS - Digital Archive of the Serbian Academy of Sciences and Arts",
+      "description": "Institutional digital repository of the Serbian Academy of Sciences and Arts. Preserves and provides open access to the scientific and scholarly publications, books, journals, proceedings and research outputs produced by SANU members and affiliated institutes.",
+      "identifier": "https://dais.sanu.ac.rs/",
+      "endPointURL": "https://dais.sanu.ac.rs/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "005b248eee.json"
+    },
+    {
+      "id": "0180636A61",
+      "label": "DASS-BiH",
+      "description": "DASS-BiH (Data Archive for Social Sciences in Bosnia and Herzegovina) is the national service whose role is to ensure long-term preservation and dissemination of social science research data. The purpose of the data archive is to provide a vital research data resource for researchers, teachers, students, and all other interested users.",
+      "identifier": "https://dass.credi.ba/",
+      "endPointURL": "https://dass.credi.ba/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0180636a61.json"
+    },
+    {
+      "id": "00967B7916",
+      "label": "Data Repository Platform (ARP)",
+      "description": "Hungarian national research data repository providing archiving, DOI assignment and open access to research data from Hungarian institutions across all disciplines. Developed as part of the DART project (Developing Appropriate Research data management Techniques for Hungarian research).",
+      "identifier": "https://repo.researchdata.hu/",
+      "endPointURL": "https://repo.researchdata.hu/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00967b7916.json"
+    },
+    {
+      "id": "4B12A4A8E3",
+      "label": "Data Station Life Sciences | DANS",
+      "description": "Dit Data Station stelt je in staat om data te deponeren en naar data te zoeken binnen de domeinen levenswetenschappen, gezondheidswetenschappen en medische wetenschappen.",
+      "identifier": "https://dans.knaw.nl/nl/life-sciences/",
+      "endPointURL": "https://dans.knaw.nl/nl/life-sciences/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "4b12a4a8e3.json"
+    },
+    {
+      "id": "552C7DD5F0",
+      "label": "Data Station Social Sciences and Humanities | DANS",
+      "description": "Dit Data Station stelt je in staat om data te deponeren en naar data te zoeken binnen de sociale wetenschappen en geesteswetenschappen.",
+      "identifier": "https://dans.knaw.nl/nl/social-sciences-and-humanities/",
+      "endPointURL": "https://dans.knaw.nl/nl/social-sciences-and-humanities/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "552c7dd5f0.json"
+    },
+    {
+      "id": "4E16B3E617",
+      "label": "data.sciencespo",
+      "description": "data.sciencespo is a repository that offers visibility, sharing and preservation of Humanities and Social Science data collected, curated and processed at Sciences Po. This dataverse instance stores two databases: CDSP, a manually-curated, national level repository of survey data; and an institutional repository that allows self deposit from researchers within SciencesPo.",
+      "identifier": "10.25504/FAIRsharing.bb17f3",
+      "endPointURL": "https://data.sciencespo.fr/dataverse/cdsp",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "4e16b3e617.json"
+    },
+    {
+      "id": "346AA2D576",
+      "label": "DataRepositoriUM",
+      "description": "Repositório de Dados da Universidade do Minho",
+      "identifier": "https://datarepositorium.uminho.pt/",
+      "endPointURL": "https://datarepositorium.uminho.pt/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "346aa2d576.json"
+    },
+    {
+      "id": "2BD9FB0372",
+      "label": "dataverse.no",
+      "description": "DataverseNO (https://dataverse.no/) is a national, generalist repository for open research data from researchers from Norwegian research institutions. DataverseNO enables the FAIR Guiding Principles for scientific data management and stewardship and is CoreTrustSeal certified.",
+      "identifier": "https://site.uit.no/dataverseno/",
+      "endPointURL": "https://site.uit.no/dataverseno/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "2bd9fb0372.json"
+    },
+    {
+      "id": "0CBE4E6DFC",
+      "label": "DataverseLV",
+      "description": "DataverseLV is a secure and sustainable repository for Latvian researchers to deposit, preserve, and share research data in line with Open Science and FAIR principles. The repository is developed, maintained, and curated by the Latvian Data Stewards Network - a collaborative group of specialists from Latvian research institutions who support researchers, advance research data management, and promote open science practices.",
+      "identifier": "r3d100014655",
+      "endPointURL": "https://dv.dataverse.lv/dataverse/root",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0cbe4e6dfc.json"
+    },
+    {
+      "id": "1798E19839",
+      "label": "DataverseNO",
+      "description": "DataverseNO  is a curated, FAIR-aligned national generic repository for open research data from all academic disciplines. DataverseNO commits to facilitate that published data remain accessible and (re)usable in a long-term perspective. The repository is owned and operated by UiT The Arctic University of Norway. DataverseNO accepts submissions from researchers primarily from Norwegian research institutions. Datasets in DataverseNO are grouped into institutional collections as well as special collections. The technical infrastructure of the repository is based on the open source application Dataverse (https://dataverse.org), which is developed by an international developer and user community led by Harvard University.",
+      "identifier": "r3d100012538",
+      "endPointURL": "https://dataverse.no/dataverse/trolling",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "1798e19839.json"
+    },
+    {
+      "id": "00624373BF",
+      "label": "DataverseUA",
+      "description": "Ukrainian national open research data repository hosted by the National Academy of Sciences of Ukraine. Provides open access to research data from Ukrainian scientific institutions across all disciplines. Supports Ukrainian open science development.",
+      "identifier": "https://opendata.nas.gov.ua",
+      "endPointURL": "https://opendata.nas.gov.ua",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00624373bf.json"
+    },
+    {
+      "id": "7AA756F28B",
+      "label": "DATICE",
+      "description": "DATICE is a data service and archive for Icelandic social science research data. Our goal is to ensure open and free access to high quality data for the research community as well as the general public. The service is located within the Social Science Research Institute (SSRI) at the University of Iceland.",
+      "identifier": "https://www.re3data.org/repository/r3d100013494",
+      "endPointURL": "https://datice.is/is",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "7aa756f28b.json"
+    },
+    {
+      "id": "03B02C7454",
+      "label": "DCAT-AP",
+      "description": "DCAT-AP is a DCAT profile for sharing information about Catalogues containing Datasets and Data Services descriptions in Europe, under maintenance by the SEMIC action, Interoperable Europe.",
+      "identifier": "https://semiceu.github.io/DCAT-AP/releases/3.0.0/",
+      "endPointURL": "https://semiceu.github.io/DCAT-AP/releases/3.0.0/",
+      "hasProfileType": "trsp:profile-type-standard",
+      "file": "03b02c7454.json"
+    },
+    {
+      "id": "29A444BA70",
+      "label": "Deposit your research data | Sikt",
+      "description": "Sikt tar imot og arkiverer forskingsdata om mennesker og samfunn, og gjør dem tilgjengelige for gjenbruk. Vi hjelper deg å dokumentere data og velge riktig tilgangsnivå.",
+      "identifier": "https://sikt.no/en/archiving-research-data",
+      "endPointURL": "https://sikt.no/en/archiving-research-data",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "29a444ba70.json"
+    },
+    {
+      "id": "4841BDEC9E",
+      "label": "DINI",
+      "description": "DINI AG Elektronisches Publizieren (E-Pub) (2023). DINI Certificate for Open Access Publication Services 2022. DINI Schriften. ; 2022;3-en",
+      "identifier": "https://doi.org/10.18452/24679",
+      "endPointURL": "https://doi.org/10.18452/24679",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "4841bdec9e.json"
+    },
+    {
+      "id": "009EC11C5C",
+      "label": "DisProt",
+      "description": "Manually curated database of intrinsically disordered proteins (IDPs) and regions (IDRs). Provides structural, functional and experimental annotation for proteins lacking fixed 3D structure. Community resource for IDP bioinformatics research; annotates disorder using experimental evidence and three ontologies.",
+      "identifier": "https://disprot.org/",
+      "endPointURL": "https://disprot.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "009ec11c5c.json"
+    },
+    {
+      "id": "001961A5E1",
+      "label": "DOME Registry",
+      "description": "Registry curating machine learning methods applied in biology from scientific publications. Implements the DOME (Data, Optimization, Model, Evaluation) recommendations for reporting supervised ML in biology. Assigns unique DOME identifiers and DOME scores to publications; supports community curation. Aims to improve reproducibility and transparency of ML in life sciences.",
+      "identifier": "https://registry.dome-ml.org/intro",
+      "endPointURL": "https://registry.dome-ml.org/intro",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "001961a5e1.json"
+    },
+    {
+      "id": "1E05BBE77F",
+      "label": "DPC CRPS",
+      "description": "Digital Preservation Coalition (2022). Core requirements for a digital preservation system.  Part of the DPC Procurement Toolkit.  Mapping also available to DPC RAM.",
+      "identifier": "https://www.dpconline.org/digipres/implement-digipres/procurement-toolkit/procurement-toolkit-core-requirements",
+      "endPointURL": "https://www.dpconline.org/digipres/implement-digipres/procurement-toolkit/procurement-toolkit-core-requirements",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "1e05bbe77f.json"
+    },
+    {
+      "id": "74820191F5",
+      "label": "DPC RAM",
+      "description": "Digital Preservation Coalition (2024). Digital Preservation Coalition Rapid Assessment Model (DPC RAM). Version 3.",
+      "identifier": "http://doi.org/10.7207/dpcram24-03",
+      "endPointURL": "http://doi.org/10.7207/dpcram24-03",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "74820191f5.json"
+    },
+    {
+      "id": "6BF0A22CB5",
+      "label": "DRAWG",
+      "description": "Witt; M.; Cannon; M.; Lister; A.; Segundo; W.; Shearer; K.; Yamaji; K.; & Research Data Alliance Data Repository Attributes Working Group. (2024). RDA Common Descriptive Attributes of Research Data Repositories (1.0). Zenodo.",
+      "identifier": "https://doi.org/10.15497/RDA00103",
+      "endPointURL": "https://doi.org/10.15497/RDA00103",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "6bf0a22cb5.json"
+    },
+    {
+      "id": "29A21B39F5",
+      "label": "DTU Data",
+      "description": "Institutional data repository built on the Figshare platform. Contains research data from the Technical University of Denmark",
+      "identifier": "r3d100013488",
+      "endPointURL": "https://data.dtu.dk/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "29a21b39f5.json"
+    },
+    {
+      "id": "004A879024",
+      "label": "e-cienciaDatos",
+      "description": "Multidisciplinary research data repository for universities in the Consorcio Madroño (Community of Madrid). Provides open access data archiving, DOI assignment and FAIR data compliance for researchers across Madroño member universities.",
+      "identifier": "https://edatos.consorciomadrono.es",
+      "endPointURL": "https://edatos.consorciomadrono.es",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "004a879024.json"
+    },
+    {
+      "id": "61E7538E10",
+      "label": "EDEN",
+      "description": "The EOSC EDEN project seeks to understand the current digital preservation landscape; identify common standards and practices; and provide new solutions and approaches that help institutions select and preserve high-quality FAIR research outputs.",
+      "identifier": "https://eden-fidelis.eu/",
+      "endPointURL": "https://eden-fidelis.eu/",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "61e7538e10.json"
+    },
+    {
+      "id": "005134C65D",
+      "label": "Edinburgh DataShare",
+      "description": "Institutional open-access research data repository of the University of Edinburgh. One of the oldest UK institutional data repositories. Provides long-term preservation and sharing of multidisciplinary research data. Supports UKRI and funder open data mandates.",
+      "identifier": "https://datashare.ed.ac.uk/",
+      "endPointURL": "https://datashare.ed.ac.uk/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "005134c65d.json"
+    },
+    {
+      "id": "25E02CC352",
+      "label": "ELIXIR",
+      "description": "Durinx C; McEntyre J; Appel R et al. Identifying ELIXIR Core Data Resources [version 2; peer review: 2 approved]. F1000Research 2017; 5(ELIXIR):2422",
+      "identifier": "https://doi.org/10.12688/f1000research.9656.2",
+      "endPointURL": "https://doi.org/10.12688/f1000research.9656.2",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "25e02cc352.json"
+    },
+    {
+      "id": "6EBCF639D3",
+      "label": "EOSC PID",
+      "description": "European Commission; Directorate-General for Research and Innovation; Hellström; M.; Heughebaert; A.; Kotarski; R.; et al.; A Persistent Identifier (PID) policy for the European Open Science Cloud (EOSC); Publications Office; 2020",
+      "identifier": "https://data.europa.eu/doi/10.2777/926037",
+      "endPointURL": "https://data.europa.eu/doi/10.2777/926037",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "6ebcf639d3.json"
+    },
+    {
+      "id": "2BBC8312C3",
+      "label": "ERC-HE",
+      "description": "OAPEN; 2024. ERC Open Access requirements for FP7; Horizon 2020 and Horizon Europe grants.",
+      "identifier": "https://www.oapen.org/article/13934224-erc-oa-requirement",
+      "endPointURL": "https://www.oapen.org/article/13934224-erc-oa-requirement",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "2bbc8312c3.json"
+    },
+    {
+      "id": "00D32E62E3",
+      "label": "ESRF Data Portal",
+      "description": "Data repository for photon science experiments conducted at the ESRF synchrotron. Stores and archives raw experimental data, processed data, and associated metadata from X-ray science experiments at the ESRF beamlines. Implements the ESRF Open Data Policy (2016). Data released publicly after embargo (maximum 3 years). First synchrotron repository to receive CoreTrustSeal certification.",
+      "identifier": "https://data.esrf.fr/",
+      "endPointURL": "https://data.esrf.fr/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00d32e62e3.json"
+    },
+    {
+      "id": "1DF058A6F6",
+      "label": "Fairdata",
+      "description": "Fairdata services are part of the digital preservation services offered by the Ministry of Education and Culture, Finland (“Minedu”). The Fairdata services support the research process and management of digital data with some of the components described in the Framework for Open Science and Research.",
+      "identifier": "https://www.fairdata.fi/",
+      "endPointURL": "https://www.fairdata.fi/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "1df058a6f6.json"
+    },
+    {
+      "id": "09D755CCE9",
+      "label": "FAIRsharing",
+      "description": "FAIRsharing database metadata (https://fairsharing.gitbook.io/fairsharing/additional-information/database-conditions)",
+      "identifier": "https://doi.org/10.5281/zenodo.6875035",
+      "endPointURL": "https://doi.org/10.5281/zenodo.6875035",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "09d755cce9.json"
+    },
+    {
+      "id": "3C2D6C1C37",
+      "label": "FIDELIS",
+      "description": "The FIDELIS project will establish and consolidate a European network of FAIR-enabling trustworthy digital repositories that will live on after the project finishes and represent its member repositories to key stakeholders on important matters.",
+      "identifier": "https://eden-fidelis.eu/",
+      "endPointURL": "https://eden-fidelis.eu/",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "3c2d6c1c37.json"
+    },
+    {
+      "id": "66B58B3D2D",
+      "label": "Finnish Social Science Data Archive",
+      "description": "The Finnish Social Science Data Archive (FSD) is a national-level service resource for research and teaching in Finland. FSD promotes data sharing and curates and disseminates digital research data for research, teaching and studying purposes. FSD serves both Finnish and international users. FSD is an expert in the curation and preservation of digital research data collected to study society, people and culture. FSD focuses on acquiring Social Science data, but data from other relevant fields (Arts and Humanities, Education, and Health Science) is also archived. FSD is Finland's service provider for CESSDA ERIC, the Consortium of European Social Science Data Archives.",
+      "identifier": "10.25504/FAIRsharing.2okP6D",
+      "endPointURL": "https://www.fsd.tuni.fi/en/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "66b58b3d2d.json"
+    },
+    {
+      "id": "00318846F4",
+      "label": "FiVeR",
+      "description": "Institutional open-access digital repository of the Institute of Field and Vegetable Crops. Provides access to publications and research outputs from IFVCNS projects including articles, conference papers, patents, theses and books. Compatible with international infrastructure via OAI-PMH harvesting.",
+      "identifier": "https://fiver.ifvcns.rs/",
+      "endPointURL": "https://fiver.ifvcns.rs/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00318846f4.json"
+    },
+    {
+      "id": "700C58D59C",
+      "label": "Gen Repo IG",
+      "description": "RDA IG on generalist repository landscape (in planning) - RDA P23 BoF",
+      "identifier": "https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/",
+      "endPointURL": "https://www.rd-alliance.org/session_entry/birds-of-a-feather-session-application-02-07-2024-mark-hahnel/",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "700c58d59c.json"
+    },
+    {
+      "id": "006C9BFF2E",
+      "label": "GESIS - Leibniz Institute for the Social Sciences",
+      "description": "Germany's largest infrastructure institute for the social sciences. Archives, curates and disseminates quantitative social science research data (surveys, longitudinal studies, election studies, digital behavioural data) for secondary use. Operates DOI registration agency da|ra for social science data.",
+      "identifier": "https://www.gesis.org/en/data-services/share-data",
+      "endPointURL": "https://www.gesis.org/en/data-services/share-data",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "006c9bff2e.json"
+    },
+    {
+      "id": "20E6BA37EF",
+      "label": "GFZ Data Services",
+      "description": "Since 2004, the GFZ German Research Centre for Geosciences assigns Digital Object Identifiers (DOI) to datasets. These datasets are archived by and published through GFZ Data Services and cover all geoscientific disciplines. They range from large dynamic datasets deriving from data intensive global monitoring networks with real-time data acquisition to the full suite of highly variable datasets collected by individual researchers or small teams. These highly variable data (‘long-tail data’) are small in size, but represent an important part of the total scientific output.",
+      "identifier": "https://www.re3data.org/repository/r3d100012335",
+      "endPointURL": "https://dataservices.gfz-potsdam.de/web/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "20e6ba37ef.json"
+    },
+    {
+      "id": "226704C31B",
+      "label": "Glittr.org",
+      "description": "Glittr.org is a curated list of educational materials for the computational life sciences.",
+      "identifier": "https://glittr.org/",
+      "endPointURL": "https://glittr.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "226704c31b.json"
+    },
+    {
+      "id": "4AFF1332EF",
+      "label": "GORC",
+      "description": "Woodford; C.; Treloar; A.; Leggott; M.; Payne; K.; Jones; S.; Lopez Albacete; J.; Madalli; D.; Genova; F.; Dharmawardena; K.; Chibhira; N.; Åkerström; W. N.; Macneil; R.; Nurnberger; A.; Pfeiffenberger; H.; Tanifuji; M.; Zhang; Q.; Jones; N.; Sesink; L.; Wood-Charlson; E.; & RDA GORC International Model WG. (2023). The Global Open Research Commons International Model; Version 1 (1.0). Zenodo.",
+      "identifier": "https://doi.org/10.15497/RDA00099",
+      "endPointURL": "https://doi.org/10.15497/RDA00099",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "4aff1332ef.json"
+    },
+    {
+      "id": "0041142F56",
+      "label": "GrantHub Open Funding & Innovation Knowledge Repository",
+      "description": "Strategic investment advisory and funding intelligence platform connecting research, innovation and investment ecosystems. Supports organisations in navigating EU and international funding programmes (Horizon Europe, Erasmus+, COST, EIC, Eurostars, LIFE, NATO SPS, Interreg) and structuring innovation funding applications. Not a traditional research data repository but a knowledge repository for funding and innovation opportunities.",
+      "identifier": "https://www.granthub.cz/",
+      "endPointURL": "https://www.granthub.cz/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0041142f56.json"
+    },
+    {
+      "id": "546FD5B0D8",
+      "label": "GREI",
+      "description": "Sonia; Lisa; & Helena. (2023). Generalist Repository Ecosystem Initiative Introductory Brochure. Zenodo.",
+      "identifier": "https://doi.org/10.5281/zenodo.8350509",
+      "endPointURL": "https://doi.org/10.5281/zenodo.8350509",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "546fd5b0d8.json"
+    },
+    {
+      "id": "5F8F8C0526",
+      "label": "GUDe :: Home",
+      "description": "The Goethe University Data Repository (GUDe) provides a platform for its members to electronically archive, share, and publish their research data. GUDe is operated by the University Library of the Goethe University. The metadata of all public content is freely available and indexed by search engines as well as scientific web services. GUDe follows the FAIR principles for long-term accessibility (minimum 10 years), allows for reliable citation via DOIs as well as cooperative access to non-public data and operates on DSpace-CRIS v7.",
+      "identifier": "https://gude.uni-frankfurt.de/home",
+      "endPointURL": "https://gude.uni-frankfurt.de/home",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "5f8f8c0526.json"
+    },
+    {
+      "id": "2F48DA2962",
+      "label": "HARVESTER",
+      "description": "The profile for the EDEN Harvester",
+      "identifier": "eden://harvester/",
+      "endPointURL": "https://github.com/EOSC-EDEN/wp2-repo-harvester",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "2f48da2962.json"
+    },
+    {
+      "id": "6DF1A59550",
+      "label": "Home - The Swiss Food Composition Database",
+      "description": "",
+      "identifier": "https://naehrwertdaten.ch/de/",
+      "endPointURL": "https://naehrwertdaten.ch/de/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "6df1a59550.json"
+    },
+    {
+      "id": "00B8A6AE14",
+      "label": "HOMEROS - OSCARS project",
+      "description": "Community collection within Zenodo for the HOMEROS initiative under the OSCARS (Open Science Cluster Action for Research and Society) Horizon Europe project. Focuses on humanities and social science research outputs and datasets from OSCARS-affiliated communities in Greece and Europe.",
+      "identifier": "https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest",
+      "endPointURL": "https://zenodo.org/communities/homeros/records?q=&l=list&p=1&s=10&sort=newest",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00b8a6ae14.json"
+    },
+    {
+      "id": "00B1563729",
+      "label": "INFRA-ART Spectral Library",
+      "description": "Spectral reference library of infrared and near-infrared spectroscopy data for art and cultural heritage materials. Provides open access to reference spectra enabling non-invasive identification of pigments, binders, varnishes and other heritage materials for conservation science.",
+      "identifier": "https://infraart.inoe.ro/",
+      "endPointURL": "https://infraart.inoe.ro/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00b1563729.json"
+    },
+    {
+      "id": "5177117B6B",
+      "label": "Inspire-HEP",
+      "description": "CERN, DESY, Fermilab and SLAC have built the next-generation High Energy Physics (HEP) information system, INSPIRE. It combines the successful SPIRES database content, curated at DESY, Fermilab and SLAC, with the Invenio digital library technology developed at CERN. INSPIRE is run by a collaboration of CERN, DESY, Fermilab, IHEP, IN2P3 and SLAC, and interacts closely with HEP publishers, arXiv.org, NASA-ADS, PDG, HEPDATA and other information resources.nINSPIRE represents a natural evolution of scholarly communication, built on successful community-based information systems, and provides a vision for information management in other fields of science.",
+      "identifier": "https://inspirehep.net/",
+      "endPointURL": "https://inspirehep.net/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "5177117b6b.json"
+    },
+    {
+      "id": "719B779075",
+      "label": "ISO",
+      "description": "International Organization for Standardization. Audit and certification of trustworthy digital repositories. 2012.",
+      "identifier": "https://www.iso.org/standard/56510.html",
+      "endPointURL": "https://www.iso.org/standard/56510.html",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "719b779075.json"
+    },
+    {
+      "id": "02C745403B",
+      "label": "JISC DPS",
+      "description": "JISC Digital preservation systems dynamic purchasing system (DPS) 2024.  Similar to DPC core requirements for digital preservation.",
+      "identifier": "https://www.jisc.ac.uk/digital-preservation-systems-dynamic-purchasing-system-dps",
+      "endPointURL": "https://www.jisc.ac.uk/digital-preservation-systems-dynamic-purchasing-system-dps",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "02c745403b.json"
+    },
+    {
+      "id": "3E1A5A4B73",
+      "label": "KU Leuven RDR",
+      "description": "RDR (pronounced 'Radar') is the curated institutional research data repository of KU Leuven. The repository contains published data resulting from KU Leuven research in a FAIR way and allows the published data to be as open as possible, but as closed as necessary. The institutional repository helps KU Leuven researchers publish, share, cite, and preserve their research data in a findable, accessible, interoperable, and reusable way, with support from university staff. The repository uses the open source Dataverse project software as its base.",
+      "identifier": "https://rdr.kuleuven.be/",
+      "endPointURL": "https://rdr.kuleuven.be/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "3e1a5a4b73.json"
+    },
+    {
+      "id": "5E53C20361",
+      "label": "LiDA",
+      "description": "Lithuanian Data Archive for Social Sciences and Humanities (LiDA) is a virtual digital infrastructure for SSH data and research resources acquisition, long-term preservation and dissemination. All the data and research resources are documented in both English and Lithuanian according to international standards. Access to the resources is provided via Dataverse repository. LiDA curates different types of resources and they are published into catalogues according to the type: Survey Data, Aggregated Data (including Historical Statistics), Encoded Data (including News Media Studies), and Textual Data. Also, LiDA holds collections of social sciences and humanities data deposited by Lithuanian science and higher education institutions and Lithuanian state institutions (Data of Other Institutions).nLiDA is the Lithuanian national service provider for the CESSDA ERIC.",
+      "identifier": "10.25504/FAIRsharing.c5e881",
+      "endPointURL": "https://lida.dataverse.lt/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "5e53c20361.json"
+    },
+    {
+      "id": "GH23JK45LM",
+      "label": "LINDAT/CLARIAH-CZ repository",
+      "description": "LINDAT/CLARIN is designed as a Czech “node” of Clarin ERIC (Common LanguagenResources and Technology Infrastructure). It also supports the goals of the META-NET language technology network. Both networks aim at collection, annotation, development and free sharing of language data and basic technologies between institutions and individuals both in science and in all types of research. The Clarin ERIC infrastructural project is more focused on humanities, while META-NET aims at the development of language technologies and applications. The data stored in the repository are already being used in scientific publications in the Czech Republic.nIn 2019 LINDAT/CLARIAH-CZ was established as a unification of two research infrastructures,nLINDAT/CLARIN and DARIAH-CZ.",
+      "identifier": "https://lindat.mff.cuni.cz/repository/home",
+      "endPointURL": "https://lindat.mff.cuni.cz/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "gh23jk45lm.json"
+    },
+    {
+      "id": "2E14441342",
+      "label": "Linguistic Data Consortium",
+      "description": "The Linguistic Data Consortium (LDC) is an open consortium that creates, collects, archives, and shares large collections of language data, including speech, text, and lexical resources, for research and technology development in linguistics and natural language processing.",
+      "identifier": "10.25504/FAIRsharing.25a72c",
+      "endPointURL": "https://www.ldc.upenn.edu/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "2e14441342.json"
+    },
+    {
+      "id": "6258E6CBD8",
+      "label": "LIPID MAPS",
+      "description": "LIPID Metabolites And Pathways Strategy (LIPID MAPS®) is a multi-institutional supported website and database that provides access to a large number of globally used lipidomics resources. LIPID MAPS® has internationally led the field of lipid curation, classification, and nomenclature since 2003. We strive to produce new open-access databases, informatics tools and lipidomics-focused training activities will be generated and made publicly available for researchers studying lipids in health and disease. LIPID MAPS® is currently funded by a multi-institutional grant from Wellcome, held jointly by Cardiff University, University of California San Diego, the Babraham Institute Cambridge, and Swansea University, as well as an Innovation Study funded by ELIXIR. This current phase will see that LIPID MAPS® is maintained and importantly, further developed in line with the global demand and development of lipidomics. LIPID MAPS® has an internationally recognized classification system and the largest curated lipid structure database in the world.",
+      "identifier": "https://www.lipidmaps.org/",
+      "endPointURL": "https://www.lipidmaps.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "6258e6cbd8.json"
+    },
+    {
+      "id": "004BA57DAA",
+      "label": "Lithuanian Data Archive for Social Sciences and Humanities (LiDA)",
+      "description": "Lithuanian national data archive for social sciences and humanities. Archives, documents and provides access to Lithuanian SSH research datasets for secondary analysis, teaching and research. CESSDA Service Provider for Lithuania.",
+      "identifier": "https://lida.dataverse.lt/",
+      "endPointURL": "https://lida.dataverse.lt/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "004ba57daa.json"
+    },
+    {
+      "id": "330680B402",
+      "label": "ModelArchive",
+      "description": "ModelArchive provides a stable accession code (DOI) for deposited theoretical models of protein and macromolecular structures",
+      "identifier": "urn:uuid:f5378897-0353-47d5-83a3-7a859793365b",
+      "endPointURL": "https://modelarchive.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "330680b402.json"
+    },
+    {
+      "id": "004F9BAF7C",
+      "label": "MorpheusML Model Repository",
+      "description": "Public repository for sharing and citing computational biology models created with the Morpheus multicellular simulation environment. Models are assigned persistent identifiers via identifiers.org and linked to publications for citation and reproducibility.",
+      "identifier": "https://morpheus.gitlab.io/model/",
+      "endPointURL": "https://morpheus.gitlab.io/model/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "004f9baf7c.json"
+    },
+    {
+      "id": "003E022560",
+      "label": "myLaminin",
+      "description": "Commercial research data management and archiving platform using blockchain and Web3 technology. Supports secure sensitive data archiving, multi-jurisdictional team collaboration, agreement management and regulatory compliance (HIPAA, PIPEDA, 21 CFR Part 11). SOC2 Type II certified.",
+      "identifier": "https://www.myLaminin.net",
+      "endPointURL": "https://www.myLaminin.net",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "003e022560.json"
+    },
+    {
+      "id": "47A2ACE9A8",
+      "label": "NDSA",
+      "description": "Levels of Digital Preservation.",
+      "identifier": "https://ndsa.org/publications/levels-of-digital-preservation/",
+      "endPointURL": "https://ndsa.org/publications/levels-of-digital-preservation/",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "47a2ace9a8.json"
+    },
+    {
+      "id": "114F0465C3",
+      "label": "nestor",
+      "description": "nestor criteria : Catalogue of Criteria for Trusted Digital Repositories; Version 2; 2009; Frankfurt am Main: nestor c/o Deutsche Nationalbibliothek; urn:nbn:de:0008-2010030806",
+      "identifier": "http://nbn-resolving.de/urn:nbn:de:0008-2010030806",
+      "endPointURL": "http://nbn-resolving.de/urn:nbn:de:0008-2010030806",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "114f0465c3.json"
+    },
+    {
+      "id": "4A3880251E",
+      "label": "OMA Standalone",
+      "description": "Software Package to compute OMA orthologs on own datasets",
+      "identifier": "https://omabrowser.org/standalone",
+      "endPointURL": "https://omabrowser.org/oma/home/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "4a3880251e.json"
+    },
+    {
+      "id": "4BAE18BFED",
+      "label": "Online course: Data Clinic",
+      "description": "&lt;p&gt;Online course: Data Clinic Kurssisivu/Course page&lt;/p&gt;\\\\n",
+      "identifier": "urn:uuid:cc80e0eb-e62e-4489-918c-b15e84045254",
+      "endPointURL": "https://www.kielipankki.fi/language-bank/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "4bae18bfed.json"
+    },
+    {
+      "id": "235D1D5D91",
+      "label": "Open Data Repository of the National Academy of Sciences of Ukraine",
+      "description": "The open data repository DataverseUA of the National Academy of Sciences of Ukraine is a digital platform for storing, classifying and publishing the Academy's scientific data. The aim of the project is to establish an open data repository service for research conducted by scientific institutions affiliated with the National Academy of Sciences of Ukraine. The repository is intended to provide researchers, innovators, technology companies, and the general public with an accessible and reliable environment where they can publish, discover, and reuse data.",
+      "identifier": "r3d100014746",
+      "endPointURL": "https://opendata.nas.gov.ua/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "235d1d5d91.json"
+    },
+    {
+      "id": "4DD6232782",
+      "label": "OPENAIRE",
+      "description": "Hugo; W.; & Manghi; P. (2025). Case Study: Principles for high-quality data sources in OpenAIRE encoded in CAT. Zenodo",
+      "identifier": "https://doi.org/10.5281/zenodo.15534446",
+      "endPointURL": "https://doi.org/10.5281/zenodo.15534446",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "4dd6232782.json"
+    },
+    {
+      "id": "165CB267FA",
+      "label": "OrthoDB",
+      "description": "OrthoDB provides evolutionary and functional annotations of genes classified into groups of orthologs in a diverse sampling of eukaryotes, prokaryotes, and viruses.",
+      "identifier": "https://www.orthodb.org/",
+      "endPointURL": "https://www.orthodb.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "165cb267fa.json"
+    },
+    {
+      "id": "7996C467D4",
+      "label": "Ortolang",
+      "description": "ORTOLANG is an EQUIPEX project accepted in February 2012 in the framework of investissements d’avenir. Its aim is to construct a network infrastructure including a repository of language data (corpora, lexicons, dictionaries etc.) and readily available, well-documented tools for its processing. Expected outcomes comprize:npromoting research on analysis, modelling and automatic processing of our language to their highest international levels thanks to effective resource pooling;nfacilitating the use and transfer of resources and tools set up within public laboratories to industrial partners, notably SMEs which often cannot develop such resources and tools for language processing given the cost of investment;npromoting French language and the regional languages of France by sharing expertise acquired by public laboratories.nORTOLANG is a service for the language, which is complementary to the service offered by Huma-Num (très grande infrastructure de recherche). Ortolang gives access to SLDR for speech, and CNRTL for text resources.",
+      "identifier": "r3d100011329",
+      "endPointURL": "https://www.ortolang.fr/en/home/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "7996c467d4.json"
+    },
+    {
+      "id": "54A6CD95F4",
+      "label": "Oxford Brookes University: RADAR",
+      "description": "RADAR (Research And Digital Assets Repository) is the institutional repository of Oxford Brookes University. The role of RADAR is to share the intellectual product of Oxford Brookes freely and openly with the staff and students of Oxford Brookes or with the global academic and public community.n​RADAR has a variety of research collections (primarily containing original research publications) and teaching collections (primarily containing resources that support teaching at Oxford Brookes University). Some of the collections​ and resources on RADAR are freely accessible to the general public and other collections​ and resources are only accessible by current Oxford Brookes staff and students.",
+      "identifier": "2287",
+      "endPointURL": "https://radar.brookes.ac.uk/radar/hierarchy.do?topic=86e2c9d7-ef43-4b54-a387-3223d30acd3b",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "54a6cd95f4.json"
+    },
+    {
+      "id": "17556897C2",
+      "label": "Pacific and Regional Archive for Digital Sources in Endangered Cultures",
+      "description": "PARADISEC (the Pacific And Regional Archive for Digital Sources in Endangered Cultures) offers a facility for digital conservation and access to endangered materials from all over the world. Our research group has developed models to ensure that the archive can provide access to interested communities, and conforms with emerging international standards for digital archiving. We have established a framework for accessioning, cataloguing and digitising audio, text and visual material, and preserving digital copies. The primary focus of this initial stage is safe preservation of material that would otherwise be lost, especially field tapes from the 1950s and 1960s.",
+      "identifier": "https://www.paradisec.org.au/",
+      "endPointURL": "https://www.paradisec.org.au/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "17556897c2.json"
+    },
+    {
+      "id": "0589F80CF6",
+      "label": "PANGAEA",
+      "description": "PANGAEA - Data Publisher for Earth & Environmental Sciences  has an almost 30-year history as an open-access library for archiving, publishing, and disseminating georeferenced data from the Earth, environmental, and biodiversity sciences. Originally evolving from a database for sediment cores, it is operated as a joint facility of the Alfred Wegener Institute, Helmholtz Centre for Polar and Marine Research (AWI) and the Center for Marine Environmental Sciences (MARUM) at the University of Bremen. PANGAEA holds a mandate from the World Meteorological Organization (WMO)  and is accredited as a World Radiation Monitoring Center (WRMC). It was further accredited as a World Data Center by the International Council for Science (ICS)  in 2001 and has been certified with the Core Trust Seal  since 2019. nThe successful cooperation between PANGAEA and the publishing industry along with the correspondent technical implementation enables the cross-referencing of scientific publications and datasets archived as supplements to these publications. PANGAEA is the recommended data repository of numerous international scientific journals.",
+      "identifier": "https://doi.org/10.1594/PANGAEA",
+      "endPointURL": "https://pangaea.de/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0589f80cf6.json"
+    },
+    {
+      "id": "003EEB3389",
+      "label": "PHAIDRA - University of Padua",
+      "description": "Institutional digital asset management and repository system of the University of Padua. Preserves and provides access to digital scholarly objects, research datasets, cultural heritage materials, and educational resources. PHAIDRA is open-source software adopted by multiple institutions.",
+      "identifier": "https://phaidra.cab.unipd.it/",
+      "endPointURL": "https://phaidra.cab.unipd.it/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "003eeb3389.json"
+    },
+    {
+      "id": "003C4F4661",
+      "label": "PIST",
+      "description": "Tunisian Scientific and Technical Information Portal (Portail de l'Information Scientifique et Technique). National digital library aggregating Tunisian academic and scientific output including theses, articles, conference proceedings and Tunisian scientific journals. Managed by CNUDST under international bibliographic standards.",
+      "identifier": "http://www.pist.tn/",
+      "endPointURL": "http://www.pist.tn/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "003c4f4661.json"
+    },
+    {
+      "id": "47BF9E27E4",
+      "label": "PortFIR",
+      "description": "PortFIR is a program for implementing Portuguese networks of excellence in nutrition and food safety, and a portal that includes sustainable and recognized quality databases on Food Composition and Contamination and Food Consumption.",
+      "identifier": "https://portfir.insa.min-saude.pt/pt/ .",
+      "endPointURL": "https://portfir.insa.min-saude.pt/pt/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "47bf9e27e4.json"
+    },
+    {
+      "id": "635C7081B0",
+      "label": "POSI",
+      "description": "Bilder G; Lin J; Neylon C (2020); The Principles of Open Scholarly Infrastructure; retrieved 08-11-2024",
+      "identifier": "https://doi.org/10.24343/C34W2H",
+      "endPointURL": "https://doi.org/10.24343/C34W2H",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "635c7081b0.json"
+    },
+    {
+      "id": "70BF8F20D5",
+      "label": "PRoteomics IDEntifications Database",
+      "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/ena/browser/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "70bf8f20d5.json"
+    },
+    {
+      "id": "2FA58C19A1",
+      "label": "PRoteomics IDEntifications Database",
+      "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/intact/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "2fa58c19a1.json"
+    },
+    {
+      "id": "035B1CF480",
+      "label": "PRoteomics IDEntifications database",
+      "description": "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/pride/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "035b1cf480.json"
+    },
+    {
+      "id": "2D7DE43001",
+      "label": "PRoteomics IDEntifications database",
+      "description": "The NHGRI-EBI GWAS Catalog: a curated collection of all human genome-wide association studies, produced by a collaboration between EMBL-EBI and NHGRI",
+      "identifier": "https://www.ebi.ac.uk/gwas/",
+      "endPointURL": "https://www.ebi.ac.uk/gwas/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "2d7de43001.json"
+    },
+    {
+      "id": "78E1E6CCAB",
+      "label": "PRoteomics IDEntifications Database",
+      "description": "EMPIAR, the Electron Microscopy Public Image Archive centered at EMBL-EBI, is a public resource for raw electronn    microscopy images related to EMDB, contains micrographs, particle sets and tilt-series.",
+      "identifier": "https://www.ebi.ac.uk/empiar/",
+      "endPointURL": "https://www.ebi.ac.uk/empiar/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "78e1e6ccab.json"
+    },
+    {
+      "id": "219074EA4E",
+      "label": "PRoteomics IDEntifications database",
+      "description": "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/biosamples/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "219074ea4e.json"
+    },
+    {
+      "id": "0C37B9DA93",
+      "label": "PRoteomics IDEntifications Database",
+      "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/biostudies/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0c37b9da93.json"
+    },
+    {
+      "id": "7643298FE1",
+      "label": "PRoteomics IDEntifications database",
+      "description": "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/metabolights/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "7643298fe1.json"
+    },
+    {
+      "id": "05460B697E",
+      "label": "PRoteomics IDEntifications database",
+      "description": "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/bioimage-archive/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "05460b697e.json"
+    },
+    {
+      "id": "2FCC2EFF8F",
+      "label": "PRoteomics IDEntifications Database",
+      "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/biostudies/arrayexpress",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "2fcc2eff8f.json"
+    },
+    {
+      "id": "39B264CAC4",
+      "label": "PRoteomics IDEntifications database",
+      "description": "EMDB Home page",
+      "identifier": "https://www.ebi.ac.uk/emdb/",
+      "endPointURL": "https://www.ebi.ac.uk/emdb/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "39b264cac4.json"
+    },
+    {
+      "id": "4523803A61",
+      "label": "PRoteomics IDEntifications Database",
+      "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/pdbe/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "4523803a61.json"
+    },
+    {
+      "id": "0F27B7A25D",
+      "label": "PRoteomics IDEntifications Database",
+      "description": "The PRIDE PRoteomics IDEntifications database is a centralized, standards compliant, public data repository for proteomics data, including protein and peptide identifications, post-translational modifications and supporting spectral evidence. PRIDE encourages and welcomes direct user submissions of mass spectrometry data to be published in peer-reviewed publications.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/eva/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0f27b7a25d.json"
+    },
+    {
+      "id": "67CE4CF672",
+      "label": "PRoteomics IDEntifications database",
+      "description": "The PRIDE PRoteomics IDEntifications (PRIDE) Archive database is a centralized, standards compliant, public data repository for mass spectrometry proteomics data, including protein and peptide identifications and the corresponding expression values, post-translational modifications and supporting mass spectra evidence (both as raw data and peak list files). PRIDE is a core member in the ProteomeXchange (PX) consortium, which provides a standardised way for submitting mass spectrometry based proteomics data to public-domain repositories.",
+      "identifier": "10.25504/FAIRsharing.e1byny",
+      "endPointURL": "https://www.ebi.ac.uk/chembl/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "67ce4cf672.json"
+    },
+    {
+      "id": "7254507349",
+      "label": "Qualitative Data Repository",
+      "description": "The Qualitative Data Repository (QDR) is a dedicated archive for storing and sharing digital data (and accompanying documentation) generated or collected through qualitative and multi-method research in the social sciences. QDR provides search tools to facilitate the discovery of data, and also serves as a portal to material beyond its own holdings, with links to U.S. and international archives. The repository’s initial emphasis is on political science. Four beliefs underpin the repository's mission: data that can be shared and reused should be; evidence-based claims should be made transparently; teaching is enriched by the use of well-documented data; and rigorous social science requires common understandings of its research methods.",
+      "identifier": "10.25504/FAIRsharing.bmz5ap",
+      "endPointURL": "https://qdr.syr.edu/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "7254507349.json"
+    },
+    {
+      "id": "18262F5444",
+      "label": "Quetelet-Progedo",
+      "description": "Quetelet-Progedo is Progedo's data repository dedicated to quantitative social sciences and humanities. Its data collection currently includes administrative, survey (aggregate- and individual-level), geographic, and historical data that cover a wide range of themes such as education, labour, wages, demography, family, health, migration, etc. These data have primarily been produced by French government agencies (notably the French National Institute of Statistics and Economic Studies (INSEE)[5] and, more recently, by academic researchers. Quetelet-Progedo, as a product of Progedo, has been jointly funded by the French Ministry of Higher Education and Research and the CNRS. Please note that the majority of the data and documentation is in French.",
+      "identifier": "10.25504/FAIRsharing.277cff",
+      "endPointURL": "https://data.progedo.fr/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "18262f5444.json"
+    },
+    {
+      "id": "4D0B570EB7",
+      "label": "Quetelet-Progedo",
+      "description": "Quetelet-Progedo’s mission is to enable the preservation and dissemination of data for quantitative social science research. It may be data from official statistical sources as well as research data. It therefore facilitates the implementation of national and European open data policies. Quetelet-Progedo strives to make data FAIR and ensures that they are of high quality. To this end, Quetelet-Progedo:n- documents the data in accordance with international standards for metadata (DDI) and distributes them in formats that facilitate their reuse (.csv, .sas, .dat, sav);n- preserves the data and its integrity via proven technical solutions, including the use of the CC-IN2P3 data centre, for which access has been provided by Huma-NumIR*;n- ensures the long-term identification of data through the allocation of Digital Object Identifiers (DOI);n- supports users, both in depositing and accessing data, through its dedicated team and all the University Platforms for Data (PUD);n- promotes ethical principles and compliance with legal requirements, paying particular attention to the protection of personal and sensitive data.",
+      "identifier": "https://data.progedo.fr/",
+      "endPointURL": "https://www.progedo.fr/en/home/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "4d0b570eb7.json"
+    },
+    {
+      "id": "610A896E75",
+      "label": "RADaR - Digital Repository of Archived Publications of the Institute for Biological Research “Siniša Stanković”",
+      "description": "RADaR - Digital Repository of Archived Publications of the Institute for Biological Research “Siniša Stanković” is the institutional digital repository of the Institute for Biological Research “Siniša Stanković” – National Institute of Republic of Serbia, University of Belgrade.nThe aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the Institute for Biological Research “Siniša Stanković”.nThe repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB).",
+      "identifier": "4035",
+      "endPointURL": "https://radar.ibiss.bg.ac.rs/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "610a896e75.json"
+    },
+    {
+      "id": "A321Z987GH",
+      "label": "Radboud Data Repository",
+      "description": "Institutional research data repository of Radboud University providing long-term archiving and access for multidisciplinary research data. Supports FAIR principles and Dutch and European funder data sharing requirements. Particular strength in humanities, social sciences, and cognitive neuroscience.",
+      "identifier": "https://data.ru.nl/",
+      "endPointURL": "https://data.ru.nl/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "a321z987gh.json"
+    },
+    {
+      "id": "03C39F30F2",
+      "label": "RDA/  WDS IG",
+      "description": "RDA/WDS Certification of Digital Repositories IG",
+      "identifier": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity",
+      "endPointURL": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "03c39f30f2.json"
+    },
+    {
+      "id": "661B6E0023",
+      "label": "re3data.org",
+      "description": "Strecker; D.; Axtmann; A.; Bertelmann; R.; Cousijn; H.; Elger; K.; Ferguson; L. M.; Fichtmüller; D.; Jones; C.; Lindenmann; I.; Neidiger; C.; Nguyen; T. B.; Pal; J. K.; Pampel; H.; Petras; V.; Schnepf; E.; Semrau; A.; Ulrich; R.; Upmeier; A.; Vierkant; P.; Wang; H.; Weickert; G.; Weisweiler; N. L.; Williams; S. C.; Witt; M.; Wright; S. J. (2023): Metadata Schema for the Description of Research Data Repositories: version 4.0; re3data; 33 p.",
+      "identifier": "https://doi.org/10.48440/re3.014",
+      "endPointURL": "https://doi.org/10.48440/re3.014",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "661b6e0023.json"
+    },
+    {
+      "id": "39C8A335A1",
+      "label": "Reactome",
+      "description": "Reactome is a manually curated, peer-reviewed pathway database, annotated by expert biologists and cross-referenced to bioinformatics databases. Its aim is to share information in the visual representations of biological pathways in a computationally accessible format. Pathway annotations are authored by expert biologists, in collaboration with Reactome editorial staff and cross-referenced to many bioinformatics databases. These include NCBI Gene, Ensembl and UniProt databases, the UCSC and HapMap Genome Browsers, the KEGG Compound and ChEBI small molecule databases, PubMed, and Gene Ontology.",
+      "identifier": "nif-0000-03390",
+      "endPointURL": "https://reactome.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "39c8a335a1.json"
+    },
+    {
+      "id": "27DEC264D7",
+      "label": "Recherche Data Gouv",
+      "description": "Inaugurated in 2022 by the French Minister of Higher Education and Research, Recherche Data Gouv is the national ecosystem dedicated to managing, sharing and...",
+      "identifier": "https://recherche.data.gouv.fr/en/page/about-recherche-data-gouv",
+      "endPointURL": "https://recherche.data.gouv.fr/en/page/about-recherche-data-gouv",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "27dec264d7.json"
+    },
+    {
+      "id": "2B5B8DBB59",
+      "label": "RISK",
+      "description": "Frank; R.D. (2024); \"Constructing risk in trustworthy digital repositories\"; Journal of Documentation; Vol. 80 No. 6; pp. 1508-1527.",
+      "identifier": "https://doi.org/10.1108/JD-08-2023-0157",
+      "endPointURL": "https://doi.org/10.1108/JD-08-2023-0157",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "2b5b8dbb59.json"
+    },
+    {
+      "id": "0094967DCB",
+      "label": "RiuNet",
+      "description": "Institutional open-access repository of the Universitat Politècnica de València providing access to research publications, datasets, theses, conference papers and educational materials from UPV. Complies with Spanish and European open access mandates.",
+      "identifier": "https://riunet.upv.es/home",
+      "endPointURL": "https://riunet.upv.es/home",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0094967dcb.json"
+    },
+    {
+      "id": "007276AA14",
+      "label": "RIVeC",
+      "description": "RIVeC - Repository of the Institute for Vegetable Crops is the institutional digital repository of the Institute for Vegetable Crops. The aim of the repository is to provide open access to publications and other research outputs resulting from the projects implemented by the Institute for Vegetable Crops. The repository uses a DSpace-based software platform developed and maintained by the Belgrade University Computer Centre (RCUB).",
+      "identifier": "10160",
+      "endPointURL": "https://rivec.institut-palanka.rs/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "007276aa14.json"
+    },
+    {
+      "id": "408BAAA2BA",
+      "label": "ROHub",
+      "description": "ROHub is a holistic solution for the storage, lifecycle management and preservation of scientific investigations, campaigns and operational processes via research objects. It makes these resources available to others, allows to publish and release them through a DOI, and allows to discover and reuse pre-existing scientific knowledge. Built entirely around the research object concept and inspired by sustainable software management principles, ROHub is the reference platform implementing natively the full research object model and paradigm, including the latest RO-Crate specification, and which provides the backbone to a wealth of RO-centric applications and interfaces across different scientific communities. ROHub has been onboarded as a research enabling service in EOSC to support scientists in the adoption of FAIR and Open Science principles.",
+      "identifier": "https://www.re3data.org/repository/r3d100013832",
+      "endPointURL": "https://www.rohub.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "408baaa2ba.json"
+    },
+    {
+      "id": "745403B02C",
+      "label": "schema.org",
+      "description": "Schema.org is a joint effort, in the spirit of sitemaps.org, to improve the web by creating a structured data markup schema supported by major search engines.",
+      "identifier": "http://schema.org/",
+      "endPointURL": "http://schema.org/",
+      "hasProfileType": "trsp:profile-type-standard",
+      "file": "745403b02c.json"
+    },
+    {
+      "id": "43E99F8D75",
+      "label": "SDSBB",
+      "description": "Noardo; Francesca; Rob Atkinson; Lucy Bastin; Joan Maso; Ingo Simonis; Alejandro Villar; Marie-Françoise Voidrot; and Piotr Zaborowski. 2024. \"Standards for Data Space Building Blocks\" Remote Sensing 16; no. 20: 3824",
+      "identifier": "https://doi.org/10.3390/rs16203824",
+      "endPointURL": "https://doi.org/10.3390/rs16203824",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "43e99f8d75.json"
+    },
+    {
+      "id": "0048D487E7",
+      "label": "Sikt Research Data Archive",
+      "description": "Norwegian national archive for social science and humanities research data. Acquires, curates and disseminates social science datasets for secondary analysis. Also responsible for data protection officer function for Norwegian research institutions and CESSDA Service Provider for Norway.",
+      "identifier": "https://sikt.no/en/archiving-research-data",
+      "endPointURL": "https://sikt.no/en/archiving-research-data",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0048d487e7.json"
+    },
+    {
+      "id": "298D90251D",
+      "label": "Slovak Archive of Social Data",
+      "description": "The Slovak Archive of Social Data (SASD), established in 2004, is a national repository dedicated to preserving and providing access to documentation and datasets from sociological and social science research in Slovakia. It archives data from major international programs such as ISSP, ESS, and EVS, as well as Slovak research projects funded by public, private, or commercial sources, provided they meet professional standards. SASD ensures long‑term accessibility of high‑quality social data for non‑commercial research, education, journalism, and public use, and also offers links to other international data archives and resources",
+      "identifier": "r3d100014833",
+      "endPointURL": "https://sasd.sav.sk/en/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "298d90251d.json"
+    },
+    {
+      "id": "6668C83282",
+      "label": "Slovenian Social Science Data Archives",
+      "description": "Slovenian Social Science Data Archives (ADP) was established in 1997 as an organizational unit of the Social Sciences Research Institute at the Faculty of Social Sciences, University of Ljubljana. It is a national research infrastructure for social sciences, whose main mission is to manage data and data services in order to support research, education, and general well-being.nnDigital curation of high-quality research data that are openly accessible to researchers and other interested public is at the essence of the ADP activities.nnWithin its mission, the ADP establishes itself as a national infrastructure that collects important data sources from a wide range of social sciences, interesting for analyzing the Slovenian society, deposits, preserves and promotes their further use in scientific, educational and other purposes.nnThe Ministry of Education, Science, and Sports of the Republic of Slovenia has appointed ADP as the national data service provider for social sciences within its membership in CESSDA. The long-term national importance of the ADP is clear also in the ongoing support of the ministry, which from the establishment of ADP onwards ensures funding. Since 2004, the funding of operations has been provided within the infrastructure program Network of research infrastructure centers at the University of Ljubljana (MRIC UL).nnADP reports about its activities to the Council of ADP and to the Slovenian Research Agency that funds the infrastructure research program of the University of Ljubljana (MRIC UL).",
+      "identifier": "https://www.adp.fdv.uni-lj.si/",
+      "endPointURL": "https://www.adp.fdv.uni-lj.si/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "6668c83282.json"
+    },
+    {
+      "id": "1704A232F6",
+      "label": "Social Sciences and Digital Humanities Archive",
+      "description": "Welcome to SODHA, the Belgian federal data archive for social sciences and the digital humanities! Here you can find and deposit social science and digital humanities data in reusable form. Published datasets receive a DOI, making them citable like other types of publications. SODHA promotes open data by enabling reuse of research data and by safely preserving datasets in the long term. SODHA is the Belgian service provider in the Consortium of European Social Science Data Archives (CESSDA) and is hosted by the State Archives of Belgium. SODHA was built with the help of DEMO (UCLouvain) and Interface Demography (VUB). You can consult the SODHA Guide here, and you can read our policies here. Want to learn more about SODHA? Consult our brochure or our presentation on the State Archives' website. If you have any question, you can contact us at sodha@arch.be.",
+      "identifier": "https://www.sodha.be/",
+      "endPointURL": "https://www.sodha.be/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "1704a232f6.json"
+    },
+    {
+      "id": "00E8A65B68",
+      "label": "SOCIB Data Repository",
+      "description": "Repository for oceanographic, coastal and metocean observation data from the Balearic Sea and western Mediterranean. Provides open access to glider data, sea level observations, wave data, SST and other marine environmental datasets. Integrates with EMODnet and Copernicus Marine Service.",
+      "identifier": "https://www.socib.es/en/what-we-do/metocean-data/socib-data-repository",
+      "endPointURL": "https://www.socib.es/en/what-we-do/metocean-data/socib-data-repository",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00e8a65b68.json"
+    },
+    {
+      "id": "0C1A1A6FE2",
+      "label": "STATUS",
+      "description": "Donaldson DR. Certification information on trustworthy digital repository websites: A content analysis. PLoS One. 2020 Dec 9;15(12):e0242525. doi: 10.1371/journal.pone.0242525. PMID: 33296371; PMCID: PMC7725354.",
+      "identifier": "https://doi.org/10.1371/journal.pone.0242525",
+      "endPointURL": "https://doi.org/10.1371/journal.pone.0242525",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "0c1a1a6fe2.json"
+    },
+    {
+      "id": "18D00D3332",
+      "label": "STOREDB",
+      "description": "STOREDB provides infrastructure for sharing data and resources in radiation biology and epidemiology. It is a platform for the archiving and sharing of primary data and outputs of all kinds, including epidemiological and experimental data, from research on the effects of radiation. It also provides a directory of bioresources and databases containing information and materials that investigators are willing to share. STORE supports the creation of a radiation research commons.",
+      "identifier": "10.25504/FAIRsharing.6h8d2r",
+      "endPointURL": "https://www.storedb.org/store_v3/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "18d00d3332.json"
+    },
+    {
+      "id": "7B721A758B",
+      "label": "Strasbourg Astronomical Data Center",
+      "description": "Strasbourg astronomical Data Center (CDS) is dedicated to the collection and worldwide distribution of astronomical data and related information.nAlongside data curation and service maintenance responsibilities, the CDS undertakes R&D activities that are fundamental to ensure the long term sustainability in a domain in which technology evolves very quickly. R&D areas include informatics, big data, and development of the astronomical Virtual Observatory (VO). CDS is a major actor in the VO with leading roles in European VO projects, the French Virtual Observatory and the International Virtual Observatory Alliance (IVOA). nThe CDS hosts the SIMBAD astronomical database, the world reference database for the identification of astronomical objects; VizieR, the catalogue service for the CDS reference collection of astronomical catalogues and tables published in academic journals; and the Aladin interactive software sky atlas for access, visualization and analysis of astronomical images, surveys, catalogues, databases and related data.",
+      "identifier": "https://cds.unistra.fr/",
+      "endPointURL": "https://cds.unistra.fr/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "7b721a758b.json"
+    },
+    {
+      "id": "7A31FBDEE1",
+      "label": "STRING",
+      "description": "STRING is a database of known and predicted protein interactions.nThe interactions include direct (physical) and indirect (functional) associations; they are derived from four sources:n- Genomic Contextn- High-throughput Experimentsn- (Conserved) Coexpressionn- Previous KnowledgenSTRING quantitatively integrates interaction data from these sources for a large number of organisms, and transfers information between these organisms where applicable.",
+      "identifier": "r3d100010604",
+      "endPointURL": "https://string-db.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "7a31fbdee1.json"
+    },
+    {
+      "id": "005BC63AA9",
+      "label": "SWISSUbase",
+      "description": "Swiss national cross-disciplinary platform for the curation, preservation and dissemination of research data and metadata. Launched 2021 to succeed FORSbase. Covers social sciences (via FORS DSU), linguistics (via LaRS/CLARIN-CH) and other disciplines (via institutional DSUs). Metadata harvested by CESSDA, CLARIN and DARIAH.",
+      "identifier": "https://www.swissubase.ch/",
+      "endPointURL": "https://www.swissubase.ch/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "005bc63aa9.json"
+    },
+    {
+      "id": "4DF95C0BF2",
+      "label": "TARKI Data Archive",
+      "description": "TARKI is the Hungarian Social Science data archive. It is a member of CESSDA-ERIC and the European Association of Social Science Data Archives. There are more than 800 social science resources in the TÁRKI archive, representing more than 35 years of survey research in Hungary.",
+      "identifier": "https://www.tarki.hu/eng",
+      "endPointURL": "https://www.tarki.hu/eng",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "4df95c0bf2.json"
+    },
+    {
+      "id": "16233DE04E",
+      "label": "The European Genome-phenome Archive",
+      "description": "The European Genome-phenome Archive (EGA) is designed to be a repository for all types of sequence and genotype experiments, including case-control, population, and family studies. We will include SNP and CNV genotypes from array based methods and genotyping done with re-sequencing methods. nThe EGA will serve as a permanent archive that will archive several levels of data including the raw data (which could, for example, be re-analysed in the future by other algorithms) as well as the genotype calls provided by the submitters. We are developing data mining and access tools for the database.nFor controlled access data, the EGA will provide the necessary security required to control access, and maintain patient confidentiality, while providing access to those researchers and clinicians authorised to view the data. In all cases, data access decisions will be made by the appropriate data access-granting organisation (DAO) and not by the EGA. The DAO will normally be the same organisation that approved and monitored the initial study protocol or a designate of this approving organisation. The European Genome-phenome Archive (EGA) allows you to explore datasets from genomic studies, provided by a range of data providers. Access to datasets must be approved by the specified Data Access Committee (DAC).",
+      "identifier": "512",
+      "endPointURL": "https://ega-archive.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "16233de04e.json"
+    },
+    {
+      "id": "003C955045",
+      "label": "The Language Bank of Finland",
+      "description": "Finnish national infrastructure for language research providing access to text and speech corpora, lexical resources and language technology tools. Serves linguists and language technology researchers in Finland and internationally. Finnish node of CLARIN ERIC.",
+      "identifier": "https://www.kielipankki.fi/language-bank/",
+      "endPointURL": "https://www.kielipankki.fi/language-bank/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "003c955045.json"
+    },
+    {
+      "id": "370B8EC563",
+      "label": "TRAC",
+      "description": "(Page not found)",
+      "identifier": "https://www.crl.edu/trac-metrics",
+      "endPointURL": "https://www.crl.edu/trac-metrics",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "370b8ec563.json"
+    },
+    {
+      "id": "0086D1355E",
+      "label": "Tromso, Repository of Language and Linguistics (TROLLing)",
+      "description": "FAIR-aligned open-access repository for linguistic datasets and statistical code used in linguistics research. All data accompanied by searchable metadata. Linguists worldwide invited to deposit data and code. Special collection within DataverseNO; CLARIN C-Centre.",
+      "identifier": "https://trolling.uit.no/",
+      "endPointURL": "https://trolling.uit.no/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "0086d1355e.json"
+    },
+    {
+      "id": "1EE89F448D",
+      "label": "TRSP",
+      "description": "The Trusted Repository Service Provider (TRSP) Research Data Alliance (RDA) Working Group (WG)",
+      "identifier": "https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf",
+      "endPointURL": "https://www.rd-alliance.org/wp-content/uploads/2024/07/Case-Statement-Community-based-catalogue-of-requirements-for-trustworthy-Technical-Repository-Service-Providers-Working-Group-Case-Statement-v1.0.pdf",
+      "hasProfileType": "trsp:profile-type-standard",
+      "file": "1ee89f448d.json"
+    },
+    {
+      "id": "PLK1JHG9VB",
+      "label": "TRUST",
+      "description": "Lin; D.; Crabtree; J.; Dillo; I. et al. The TRUST Principles for digital repositories. Sci Data 7; 144 (2020).",
+      "identifier": "https://doi.org/10.1038/s41597-020-0486-7",
+      "endPointURL": "https://doi.org/10.1038/s41597-020-0486-7",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "plk1jhg9vb.json"
+    },
+    {
+      "id": "76BC362CF1",
+      "label": "TRUST WG",
+      "description": "RDA/WDS Trust Principles Outreach and Adoption WG",
+      "identifier": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity",
+      "endPointURL": "https://www.rd-alliance.org/groups/rdawds-trust-principles-outreach-and-adoption-working-group/activity",
+      "hasProfileType": "trsp:profile-type-source",
+      "file": "76bc362cf1.json"
+    },
+    {
+      "id": "668467EC38",
+      "label": "TTRAM",
+      "description": "The Transparent Trustworthy Repository Attributes Matrix (TTRAM) is derived from a review of the European repository landscape. The TTRAM examines 30 common repository activities and functions across digital object management; organisational infrastructure; technology and security.",
+      "identifier": "https://doi.org/10.5281/zenodo.17973113",
+      "endPointURL": "https://doi.org/10.5281/zenodo.17973113",
+      "hasProfileType": "trsp:profile-type-community",
+      "file": "668467ec38.json"
+    },
+    {
+      "id": "1B6B7677B4",
+      "label": "UK Data Service",
+      "description": "A comprehensive resource funded by the ESRC to support researchers, teachers and policymakers who depend on high-quality social and economic data.",
+      "identifier": "https://ukdataservice.ac.uk/about/",
+      "endPointURL": "https://ukdataservice.ac.uk/about/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "1b6b7677b4.json"
+    },
+    {
+      "id": "1C10548269",
+      "label": "UniProt Knowledgebase",
+      "description": "The UniProt Knowledgebase (UniProtKB) is the central hub for the collection of functional information on proteins, with accurate, consistent and rich annotation. In addition to capturing the core data mandatory for each UniProtKB entry (mainly, the amino acid sequence, protein name or description, taxonomic data and citation information), as much annotation information as possible is added. This includes widely accepted biological ontologies, classifications and cross-references, and clear indications of the quality of annotation in the form of evidence attribution of experimental and computational data. The UniProt Knowledgebase consists of two sections: a reviewed section containing manually-annotated records with information extracted from literature and curator-evaluated computational analysis (aka \\",
+      "identifier": "https://www.uniprot.org/",
+      "endPointURL": "https://www.uniprot.org/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "1c10548269.json"
+    },
+    {
+      "id": "00804149FC",
+      "label": "UTM-CSIC Data Centre",
+      "description": "Marine technology and oceanographic data centre of CSIC's UTM (Marine Technology Unit). Provides data management, archiving and open access to oceanographic expedition data, bathymetric data and marine research datasets from CSIC research vessels and affiliated projects.",
+      "identifier": "https://data.utm.csic.es/",
+      "endPointURL": "https://data.utm.csic.es/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "00804149fc.json"
+    },
+    {
+      "id": "79BBDA6F70",
+      "label": "World Data Center for Climate",
+      "description": "The World Data Center Climate (WDCC) at the German Climate Computing Center (DKRZ: Deutsches Klimarechenzentrum GmbH) is part of an international effort to set up domain specific data portals as a service for the scientific community. The WDCC provides a long-term archiving service for large climate or Earth System research data sets. This service includes archiving and retrieval capability of data for time periods of 10 years or longer.  The WDCC focuses on climate and climate-related data products, specifically those resulting from climate simulations. Metadata and research data in WDCC is curated in collaboration with the data providers. Data in WDCC is citable and can be directly integrated into scientific publications.",
+      "identifier": "https://www.wdc-climate.de/ui/",
+      "endPointURL": "https://www.wdc-climate.de/ui/",
+      "hasProfileType": "trsp:profile-type-repository",
+      "file": "79bbda6f70.json"
     }
   ],
-  "dateModified": "2026-09-16T03:11:24.013Z"
+  "dateModified": "2026-09-16T04:41:25.386Z"
 }
