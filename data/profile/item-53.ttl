@@ -2,7 +2,8 @@
 
 @prefix trsp:   <https://example.org/trsp/> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+# @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix dct:    <http://purl.org/dc/terms/> .
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
@@ -136,7 +137,7 @@ eden:att:000195 a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Lack of well defined mechanism for exchanging AIPs between organisations and systems|Exchange of AIPs between organisations" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema Crosswalk IRIs\"" ;
+    trsp:hasBenchmark "Schema Crosswalk IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:0000F4 a trsp:Property ;
@@ -234,7 +235,7 @@ eden:att:000176 a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Discovery APIs supporting varying granularity" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema IRIs\"" ;
+    trsp:hasBenchmark "Schema IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000175 a trsp:Property ;
@@ -399,7 +400,7 @@ eden:att:000129 a trsp:Property ;
     schema:category "Quality|Technical Data Quality|Files are not in a supported or sustainable file format|Format transformation tools registry" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Service IRIs\"" ;
+    trsp:hasBenchmark "Service IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000151 a trsp:Property ;
@@ -511,7 +512,7 @@ eden:att:00019C a trsp:Property ;
     schema:category "Quality|Technical Data Quality|A repository does not know if files it preserves are well-formed and valid|File format validation" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"File Type IRIs\"" ;
+    trsp:hasBenchmark "File Type IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:0000C6 a trsp:Property ;
@@ -590,7 +591,7 @@ eden:att:00005C a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Crosswalks between metadata schemas" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema Crosswalk IRIs\"" ;
+    trsp:hasBenchmark "Schema Crosswalk IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:0001C2 a trsp:Property ;
@@ -602,7 +603,7 @@ eden:att:0001C2 a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema Crosswalk IRIs\"" ;
+    trsp:hasBenchmark "Schema Crosswalk IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:00008A a trsp:Property ;
@@ -669,7 +670,7 @@ eden:att:00016D a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Integration Tools for Bridging Formats" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Service IRIs\"" ;
+    trsp:hasBenchmark "Service IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:00016C a trsp:Property ;
@@ -716,7 +717,7 @@ eden:att:000055 a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles" ;
     trsp:hasCardinalityType trsp:cardinality1_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema IRIs\"" ;
+    trsp:hasBenchmark "Schema IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:0000E4 a trsp:Property ;
@@ -910,7 +911,7 @@ eden:att:0000A3 a trsp:Property ;
 
 eden:att:0001C1 a trsp:Property ;
     rdf:label "Documentation references metadata profiles" ;
-    skos:definition "The repository verifies that the contents of a given file conform to the rules required by the repository using a list of rules. For example, you could define that a given \"name\" field must have unique values ​​throughout the entire file." ;
+    skos:definition "The repository verifies that the contents of a given file conform to the rules required by the repository using a list of rules. For example, you could define that a given name field must have unique values ​​throughout the entire file." ;
     trsp:linkedProperty trsp:profileDocumentation ;
     skos:exactMatch trsp:att.353453C585 ;
     dcat:keyword "EDEN" ;
@@ -950,7 +951,7 @@ eden:att:000189 a trsp:Property ;
     schema:category "Interoperability|Organizational Interoperability|Inconsistent Service Workflows|Standardised Data Deposit Process" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema IRIs\"" ;
+    trsp:hasBenchmark "Schema IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000148 a trsp:Property ;
@@ -1061,7 +1062,7 @@ eden:att:000083 a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Fragmentation of Semantic Annotation Practices|External annotation services or tools" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Service IRIs\"" ;
+    trsp:hasBenchmark "Service IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:0001C9 a trsp:Property ;
@@ -1084,7 +1085,7 @@ eden:att:000063 a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Schema.org or FAIR-compliant metadata exposure" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema IRIs\"" ;
+    trsp:hasBenchmark "Schema IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000196 a trsp:Property ;
@@ -1141,7 +1142,7 @@ eden:att:00000C a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for both General-purpose and Domain-specific Formats" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"File Type IRIs\"" ;
+    trsp:hasBenchmark "File Type IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:00019A a trsp:Property ;
@@ -1153,7 +1154,7 @@ eden:att:00019A a trsp:Property ;
     schema:category "Quality|Technical Data Quality|Files have not been evaluated for format appraisal (i.e. how suitable is the file format for long-term preservation)|File format appraisal" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"File Type IRIs\"" ;
+    trsp:hasBenchmark "File Type IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000127 a trsp:Property ;
@@ -1231,7 +1232,7 @@ eden:att:00011E a trsp:Property ;
     schema:category "Quality|Technical Data Quality|Files are not in a supported or sustainable file format|Format normalization" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Service IRIs\"" ;
+    trsp:hasBenchmark "Service IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000120 a trsp:Property ;
@@ -1265,7 +1266,7 @@ eden:att:000121 a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Service IRIs\"" ;
+    trsp:hasBenchmark "Service IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:0000C4 a trsp:Property ;
@@ -1677,7 +1678,7 @@ eden:att:00016B a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema Crosswalk IRIs\"" ;
+    trsp:hasBenchmark "Schema Crosswalk IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:0001BE a trsp:Property ;
@@ -1767,7 +1768,7 @@ eden:att:00015E a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Crosswalks between metadata schemas" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema Crosswalk IRIs\"" ;
+    trsp:hasBenchmark "Schema Crosswalk IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:0003E9 a trsp:Property ;
@@ -2046,7 +2047,7 @@ eden:att:0001C3 a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Lack of Metadata Harmonization Across Domains|Support for domain-specific metadata profiles" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema IRIs\"" ;
+    trsp:hasBenchmark "Schema IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000051 a trsp:Property ;
@@ -2081,7 +2082,7 @@ eden:att:000158 a trsp:Property ;
     schema:category "Quality|Metadata Quality|Automated FAIR Metadata assessment|FAIR assessment tool" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Tool IRIs\"" ;
+    trsp:hasBenchmark "Tool IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000098 a trsp:Property ;
@@ -2617,7 +2618,7 @@ eden:att:00000B a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Support for both General-purpose and Domain-specific Formats" ;
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"File Type IRIs\"" ;
+    trsp:hasBenchmark "File Type IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:000186 a trsp:Property ;
@@ -2687,7 +2688,7 @@ eden:att:000072 a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Inconsistent Use of Controlled Vocabularies and Ontologies|Vocabulary harmonisation and mapping services" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema Crosswalk IRIs\"" ;
+    trsp:hasBenchmark "Schema Crosswalk IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:00016A a trsp:Property ;
@@ -2699,7 +2700,7 @@ eden:att:00016A a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Lack of Federated Discovery Across Domain|Top-level and fine-grained search mechanisms" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema IRIs\"" ;
+    trsp:hasBenchmark "Schema IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:00006E a trsp:Property ;
@@ -2790,7 +2791,7 @@ eden:att:00000D a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Metadata Alignment across Heterogeneous Formats" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema Crosswalk IRIs\"" ;
+    trsp:hasBenchmark "Schema Crosswalk IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:00000E a trsp:Property ;
@@ -2802,7 +2803,7 @@ eden:att:00000E a trsp:Property ;
     schema:category "Interoperability|Technical Interoperability|Format Fragmentation in Research Data|Metadata Alignment across Heterogeneous Formats" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"Schema IRIs\"" ;
+    trsp:hasBenchmark "Schema IRIs" ;
     owl:version "0.4.1" .
 
 eden:att:00000F a trsp:Property ;
