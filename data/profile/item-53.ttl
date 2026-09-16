@@ -693,7 +693,7 @@ eden:att:000185 a trsp:Property ;
     schema:category "Interoperability|Semantic Interoperability|Lack of Persistent, Resolvable Identifiers for Semantic Entities|Support for multilingual vocabularies" ;
     trsp:hasCardinalityType trsp:cardinality1_n ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
-    trsp:hasBenchmark iso:iso-639-3.ttl ;
+    trsp:hasBenchmark <https://https://w3id.org/trsp/vocabs/iso/iso639-3> ;
     owl:version "0.4.1" .
 
 eden:att:0000AC a trsp:Property ;
