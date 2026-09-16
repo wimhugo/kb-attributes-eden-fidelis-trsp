@@ -1,0 +1,15 @@
+{
+  "@context": "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp",
+  "@type": "ItemList",
+  "numberOfItems": 154,
+  "itemListElement": [
+    {
+      "id": {{}},
+      "label": {{}},
+      "description": {{}},
+      "identifier": {{}},
+      "endPointURL": {{}},
+      "hasProfileType": {{}},
+      "file": {{}}
+    }
+]
