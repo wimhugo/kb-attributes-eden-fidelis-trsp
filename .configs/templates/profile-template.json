@@ -10,7 +10,8 @@
       "identifier": {{}},
       "endPointURL": {{}},
       "hasProfileType": {{}},
-      "file": {{}}
+      "file": {{}},
+      "hasProfileData": {{}}
     }
 ]
 }
