@@ -3,12 +3,14 @@
 @prefix trsp:   <https://example.org/trsp/> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 # @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
-@prefix owl:    <http://www.w3.org/2002/07/owl#> .
 @prefix dct:    <http://purl.org/dc/terms/> .
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 # @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 @prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix disc:   <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/eosc/> 
+@prefix pidreg: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/registry/pid.ttl> .
+@prefix msct:   <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/registry/metadata.ttl> .
 
 trsp:profile.3C2D6C1C37 a trsp:Profile ;
     dct:title "FIDELIS" @en ;
@@ -142,7 +144,7 @@ fidelis:vocabulariesUsed a trsp:Property ;
     trsp:hasProfile trsp:profile.3C2D6C1C37 ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeRegistry ;
-    trsp:hasBenchmark "\"None Exists\"" ;
+    trsp:hasBenchmark "None Exists" ;
     owl:version "0.4.1" .
 
 fidelis:persistentIdentifierSystem a trsp:Property ;
