@@ -1,0 +1,8 @@
+# A template for a blank service node
+
+ trsp:hasService [ 
+    a trsp:Service ;
+    trsp:serviceType [[TRSP_SERVICE_TYPE]] ;
+    trsp:serviceIRI <[[SERVICE_NODE]]> ;
+    trsp:serviceRelation [[TRSP_RELATION_TYPE]]
+ ];
