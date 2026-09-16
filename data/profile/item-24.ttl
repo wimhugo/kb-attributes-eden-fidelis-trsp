@@ -1,3 +1,5 @@
+@prefix cpp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/profile/item-24.ttl> .
+
 @prefix trsp:   <https://example.org/trsp/> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
@@ -13,3 +15,757 @@ trsp:profile.6C825F4502 a trsp:Profile ;
     dct:identifier <https://doi.org/10.5281/zenodo.17984753>  ;
     dcat:endpointURL <https://doi.org/10.5281/zenodo.17984753>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .
+
+cpp:CCP-001-01 a trsp:Property ;
+    rdf:label "Checksum Generation and Recording" ;
+    skos:definition "The TDA (Trustworthy Digital Archive) records checksums for every File." ;
+    schema:category "Responsibility|Stewardship|Integrity and Authenticity" ;
+    trsp:linkedProperty "checkedForChecksum" ;
+    skos:exactMatch "att.4B8DBC2795" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-002-01 a trsp:Property ;
+    rdf:label "Checksum Validation" ;
+    skos:definition "The TDA validates checksums against those stored in the Information Package at Ingest or Access." ;
+    schema:category "Responsibility|Stewardship|Integrity and Authenticity" ;
+    trsp:linkedProperty "checkedForChecksum" ;
+    skos:exactMatch "att.4B8DBC2795" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-003-01 a trsp:Property ;
+    rdf:label "Integrity Checking - File Verification Error Data" ;
+    skos:definition "The TDA supports periodic integrity checking, reporting any damaged or missing Files." ;
+    schema:category "Responsibility|Typical Value-added Services|Standard APIs" ;
+    trsp:linkedProperty "fileVerificationErrorData" ;
+    skos:narrowMatch "att.29A8E8970A" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-003-02 a trsp:Property ;
+    rdf:label "Integrity Checking - File format preservation actions" ;
+    skos:definition "The TDA supports periodic integrity checking, reporting any damaged or missing Files." ;
+    schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+    trsp:linkedProperty "fileFormatPreservation" ;
+    skos:narrowMatch "att.720D076722" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-003-03 a trsp:Property ;
+    rdf:label "Integrity Checking - Active Bit-Level Preservation in Place" ;
+    skos:definition "The TDA supports periodic integrity checking, reporting any damaged or missing Files." ;
+    schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+    trsp:linkedProperty "activeBitLevelPreservation" ;
+    skos:exactMatch "att.6D7D249110" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-004-01 a trsp:Property ;
+    rdf:label "Data Corruption Management - Documented Measures for Backup, Replication, and Restoration" ;
+    skos:definition "The TDA replaces damaged Files from replicated copies and reports on actions taken." ;
+    schema:category "Technology|Secure|Object Storage" ;
+    trsp:linkedProperty "documentedBackupMeasures" ;
+    skos:narrowMatch "att.075738C8DF" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-004-02 a trsp:Property ;
+    rdf:label "Data Corruption Management - Active Bit-Level Preservation in Place" ;
+    skos:definition "The TDA replaces damaged Files from replicated copies and reports on actions taken." ;
+    schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+    trsp:linkedProperty "activeBitLevelPreservation" ;
+    skos:narrowMatch "att.6D7D249110" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-005-03 a trsp:Property ;
+    rdf:label "Identifier Management - Supported Persistent Identifiers" ;
+    skos:definition "Identifiers are assigned to Objects, Information packages and/or Metadata, and managed along to their life cycle." ;
+    schema:category "Transparency|Benefits and Constraints|Context" ;
+    trsp:linkedProperty "listPIDs" ;
+    skos:narrowMatch "att.2F993B25AD" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+    trsp:hasBenchmark trsp:typePID ;
+    owl:version "0.4.1" .
+
+cpp:CCP-005-02 a trsp:Property ;
+    rdf:label "Identifier Management - PID Policy" ;
+    skos:definition "Identifiers are assigned to Objects, Information packages and/or Metadata, and managed along to their life cycle." ;
+    schema:category "Transparency|Benefits and Constraints|Policy" ;
+    trsp:linkedProperty "policyPID" ;
+    skos:narrowMatch "att.2901B9E359" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-005-01 a trsp:Property ;
+    rdf:label "Identifier Management - Published versioning procedure available" ;
+    skos:definition "Identifiers are assigned to Objects, Information packages and/or Metadata, and managed along to their life cycle." ;
+    schema:category "Responsibility|Stewardship|Provenance|Versioning" ;
+    trsp:linkedProperty "procedureVersioningAvailable" ;
+    skos:narrowMatch "att.0EBAC52CB6" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-006-01 a trsp:Property ;
+    rdf:label "AIP Batch Export" ;
+    skos:definition "As part of an exit strategy, the TDA batch exports Information packages and all associated Metadata in a manageable format/structure for Ingest into another TDA." ;
+    schema:category "Transparency|Scope of Services|Value-Added|Crosswalks and Conversions|Flexible Serialisation of AIPs" ;
+    trsp:linkedProperty "aipSerialisation" ;
+    skos:exactMatch "att.2141FF7751" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-007-01 a trsp:Property ;
+    rdf:label "Virus Scanning" ;
+    skos:definition "Information packages are virus checked, with appropriate facilities for quarantine." ;
+    schema:category "Responsibility|Stewardship|Integrity and Authenticity" ;
+    trsp:linkedProperty "checkedForVirusMalware" ;
+    skos:exactMatch "att.2923D6DE38" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-008-01 a trsp:Property ;
+    rdf:label "File Format Identification - File Format Guidance" ;
+    skos:definition "The TDA identifies file formats to the appropriate level of precision, based on an existing registry (IANA MIME types, PRONOM, etc.)." ;
+    schema:category "Performance|Deposit Properties|File and Dataset Properties" ;
+    trsp:linkedProperty "guidanceFileFormat" ;
+    skos:narrowMatch "att.3B8FD2CB5F" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-008-04 a trsp:Property ;
+    rdf:label "File Format Identification - File Type Registry API" ;
+    skos:definition "The TDA identifies file formats to the appropriate level of precision, based on an existing registry (IANA MIME types, PRONOM, etc.)." ;
+    schema:category "Responsibility|Typical Value-added Services|Standard APIs" ;
+    trsp:linkedProperty "fileTypeRegistryAPI" ;
+    skos:narrowMatch "att.6E3855425F" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-008-02 a trsp:Property ;
+    rdf:label "File Format Identification - File Type Verification API" ;
+    skos:definition "The TDA identifies file formats to the appropriate level of precision, based on an existing registry (IANA MIME types, PRONOM, etc.)." ;
+    schema:category "Responsibility|Typical Value-added Services|Standard APIs" ;
+    trsp:linkedProperty "fileTypeVerificationAPI" ;
+    skos:narrowMatch "att.63101DF501" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-008-03 a trsp:Property ;
+    rdf:label "File Format Identification - File Type Conversion Services" ;
+    skos:definition "The TDA identifies file formats to the appropriate level of precision, based on an existing registry (IANA MIME types, PRONOM, etc.)." ;
+    schema:category "Transparency|Scope of Services|Value-Added|Crosswalks and Conversions|File Type Conversion Services" ;
+    trsp:linkedProperty "fileTypeConversion" ;
+    skos:narrowMatch "att.6A439A6743" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+    trsp:hasBenchmark trsp:typeFileFormatConversion ;
+    owl:version "0.4.1" .
+
+cpp:CCP-009-02 a trsp:Property ;
+    rdf:label "Metadata Extraction - Tools for Technical Metadata Extraction" ;
+    skos:definition "The TDA extracts characteristics (such as size, image dimensions, video codec, audio run time, creating application)." ;
+    schema:category "Responsibility|Stewardship|Quality Control" ;
+    trsp:linkedProperty "technicalMetadataTools" ;
+    skos:narrowMatch "att.650F58F3BC" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-009-01 a trsp:Property ;
+    rdf:label "Metadata Extraction - Significant Properties Extracted" ;
+    skos:definition "The TDA extracts characteristics (such as size, image dimensions, video codec, audio run time, creating application)." ;
+    schema:category "Responsibility|Stewardship|Quality Control" ;
+    trsp:linkedProperty "significantPropertiesExtracted" ;
+    skos:narrowMatch "att.25D8680361" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-010-01 a trsp:Property ;
+    rdf:label "Format Validation" ;
+    skos:definition "The TDA validates Files against File format specifications." ;
+    schema:category "Responsibility|Typical Value-added Services|Standard APIs" ;
+    trsp:linkedProperty "fileTypeVerificationAPI" ;
+    skos:exactMatch "att.63101DF501" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-011-01 a trsp:Property ;
+    rdf:label "Replication" ;
+    skos:definition "The TDA automatically manages the replication of Information Packages to multiple storage locations (potentially in different geographical locations)." ;
+    schema:category "Technology|Secure|Object Storage" ;
+    trsp:linkedProperty "documentedBackupMeasures" ;
+    skos:broadMatch "att.075738C8DF" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-012-01 a trsp:Property ;
+    rdf:label "Risk Mitigation" ;
+    skos:definition "The TDA enables the design, development and management of plans for mitigating identified preservation risks." ;
+    schema:category "Responsibility|Stewardship|Legal and Regulatory" ;
+    trsp:linkedProperty "disclosureRiskAssessment" ;
+    skos:broadMatch "att.08C2A995C0" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-013-01 a trsp:Property ;
+    rdf:label "Object Management Reporting - Annotation, Metrics, Feedback and Use" ;
+    skos:definition "The TDA delivers reporting to enable the effective management of Objects. This must include a wide range of functional, operational, and statistical reports and analytics." ;
+    schema:category "User Focus|Annotation, Metrics, Feedback and Use" ;
+    trsp:linkedProperty "annotationMetricsFeedback" ;
+    skos:closeMatch "att.70C4C7B218" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeChecklistEvidence ;
+    trsp:hasBenchmark trsp:checklistMetrics ;
+    owl:version "0.4.1" .
+
+cpp:CCP-013-02 a trsp:Property ;
+    rdf:label "Object Management Reporting - Monitor Process Compliance" ;
+    skos:definition "The TDA delivers reporting to enable the effective management of Objects. This must include a wide range of functional, operational, and statistical reports and analytics." ;
+    schema:category "Responsibility|Stewardship|Process" ;
+    trsp:linkedProperty "monitorProcessCompliance" ;
+    skos:narrowMatch "att.24C260AA9C" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-015-01 a trsp:Property ;
+    rdf:label "Emulation and Rendering Tools - Download or stream" ;
+    skos:definition "The TDA enables the rendering of Objects via the application of emulation and/or other specialist tools." ;
+    schema:category "User Focus|Application and Reuse|Download or stream" ;
+    trsp:linkedProperty "downloadStream" ;
+    skos:narrowMatch "att.04C904A984" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-015-05 a trsp:Property ;
+    rdf:label "Emulation and Rendering Tools - Bind to Application/ Semantic Mapping" ;
+    skos:definition "The TDA enables the rendering of Objects via the application of emulation and/or other specialist tools." ;
+    schema:category "User Focus|Application and Reuse|Bind to Application/ Semantic Mapping" ;
+    trsp:linkedProperty "applicationBindMapping" ;
+    skos:narrowMatch "att.6BA2330E96" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-015-02 a trsp:Property ;
+    rdf:label "Emulation and Rendering Tools - Include into VRE or workflow" ;
+    skos:definition "The TDA enables the rendering of Objects via the application of emulation and/or other specialist tools." ;
+    schema:category "User Focus|Application and Reuse|Include into VRE or workflow" ;
+    trsp:linkedProperty "includeVREWorkflow" ;
+    skos:narrowMatch "att.0F56D6B0C4" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-015-03 a trsp:Property ;
+    rdf:label "Emulation and Rendering Tools - Subset" ;
+    skos:definition "The TDA enables the rendering of Objects via the application of emulation and/or other specialist tools." ;
+    schema:category "User Focus|Application and Reuse|Subset" ;
+    trsp:linkedProperty "subset" ;
+    skos:narrowMatch "att.2F6F8568A8" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-015-04 a trsp:Property ;
+    rdf:label "Emulation and Rendering Tools - Analyse and Pre-Process" ;
+    skos:definition "The TDA enables the rendering of Objects via the application of emulation and/or other specialist tools." ;
+    schema:category "User Focus|Application and Reuse|Analyse and Pre-Process" ;
+    trsp:linkedProperty "analysePreProcess" ;
+    skos:narrowMatch "att.4FE3AA3A42" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-016-01 a trsp:Property ;
+    rdf:label "Metadata Ingest and Management - Submission Workflow" ;
+    skos:definition "The TDA ingests and manages all required Metadata including Metadata appropriate for specific content types (e.g. geospatial, audio visual)." ;
+    schema:category "Responsibility|Stewardship|Process" ;
+    trsp:linkedProperty "workflowSubmission" ;
+    skos:broadMatch "att.12CA661DF7" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-016-03 a trsp:Property ;
+    rdf:label "Metadata Ingest and Management - Schema aligned with community practices" ;
+    skos:definition "The TDA ingests and manages all required Metadata including Metadata appropriate for specific content types (e.g. geospatial, audio visual)." ;
+    schema:category "Responsibility|Schema|Applicable and appropriate" ;
+    trsp:linkedProperty "schemaAlignedCommunity" ;
+    skos:narrowMatch "att.1DD721CC5B" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-016-02 a trsp:Property ;
+    rdf:label "Metadata Ingest and Management - Supported Metadata Schema" ;
+    skos:definition "The TDA ingests and manages all required Metadata including Metadata appropriate for specific content types (e.g. geospatial, audio visual)." ;
+    schema:category "Transparency|Benefits and Constraints|Context" ;
+    trsp:linkedProperty "listMetadataSchema" ;
+    skos:broadMatch "att.6C03AB58B8" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+    trsp:hasBenchmark msc:c25 ;
+    owl:version "0.4.1" .
+
+cpp:CCP-017-01 a trsp:Property ;
+    rdf:label "Disposal" ;
+    skos:definition "The TDA enables the managed disposal of Information Packages and permits the retention and maintenance of Metadata even when the content of the Information Package has been removed from the TDA." ;
+    schema:category "Responsibility|Stewardship|Process" ;
+    trsp:linkedProperty "workflowDisposalRetraction" ;
+    skos:exactMatch "att.18E904AAE2" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-018-01 a trsp:Property ;
+    rdf:label "Community Watch - Community Engagement" ;
+    skos:definition "The TDA monitors its Designated Community in order to identify its evolving needs and knowledge." ;
+    schema:category "User Focus|Community Engagement" ;
+    trsp:linkedProperty "communityEngagement" ;
+    skos:broadMatch "att.6FB10117A8" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-018-05 a trsp:Property ;
+    rdf:label "Community Watch - Equitable Engagement" ;
+    skos:definition "The TDA monitors its Designated Community in order to identify its evolving needs and knowledge." ;
+    schema:category "Transparency|Benefits and Constraints|Context" ;
+    trsp:linkedProperty "equitableEngagement" ;
+    skos:narrowMatch "att.4AEE114A6B" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-018-02 a trsp:Property ;
+    rdf:label "Community Watch - Documentation on Community Engagement" ;
+    skos:definition "The TDA monitors its Designated Community in order to identify its evolving needs and knowledge." ;
+    schema:category "Sustainability|Social Sustainability|Community Engagement" ;
+    trsp:linkedProperty "communityEngagementDocs" ;
+    skos:narrowMatch "att.04DC5770C9" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-018-03 a trsp:Property ;
+    rdf:label "Community Watch - Impact Assessment" ;
+    skos:definition "The TDA monitors its Designated Community in order to identify its evolving needs and knowledge." ;
+    schema:category "Sustainability|Social Sustainability|Community Engagement" ;
+    trsp:linkedProperty "impactAssessment" ;
+    skos:narrowMatch "att.13368CB9AC" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-018-04 a trsp:Property ;
+    rdf:label "Community Watch - Schema aligned with community practices" ;
+    skos:definition "The TDA monitors its Designated Community in order to identify its evolving needs and knowledge." ;
+    schema:category "Responsibility|Schema|Applicable and appropriate" ;
+    trsp:linkedProperty "schemaAlignedCommunity" ;
+    skos:narrowMatch "att.1DD721CC5B" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-019-01 a trsp:Property ;
+    rdf:label "Data Quality Assessment - Deposit Documentation Checklist" ;
+    skos:definition "The TDA evaluates and re-evaluates the data quality of Information Objects." ;
+    schema:category "Responsibility|Stewardship|Quality Control" ;
+    trsp:linkedProperty "checklistDepositDocs" ;
+    skos:closeMatch "att.4A98F89201" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeChecklistEvidence ;
+    trsp:hasBenchmark trsp:checklistCurationType ;
+    owl:version "0.4.1" .
+
+cpp:CCP-019-05 a trsp:Property ;
+    rdf:label "Data Quality Assessment - File format preservation actions" ;
+    skos:definition "The TDA evaluates and re-evaluates the data quality of Information Objects." ;
+    schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+    trsp:linkedProperty "fileFormatPreservation" ;
+    skos:narrowMatch "att.720D076722" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-019-03 a trsp:Property ;
+    rdf:label "Data Quality Assessment - (Re-)Appraisal of Licence Applicability" ;
+    skos:definition "The TDA evaluates and re-evaluates the data quality of Information Objects." ;
+    schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+    trsp:linkedProperty "reappraisalLicenceApplicability" ;
+    skos:narrowMatch "att.3FD2C99B44" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-019-04 a trsp:Property ;
+    rdf:label "Data Quality Assessment - Re-appraisal Plan" ;
+    skos:definition "The TDA evaluates and re-evaluates the data quality of Information Objects." ;
+    schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+    trsp:linkedProperty "planReappraisal" ;
+    skos:narrowMatch "att.4EA4FE6911" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-019-02 a trsp:Property ;
+    rdf:label "Data Quality Assessment - Record of Re-Appraisal" ;
+    skos:definition "The TDA evaluates and re-evaluates the data quality of Information Objects." ;
+    schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+    trsp:linkedProperty "reappraisalRecord" ;
+    skos:narrowMatch "att.36E9CFFB4B" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-020-06 a trsp:Property ;
+    rdf:label "Rights Management - Human-readable rights documentation" ;
+    skos:definition "The TDA manages rights related to the Information Objects, both for agents inside its scope (access, migrate, etc.) and for end users (access, reuse, etc.)" ;
+    schema:category "Responsibility|Stewardship|Rights Management" ;
+    trsp:linkedProperty "humanReadableRightsDocs" ;
+    skos:narrowMatch "att.550348356C" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-020-07 a trsp:Property ;
+    rdf:label "Rights Management - Privacy and GDPR Addressed" ;
+    skos:definition "The TDA manages rights related to the Information Objects, both for agents inside its scope (access, migrate, etc.) and for end users (access, reuse, etc.)" ;
+    schema:category "Responsibility|Stewardship|Rights Management" ;
+    trsp:linkedProperty "privacyGDPRAddressed" ;
+    skos:narrowMatch "att.5D17940B6B" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-020-01 a trsp:Property ;
+    rdf:label "Rights Management - No Harm, Maximise Benefit" ;
+    skos:definition "The TDA manages rights related to the Information Objects, both for agents inside its scope (access, migrate, etc.) and for end users (access, reuse, etc.)" ;
+    schema:category "Responsibility|Stewardship|Rights Management" ;
+    trsp:linkedProperty "noHarmMaximiseBenefit" ;
+    skos:narrowMatch "att.1B812FFC4E" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-020-03 a trsp:Property ;
+    rdf:label "Rights Management - IP Management" ;
+    skos:definition "The TDA manages rights related to the Information Objects, both for agents inside its scope (access, migrate, etc.) and for end users (access, reuse, etc.)" ;
+    schema:category "Responsibility|Stewardship|Rights Management" ;
+    trsp:linkedProperty "ipManagement" ;
+    skos:narrowMatch "att.2A0E93C1AC" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-020-02 a trsp:Property ;
+    rdf:label "Rights Management - Terms of Deposit" ;
+    skos:definition "The TDA manages rights related to the Information Objects, both for agents inside its scope (access, migrate, etc.) and for end users (access, reuse, etc.)" ;
+    schema:category "Responsibility|Stewardship|Rights Management" ;
+    trsp:linkedProperty "termsDeposit" ;
+    skos:narrowMatch "att.206C4C60AA" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-020-05 a trsp:Property ;
+    rdf:label "Rights Management - Owners/ Rightsholder Rights" ;
+    skos:definition "The TDA manages rights related to the Information Objects, both for agents inside its scope (access, migrate, etc.) and for end users (access, reuse, etc.)" ;
+    schema:category "Responsibility|Stewardship|Rights Management" ;
+    trsp:linkedProperty "rightsRightsholder" ;
+    skos:narrowMatch "att.49C7B241EA" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-020-04 a trsp:Property ;
+    rdf:label "Rights Management - Curator Rights" ;
+    skos:definition "The TDA manages rights related to the Information Objects, both for agents inside its scope (access, migrate, etc.) and for end users (access, reuse, etc.)" ;
+    schema:category "Responsibility|Stewardship|Rights Management" ;
+    trsp:linkedProperty "rightsCurator" ;
+    skos:narrowMatch "att.48C6F0C32D" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-020-08 a trsp:Property ;
+    rdf:label "Rights Management - End User Rights" ;
+    skos:definition "The TDA manages rights related to the Information Objects, both for agents inside its scope (access, migrate, etc.) and for end users (access, reuse, etc.)" ;
+    schema:category "Responsibility|Stewardship|Rights Management" ;
+    trsp:linkedProperty "rightsEndUser" ;
+    skos:narrowMatch "att.76E631CB8D" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-021-01 a trsp:Property ;
+    rdf:label "AIP Versioning" ;
+    skos:definition "The TDA creates successive versions of the Information Objects on its own or on the producer initiative." ;
+    schema:category "Transparency|Scope of Services|Curation|Versioning Process Documented" ;
+    trsp:linkedProperty "versioningDocumented" ;
+    skos:closeMatch "att.7FEEA35BFF" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-022-01 a trsp:Property ;
+    rdf:label "Significant Properties Definition" ;
+    skos:definition "The TDA defines significant properties for sets of Information Objects (i.e., properties that it commits to preserve over the long term through preservation actions and rendition)." ;
+    schema:category "Responsibility|Stewardship|Quality Control" ;
+    trsp:linkedProperty "significantPropertiesExtracted" ;
+    skos:closeMatch "att.25D8680361" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-023-04 a trsp:Property ;
+    rdf:label "Risk Definition and Detection - Assessment and Access Policy" ;
+    skos:definition "The TDA monitors technology evolution, identifies risks and defines detection methods for these risks." ;
+    schema:category "Transparency|Benefits and Constraints|Policy" ;
+    trsp:linkedProperty "policyAssessmentAccess" ;
+    skos:closeMatch "att.6B7CED5897" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-023-01 a trsp:Property ;
+    rdf:label "Risk Definition and Detection - Disclosure Risk Assessment Policy" ;
+    skos:definition "The TDA monitors technology evolution, identifies risks and defines detection methods for these risks." ;
+    schema:category "Responsibility|Stewardship|Legal and Regulatory" ;
+    trsp:linkedProperty "disclosureRiskAssessment" ;
+    skos:closeMatch "att.08C2A995C0" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-023-02 a trsp:Property ;
+    rdf:label "Risk Definition and Detection - Published Security and Integrity Measures" ;
+    skos:definition "The TDA monitors technology evolution, identifies risks and defines detection methods for these risks." ;
+    schema:category "Technology|Secure|e-Infrastructure security and Integrity" ;
+    trsp:linkedProperty "measuresSecurityIntegrity" ;
+    skos:closeMatch "att.181F35E46A" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-023-06 a trsp:Property ;
+    rdf:label "Risk Definition and Detection - Active Threat Monitoring in Place" ;
+    skos:definition "The TDA monitors technology evolution, identifies risks and defines detection methods for these risks." ;
+    schema:category "Technology|Secure|e-Infrastructure security and Integrity" ;
+    trsp:linkedProperty "threatMonitoring" ;
+    skos:narrowMatch "att.178C46C3F1" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-023-03 a trsp:Property ;
+    rdf:label "Risk Definition and Detection - Risk Plan" ;
+    skos:definition "The TDA monitors technology evolution, identifies risks and defines detection methods for these risks." ;
+    schema:category "Sustainability|Planning|Risk Plan" ;
+    trsp:linkedProperty "planRiskManagement" ;
+    skos:closeMatch "att.4B6380A8F0" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-023-05 a trsp:Property ;
+    rdf:label "Risk Definition and Detection - Data Continuity" ;
+    skos:definition "The TDA monitors technology evolution, identifies risks and defines detection methods for these risks." ;
+    schema:category "Sustainability|Technical Sustainability|Data Continuity" ;
+    trsp:linkedProperty "dataContinuity" ;
+    skos:broadMatch "att.79D95E290A" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-024-01 a trsp:Property ;
+    rdf:label "Enabling Discovery" ;
+    skos:definition "The TDA provides catalogue services to its consumers to help them identify Objects that they may be interested in." ;
+    schema:category "User Focus|Discovery|Find|Advanced discovery" ;
+    trsp:linkedProperty "advancedDiscovery" ;
+    skos:broadMatch "att.562C603E9F" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-025-02 a trsp:Property ;
+    rdf:label "Enabling Access - Assessment and Access Policy" ;
+    skos:definition "The TDA gives access to its Information Objects to authorised internal users or end users." ;
+    schema:category "Transparency|Benefits and Constraints|Policy" ;
+    trsp:linkedProperty "policyAssessmentAccess" ;
+    skos:broadMatch "att.6B7CED5897" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-025-01 a trsp:Property ;
+    rdf:label "Enabling Access - Access Conditions" ;
+    skos:definition "The TDA gives access to its Information Objects to authorised internal users or end users." ;
+    schema:category "Responsibility|Typical Value-added Services|Standard APIs" ;
+    trsp:linkedProperty "accessConditions" ;
+    skos:closeMatch "att.2F39DE4E78" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-026-03 a trsp:Property ;
+    rdf:label "File Format Normalisation - File Type Verification API" ;
+    skos:definition "The TDA performs operations on the data Objects prior to ingest in order to comply with its format requirements." ;
+    schema:category "Responsibility|Typical Value-added Services|Standard APIs" ;
+    trsp:linkedProperty "fileTypeVerificationAPI" ;
+    skos:narrowMatch "att.63101DF501" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-026-01 a trsp:Property ;
+    rdf:label "File Format Normalisation - Submission Workflow" ;
+    skos:definition "The TDA performs operations on the data Objects prior to ingest in order to comply with its format requirements." ;
+    schema:category "Responsibility|Stewardship|Process" ;
+    trsp:linkedProperty "workflowSubmission" ;
+    skos:broadMatch "att.12CA661DF7" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-026-02 a trsp:Property ;
+    rdf:label "File Format Normalisation - Preferred Formats Policy" ;
+    skos:definition "The TDA performs operations on the data Objects prior to ingest in order to comply with its format requirements." ;
+    schema:category "Transparency|Benefits and Constraints|Policy" ;
+    trsp:linkedProperty "policyPreferredFormats" ;
+    skos:broadMatch "att.549827C8B4" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-027-01 a trsp:Property ;
+    rdf:label "File Repair" ;
+    skos:definition "As a way of handling validation errors or rendering errors, the TDA corrects structural issues identified in its Files." ;
+    schema:category "Responsibility|Stewardship|Integrity and Authenticity" ;
+    trsp:linkedProperty "fileRepair" ;
+    skos:exactMatch "att.09B9B96513" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CCP-028-01 a trsp:Property ;
+    rdf:label "Creation of Derivatives" ;
+    skos:definition "The TDA generates derivative copies to address the specific needs of its Designated Community." ;
+    schema:category "Transparency|Benefits and Constraints|Policy" ;
+    trsp:linkedProperty "dissemination" ;
+    skos:exactMatch "att.3E1CA96845" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeRegistry ;
+    trsp:hasBenchmark "trsp:typeFormatGuidanceAPI, trsp:typeFileFormatRegistry" ;
+    owl:version "0.4.1" .
+
+cpp:CCP-030-01 a trsp:Property ;
+    rdf:label "Refreshment" ;
+    skos:definition "The TDA replaces the Information Packages on a storage medium, copying them to a new medium and discarding the old one at the end of a storage medium's life cycle." ;
+    schema:category "Responsibility|Stewardship|Long-term Preservation" ;
+    trsp:linkedProperty "activeBitLevelPreservation" ;
+    skos:exactMatch "att.6D7D249110" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
+
+cpp:CPP-029-01 a trsp:Property ;
+    rdf:label "Ingest - Submission Workflow" ;
+    skos:definition "The TDA performs all operations necessary to transform an SIP into an AIP." ;
+    schema:category "Responsibility|Stewardship|Process" ;
+    trsp:linkedProperty "workflowSubmission" ;
+    skos:closeMatch "att.12CA661DF7" ;
+    dcat:keyword "CPP" ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
+    owl:version "0.4.1" .
