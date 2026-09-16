@@ -1,0 +1,7 @@
+# A template for a blank node containing evidence instances
+
+ trsp:hasEvidence [ 
+    a trsp:Evidence ;
+    trsp:evidenceType [[TRSP_EVIDENCE_TYPE]] ;
+    trsp:evidenceIRI <[[EVIDENCE_NODE]]> 
+ ];
