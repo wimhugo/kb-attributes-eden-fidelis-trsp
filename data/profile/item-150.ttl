@@ -2,11 +2,14 @@
 
 @prefix trsp:   <https://example.org/trsp/> .
 @prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+# @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix dct:    <http://purl.org/dc/terms/> .
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> .
+
 
 
 trsp:profile.668467EC38 a trsp:Profile ;
@@ -197,7 +200,7 @@ ttram:AF02-06 a trsp:Property ;
     dct:subject "TTRAM" ;
     trsp:hasCardinalityType trsp:cardinality0_n ;
     trsp:hasMeasurementType trsp:measurementTypeVocabulary ;
-    trsp:hasBenchmark iso:iso-3166-1.ttl ;
+    trsp:hasBenchmark <https://https://w3id.org/trsp/vocabs/iso/iso639-3> ;
     owl:version "0.4.1" .
 
 ttram:AF02-06-01 a trsp:Property ;
