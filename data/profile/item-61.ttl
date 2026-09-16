@@ -11,6 +11,7 @@
 @prefix disc:   <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/.configs/vocabs/eosc/> 
 @prefix pidreg: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/registry/pid.ttl> .
 @prefix msct:   <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/registry/metadata.ttl> .
+@prefix r3d:    <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/tree/main/.configs/vocabs/r3d> .
 
 trsp:profile.3C2D6C1C37 a trsp:Profile ;
     dct:title "FIDELIS" @en ;
