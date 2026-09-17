@@ -4,107 +4,291 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
-@prefix openrel: <https://github.com/wimhugo/openrel/> .
+@prefix openrel: <http://www.w3.org/ns/openrel/0/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+
+# --------------------------------------------------------------------------
+# Policy and Licence Types — revision 0.2
+# Non-purpose facets are maintained here. Purpose/checklist concepts remain
+# in policies-check.ttl for backward compatibility with benchmark use.
+# --------------------------------------------------------------------------
 
 trsp:typePolicyLicence
   a skos:ConceptScheme ;
   skos:prefLabel "Policy and Licence Types"@en ;
   dct:title "Policy and Licence Types"@en ;
-  dct:creator <https://orcid.org/0000-0002-0255-5101> ;  # Wim Hugo
+  dct:description "Faceted classification of policies and policy-like rules by policy form, scope, access type, status, representation, and applicability. Purpose-specific policy concepts are maintained separately in the Policy Checklist scheme."@en ;
+  skos:hasTopConcept trsp:typePolicyForm, trsp:typePolicyScope,
+                     trsp:typePolicyAccess, trsp:typePolicyStatus,
+                     trsp:typePolicyRepresentation, trsp:typePolicyApplicability ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   dct:created "2026-05-07"^^xsd:date ;
-  dct:modified "2026-08-16"^^xsd:date ;
-  owl:versionInfo "0.1" .
+  dct:modified "2026-09-17"^^xsd:date ;
+  owl:versionInfo "0.2" .
 
-trsp:typePolicyScope
-  a skos:Concept ;
-  skos:prefLabel "Policy Scope"@en ;
-  skos:definition "Policies, licences, access rules, and process rules can be local, community, or global in scope."@en ;
+# --------------------------------------------------------------------------
+# Shared bridge annotations. correspondingClass was introduced in the
+# service-type vocabulary; repeated here so this file can be used standalone.
+# --------------------------------------------------------------------------
+
+trsp:correspondingClass
+  a owl:AnnotationProperty ;
+  rdfs:label "corresponding class"@en ;
+  rdfs:comment "Links a classification concept to an RDF/OWL class representing a corresponding class-level notion."@en .
+
+trsp:correspondingProperty
+  a owl:AnnotationProperty ;
+  rdfs:label "corresponding property"@en ;
+  rdfs:comment "Links a classification concept to an RDF property representing a corresponding predicate-level notion."@en .
+
+# --------------------------------------------------------------------------
+# Facet: Policy form / expression type
+# --------------------------------------------------------------------------
+trsp:typePolicyForm a skos:Concept ;
+  skos:prefLabel "Policy Form"@en ;
+  skos:definition "The formal kind or expression form of a policy, licence, access rule, process rule, or related policy expression."@en ;
+  skos:topConceptOf trsp:typePolicyLicence ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:scopeLocal
-  a skos:Concept ;
-  skos:prefLabel "Local Scope"@en ;
-  skos:definition "Policies, licences, access rules, and process rules that are defined locally, optionally registered in an LFS instance, but private to the owner."@en ;
-  skos:broader trsp:typePolicyScope ;
-  skos:inScheme trsp:typePolicyLicence .
-
-trsp:scopeCommunity
-  a skos:Concept ;
-  skos:prefLabel "Community Scope"@en ;
-  skos:definition "Policies, licences, access rules, and process rules that are defined fpr a community, federation, infrastructure, network, or scientific discipline, optionally registered in an LFS instance, and publicly available."@en ;
-  skos:broader trsp:typePolicyScope ;
-  skos:inScheme trsp:typePolicyLicence .
-
-trsp:scopeGlobal
-  a skos:Concept ;
-  skos:prefLabel "Global Scope"@en ;
-  skos:definition "Licences and possibly policies that are considered global in scope, registered in SPDX and optionally in an LFS instance, and publicly available."@en ;
-  skos:broader trsp:typePolicyScope ;
-  skos:inScheme trsp:typePolicyLicence .
-
-trsp:typePolicy
-  a skos:Concept ;
+trsp:typePolicy a skos:Concept ;
   skos:prefLabel "Policy"@en ;
-  skos:definition "Policy concept, equivalent to the general Policy class in ODRL and OpenREL."@en ;
-  skos:closeMatch openrel:Policy ;
+  skos:definition "General policy concept encompassing explicit policies, licences, access rules, process rules, and other policy expressions."@en ;
+  trsp:correspondingClass odrl:Policy, 
+                          dct:Policy, 
+                          dcat:Policy ;
+  skos:broader trsp:typePolicyForm ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeExplicitPolicy
-  a skos:Concept ;
+trsp:typeExplicitPolicy a skos:Concept ;
   skos:prefLabel "Explicit Policy"@en ;
-  skos:definition "Policy concept, equivalent to an explicit Policy in the context of RDMI."@en ;
-  skos:note "Often not encoded, and only available in human-readable format. May be encoded using OpenREL/ ODRL/ DPV and supporting vocabularies. Can be entirely machine-readable (OpenREL Library), partly machine-readable (LFS and SPDX), or human-readable only."@en ;
-  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
-  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
-  skos:source <https://spdx.org/licenses/> ;
-  skos:broadMatch openrel:Policy ;
-  skos:broader trsp:typePolicy
+  skos:definition "A policy represented or referenced as an identifiable policy resource, whether machine-readable, partly machine-readable, or human-readable."@en ;
+  trsp:correspondingClass openrel:Policy ;
+  skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeLicence
-  a skos:Concept ;
+trsp:typeLicence a skos:Concept ;
   skos:prefLabel "Licence"@en ;
-  skos:definition "Licence concept, equivalent to the Licence class in ODRL and OpenREL. An explicit licence in the context of RDMI."@en ;
-  skos:note "Applicable to an asset (object, resource, etc.). Can be entirely machine-readable (OpenREL Library), partly machine-readable (LFS and SPDX), or human-readable only."@en ;
-  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
-  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
-  skos:source <https://spdx.org/licenses/> ;
-  skos:broader trsp:typePolicy ;
-  skos:exactMatch openrel:Licence ;
+  skos:definition "A policy that grants or constrains rights to use an asset and is generally interpreted as a licence."@en ;
+  trsp:correspondingClass openrel:Licence ;
+  trsp:correspondingProperty dct:license ;
+  skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeAccessRules
-  a skos:Concept ;
-  skos:prefLabel "Access Conditions"@en ;
-  skos:definition "Access conditions (rules), equivalent to the Access Rules class in OpenREL."@en ;
-  skos:note "Applicable to a repository, catalogue, and data subject context. Can be entirely machine-readable (OpenREL Library) and regsitered in LFS, or human-readable only."@en ;
-  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
-  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
-  skos:broader trsp:typePolicy ;
-  skos:exactMatch openrel:AccessRules ;
+trsp:typeAccessRules a skos:Concept ;
+  skos:prefLabel "Access Conditions"@en ; skos:altLabel "Access Rules"@en ;
+  skos:definition "Policy rules defining conditions under which access to a resource or service may be obtained or exercised."@en ;
+  trsp:correspondingClass openrel:AccessRules ;
+  skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeProcessRules
-  a skos:Concept ;
+trsp:typeProcessRules a skos:Concept ;
   skos:prefLabel "Process Rules"@en ;
-  skos:definition "Process Rules, equivalent to the Process Rules class in OpenREL."@en ;
-  skos:note "Applicable to a software platform, data space, or federation of systems such as EOSC. Can be entirely machine-readable (OpenREL Library) and regsitered in LFS, or human-readable only."@en ;
-  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
-  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
-  skos:broader trsp:typePolicy ;
-  skos:exactMatch openrel:ProcessRules ;
+  skos:definition "Policy rules defining formalities or process requirements associated with interaction with a platform, infrastructure, federation, or dissemination channel."@en ;
+  trsp:correspondingClass openrel:ProcessRules ;
+  skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeProcessRules
-  a skos:Concept ;
-  skos:prefLabel "Process Rules"@en ;
-  skos:definition "Process Rules, equivalent to the Process Rules class in OpenREL."@en ;
-  skos:note "Applicable to a software platform, data space, or federation of systems such as EOSC. Can be entirely machine-readable (OpenREL Library) and regsitered in LFS, or human-readable only."@en ;
-  skos:source <https://github.com/wimhugo/openrel/tree/main/data/policy> ;
-  skos:source <https://lfs.labs.dansdemo.nl/docs#/> ;
-  skos:broader trsp:typePolicy ;
-  skos:exactMatch openrel:ProcessRules ;
+trsp:typePolicyCollection a skos:Concept ;
+  skos:prefLabel "Policy Collection"@en ;
+  skos:definition "A collection that references or combines one or more policies."@en ;
+  trsp:correspondingClass openrel:PolicyCollection ;
+  skos:broader trsp:typePolicyForm ; 
   skos:inScheme trsp:typePolicyLicence .
+
+# ODRL policy subclasses are expression forms, not policy purposes.
+
+trsp:typeAgreement a skos:Concept ; 
+  skos:prefLabel "Agreement"@en ;
+  trsp:correspondingClass odrl:Agreement ; 
+  skos:broader trsp:typePolicy ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeAssertion a skos:Concept ; 
+  skos:prefLabel "Assertion"@en ;
+  trsp:correspondingClass odrl:Assertion ; 
+  skos:broader trsp:typePolicy ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeOffer a skos:Concept ; 
+  skos:prefLabel "Offer"@en ;
+  trsp:correspondingClass odrl:Offer ; 
+  skos:broader trsp:typePolicy ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typePrivacyPolicy a skos:Concept ; 
+  skos:prefLabel "ODRL Privacy Policy"@en ;
+  trsp:correspondingClass odrl:Privacy ; 
+  skos:broader trsp:typePolicy ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeRequest a skos:Concept ; 
+  skos:prefLabel "Request"@en ;
+  trsp:correspondingClass odrl:Request ; 
+  skos:broader trsp:typePolicy ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeSet a skos:Concept ; 
+  skos:prefLabel "Set"@en ;
+  trsp:correspondingClass odrl:Set ; 
+  skos:broader trsp:typePolicy ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeTicket a skos:Concept ; 
+  skos:prefLabel "Ticket"@en ;
+  trsp:correspondingClass odrl:Ticket ; 
+  skos:broader trsp:typePolicy ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:typeQuality a skos:Concept ;
+  skos:prefLabel "Quality Policies"@en ;
+  skos:note "Class-level policy notion observed in the harmonized graph; specific quality purposes should be represented in the checklist scheme."@en ;
+  trsp:correspondingClass dqv:QualityPolicy ;
+  skos:broader trsp:typePolicy ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+# --------------------------------------------------------------------------
+# Facet: Scope
+# --------------------------------------------------------------------------
+
+trsp:typePolicyScope a skos:Concept ;
+  skos:prefLabel "Policy Scope"@en ;
+  skos:definition "The organisational or community breadth within which a policy is intended to apply."@en ;
+  skos:topConceptOf trsp:typePolicyLicence ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:scopeLocal a skos:Concept ; 
+  skos:prefLabel "Local Scope"@en ;
+  skos:definition "A policy defined for and applicable within a local owner, repository, service, or organisation context."@en ;
+  skos:broader trsp:typePolicyScope ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:scopeCommunity a skos:Concept ; 
+  skos:prefLabel "Community Scope"@en ;
+  skos:definition "A policy defined for a community, federation, infrastructure, network, or scientific discipline."@en ;
+  skos:broader trsp:typePolicyScope ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:scopeGlobal a skos:Concept ; 
+  skos:prefLabel "Global Scope"@en ;
+  skos:definition "A policy or licence intended for general use beyond a specific local or community context."@en ;
+  skos:broader trsp:typePolicyScope ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+# --------------------------------------------------------------------------
+# Facet: Access type (aligned with openrel:accessType)
+# --------------------------------------------------------------------------
+
+trsp:typePolicyAccess a skos:Concept ;
+  skos:prefLabel "Policy Access Type"@en ;
+  skos:definition "The accessibility or disclosure category associated with a policy."@en ;
+  trsp:correspondingProperty openrel:accessType ;
+  skos:topConceptOf trsp:typePolicyLicence ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:accessPublic a skos:Concept ; 
+  skos:prefLabel "Public"@en ;
+  skos:broader trsp:typePolicyAccess ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:accessRestricted a skos:Concept ; 
+  skos:prefLabel "Restricted"@en ;
+  skos:broader trsp:typePolicyAccess ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:accessPrivate a skos:Concept ; 
+  skos:prefLabel "Private"@en ;
+  skos:broader trsp:typePolicyAccess ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+# --------------------------------------------------------------------------
+# Facet: Status (aligned with openrel:policyStatus)
+# --------------------------------------------------------------------------
+
+trsp:typePolicyStatus a skos:Concept ;
+  skos:prefLabel "Policy Status"@en ;
+  skos:definition "The lifecycle or approval status of a policy."@en ;
+  trsp:correspondingProperty openrel:policyStatus ;
+  skos:topConceptOf trsp:typePolicyLicence ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:statusDraft a skos:Concept ; 
+  skos:prefLabel "Draft"@en ;
+  skos:broader trsp:typePolicyStatus ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:statusCandidate a skos:Concept ; 
+  skos:prefLabel "Candidate"@en ;
+  skos:broader trsp:typePolicyStatus ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:statusApproved a skos:Concept ; 
+  skos:prefLabel "Approved"@en ;
+  skos:broader trsp:typePolicyStatus ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:statusDeprecated a skos:Concept ; 
+  skos:prefLabel "Deprecated"@en ;
+  skos:broader trsp:typePolicyStatus ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+# --------------------------------------------------------------------------
+# Facet: Representation
+# --------------------------------------------------------------------------
+
+trsp:typePolicyRepresentation a skos:Concept ;
+  skos:prefLabel "Policy Representation"@en ;
+  skos:definition "The degree or form in which a policy is represented in machine-processable form."@en ;
+  skos:topConceptOf trsp:typePolicyLicence ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:representationHumanReadable a skos:Concept ; 
+  skos:prefLabel "Human-readable"@en ;
+  skos:broader trsp:typePolicyRepresentation ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:representationPartlyMachineReadable a skos:Concept ; 
+  skos:prefLabel "Partly machine-readable"@en ;
+  skos:broader trsp:typePolicyRepresentation ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:representationMachineReadable a skos:Concept ; 
+  skos:prefLabel "Machine-readable"@en ;
+  skos:broader trsp:typePolicyRepresentation ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+# --------------------------------------------------------------------------
+# Facet: Applicability / target context
+# --------------------------------------------------------------------------
+
+trsp:typePolicyApplicability a skos:Concept ;
+  skos:prefLabel "Policy Applicability"@en ;
+  skos:definition "The broad kind of entity or operational context to which a policy applies."@en ;
+  skos:topConceptOf trsp:typePolicyLicence ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:appliesToAsset a skos:Concept ; 
+  skos:prefLabel "Asset or Resource"@en ;
+  skos:broader trsp:typePolicyApplicability ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:appliesToRepository a skos:Concept ; 
+  skos:prefLabel "Repository or Catalogue"@en ;
+  skos:broader trsp:typePolicyApplicability ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:appliesToService a skos:Concept ; 
+  skos:prefLabel "Service or Platform"@en ;
+  skos:broader trsp:typePolicyApplicability ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+trsp:appliesToOrganisation a skos:Concept ; 
+  skos:prefLabel "Organisation or Institution"@en ;
+  skos:broader trsp:typePolicyApplicability ; 
+  skos:inScheme trsp:typePolicyLicence .
+
+
 
 
 
