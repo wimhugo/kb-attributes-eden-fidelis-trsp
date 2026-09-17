@@ -3,88 +3,248 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <https://schema.org/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix ids: <https://w3id.org/idsa/core/> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+# ==========================================================================
+# Checklist of Legal, Regulatory and Contractual Documentation — revision 0.5
+# ==========================================================================
+# This checklist describes kinds of legal, regulatory and contractual
+# policies/documents that may be expected from a repository or service.
+# Existing identifiers from v0.2 are retained. Concepts observed in the
+# harmonized repository graph are added where they represent reusable kinds
+# of legal/contractual documentation rather than repository-specific titles.
+# ==========================================================================
 
 trsp:checklistLegalDocuments
   a skos:ConceptScheme ;
-  skos:prefLabel "Checklist of Legal Documentation Available."@en ;
-  dct:title "Checklist of Legal Documents"@en ;
+  skos:prefLabel "Checklist of Legal, Regulatory and Contractual Documentation"@en ;
+  dct:title "Checklist of Legal, Regulatory and Contractual Documentation"@en ;
+  dct:description "Checklist of legal, regulatory, contractual and related governance documents that may be published or maintained by repositories and services."@en ;
+  skos:hasTopConcept trsp:legalTermsAndConditions,
+                     trsp:legalAgreement,
+                     trsp:privacyAndDataProtection,
+                     trsp:legalNotice,
+                     trsp:citationPolicy,
+                     trsp:codeOfConduct ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ;
+  dct:contributor <https://orcid.org/0000-0003-1106-8441> ,
+                  <https://orcid.org/0000-0002-3200-2698> ;
   dct:created "2026-05-03"^^xsd:date ;
-  dct:modified "2026-08-17"^^xsd:date ;
-  owl:versionInfo "0.2" .
+  dct:modified "2026-09-17"^^xsd:date ;
+  owl:versionInfo "0.5" .
+
+# Shared bridge annotations used across the TRSP classification vocabularies.
+trsp:correspondingClass
+  a owl:AnnotationProperty ;
+  rdfs:label "corresponding class"@en ;
+  rdfs:comment "Links a checklist concept to an RDF/OWL class representing a corresponding class-level notion."@en .
+
+trsp:correspondingProperty
+  a owl:AnnotationProperty ;
+  rdfs:label "corresponding property"@en ;
+  rdfs:comment "Links a checklist concept to an RDF property representing a corresponding predicate-level notion."@en .
+
+# --------------------------------------------------------------------------
+# Terms, conditions and rules governing use
+# --------------------------------------------------------------------------
+
+trsp:legalTermsAndConditions
+  a skos:Concept ;
+  skos:prefLabel "Terms, Conditions and Use Rules"@en ;
+  skos:definition "Legal or contractual documentation defining conditions, permissions, restrictions, responsibilities, or rules governing use of a repository, service, platform, data, facility, or other resource."@en ;
+  skos:topConceptOf trsp:checklistLegalDocuments ;
+  skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:termsOfUse
   a skos:Concept ;
   skos:prefLabel "Terms of Use"@en ;
-  skos:altLabel "Terms of Service"@en, 
-                "Acceptable Use Policy"@en ,
-                "ToU"@en ,
-                "Terms and Conditions"@en ;
-  skos:definition "Policy defining terms and conditions governing use of a repository, service, platform, data, facility, or other resource."@en ;
+  skos:altLabel "Terms of Service"@en,
+                "Acceptable Use Policy"@en,
+                "Usage Regulations"@en,
+                "General Terms and Conditions"@en,
+                "ToU"@en ;
+  skos:definition "Terms and conditions governing use of a repository, service, platform, data, facility, or other resource, including acceptable and prohibited use and user responsibilities."@en ;
+  trsp:correspondingClass dpv:TermsOfService ;
+  trsp:correspondingProperty schema:termsOfService ;
+  skos:closeMatch dpv:TermsOfService ;
   skos:broadMatch <http://www.data-knowledge.org/dk/hasTerms> ;
   rdfs:seeAlso <http://www.data-knowledge.org/dk/hasTerms> ;
+  skos:broader trsp:legalTermsAndConditions ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
-
-trsp:citationPolicy a skos:Concept ;
-  skos:prefLabel "Citation Policy"@en ;
-  skos:definition "Policy governing citation, acknowledgement, or attribution of data, services, repositories, or other research resources."@en ;
-  skos:inScheme trsp:checklistPolicies .
 
 trsp:termsOfDeposit
   a skos:Concept ;
   skos:prefLabel "Terms of Deposit"@en ;
-  skos:broader trsp:termsOfUse ;
+  skos:altLabel "Deposit Terms"@en, "Submission Terms"@en ;
+  skos:definition "Contractual terms and conditions governing submission, deposit, transfer, acceptance, and associated responsibilities for content deposited with a repository."@en ;
+  skos:broader trsp:legalTermsAndConditions ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+# --------------------------------------------------------------------------
+# Agreements and contracts
+# --------------------------------------------------------------------------
+
+trsp:legalAgreement
+  a skos:Concept ;
+  skos:prefLabel "Agreement or Contract"@en ;
+  skos:definition "A legal or contractual instrument recording agreed conditions, obligations, responsibilities, permissions, prohibitions, or other terms between parties."@en ;
+  trsp:correspondingClass odrl:Agreement, 
+                          dpv:LegalAgreement, 
+                          ids:ContractAgreement ;
+  skos:closeMatch dpv:LegalAgreement ;
+  rdfs:seeAlso ids:ContractAgreement ;
+  skos:topConceptOf trsp:checklistLegalDocuments ;
   skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:confidentialityAgreement
   a skos:Concept ;
   skos:prefLabel "Confidentiality Agreement"@en ;
-  skos:definition "Agreements that enforce confidentiality for e.g. to protect business, professional, or company secrets"@en ;
+  skos:altLabel "Non-disclosure Agreement"@en, "NDA"@en ;
+  skos:definition "An agreement imposing confidentiality obligations, for example to protect business, professional, research, personal, or organisationally sensitive information."@en ;
   skos:exactMatch dpv:ConfidentialityAgreement ;
+  skos:relatedMatch dpv:NDA ;
+  skos:broader trsp:legalAgreement ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
 
-trsp:controllerAgreement
+trsp:dataUseAgreement
   a skos:Concept ;
-  skos:prefLabel "Data Subject Policy "@en ;
-  skos:definition "A policy that includes data subject provisions in alignment with GDPR, and described or encoded to reflect data subject permissions, prohibitions, and controller duties in general terms"@en ;
-  skos:closeMatch dpv:ControllerDataSubjectAgreement ;
+  skos:prefLabel "Data Use Agreement"@en ;
+  skos:definition "An agreement defining conditions under which specified data may be accessed, processed, analysed, disclosed, shared, or otherwise used by a recipient."@en ;
+  skos:relatedMatch dpv:DataProcessingAgreement, 
+                    dpv:ThirdPartyAgreement ;
+  rdfs:seeAlso ids:ContractAgreement ;
+  skos:broader trsp:legalAgreement ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
 
-trsp:processorAgreement
+trsp:transferLicenceAgreement
   a skos:Concept ;
-  skos:prefLabel "Processor Rules "@en ;
-  skos:definition "A policy that includes process rules imposed by a repository or its platforms in compliance with GDPR, defining permissions, prohibitions, and controller/ processor duties"@en ;
-  skos:closeMatch dpv:ControllerProcessorAgreement ;
+  skos:prefLabel "Transfer and Licence Agreement"@en ;
+  skos:altLabel "Transfer and License Agreement"@en, "Deposit and Licence Agreement"@en ;
+  skos:definition "An agreement governing transfer or deposit of content and the licence, permissions, rights, and responsibilities associated with its custody, preservation, publication, access, or reuse."@en ;
+  trsp:correspondingClass dpv:Licence ;
+  trsp:correspondingProperty dct:license ;
+  skos:relatedMatch dpv:Licence ;
+  rdfs:seeAlso ids:ContractAgreement ;
+  skos:broader trsp:legalAgreement ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
 
-trsp:dataProcessingAgreement
+# --------------------------------------------------------------------------
+# Privacy and data-protection documentation
+# --------------------------------------------------------------------------
+
+trsp:privacyAndDataProtection
   a skos:Concept ;
-  skos:prefLabel "Data Processing Agreement"@en ;
-  skos:definition "A written or encoded policy in ODRL terms, defining the combination of Data Subject Rules, Licence, and Process Rules agreed with a Data Subject"@en ;
-  skos:note "DPV: An agreement outlining conditions, criteria, obligations, responsibilities, and specifics for carrying out processing of data"@en ;
-  skos:closeMatch dpv:DataProcessingAgreement ;
+  skos:prefLabel "Privacy and Data Protection Documentation"@en ;
+  skos:definition "Policies, notices and agreements governing privacy, personal-data processing, data-subject relationships, and controller or processor responsibilities."@en ;
+  skos:topConceptOf trsp:checklistLegalDocuments ;
   skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:privacyStatement
   a skos:Concept ;
   skos:prefLabel "Privacy Statement"@en ;
-  skos:altLabel "Privacy Policy"@en , 
-                "Privacy and Data Protection Policy"@en ,
+  skos:altLabel "Privacy Notice"@en,
+                "Privacy Policy"@en,
+                "Privacy and Data Protection Policy"@en,
                 "Data Protection Policy"@en ;
-  skos:definition "Policy governing privacy, protection of personal data, or processing of information relating to persons."@en ;
+  skos:definition "Policy or notice describing privacy and personal-data processing, including relevant purposes, practices, rights, responsibilities, or safeguards."@en ;
+  trsp:correspondingClass dpv:PrivacyNotice ;
+  trsp:correspondingProperty dpv:hasNotice ;
+  skos:closeMatch dpv:PrivacyNotice ;
+  skos:broader trsp:privacyAndDataProtection ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:cookiePolicy
   a skos:Concept ;
   skos:prefLabel "Cookie Policy"@en ;
-  skos:definition "A policy that describes the way in which indirectly collected personal data related to the use of a software platform will be used."@en ;
+  skos:definition "Policy or notice describing the use of cookies or comparable tracking technologies and the associated collection and processing of information relating to use of a software platform or website."@en ;
   skos:broader trsp:privacyStatement ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:controllerAgreement
+  a skos:Concept ;
+  skos:prefLabel "Controller–Data Subject Agreement"@en ;
+  skos:altLabel "Data Subject Policy"@en ;
+  skos:definition "Agreement or policy describing the relationship between a data controller and data subject, including relevant permissions, prohibitions, rights, and controller duties."@en ;
+  skos:exactMatch dpv:ControllerDataSubjectAgreement ;
+  skos:broader trsp:privacyAndDataProtection ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:processorAgreement
+  a skos:Concept ;
+  skos:prefLabel "Controller–Processor Agreement"@en ;
+  skos:altLabel "Processor Rules"@en ;
+  skos:definition "Agreement or policy defining responsibilities, permissions, prohibitions, and duties governing processing carried out by a processor on behalf of a controller."@en ;
+  skos:exactMatch dpv:ControllerProcessorAgreement ;
+  skos:broader trsp:privacyAndDataProtection ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:dataProcessingAgreement
+  a skos:Concept ;
+  skos:prefLabel "Data Processing Agreement"@en ;
+  skos:altLabel "DPA"@en ;
+  skos:definition "An agreement defining conditions, criteria, obligations, responsibilities, and other terms governing processing of data, particularly personal data."@en ;
+  skos:exactMatch dpv:DataProcessingAgreement ;
+  skos:broader trsp:privacyAndDataProtection, trsp:legalAgreement ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+# --------------------------------------------------------------------------
+# Notices, disclaimers and rights/citation information
+# --------------------------------------------------------------------------
+
+trsp:legalNotice
+  a skos:Concept ;
+  skos:prefLabel "Legal Notice"@en ;
+  skos:definition "A published legal notice identifying legal information, responsibilities, rights, conditions, or other legally relevant information concerning a repository, service, website, or resource."@en ;
+  skos:topConceptOf trsp:checklistLegalDocuments ;
   skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:disclaimer
   a skos:Concept ;
   skos:prefLabel "Disclaimer"@en ;
+  skos:definition "A notice limiting, qualifying, or clarifying responsibility, warranty, liability, endorsement, or other legal expectations associated with a resource or service."@en ;
   skos:broadMatch <http://open.vocab.org/terms/disclaimerText> ;
   rdfs:seeAlso <http://open.vocab.org/terms/disclaimerText> ;
+  skos:broader trsp:legalNotice ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
 
+trsp:rightsNotice
+  a skos:Concept ;
+  skos:prefLabel "Rights or Copyright Notice"@en ;
+  skos:altLabel "Copyright Notice"@en ;
+  skos:definition "A notice communicating copyright, ownership, attribution, licensing, or other rights information associated with a resource or service."@en ;
+  trsp:correspondingProperty dct:rights, dct:license ;
+  skos:broader trsp:legalNotice ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:citationPolicy
+  a skos:Concept ;
+  skos:prefLabel "Citation Policy"@en ;
+  skos:definition "Policy governing citation, acknowledgement, or attribution of data, services, repositories, or other research resources."@en ;
+  trsp:correspondingProperty dct:bibliographicCitation ;
+  skos:topConceptOf trsp:checklistLegalDocuments ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:codeOfConduct
+  a skos:Concept ;
+  skos:prefLabel "Code of Conduct"@en ;
+  skos:definition "Document defining expected standards of behaviour, responsibilities, conduct, or professional practice for users, participants, staff, or members of a community or service."@en ;
+  skos:topConceptOf trsp:checklistLegalDocuments ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
