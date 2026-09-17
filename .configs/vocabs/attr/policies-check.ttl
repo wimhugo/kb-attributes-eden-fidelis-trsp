@@ -7,6 +7,250 @@
 @prefix care: <https://purl.org/trsp/care/> .
 @prefix fair: <https://w3id.org/fair/principles/terms/> .
 @prefix gorc: <https://purl.org/gorc/> .
+@prefix schema: <http://schema.org/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix openrel: <http://www.w3.org/ns/openrel/0/> .
+@prefix premis: <http://www.loc.gov/premis/rdf/v3/> .
+@prefix fairsharing: <http://fairsharing.org/model/fairsharing_record_schema#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+
+# --------------------------------------------------------------------------------------------------------
+# Policy Checklist — revision 0.6
+# Purpose-related policy concepts remain in this scheme because it is used as
+# a benchmark/checklist. Non-purpose classification facets are in policy-type.ttl.
+# --------------------------------------------------------------------------------------------------------
+
+trsp:checklistPolicies a skos:ConceptScheme ;
+  skos:prefLabel "Checklist of Policies and Licences"@en ;
+  dct:title "Checklist of Policies and Licences"@en ;
+  dct:description "Checklist of policy purposes used for repository and service assessment. Existing identifiers are retained where applicable for backward compatibility. Curation and data stewardship purposes are grouped under a common parent, related access purposes are consolidated, and legal, contractual, and regulatory purposes are maintained in a separate checklist."@en ;
+  skos:hasTopConcept trsp:typeLicence, trsp:typeExplicitPolicy,
+                     trsp:typeProcessRules, trsp:typeAccessRules,
+                     trsp:typePolicyPurpose ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-09-17"^^xsd:date ;
+  schema:creativeWorkStatus "Candidate" ;
+  owl:versionInfo "0.6" .
+
+trsp:correspondingClass a owl:AnnotationProperty ;
+  rdfs:label "corresponding class"@en .
+
+trsp:correspondingProperty a owl:AnnotationProperty ;
+  rdfs:label "corresponding property"@en .
+
+# general checklist entries
+
+trsp:typeLicence a skos:Concept ;
+  skos:prefLabel "Explicit Licence"@en ;
+  skos:definition "An explicit licence for a resource such as a dataset, publication, software object, or other asset."@en ;
+  trsp:correspondingClass openrel:Licence ;
+  trsp:correspondingProperty dct:license ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:typeExplicitPolicy a skos:Concept ;
+  skos:prefLabel "Explicit Policy"@en ;
+  trsp:correspondingClass openrel:Policy, odrl:Policy, dct:Policy, dcat:Policy ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:typeAccessRules a skos:Concept ;
+  skos:prefLabel "Access Rules"@en ;
+  skos:definition "Rules defining constraints or conditions associated with access."@en ;
+  trsp:correspondingClass openrel:AccessRules ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:typeProcessRules a skos:Concept ;
+  skos:prefLabel "Process Rules"@en ;
+  skos:definition "Rules defining process formalities imposed by a software platform, infrastructure, federation, or dissemination channel."@en ;
+  trsp:correspondingClass openrel:ProcessRules ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:typePolicyPurpose a skos:Concept ;
+  skos:prefLabel "Policy Purpose"@en ;
+  skos:definition "The subject, objective, or operational concern addressed by a policy."@en ;
+  skos:topConceptOf trsp:checklistPolicies ;
+  skos:inScheme trsp:checklistPolicies .
+
+# Curation-related policies
+
+trsp:curationPolicy
+  a skos:Concept ;
+  skos:prefLabel "Curation and Data Stewardship Policy"@en ;
+  skos:altLabel "Curation Policy"@en, 
+                "Data Management Policy"@en , 
+                "Data Stewardship Policy"@en ;
+  skos:definition "Policy governing the management and stewardship of data, metadata, records, and other digital content through their lifecycle, including selection and accession, appraisal, ethics clearance and verification, description and metadata, identifier management, licensing, format management, preservation, retention, versioning, interoperability, and assessment or mitigation of disclosure risk."@en ;
+  skos:broader trsp:typePolicyPurpose ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:versioningPolicy a skos:Concept ; 
+  skos:prefLabel "Versioning Policy"@en ;
+  skos:definition "Policy governing creation, identification, retention, or management of versions of data or other repository objects."@en ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:retentionPolicy a skos:Concept ; 
+  skos:prefLabel "Retention Policy"@en ;
+  skos:definition "Policy governing how long data, metadata, records, or other objects are retained and the conditions for their continued retention or disposal."@en ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:preservationPolicy a skos:Concept ; 
+  skos:prefLabel "Preservation Policy"@en ;
+  skos:definition "Policy governing the long-term preservation, continued accessibility, integrity, and usability of digital content."@en ;
+  trsp:correspondingClass premis:PreservationPolicy ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:sustainabilityPolicy a skos:Concept ; 
+  skos:prefLabel "Sustainability Policy"@en ;
+  skos:definition "Policy addressing organizational, financial, technical, or other measures intended to sustain a repository or service over time."@en ;
+  trsp:correspondingClass fairsharing:SustainabilityPolicy ;
+  skos:broader trsp:typePolicyPurpose ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:appraisalPolicy a skos:Concept ; 
+  skos:prefLabel "Appraisal Policy"@en ;
+  skos:altLabel "Reappraisal Policy"@en ;
+  skos:definition "Policy governing appraisal or reappraisal decisions concerning selection, retention, preservation, or disposal of content."@en ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:accessionPolicy a skos:Concept ; 
+  skos:prefLabel "Accession Policy"@en ;
+  skos:altLabel "Deposit Policy"@en , 
+                "Deposition Policy"@en , 
+                "Accession and Deposition Policy"@en , 
+                "Acquisition Policy"@en , 
+                "Submission Policy"@en ;
+  skos:definition "Policy governing the scope, selection, acquisition, development, deposit, submission, accession, acceptance, or composition of content entering or maintained as part of a repository or collection."@en ;
+  trsp:correspondingClass dct:accrualPolicy ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:disclosureRiskAssessment a skos:Concept ; 
+  skos:prefLabel "Disclosure Risk Assessment"@en ;
+  skos:definition "Policy governing assessment and mitigation of disclosure risks associated with access to or release of data."@en ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:accessPolicy a skos:Concept ; 
+  skos:prefLabel "Access and Request Assessment Policy"@en ;
+  skos:altLabel "Access Policy"@en , 
+                "Data Access Policy"@en , 
+                "Open Access Policy"@en , 
+                "Data Sharing Policy"@en , 
+                "Data Availability Policy"@en ;
+  skos:definition "Policy governing access to, availability of, sharing of, dissemination of, or onward provision of data and other resources, including open access and the eligibility, conditions, timing, assessment, approval, or other decisions associated with requests for access."@en ;
+  skos:broader trsp:typePolicyPurpose ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:bibliographicMetadataPolicy a skos:Concept ; 
+  skos:prefLabel "Bibliographic Metadata Policy"@en ;
+  skos:definition "Policy governing creation, management, publication, or use of bibliographic or descriptive metadata."@en ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:policyDevelopment a skos:Concept ; 
+  skos:prefLabel "Policy Development"@en ;
+  skos:definition "Policy or practice governing the development, review, approval, or maintenance of organizational policies."@en ;
+  skos:broader trsp:typePolicyPurpose ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:ethicsClearanceVerification a skos:Concept ; 
+  skos:prefLabel "Ethics Clearance Verification Policy"@en ;
+  skos:definition "Policy governing verification of ethics approval or clearance associated with data deposit, processing, access, or reuse."@en ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:persistentIdentifierPolicy a skos:Concept ; 
+  skos:prefLabel "Persistent Identifier Policy"@en ;
+  skos:definition "Policy governing assignment, maintenance, use, or persistence of identifiers for repository objects or related entities."@en ;
+  skos:broadMatch fair:F1 ; 
+  rdfs:seeAlso gorc:pid ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:licencePolicy a skos:Concept ; 
+  skos:prefLabel "Licence Policy"@en ;
+  skos:definition "Policy governing selection, assignment, communication, or management of licences for repository content or services."@en ;
+  trsp:correspondingProperty dct:license ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:preferredFormats a skos:Concept ; 
+  skos:prefLabel "Preferred Formats Policy"@en ;
+  skos:definition "Policy defining preferred, accepted, supported, or preservation-suitable file formats."@en ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+# General purpose policies
+
+trsp:compliancePolicy a skos:Concept ; 
+  skos:prefLabel "Compliance Policy"@en ;
+  skos:definition "Policy governing conformance with applicable requirements, standards, specifications, legal obligations, or organizational rules."@en ;
+  trsp:correspondingProperty dct:conformsTo ;
+  skos:broader trsp:typePolicyPurpose ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:rightsPolicy a skos:Concept ; 
+  skos:prefLabel "Rights Protection Policy"@en ;
+  skos:definition "Policy governing protection, attribution, ownership, or exercise of rights associated with data or other resources."@en ;
+  skos:broadMatch care:A1 ;
+  skos:broader trsp:typePolicyPurpose ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:aiPolicy a skos:Concept ; 
+  skos:prefLabel "AI Policy"@en ;
+  skos:altLabel "Responsible Use of AI in the Organisation"@en ;
+  skos:definition "Policy governing responsible development, deployment, procurement, or use of artificial intelligence."@en ;
+  skos:broader trsp:typePolicyPurpose ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:interoperabilityPolicy a skos:Concept ; 
+  skos:prefLabel "Interoperability Policy"@en ;
+  skos:definition "Policy governing interoperability requirements, conventions, standards, or practices."@en ;
+  skos:broader trsp:curationPolicy ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:dataSecurityAndIntegrityPolicy a skos:Concept ; 
+  skos:prefLabel "Data Security and Integrity Policy"@en ;
+  skos:definition "Policy governing protection of data confidentiality, integrity, availability, security, or related safeguards."@en ;
+  skos:broader trsp:typePolicyPurpose ; 
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:qualityPolicy a skos:Concept ;
+  skos:prefLabel "Quality Policy"@en ;
+  skos:definition "Policy governing quality objectives, assessment, assurance, or improvement of data, metadata, repositories, or services."@en ;
+  trsp:correspondingClass dqv:QualityPolicy ;
+  skos:broader trsp:typePolicyPurpose ; skos:inScheme trsp:checklistPolicies .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix care: <https://purl.org/trsp/care/> .
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix gorc: <https://purl.org/gorc/> .
 @prefix schema: <http://schema.org/> . 
 @prefix eden: <www.example.com/eden> .   ## to be updated
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
