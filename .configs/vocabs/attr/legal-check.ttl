@@ -16,8 +16,24 @@ trsp:checklistLegalDocuments
 trsp:termsOfUse
   a skos:Concept ;
   skos:prefLabel "Terms of Use"@en ;
+  skos:altLabel "Terms of Service"@en, 
+                "Acceptable Use Policy"@en ,
+                "ToU"@en ,
+                "Terms and Conditions"@en ;
+  skos:definition "Policy defining terms and conditions governing use of a repository, service, platform, data, facility, or other resource."@en ;
   skos:broadMatch <http://www.data-knowledge.org/dk/hasTerms> ;
   rdfs:seeAlso <http://www.data-knowledge.org/dk/hasTerms> ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:citationPolicy a skos:Concept ;
+  skos:prefLabel "Citation Policy"@en ;
+  skos:definition "Policy governing citation, acknowledgement, or attribution of data, services, repositories, or other research resources."@en ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:termsOfDeposit
+  a skos:Concept ;
+  skos:prefLabel "Terms of Deposit"@en ;
+  skos:broader trsp:termsOfUse ;
   skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:confidentialityAgreement
@@ -27,17 +43,17 @@ trsp:confidentialityAgreement
   skos:exactMatch dpv:ConfidentialityAgreement ;
   skos:inScheme trsp:checklistLegalDocuments .
 
-trsp:accessRulePolicy
+trsp:controllerAgreement
   a skos:Concept ;
-  skos:prefLabel "Data Subject Rules "@en ;
-  skos:definition "A policy that includes data subject assertions (in ODRL terms) and described or encoded to reflect data subject permissions, prohibitions, and controller duties"@en ;
+  skos:prefLabel "Data Subject Policy "@en ;
+  skos:definition "A policy that includes data subject provisions in alignment with GDPR, and described or encoded to reflect data subject permissions, prohibitions, and controller duties in general terms"@en ;
   skos:closeMatch dpv:ControllerDataSubjectAgreement ;
   skos:inScheme trsp:checklistLegalDocuments .
 
-trsp:processRulePolicy
+trsp:processorAgreement
   a skos:Concept ;
   skos:prefLabel "Processor Rules "@en ;
-  skos:definition "A policy that includes process rules imposed by a repository or its platforms, defining permissions, prohibitions, and controller/ processor duties"@en ;
+  skos:definition "A policy that includes process rules imposed by a repository or its platforms in compliance with GDPR, defining permissions, prohibitions, and controller/ processor duties"@en ;
   skos:closeMatch dpv:ControllerProcessorAgreement ;
   skos:inScheme trsp:checklistLegalDocuments .
 
@@ -46,13 +62,23 @@ trsp:dataProcessingAgreement
   skos:prefLabel "Data Processing Agreement"@en ;
   skos:definition "A written or encoded policy in ODRL terms, defining the combination of Data Subject Rules, Licence, and Process Rules agreed with a Data Subject"@en ;
   skos:note "DPV: An agreement outlining conditions, criteria, obligations, responsibilities, and specifics for carrying out processing of data"@en ;
-  skos:closeMatch dpv:ControllerProcessorAgreement ;
+  skos:closeMatch dpv:DataProcessingAgreement ;
   skos:inScheme trsp:checklistLegalDocuments .
-dpv:DataProcessingAgreement
 
 trsp:privacyStatement
   a skos:Concept ;
   skos:prefLabel "Privacy Statement"@en ;
+  skos:altLabel "Privacy Policy"@en , 
+                "Privacy and Data Protection Policy"@en ,
+                "Data Protection Policy"@en ;
+  skos:definition "Policy governing privacy, protection of personal data, or processing of information relating to persons."@en ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
+trsp:cookiePolicy
+  a skos:Concept ;
+  skos:prefLabel "Cookie Policy"@en ;
+  skos:definition "A policy that describes the way in which indirectly collected personal data related to the use of a software platform will be used."@en ;
+  skos:broader trsp:privacyStatement ;
   skos:inScheme trsp:checklistLegalDocuments .
 
 trsp:disclaimer
@@ -62,7 +88,3 @@ trsp:disclaimer
   rdfs:seeAlso <http://open.vocab.org/terms/disclaimerText> ;
   skos:inScheme trsp:checklistLegalDocuments .
 
-trsp:termsOfDeposit
-  a skos:Concept ;
-  skos:prefLabel "Terms of Deposit"@en ;
-  skos:inScheme trsp:checklistLegalDocuments .
