@@ -40,32 +40,20 @@ trsp:provenanceGraph {
 # SECTION 2: MAIN NODES (Repository Nodes)
 # Primary entities being curated. Each main node references
 # support nodes by IRI (contacts, institutions, services, checklists, etc.).
-# Populated from TTL source files containing repository, person, institution, checklists, etc. properties.
+# Populated from TTL/CSV source files containing repository, person, institution, checklists, etc. properties.
 # ==================================================================================================================
-trsp:repoGraph {
-    # --- Repository nodes are inserted here ---
 
-     <[[REPO_IRI]]> a dcat:Repository ;
+trsp:repoGraph {
+# --- Repository nodes are inserted here ---
+
+     <[[REPO_IRI]]> a dcat:Catalogue ;
          dct:title "[[REPOSITORY_NAME]]" ;
          dct:description "[[REPOSITORY_DESCRIPTION]]" ;
-         trsp:hasContact <[[CONTACT_NODE]]> ;
-         trsp:hasEvidence [ 
-            a trsp:Evidence ;
-            trsp:evidenceType [[TRSP_EVIDENCE_TYPE]] ;
-            trsp:evidenceIRI <[[EVIDENCE_NODE]]> 
-         ];
-         trsp:hasService [ 
-            a trsp:Service ;
-            trsp:serviceType [[TRSP_SERVICE_TYPE]] ;
-            trsp:serviceIRI <[[SERVICE_NODE]]> ;
-            trsp:serviceRelation [[TRSP_RELATION_TYPE]]
-         ];
-         trsp:linkedInstitution {{LINKED_INSTITUTION}}
-         #   [
-         #   a trsp:InstitutionRole ;
-         #   trsp:responsibilityType [[TRSP_ROLE_TYPE]] ;
-         #   trsp:linkedInstitution <[[INSTITUTION_NODE]]> ;
-        #]
+         trsp:contact <[[CONTACT_NODE]]> ;
+         trsp:hasEvidence {{BLANK_EVIDENCE}};
+         trsp:hasService {{BLANK_SERVICE}};
+         trsp:linkedInstitution {{BLANK_INSTITUTIONLINK}} ;
+         trsp:hasCheckList {{BLANK_CHECKLISTLINK}}
         .
 }
 
@@ -82,7 +70,7 @@ trsp:serviceGraph {
          dct:title "[[SERVICE_TITLE]]" ;
          dct:description "[[SERVICE_DESCRIPTION]]" ;
          trsp:hasContact <[[CONTACT_NODE]]> ;
-         trsp:hasInstitution <[[INSTITUTION_NODE]]> ;
+         trsp:organisationIdentifierUrl <[[INSTITUTION_NODE]]> ;
          trsp:serviceMaturityAssessment [[TRSP_TRL_TYPE]] ;
          # - must come from .configs/vocabs/attr/trl-type.ttl
          trsp:typeAPI [[TRSP_API_TYPE]] ; 
