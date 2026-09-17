@@ -237,7 +237,7 @@ trsp:citationPolicy
   skos:prefLabel "Citation Policy"@en ;
   skos:definition "Policy governing citation, acknowledgement, or attribution of data, services, repositories, or other research resources."@en ;
   trsp:correspondingProperty dct:bibliographicCitation ;
-  skos:topConceptOf trsp:checklistLegalDocuments ;
+  skos:broader trsp:legalTermsAndConditions ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
 
@@ -245,6 +245,6 @@ trsp:codeOfConduct
   a skos:Concept ;
   skos:prefLabel "Code of Conduct"@en ;
   skos:definition "Document defining expected standards of behaviour, responsibilities, conduct, or professional practice for users, participants, staff, or members of a community or service."@en ;
-  skos:topConceptOf trsp:checklistLegalDocuments ;
+  skos:broader trsp:legalTermsAndConditions ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
