@@ -4,40 +4,77 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
-@prefix care: <https://purl.org/trsp/care/> .
-@prefix fair: <https://w3id.org/fair/principles/terms/> .
-@prefix gorc: <https://purl.org/gorc/> .
 @prefix schema: <http://schema.org/> . 
-@prefix eden: <www.example.com/eden> .   ## to be updated
 
-trsp:typeImperative
-  a skos:ConceptScheme ;
-  skos:prefLabel "Imperative Vocabulary"@en ;
-  dct:title "Imperative Vocabulary"@en ;
-  dct:creator <https://orcid.org/0000-0002-0255-5101> ;
-  dct:created "2026-05-03"^^xsd:date ;
-  dct:modified "2026-08-13"^^xsd:date ;
-  schema:creativeWorkStatus "Candidate" ;
-  owl:versionInfo "0.3" .
+# ==========================================================================
+# TRSP Imperative Types
+# ==========================================================================
+#   Controlled vocabulary for expressing the normative force of requirements,
+#   checklists, criteria, rules, tests, and other statements in TRSP/RDMI models. It is
+#   intended for use with predicates such as trsp:imperative, for example:
+#   The scheme is based on the requirement-level terminology defined by
+#   RFC 2119 and clarified by RFC 8174, collectively referenced as BCP 14.
+#   It normalizes the principal BCP 14 imperatives into five reusable concepts:
+#   MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY. Synonymous BCP 14 forms such
+#   as REQUIRED, SHALL, SHALL NOT, RECOMMENDED, NOT RECOMMENDED, and OPTIONAL
+#   may be represented as labels or notations associated with those concepts.
+# ==========================================================================
 
-trsp:typeMandatory
-  a skos:Concept ;
-  skos:prefLabel "Mandatory"@en ;
-  skos:definition "W3C: MUST"@en ;
-  skos:seeAlso <https://datatracker.ietf.org/doc/html/rfc2119> ;
-  skos:inScheme trsp:typeImperative .
+trsp:typeImperative a skos:ConceptScheme ;
+    dct:title "Imperative Vocabulary"@en ;
+    dct:created "2026-05-03"^^xsd:date ;
+    dct:creator <https://orcid.org/0000-0002-0255-5101> ;
+    dct:modified "2026-09-17"^^xsd:date ;
+    dct:references <https://www.rfc-editor.org/info/bcp14> ,
+                   <https://www.rfc-editor.org/rfc/rfc2119> ,
+                   <https://www.rfc-editor.org/rfc/rfc8174> ;
+    schema:creativeWorkStatus "Candidate" ;
+    owl:versionInfo "0.2" ;
+    skos:prefLabel "Imperative Vocabulary"@en .
 
-trsp:typeRecommended
-  a skos:Concept ;
-  skos:prefLabel "Recommended"@en ;
-  skos:definition "W3C: SHOULD"@en ;
-  skos:seeAlso <https://datatracker.ietf.org/doc/html/rfc2119> ;
-  skos:inScheme trsp:typeImperative .
+trsp:typeMandatory a skos:Concept ;
+    skos:definition "An absolute requirement. This concept represents the BCP 14 imperative MUST and its equivalent forms REQUIRED and SHALL."@en ;
+    skos:prefLabel "Mandatory"@en ;
+    dct:source <https://www.rfc-editor.org/info/bcp14> ;
+    rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
+                 <https://www.rfc-editor.org/rfc/rfc8174> ;
+    skos:inScheme trsp:typeImperative .
 
-trsp:typeOptional
-  a skos:Concept ;
-  skos:prefLabel "Optional"@en ;
-  skos:definition "W3C: MAY"@en ;
-  skos:seeAlso <https://datatracker.ietf.org/doc/html/rfc2119> ;
-  skos:inScheme trsp:typeImperative .
+trsp:typeProhibited a skos:Concept ;
+    skos:prefLabel "Prohibited"@en ;
+    skos:altLabel "SHALL NOT"@en ;
+    skos:definition "An absolute prohibition: the specified behaviour or condition is prohibited by the requirement."@en ;
+    skos:inScheme trsp:typeImperative ;
+    skos:notation "MUST NOT" ;
+    dct:source <https://www.rfc-editor.org/info/bcp14> ;
+    rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
+                 <https://www.rfc-editor.org/rfc/rfc8174> ;
+    skos:inScheme trsp:typeImperative .
+
+trsp:typeRecommended a skos:Concept ;
+    skos:prefLabel "Recommended"@en ;
+    skos:definition "A recommended requirement for which valid reasons may exist in particular circumstances to ignore or depart from the stated condition. This concept represents the BCP 14 imperative SHOULD and its equivalent form RECOMMENDED."@en ;
+    dct:source <https://www.rfc-editor.org/info/bcp14> ;
+    rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
+                 <https://www.rfc-editor.org/rfc/rfc8174> ;
+    skos:inScheme trsp:typeImperative .
+
+trsp:typeNotRecommended a skos:Concept ;
+    skos:prefLabel "Not Recommended"@en ;
+    skos:altLabel "NOT RECOMMENDED"@en ;
+    skos:definition "A behaviour or condition that should normally be avoided, although particular circumstances may justify an exception when the implications are understood and carefully weighed."@en ;
+    skos:notation "SHOULD NOT" ;
+    dct:source <https://www.rfc-editor.org/info/bcp14> ;
+    rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
+                 <https://www.rfc-editor.org/rfc/rfc8174> ;
+    skos:inScheme trsp:typeImperative .
+
+trsp:typeOptional a skos:Concept ;
+    skos:prefLabel "Optional"@en ;
+    skos:definition "An optional requirement or feature. This concept represents the BCP 14 imperative MAY and its equivalent form OPTIONAL."@en ;
+    dct:source <https://www.rfc-editor.org/info/bcp14> ;
+    rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
+                 <https://www.rfc-editor.org/rfc/rfc8174> ;
+    skos:inScheme trsp:typeImperative .
+
 
