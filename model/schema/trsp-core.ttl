@@ -6,6 +6,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
 
 trsp:Ontology
     a owl:Ontology ;
