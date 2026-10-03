@@ -1,0 +1,290 @@
+############################################################################################################################
+# TRSP Constraint class and property definitions
+#
+# Constraint instances explicitly identify their general constraint type using trsp:constraintType.
+# Simple constraints are parameterised declaratively. Computed constraints additionally select an
+# operation from the existing trsp:typeAggregation concept scheme.
+############################################################################################################################
+
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+
+#################################################################
+# Constraint class and association
+#################################################################
+
+trsp:Constraint
+    a owl:Class ;
+    rdfs:label "Constraint"@en ;
+    skos:definition
+        "A parameterised specification of a restriction, expectation, evaluation, transformation, or aggregation applicable to the value of an Attribute or Profile Property."@en ;
+    rdfs:comment
+        "Each Constraint explicitly identifies its general type using trsp:constraintType. Additional properties supply the parameters required by that type."@en .
+
+trsp:hasConstraint
+    a owl:ObjectProperty ;
+    rdfs:range trsp:Constraint ;
+    rdfs:label "has constraint"@en ;
+    skos:definition
+        "Relates an Attribute or Profile Property to a constraint applicable to its value or evaluation."@en ;
+    rdfs:comment
+        "No RDFS domain is asserted because this property is intended for use with both trsp:Attribute and trsp:ProfileProperty."@en .
+
+#################################################################
+# Constraint classification
+#################################################################
+
+trsp:constraintType
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:Concept ;
+    rdfs:label "constraint type"@en ;
+    skos:definition
+        "Identifies the general type of constraint represented by a Constraint."@en ;
+    rdfs:comment
+        "The value is expected to be a concept in the trsp:typeConstraint concept scheme. Scheme membership and the requirement for exactly one value are enforced using SHACL."@en .
+
+#################################################################
+# Constraint parameter properties
+#################################################################
+
+trsp:nodeKind
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range sh:NodeKind ;
+    rdfs:label "node kind"@en ;
+    skos:definition
+        "Identifies the required RDF node kind of a value."@en ;
+    rdfs:comment
+        "Values normally use SHACL node-kind resources such as sh:IRI, sh:Literal, sh:BlankNode, sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, and sh:IRIOrLiteral."@en .
+
+trsp:datatype
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range rdfs:Datatype ;
+    rdfs:label "datatype"@en ;
+    skos:definition
+        "Identifies the RDF datatype required for a literal value."@en .
+
+trsp:valueClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "value class"@en ;
+    skos:definition
+        "Identifies the class of which a resource-valued value is required or expected to be an instance."@en .
+
+trsp:conceptScheme
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "concept scheme"@en ;
+    skos:definition
+        "Identifies a SKOS Concept Scheme from which an applicable value, set of values, or checklist is drawn."@en .
+
+trsp:concept
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:Concept ;
+    rdfs:label "concept"@en ;
+    skos:definition
+        "Identifies a specific SKOS Concept required or otherwise used by the constraint."@en .
+
+trsp:aggregationType
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:Concept ;
+    rdfs:label "aggregation type"@en ;
+    skos:definition
+        "Identifies the aggregation, transformation, or computed evaluation operation applied by the constraint."@en ;
+    rdfs:comment
+        "The value is expected to be a concept in the trsp:typeAggregation concept scheme."@en .
+
+trsp:sourceAttribute
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range trsp:Attribute ;
+    rdfs:label "source attribute"@en ;
+    skos:definition
+        "Identifies an Attribute whose value or values provide input to a computed constraint, transformation, or aggregation."@en .
+
+#################################################################
+# Constraint Types concept scheme
+# Existing identifiers are retained; definitions are generalised
+# from their earlier benchmark-evidence-specific wording.
+#################################################################
+
+trsp:typeConstraint
+    a skos:ConceptScheme ;
+    dct:title "TRSP Constraint Types"@en ;
+    skos:prefLabel "TRSP Constraint Types"@en ;
+    dct:description
+        "Constraint Types classify restrictions or evaluation rules applicable to values represented by TRSP Attributes and Profile Properties."@en .
+
+trsp:iriConstraint
+    a skos:Concept ;
+    skos:inScheme trsp:typeConstraint ;
+    skos:prefLabel "IRI Constraint"@en ;
+    skos:definition
+        "A constraint requiring a value to be represented as an IRI."@en .
+
+trsp:dataTypeConstraint
+    a skos:Concept ;
+    skos:inScheme trsp:typeConstraint ;
+    skos:prefLabel "Data Type Constraint"@en ;
+    skos:definition
+        "A constraint requiring a literal value to have a specified RDF datatype."@en .
+
+trsp:vocabularyConstraint
+    a skos:Concept ;
+    skos:inScheme trsp:typeConstraint ;
+    skos:prefLabel "Vocabulary Constraint"@en ;
+    skos:definition
+        "A constraint requiring a value to be drawn from a specified controlled vocabulary or to correspond to one or more specified concepts."@en .
+
+trsp:classConstraint
+    a skos:Concept ;
+    skos:inScheme trsp:typeConstraint ;
+    skos:prefLabel "Class Constraint"@en ;
+    skos:definition
+        "A constraint requiring a resource value to be an instance of one or more specified classes."@en .
+
+trsp:aggregationConstraint
+    a skos:Concept ;
+    skos:inScheme trsp:typeConstraint ;
+    skos:prefLabel "Aggregation Constraint"@en ;
+    skos:definition
+        "A constraint whose value or result is determined by applying an aggregation, transformation, or computed evaluation operation."@en .
+
+trsp:checklistConstraint
+    a skos:Concept ;
+    skos:inScheme trsp:typeConstraint ;
+    skos:prefLabel "Checklist Constraint"@en ;
+    skos:definition
+        "A constraint that evaluates supplied values or evidence against requirements represented by a checklist."@en .
+
+#################################################################
+# Additional Aggregation Type concept
+# The remainder of trsp:typeAggregation is defined in aggregation-type.ttl.
+#################################################################
+
+trsp:aggregationChecklistCompleteness
+    a skos:Concept ;
+    skos:inScheme trsp:typeAggregation ;
+    skos:prefLabel "Checklist Completeness"@en ;
+    skos:definition
+        "Evaluate whether the values or evidence supplied satisfy all mandatory elements identified by a checklist represented as a SKOS Concept Scheme."@en ;
+    skos:note
+        "The applicable checklist is identified using trsp:conceptScheme. The mechanism used to designate checklist concepts as mandatory is defined separately."@en .
+
+#################################################################
+# SHACL restrictions on classification vocabularies
+#################################################################
+
+trsp:ConstraintTypePropertyShape
+    a sh:PropertyShape ;
+    sh:path trsp:constraintType ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:class skos:Concept ;
+    sh:node [
+        a sh:NodeShape ;
+        sh:property [
+            sh:path skos:inScheme ;
+            sh:hasValue trsp:typeConstraint
+        ]
+    ] ;
+    sh:message
+        "A Constraint must have exactly one constraint type from the TRSP Constraint Types concept scheme."@en .
+
+trsp:AggregationTypePropertyShape
+    a sh:PropertyShape ;
+    sh:path trsp:aggregationType ;
+    sh:nodeKind sh:IRI ;
+    sh:class skos:Concept ;
+    sh:node [
+        a sh:NodeShape ;
+        sh:property [
+            sh:path skos:inScheme ;
+            sh:hasValue trsp:typeAggregation
+        ]
+    ] ;
+    sh:message
+        "The value of trsp:aggregationType must be a SKOS Concept in the TRSP Aggregation Types concept scheme."@en .
+
+trsp:ConstraintShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Constraint ;
+    sh:property
+        trsp:ConstraintTypePropertyShape ,
+        trsp:AggregationTypePropertyShape .
+
+#################################################################
+# Illustrative patterns
+#################################################################
+
+# IRI constraint
+#
+# trsp:att.identifier
+#     trsp:hasConstraint [
+#         a trsp:Constraint ;
+#         trsp:constraintType trsp:iriConstraint ;
+#         trsp:nodeKind sh:IRI
+#     ] .
+
+# Datatype constraint
+#
+# trsp:att.someDate
+#     trsp:hasConstraint [
+#         a trsp:Constraint ;
+#         trsp:constraintType trsp:dataTypeConstraint ;
+#         trsp:nodeKind sh:Literal ;
+#         trsp:datatype xsd:date
+#     ] .
+
+# Class constraint
+#
+# trsp:att.publisher
+#     trsp:hasConstraint [
+#         a trsp:Constraint ;
+#         trsp:constraintType trsp:classConstraint ;
+#         trsp:nodeKind sh:IRI ;
+#         trsp:valueClass trsp:Institution
+#     ] .
+
+# Vocabulary constraint
+#
+# trsp:att.repositoryType
+#     trsp:hasConstraint [
+#         a trsp:Constraint ;
+#         trsp:constraintType trsp:vocabularyConstraint ;
+#         trsp:nodeKind sh:IRI ;
+#         trsp:conceptScheme trsp:typeRepository
+#     ] .
+
+# Checklist constraint
+#
+# trsp:att.legalDocumentation
+#     trsp:hasConstraint [
+#         a trsp:Constraint ;
+#         trsp:constraintType trsp:checklistConstraint ;
+#         trsp:aggregationType trsp:aggregationChecklistCompleteness ;
+#         trsp:conceptScheme trsp:legalDocumentationChecklist
+#     ] .
+
+# Aggregation constraint
+#
+# trsp:att.legalDocumentCount
+#     trsp:hasConstraint [
+#         a trsp:Constraint ;
+#         trsp:constraintType trsp:aggregationConstraint ;
+#         trsp:aggregationType trsp:aggregationCount ;
+#         trsp:sourceAttribute trsp:att.legalDocumentation
+#     ] .

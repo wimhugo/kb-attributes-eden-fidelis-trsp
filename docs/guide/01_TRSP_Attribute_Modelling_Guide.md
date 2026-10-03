@@ -475,7 +475,7 @@ The roles are deliberately different:
 
 The supplied Attribute hierarchy demonstrates the intended SKOS structure and contains extensive concept definitions and constraint-like metadata. Before using the file as a machine-readable release, the following implementation checks should be addressed:
 
-- the ConceptScheme header currently contains Turtle punctuation errors around `dct:description`, `skos:prefLabel`, `owl:versionInfo`, and `foaf:homepage`, so the uploaded file does not currently parse as valid Turtle;
+
 - the existing literal use of `trsp:property`, for example `trsp:property "governance"`, conflicts with the meaning assigned to `trsp:property` in the Profile model and should be renamed or removed;
 - duplicate or near-duplicate concepts and labels should be checked where their definitions suggest different intended concepts. In the supplied file, for example, a second `Community Engagement` entry appears under financial sustainability with a definition concerned with funding and income, which warrants review;
 - language tags are not consistently present on all `skos:prefLabel` values and can be normalised if multilingual publication is intended.

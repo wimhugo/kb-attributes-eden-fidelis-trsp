@@ -1,0 +1,261 @@
+############################################################################################################################
+# TRSP Mapping model
+#
+# Pairwise mapping knowledge between profile representations that describe a common Attribute.
+# Mappings are declarative mapping specifications/candidates; an implementation may translate them
+# into executable SPARQL, SHACL rules, RML, application code, or another transformation mechanism.
+############################################################################################################################
+
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+#################################################################
+# Classes
+#################################################################
+
+trsp:ProfileMapping
+    a owl:Class ;
+    rdfs:label "Profile Mapping"@en ;
+    skos:definition
+        "A mapping specification relating representations defined by a source Profile and a target Profile."@en ;
+    rdfs:comment
+        "A Profile Mapping groups the class, property, value, and structural mappings required to translate or compare data represented according to two Profiles."@en .
+
+trsp:ClassMapping
+    a owl:Class ;
+    rdfs:label "Class Mapping"@en ;
+    skos:definition
+        "A mapping specification relating a class or class-like structure in a source Profile to a class or class-like structure in a target Profile."@en .
+
+trsp:PropertyMapping
+    a owl:Class ;
+    rdfs:label "Property Mapping"@en ;
+    skos:definition
+        "A pairwise mapping specification relating a source Profile Property to a target Profile Property that normally describe a common Attribute."@en ;
+    rdfs:comment
+        "The mapping belongs to the source-target pairing because the required transformation may differ for each pair of Profile Properties."@en .
+
+trsp:ValueMapping
+    a owl:Class ;
+    rdfs:label "Value Mapping"@en ;
+    skos:definition
+        "A mapping specification relating a source value, concept, or value pattern to a target value or concept."@en .
+
+trsp:MappingQualifier
+    a owl:Class ;
+    rdfs:label "Mapping Qualifier"@en ;
+    skos:definition
+        "A fixed value or additional assertion introduced by a mapping when the target representation requires information that is implicit or absent in the source representation."@en .
+
+#################################################################
+# Mapping structure
+#################################################################
+
+trsp:sourceProfile
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileMapping ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "source profile"@en ;
+    skos:definition "Identifies the source Profile of a Profile Mapping."@en .
+
+trsp:targetProfile
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileMapping ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "target profile"@en ;
+    skos:definition "Identifies the target Profile of a Profile Mapping."@en .
+
+trsp:hasClassMapping
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileMapping ;
+    rdfs:range trsp:ClassMapping ;
+    rdfs:label "has class mapping"@en ;
+    skos:definition "Relates a Profile Mapping to a class-level mapping specification."@en .
+
+trsp:hasPropertyMapping
+    a owl:ObjectProperty ;
+    rdfs:range trsp:PropertyMapping ;
+    rdfs:label "has property mapping"@en ;
+    skos:definition
+        "Relates a Profile Mapping or Class Mapping to a property-level mapping specification."@en ;
+    rdfs:comment
+        "No RDFS domain is asserted because the property can be used from both ProfileMapping and ClassMapping."@en .
+
+trsp:sourceClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ClassMapping ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "source class"@en ;
+    skos:definition "Identifies the source class represented by a Class Mapping."@en .
+
+trsp:targetClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ClassMapping ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "target class"@en ;
+    skos:definition "Identifies the target class represented by a Class Mapping."@en .
+
+trsp:sourceProfileProperty
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "source profile property"@en ;
+    skos:definition "Identifies the source Profile Property in a pairwise Property Mapping."@en .
+
+trsp:targetProfileProperty
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "target profile property"@en ;
+    skos:definition "Identifies the target Profile Property in a pairwise Property Mapping."@en .
+
+trsp:mappedAttribute
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:Attribute ;
+    rdfs:label "mapped attribute"@en ;
+    skos:definition
+        "Identifies the common TRSP Attribute that provides the semantic pivot for the source and target Profile Properties."@en ;
+    rdfs:comment
+        "This property can be stated explicitly for convenience even where the Attribute can also be reached through trsp:hasAttribute on both Profile Properties."@en .
+
+#################################################################
+# Mapping method and structural information
+#################################################################
+
+trsp:mappingType
+    a owl:ObjectProperty ;
+    rdfs:range skos:Concept ;
+    rdfs:label "mapping type"@en ;
+    skos:definition
+        "Classifies the kind of correspondence or transformation represented by a mapping."@en ;
+    rdfs:comment
+        "A controlled vocabulary for mapping types can distinguish identity, rename, class conversion, vocabulary/value mapping, structural transformation, constant insertion, aggregation, and other mapping patterns."@en .
+
+trsp:mappingAlgorithm
+    a owl:ObjectProperty ;
+    rdfs:label "mapping algorithm"@en ;
+    skos:definition
+        "Identifies a reusable algorithm or transformation definition applicable to this particular mapping."@en ;
+    rdfs:comment
+        "The algorithm belongs to the pairwise mapping rather than to the common Attribute because different profile pairings can require different transformations."@en .
+
+trsp:sourcePath
+    a rdf:Property ;
+    rdfs:label "source path"@en ;
+    skos:definition
+        "Identifies or expresses the path through the source representation from which a mapped value or structure is obtained."@en ;
+    rdfs:comment
+        "The value may use an agreed path representation such as an RDF property IRI or SHACL property path; this schema does not prescribe one path language."@en .
+
+trsp:targetPath
+    a rdf:Property ;
+    rdfs:label "target path"@en ;
+    skos:definition
+        "Identifies or expresses the path in the target representation to which a mapped value or structure is written."@en ;
+    rdfs:comment
+        "The value may use an agreed path representation such as an RDF property IRI or SHACL property path; this schema does not prescribe one path language."@en .
+
+#################################################################
+# Value/concept mappings
+#################################################################
+
+trsp:hasValueMapping
+    a owl:ObjectProperty ;
+    rdfs:range trsp:ValueMapping ;
+    rdfs:label "has value mapping"@en ;
+    skos:definition
+        "Relates a mapping to a value- or concept-level correspondence used by that mapping."@en .
+
+trsp:sourceValue
+    a rdf:Property ;
+    rdfs:domain trsp:ValueMapping ;
+    rdfs:label "source value"@en ;
+    skos:definition "Identifies the source value, concept, or value pattern in a Value Mapping."@en .
+
+trsp:targetValue
+    a rdf:Property ;
+    rdfs:domain trsp:ValueMapping ;
+    rdfs:label "target value"@en ;
+    skos:definition "Identifies the target value or concept in a Value Mapping."@en .
+
+trsp:sourceConceptScheme
+    a owl:ObjectProperty ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "source concept scheme"@en ;
+    skos:definition "Identifies the source SKOS Concept Scheme relevant to a mapping."@en .
+
+trsp:targetConceptScheme
+    a owl:ObjectProperty ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "target concept scheme"@en ;
+    skos:definition "Identifies the target SKOS Concept Scheme relevant to a mapping."@en .
+
+#################################################################
+# Fixed target assertions / qualifiers
+#################################################################
+
+trsp:hasQualifier
+    a owl:ObjectProperty ;
+    rdfs:range trsp:MappingQualifier ;
+    rdfs:label "has qualifier"@en ;
+    skos:definition
+        "Relates a mapping to an additional fixed assertion introduced in the target representation."@en .
+
+trsp:qualifierProperty
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:MappingQualifier ;
+    rdfs:range rdf:Property ;
+    rdfs:label "qualifier property"@en ;
+    skos:definition "Identifies the RDF property used for an additional target assertion."@en .
+
+trsp:qualifierValue
+    a rdf:Property ;
+    rdfs:domain trsp:MappingQualifier ;
+    rdfs:label "qualifier value"@en ;
+    skos:definition "Identifies the fixed RDF term or literal supplied as the value of an additional target assertion."@en .
+
+#################################################################
+# Illustrative publisher mapping
+#################################################################
+
+# Source representation:
+#
+#   dcterms:publisher [
+#       a foaf:Agent ;
+#       ...
+#   ] .
+#
+# Target representation:
+#
+#   trsp:organisation [
+#       a trsp:Organisation ;
+#       trsp:organisationType trsp:publisherOrganisation ;
+#       ...
+#   ] .
+#
+# A PropertyMapping can state the source/target ProfileProperties and paths,
+# identify a class/structural conversion, and introduce the target role as a
+# fixed qualifier:
+#
+# ex:publisherMapping
+#     a trsp:PropertyMapping ;
+#     trsp:sourceProfileProperty ex:sourcePublisherProfileProperty ;
+#     trsp:targetProfileProperty ex:targetOrganisationProfileProperty ;
+#     trsp:mappedAttribute trsp:att.publisher ;
+#     trsp:sourcePath dcterms:publisher ;
+#     trsp:targetPath trsp:organisation ;
+#     trsp:mappingType trsp:structuralMapping ;
+#     trsp:hasQualifier [
+#         a trsp:MappingQualifier ;
+#         trsp:qualifierProperty trsp:organisationType ;
+#         trsp:qualifierValue trsp:publisherOrganisation
+#     ] .
+#
+# No special token such as trsp:propertyObject is required. The object reached
+# through the source path is part of the mapping execution semantics, while the
+# additional target role is represented declaratively as a qualifier.
