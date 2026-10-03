@@ -164,3 +164,13 @@ trsp:aggregationMatch a skos:Concept ;
     skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Matches Benchmark"@en ;
     skos:definition "Exactly one value in the return array is selected if it matches a benchmark ."@en .
+
+trsp:aggregationChecklistCompleteness
+    a skos:Concept ;
+    skos:inScheme trsp:typeAggregation ;
+    skos:prefLabel "Checklist Completeness"@en ;
+    skos:definition
+        "Evaluate whether the values or evidence supplied satisfy all mandatory elements identified by a checklist represented as a SKOS Concept Scheme."@en ;
+    skos:note
+        "The applicable checklist is identified using trsp:conceptScheme. The mechanism used to designate checklist concepts as mandatory is defined separately."@en .
+

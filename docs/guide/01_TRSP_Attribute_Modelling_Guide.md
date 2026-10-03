@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The TRSP Attribute model provides a neutral, consolidated vocabulary of characteristics that can be used to describe repositories and repository services. It sits conceptually before the Profile model: **Attributes identify what characteristic is being described; Profiles specify how a particular source, schema, community, or application represents that characteristic.**
+The RDA TRSP WG Attribute model provides a neutral, consolidated vocabulary of characteristics that can be used to describe repositories and repository services. It sits conceptually before the Profile model: **Attributes identify what characteristic is being described; Profiles specify how a particular source, schema, community, or application represents that characteristic.**
 
 The Attribute inventory originates in the RDA TRSP Working Group's categorisation and mapping of repository and service attributes and has subsequently been refined in EOSC EDEN with additional mappings, profiles, vocabularies, checklists, and attributes derived from related work such as FIDELIS TTRAM.
 
