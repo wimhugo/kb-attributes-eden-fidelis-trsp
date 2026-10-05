@@ -328,8 +328,11 @@ The supplied Attribute vocabulary includes statements such as:
 trsp:att.7C68DBB456
     trsp:hasCardinalityType trsp:cardinality0_1 ;
     trsp:hasMeasurementType trsp:measurementTypeBinaryEvidence ;
-    trsp:hasBenchmark trsp:classConstraint ;
-    trsp:algorithmClass trsp:Evidence .
+    trsp:hasConstraint [
+        a trsp:Constraint ;
+        trsp:constraintType trsp:classConstraint ;
+        trsp:valueClass trsp:Evidence
+    ] .
 ```
 
 At Attribute level, these statements should be interpreted as **knowledge-base recommendations or defaults**, not automatically as validation constraints on every profile that maps to the Attribute.
@@ -459,7 +462,7 @@ ex:ProfileA-publisher
     a trsp:ProfileProperty ;
     trsp:hasAttribute trsp:att.publisher ;
     trsp:property dct:publisher ;
-    trsp:cardinality trsp:cardinality1_n .
+    trsp:hasCardinalityType trsp:cardinality1_n .
 ```
 
 The roles are deliberately different:
@@ -484,3 +487,21 @@ These are implementation-quality checks rather than changes to the conceptual At
 
 ---
 
+
+## Ontology resource and external vocabularies
+
+The compiled core schema is identified by `trsp:Ontology`, an `owl:Ontology` resource carrying title, description, creation/modification dates, and contributor metadata. The core schema intentionally references several controlled vocabularies maintained in separate TTL files rather than duplicating their concepts in the ontology file.
+
+## Core recommendation properties
+
+The core ontology provides three broad recommendation/specification properties that can be used on Attributes and ProfileProperties:
+
+| Property | Purpose | Controlled vocabulary |
+|---|---|---|
+| `trsp:hasCardinalityType` | expected or specified minimum/maximum occurrence pattern | separately maintained TRSP Cardinality Types vocabulary |
+| `trsp:hasMeasurementType` | general form of value or observation | separately maintained TRSP Measurement Types vocabulary |
+| `trsp:hasBenchmark` | benchmark-type concept associated with the Attribute or ProfileProperty | separately maintained TRSP Benchmark Types vocabulary |
+
+`trsp:hasBenchmark` points to a **benchmark-type vocabulary concept**; it does not identify an executable Benchmark resource. As with the other controlled classifications, the vocabulary definitions are maintained outside the core ontology TTL.
+
+The current core TTL also contains reusable SHACL property shapes named `trsp:CardinalityTypePropertyShape`, `trsp:MeasurementTypePropertyShape`, and `trsp:BenchmarkPropertyShape`. These are intended to restrict values to the applicable external Concept Schemes. Their deployment status is reviewed separately in the QA register because standalone property shapes require a target or attachment to a NodeShape to become active validation rules.

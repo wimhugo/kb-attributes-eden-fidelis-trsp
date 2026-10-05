@@ -257,7 +257,7 @@ A machine-readable mapping can provide enough information to:
 
 - identify source and target Profile Properties;
 - identify their common Attribute;
-- describe source and target classes or paths;
+- describe relevant source and target classes, while obtaining predicates or intrinsic traversal paths from the referenced ProfileProperty definitions;
 - identify source and target Concept Schemes;
 - list value correspondences;
 - identify a mapping type;
@@ -577,7 +577,7 @@ trsp:mappingType
         "Classifies the kind of correspondence or transformation represented by a mapping."@en .
 ```
 
-A controlled vocabulary can distinguish patterns such as:
+`mappingType` deliberately has the broad range `skos:Concept` and the core ontology does not require one particular Concept Scheme. Implementations are nevertheless recommended to use a controlled vocabulary consistently. Such a vocabulary can distinguish patterns such as:
 
 ```text
 identity / rename
@@ -644,6 +644,18 @@ ex:publisherMapping
 This makes the ProfileProperty the authoritative description of its representation and avoids repeating the same predicate or path information across many mappings.
 
 If a ProfileProperty has a nested structure that cannot be described by `trsp:property` and its Constraints alone, that intrinsic structure should be described as part of the ProfileProperty definition. A mapping engine can then derive the source and target traversal from the two Profile definitions when composing a mapping.
+
+TRSP provides `trsp:propertyPath` for this purpose. Its value is a SHACL-compatible property-path expression and is used only when a single direct `trsp:property` is insufficient. For example:
+
+```turtle
+ex:publisherNameProfileProperty
+    a trsp:ProfileProperty ;
+    trsp:hasAttribute trsp:att.publisherName ;
+    trsp:property dcterms:publisher ;
+    trsp:propertyPath ( dcterms:publisher foaf:name ) .
+```
+
+The path remains part of the ProfileProperty self-description. A `PropertyMapping` still identifies its endpoints with `sourceProfileProperty` and `targetProfileProperty`; it does not copy the path into source- or target-specific mapping properties.
 
 ## 19. Value and Concept Scheme mappings
 

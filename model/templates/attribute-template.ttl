@@ -6,32 +6,94 @@
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
 
-##Attribute Definition
-trsp:att.TEMPLATE
-    a trsp:Attribute, skos:Concept, schema:DefinedTerm ;
-    schema:name ""@en ;
-    skos:prefLabel ""@en ;
-    skos:altLabel ""@en ;
-    schema:description ""@en ;
-    schema:category ""@en ;
-    skos:broader ""@en ;
-    dcat:keyword ""@en ;
-    trsp:hasMeasurementType <> ; ## trsp:measurement-type-scheme
-    trsp:benchmark ""@en ;
-    trsp:cardinalityCode <> ; ## trsp:cardinality-scheme
-    ## External Identifiers
-    trsp:hasExternalIdentifier [
-        a trsp:ExternalIdentifier ;
-        trsp:relationType <> ; ## trsp:relation-type-scheme
-        trsp:identifierIri <> ;
-        trsp:identifierUsage trsp:defaultUsage .
-        ] ;
-    ## Profile Assertions
-    trsp:hasApplicableProfileAssertion [
-        a trsp:ProfileAssertion ;
-        trsp:relationType trsp:includeInProfile ;
-        trsp:object trsp:profile.TEMPLATE ;
-        trsp:profileClass trsp:profileTypeRepository ;
-        trsp:profileAttributeIRI trsp:att.TEMPLATE ;
-        trsp:profileAttributeAggregationType trsp:aggregationSingleSelect ;
+trsp:{{targetConceptScheme}}
+    a trsp:Attribute ;
+    skos:inScheme trsp:trsp-attributes ;
+    skos:prefLabel "{{skos:prefLabel}}"@en ;
+    skos:definition "{{skos:definition}}"@en ;
+    skos:broader {{skos:broader}} ;
+    dct:subject "{{dct:subject}}"@en ;
+    schema:category "{{schema:category}}"@en ;
+    dcat:keyword "{{dcat:keyword}}"@en ;
+    owl:versionInfo "{{owl:versionInfo}}" ;
+    # dct:source <https://example.org/source> ;
+    trsp:correspondingProperty {{trsp:property}} ;
+    trsp:hasCardinalityType {{trsp:hasCardinalityType}} ;
+    trsp:hasMeasurementType {{trsp:hasMeasurementType}} ;
+    trsp:hasBenchmark {{trsp:hasBenchmark}} ;
+    
+    #IRIConstraint
+    trsp:hasConstraint [
+        a trsp:Constraint ;
+        trsp:constraintType trsp:iriConstraint ;
+        trsp:nodeKind sh:IRI
+    ] ;
+    # DatatypeConstraint
+    trsp:hasConstraint [
+        a trsp:Constraint ;
+        trsp:constraintType trsp:dataTypeConstraint ;
+        trsp:nodeKind sh:Literal ;
+        trsp:datatype xsd:string
+    ] ;
+    #ClassConsraint
+    trsp:hasConstraint [
+        a trsp:Constraint ;
+        trsp:constraintType trsp:classConstraint ;
+        trsp:nodeKind sh:IRI ;
+        trsp:valueClass {{trsp:algorithmClass}}
+    ] ;
+    # Vocabulary constraint — optional block
+    trsp:hasConstraint [
+        a trsp:Constraint ;
+        trsp:constraintType trsp:vocabularyConstraint ;
+        trsp:nodeKind sh:IRI ;
+        trsp:conceptScheme ex:conceptScheme ;
+        trsp:concept ex:specificConcept
+    ] ;
+    # Computed/aggregation constraint — optional block
+    trsp:hasConstraint [
+        a trsp:Constraint ;
+        trsp:constraintType trsp:aggregationConstraint ;
+        trsp:aggregationType trsp:aggregationCount ;
+        trsp:sourceAttribute ex:sourceAttribute
+    ] ;
+    # Checklist constraint — optional block
+    trsp:hasConstraint [
+        a trsp:Constraint ;
+        trsp:constraintType trsp:checklistConstraint ;
+        trsp:aggregationType trsp:aggregationChecklistCompleteness ;
+        trsp:conceptScheme ex:checklistScheme
     ] .
+
+
+
+
+##Attribute Definition
+#trsp:att.TEMPLATE
+#    a trsp:Attribute, skos:Concept, schema:DefinedTerm ;
+#    schema:name ""@en ;
+#    skos:prefLabel ""@en ;
+#    skos:altLabel ""@en ;
+#    schema:description ""@en ;
+#    schema:category ""@en ;
+#    skos:broader ""@en ;
+#    dcat:keyword ""@en ;
+#    trsp:hasMeasurementType <> ; ## trsp:measurement-type-scheme
+#    trsp:benchmark ""@en ;
+#    trsp:cardinalityCode <> ; ## trsp:cardinality-scheme
+#    ## External Identifiers
+#    trsp:hasExternalIdentifier [
+#        a trsp:ExternalIdentifier ;
+#        trsp:relationType <> ; ## trsp:relation-type-scheme
+#        trsp:identifierIri <> ;
+#        trsp:identifierUsage trsp:defaultUsage .
+#        ] ;
+#    ## Profile Assertions
+#    trsp:hasApplicableProfileAssertion [
+#        a trsp:ProfileAssertion ;
+#        trsp:relationType trsp:includeInProfile ;
+#        trsp:object trsp:profile.TEMPLATE ;
+#        trsp:profileClass trsp:profileTypeRepository ;
+#        trsp:profileAttributeIRI trsp:att.TEMPLATE ;
+#        trsp:profileAttributeAggregationType trsp:aggregationSingleSelect ;
+#    ] .

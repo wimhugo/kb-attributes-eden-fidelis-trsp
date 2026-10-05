@@ -129,7 +129,7 @@ flowchart LR
     P["Profile A"] -->|has property| PP["Profile Property"]
     PP -->|property| RDF["dct:publisher"]
 ```
-The same applies to Profile Porperty definitions applicable to a Service.
+The same applies to Profile Property definitions applicable to a Service.
 
 The Profile Property can carry information that applies specifically to
 that use of `dct:publisher`, such as:
@@ -161,12 +161,12 @@ For example:
 ex:ProfileA-publisher
     a trsp:ProfileProperty ;
     trsp:property dct:publisher ;
-    trsp:cardinality trsp:cardinality1_n .
+    trsp:hasCardinalityType trsp:cardinality1_n .
 
 ex:ProfileB-publisher
     a trsp:ProfileProperty ;
     trsp:property dct:publisher ;
-    trsp:cardinality trsp:cardinality0_1 .
+    trsp:hasCardinalityType trsp:cardinality0_1 .
 ```
 
 This deliberate repetition makes each profile self-contained while
@@ -210,12 +210,12 @@ ex:ProfileA
 ex:ProfileA-title
     a trsp:ProfileProperty ;
     trsp:property dct:title ;
-    trsp:cardinality trsp:cardinality1_1 .
+    trsp:hasCardinalityType trsp:cardinality1_1 .
 
 ex:ProfileA-publisher
     a trsp:ProfileProperty ;
     trsp:property dct:publisher ;
-    trsp:cardinality trsp:cardinality1_n .
+    trsp:hasCardinalityType trsp:cardinality1_n .
 ```
 
 The important point is that the repository data uses, for example:
@@ -364,12 +364,14 @@ trsp:Repository
     a owl:Class ;
     rdfs:label "Repository"@en ;
     trsp:correspondingClass dcat:Catalog ;
-    skos:definition "An archive, repository, or other managed collection of digital resources and associated functionality."@en .
+    skos:definition "An archive, repository, or other managed collection of digital resources, including its supporting services and functionalities."@en .
 ```
 
 `trsp:correspondingClass` expresses correspondence with `dcat:Catalog`
 without necessarily asserting that every TRSP Repository is formally an
 RDFS subclass of `dcat:Catalog`.
+
+In the core ontology, `trsp:correspondingClass` is an `owl:ObjectProperty` with range `rdfs:Class`. It is deliberately weaker than `rdfs:subClassOf` or `owl:equivalentClass`: it records a useful class correspondence without imposing those stronger entailments.
 
 ### `trsp:RepositoryProfile`
 
@@ -407,6 +409,17 @@ trsp:APIService
     rdfs:label "API Service"@en ;
     skos:definition "A service that provides a machine-accessible application programming interface through which operations or functionality can be invoked. A repository or other agent may provide or consume one or more API services."@en .
 ```
+
+### Additional Profile specialisations
+
+TRSP also provides several Profile subclasses for common provenance and application contexts:
+
+- `trsp:ServiceProfile` — a Profile defining properties and constraints used to describe a Service;
+- `trsp:SourceProfile` — a Profile derived from an authoritative source of descriptive requirements;
+- `trsp:StandardProfile` — a Profile derived from a standard or specification;
+- `trsp:CommunityProfile` — a Profile selected or defined by a community for describing repositories or services.
+
+These remain **Profiles**, not subclasses of the Repository or Service being described. The categories can overlap in practice: for example, a community profile may also be derived from a standard.
 
 ### `trsp:ProfileProperty`
 
@@ -463,6 +476,19 @@ trsp:property
     rdfs:range rdf:Property ;
     skos:definition "Identifies the RDF property represented by a profile property."@en .
 ```
+
+### `trsp:propertyPath`
+
+Most Profile Properties are represented by one direct RDF predicate and need only `trsp:property`. Where the intrinsic representation requires a more complex traversal, the ProfileProperty can additionally provide `trsp:propertyPath` using a SHACL-compatible property-path expression.
+
+```turtle
+ex:publisherNameProfileProperty
+    a trsp:ProfileProperty ;
+    trsp:property dct:publisher ;
+    trsp:propertyPath ( dct:publisher foaf:name ) .
+```
+
+`propertyPath` is stable Profile metadata. It is not a pairwise mapping path and does not reintroduce `sourcePath` or `targetPath` into the Mapping model.
 
 The three relationships should not be collapsed:
 

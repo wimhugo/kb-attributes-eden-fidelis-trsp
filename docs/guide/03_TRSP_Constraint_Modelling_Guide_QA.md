@@ -17,7 +17,7 @@ The same constraint vocabulary can be used in two contexts with different force:
 - on an **Attribute**, a constraint normally represents consolidated guidance, a recommendation, or a default;
 - on a **ProfileProperty**, a constraint can represent an actual requirement of the applicable profile.
 
-Detailed assessment workflows, tests, metrics, and benchmark execution are separate concerns, and are not addressed by teh Knowledge Base resources.
+Detailed assessment workflows, tests, metrics, and benchmark execution are separate concerns, and are not addressed by the Knowledge Base resources.
 
 ---
 
@@ -283,6 +283,8 @@ trsp:constraintType
 ```
 
 The value is a concept in `trsp:typeConstraint`. Exactly one constraint type is expected for each Constraint.
+
+`trsp:typeConstraint` and the individual constraint-type concepts are maintained in a separate TRSP vocabulary TTL file. The core ontology references that Concept Scheme rather than duplicating the vocabulary definitions. Validation of scheme membership therefore requires the vocabulary graph to be available to the SHACL processor.
 
 The existing `iriConstraint`, `dataTypeConstraint`, `vocabularyConstraint`, and `classConstraint` concepts are retained. Their scope is generalised from their earlier use for benchmark evidence so that they classify constraints applicable to Attribute and ProfileProperty values. `aggregationConstraint` and `checklistConstraint` extend the scheme for computed and checklist evaluations.
 
@@ -617,6 +619,8 @@ trsp:AggregationTypePropertyShape
 ```
 
 This follows the same design principle used for cardinality types, measurement types, and benchmark types: OWL identifies the broad semantic type, while SHACL restricts values to the intended vocabulary.
+
+The core ontology groups these reusable property constraints in `trsp:ConstraintShape`, which targets `trsp:Constraint`. `ConstraintShape` attaches `trsp:ConstraintTypePropertyShape` and `trsp:AggregationTypePropertyShape`; the first requires exactly one constraint type, while the second validates aggregation-type values when present.
 
 ## 19. Constraint-to-SHACL correspondence
 
