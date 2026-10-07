@@ -1,0 +1,50 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix eden: <> .
+
+trsp:checklistMetrics
+  a skos:ConceptScheme ;
+  skos:prefLabel "Checklist for Metrics"@en ;
+  dct:title "Checklist for Metrics"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:citationsMetric
+  a skos:Concept ;
+  skos:prefLabel "Citations"@en ;
+  skos:inScheme trsp:checklistMetrics .
+
+trsp:pageViewsMetric
+  a skos:Concept ;
+  skos:prefLabel "Page Views"@en ;
+  skos:inScheme trsp:checklistMetrics .
+
+trsp:downloadsMetric
+  a skos:Concept ;
+  skos:prefLabel "Downloads"@en ;
+  skos:inScheme trsp:checklistMetrics .
+
+trsp:mentionsMetric
+  a skos:Concept ;
+  skos:prefLabel "Mentions"@en ;
+  skos:inScheme trsp:checklistMetrics .
+
+trsp:uptimeMetric
+  a skos:Concept ;
+  skos:prefLabel "Uptime"@en ;
+  skos:exactMatch eden://validator/metric/endpointAvailability ;
+  skos:inScheme trsp:checklistMetrics .
+
+trsp:availabilityMetric
+  a skos:Concept ;
+  skos:prefLabel "Uptime"@en ;
+  skos:exactMatch eden://validator/metric/validationScore ;
+  skos:inScheme trsp:checklistMetrics .
+
+
+

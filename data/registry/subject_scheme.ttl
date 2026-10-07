@@ -1,0 +1,263 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix reg: <https://example.org/trsp-registry/subject-schemes/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# -----------------------------------------------------------------------------
+# Prototype registry ontology
+# -----------------------------------------------------------------------------
+
+reg:RegistryOntology
+    a owl:Ontology ;
+    dct:title "Prototype registry of scientific subject encoding schemes"@en ;
+    dct:description "A prototype registry describing classifications, taxonomies and thesauri that can be used to encode scientific or research subjects. Registry records describe schemes; they do not reproduce the scheme contents."@en ;
+    dct:created "2026-10-07"^^xsd:date .
+
+trsp:SubjectEncodingScheme
+    a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Subject Encoding Scheme"@en ;
+    skos:definition "A controlled classification, taxonomy, thesaurus or other knowledge-organisation scheme whose terms can be used to encode the scientific, scholarly or research subject of a resource, activity, project, organisation or other entity."@en .
+
+trsp:schemeIRI
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SubjectEncodingScheme ;
+    rdfs:label "scheme IRI"@en ;
+    skos:definition "Identifies the canonical or preferred IRI of the subject encoding scheme, where one is available."@en .
+
+trsp:landingPage
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SubjectEncodingScheme ;
+    rdfs:label "landing page"@en ;
+    skos:definition "Identifies an authoritative human-readable landing page for the scheme."@en .
+
+trsp:machineReadableDistribution
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SubjectEncodingScheme ;
+    rdfs:label "machine-readable distribution"@en ;
+    skos:definition "Identifies an authoritative machine-readable distribution, endpoint or download location for the scheme, where available."@en .
+
+trsp:schemeType
+    a rdf:Property ;
+    rdfs:domain trsp:SubjectEncodingScheme ;
+    rdfs:label "scheme type"@en ;
+    skos:definition "Describes the general knowledge-organisation form of the scheme, for example classification, taxonomy or thesaurus."@en .
+
+trsp:subjectScope
+    a rdf:Property ;
+    rdfs:domain trsp:SubjectEncodingScheme ;
+    rdfs:label "subject scope"@en ;
+    skos:definition "Summarises the disciplinary or research scope covered by the scheme."@en .
+
+trsp:schemeStatus
+    a rdf:Property ;
+    rdfs:domain trsp:SubjectEncodingScheme ;
+    rdfs:label "scheme status"@en ;
+    skos:definition "Records an open-ended status for the scheme or registry record, such as current, maintained, historical or proprietary."@en .
+
+trsp:machineReadable
+    a owl:DatatypeProperty ;
+    rdfs:domain trsp:SubjectEncodingScheme ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "machine readable"@en ;
+    skos:definition "Indicates whether an authoritative machine-readable representation or service for the scheme is known to be available."@en .
+
+# -----------------------------------------------------------------------------
+# Registry vocabulary
+# -----------------------------------------------------------------------------
+
+trsp:subjectEncodingSchemes
+    a skos:ConceptScheme ;
+    skos:prefLabel "Scientific Subject Encoding Schemes"@en ;
+    skos:definition "A registry vocabulary identifying controlled classifications, taxonomies, thesauri and other knowledge-organisation schemes that may be used to encode scientific or research subjects."@en ;
+    skos:hasTopConcept reg:EuroSciVoc ;
+    skos:hasTopConcept reg:OECD_FORD ;
+    skos:hasTopConcept reg:DFG_SubjectClassification ;
+    skos:hasTopConcept reg:ANZSRC_FOR ;
+    skos:hasTopConcept reg:MSC2020 ;
+    skos:hasTopConcept reg:MeSH ;
+    skos:hasTopConcept reg:AGROVOC ;
+    skos:hasTopConcept reg:UNESCO_Thesaurus ;
+    skos:hasTopConcept reg:Scopus_ASJC ;
+    skos:hasTopConcept reg:WebOfScience_ResearchAreas ;
+    skos:hasTopConcept reg:LibraryOfCongressClassification ;
+    skos:hasTopConcept reg:KAKEN_ReviewClassification .
+
+# -----------------------------------------------------------------------------
+# Registry instances
+# -----------------------------------------------------------------------------
+
+reg:EuroSciVoc
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "EuroSciVoc"@en ;
+    dct:title "European Science Vocabulary (EuroSciVoc)"@en ;
+    dct:publisher "Publications Office of the European Union"@en ;
+    dct:description "Multilingual taxonomy for fields of science and research topics. Its upper levels align with OECD Fields of Research and Development (FORD), while lower levels extend the classification with established and emerging research topics."@en ;
+    trsp:schemeIRI <http://data.europa.eu/8mn/euroscivoc/> ;
+    trsp:landingPage <https://op.europa.eu/en/web/eu-vocabularies/euroscivoc> ;
+    trsp:machineReadableDistribution <https://op.europa.eu/en/web/eu-vocabularies/euroscivoc> ;
+    trsp:schemeType "SKOS taxonomy"@en ;
+    trsp:subjectScope "Multidisciplinary science and research"@en ;
+    trsp:schemeStatus "maintained"@en ;
+    trsp:machineReadable true .
+
+reg:OECD_FORD
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "OECD Fields of Research and Development (FORD)"@en ;
+    dct:title "OECD Fields of Research and Development (FORD)"@en ;
+    dct:publisher "Organisation for Economic Co-operation and Development (OECD)"@en ;
+    dct:description "Classification of fields of research and development defined by the OECD Frascati Manual and used for R&D statistics and related classification purposes."@en ;
+    trsp:landingPage <https://www.oecd.org/en/publications/2015/10/frascati-manual-2015_g1g57dcb.html> ;
+    trsp:schemeType "hierarchical classification"@en ;
+    trsp:subjectScope "All fields of research and development"@en ;
+    trsp:schemeStatus "current; maintained through the Frascati Manual framework"@en ;
+    trsp:machineReadable false .
+
+reg:DFG_SubjectClassification
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "DFG Subject Classification"@en ;
+    dct:title "DFG Classification of Scientific Disciplines, Research Areas, Review Boards and Subject Areas (2024–2028)"@en ;
+    dct:publisher "Deutsche Forschungsgemeinschaft (DFG)"@en ;
+    dct:description "The subject classification used by the German Research Foundation for proposal allocation, review and funding processes. The 2024–2028 structure contains four scientific disciplines, 14 research areas, 49 review boards and 214 subject areas."@en ;
+    trsp:landingPage <https://www.dfg.de/en/research-funding/proposal-funding-process/interdisciplinarity/subject-area-structure> ;
+    trsp:machineReadableDistribution <https://www.dfg.de/resource/blob/331950/85717c3edb9ea8bd453d5110849865d3/fachsystematik-2024-2028-en-data.pdf> ;
+    trsp:schemeType "hierarchical research-funding classification"@en ;
+    trsp:subjectScope "All scientific disciplines represented in DFG funding"@en ;
+    trsp:schemeStatus "current for 2024–2028"@en ;
+    trsp:machineReadable false .
+
+reg:ANZSRC_FOR
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "ANZSRC Fields of Research (FoR)"@en ;
+    dct:title "ANZSRC 2020 Fields of Research (FoR)"@en ;
+    dct:publisher "Australian Bureau of Statistics and Stats NZ"@en ;
+    dct:description "The Fields of Research component of the Australian and New Zealand Standard Research Classification 2020. It classifies R&D by common knowledge domains and methodologies using Divisions, Groups and Fields."@en ;
+    trsp:landingPage <https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/2020> ;
+    trsp:machineReadableDistribution <https://www.abs.gov.au/statistics/classifications/australian-and-new-zealand-standard-research-classification-anzsrc/2020> ;
+    trsp:schemeType "hierarchical classification"@en ;
+    trsp:subjectScope "All fields of research"@en ;
+    trsp:schemeStatus "current (2020 edition, with post-release corrections)"@en ;
+    trsp:machineReadable true .
+
+reg:MSC2020
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "Mathematics Subject Classification 2020 (MSC2020)"@en ;
+    dct:title "Mathematics Subject Classification 2020 (MSC2020)"@en ;
+    dct:publisher "Mathematical Reviews and zbMATH"@en ;
+    dct:description "A hierarchical subject classification created and maintained for categorising literature and other resources in the mathematical sciences."@en ;
+    trsp:landingPage <https://msc2020.org/> ;
+    trsp:machineReadableDistribution <https://msc2020.org/> ;
+    trsp:schemeType "hierarchical disciplinary classification"@en ;
+    trsp:subjectScope "Mathematics and mathematical sciences"@en ;
+    trsp:schemeStatus "current (2020 edition)"@en ;
+    trsp:machineReadable true .
+
+reg:MeSH
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "Medical Subject Headings (MeSH)"@en ;
+    dct:title "Medical Subject Headings (MeSH)"@en ;
+    dct:publisher "U.S. National Library of Medicine"@en ;
+    dct:description "Controlled hierarchical vocabulary used for indexing, cataloguing and searching biomedical and health-related information."@en ;
+    trsp:schemeIRI <http://id.nlm.nih.gov/mesh/> ;
+    trsp:landingPage <https://www.nlm.nih.gov/mesh/meshhome.html> ;
+    trsp:machineReadableDistribution <http://id.nlm.nih.gov/mesh/> ;
+    trsp:schemeType "controlled vocabulary / thesaurus"@en ;
+    trsp:subjectScope "Biomedicine, health and related life sciences"@en ;
+    trsp:schemeStatus "maintained"@en ;
+    trsp:machineReadable true .
+
+reg:AGROVOC
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "AGROVOC"@en ;
+    dct:title "AGROVOC Multilingual Thesaurus"@en ;
+    dct:publisher "Food and Agriculture Organization of the United Nations (FAO)"@en ;
+    dct:description "A multilingual linked-data thesaurus covering agriculture and related domains, published as a SKOS ConceptScheme and available through downloads and programmable interfaces."@en ;
+    trsp:schemeIRI <http://aims.fao.org/aos/agrovoc> ;
+    trsp:landingPage <https://www.fao.org/agrovoc/> ;
+    trsp:machineReadableDistribution <https://agrovoc.fao.org/> ;
+    trsp:schemeType "SKOS thesaurus"@en ;
+    trsp:subjectScope "Agriculture, food, environment and related sciences"@en ;
+    trsp:schemeStatus "maintained"@en ;
+    trsp:machineReadable true .
+
+reg:UNESCO_Thesaurus
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "UNESCO Thesaurus"@en ;
+    dct:title "UNESCO Thesaurus"@en ;
+    dct:publisher "UNESCO"@en ;
+    dct:description "A controlled and structured list of terms used for subject analysis and retrieval across education, culture, natural sciences, social and human sciences, communication and information."@en ;
+    trsp:landingPage <https://vocabularies.unesco.org/unesco/en/> ;
+    trsp:machineReadableDistribution <https://vocabularies.unesco.org/unesco/en/> ;
+    trsp:schemeType "thesaurus"@en ;
+    trsp:subjectScope "Multidisciplinary, with emphasis on UNESCO programme domains"@en ;
+    trsp:schemeStatus "maintained"@en ;
+    trsp:machineReadable true .
+
+reg:Scopus_ASJC
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "Scopus All Science Journal Classification (ASJC)"@en ;
+    dct:title "Scopus All Science Journal Classification (ASJC)"@en ;
+    dct:publisher "Elsevier"@en ;
+    dct:description "Subject classification used by Scopus to categorise serial sources by scientific subject area. It includes broad subject areas and coded subject categories."@en ;
+    trsp:landingPage <https://www.elsevier.support/scopus/answer/what-is-the-complete-list-of-asjc-subject-areas-in-scopus> ;
+    trsp:schemeType "journal/source subject classification"@en ;
+    trsp:subjectScope "Multidisciplinary scholarly publishing"@en ;
+    trsp:schemeStatus "maintained; proprietary platform classification"@en ;
+    trsp:machineReadable true .
+
+reg:WebOfScience_ResearchAreas
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "Web of Science Research Areas"@en ;
+    dct:title "Web of Science Research Areas"@en ;
+    dct:publisher "Clarivate"@en ;
+    dct:description "Subject categorisation scheme shared by Web of Science product databases, organised under five broad categories: Arts & Humanities, Life Sciences & Biomedicine, Physical Sciences, Social Sciences and Technology."@en ;
+    trsp:landingPage <https://webofscience.help.clarivate.com/Content/research-areas.html> ;
+    trsp:schemeType "bibliographic subject classification"@en ;
+    trsp:subjectScope "Multidisciplinary scholarly literature"@en ;
+    trsp:schemeStatus "maintained; proprietary platform classification"@en ;
+    trsp:machineReadable false .
+
+reg:LibraryOfCongressClassification
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "Library of Congress Classification (LCC)"@en ;
+    dct:title "Library of Congress Classification (LCC)"@en ;
+    dct:publisher "Library of Congress"@en ;
+    dct:description "A broad bibliographic classification system covering scholarly and general subjects. It is not research-specific but is relevant as a widely used subject encoding scheme for collections and publications."@en ;
+    trsp:landingPage <https://www.loc.gov/aba/cataloging/classification/lcco/> ;
+    trsp:schemeType "bibliographic classification"@en ;
+    trsp:subjectScope "General multidisciplinary knowledge"@en ;
+    trsp:schemeStatus "maintained"@en ;
+    trsp:machineReadable false .
+
+reg:KAKEN_ReviewClassification
+    a trsp:SubjectEncodingScheme ;
+    skos:inScheme trsp:subjectEncodingSchemes ;
+    skos:prefLabel "KAKENHI Review Section Classification"@en ;
+    dct:title "KAKENHI Review Section Classification"@en ;
+    dct:publisher "Japan Society for the Promotion of Science (JSPS)"@en ;
+    dct:description "Research-field/review-section classification used in Japan's Grants-in-Aid for Scientific Research (KAKENHI) processes. It is useful as an example of a national research-funding subject classification."@en ;
+    trsp:landingPage <https://www-kaken.jsps.go.jp/kaken1/shinsakubunList.do> ;
+    trsp:schemeType "research-funding review classification"@en ;
+    trsp:subjectScope "Multidisciplinary research funding"@en ;
+    trsp:schemeStatus "maintained"@en ;
+    trsp:machineReadable false .
+
+# Note: COAR is intentionally not instantiated here as a scientific subject
+# encoding scheme. As of the date of this prototype, COAR's maintained
+# repository vocabularies cover Resource Types, Access Rights and Version Types,
+# rather than a disciplinary/subject classification.

@@ -1,0 +1,224 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+
+# Vocabulary: ISO 3166-1 alpha-3
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> a skos:ConceptScheme ;
+    skos:prefLabel "ISO 3166-1 alpha-3 countries"@en ;
+    skos:definition "Controlled vocabulary of ISO 3166-1 alpha-3 country codes."@en ;
+    dct:title "ISO 3166-1 alpha-3 countries"@en ;
+    skos:hasTopConcept <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ABW> .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ABW> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Aruba"@en ;
+    skos:definition "Aruba"@en ;
+    skos:notation "ABW"^^xsd:string ;
+    dct:identifier "AW" ;
+    dct:identifier "533" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AFG> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Afghanistan"@en ;
+    skos:altLabel "Islamic Republic of Afghanistan"@en ;
+    skos:definition "Afghanistan"@en ;
+    skos:notation "AFG"^^xsd:string ;
+    dct:identifier "AF" ;
+    dct:identifier "004" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AGO> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Angola"@en ;
+    skos:altLabel "Republic of Angola"@en ;
+    skos:definition "Angola"@en ;
+    skos:notation "AGO"^^xsd:string ;
+    dct:identifier "AO" ;
+    dct:identifier "024" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AIA> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Anguilla"@en ;
+    skos:definition "Anguilla"@en ;
+    skos:notation "AIA"^^xsd:string ;
+    dct:identifier "AI" ;
+    dct:identifier "660" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ALA> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Åland Islands"@en ;
+    skos:definition "Åland Islands"@en ;
+    skos:notation "ALA"^^xsd:string ;
+    dct:identifier "AX" ;
+    dct:identifier "248" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ALB> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Albania"@en ;
+    skos:altLabel "Republic of Albania"@en ;
+    skos:definition "Albania"@en ;
+    skos:notation "ALB"^^xsd:string ;
+    dct:identifier "AL" ;
+    dct:identifier "008" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AND> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Andorra"@en ;
+    skos:altLabel "Principality of Andorra"@en ;
+    skos:definition "Andorra"@en ;
+    skos:notation "AND"^^xsd:string ;
+    dct:identifier "AD" ;
+    dct:identifier "020" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARE> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "United Arab Emirates"@en ;
+    skos:definition "United Arab Emirates"@en ;
+    skos:notation "ARE"^^xsd:string ;
+    dct:identifier "AE" ;
+    dct:identifier "784" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARG> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Argentina"@en ;
+    skos:altLabel "Argentine Republic"@en ;
+    skos:definition "Argentina"@en ;
+    skos:notation "ARG"^^xsd:string ;
+    dct:identifier "AR" ;
+    dct:identifier "032" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARM> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Armenia"@en ;
+    skos:altLabel "Republic of Armenia"@en ;
+    skos:definition "Armenia"@en ;
+    skos:notation "ARM"^^xsd:string ;
+    dct:identifier "AM" ;
+    dct:identifier "051" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ASM> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "American Samoa"@en ;
+    skos:definition "American Samoa"@en ;
+    skos:notation "ASM"^^xsd:string ;
+    dct:identifier "AS" ;
+    dct:identifier "016" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATA> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Antarctica"@en ;
+    skos:definition "Antarctica"@en ;
+    skos:notation "ATA"^^xsd:string ;
+    dct:identifier "AQ" ;
+    dct:identifier "010" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATF> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "French Southern Territories"@en ;
+    skos:definition "French Southern Territories"@en ;
+    skos:notation "ATF"^^xsd:string ;
+    dct:identifier "TF" ;
+    dct:identifier "260" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATG> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Antigua and Barbuda"@en ;
+    skos:definition "Antigua and Barbuda"@en ;
+    skos:notation "ATG"^^xsd:string ;
+    dct:identifier "AG" ;
+    dct:identifier "028" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AUS> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Australia"@en ;
+    skos:definition "Australia"@en ;
+    skos:notation "AUS"^^xsd:string ;
+    dct:identifier "AU" ;
+    dct:identifier "036" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AUT> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Austria"@en ;
+    skos:altLabel "Republic of Austria"@en ;
+    skos:definition "Austria"@en ;
+    skos:notation "AUT"^^xsd:string ;
+    dct:identifier "AT" ;
+    dct:identifier "040" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AZE> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Azerbaijan"@en ;
+    skos:altLabel "Republic of Azerbaijan"@en ;
+    skos:definition "Azerbaijan"@en ;
+    skos:notation "AZE"^^xsd:string ;
+    dct:identifier "AZ" ;
+    dct:identifier "031" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BDI> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Burundi"@en ;
+    skos:altLabel "Republic of Burundi"@en ;
+    skos:definition "Burundi"@en ;
+    skos:notation "BDI"^^xsd:string ;
+    dct:identifier "BI" ;
+    dct:identifier "108" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BEL> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Belgium"@en ;
+    skos:altLabel "Kingdom of Belgium"@en ;
+    skos:definition "Belgium"@en ;
+    skos:notation "BEL"^^xsd:string ;
+    dct:identifier "BE" ;
+    dct:identifier "056" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BEN> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Benin"@en ;
+    skos:altLabel "Republic of Benin"@en ;
+    skos:definition "Benin"@en ;
+    skos:notation "BEN"^^xsd:string ;
+    dct:identifier "BJ" ;
+    dct:identifier "204" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BES> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Bonaire, Sint Eustatius and Saba"@en ;
+    skos:altLabel "Bonaire, Sint Eustatius and Saba"@en ;
+    skos:definition "Bonaire, Sint Eustatius and Saba"@en ;
+    skos:notation "BES"^^xsd:string ;
+    dct:identifier "BQ" ;
+    dct:identifier "535" .
+
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BFA> a skos:Concept ;
+    skos:inScheme <https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> ;
+    skos:prefLabel "Burkina Faso"@en ;
+    skos:definition "Burkina Faso"@en ;
+    skos:notation "BFA"^^xsd:string ;
+    dct:identifier "BF" ;
+    dct:identifier "854" .
+
+# --- deterministic fixes ---
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3> skos:prefLabel "iso3166-1-alpha-3"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ABW> skos:prefLabel "Aruba"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AFG> skos:prefLabel "Afghanistan"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AGO> skos:prefLabel "Angola"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AIA> skos:prefLabel "Anguilla"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ALA> skos:prefLabel "Åland Islands"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ALB> skos:prefLabel "Albania"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AND> skos:prefLabel "Andorra"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARE> skos:prefLabel "United Arab Emirates"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARG> skos:prefLabel "Argentina"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ARM> skos:prefLabel "Armenia"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ASM> skos:prefLabel "American Samoa"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATA> skos:prefLabel "Antarctica"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATF> skos:prefLabel "French Southern Territories"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/ATG> skos:prefLabel "Antigua and Barbuda"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AUS> skos:prefLabel "Australia"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AUT> skos:prefLabel "Austria"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/AZE> skos:prefLabel "Azerbaijan"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BDI> skos:prefLabel "Burundi"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BEL> skos:prefLabel "Belgium"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BEN> skos:prefLabel "Benin"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BES> skos:prefLabel "Bonaire, Sint Eustatius and Saba"@en .
+<https://w3id.org/trsp/vocabs/iso/iso3166-1-alpha-3/BFA> skos:prefLabel "Burkina Faso"@en .

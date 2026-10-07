@@ -1,0 +1,44 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:checklistIndex
+  a skos:ConceptScheme ;
+  skos:prefLabel "Indexed in Scientific Knowledge Graphs"@en ;
+  dct:title "Indexed in Scientific Knowledge Graphs"@en ;
+  dct:created "2026-05-07"^^xsd:date ;
+  dct:modified "2026-05-07"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:openaire
+  a skos:Concept ;
+  skos:prefLabel "OpenAIRE"@en ;
+  skos:inScheme trsp:checklistIndex .
+
+trsp:scholix
+  a skos:Concept ;
+  skos:prefLabel "Scholix"@en ;
+  skos:inScheme trsp:checklistIndex .
+
+trsp:datacitePidGraph
+  a skos:Concept ;
+  skos:prefLabel "DataCite PID Graph"@en ;
+  skos:inScheme trsp:checklistIndex .
+
+trsp:openalex
+  a skos:Concept ;
+  skos:prefLabel "OpenAlex"@en ;
+  skos:inScheme trsp:checklistIndex .
+
+trsp:eosc-cat
+  a skos:Concept ;
+  skos:prefLabel "EOSC Resource Catalogue"@en ;
+  skos:inScheme trsp:checklistIndex .
+
+trsp:other
+  a skos:Concept ;
+  skos:prefLabel "Other"@en ;
+  skos:inScheme trsp:checklistIndex .

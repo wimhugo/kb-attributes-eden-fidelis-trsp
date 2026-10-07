@@ -1,0 +1,47 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:checklistIngestMetadata
+  a skos:ConceptScheme ;
+  skos:prefLabel "Link to or Ingest External Metadata"@en ;
+  dct:title "Link to or Ingest External Metadata"@en ;
+  dct:created "2026-05-07"^^xsd:date ;
+  dct:modified "2026-05-07"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:madmp
+  a skos:Concept ;
+  skos:prefLabel "maDMP"@en ;
+  skos:definition "A machine-actionable Data Management Plan (maDMP) transitions a traditional, static document into a structured dataset using formats like JSON or RDF/XML."@en ;
+  skos:seeAlso <https://docs.ostrails.eu/en/next/commons/dmp/dmp-common-standard.html> ;
+  skos:inScheme trsp:checklistIngestMetadata .
+
+trsp:metadata
+  a skos:Concept ;
+  skos:prefLabel "Metadata"@en ;
+  skos:definition "Any pre-existing metadata record encoded in a well-used schema."@en ;
+  skos:seeAlso <https://rdamsc.bath.ac.uk/> ;
+  skos:inScheme trsp:checklistIngestMetadata .
+
+trsp:raid
+  a skos:Concept ;
+  skos:prefLabel "RAiD"@en ;
+  skos:definition "A persistent identifier and global registry for identifying, tracking, and sharing research projects."@en ;
+  skos:seeAlso <https://www.raid.org/> ;
+  skos:inScheme trsp:checklistIngestMetadata .
+
+trsp:rocrate
+  a skos:Concept ;
+  skos:prefLabel "RO-Crate"@en ;
+  skos:definition "RO-Crate is a community effort to establish a lightweight approach to packaging research data with their metadata."@en ;
+  skos:seeAlso <https://www.researchobject.org/ro-crate/> ;
+  skos:inScheme trsp:checklistIngestMetadata .
+
+trsp:other
+  a skos:Concept ;
+  skos:prefLabel "Other"@en ;
+  skos:inScheme trsp:checklistIngestMetadata .

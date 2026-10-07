@@ -1,0 +1,20 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: providerTypes
+##############################################################
+
+r3d:providerTypes a skos:ConceptScheme ;
+    skos:prefLabel "providerTypes"@en .
+
+r3d:providerTypes/dataProvider a skos:Concept ;
+    skos:inScheme r3d:providerTypes ;
+    skos:prefLabel "dataProvider"@en ;
+    skos:definition "dataProvider"@en .
+
+r3d:providerTypes/serviceProvider a skos:Concept ;
+    skos:inScheme r3d:providerTypes ;
+    skos:prefLabel "serviceProvider"@en ;
+    skos:definition "serviceProvider"@en .

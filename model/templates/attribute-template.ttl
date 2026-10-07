@@ -42,7 +42,7 @@ trsp:{{targetConceptScheme}}
         trsp:nodeKind sh:IRI ;
         trsp:valueClass {{trsp:algorithmClass}}
     ] ;
-    # Vocabulary constraint — optional block
+    # VocabularyConstraint
     trsp:hasConstraint [
         a trsp:Constraint ;
         trsp:constraintType trsp:vocabularyConstraint ;

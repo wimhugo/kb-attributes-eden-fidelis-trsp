@@ -1,0 +1,39 @@
+#################################################
+# re3data Repository Types
+# https://schema.re3data.org/4-0/re3dataV4-0.xsd
+# <xs:simpleType name="repositoryTypes">
+#################################################
+
+r3d:typeRepository a skos:ConceptScheme ;
+    skos:prefLabel "re3data Repository Types"@en .
+
+r3d:repositoryDisciplinary a skos:Concept ;
+    skos:inScheme r3d:typeRepository ;
+    skos:prefLabel "Discipline-specific Repository"@en ;
+    skos:definition "Repository focused on and specialised for a defined discipline."@en .
+
+r3d:repositoryGovernmental a skos:Concept ;
+    skos:inScheme r3d:typeRepository ;
+    skos:prefLabel "Governmental Repository"@en ;
+    skos:definition "Repository for government data or research."@en .
+
+r3d:repositoryInstitutional a skos:Concept ;
+    skos:inScheme r3d:typeRepository ;
+    skos:prefLabel "Institutional Repository"@en ;
+    skos:definition "Repository for a research-performing institution."@en .
+
+r3d:repositoryMultiDisciplinary skos:Concept ;
+    skos:inScheme r3d:typeRepository ;
+    skos:prefLabel "Multi-disciplinary Repository"@en ;
+    skos:definition "Repository focused on and specialised for multiple disciplines."@en .
+
+r3d:repositoryProjectRelated skos:Concept ;
+    skos:inScheme r3d:typeRepository ;
+    skos:prefLabel "Project-Related Repository"@en ;
+    skos:definition "Repository established for the purpose of publishing project outputs."@en .
+
+r3d:repositoryOther skos:Concept ;
+    skos:inScheme r3d:typeRepository ;
+    skos:prefLabel "Other Repository"@en ;
+    skos:definition "Repository not matching any of the other categories."@en .
+

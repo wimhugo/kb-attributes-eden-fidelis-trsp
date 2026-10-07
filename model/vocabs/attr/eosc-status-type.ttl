@@ -1,0 +1,41 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:eosc-status-type-scheme
+  a skos:ConceptScheme ;
+  skos:prefLabel "EOSC Node Status Type"@en ;
+  dct:title "EOSC Node Status Type"@en ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ; # Wim Hugo
+  dct:contributor <https://orcid.org/0000-0003-1106-8441> ; # Wilko Steinhoff ;
+  dct:contributor <0000-0002-3200-2698> # Shanmugasundaram Venkataraman
+  dct:created "2026-07-03"^^xsd:date ;
+  dct:modified "2026-07-03"^^xsd:date ;
+  owl:versionInfo "0.2" .
+
+trsp:node_status_none
+  a skos:Concept ;
+  skos:prefLabel "None"@en ;
+  skos:inScheme trsp:eosc-status-type-scheme .
+
+trsp:node_status_aspiring
+  a skos:Concept ;
+  skos:prefLabel "Aspiring"@en ;
+  skos:inScheme trsp:eosc-status-type-scheme .
+
+trsp:node_status_onboarding
+  a skos:Concept ;
+  skos:prefLabel "Onboarding"@en ;
+  skos:inScheme trsp:eosc-status-type-scheme .
+
+trsp:node_status_operational
+  a skos:Concept ;
+  skos:prefLabel "Operational"@en ;
+  skos:inScheme trsp:eosc-status-type-scheme .
+
+
+
+

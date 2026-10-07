@@ -1,0 +1,116 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+trsp:typeMeasurement a skos:ConceptScheme ;
+  dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:creator <https://orcid.org/0000-0002-0255-5101>;
+  dct:contributor <https://orcid.org/0000-0003-1106-8441>;
+  dct:description "Measurement Types distinguish the type, constraints, or source of a measurement for an attribute."@en;
+  dct:modified "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+  dct:rights <https://spdx.org/licenses/CC0-1.0>;
+  dct:title "TRSP Profile Types"@en;
+  skos:prefLabel "TRSP Measurement Types"@en;
+  owl:versionInfo "0.0.1"@en;
+  foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:measurementTypeNone a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "None"@en ;
+    dct:description "The measurement MAY be of any type with no constraints"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeData a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Data Type Constraint"@en ;
+    dct:description "The measurement MAY be of any XSD simple or complex type"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeBinary a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Binary"@en ;
+    dct:description "The measurement MUST be a binary value"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeBinaryEvidence a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Binary with Evidence"@en ;
+    dct:description "The measurement MUST be a binary value, and if TRUE, an evidence IRL MUST be provided "@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeVocabulary a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Vocabulary"@en ;
+    dct:description "The measurement MUST correspond to a term (IRI) from a controlled vocabulary"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeRegistry a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Registry"@en ;
+    dct:description "The measurement MUST correspond to an identifier (IRI) from a registry"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeChecklist a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Checklist"@en ;
+    dct:description "The measurement SHOULD be one or more of the terms (IRIs) in a checklist vocabulary"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeChecklistEvidence a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Checklist with Evidence"@en ;
+    dct:description "The measurement SHOULD be one or more of the terms (IRIs) in a checklist vocabulary, and if a term is included, it MUST be accompanied by an evidence IRL"@en;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeFormat a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Format"@en ;
+    dct:description "The measurement MUST correspond to a specific format that can be verified via RegEx"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeSpecialType a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Special Type"@en ;
+    dct:description "The measurement MUST correspond to a composite or complex type, defined externally via IRI"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeStandard a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Standard"@en ;
+    dct:description "The measurement MUST correspond to a machine-actionable standard referenced via IRI"@en ;
+    skos:inScheme trsp:typeMeasurement .
+
+trsp:measurementTypeSpecification a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Specification"@en ;
+    dct:description "The measurement MUST correspond to a machine-actionable specification referenced via IRI"@en ;
+
+trsp:measurementTypeObject a skos:Concept, trsp:MeasurementType ;
+    dct:created "2026-07-02T00:00:00+00:00"^^xsd:datetime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    skos:prefLabel "Complex Object"@en ;
+    dct:description "The measurement MUST correspond to the pattern of a complex object, and is stored as a text document."@en ;
+
+
+
+
+
+    skos:inScheme trsp:typeMeasurement .

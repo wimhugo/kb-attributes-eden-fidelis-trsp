@@ -1,0 +1,210 @@
+@prefix posi: <https://purl.org/trsp/posi/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+posi:ConceptScheme a skos:ConceptScheme ;
+  skos:prefLabel "Principles of Open Scholarly Infrastructure (POSI)"@en ;
+  dct:title "Principles of Open Scholarly Infrastructure (POSI)"@en ;
+  dct:creator <https://openscholarlyinfrastructure.org/> ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  dct:created "2015-01-01"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" ;
+  skos:note "Based on POSI version 2.0, released October 2025."@en ;
+  dct:rights <https://spdx.org/licenses/CC0-1.0> ;
+  skos:definition "The Principles of Open Scholarly Infrastructure (POSI) set out the levers — Governance, Sustainability, and Insurance — that open scholarly infrastructure organisations must act on to earn and retain community trust."@en .
+
+# ── Top-level categories ──────────────────────────────────────────────────────
+
+posi:governance a skos:Concept ;
+  skos:prefLabel "Governance"@en ;
+  skos:notation "G" ;
+  skos:definition "Principles governing how open scholarly infrastructure organisations are structured, run, and held accountable to the communities they serve."@en ;
+  skos:narrower posi:G1, posi:G2, posi:G3, posi:G4, posi:G5, posi:G6, posi:G7 ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:sustainability a skos:Concept ;
+  skos:prefLabel "Sustainability"@en ;
+  skos:notation "S" ;
+  skos:definition "Principles governing the long-term financial and operational viability of open scholarly infrastructure."@en ;
+  skos:narrower posi:S1, posi:S2, posi:S3, posi:S4, posi:S5, posi:S6, posi:S7, posi:S8 ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:insurance a skos:Concept ;
+  skos:prefLabel "Insurance"@en ;
+  skos:notation "I" ;
+  skos:definition "Principles that ensure open scholarly infrastructure remains open, accessible, and transferable regardless of what happens to any individual organisation."@en ;
+  skos:narrower posi:I1, posi:I2, posi:I3, posi:I4, posi:I5 ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+# ── Governance principles ─────────────────────────────────────────────────────
+
+posi:G1 a skos:Concept ;
+  skos:prefLabel "G1: Coverage across the scholarly enterprise"@en ;
+  skos:notation "G1" ;
+  skos:definition "Research transcends disciplines, geography, institutions, and stakeholders. Organisations and the infrastructure they run need to reflect this."@en ;
+  skos:broader posi:governance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:G2 a skos:Concept ;
+  skos:prefLabel "G2: Stakeholder governed"@en ;
+  skos:notation "G2" ;
+  skos:definition "A board-governed organisation drawn from the stakeholder community builds confidence that the organisation will make decisions driven by community consensus and a balance of interests."@en ;
+  skos:broader posi:governance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:G3 a skos:Concept ;
+  skos:prefLabel "G3: Non-discriminatory participation or membership"@en ;
+  skos:notation "G3" ;
+  skos:definition "An opt-in approach with principles of non-discrimination and inclusivity, where any relevant group may express an interest and should be welcome. Representation in governance must reflect the character of the community or membership."@en ;
+  skos:broader posi:governance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:G4 a skos:Concept ;
+  skos:prefLabel "G4: Transparent governance"@en ;
+  skos:notation "G4" ;
+  skos:definition "To foster trust, the processes and policies for governing the organisation and selecting representatives to governance groups should be transparent (within the constraints of privacy laws)."@en ;
+  skos:broader posi:governance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:G5 a skos:Concept ;
+  skos:prefLabel "G5: Cannot lobby"@en ;
+  skos:notation "G5" ;
+  skos:definition "Infrastructure organisations should not lobby for regulatory change to cement their own positions or narrow self-interest. However, an infrastructure organisation's role is to support its community, and this can include advocating for policy changes."@en ;
+  skos:broader posi:governance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:G6 a skos:Concept ;
+  skos:prefLabel "G6: Living will"@en ;
+  skos:notation "G6" ;
+  skos:definition "Organisations should establish and communicate clear commitments regarding their long-term stewardship responsibilities, including the principles by which assets, data, resources, services, and staff would be responsibly transferred to a successor or the organisation wound down."@en ;
+  skos:broader posi:governance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:G7 a skos:Concept ;
+  skos:prefLabel "G7: Regular review of purpose and community value"@en ;
+  skos:notation "G7" ;
+  skos:definition "Organisations and services should regularly review their relevance, effectiveness, and the level of community support to determine whether their continued operation is necessary. If no longer needed, they should take responsible steps to transition or wind down operations."@en ;
+  skos:broader posi:governance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+# ── Sustainability principles ─────────────────────────────────────────────────
+
+posi:S1 a skos:Concept ;
+  skos:prefLabel "S1: Transparent operations"@en ;
+  skos:notation "S1" ;
+  skos:definition "To enable organisational accountability and openness, the operating policies and procedures, detailed financials, sustainability models, fees, strategic and product roadmaps, organisational charts, and other appropriate operational information should be made openly available."@en ;
+  skos:broader posi:sustainability ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:S2 a skos:Concept ;
+  skos:prefLabel "S2: Time-limited funds for time-limited activities only"@en ;
+  skos:notation "S2" ;
+  skos:definition "Operations should be supported by sustainable revenue sources, whereas time-limited funds are used only for time-limited activities. Depending on grants to fund ongoing operations fully makes organisations fragile."@en ;
+  skos:broader posi:sustainability ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:S3 a skos:Concept ;
+  skos:prefLabel "S3: Goal to generate surplus"@en ;
+  skos:notation "S3" ;
+  skos:definition "It is not enough to merely survive; organisations and services have to be able to adapt and change. Organisations need financial resources beyond immediate operating costs to weather economic, social and technological volatility."@en ;
+  skos:broader posi:sustainability ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:S4 a skos:Concept ;
+  skos:prefLabel "S4: Establish and maintain financial reserves guided by policy"@en ;
+  skos:notation "S4" ;
+  skos:definition "Organisations should have a clear policy on maintaining financial reserves, including the purpose, minimum and maximum level, and governance of these funds, to support Living Will implementation and response to major unforeseen events."@en ;
+  skos:broader posi:sustainability ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:S5 a skos:Concept ;
+  skos:prefLabel "S5: Mission-consistent revenue generation"@en ;
+  skos:notation "S5" ;
+  skos:definition "Revenue sources should be evaluated against the infrastructure's mission and not run counter to the aims of the organisation or service."@en ;
+  skos:broader posi:sustainability ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:S6 a skos:Concept ;
+  skos:prefLabel "S6: Revenue generated from services, not data"@en ;
+  skos:notation "S6" ;
+  skos:definition "Data related to the running of the scholarly infrastructure should be community property. Appropriate revenue sources include value-added services, consulting, API Service Level Agreements, or membership fees."@en ;
+  skos:broader posi:sustainability ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:S7 a skos:Concept ;
+  skos:prefLabel "S7: Volunteer labour"@en ;
+  skos:notation "S7" ;
+  skos:definition "Organisations that rely on volunteers and their labour should recognise this as a valuable resource for the organisation's long-term viability, and factor it into sustainability planning and risk management."@en ;
+  skos:broader posi:sustainability ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:S8 a skos:Concept ;
+  skos:prefLabel "S8: Transition planning"@en ;
+  skos:notation "S8" ;
+  skos:definition "Organisations that are heavily dependent on a limited number of individuals should take steps to reduce their dependence, including via transition and succession planning, so that the organisation is not at risk of collapse in the event of their departure."@en ;
+  skos:broader posi:sustainability ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+# ── Insurance principles ──────────────────────────────────────────────────────
+
+posi:I1 a skos:Concept ;
+  skos:prefLabel "I1: Open source"@en ;
+  skos:notation "I1" ;
+  skos:definition "All software and non-physical assets required to run the infrastructure should be available under an open-source licence."@en ;
+  skos:broader posi:insurance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:I2 a skos:Concept ;
+  skos:prefLabel "I2: Ensure open and secure data accessibility"@en ;
+  skos:notation "I2" ;
+  skos:definition "To support potential forking or replication, infrastructure should aim to make all relevant data openly available following best practices such as applying a CC0 waiver where appropriate, balanced with compliance with privacy, data protection, and security requirements."@en ;
+  skos:broader posi:insurance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:I3 a skos:Concept ;
+  skos:prefLabel "I3: Available and preserved"@en ;
+  skos:notation "I3" ;
+  skos:definition "It is not enough that content, data, and software be open if there is no practical way to obtain them. These resources should be easily available with clear public documentation, and deposited with at least one trusted third-party digital archive."@en ;
+  skos:broader posi:insurance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:I4 a skos:Concept ;
+  skos:prefLabel "I4: Patent non-assertion"@en ;
+  skos:notation "I4" ;
+  skos:definition "The organisation should commit to a patent non-assertion policy or covenant. The organisation may obtain patents to protect its own operations, but not use them to prevent the community from replicating the infrastructure."@en ;
+  skos:broader posi:insurance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .
+
+posi:I5 a skos:Concept ;
+  skos:prefLabel "I5: Prioritise interoperability and open standards"@en ;
+  skos:notation "I5" ;
+  skos:definition "Infrastructures should adopt and support widely accepted open standards to ensure that systems, data, and services can be replicated, migrated, or integrated with minimal disruption without the use of proprietary extensions or software."@en ;
+  skos:broader posi:insurance ;
+  dct:source <https://doi.org/10.14454/G8WV-VM65> ;
+  skos:inScheme posi:ConceptScheme .

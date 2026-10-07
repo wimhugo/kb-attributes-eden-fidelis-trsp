@@ -1,0 +1,218 @@
+@prefix fair: <https://w3id.org/fair/principles/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fair:ConceptScheme a skos:ConceptScheme ;
+  skos:prefLabel "FAIR Guiding Principles"@en ;
+  dct:title "FAIR Guiding Principles for scientific data management and stewardship"@en ;
+  dct:creator <https://orcid.org/0000-0001-6818-334X> ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  dct:created "2016-01-01"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" ;
+  dct:rights <https://spdx.org/licenses/CC0-1.0> ;
+  skos:definition "The FAIR Guiding Principles assert that scientific data management and stewardship should make data Findable, Accessible, Interoperable, and Reusable for both humans and machines."@en .
+
+# ── Top-level principles ──────────────────────────────────────────────────────
+
+fair:F a skos:Concept ;
+  skos:prefLabel "Findable"@en ;
+  skos:notation "F" ;
+  skos:definition "The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/F> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/F> ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:A a skos:Concept ;
+  skos:prefLabel "Accessible"@en ;
+  skos:notation "A" ;
+  skos:definition "Once the user finds the required data, they need to know how they can be accessed, possibly including authentication and authorisation."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/A> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/A> ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:I a skos:Concept ;
+  skos:prefLabel "Interoperable"@en ;
+  skos:notation "I" ;
+  skos:definition "The data usually need to be integrated with other data and interoperate with applications or workflows for analysis, storage, and processing."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/I> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/I> ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:R a skos:Concept ;
+  skos:prefLabel "Reusable"@en ;
+  skos:notation "R" ;
+  skos:definition "The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/R> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/R> ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+# ── Findable sub-principles ───────────────────────────────────────────────────
+
+fair:F1 a skos:Concept ;
+  skos:prefLabel "F1: Globally unique and persistent identifier"@en ;
+  skos:notation "F1" ;
+  skos:definition "(Meta)data are assigned a globally unique and persistent identifier."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/F1> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/F1> ;
+  skos:broader fair:F ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:F2 a skos:Concept ;
+  skos:prefLabel "F2: Rich metadata"@en ;
+  skos:notation "F2" ;
+  skos:definition "Data are described with rich metadata (defined by R1 below)."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/F2> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/F2> ;
+  skos:broader fair:F ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:F3 a skos:Concept ;
+  skos:prefLabel "F3: Metadata includes data identifier"@en ;
+  skos:notation "F3" ;
+  skos:definition "Metadata clearly and explicitly include the identifier of the data they describe."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/F3> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/F3> ;
+  skos:broader fair:F ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:F4 a skos:Concept ;
+  skos:prefLabel "F4: Registered or indexed in searchable resource"@en ;
+  skos:notation "F4" ;
+  skos:definition "(Meta)data are registered or indexed in a searchable resource."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/F4> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/F4> ;
+  skos:broader fair:F ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+# ── Accessible sub-principles ─────────────────────────────────────────────────
+
+fair:A1 a skos:Concept ;
+  skos:prefLabel "A1: Retrievable by identifier via standard protocol"@en ;
+  skos:notation "A1" ;
+  skos:definition "(Meta)data are retrievable by their identifier using a standardised communications protocol."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/A1> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/A1> ;
+  skos:broader fair:A ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:A1_1 a skos:Concept ;
+  skos:prefLabel "A1.1: Protocol is open, free, and universally implementable"@en ;
+  skos:notation "A1.1" ;
+  skos:altLabel "A1.1"@en ;
+  skos:definition "The protocol is open, free, and universally implementable."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/A1.1> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/A1.1> ;
+  skos:broader fair:A1 ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:A1_2 a skos:Concept ;
+  skos:prefLabel "A1.2: Protocol allows authentication and authorisation"@en ;
+  skos:notation "A1.2" ;
+  skos:altLabel "A1.2"@en ;
+  skos:definition "The protocol allows for an authentication and authorisation procedure, where necessary."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/A1.2> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/A1.2> ;
+  skos:broader fair:A1 ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:A2 a skos:Concept ;
+  skos:prefLabel "A2: Metadata accessible even when data are unavailable"@en ;
+  skos:notation "A2" ;
+  skos:definition "Metadata are accessible, even when the data are no longer available."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/A2> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/A2> ;
+  skos:broader fair:A ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+# ── Interoperable sub-principles ──────────────────────────────────────────────
+
+fair:I1 a skos:Concept ;
+  skos:prefLabel "I1: Formal, accessible, broadly applicable language for knowledge representation"@en ;
+  skos:notation "I1" ;
+  skos:definition "(Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/I1> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/I1> ;
+  skos:broader fair:I ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:I2 a skos:Concept ;
+  skos:prefLabel "I2: Vocabularies that follow FAIR principles"@en ;
+  skos:notation "I2" ;
+  skos:definition "(Meta)data use vocabularies that follow FAIR principles."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/I2> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/I2> ;
+  skos:broader fair:I ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:I3 a skos:Concept ;
+  skos:prefLabel "I3: Qualified references to other (meta)data"@en ;
+  skos:notation "I3" ;
+  skos:definition "(Meta)data include qualified references to other (meta)data."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/I3> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/I3> ;
+  skos:broader fair:I ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+# ── Reusable sub-principles ───────────────────────────────────────────────────
+
+fair:R1 a skos:Concept ;
+  skos:prefLabel "R1: Richly described with accurate and relevant attributes"@en ;
+  skos:notation "R1" ;
+  skos:definition "(Meta)data are richly described with a plurality of accurate and relevant attributes."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/R1> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/R1> ;
+  skos:broader fair:R ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:R1_1 a skos:Concept ;
+  skos:prefLabel "R1.1: Released with clear and accessible usage license"@en ;
+  skos:notation "R1.1" ;
+  skos:altLabel "R1.1"@en ;
+  skos:definition "(Meta)data are released with a clear and accessible data usage license."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/R1.1> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/R1.1> ;
+  skos:broader fair:R1 ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:R1_2 a skos:Concept ;
+  skos:prefLabel "R1.2: Associated with detailed provenance"@en ;
+  skos:notation "R1.2" ;
+  skos:altLabel "R1.2"@en ;
+  skos:definition "(Meta)data are associated with detailed provenance."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/R1.2> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/R1.2> ;
+  skos:broader fair:R1 ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .
+
+fair:R1_3 a skos:Concept ;
+  skos:prefLabel "R1.3: Meet domain-relevant community standards"@en ;
+  skos:notation "R1.3" ;
+  skos:altLabel "R1.3"@en ;
+  skos:definition "(Meta)data meet domain-relevant community standards."@en ;
+  skos:exactMatch <https://w3id.org/fair/principles/terms/R1.3> ;
+  rdfs:seeAlso <https://w3id.org/fair/principles/terms/R1.3> ;
+  skos:broader fair:R1 ;
+  dct:source <https://doi.org/10.1038/sdata.2016.18> ;
+  skos:inScheme fair:ConceptScheme .

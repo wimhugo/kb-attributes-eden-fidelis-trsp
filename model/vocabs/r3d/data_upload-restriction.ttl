@@ -1,0 +1,44 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+r3d:dataUploadRestrictions a skos:ConceptScheme ;
+    skos:prefLabel "data upload restrictions"@en ;
+    skos:hasTopConcept r3d:dataUploadRestrictions/feeRequired ;
+    skos:narrower r3d:dataUploadRestrictions/feeRequired, r3d:dataUploadRestrictions/institutionalMembership, r3d:dataUploadRestrictions/registration, r3d:dataUploadRestrictions/storageLimit .
+
+r3d:dataUploadRestrictions/feeRequired a skos:Concept ;
+    skos:inScheme r3d:dataUploadRestrictions ;
+    skos:prefLabel "fee required"@en ;
+    skos:definition "feeRequired"@en ;
+    skos:broader r3d:dataUploadRestrictions ;
+    skos:related r3d:dataUploadRestrictions/institutionalMembership ;
+    skos:related r3d:dataUploadRestrictions/registration ;
+    skos:related r3d:dataUploadRestrictions/storageLimit .
+
+r3d:dataUploadRestrictions/institutionalMembership a skos:Concept ;
+    skos:inScheme r3d:dataUploadRestrictions ;
+    skos:prefLabel "institutional membership"@en ;
+    skos:definition "institutionalMembership"@en ;
+    skos:broader r3d:dataUploadRestrictions ;
+    skos:related r3d:dataUploadRestrictions/feeRequired ;
+    skos:related r3d:dataUploadRestrictions/registration ;
+    skos:related r3d:dataUploadRestrictions/storageLimit .
+
+r3d:dataUploadRestrictions/registration a skos:Concept ;
+    skos:inScheme r3d:dataUploadRestrictions ;
+    skos:prefLabel "registration"@en ;
+    skos:definition "registration"@en ;
+    skos:broader r3d:dataUploadRestrictions ;
+    skos:related r3d:dataUploadRestrictions/feeRequired ;
+    skos:related r3d:dataUploadRestrictions/institutionalMembership ;
+    skos:related r3d:dataUploadRestrictions/storageLimit .
+
+r3d:dataUploadRestrictions/storageLimit a skos:Concept ;
+    skos:inScheme r3d:dataUploadRestrictions ;
+    skos:prefLabel "storage limit"@en ;
+    skos:definition "storageLimit"@en ;
+    skos:broader r3d:dataUploadRestrictions ;
+    skos:related r3d:dataUploadRestrictions/feeRequired ;
+    skos:related r3d:dataUploadRestrictions/institutionalMembership ;
+    skos:related r3d:dataUploadRestrictions/registration .

@@ -1,0 +1,153 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:checklistQualityAssurance
+  a skos:ConceptScheme ;
+  skos:prefLabel "Quality Assurance, Assessment, COnformance, and Certification Frameworks."@en ;
+  dct:title "Quality"@en ;
+  skos:hasTopConcept trsp:infoSecurity ,
+                     trsp:processQuality ,
+                     trsp:softwareQuality ,
+                     trsp:qualityRDMI ;
+  dct:created "2026-05-07"^^xsd:date ;
+  dct:modified "2026-05-07"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:infoSecurity
+  a skos:Concept ;
+  skos:prefLabel "Information Security Certifications"@en ;
+  dct:description ""@en ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:processQuality
+  a skos:Concept ;
+  skos:prefLabel "Process Quality Assurance Certifications"@en ;
+  dct:description ""@en ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:qualityRDMI
+  a skos:Concept ;
+  skos:prefLabel "TRUST, FAIR, CARE, POSI Certifications, Assessments, and Appraisals"@en ;
+  dct:description ""@en ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:softwareQuality
+  a skos:Concept ;
+  skos:prefLabel "Sotware Quality Frameworks, Certifications, Assessments, and Appraisals"@en ;
+  dct:description ""@en ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+
+trsp:iso9000
+  a skos:Concept ;
+  skos:prefLabel "ISO 9000"@en ;
+  dct:description "ISO 9000 is  a standard that provides the fundamentals and vocabulary for quality management systems (QMS). It establishes the essential principles and terminology to help organizations ensure their products and services consistently meet customer and regulatory requirements."@en ;
+  skos:broader trsp:processQuality ;
+  skos:source <https://www.iso.org/standard/9000> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:iso27001
+  a skos:Concept ;
+  skos:prefLabel "ISO 27001"@en ;
+  dct:description "ISO/IEC 27001 is the world's best-known standard for information security management systems (ISMS). It defines requirements an ISMS must meet."@en ;
+  skos:broader trsp:infoSecurity ;
+  skos:source <https://www.iso.org/standard/27001> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:fitSM
+  a skos:Concept ;
+  skos:prefLabel "FITSM"@en ;
+  dct:description "ISO/IEC 27001 is the world's best-known standard for information security management systems (ISMS). It defines requirements an ISMS must meet."@en ;
+  skos:broader trsp:processQuality ;
+  skos:source <https://www.fitsm.eu/fitsm-standard/> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:cts
+  a skos:Concept ;
+  skos:prefLabel "CoreTrustSeal Certification"@en ;
+  dct:description "The CoreTrustSeal Requirements describe the characteristics required to be a trustworthy repository for digital data and metadata. Each Requirement is accompanied by Guidance text describing the response statements and evidence that applicants must provide to enable an objective review. Applicants must respond to all of the Requirements. "@en ;
+  skos:broader trsp:qualityRDMI ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:selfAssessment
+  a skos:Concept ;
+  skos:prefLabel "Repository SelfAssessment"@en ;
+  dct:description "Repository published a self-assessment based on a guideline."@en ;
+  skos:broader trsp:qualityRDMI ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:selfTRSP
+  a skos:Concept ;
+  skos:prefLabel "TRSP SelfAssessment"@en ;
+  dct:description "Repository or Service published a self-assessment based on TRSP guidelines."@en ;
+  skos:broader trsp:selfAssessment ;
+  skos:source <> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:selfTRAC
+  a skos:Concept ;
+  skos:prefLabel "TRAC SelfAssessment"@en ;
+  dct:description "Repository or Service published a self-assessment based on the TRAC checklist."@en ;
+  skos:broader trsp:selfAssessment ;
+  skos:source <https://www.crl.edu/sites/default/files/2025-01/trac.pdf> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:clarin
+  a skos:Concept ;
+  skos:prefLabel "CLARIN ERIC Certification"@en ;
+  dct:description "CLARIN's distributed network is made up of centres. There are several types of centres: B-centres, C-centres and K-centres, each offering different kinds of expertise and services. "@en ;
+  skos:broader trsp:qualityRDMI ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:clarin_b
+  a skos:Concept ;
+  skos:prefLabel "CLARIN ERIC B"@en ;
+  dct:description "A CLARIN B-centre must be based on a stable technical and institutional foundation. "@en ;
+  skos:broader trsp:clarin ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:clarin_c
+  a skos:Concept ;
+  skos:prefLabel "CLARIN ERIC C"@en ;
+  dct:description "A CLARIN C-centre shares their metadata and are integrated with CLARIN, but they need not offer any further services. "@en ;
+  skos:broader trsp:clarin ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:clarin_k
+  a skos:Concept ;
+  skos:prefLabel "CLARIN ERIC K"@en ;
+  dct:description "K-centres share their knowledge and expertise on one or more aspects of the domain covered by the CLARIN infrastructure. "@en ;
+  skos:broader trsp:clarin ;
+  skos:source <https://doi.org/10.5281/zenodo.7051012> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:nestor
+  a skos:Concept ;
+  skos:prefLabel "nestor Certification"@en ;
+  dct:description "Catalogue of Criteria for Trusted Digital Repositories"@en ;
+  skos:broader trsp:qualityRDMI ;
+  skos:source <https://d-nb.info/1189191830/34> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:iso16363
+  a skos:Concept ;
+  skos:prefLabel "ISO 16363 Certification"@en ;
+  dct:description "Recommended practice on which to base an audit and certification process for assessing the trustworthiness of digital repositories."@en ;
+  skos:broader trsp:qualityRDMI ;
+  skos:source <https://www.iso.org/standard/87472.html> ;
+  skos:inScheme trsp:checklistQualityAssurance .
+
+trsp:typeFAIR
+  a skos:Concept ;
+  skos:prefLabel "FAIR Assessment"@en ;
+  dct:description "Formal FAIR Assessment. "@en ;
+  skos:broader trsp:qualityRDMI ;
+  skos:inScheme trsp:checklistQualityAssurance .
