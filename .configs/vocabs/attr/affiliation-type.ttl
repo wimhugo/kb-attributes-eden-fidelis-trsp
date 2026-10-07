@@ -9,19 +9,6 @@ trsp:typeAffiliation a skos:ConceptScheme ;
     dct:description "Controlled vocabulary for describing affiliation relationships between repositories or other RDMI resources and infrastructures, networks, federations, ecosystems, communities, and recognition schemes."@en ;
     skos:hasTopConcept trsp:affiliation .
 
-# Illustrative modelling pattern - properties
-
-trsp:AffiliationAssertion a rdfs:Class ;
-    rdfs:label "Affiliation assertion"@en .
-trsp:affiliationType a rdf:Property ;
-    rdfs:label "affiliation type"@en .
-trsp:affiliatedWith a rdf:Property ;
-    rdfs:label "affiliated with"@en .
-trsp:affiliationRole a rdf:Property ;
-    rdfs:label "affiliation role"@en .
-trsp:affiliationStatus a rdf:Property ;
-    rdfs:label "affiliation status"@en .
-
 # Concepts
 
 trsp:affiliation a skos:Concept ;
