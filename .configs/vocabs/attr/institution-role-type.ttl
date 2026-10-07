@@ -15,16 +15,20 @@ trsp:typeInstitutionRole
 trsp:hostInstitution
   a skos:Concept ;
   skos:prefLabel "Hosting Institution"@en ;
+  skos:closeMatch r3d:general ;
+  skos:closeMatch r3d:technical ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:publisherInstitution
   a skos:Concept ;
   skos:prefLabel "Publisher"@en ;
+  skos:closeMatch r3d:general ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:funderInstitution
   a skos:Concept ;
   skos:prefLabel "Funding Institution"@en ;
+  skos:exactMatch r3d:funding ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:membershipInstitution
@@ -78,3 +82,12 @@ trsp:collaborativeInfrastructure
   skos:prefLabel "Collaborative Infrastructure"@en ;
   skos:note "ERICs, EUDAT, OpenAIRE, EGI, Géant, ..."@en ;
   skos:inScheme trsp:typeInstitutionRole .
+
+# ---------------------------------------------------------------------------------------------------
+# Extensions - FIDELIS
+# ---------------------------------------------------------------------------------------------------
+
+trsp:institutionTypes/consortium a skos:Concept ;
+    skos:inScheme trsp:typeInstitutionRole ;
+    skos:prefLabel "Consortium"@en ;
+    skos:definition "A consortium of institutions"@en .

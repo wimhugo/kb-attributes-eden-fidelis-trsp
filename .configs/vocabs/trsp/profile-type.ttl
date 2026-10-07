@@ -30,7 +30,7 @@ trsp:profile-test-type-scheme a skos:ConceptScheme ;
   owl:versionInfo "0.6"@en;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
-trsp:profile-type-repository
+trsp:profileTypeRepository
   a skos:Concept ;
   skos:prefLabel "Repository"@en ;
   skos:definition "The profile represents the attributes maintained and published by a Repository."@en ;
@@ -42,10 +42,11 @@ trsp:profile-type-repository
   skos:closeMatch re3data:repositoryTypes_disciplinary ;
   rdfs:seeAlso re3data:repositoryTypes_disciplinary ;
   skos:exactMatch gorc:repository ;
+  skos:closeMatch "fairsharing:repository" ;
   rdfs:seeAlso gorc:repository ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:profile-type-service
+trsp:profileTypeService 
   a skos:Concept ;
   skos:prefLabel "Service"@en ;
   skos:definition "The profile represents the attributes maintained and published by a Service."@en ;
@@ -61,7 +62,7 @@ trsp:profile-type-service
   rdfs:seeAlso posi:S6 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:profile-type-project
+trsp:profileTypeProject
   a skos:Concept ;
   skos:prefLabel "Project"@en ;
   skos:definition "A project that maintains or contributes to a service or repository."@en ;
@@ -71,14 +72,14 @@ trsp:profile-type-project
   rdfs:seeAlso re3data:repositoryTypes_project-related ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:profile-type-source
+rsp:profileTypeSource 
   a skos:Concept ;
   skos:prefLabel "Source"@en ;
   skos:definition "The profile represents the attributes published by an authoritative Source, such as a working group or an infrastructure."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:profile-type-standard
+trsp:profileTypeStandard
   a skos:Concept ;
   skos:prefLabel "Standard"@en ;
   skos:definition "The profile represents the attributes maintained and published as a Standard, for example schema.org or DCAT."@en ;
@@ -92,7 +93,7 @@ trsp:profile-type-standard
   rdfs:seeAlso posi:I5 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:profile-type-community
+trsp:profileTypeCommunityProfile
   a skos:Concept ;
   skos:prefLabel "Community"@en ;
   skos:definition "The profile represents the attributes maintained and published as part of a community profile - for example FIDELIS network."@en ;
@@ -108,7 +109,7 @@ trsp:profile-type-community
   rdfs:seeAlso posi:G7 ;
   skos:inScheme trsp:ConceptScheme .
 
-trsp:profile-type-user
+trsp:profileTypeUserProfile
   a skos:Concept ;
   skos:prefLabel "User"@en ;
   skos:definition "The profile represents the attributes associated with the exepctations or criteria of an individual User."@en ;

@@ -18,6 +18,7 @@ trsp:checklistRegistry
 #--------------------------------------------------------------------------------------------------------------------------
 # This section contains high-level concepts that typify services or reosurces applicable to identifiers
 #--------------------------------------------------------------------------------------------------------------------------
+### these should be services in the services graph
 
 trsp:institution-registry
   a skos:Concept ;
