@@ -1,0 +1,223 @@
+@prefix reg:  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/registry/repository-platform/> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+# =============================================================================
+# Repository Software Platform Registry / Concept Scheme
+# Prototype registry for software platforms used to deploy digital repositories.
+# =============================================================================
+
+trsp:RepositorySoftwarePlatform
+    a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Repository Software Platform"@en ;
+    skos:definition "A software platform, framework, or repository application used to implement or deploy a digital repository, data repository, institutional repository, digital archive, or closely related repository service."@en .
+
+trsp:repositorySoftwarePlatforms
+    a skos:ConceptScheme ;
+    skos:prefLabel "Repository Software Platforms"@en ;
+    skos:definition "A registry vocabulary of mainstream software platforms, frameworks, and repository applications used to implement or deploy digital repositories."@en ;
+    skos:hasTopConcept
+        reg:InvenioRDM,
+        reg:Dataverse,
+        reg:CKAN,
+        reg:DSpace,
+        reg:EPrints,
+        reg:Fedora,
+        reg:Islandora,
+        reg:Samvera,
+        reg:Hyku,
+        reg:MyCoRe,
+        reg:MIR .
+
+trsp:platformIRI
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:RepositorySoftwarePlatform ;
+    rdfs:label "platform IRI"@en ;
+    skos:definition "Identifies the principal web identifier or landing page for the repository software platform."@en .
+
+trsp:sourceCodeRepository
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:RepositorySoftwarePlatform ;
+    rdfs:label "source code repository"@en ;
+    skos:definition "Identifies a principal source-code repository for the software platform."@en .
+
+trsp:platformType
+    a owl:DatatypeProperty ;
+    rdfs:domain trsp:RepositorySoftwarePlatform ;
+    rdfs:range xsd:string ;
+    rdfs:label "platform type"@en ;
+    skos:definition "A concise description of the architectural or application role of the software, such as repository application, repository framework, backend repository layer, or data portal platform."@en .
+
+trsp:repositoryScope
+    a owl:DatatypeProperty ;
+    rdfs:domain trsp:RepositorySoftwarePlatform ;
+    rdfs:range xsd:string ;
+    rdfs:label "repository scope"@en ;
+    skos:definition "A concise description of the principal repository use cases supported by the platform."@en .
+
+trsp:openSource
+    a owl:DatatypeProperty ;
+    rdfs:domain trsp:RepositorySoftwarePlatform ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "open source"@en ;
+    skos:definition "Indicates whether the platform is distributed as open-source software."@en .
+
+trsp:builtOn
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:RepositorySoftwarePlatform ;
+    rdfs:range trsp:RepositorySoftwarePlatform ;
+    rdfs:label "built on"@en ;
+    skos:definition "Relates a repository software platform to another registered repository platform or framework on which it is substantially built."@en .
+
+# =============================================================================
+# Registry entries
+# =============================================================================
+
+reg:InvenioRDM
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "InvenioRDM"@en ;
+    dct:title "InvenioRDM"@en ;
+    dct:publisher "InvenioRDM community"@en ;
+    trsp:platformIRI <https://inveniordm.docs.cern.ch/> ;
+    trsp:sourceCodeRepository <https://github.com/inveniosoftware/invenio-app-rdm> ;
+    trsp:platformType "Turn-key research data management repository application"@en ;
+    trsp:repositoryScope "Research data, institutional and domain-specific repositories"@en ;
+    trsp:openSource true ;
+    skos:note "Built on the Invenio framework; Zenodo is a repository service built on InvenioRDM."@en .
+
+reg:Dataverse
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "Dataverse"@en ;
+    dct:title "Dataverse Software"@en ;
+    dct:publisher "The Dataverse Project"@en ;
+    trsp:platformIRI <https://dataverse.org/> ;
+    trsp:sourceCodeRepository <https://github.com/IQSS/dataverse> ;
+    trsp:platformType "Research data repository application"@en ;
+    trsp:repositoryScope "Research data sharing, preservation, citation, discovery and analysis"@en ;
+    trsp:openSource true .
+
+reg:CKAN
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "CKAN"@en ;
+    dct:title "CKAN"@en ;
+    trsp:platformIRI <https://ckan.org/> ;
+    trsp:sourceCodeRepository <https://github.com/ckan/ckan> ;
+    trsp:platformType "Data management and data portal platform"@en ;
+    trsp:repositoryScope "Open-data portals, government data catalogues and enterprise data management"@en ;
+    trsp:openSource true .
+
+reg:DSpace
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "DSpace"@en ;
+    dct:title "DSpace"@en ;
+    dct:publisher "DSpace community / Lyrasis"@en ;
+    trsp:platformIRI <https://dspace.org/> ;
+    trsp:sourceCodeRepository <https://github.com/DSpace/DSpace> ;
+    trsp:platformType "Digital repository application"@en ;
+    trsp:repositoryScope "Institutional, subject, dataset and media repositories"@en ;
+    trsp:openSource true .
+
+reg:EPrints
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "EPrints"@en ;
+    dct:title "EPrints"@en ;
+    dct:publisher "EPrints Community"@en ;
+    trsp:platformIRI <https://www.eprints.org/> ;
+    trsp:sourceCodeRepository <https://github.com/eprints/eprints3> ;
+    trsp:platformType "Digital repository application"@en ;
+    trsp:repositoryScope "Open-access publications, institutional repositories, research data and other digital objects"@en ;
+    trsp:openSource true .
+
+reg:Fedora
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "Fedora Repository"@en ;
+    skos:altLabel "Fedora"@en ;
+    dct:title "Fedora Repository"@en ;
+    trsp:platformIRI <https://fedorarepository.org/> ;
+    trsp:sourceCodeRepository <https://github.com/fcrepo/fcrepo> ;
+    trsp:platformType "Backend digital repository and preservation platform"@en ;
+    trsp:repositoryScope "Digital preservation, digital libraries, archives and repository application backends"@en ;
+    trsp:openSource true .
+
+reg:Islandora
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "Islandora"@en ;
+    dct:title "Islandora"@en ;
+    dct:publisher "Islandora Foundation"@en ;
+    trsp:platformIRI <https://www.islandora.ca/> ;
+    trsp:sourceCodeRepository <https://github.com/Islandora> ;
+    trsp:platformType "Modular digital repository ecosystem"@en ;
+    trsp:repositoryScope "Digital collections, institutional repositories, research data and preservation-oriented repositories"@en ;
+    trsp:openSource true ;
+    skos:note "Current Islandora is Drupal-based and can integrate with Fedora Repository as a preservation and linked-data layer."@en .
+
+reg:Samvera
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "Samvera"@en ;
+    dct:title "Samvera"@en ;
+    dct:publisher "Samvera Community"@en ;
+    trsp:platformIRI <https://samvera.org/> ;
+    trsp:sourceCodeRepository <https://github.com/samvera> ;
+    trsp:platformType "Repository framework and community technology stack"@en ;
+    trsp:repositoryScope "Custom and turn-key digital repository solutions for libraries and cultural heritage institutions"@en ;
+    trsp:openSource true ;
+    skos:note "Samvera is an ecosystem rather than a single monolithic repository application; Hyku and Hyrax are prominent repository solutions within it."@en .
+
+reg:Hyku
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "Hyku"@en ;
+    dct:title "Hyku"@en ;
+    dct:publisher "Samvera Community"@en ;
+    trsp:platformIRI <https://hyku.samvera.org/> ;
+    trsp:sourceCodeRepository <https://github.com/samvera/hyku> ;
+    trsp:platformType "Turn-key digital repository application"@en ;
+    trsp:repositoryScope "Institutional and digital-content repositories, including multi-tenant deployments"@en ;
+    trsp:openSource true ;
+    trsp:builtOn reg:Samvera .
+
+reg:MyCoRe
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "MyCoRe"@en ;
+    dct:title "MyCoRe"@en ;
+    dct:publisher "MyCoRe Community"@en ;
+    trsp:platformIRI <https://www.mycore.de/> ;
+    trsp:sourceCodeRepository <https://github.com/MyCoRe-Org/mycore> ;
+    trsp:platformType "Modular repository framework"@en ;
+    trsp:repositoryScope "Repositories, archives, document servers and digital collections"@en ;
+    trsp:openSource true .
+
+reg:MIR
+    a trsp:RepositorySoftwarePlatform ;
+    skos:inScheme trsp:repositorySoftwarePlatforms ;
+    skos:prefLabel "MIR"@en ;
+    skos:altLabel "MyCoRe MODS Institutional Repository"@en ;
+    dct:title "MyCoRe MODS Institutional Repository (MIR)"@en ;
+    dct:publisher "MyCoRe Community"@en ;
+    trsp:platformIRI <https://www.mycore.de/en/site/applications/mir/> ;
+    trsp:sourceCodeRepository <https://github.com/MyCoRe-Org/mir> ;
+    trsp:platformType "Ready-to-use institutional repository application"@en ;
+    trsp:repositoryScope "Institutional and publication repositories using MODS metadata"@en ;
+    trsp:openSource true ;
+    trsp:builtOn reg:MyCoRe .
+
+# Notes:
+# - This is a prototype registry, not an exhaustive catalogue.
+# - Entries are both trsp:RepositorySoftwarePlatform instances and, by
+#   subclass inference, skos:Concepts in trsp:repositorySoftwarePlatforms.
+# - Hosted repository services (for example Zenodo or Figshare) are not
+#   automatically treated as deployment software. They can be registered
+#   separately if the registry scope is later broadened to repository services.
