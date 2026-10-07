@@ -195,7 +195,7 @@ trsp:hasMeasurementType
 trsp:hasBenchmark
     a owl:ObjectProperty ;
     rdfs:label "has benchmark"@en ;
-    rdfs:range skos:Concept;
+
     skos:definition
         "Identifies the benchmark associated with an Attribute or Profile Property, indicating the type of criterion against which a value or assessment result can be evaluated."@en ;
     rdfs:comment
@@ -287,7 +287,7 @@ trsp:constraintType
 # ---------------------------------------------
 ## Simple declarative constraint parameters
 
-## node kind (associated with SHACL)
+## node kind (assocaiated with SHACL)
 trsp:nodeKind
     a owl:ObjectProperty ;
     rdfs:domain trsp:Constraint ;
@@ -821,39 +821,3 @@ trsp:ChecklistItemShape
         sh:message
             "Each ChecklistItem must identify exactly one checklist concept using checklistIRI."@en
     ] .
-
-
-## Special Classes in TRSP that are used as ranges (values) for Profile Properties
-
-
-trsp:SpatialCoverage
-    a owl:Class ;
-    rdfs:label "Spatial Coverage"@en ;
-    skos:definition
-        "A spatial entity that may be used to express the spatial coverage of a resource."@en ;
-    owl:equivalentClass [
-        a owl:Class ;
-        owl:unionOf (
-            dct:Location
-            schema:Place
-            geo:Feature
-            gn:Feature
-            ogc:Envelope
-            dpv:Region
-        )
-    ] .
-
-trsp:DateTimeInterval
-    a owl:Class ;
-    rdfs:subClassOf time:DateTimeInterval ;
-    rdfs:label "Date/time interval"@en ;
-    skos:definition
-        "A date or time interval used to express temporal coverage or another bounded temporal extent."@en .
-
-# confirm this in trsp ProfileProperty
-#trsp:spatialCoverage
-#    a owl:ObjectProperty ;
-#    rdfs:range trsp:SpatialCoverage ;
-#    rdfs:label "spatial coverage"@en ;
-#    skos:definition
-#        "Identifies the spatial or geographic coverage of a resource."@en .

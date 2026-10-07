@@ -1,0 +1,17 @@
+digraph A { graph [rankdir=LR,bgcolor="white",pad=0.3,nodesep=0.5,ranksep=0.8]; node [shape=box,fontname="Arial"]; edge [fontname="Arial",fontsize=10];
+"Repository / Service" -> Profile [label="hasProfile"];
+Profile -> ProfileProperty [label="hasProperty"];
+ProfileProperty -> Attribute [label="hasAttribute"];
+ProfileProperty -> Constraint [label="hasConstraint",style=dashed];
+Attribute -> Constraint [label="hasConstraint",style=dashed];
+Checklist -> ChecklistItem [label="checkItem"];
+ChecklistItem -> Evidence [arrowhead=empty,label="subclass"];
+Checklist -> "SKOS ConceptScheme" [label="checklistSource",style=dashed];
+ChecklistItem -> "SKOS Concept" [label="checklistIRI",style=dashed];
+ProfileMapping -> Profile [label="source/target Profile"];
+ProfileMapping -> ClassMapping [label="hasClassMapping"];
+PropertyMapping -> ProfileProperty [label="source/target ProfileProperty"];
+PropertyMapping -> Attribute [label="mappedAttribute"];
+PropertyMapping -> ValueMapping [label="hasValueMapping",style=dashed];
+PropertyMapping -> MappingQualifier [label="hasQualifier",style=dashed];
+}
