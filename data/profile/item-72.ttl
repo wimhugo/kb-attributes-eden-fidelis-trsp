@@ -27,3 +27,4 @@ foaf:name a trsp:Property ;
     trsp:hasBenchmark "^^xsd:string" ;
     owl:version "0.4.1" .
 
+
