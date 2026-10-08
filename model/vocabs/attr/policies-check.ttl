@@ -56,7 +56,7 @@ trsp:typeExplicitPolicy a skos:Concept ;
 
 trsp:typeAccessRules a skos:Concept ;
   skos:prefLabel "Access Rules"@en ;
-  skos:definition "Rules defining constraints or conditions associated with access."@en ;
+  skos:definition "Rules defining constraints or conditions associated with access, including citation."@en ;
   trsp:correspondingClass openrel:AccessRules ;
   skos:inScheme trsp:checklistPolicies .
 
@@ -99,6 +99,7 @@ trsp:retentionPolicy a skos:Concept ;
 trsp:preservationPolicy a skos:Concept ; 
   skos:prefLabel "Preservation Policy"@en ;
   skos:definition "Policy governing the long-term preservation, continued accessibility, integrity, and usability of digital content."@en ;
+  trsp:hasStringMapping "Preservation-policy", "Preservation_Policy", "long-term-data-preservation" ;
   trsp:correspondingClass premis:PreservationPolicy ;
   skos:broader trsp:curationPolicy ; 
   skos:inScheme trsp:checklistPolicies .
@@ -141,8 +142,10 @@ trsp:accessPolicy a skos:Concept ;
                 "Data Access Policy"@en , 
                 "Open Access Policy"@en , 
                 "Data Sharing Policy"@en , 
+                "Citation Policy"@en ,
                 "Data Availability Policy"@en ;
-  skos:definition "Policy governing access to, availability of, sharing of, dissemination of, or onward provision of data and other resources, including open access and the eligibility, conditions, timing, assessment, approval, or other decisions associated with requests for access."@en ;
+  skos:definition "Policy governing access to, availability of, sharing of, dissemination of, citation of, or onward provision of data and other resources, including open access and the eligibility, conditions, timing, assessment, approval, or other decisions associated with requests for access."@en ;
+  trsp:hasStringMapping "data-availability-policy", "citationpage" ;
   skos:broader trsp:typePolicyPurpose ; 
   skos:inScheme trsp:checklistPolicies .
 
@@ -224,6 +227,15 @@ trsp:qualityPolicy a skos:Concept ;
   skos:prefLabel "Quality Policy"@en ;
   skos:definition "Policy governing quality objectives, assessment, assurance, or improvement of data, metadata, repositories, or services."@en ;
   trsp:correspondingClass dqv:QualityPolicy ;
+  skos:broader trsp:typePolicyPurpose ; skos:inScheme trsp:checklistPolicies .
+
+trsp:faqPolicy a skos:Concept ;
+  skos:prefLabel "Policy FAQ"@en ;
+  skos:definition "Policy governing quality objectives, assessment, assurance, or improvement of data, metadata, repositories, or services."@en ;
+  skos:altLabel "FAQ"@en , 
+                "Frequently Asked Questions"@en ; 
+  trsp:hasStringMapping "http://fairsharing.org/model/fairsharing_record_schema#SustainabilityPolicy" ;
+  trsp:correspondingClass dcterms:Policy ;
   skos:broader trsp:typePolicyPurpose ; skos:inScheme trsp:checklistPolicies .
 
 

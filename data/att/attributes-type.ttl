@@ -30,13 +30,13 @@ trsp:trsp-attributes a skos:ConceptScheme ;
   dct:contributor "Dieuwertje Bloemen" ;
   dct:contributor "Mohan Ramamurthy" ;
   dct:contributor "RDA TRSP WG" ;
-  dct:description "A comprehensive inventory of repository and repository services attributes"@en 
-  dct:modified "2026-05-07T00:00:00+00:00"^^xsd:dateTime;
+  dct:description "A comprehensive inventory of repository and repository services attributes"@en ;
+  dct:modified "2026-05-07T00:00:00+00:00"^^xsd:dateTime ;
   dct:modified "2026-04-29T00:00:00+00:00"^^xsd:dateTime ;
-  dct:rights <https://spdx.org/licenses/CC0-1.0>;
-  dct:title "TRSP Attribute Definition Vocabulary"@en;
-  skos:prefLabel "TRSP Attributes"@en .
-  owl:versionInfo "0.4"@en;
+  dct:rights <https://spdx.org/licenses/CC0-1.0> ;
+  dct:title "TRSP Attribute Definition Vocabulary"@en ;
+  skos:prefLabel "TRSP Attributes"@en ;
+  owl:versionInfo "0.4"@en ; 
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:att.4CB9ED25FE

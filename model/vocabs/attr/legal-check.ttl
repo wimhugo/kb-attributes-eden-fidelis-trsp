@@ -68,6 +68,7 @@ trsp:termsOfUse
                 "General Terms and Conditions"@en,
                 "ToU"@en ;
   skos:definition "Terms and conditions governing use of a repository, service, platform, data, facility, or other resource, including acceptable and prohibited use and user responsibilities."@en ;
+  trsp:hasStringMapping "general-terms-and-conditions", "general-terms-and-conditions-use", "General-Terms-and-Contitions-of-Use", "legal-terms", "terms", "terms_of_service", "Terms_of_Service", "terms_use", "terms-and-conditions", "terms-and-policies", "terms-of-service", "terms-of-use", "terms-use-and-disclaimer", "TermsOfUse", "termsofuse" ;
   trsp:correspondingClass dpv:TermsOfService ;
   trsp:correspondingProperty schema:termsOfService ;
   skos:closeMatch dpv:TermsOfService ;
@@ -82,6 +83,7 @@ trsp:termsOfDeposit
   skos:prefLabel "Terms of Deposit"@en ;
   skos:altLabel "Deposit Terms"@en, "Submission Terms"@en ;
   skos:definition "Contractual terms and conditions governing submission, deposit, transfer, acceptance, and associated responsibilities for content deposited with a repository."@en ;
+  trsp:hasStringMapping "criteria-for-depositing-data" ,"data-deposition", "data-deposition-process", "deposit", "Deposit_Guidelines", "deposit-in-the-curated-data-repository","deposit/process", "depositdata", "deposition", "deposition-overview", "deposition-services", "how-to-deposit-data" ;
   skos:broader trsp:legalTermsAndConditions ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .

@@ -349,6 +349,7 @@ trsp:typeFTP
   skos:prefLabel "FTP"@en ;
   skos:altLabel "File Transfer Protocol"@en ;
   skos:definition "Service interface using the File Transfer Protocol for transfer or access to files."@en ;
+  trsp:hasStringMapping "ftp://" ;
   skos:broader trsp:typeInterface ;
   skos:related trsp:typeDataAccess ;
   skos:inScheme trsp:typeService .

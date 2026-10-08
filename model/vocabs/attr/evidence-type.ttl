@@ -1,0 +1,67 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix openrel: <http://www.w3.org/ns/openrel/0/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+
+# --------------------------------------------------------------------------
+# General Evidence Types — revision 0.2
+# Evidence ttpes that are not defined elsewhere.
+# --------------------------------------------------------------------------
+
+trsp:typeEvidence
+  a skos:ConceptScheme ;
+  skos:prefLabel "General Evidence Types"@en ;
+  dct:title "General Evidence Types"@en ;
+  dct:description "Evidence ttpes that are not defined elsewhere."@en ;
+  skos:hasTopConcept trsp:typeGovernanceDocs, trsp:typeTypicalDocs ;
+  dct:creator <https://orcid.org/0000-0002-0255-5101> ;
+  dct:created "2026-05-07"^^xsd:date ;
+  dct:modified "2026-10-08"^^xsd:date ;
+  owl:versionInfo "0.2" .
+
+# --------------------------------------------------------------------------
+# High-Level Concepts
+# --------------------------------------------------------------------------
+trsp:typeGovernanceDocs a skos:Concept ;
+  skos:prefLabel "Governance Documentation"@en ;
+  skos:definition "Standard Governance Documentation, such as mandates and missions."@en ;
+  skos:topConceptOf trsp:typeEvidence ; 
+  skos:inScheme trsp:typeEvidence .
+
+trsp:typeTypicalDocs a skos:Concept ;
+  skos:prefLabel "Typical Website Documentation"@en ;
+  skos:definition "Typical and common website documentation, such as 'About'. Excludes legal, policy, curation, governance, and other specific documents."@en ;
+  skos:topConceptOf trsp:typeEvidence ; 
+  skos:inScheme trsp:typeEvidence .
+
+# --------------------------------------------------------------------------
+# Individual Documents
+# --------------------------------------------------------------------------
+
+trsp:typeContinuityPlan a skos:Concept ;
+  skos:prefLabel "Continuity and Sustainability Plan"@en ;
+  skos:definition "The continuity plan for the repository or service."@en ;
+  skos:broader trsp:typeGovernanceDocs ;
+  skos:inScheme trsp:typeEvidence .
+
+trsp:typeMission a skos:Concept ;
+  skos:prefLabel "Mission Statement"@en ;
+  skos:definition "The mission statement for the organisation or repository."@en ;
+  skos:broader trsp:typeGovernanceDocs ;
+  skos:inScheme trsp:typeEvidence .
+
+trsp:typeMandate a skos:Concept ;
+  skos:prefLabel "Mandate"@en ;
+  skos:definition "The mandate  for the organisation or repository."@en ;
+  skos:broader trsp:typeGovernanceDocs ;
+  skos:inScheme trsp:typeEvidence .
+
+
+
+

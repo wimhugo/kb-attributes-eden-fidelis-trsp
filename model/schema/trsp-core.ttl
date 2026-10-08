@@ -548,6 +548,14 @@ trsp:hasValueMapping
     skos:definition
         "Relates a mapping to a value- or concept-level correspondence used by that mapping."@en .
 
+## has string/ label mapping
+trsp:hasStringMapping
+    a owl:ObjectProperty ;
+    rdfs:range trsp:ValueMapping ;
+    rdfs:label "has string mapping"@en ;
+    skos:definition
+        "Relates a mapping to a string or altLabel-level correspondence - often in the title or IRI of the source."@en .
+
 ## source value
 trsp:sourceValue
     a rdf:Property ;
@@ -633,12 +641,24 @@ trsp:ChecklistItem
 # -------------------------------------------------
 ## Evidence Properties
 
+## evidence title
+trsp:evidenceTitle
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Evidence ;
+    rdfs:range xsd:string ;
+    rdfs:label "Evidence Title"@en ;
+    skos:definition
+        "The title of the evidence item."@en ;
+    rdfs:comment
+        "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
+
+
 ## evidence type
 trsp:evidenceType
     a owl:ObjectProperty ;
     rdfs:domain trsp:Evidence ;
     rdfs:range skos:Concept ;
-    rdfs:label "evidence type"@en ;
+    rdfs:label "Evidence Type"@en ;
     skos:definition
         "Classifies the type of evidence using a concept from a controlled vocabulary."@en ;
     rdfs:comment
@@ -649,7 +669,7 @@ trsp:evidenceIRI
     a owl:ObjectProperty ;
     rdfs:domain trsp:Evidence ;
     rdfs:range rdfs:Resource ;
-    rdfs:label "evidence IRI"@en ;
+    rdfs:label "Evidence IRI"@en ;
     skos:definition
         "Identifies the resource that constitutes or provides the evidence."@en ;
     rdfs:comment
@@ -660,7 +680,7 @@ trsp:machineActionable
     a owl:DatatypeProperty ;
     rdfs:domain trsp:Evidence ;
     rdfs:range xsd:boolean ;
-    rdfs:label "machine actionable"@en ;
+    rdfs:label "Machine Actionable"@en ;
     skos:definition
         "Indicates whether the resource identified by evidenceIRI can be processed or evaluated automatically by a machine."@en .
 
