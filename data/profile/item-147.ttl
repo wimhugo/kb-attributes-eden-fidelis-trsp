@@ -8779,6 +8779,8 @@ trsp:apiFormatSupport a trsp:Property ;
     trsp:linkedProperty trsp:apiFormatSupport ;
     skos:broader "att.3788BFB26A" ;
     skos:exactMatch trsp:att.7E16B0A695 ;
+    rdfs:domain trsp:APIService ;
+    rdfs:range trsp:Checklist ;
     dct:subject "Transparency,Scope of Services,API Services,API Format Support,EDEN" ;
     schema:category "Transparency|Scope of Services|API Services|API Format Support" ;
     dcat:keyword "EDEN" ;
