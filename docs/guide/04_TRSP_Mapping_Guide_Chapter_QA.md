@@ -50,7 +50,7 @@ The Profile Properties then describe how each Profile represents Publisher.
 
 ```mermaid
 flowchart LR
-    PPA["Profile A Property"] -->|hasAttribute| A["Publisher Attribute"]
+    PPA["Profile A Property"] -->|hasAttribute| A["Common Attribute"]
     PPB["Profile B Property"] -->|hasAttribute| A
 ```
 
