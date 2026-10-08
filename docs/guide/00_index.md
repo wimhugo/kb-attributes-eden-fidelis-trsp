@@ -21,3 +21,7 @@ TRSP uses Attributes as neutral semantic reference points between Profiles to co
 This chapter describes the model for representing [Evidence, Checklists, and Checklist Items](docs/guide/05_TRSP_Evidence_Checklist_Guide_QA.md).
 
 The principal motivation is to standardise and generalise the representation of Attributes whose values consist of one or more pieces of evidence. In repository and service assessment, evidence is frequently requested in recurring forms: policies, certificates, machine-readable endpoints, reports, specifications, implementation records, test results, or other resources supporting an assertion.
+
+```mermaid
+
+```
