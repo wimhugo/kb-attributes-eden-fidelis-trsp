@@ -4549,7 +4549,7 @@ trsp:grantURI a trsp:Property ;
 
 trsp:organisation a trsp:Property ;
     skos:prefLabel "Organisation" ;
-    skos:definition "1 or more names, identifiers, and language indicators for the institutions and organisations hosting/ managing the repository." ;
+    skos:definition "Organisations and institutions involved in hosting, publishing, funding, using, supporting, and operating repositories or services." ;
     trsp:linkedProperty trsp:organisation ;
     skos:broader "att.761C0FB70D" ;
     skos:exactMatch trsp:att.41F4454A97 ;
