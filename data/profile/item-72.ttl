@@ -5,6 +5,7 @@
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix edenh:  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/edit/main/data/profile/item-72.ttl>
 
 
 trsp:profile.2F48DA2962 a trsp:Profile ;
@@ -13,3 +14,15 @@ trsp:profile.2F48DA2962 a trsp:Profile ;
     dct:identifier "eden://harvester/"  ;
     dcat:endpointURL <https://github.com/EOSC-EDEN/wp2-repo-harvester>  ;
     trsp:hasProfileType "trsp:profile-type-community"  .
+
+edenh:repositoryName a trsp:Property ;
+    rdf:label "Repository name" ;
+    skos:definition "The name or title of the repository or service" ;
+    trsp:linkedProperty trsp:repositoryName ;
+    skos:exactMatch trsp:att.64DA341B5F ;
+    trsp:hasProfile trsp:profile.3C2D6C1C37 ;
+    trsp:hasCardinalityType trsp:cardinality1_1 ;
+    trsp:hasMeasurementType trsp:measurementTypeFormat ;
+    trsp:hasBenchmark "^^xsd:string" ;
+    owl:version "0.4.1" .
+
