@@ -37,3 +37,12 @@ r3d:repositoryOther skos:Concept ;
     skos:prefLabel "Other Repository"@en ;
     skos:definition "Repository not matching any of the other categories."@en .
 
+r3d:repositoryPredecessor skos:Concept ;
+    skos:inScheme r3d:typeRepository ;
+    skos:prefLabel "Predecessor Repository"@en ;
+    skos:definition "Repository preceding the current one."@en .
+
+r3d:repositorySuccessor skos:Concept ;
+    skos:inScheme r3d:typeRepository ;
+    skos:prefLabel "Successor Repository"@en ;
+    skos:definition "Repository succeeding the current one."@en .

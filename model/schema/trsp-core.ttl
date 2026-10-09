@@ -323,9 +323,19 @@ trsp:conceptScheme
     a owl:ObjectProperty ;
     rdfs:domain trsp:Constraint ;
     rdfs:range skos:ConceptScheme ;
-    rdfs:label "concept scheme"@en ;
+    rdfs:label "Concept Scheme"@en ;
     skos:definition
         "Identifies a SKOS Concept Scheme from which an applicable value, set of values, or checklist is drawn."@en .
+
+## concept scheme/ vocabulary
+trsp:registry
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "Registry"@en ;
+    skos:definition
+        "Identifies a Registry from which an applicable value or set of values are returned as IRIs."@en .
+
 
 ## value must be a specific concept
 trsp:concept
@@ -505,6 +515,41 @@ trsp:targetProfileProperty
     rdfs:label "target profile property"@en ;
     skos:definition "Identifies the target Profile Property in a pairwise Property Mapping."@en .
 
+trsp:sourceValue
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "source profile value"@en ;
+    skos:definition "Identifies the source Profile Property value in a pairwise Property Mapping."@en .
+
+trsp:targetValue
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "target profile value"@en ;
+    skos:definition "Identifies the target Profile Property value in a pairwise Property Mapping."@en .
+
+trsp:targetLanguageTagLiteral
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "target profile language tag"@en ;
+    skos:definition "Identifies the target Profile Property that must be tagged with a language ."@en .
+
+trsp:sourceLanguageTag
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "source profile language tag value"@en ;
+    skos:definition "Identifies the source Profile Property that supplies the language value."@en .
+
+trsp:sourceLanguageVocab
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "source profile language tag vocabulary"@en ;
+    skos:definition "Identifies the source language value vocabulary."@en .
+
 trsp:mappedAttribute
     a owl:ObjectProperty ;
     rdfs:domain trsp:PropertyMapping ;
@@ -621,7 +666,7 @@ trsp:Evidence
     skos:definition
         "A resource reference that provides evidence supporting an assertion, assessment, requirement, checklist item, or other claim."@en ;
     rdfs:comment
-        "An Evidence instance represents one evidence resource so that properties describing that resource, including machine actionability, are unambiguous."@en .
+        "An Evidence instance represents one evidence resource so that properties describing that resource, including machine actionability, are unambiguous. The Evidence class can be used to represent qualified identifiers, allowing definition of the scheme, the IRI value, and a title if need be."@en .
 
 trsp:Checklist
     a owl:Class ;
