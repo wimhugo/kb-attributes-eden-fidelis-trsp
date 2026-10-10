@@ -9,6 +9,7 @@
 @prefix sh:   <http://www.w3.org/ns/shacl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <https://schema.org/> .
+@prefix time: <http://www.w3.org/2006/time#>  .
 
 trsp:Ontology
     a owl:Ontology ;
@@ -697,6 +698,16 @@ trsp:evidenceTitle
     rdfs:comment
         "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
 
+## evidence title
+trsp:evidenceInterval
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Evidence ;
+    rdfs:range trsp:DateTimeInterval ;
+    rdfs:label "Evidence Duration"@en ;
+    skos:definition
+        "The interval/ duration for which the evidence applies."@en ;
+    rdfs:comment
+        "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
 
 ## evidence type
 trsp:evidenceType
@@ -913,12 +924,34 @@ trsp:DateTimeInterval
     rdfs:subClassOf time:DateTimeInterval ;
     rdfs:label "Date/time interval"@en ;
     skos:definition
-        "A date or time interval used to express temporal coverage or another bounded temporal extent."@en .
+        "A date or time interval used to express temporal coverage or another bounded temporal extent."@en ;
+    skos:note "An ISO 8601 interval expressed as a single literal."@en .
 
-# confirm this in trsp ProfileProperty
+
+#####################################################################################################################
+# Classes that have Profile Properties
+# These classes are mostly implemented as blank nodes serving as wrappers for properties defined in the TRSP Profile
+# Could be reused in any Profile
+#####################################################################################################################
+
+trsp:ResourceObject
+    a owl:Class ;
+    rdfs:subClassOf dcat:Resource ;
+    rdfs:label "Resource Object"@en ;
+    skos:definition "A resource object that serves as an input or output of a research task or workflow."@en .
+
+
+
+
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
+### confirm this in trsp ProfileProperty
 #trsp:spatialCoverage
 #    a owl:ObjectProperty ;
 #    rdfs:range trsp:SpatialCoverage ;
 #    rdfs:label "spatial coverage"@en ;
 #    skos:definition
 #        "Identifies the spatial or geographic coverage of a resource."@en .
+
+
