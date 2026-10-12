@@ -103,12 +103,14 @@ trsp:typeSemanticEnhancement
   a skos:Concept ;
   skos:prefLabel "Semantic Enhancement"@en ;
   skos:broader trsp:typeImprovementActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeSemanticAnnotation
   a skos:Concept ;
   skos:prefLabel "Semantic Annotation"@en ;
   skos:broader trsp:typeImprovementActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 # QA -------------------------------------------------------
@@ -125,17 +127,20 @@ trsp:typeDepositDocumentation
   a skos:Concept ;
   skos:prefLabel "Quality Assured Deposit Documentation"@en ;
   skos:broader trsp:typeQualityActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCompleteDocs
   a skos:Concept ;
   skos:prefLabel "Documentation Completeness"@en ;
   skos:broader trsp:typeDepositDocumentation ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeMandatoryMetadata
   skos:prefLabel "Mandatory Metadata Verified"@en ;
   skos:broader trsp:typeDepositDocumentation ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 ## Integrity/ authenticity
@@ -144,36 +149,42 @@ trsp:typeIntegrityChecks
   a skos:Concept ;
   skos:prefLabel "Integrity Verification"@en ;
   skos:broader trsp:typeQualityActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForAiContent
   a skos:Concept ;
   skos:prefLabel "Checked for AI-generated Content"@en ;
   skos:broader trsp:typeQualityActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForDuplicatePublication
   a skos:Concept ;
   skos:prefLabel "Checked for Duplicate Publication"@en ;
   skos:broader trsp:typeQualityActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForIrrelevantContent
   a skos:Concept ;
   skos:prefLabel "Checked for Irrelevant Content"@en ;
   skos:broader trsp:typeQualityActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForMaliciousContent
   a skos:Concept ;
   skos:prefLabel "Checked for Malicious Content"@en ;
   skos:broader trsp:typeQualityActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForVirusMalware
   a skos:Concept ;
   skos:prefLabel "Virus and Malware Checking"@en ;
   skos:broader trsp:typeQualityActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 ## Legal and ethical
@@ -182,18 +193,21 @@ trsp:typeLegalEthicsChecks
   a skos:Concept ;
   skos:prefLabel "Legal and Ethical Verification"@en ;
   skos:broader trsp:typeQualityActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForConsentForms
   a skos:Concept ;
   skos:prefLabel "Consent Forms Verified, Linked"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForIllegalContent
   a skos:Concept ;
   skos:prefLabel "Checked for Illegal Content"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForLicenceAssent
@@ -201,18 +215,21 @@ trsp:typeCheckedForLicenceAssent
   skos:prefLabel "Verification of Licence Assent"@en ;
   skos:note "Can be assented to by the depositor, data subject, and/ or end user"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForLicenceCombination
   a skos:Concept ;
   skos:prefLabel "Licence Combination Supported/ Verified"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForPlagiarism
   a skos:Concept ;
   skos:prefLabel "Plagiarism Verification"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 #----------------------------------------------------------
@@ -220,19 +237,21 @@ trsp:typeCheckedForPlagiarism
 #----------------------------------------------------------
 trsp:typePreservationActivity
   a skos:Concept ;
-  skos:prefLabel "Curation Activity"@en ;
+  skos:prefLabel "Preservation Activity"@en ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeBitLevelPreservation
   a skos:Concept ;
   skos:prefLabel "Bit-Level Preservation"@en ;
   skos:broader trsp:typePreservationActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeFormatPreservation
   a skos:Concept ;
   skos:prefLabel "Format Preservation"@en ;
   skos:broader trsp:typePreservationActivity ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 
