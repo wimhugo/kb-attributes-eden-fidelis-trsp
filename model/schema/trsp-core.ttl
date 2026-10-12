@@ -692,7 +692,7 @@ trsp:ChecklistItem
     rdfs:comment
         "ChecklistItem inherits the evidence resource properties of Evidence and adds checklistIRI, whose value is contextually constrained by the checklistSource of the containing Checklist."@en .
 
-trsp:QualitytItem
+trsp:QualityAssertion
     a owl:Class ;
     rdfs:subClassOf trsp:Evidence ;
     rdfs:label "Quality Assertion Item"@en ;
@@ -805,6 +805,8 @@ trsp:checklistIRI
 ## trsp:qualityMeasureStartDate -> trsp:evidenceInterval
 ## trsp:qualityMeasureEndDate -> trsp:evidenceInterval
 ## trsp:qualityMeasureAuthority -> trsp:Organisation
+## trsp:qualityMeasureType
+## 
 
 
 # -------------------------------------------------
@@ -955,6 +957,7 @@ trsp:DateTimeInterval
     a owl:Class ;
     rdfs:subClassOf time:DateTimeInterval ;
     rdfs:label "Date/time interval"@en ;
+    skos:exactMatch dct:PeriodOfTime ;
     skos:definition
         "A date or time interval used to express temporal coverage or another bounded temporal extent."@en ;
     skos:note "An ISO 8601 interval expressed as a single literal."@en .
