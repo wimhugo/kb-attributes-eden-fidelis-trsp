@@ -16,9 +16,11 @@ trsp:checklistEthics
 trsp:ethicsClearance
   a skos:Concept ;
   skos:prefLabel "Ethics Clearance"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistEthics .
 
 trsp:informedConsent
   a skos:Concept ;
   skos:prefLabel "Informed Consent"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistEthics .

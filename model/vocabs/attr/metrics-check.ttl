@@ -17,33 +17,39 @@ trsp:checklistMetrics
 trsp:citationsMetric
   a skos:Concept ;
   skos:prefLabel "Citations"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:pageViewsMetric
   a skos:Concept ;
   skos:prefLabel "Page Views"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:downloadsMetric
   a skos:Concept ;
   skos:prefLabel "Downloads"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:mentionsMetric
   a skos:Concept ;
   skos:prefLabel "Mentions"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:uptimeMetric
   a skos:Concept ;
   skos:prefLabel "Uptime"@en ;
   skos:exactMatch eden://validator/metric/endpointAvailability ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:availabilityMetric
   a skos:Concept ;
   skos:prefLabel "Uptime"@en ;
   skos:exactMatch eden://validator/metric/validationScore ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 

@@ -16,16 +16,19 @@ trsp:checklistDataProtection
 trsp:policy
   a skos:Concept ;
   skos:prefLabel "Policy"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:licence
   a skos:Concept ;
   skos:prefLabel "Licence"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:monitoring
   a skos:Concept ;
   skos:prefLabel "Monitoring"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0000144> ;
   rdfs:seeAlso <http://purl.obolibrary.org/obo/OBI_0000144> ;
   skos:inScheme trsp:checklistDataProtection .
@@ -33,16 +36,19 @@ trsp:monitoring
 trsp:guidance
   a skos:Concept ;
   skos:prefLabel "Guidance"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:disclosureRiskCategorisation
   a skos:Concept ;
   skos:prefLabel "Disclosure Risk Categorisation"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:physicalAccess
   a skos:Concept ;
   skos:prefLabel "Physical Access"@en ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:logicalAccess

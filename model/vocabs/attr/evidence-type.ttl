@@ -19,11 +19,11 @@ trsp:typeEvidence
   skos:prefLabel "General Evidence Types"@en ;
   dct:title "General Evidence Types"@en ;
   dct:description "Evidence ttpes that are not defined elsewhere."@en ;
-  skos:hasTopConcept trsp:typeGovernanceDocs, trsp:typeTypicalDocs ;
+  skos:hasTopConcept trsp:typeGovernanceDocs, trsp:typeTypicalDocs. trsp:typeGuidanceDocs ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   dct:created "2026-05-07"^^xsd:date ;
-  dct:modified "2026-10-08"^^xsd:date ;
-  owl:versionInfo "0.2" .
+  dct:modified "2026-10-12"^^xsd:date ;
+  owl:versionInfo "0.3" .
 
 # --------------------------------------------------------------------------
 # High-Level Concepts
@@ -37,6 +37,12 @@ trsp:typeGovernanceDocs a skos:Concept ;
 trsp:typeTypicalDocs a skos:Concept ;
   skos:prefLabel "Typical Website Documentation"@en ;
   skos:definition "Typical and common website documentation, such as 'About'. Excludes legal, policy, curation, governance, and other specific documents."@en ;
+  skos:topConceptOf trsp:typeEvidence ; 
+  skos:inScheme trsp:typeEvidence .
+
+trsp:typeGuidanceDocs a skos:Concept ;
+  skos:prefLabel "Typical Guidance Documentation"@en ;
+  skos:definition "Typical and common guidance documentation, such as 'FAQ' and user guides. Excludes legal, policy, curation, governance, and other specific documents."@en ;
   skos:topConceptOf trsp:typeEvidence ; 
   skos:inScheme trsp:typeEvidence .
 
@@ -62,6 +68,14 @@ trsp:typeMandate a skos:Concept ;
   skos:broader trsp:typeGovernanceDocs ;
   skos:inScheme trsp:typeEvidence .
 
+# --------------------------------------------------------------------------
+# Guidance Documents
+# --------------------------------------------------------------------------
 
+trsp:typeFAQs a skos:Concept ;
+  skos:prefLabel "FAQ"@en ;
+  skos:definition "Frequently Asked Questions Documentation."@en ;
+  skos:broader trsp:typeGuidanceDocs ;
+  skos:inScheme trsp:typeEvidence .
 
 
