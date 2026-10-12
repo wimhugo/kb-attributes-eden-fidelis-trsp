@@ -145,6 +145,14 @@ trsp:hasProfile
     rdfs:range trsp:Profile ;
     skos:definition "Relates a resource to a profile that defines a set of properties and associated constraints applicable to the description of that resource."@en .
 
+## has profile type
+trsp:hasProfileType
+    a owl:ObjectProperty ;
+    rdfs:label "has profile type"@en ;
+    rdfs:range owl:unionOf (trsp:Profile trsp:Repository trsp:Service) ;
+    skos:definition "Relates a resource to a profile that defines a set of properties and associated constraints applicable to the description of that resource."@en .
+
+
 ## has property
 trsp:hasProperty
     a owl:ObjectProperty ;
@@ -684,6 +692,17 @@ trsp:ChecklistItem
     rdfs:comment
         "ChecklistItem inherits the evidence resource properties of Evidence and adds checklistIRI, whose value is contextually constrained by the checklistSource of the containing Checklist."@en .
 
+trsp:QualitytItem
+    a owl:Class ;
+    rdfs:subClassOf trsp:Evidence ;
+    rdfs:label "Quality Assertion Item"@en ;
+    skos:definition
+        "An Evidence instance associated with a specific concept in the controlled checklist specific to quality assertions, and having additional properties."@en ;
+    rdfs:comment
+        "ChecklistItem inherits the evidence resource properties of ChecklistItem and adds quality-related properties."@en .
+
+
+
 # -------------------------------------------------
 ## Evidence Properties
 
@@ -698,7 +717,7 @@ trsp:evidenceTitle
     rdfs:comment
         "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
 
-## evidence title
+## evidence interval
 trsp:evidenceInterval
     a owl:ObjectProperty ;
     rdfs:domain trsp:Evidence ;
@@ -774,6 +793,19 @@ trsp:checklistIRI
         "Identifies the controlled checklist concept represented by this ChecklistItem."@en ;
     rdfs:comment
         "The value must belong to the ConceptScheme identified by checklistSource on the Checklist containing this item."@en .
+
+# -------------------------------------------------
+## Quality Assertion Properties
+
+## These are included in the TRSP profiles and map to specific Attributes
+## trsp:qualityMeasureName -> trsp:evidenceTitle
+## trsp:qualityMeasureStatus
+## trsp:qualityMeasureURL - trsp:evidenceIRI
+## trsp:qualityMeasureWidget
+## trsp:qualityMeasureStartDate -> trsp:evidenceInterval
+## trsp:qualityMeasureEndDate -> trsp:evidenceInterval
+## trsp:qualityMeasureAuthority -> trsp:Organisation
+
 
 # -------------------------------------------------
 ## SHACL — Evidence property constraints
@@ -927,6 +959,19 @@ trsp:DateTimeInterval
         "A date or time interval used to express temporal coverage or another bounded temporal extent."@en ;
     skos:note "An ISO 8601 interval expressed as a single literal."@en .
 
+####################################################################################################
+## Classes and Properties Related to Orgbisations and Institutions
+####################################################################################################
+
+## Organisation
+trsp:Organisation
+    a owl:Class ;
+    rdfs:subClassOf dcat:Resource ;
+    rdfs:label "Organisation"@en ;
+    skos:definition "An organisation is typically a general catehgory for institutions, commercial companies, international organisations and standards bodies, and government departments or agencies."@en .
+
+## Organisations have many properties defined in the Attribute Concept Scheme and in individual profiles such as the TRSP profile
+
 
 #####################################################################################################################
 # Classes that have Profile Properties
@@ -940,8 +985,23 @@ trsp:ResourceObject
     rdfs:label "Resource Object"@en ;
     skos:definition "A resource object that serves as an input or output of a research task or workflow."@en .
 
+trsp:Identifier
+    a owl:Class ;
+    rdfs:subClassOf dcat:Resource ;
+    rdfs:label "Qualified Identifier"@en ;
+    skos:definition "An identifier (compact identifier, URL, or PID) that is qualified by type."@en .
 
+trsp:Contact
+    a owl:Class ;
+    rdfs:subClassOf vcard:Kind ;
+    rdfs:label "Contact Person or Resource"@en ;
+    skos:definition "Information about contact details, which can include a person or a service."@en .
 
+trsp:Discipline
+    a owl:Class ;
+    rdfs:subClassOf schema:DefinedTerm ;
+    rdfs:label "Discipline"@en ;
+    skos:definition "Scientific discipline or domain, subject applicable to resources."@en .
 
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`

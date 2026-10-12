@@ -12,29 +12,29 @@ r3d:dataAccessTypes a skos:ConceptScheme ;
 
 r3d:dataAccessTypes/open a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
-    skos:prefLabel "open"@en ;
-    skos:definition "open"@en .
+    skos:prefLabel "Open"@en ;
+    skos:definition "Open Access"@en .
     skos:broader r3d:dataAccessTypes ;
     skos:related r3d:dataAccessTypes/embargoed .
 
 r3d:dataAccessTypes/embargoed a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
-    skos:prefLabel "embargoed"@en ;
-    skos:definition "embargoed"@en .
+    skos:prefLabel "Embargoed"@en ;
+    skos:definition "Embargoed Access"@en .
     skos:broader r3d:dataAccessTypes ;
     skos:related r3d:dataAccessTypes/open .
 
 r3d:dataAccessTypes/restricted a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
-    skos:prefLabel "restricted"@en ;
-    skos:definition "restricted"@en .
+    skos:prefLabel "Restricted"@en ;
+    skos:definition "Restricted Access"@en .
     skos:broader r3d:dataAccessTypes ;
     skos:related r3d:dataAccessTypes/closed .
 
 r3d:dataAccessTypes/closed a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
-    skos:prefLabel "closed"@en ;
-    skos:definition "closed"@en .
+    skos:prefLabel "Closed"@en ;
+    skos:definition "Closed Access"@en .
     skos:broader r3d:dataAccessTypes ;
     skos:related r3d:dataAccessTypes/restricted .
 

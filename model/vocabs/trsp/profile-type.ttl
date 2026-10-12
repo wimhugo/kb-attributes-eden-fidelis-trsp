@@ -13,7 +13,7 @@
 @prefix fairsharing: <https://fairsharing.org/> .
 @prefix r3d: <https://fairsharing.org/> .
 
-trsp:profile-test-type-scheme a skos:ConceptScheme ;
+trsp:typeProfile a skos:ConceptScheme ;
   dct:created "2026-04-29T00:00:00+00:00"^^xsd:datetime;
   dct:creator <https://orcid.org/0000-0002-0255-5101>;
   dct:contributor <https://orcid.org/0000-0003-1106-8441>;
@@ -44,7 +44,7 @@ trsp:profileTypeRepository
   skos:exactMatch gorc:repository ;
   skos:closeMatch "fairsharing:repository" ;
   rdfs:seeAlso gorc:repository ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:profileType .
 
 trsp:profileTypeService 
   a skos:Concept ;
@@ -60,7 +60,7 @@ trsp:profileTypeService
   rdfs:seeAlso gorc:service ;
   skos:broadMatch posi:S6 ;
   rdfs:seeAlso posi:S6 ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:profileType .
 
 trsp:profileTypeProject
   a skos:Concept ;
@@ -70,14 +70,14 @@ trsp:profileTypeProject
   skos:altLabel "repository Types (re3data)"@en ;
   skos:broadMatch re3data:repositoryTypes_project-related ;
   rdfs:seeAlso re3data:repositoryTypes_project-related ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:profileType .
 
 rsp:profileTypeSource 
   a skos:Concept ;
   skos:prefLabel "Source"@en ;
   skos:definition "The profile represents the attributes published by an authoritative Source, such as a working group or an infrastructure."@en ;
   dcterms:source <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp> ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:profileType .
 
 trsp:profileTypeStandard
   a skos:Concept ;
@@ -91,7 +91,7 @@ trsp:profileTypeStandard
   rdfs:seeAlso fair:A1 ;
   skos:broadMatch posi:I5 ;
   rdfs:seeAlso posi:I5 ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:profileType .
 
 trsp:profileTypeCommunityProfile
   a skos:Concept ;
@@ -107,7 +107,7 @@ trsp:profileTypeCommunityProfile
   rdfs:seeAlso fair:R1_3 ;
   skos:broadMatch posi:G7 ;
   rdfs:seeAlso posi:G7 ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:profileType .
 
 trsp:profileTypeUserProfile
   a skos:Concept ;
@@ -122,4 +122,4 @@ trsp:profileTypeUserProfile
   rdfs:seeAlso gorc:user ;
   skos:broadMatch trust:userFocus ;
   rdfs:seeAlso trust:userFocus ;
-  skos:inScheme trsp:ConceptScheme .
+  skos:inScheme trsp:profileType .

@@ -33,6 +33,12 @@ trsp:repositorySoftwarePlatforms
         reg:MyCoRe,
         reg:MIR .
 
+trsp:platformName
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:RepositorySoftwarePlatform ;
+    rdfs:label "platform name"@en ;
+    skos:definition "A common name or label for the software platform or package."@en .
+
 trsp:platformIRI
     a owl:ObjectProperty ;
     rdfs:domain trsp:RepositorySoftwarePlatform ;

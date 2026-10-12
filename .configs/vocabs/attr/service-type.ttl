@@ -416,8 +416,6 @@ trsp:typeFAIRiCat
   skos:broader trsp:typeInterface ;
   skos:inScheme trsp:typeService .
 
-# SearchAction is retained because it occurs as a source service type, but it
-# represents a capability/action rather than a protocol.
 trsp:typeSearchAction
   a skos:Concept ;
   skos:prefLabel "Search Action"@en ;
@@ -425,14 +423,6 @@ trsp:typeSearchAction
   skos:note "Observed as the literal service type 'SearchAction'; modelled as a purpose/capability rather than an interface protocol."@en ;
   skos:broader trsp:typeMetadataDiscovery ;
   skos:inScheme trsp:typeService .
-
-# NetCDF is not promoted to a service-type concept because it is primarily a
-# data/file format. The observed value should be handled as a source-data
-# normalization issue or linked through a separate format vocabulary.
-
-# The observed literal 'dcat:DataService' is not promoted as a separate source
-# service type; the existing Data Services concept below is linked to the
-# canonical dcat:DataService class.
 
 # ==========================================================================
 # Automation Level
@@ -501,8 +491,15 @@ trsp:typeHumanInTheLoop
 
 # ==========================================================================
 # EDEN Service Specialisation
-# Retained and lightly normalized from version 0.1.
+# Retained from version 0.1.
 # ==========================================================================
+
+trsp:typeSoftwarePlatform
+  a skos:Concept ;
+  skos:prefLabel "Software Platform or Package"@en ;
+  skos:definition "Software platform or package used for repository-related services, such as Dataverse, Invenio, CKAN, DSpace, and similar."@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
 
 trsp:typeConsultingService
   a skos:Concept ;

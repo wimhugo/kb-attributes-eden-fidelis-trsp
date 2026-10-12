@@ -7,7 +7,7 @@
 
 trsp:typeRepoStatus
   a skos:ConceptScheme ;
-  skos:prefLabel "Repository Status"@en ;
+  skos:prefLabel "Repository or Service Status"@en ;
   dct:title "Repository Status"@en ;
   dct:created "2026-05-07"^^xsd:date ;
   dct:modified "2026-05-07"^^xsd:date ;
@@ -26,4 +26,14 @@ trsp:beta
 trsp:planned
   a skos:Concept ;
   skos:prefLabel "Planned"@en ;
+  skos:inScheme trsp:typeRepoStatus .
+
+trsp:closed
+  a skos:Concept ;
+  skos:prefLabel "Closed"@en ;
+  skos:inScheme trsp:typeRepoStatus .
+
+trsp:offline
+  a skos:Concept ;
+  skos:prefLabel "Permanently Offline"@en ;
   skos:inScheme trsp:typeRepoStatus .
