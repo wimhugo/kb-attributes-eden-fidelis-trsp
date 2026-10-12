@@ -47,29 +47,34 @@ trsp:typeLicence a skos:Concept ;
   skos:definition "An explicit licence for a resource such as a dataset, publication, software object, or other asset."@en ;
   trsp:correspondingClass openrel:Licence ;
   trsp:correspondingProperty dct:license ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:typeExplicitPolicy a skos:Concept ;
   skos:prefLabel "Explicit Policy"@en ;
   trsp:correspondingClass openrel:Policy, odrl:Policy, dct:Policy, dcat:Policy ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:typeAccessRules a skos:Concept ;
   skos:prefLabel "Access Rules"@en ;
   skos:definition "Rules defining constraints or conditions associated with access, including citation."@en ;
   trsp:correspondingClass openrel:AccessRules ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:typeProcessRules a skos:Concept ;
   skos:prefLabel "Process Rules"@en ;
   skos:definition "Rules defining process formalities imposed by a software platform, infrastructure, federation, or dissemination channel."@en ;
   trsp:correspondingClass openrel:ProcessRules ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:typePolicyPurpose a skos:Concept ;
   skos:prefLabel "Policy Purpose"@en ;
   skos:definition "The subject, objective, or operational concern addressed by a policy."@en ;
   skos:topConceptOf trsp:checklistPolicies ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 # Curation-related policies
@@ -82,18 +87,21 @@ trsp:curationPolicy
                 "Data Stewardship Policy"@en ;
   skos:definition "Policy governing the management and stewardship of data, metadata, records, and other digital content through their lifecycle, including selection and accession, appraisal, ethics clearance and verification, description and metadata, identifier management, licensing, format management, preservation, retention, versioning, interoperability, and assessment or mitigation of disclosure risk."@en ;
   skos:broader trsp:typePolicyPurpose ;
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:versioningPolicy a skos:Concept ; 
   skos:prefLabel "Versioning Policy"@en ;
   skos:definition "Policy governing creation, identification, retention, or management of versions of data or other repository objects."@en ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:retentionPolicy a skos:Concept ; 
   skos:prefLabel "Retention Policy"@en ;
   skos:definition "Policy governing how long data, metadata, records, or other objects are retained and the conditions for their continued retention or disposal."@en ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:preservationPolicy a skos:Concept ; 
@@ -102,6 +110,7 @@ trsp:preservationPolicy a skos:Concept ;
   trsp:hasStringMapping "Preservation-policy", "Preservation_Policy", "long-term-data-preservation" ;
   trsp:correspondingClass premis:PreservationPolicy ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:sustainabilityPolicy a skos:Concept ; 
@@ -109,6 +118,7 @@ trsp:sustainabilityPolicy a skos:Concept ;
   skos:definition "Policy addressing organizational, financial, technical, or other measures intended to sustain a repository or service over time."@en ;
   trsp:correspondingClass fairsharing:SustainabilityPolicy ;
   skos:broader trsp:typePolicyPurpose ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:appraisalPolicy a skos:Concept ; 
@@ -116,6 +126,7 @@ trsp:appraisalPolicy a skos:Concept ;
   skos:altLabel "Reappraisal Policy"@en ;
   skos:definition "Policy governing appraisal or reappraisal decisions concerning selection, retention, preservation, or disposal of content."@en ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:accessionPolicy a skos:Concept ; 
@@ -128,12 +139,14 @@ trsp:accessionPolicy a skos:Concept ;
   skos:definition "Policy governing the scope, selection, acquisition, development, deposit, submission, accession, acceptance, or composition of content entering or maintained as part of a repository or collection."@en ;
   trsp:correspondingClass dct:accrualPolicy ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:disclosureRiskAssessment a skos:Concept ; 
   skos:prefLabel "Disclosure Risk Assessment"@en ;
   skos:definition "Policy governing assessment and mitigation of disclosure risks associated with access to or release of data."@en ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:accessPolicy a skos:Concept ; 
@@ -147,24 +160,28 @@ trsp:accessPolicy a skos:Concept ;
   skos:definition "Policy governing access to, availability of, sharing of, dissemination of, citation of, or onward provision of data and other resources, including open access and the eligibility, conditions, timing, assessment, approval, or other decisions associated with requests for access."@en ;
   trsp:hasStringMapping "data-availability-policy", "citationpage" ;
   skos:broader trsp:typePolicyPurpose ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:bibliographicMetadataPolicy a skos:Concept ; 
   skos:prefLabel "Bibliographic Metadata Policy"@en ;
   skos:definition "Policy governing creation, management, publication, or use of bibliographic or descriptive metadata."@en ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:policyDevelopment a skos:Concept ; 
   skos:prefLabel "Policy Development"@en ;
   skos:definition "Policy or practice governing the development, review, approval, or maintenance of organizational policies."@en ;
   skos:broader trsp:typePolicyPurpose ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:ethicsClearanceVerification a skos:Concept ; 
   skos:prefLabel "Ethics Clearance Verification Policy"@en ;
   skos:definition "Policy governing verification of ethics approval or clearance associated with data deposit, processing, access, or reuse."@en ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:persistentIdentifierPolicy a skos:Concept ; 
@@ -173,6 +190,7 @@ trsp:persistentIdentifierPolicy a skos:Concept ;
   skos:broadMatch fair:F1 ; 
   rdfs:seeAlso gorc:pid ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:licencePolicy a skos:Concept ; 
@@ -180,12 +198,14 @@ trsp:licencePolicy a skos:Concept ;
   skos:definition "Policy governing selection, assignment, communication, or management of licences for repository content or services."@en ;
   trsp:correspondingProperty dct:license ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:preferredFormats a skos:Concept ; 
   skos:prefLabel "Preferred Formats Policy"@en ;
   skos:definition "Policy defining preferred, accepted, supported, or preservation-suitable file formats."@en ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 # General purpose policies
@@ -195,6 +215,7 @@ trsp:compliancePolicy a skos:Concept ;
   skos:definition "Policy governing conformance with applicable requirements, standards, specifications, legal obligations, or organizational rules."@en ;
   trsp:correspondingProperty dct:conformsTo ;
   skos:broader trsp:typePolicyPurpose ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:rightsPolicy a skos:Concept ; 
@@ -202,6 +223,7 @@ trsp:rightsPolicy a skos:Concept ;
   skos:definition "Policy governing protection, attribution, ownership, or exercise of rights associated with data or other resources."@en ;
   skos:broadMatch care:A1 ;
   skos:broader trsp:typePolicyPurpose ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:aiPolicy a skos:Concept ; 
@@ -209,34 +231,30 @@ trsp:aiPolicy a skos:Concept ;
   skos:altLabel "Responsible Use of AI in the Organisation"@en ;
   skos:definition "Policy governing responsible development, deployment, procurement, or use of artificial intelligence."@en ;
   skos:broader trsp:typePolicyPurpose ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:interoperabilityPolicy a skos:Concept ; 
   skos:prefLabel "Interoperability Policy"@en ;
   skos:definition "Policy governing interoperability requirements, conventions, standards, or practices."@en ;
   skos:broader trsp:curationPolicy ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:dataSecurityAndIntegrityPolicy a skos:Concept ; 
   skos:prefLabel "Data Security and Integrity Policy"@en ;
   skos:definition "Policy governing protection of data confidentiality, integrity, availability, security, or related safeguards."@en ;
   skos:broader trsp:typePolicyPurpose ; 
+  trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:qualityPolicy a skos:Concept ;
   skos:prefLabel "Quality Policy"@en ;
   skos:definition "Policy governing quality objectives, assessment, assurance, or improvement of data, metadata, repositories, or services."@en ;
   trsp:correspondingClass dqv:QualityPolicy ;
+  trsp:imperative trsp:typeRecommended ;
   skos:broader trsp:typePolicyPurpose ; skos:inScheme trsp:checklistPolicies .
 
-trsp:faqPolicy a skos:Concept ;
-  skos:prefLabel "Policy FAQ"@en ;
-  skos:definition "Policy governing quality objectives, assessment, assurance, or improvement of data, metadata, repositories, or services."@en ;
-  skos:altLabel "FAQ"@en , 
-                "Frequently Asked Questions"@en ; 
-  trsp:hasStringMapping "http://fairsharing.org/model/fairsharing_record_schema#SustainabilityPolicy" ;
-  trsp:correspondingClass dcterms:Policy ;
-  skos:broader trsp:typePolicyPurpose ; skos:inScheme trsp:checklistPolicies .
 
 
 
