@@ -35,6 +35,9 @@ trsp:typeImperative a skos:ConceptScheme ;
 trsp:typeMandatory a skos:Concept ;
     skos:definition "An absolute requirement. This concept represents the BCP 14 imperative MUST and its equivalent forms REQUIRED and SHALL."@en ;
     skos:prefLabel "Mandatory"@en ;
+    skos:altLabel "MUST"@en ;   
+    skos:altLabel "SHALL"@en ;  
+    skos:altLabel "REQUIRED"@en ;  
     dct:source <https://www.rfc-editor.org/info/bcp14> ;
     rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
                  <https://www.rfc-editor.org/rfc/rfc8174> ;
@@ -43,9 +46,9 @@ trsp:typeMandatory a skos:Concept ;
 trsp:typeProhibited a skos:Concept ;
     skos:prefLabel "Prohibited"@en ;
     skos:altLabel "SHALL NOT"@en ;
+    skos:altLabel "MUST NOT" ;
     skos:definition "An absolute prohibition: the specified behaviour or condition is prohibited by the requirement."@en ;
     skos:inScheme trsp:typeImperative ;
-    skos:notation "MUST NOT" ;
     dct:source <https://www.rfc-editor.org/info/bcp14> ;
     rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
                  <https://www.rfc-editor.org/rfc/rfc8174> ;
@@ -53,6 +56,8 @@ trsp:typeProhibited a skos:Concept ;
 
 trsp:typeRecommended a skos:Concept ;
     skos:prefLabel "Recommended"@en ;
+    skos:altLabel "SHOULD"@en ;
+    skos:altLabel "RECOMMENDED" ;    
     skos:definition "A recommended requirement for which valid reasons may exist in particular circumstances to ignore or depart from the stated condition. This concept represents the BCP 14 imperative SHOULD and its equivalent form RECOMMENDED."@en ;
     dct:source <https://www.rfc-editor.org/info/bcp14> ;
     rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
@@ -61,9 +66,9 @@ trsp:typeRecommended a skos:Concept ;
 
 trsp:typeNotRecommended a skos:Concept ;
     skos:prefLabel "Not Recommended"@en ;
+    skos:altLabel "SHOULD NOT" ;
     skos:altLabel "NOT RECOMMENDED"@en ;
     skos:definition "A behaviour or condition that should normally be avoided, although particular circumstances may justify an exception when the implications are understood and carefully weighed."@en ;
-    skos:notation "SHOULD NOT" ;
     dct:source <https://www.rfc-editor.org/info/bcp14> ;
     rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
                  <https://www.rfc-editor.org/rfc/rfc8174> ;
@@ -71,6 +76,8 @@ trsp:typeNotRecommended a skos:Concept ;
 
 trsp:typeOptional a skos:Concept ;
     skos:prefLabel "Optional"@en ;
+    skos:altLabel "MAY" ;
+    skos:altLabel "OPTIONAL" ;
     skos:definition "An optional requirement or feature. This concept represents the BCP 14 imperative MAY and its equivalent form OPTIONAL."@en ;
     dct:source <https://www.rfc-editor.org/info/bcp14> ;
     rdfs:seeAlso <https://www.rfc-editor.org/rfc/rfc2119> ,
