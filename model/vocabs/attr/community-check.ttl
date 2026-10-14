@@ -5,52 +5,57 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
-trsp:checklistCurationPreservationType
+trsp:checklistCommunityEngagement
   a skos:ConceptScheme ;
-  skos:prefLabel "Curation Levels, Automation, and Activities."@en ;
-  dct:title "Level of Curation"@en ;
+  skos:prefLabel "Community Engagement."@en ;
+  dct:title "Community Engagement"@en ;
+  skos:definition "Checklist for documentation and evidence on community engagement"@en ;
   dct:created "2026-05-07"^^xsd:date ;
   dct:modified "2026-05-07"^^xsd:date ;
-  skos:hasTopConcept trsp:typeLORCAP ,
-                     trsp:typeCurationActivity ,
-                     trsp:typePreservationActivity ,
-                     trsp:typeAutomationLevel ;
+  skos:hasTopConcept trsp:typeBenefit ,
+                     trsp:typeResponsible ,
+                     trsp:typeInclusivity ,
+                     trsp:typeUserNeeds ;
   owl:versionInfo "0.1" .
 
 #----------------------------------------------------------
-# Curation Level
+# Community Benefits
 #----------------------------------------------------------
-trsp:typeLORCAP
+trsp:typeBenefit
   a skos:Concept ;
-  skos:prefLabel "Levels of Curation and Preservation"@en ;
-  skos:inScheme trsp:checklistCurationPreservationType .
+  skos:prefLabel "Community Benefit"@en ;
+  skos:definition "Active measures to ensure community benefit, aligned with CARE."@en ;
+  skos:inScheme trsp:typeBenefit .
 
-trsp:typeDatalevelCuration
+trsp:typeBenefitCapability
   a skos:Concept ;
-  skos:prefLabel "Data-level"@en ;
-  skos:broader trsp:typeLORCAP ;
-  skos:inScheme trsp:checklistCurationPreservationType .
+  skos:prefLabel "Expand Capability and Capacity"@en ;
+  skos:relatedMatch care:collectiveBenefit ;
+  skos:inScheme trsp:typeBenefit .
 
-trsp:typeEnhancedCuration
+trsp:typeBenefitEquitable
   a skos:Concept ;
-  skos:prefLabel "Enhanced"@en ;
-  skos:broader ttrsp:typeLORCAP ;
-  skos:inScheme trsp:checklistCurationPreservationType .
-
-trsp:typeBasicCuration
-  a skos:Concept ;
-  skos:prefLabel "Basic"@en ;
-  skos:broader trsp:typeLORCAP ;
-  skos:inScheme trsp:checklistCurationPreservationType .
-
-trsp:typeAsDeposited
-  a skos:Concept ;
-  skos:prefLabel "Content distributed as deposited"@en ;
-  skos:broader trsp:typeLORCAP ;
-  skos:inScheme trsp:checklistCurationPreservationType 
+  skos:prefLabel "Engagement is Equitable"@en ;
+  skos:relatedMatch care:collectiveBenefit, care:C3 ;
+  skos:inScheme trsp:typeBenefit .
 
 #----------------------------------------------------------
-# Automation
+# Respect and Responsibility
+#----------------------------------------------------------
+trsp:typeResponsible
+  a skos:Concept ;
+  skos:prefLabel "Community Benefit"@en ;
+  skos:definition "Active measures to ensure community benefit, aligned with CARE."@en ;
+  skos:inScheme trsp:typeBenefit .
+
+trsp:typeBenefitRespect
+  a skos:Concept ;
+  skos:prefLabel "Positive Respectful Relations"@en ;
+  skos:relatedMatch care:responsibility, care:R1 ;
+  skos:inScheme trsp:typeResponsible .
+
+#----------------------------------------------------------
+# Inclusivity
 #----------------------------------------------------------
 trsp:typeAutomationLevel
   a skos:Concept ;

@@ -11,7 +11,7 @@
 # Prototype registry ontology
 # -----------------------------------------------------------------------------
 
-reg:RegistryOntology
+reg:RegistrySubjectSchemes
     a owl:Ontology ;
     dct:title "Prototype registry of scientific subject encoding schemes"@en ;
     dct:description "A prototype registry describing classifications, taxonomies and thesauri that can be used to encode scientific or research subjects. Registry records describe schemes; they do not reproduce the scheme contents."@en ;

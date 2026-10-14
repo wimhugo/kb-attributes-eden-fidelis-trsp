@@ -1,0 +1,43 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix reg: <https://example.org/trsp-registry/subject-schemes/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix reg: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/tree/main/data/registry>
+
+# -----------------------------------------------------------------------------
+# Proxy Registry Inventory
+# External registries recommended by TRSP
+# -----------------------------------------------------------------------------
+
+reg:RegistryProxy
+    a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    dct:title "Proxy inventory of useful registries"@en ;
+    dct:description "Assisting with unambiguous identification of non-PID resource instances as IRIs."@en ;
+    dct:created "2026-10-07"^^xsd:date .
+
+reg:hasServiceInstance
+    a rdfs:Property ;
+    rdfs:domain reg:RegistryProxy ;
+    rdfs:range trsp:anyIRI ;
+    skos:prefLabel "Service Instance" ;
+    skos:definition "The service instance to be used for IRI references." 
+    .
+
+reg:LFS
+    a reg:RegistryProxy ;
+    rdfs:label "Licence Facade Service"@en ;
+    skos:definition "Unambiguous Identifiers that include SPDX identifiers."@en ;
+    reg:hasService <EOSC EDEN lfs service instance>
+    .
+
+reg:FileType
+    a reg:RegistryProxy ;
+    rdfs:label "File Type Service"@en ;
+    skos:definition "Unambiguous Identifiers that include MIME Types."@en ;
+    reg:hasService <EOSC Data Commons file type service instance>
+    .
