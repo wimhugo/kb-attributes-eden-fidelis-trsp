@@ -28,7 +28,7 @@ trsp:{{targetConceptScheme}}
         trsp:constraintType trsp:iriConstraint ;
         trsp:nodeKind sh:IRI
     ] ;
-    # DatatypeConstraint
+    #DatatypeConstraint
     trsp:hasConstraint [
         a trsp:Constraint ;
         trsp:constraintType trsp:dataTypeConstraint ;
@@ -42,7 +42,7 @@ trsp:{{targetConceptScheme}}
         trsp:nodeKind sh:IRI ;
         trsp:valueClass {{trsp:algorithmClass}}
     ] ;
-    # VocabularyConstraint
+    #VocabularyConstraint
     trsp:hasConstraint [
         a trsp:Constraint ;
         trsp:constraintType trsp:vocabularyConstraint ;
@@ -50,7 +50,7 @@ trsp:{{targetConceptScheme}}
         trsp:conceptScheme ex:conceptScheme ;
         trsp:concept ex:specificConcept
     ] ;
-    # Computed/aggregation constraint — optional block
+    #AggregationConstraint
     trsp:hasConstraint [
         a trsp:Constraint ;
         trsp:constraintType trsp:aggregationConstraint ;
