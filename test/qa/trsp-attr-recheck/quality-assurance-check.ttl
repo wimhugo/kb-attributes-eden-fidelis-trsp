@@ -145,9 +145,9 @@ trsp:iso16363
   skos:source <https://www.iso.org/standard/87472.html> ;
   skos:inScheme trsp:checklistQualityAssurance .
 
-trsp:typeFAIRAssessment
+trsp:typeFAIRQuality
   a skos:Concept ;
-  skos:prefLabel "FAIR Assessment"@en ;
-  dct:description "Formal FAIR Assessment. "@en ;
+  skos:prefLabel "FAIR Quality Assessment"@en ;
+  dct:description "Formal FAIR Quality Assessment. "@en ;
   skos:broader trsp:qualityRDMI ;
   skos:inScheme trsp:checklistQualityAssurance .
