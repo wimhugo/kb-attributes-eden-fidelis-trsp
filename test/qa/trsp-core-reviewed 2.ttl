@@ -157,8 +157,9 @@ trsp:hasProfile
 trsp:hasProfileType
     a owl:ObjectProperty ;
     rdfs:label "has profile type"@en ;
-    rdfs:range [ a owl:Class ; owl:unionOf (trsp:Profile trsp:Repository trsp:Service) ] ;
-    skos:definition "Relates a resource to a profile that defines a set of properties and associated constraints applicable to the description of that resource."@en .
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Profile trsp:Repository trsp:Service) ] ;
+    rdfs:range skos:Concept ;
+    skos:definition "type of Profile, from a concept scheme ."@en .
 
 ## has property
 trsp:hasProperty

@@ -1,8 +1,8 @@
-@prefix trsp: <https://example.org/trsp/> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdft: <http://www.w3.org/2001/XMLSchema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 #################################
@@ -257,3 +257,18 @@ trsp:ChecklistItemShape
         sh:message
             "Each ChecklistItem must identify exactly one checklist concept using checklistIRI."@en
     ] .
+# Attach reusable property shapes to the classes on which they are applicable.
+# These properties are valid on both Attributes and Profile Properties.
+trsp:AttributeTypeConstraintsShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Attribute ;
+    sh:property trsp:CardinalityTypePropertyShape,
+                trsp:MeasurementTypePropertyShape,
+                trsp:BenchmarkPropertyShape .
+
+trsp:ProfilePropertyTypeConstraintsShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:ProfileProperty ;
+    sh:property trsp:CardinalityTypePropertyShape,
+                trsp:MeasurementTypePropertyShape,
+                trsp:BenchmarkPropertyShape .

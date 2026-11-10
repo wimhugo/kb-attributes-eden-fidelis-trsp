@@ -9,6 +9,12 @@
 @prefix sh:   <http://www.w3.org/ns/shacl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix schema: <https://schema.org/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix gn: <https://www.geonames.org/ontology#> .
+@prefix ogc: <http://www.opengis.net/ont/geosparql#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix time: <http://www.w3.org/2006/time#>  .
 
 trsp:Ontology
@@ -16,7 +22,7 @@ trsp:Ontology
     dct:title "TRSP Ontology"@en ;
     dct:description "TRSP Ontology: Schema definition, concept schemes, and constraints for Attributes, Profiles, Repositories, and Services. Used by TRSP WG, EOSC EDEN, and EOSC FIDELIS."@en ;
     dct:created "2026-04-29T00:00:00+00:00"^^xsd:dateTime;
-    dct:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime;
+    dct:modified "2026-11-10T00:00:00+00:00"^^xsd:dateTime;
     dct:creator <https://orcid.org/0000-0002-0255-5101>;
     dct:contributor <https://orcid.org/0000-0003-1106-8441> .
 
@@ -110,12 +116,13 @@ trsp:ProfileProperty
     rdfs:label "Profile Property"@en ;
     skos:definition "A definition of the use of an RDF property within a particular profile, including any constraints, mappings, or other characteristics applicable to that use."@en .
 
-# -------------------------------------------
+# -------------------------------------------------------------------------------------------------
 ## Properties used for Attributes and Profiles
 
 ## Corresponding external class
 trsp:correspondingClass
     a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range rdfs:Class ;
     rdfs:label "corresponding class"@en ;
     skos:definition "Relates a TRSP class to an external RDF class representing a closely corresponding kind of resource without asserting formal subclass or equivalence semantics."@en .
@@ -141,6 +148,7 @@ trsp:hasAttribute
 ## has profile
 trsp:hasProfile
     a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:ProfileProperty trsp:Repository trsp:Service) ] ;
     rdfs:label "has profile"@en ;
     rdfs:range trsp:Profile ;
     skos:definition "Relates a resource to a profile that defines a set of properties and associated constraints applicable to the description of that resource."@en .
@@ -149,9 +157,9 @@ trsp:hasProfile
 trsp:hasProfileType
     a owl:ObjectProperty ;
     rdfs:label "has profile type"@en ;
-    rdfs:range owl:unionOf (trsp:Profile trsp:Repository trsp:Service) ;
-    skos:definition "Relates a resource to a profile that defines a set of properties and associated constraints applicable to the description of that resource."@en .
-
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Profile trsp:Repository trsp:Service) ] ;
+    rdfs:range skos:Concept ;
+    skos:definition "type of Profile, from a concept scheme ."@en .
 
 ## has property
 trsp:hasProperty
@@ -169,6 +177,16 @@ trsp:property
     rdfs:range rdf:Property ;
     skos:definition "Identifies the RDF property represented by a profile property."@en .
 
+## Alternative name used in profile instance data for an RDF predicate
+trsp:linkedProperty
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileProperty ;
+    rdfs:range rdf:Property ;
+    rdfs:subPropertyOf trsp:property ;
+    rdfs:label "linked property"@en ;
+    skos:definition "Identifies an RDF predicate used to encode the characteristic specified by a Profile Property."@en ;
+    skos:note "trsp:property is the canonical general predicate. This more specific predicate is retained for compatibility with profile instance data."@en .
+
 ## optional intrinsic property path
 trsp:propertyPath
     a rdf:Property ;
@@ -179,10 +197,12 @@ trsp:propertyPath
 
 # -----------------------------------------------------------------------------------------------------
 ## Properties used for Attribute Recommendations and Best Practices, Profile Property Specifications
+# -----------------------------------------------------------------------------------------------------
 
 ## cardinality type
 trsp:hasCardinalityType
     a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:label "has cardinality type"@en ;
     rdfs:range skos:Concept ;
     skos:definition
@@ -194,6 +214,7 @@ trsp:hasCardinalityType
 trsp:hasMeasurementType
     a owl:ObjectProperty ;
     rdfs:label "has measurement type"@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range skos:Concept ;
     skos:definition
         "Identifies the measurement type associated with an Attribute or Profile Property, indicating the general form of value or observation through which the characteristic is represented or assessed."@en ;
@@ -204,6 +225,7 @@ trsp:hasMeasurementType
 trsp:hasBenchmark
     a owl:ObjectProperty ;
     rdfs:label "has benchmark"@en ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range skos:Concept;
     skos:definition
         "Identifies the benchmark associated with an Attribute or Profile Property, indicating the type of criterion against which a value or assessment result can be evaluated."@en ;
@@ -226,12 +248,13 @@ trsp:Constraint
 ## Association with Attribute or ProfileProperty
 trsp:hasConstraint
     a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range trsp:Constraint ;
     rdfs:label "has constraint"@en ;
     skos:definition
         "Relates an Attribute or Profile Property to a constraint applicable to its value or evaluation."@en ;
     rdfs:comment
-        "No RDFS domain is asserted because this property is intended for use with both trsp:Attribute and trsp:ProfileProperty."@en .
+        "The domain is the union of trsp:Attribute and trsp:ProfileProperty, rather than two independent RDFS domains."@en .
 
 ## Constraint classification
 trsp:constraintType
@@ -422,14 +445,12 @@ trsp:targetProfileProperty
 trsp:sourceValue
     a owl:ObjectProperty ;
     rdfs:domain trsp:PropertyMapping ;
-    rdfs:range trsp:ProfileProperty ;
     rdfs:label "source profile value"@en ;
     skos:definition "Identifies the source Profile Property value in a pairwise Property Mapping."@en .
 
 trsp:targetValue
     a owl:ObjectProperty ;
     rdfs:domain trsp:PropertyMapping ;
-    rdfs:range trsp:ProfileProperty ;
     rdfs:label "target profile value"@en ;
     skos:definition "Identifies the target Profile Property value in a pairwise Property Mapping."@en .
 
@@ -470,6 +491,7 @@ trsp:mappedAttribute
 ## Mapping type
 trsp:mappingType
     a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
     rdfs:range skos:Concept ;
     rdfs:label "mapping type"@en ;
     skos:definition
@@ -480,6 +502,7 @@ trsp:mappingType
 ## Mapping type
 trsp:mappingAlgorithm
     a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
     rdfs:label "mapping algorithm"@en ;
     skos:definition
         "Identifies a reusable algorithm or transformation definition applicable to this particular mapping."@en ;
@@ -506,14 +529,14 @@ trsp:hasStringMapping
         "Relates a mapping to a string or altLabel-level correspondence - often in the title or IRI of the source."@en .
 
 ## source value
-trsp:sourceValue
+trsp:sourceMappedValue
     a rdf:Property ;
     rdfs:domain trsp:ValueMapping ;
     rdfs:label "source value"@en ;
     skos:definition "Identifies the source value, concept, or value pattern in a Value Mapping."@en .
 
 ## target value
-trsp:targetValue
+trsp:targetMappedValue
     a rdf:Property ;
     rdfs:domain trsp:ValueMapping ;
     rdfs:label "target value"@en ;
@@ -693,14 +716,14 @@ trsp:SpatialCoverage
         "A spatial entity that may be used to express the spatial coverage of a resource."@en ;
     owl:equivalentClass [
         a owl:Class ;
-        owl:unionOf (
-            dct:Location
-            schema:Place
-            geo:Feature
-            gn:Feature
-            ogc:Envelope
-            dpv:Region
-        )
+            owl:unionOf (
+                dct:Location
+                schema:Place
+                geo:Feature
+                gn:Feature
+                ogc:Envelope
+                dpv:Region
+            )
     ] .
 
 trsp:DateTimeInterval
@@ -708,9 +731,8 @@ trsp:DateTimeInterval
     rdfs:subClassOf time:DateTimeInterval ;
     rdfs:label "Date/time interval"@en ;
     skos:exactMatch dct:PeriodOfTime ;
-    skos:definition
-        "A date or time interval used to express temporal coverage or another bounded temporal extent."@en ;
-    skos:note "An ISO 8601 interval expressed as a single literal."@en .
+    skos:definition "A date or time interval used to express temporal coverage or another bounded temporal extent."@en ;
+    skos:note "Can be an ISO 8601 interval expressed as a single literal."@en .
 
 ####################################################################################################
 ## Classes and Properties Related to Orgbisations and Institutions
@@ -770,8 +792,7 @@ trsp:SourceReference
     rdfs:label "Source reference"@en ;
     skos:definition	"A contextual reference showing that a source, optionally including a specific annotation, supports or motivates one or more attribute definitions."@en ;
     rdfs:isDefinedBy trsp: ;
-    skos:note
-    rdfs:comment ""@en .
+    skos:note "The source reference may identify an annotation or other contextual evidence."@en .
 
 #----------------------------------------------------------------
 # Source Reference Properties
@@ -779,16 +800,18 @@ trsp:SourceReference
 
 trsp:hasSourceReference
     a owl:ObjectProperty ;
-    rdfs:domain trsp:AttributeDefinition ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range trsp:SourceReference ;
-    rdfs:label "has source reference"@en .
+    rdfs:label "has source reference"@en ;
+    skos:definition "Relates an Attribute or Profile Property definition to a source reference supporting it."@en .
 
-trsp:hasAttribute
+trsp:hasAttributeDefinition
     a owl:ObjectProperty ;
     rdfs:domain trsp:SourceReference ;
-    rdfs:range trsp:AttributeDefinition ;
+    rdfs:range [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     owl:inverseOf trsp:hasSourceReference ;
-    rdfs:label "has attribute"@en .
+    rdfs:label "source reference for attribute"@en ;
+    skos:definition "Identifies the Attribute or Profile Property definition supported by a source reference."@en .
 
 trsp:hasProfileSource
     a owl:ObjectProperty ;
@@ -801,7 +824,8 @@ trsp:hasAnnotation
     a owl:ObjectProperty ;
     rdfs:domain trsp:SourceReference ;
     rdfs:range oa:Annotation ;
-    rdfs:label "has annotation"@en .
+    rdfs:label "has annotation"@en ;
+    skos:definition "Relates a source reference to a Web Annotation."@en .
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
