@@ -158,7 +158,6 @@ trsp:hasProfileType
     rdfs:range [ a owl:Class ; owl:unionOf (trsp:Profile trsp:Repository trsp:Service) ] ;
     skos:definition "Relates a resource to a profile that defines a set of properties and associated constraints applicable to the description of that resource."@en .
 
-
 ## has property
 trsp:hasProperty
     a owl:ObjectProperty ;
@@ -200,6 +199,7 @@ trsp:hasCardinalityType
 trsp:hasMeasurementType
     a owl:ObjectProperty ;
     rdfs:label "has measurement type"@en ;
+    rdfs:domain trsp:Attribute ;
     rdfs:range skos:Concept ;
     skos:definition
         "Identifies the measurement type associated with an Attribute or Profile Property, indicating the general form of value or observation through which the characteristic is represented or assessed."@en ;
@@ -210,6 +210,7 @@ trsp:hasMeasurementType
 trsp:hasBenchmark
     a owl:ObjectProperty ;
     rdfs:label "has benchmark"@en ;
+    rdfs:domain trsp:Attribute ;
     rdfs:range skos:Concept;
     skos:definition
         "Identifies the benchmark associated with an Attribute or Profile Property, indicating the type of criterion against which a value or assessment result can be evaluated."@en ;
@@ -699,14 +700,14 @@ trsp:SpatialCoverage
         "A spatial entity that may be used to express the spatial coverage of a resource."@en ;
     owl:equivalentClass [
         a owl:Class ;
-        owl:unionOf (
-            dct:Location
-            schema:Place
-            geo:Feature
-            gn:Feature
-            ogc:Envelope
-            dpv:Region
-        )
+            owl:unionOf (
+                dct:Location
+                schema:Place
+                geo:Feature
+                gn:Feature
+                ogc:Envelope
+                dpv:Region
+            )
     ] .
 
 trsp:DateTimeInterval
