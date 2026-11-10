@@ -116,12 +116,13 @@ trsp:ProfileProperty
     rdfs:label "Profile Property"@en ;
     skos:definition "A definition of the use of an RDF property within a particular profile, including any constraints, mappings, or other characteristics applicable to that use."@en .
 
-# -------------------------------------------
+# -------------------------------------------------------------------------------------------------
 ## Properties used for Attributes and Profiles
 
 ## Corresponding external class
 trsp:correspondingClass
     a owl:ObjectProperty ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range rdfs:Class ;
     rdfs:label "corresponding class"@en ;
     skos:definition "Relates a TRSP class to an external RDF class representing a closely corresponding kind of resource without asserting formal subclass or equivalence semantics."@en .
@@ -195,6 +196,7 @@ trsp:propertyPath
 
 # -----------------------------------------------------------------------------------------------------
 ## Properties used for Attribute Recommendations and Best Practices, Profile Property Specifications
+# -----------------------------------------------------------------------------------------------------
 
 ## cardinality type
 trsp:hasCardinalityType
@@ -222,7 +224,7 @@ trsp:hasMeasurementType
 trsp:hasBenchmark
     a owl:ObjectProperty ;
     rdfs:label "has benchmark"@en ;
-    rdfs:domain trsp:Attribute ;
+    rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range skos:Concept;
     skos:definition
         "Identifies the benchmark associated with an Attribute or Profile Property, indicating the type of criterion against which a value or assessment result can be evaluated."@en ;
@@ -442,14 +444,12 @@ trsp:targetProfileProperty
 trsp:sourceValue
     a owl:ObjectProperty ;
     rdfs:domain trsp:PropertyMapping ;
-    rdfs:range trsp:ProfileProperty ;
     rdfs:label "source profile value"@en ;
     skos:definition "Identifies the source Profile Property value in a pairwise Property Mapping."@en .
 
 trsp:targetValue
     a owl:ObjectProperty ;
     rdfs:domain trsp:PropertyMapping ;
-    rdfs:range trsp:ProfileProperty ;
     rdfs:label "target profile value"@en ;
     skos:definition "Identifies the target Profile Property value in a pairwise Property Mapping."@en .
 
@@ -490,6 +490,7 @@ trsp:mappedAttribute
 ## Mapping type
 trsp:mappingType
     a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
     rdfs:range skos:Concept ;
     rdfs:label "mapping type"@en ;
     skos:definition
@@ -500,6 +501,7 @@ trsp:mappingType
 ## Mapping type
 trsp:mappingAlgorithm
     a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
     rdfs:label "mapping algorithm"@en ;
     skos:definition
         "Identifies a reusable algorithm or transformation definition applicable to this particular mapping."@en ;
