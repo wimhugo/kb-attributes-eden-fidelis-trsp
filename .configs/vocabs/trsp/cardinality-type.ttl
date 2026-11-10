@@ -21,28 +21,28 @@ trsp:cardinality-scheme a skos:ConceptScheme ;
   foaf:homepage  <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 
 trsp:cardinality0_1
-    a skos:Concept, trsp:CardinalityType ;
+    a skos:Concept ;
     skos:inScheme trsp:cardinality-scheme ;
     skos:prefLabel "0..1"@en ;
     skos:notation "0..1" ;
     skos:definition "Zero or one value permitted."@en .
 
 trsp:cardinality1_1
-    a skos:Concept, trsp:CardinalityType ;
+    a skos:Concept ;
     skos:inScheme trsp:cardinality-scheme ;
     skos:prefLabel "1..1"@en ;
     skos:notation "1..1" ;
     skos:definition "Exactly one value required."@en .
 
 trsp:cardinality0_n
-    a skos:Concept, trsp:CardinalityType ;
+    a skos:Concept ;
     skos:inScheme trsp:cardinality-scheme ;
     skos:prefLabel "0..n"@en ;
     skos:notation "0..n" ;
     skos:definition "Zero or more values permitted."@en .
 
 trsp:cardinality1_n
-    a skos:Concept, trsp:CardinalityType ;
+    a skos:Concept ;
     skos:inScheme trsp:cardinality-scheme ;
     skos:prefLabel "1..n"@en ;
     skos:notation "1..n" ;

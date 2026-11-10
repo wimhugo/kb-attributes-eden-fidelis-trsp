@@ -1,3 +1,6 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
 trsp:identifier-usage-scheme a skos:ConceptScheme ;
     skos:prefLabel "TRSP identifier usage types"@en .
 
