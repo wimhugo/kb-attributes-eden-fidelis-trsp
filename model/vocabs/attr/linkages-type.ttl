@@ -1,5 +1,5 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
@@ -15,22 +15,26 @@ trsp:linkageType
   owl:versionInfo "0.3" .
 
 trsp:linkTypeRI
-  a skos:Concept ;
+  skos:definition "A concept identifying linked to research infrastructure in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Linked to Research Infrastructure"@en ;
   skos:inScheme trsp:linkageType .
 
 trsp:linkTypeFederation
-  a skos:Concept ;
+  skos:definition "A concept identifying linked to federation in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Linked to Federation"@en ;
   skos:inScheme trsp:linkageType .
 
 trsp:linkTypePortal
-  a skos:Concept ;
+  skos:definition "A concept identifying linked to portal in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Linked to Portal"@en ;
   skos:inScheme trsp:linkageType .
 
 trsp:linkTypeNetwork
-  a skos:Concept ;
+  skos:definition "A concept identifying linked to network in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Linked to Network"@en ;
   skos:inScheme trsp:linkageType .
 
@@ -40,6 +44,7 @@ trsp:linkTypeNetwork
   skos:inScheme trsp:linkageType .
 
 trsp:linkTypeUnion
-  a skos:Concept ;
+  skos:definition "A concept identifying linked to a union in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Linked to a Union"@en ;
   skos:inScheme trsp:linkageType .

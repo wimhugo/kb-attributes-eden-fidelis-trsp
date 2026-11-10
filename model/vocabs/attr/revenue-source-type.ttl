@@ -17,41 +17,48 @@ trsp:typeRevenueSource
   owl:versionInfo "0.3" .
 
 trsp:free
-  a skos:Concept ;
+  skos:definition "A category identifying free in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Free"@en ;
   skos:broadMatch fair:A1_1 ;
   rdfs:seeAlso fair:A1_1 ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:subscription
-  a skos:Concept ;
+  skos:definition "A category identifying subscription in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Subscription"@en ;
   skos:exactMatch <http://purl.org/cerif/frapo/Subscription> ;
   rdfs:seeAlso <http://purl.org/cerif/frapo/Subscription> ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:payPerUse
-  a skos:Concept ;
+  skos:definition "A category identifying pay per use in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Pay per use"@en ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:licenceFee
-  a skos:Concept ;
+  skos:definition "A category identifying use upon licence payment in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Use Upon Licence Payment"@en ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:distributionCost
-  a skos:Concept ;
+  skos:definition "A category identifying recover distribution costs in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Recover Distribution Costs"@en ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:structural
-  a skos:Concept ;
+  skos:definition "A category identifying structural income or budget allocation in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Structural Income or Budget Allocation"@en ;
   skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:membership
-  a skos:Concept ;
+  skos:definition "A category identifying membership in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Membership"@en ;
   skos:exactMatch <http://www.w3.org/ns/org#Membership> ;
   rdfs:seeAlso <http://www.w3.org/ns/org#Membership> ;
@@ -62,7 +69,8 @@ trsp:membership
   skos:inScheme trsp:revenue-source-type-scheme .
 
 trsp:grants
-  a skos:Concept ;
+  skos:definition "A category identifying grants in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Grants"@en ;
   skos:exactMatch <http://w3id.org/roh#grants> ;
   rdfs:seeAlso <http://w3id.org/roh#grants> ;

@@ -1,5 +1,4 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -84,49 +83,57 @@ trsp:typePolicyCollection a skos:Concept ;
 
 # ODRL policy subclasses are expression forms, not policy purposes.
 
-trsp:typeAgreement a skos:Concept ; 
+trsp:typeAgreement skos:definition "A type of policy characterised by agreement in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Agreement"@en ;
   trsp:conceptCorrespondingClass odrl:Agreement ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeAssertion a skos:Concept ; 
+trsp:typeAssertion skos:definition "A type of policy characterised by assertion in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Assertion"@en ;
   trsp:conceptCorrespondingClass odrl:Assertion ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeOffer a skos:Concept ; 
+trsp:typeOffer skos:definition "A type of policy characterised by offer in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Offer"@en ;
   trsp:conceptCorrespondingClass odrl:Offer ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typePrivacyPolicy a skos:Concept ; 
+trsp:typePrivacyPolicy skos:definition "A type of policy characterised by odrl privacy policy in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "ODRL Privacy Policy"@en ;
   trsp:conceptCorrespondingClass odrl:Privacy ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeRequest a skos:Concept ; 
+trsp:typeRequest skos:definition "A type of policy characterised by request in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Request"@en ;
   trsp:conceptCorrespondingClass odrl:Request ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeSet a skos:Concept ; 
+trsp:typeSet skos:definition "A type of policy characterised by set in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Set"@en ;
   trsp:conceptCorrespondingClass odrl:Set ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeTicket a skos:Concept ; 
+trsp:typeTicket skos:definition "A type of policy characterised by ticket in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Ticket"@en ;
   trsp:conceptCorrespondingClass odrl:Ticket ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:typeQuality a skos:Concept ;
+trsp:typeQuality skos:definition "A type of policy characterised by quality policies in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Quality Policies"@en ;
   skos:note "Class-level policy notion observed in the harmonized graph; specific quality purposes should be represented in the checklist scheme."@en ;
   trsp:conceptCorrespondingClass dqv:QualityPolicy ;
@@ -172,17 +179,20 @@ trsp:typePolicyAccess a skos:Concept ;
   skos:topConceptOf trsp:typePolicyLicence ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:accessPublic a skos:Concept ; 
+trsp:accessPublic skos:definition "A type of policy access type characterised by public in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Public"@en ;
   skos:broader trsp:typePolicyAccess ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:accessRestricted a skos:Concept ; 
+trsp:accessRestricted skos:definition "A type of policy access type characterised by restricted in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Restricted"@en ;
   skos:broader trsp:typePolicyAccess ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:accessPrivate a skos:Concept ; 
+trsp:accessPrivate skos:definition "A type of policy access type characterised by private in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Private"@en ;
   skos:broader trsp:typePolicyAccess ; 
   skos:inScheme trsp:typePolicyLicence .
@@ -198,22 +208,26 @@ trsp:typePolicyStatus a skos:Concept ;
   skos:topConceptOf trsp:typePolicyLicence ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:statusDraft a skos:Concept ; 
+trsp:statusDraft skos:definition "A type of policy status characterised by draft in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Draft"@en ;
   skos:broader trsp:typePolicyStatus ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:statusCandidate a skos:Concept ; 
+trsp:statusCandidate skos:definition "A type of policy status characterised by candidate in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Candidate"@en ;
   skos:broader trsp:typePolicyStatus ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:statusApproved a skos:Concept ; 
+trsp:statusApproved skos:definition "A type of policy status characterised by approved in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Approved"@en ;
   skos:broader trsp:typePolicyStatus ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:statusDeprecated a skos:Concept ; 
+trsp:statusDeprecated skos:definition "A type of policy status characterised by deprecated in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Deprecated"@en ;
   skos:broader trsp:typePolicyStatus ; 
   skos:inScheme trsp:typePolicyLicence .
@@ -228,17 +242,20 @@ trsp:typePolicyRepresentation a skos:Concept ;
   skos:topConceptOf trsp:typePolicyLicence ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:representationHumanReadable a skos:Concept ; 
+trsp:representationHumanReadable skos:definition "A type of policy representation characterised by human-readable in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Human-readable"@en ;
   skos:broader trsp:typePolicyRepresentation ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:representationPartlyMachineReadable a skos:Concept ; 
+trsp:representationPartlyMachineReadable skos:definition "A type of policy representation characterised by partly machine-readable in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Partly machine-readable"@en ;
   skos:broader trsp:typePolicyRepresentation ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:representationMachineReadable a skos:Concept ; 
+trsp:representationMachineReadable skos:definition "A type of policy representation characterised by machine-readable in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Machine-readable"@en ;
   skos:broader trsp:typePolicyRepresentation ; 
   skos:inScheme trsp:typePolicyLicence .
@@ -253,22 +270,26 @@ trsp:typePolicyApplicability a skos:Concept ;
   skos:topConceptOf trsp:typePolicyLicence ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:appliesToAsset a skos:Concept ; 
+trsp:appliesToAsset skos:definition "A type of policy applicability characterised by asset or resource in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Asset or Resource"@en ;
   skos:broader trsp:typePolicyApplicability ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:appliesToRepository a skos:Concept ; 
+trsp:appliesToRepository skos:definition "A type of policy applicability characterised by repository or catalogue in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Repository or Catalogue"@en ;
   skos:broader trsp:typePolicyApplicability ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:appliesToService a skos:Concept ; 
+trsp:appliesToService skos:definition "A type of policy applicability characterised by service or platform in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Service or Platform"@en ;
   skos:broader trsp:typePolicyApplicability ; 
   skos:inScheme trsp:typePolicyLicence .
 
-trsp:appliesToOrganisation a skos:Concept ; 
+trsp:appliesToOrganisation skos:definition "A type of policy applicability characterised by organisation or institution in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ; 
   skos:prefLabel "Organisation or Institution"@en ;
   skos:broader trsp:typePolicyApplicability ; 
   skos:inScheme trsp:typePolicyLicence .

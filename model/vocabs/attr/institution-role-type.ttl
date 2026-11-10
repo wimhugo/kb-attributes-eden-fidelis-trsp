@@ -1,5 +1,5 @@
+@prefix r3d: <https://w3id.org/trsp/r3d/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -13,46 +13,54 @@ trsp:typeInstitutionRole
   owl:versionInfo "0.1" .
 
 trsp:hostInstitution
-  a skos:Concept ;
+  skos:definition "A concept identifying hosting institution in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Hosting Institution"@en ;
   skos:closeMatch r3d:general ;
   skos:closeMatch r3d:technical ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:publisherInstitution
-  a skos:Concept ;
+  skos:definition "A concept identifying publisher in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Publisher"@en ;
   skos:closeMatch r3d:general ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:funderInstitution
-  a skos:Concept ;
+  skos:definition "A concept identifying funding institution in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Funding Institution"@en ;
   skos:exactMatch r3d:funding ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:membershipInstitution
-  a skos:Concept ;
+  skos:definition "A concept identifying membership or network institution in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Membership or Network Institution"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:userInstitution
-  a skos:Concept ;
+  skos:definition "A concept identifying end user institution in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "End User Institution"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:stakeholderInstitution
-  a skos:Concept ;
+  skos:definition "A concept identifying stakeholder institution in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Stakeholder Institution"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:infrastructureClient
-  a skos:Concept ;
+  skos:definition "A concept identifying infrastructure client in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Infrastructure Client"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:infrastructureProvider
-  a skos:Concept ;
+  skos:definition "A concept identifying infrastructure provider in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Infrastructure Provider"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
@@ -63,22 +71,26 @@ trsp:assessmentInstitution
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:certificationAuthority
-  a skos:Concept ;
+  skos:definition "A concept identifying certification authority in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Certification Authority"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:standardsAuthority
-  a skos:Concept ;
+  skos:definition "A concept identifying standards auuthority in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Standards AUuthority"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:researchOrganisation
-  a skos:Concept ;
+  skos:definition "A concept identifying research-performing organisation in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Research-Performing Organisation"@en ;
   skos:inScheme trsp:typeInstitutionRole .
 
 trsp:collaborativeInfrastructure
-  a skos:Concept ;
+  skos:definition "A concept identifying collaborative infrastructure in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Collaborative Infrastructure"@en ;
   skos:note "ERICs, EUDAT, OpenAIRE, EGI, Géant, ..."@en ;
   skos:inScheme trsp:typeInstitutionRole .
@@ -87,7 +99,7 @@ trsp:collaborativeInfrastructure
 # Extensions - FIDELIS
 # ---------------------------------------------------------------------------------------------------
 
-trsp:institutionTypes/consortium a skos:Concept ;
+trsp:institutionTypes.consortium a skos:Concept ;
     skos:inScheme trsp:typeInstitutionRole ;
     skos:prefLabel "Consortium"@en ;
     skos:definition "A consortium of institutions"@en .

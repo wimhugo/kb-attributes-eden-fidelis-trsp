@@ -18,12 +18,14 @@ trsp:checklistPrinciplesDeclarations
   owl:versionInfo "0.3" .
 
 trsp:typePrinciple
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating principles in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Principles"@en ;
   skos:inScheme trsp:checklistPrinciples .
 
 trsp:typeDeclaration
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating declarations in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Declarations"@en ;
   skos:inScheme trsp:checklistPrinciples .
 
@@ -58,7 +60,7 @@ trsp:typePOSI
   skos:prefLabel "POSI"@en ;
   skos:broader trsp:typePrinciple ;
   skos:definition "A set of principles for the governance, sustainability, and long-term stewardship of open scholarly infrastructure, addressing community governance, transparent and sustainable operation, openness of software and data, preservation, interoperability, and organizational continuity."@en ;
-  dct:source <https://openscholarlyinfrastructure.org/>
+  dct:source <https://openscholarlyinfrastructure.org/> ;
   rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.b16f42> ;
   skos:inScheme trsp:checklistPrinciples .
 

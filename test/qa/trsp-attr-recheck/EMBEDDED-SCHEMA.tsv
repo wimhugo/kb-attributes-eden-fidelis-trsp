@@ -1,3 +1,0 @@
-resource-type.ttl	https://example.org/rdmi-resource-type/primarySource	http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-resource-type.ttl	https://example.org/rdmi-resource-type/dataciteResourceTypeGeneral	http://www.w3.org/1999/02/22-rdf-syntax-ns#Property
-resource-type.ttl	https://example.org/rdmi-resource-type/zenodoType	http://www.w3.org/1999/02/22-rdf-syntax-ns#Property

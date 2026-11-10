@@ -1,5 +1,4 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -79,7 +78,8 @@ trsp:typeSpecialisation
 # ==========================================================================
 
 trsp:typeEoscPurpose
-  a skos:Concept ;
+  skos:definition "A type of service purpose characterised by eosc service types in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "EOSC Service Types"@en ;
   skos:note "EOSC-aligned service-purpose grouping retained from version 0.1."@en ;
   skos:broader trsp:typePurpose ;
@@ -497,71 +497,82 @@ trsp:typeHumanInTheLoop
 # ==========================================================================
 
 trsp:typeConsultingService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by consulting services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Consulting Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typePreservationService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by preservation services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Preservation Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeWebsiteService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by website services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Website Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeGuidanceService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by guidance services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Guidance Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeAssessmentService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by assessment services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Assessment Services"@en ;
   skos:related trsp:typeAssessment ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeAAIService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by authentication and identification services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Authentication and Identification Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typePIDService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by persistent identifier services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Persistent Identifier Services"@en ;
   skos:related trsp:typePIDRegistration ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeRepositoryService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by repository services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Repository Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeCatalogueService
-  a skos:Concept ;
+  skos:definition "A type of repository services characterised by catalogue services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Catalogue Services"@en ;
   trsp:conceptCorrespondingClass dcat:Catalog ;
   skos:broader trsp:typeRepositoryService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeHarvestingService
-  a skos:Concept ;
+  skos:definition "A type of catalogue services characterised by harvesting services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Harvesting Services"@en ;
   skos:related trsp:typeMetadataHarvesting ;
   skos:broader trsp:typeCatalogueService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeDataService
-  a skos:Concept ;
+  skos:definition "A type of catalogue services characterised by data services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Data Services"@en ;
   trsp:conceptCorrespondingClass dcat:DataService ;
   skos:related trsp:typeDataAccess ;
@@ -569,13 +580,15 @@ trsp:typeDataService
   skos:inScheme trsp:typeService .
 
 trsp:typeRegistryService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by registry services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Registry Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeRepositoryRegistry
-  a skos:Concept ;
+  skos:definition "A type of registry services characterised by repository registries in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Repository Registries"@en ;
   skos:note "Examples in the source vocabulary include COAR, FAIRsharing and re3data."@en ;
   skos:related trsp:typeRepositoryRegistration ;
@@ -583,68 +596,78 @@ trsp:typeRepositoryRegistry
   skos:inScheme trsp:typeService .
 
 trsp:typePolicyLicenceRegistry
-  a skos:Concept ;
+  skos:definition "A type of registry services characterised by policy and licence registries in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Policy and Licence Registries"@en ;
   skos:related trsp:typeLicenceRegistration ;
   skos:broader trsp:typeRegistryService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeCrosswalksRegistry
-  a skos:Concept ;
+  skos:definition "A type of registry services characterised by crosswalk registries in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Crosswalk Registries"@en ;
   skos:related trsp:typeMetadataTransformation ;
   skos:broader trsp:typeRegistryService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeMetadataSchemaRegistry
-  a skos:Concept ;
+  skos:definition "A type of registry services characterised by metadata schema registries in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Metadata Schema Registries"@en ;
   skos:related trsp:typeSchemaRegistration ;
   skos:broader trsp:typeRegistryService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeVocabularyRegistry
-  a skos:Concept ;
+  skos:definition "A type of registry services characterised by semantic artefact registries or servers in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Semantic Artefact Registries or Servers"@en ;
   skos:related trsp:typeVocabularyRegistration ;
   skos:broader trsp:typeRegistryService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFileService
-  a skos:Concept ;
+  skos:definition "A type of service specialisation characterised by file/data-related services in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "File/Data-related Services"@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFileFormatRegistry
-  a skos:Concept ;
+  skos:definition "A type of file/data-related services characterised by file type and format registries in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "File Type and Format Registries"@en ;
   skos:related trsp:typeFileFormatIdentification ;
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFormatGuidanceAPI
-  a skos:Concept ;
+  skos:definition "A type of file/data-related services characterised by format guidance api in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Format Guidance API"@en ;
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFileFormatConversion
-  a skos:Concept ;
+  skos:definition "A type of file/data-related services characterised by file format conversion service in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "File Format Conversion Service"@en ;
   skos:related trsp:typeFileConversion ;
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFileFormatValidation
-  a skos:Concept ;
+  skos:definition "A type of file/data-related services characterised by file format validation service in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "File Format Validation Service"@en ;
   skos:related trsp:typeFileValidation ;
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeFileRepairService
-  a skos:Concept ;
+  skos:definition "A type of file/data-related services characterised by file repair service in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "File Repair Service"@en ;
   skos:related trsp:typeFileRepair ;
   skos:broader trsp:typeFileService ;

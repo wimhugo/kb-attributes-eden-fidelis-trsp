@@ -22,49 +22,57 @@ trsp:checklistProceduresWorkflow
 # -------------------------------------------------------------------
 
 trsp:typeGuidance
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: guidance, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Guidance"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeGuidanceDepositor
-  a skos:Concept ;
+  skos:definition "A consideration for assessing guidance: general depositor guidance, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "General Depositor Guidance"@en ;
   skos:broader trsp:typeGuidance ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeGuidanceDataMetadataPrep
-  a skos:Concept ;
+  skos:definition "A consideration for assessing general depositor guidance: guidance on data and metadata preparation, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Guidance on Data and Metadata Preparation"@en ;
   skos:broader trsp:typeGuidanceDepositor ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeGuidanceEthics
-  a skos:Concept ;
+  skos:definition "A consideration for assessing general depositor guidance: ethics guidance, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Ethics Guidance"@en ;
   skos:broader trsp:typeGuidanceDepositor ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeGuidanceFileFormat
-  a skos:Concept ;
+  skos:definition "A consideration for assessing general depositor guidance: file format guidance, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "File Format Guidance"@en ;
   skos:broader trsp:typeGuidanceDepositor ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeGuidanceLicenceSelection
-  a skos:Concept ;
+  skos:definition "A consideration for assessing general depositor guidance: licence selection guidance, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Licence Selection Guidance"@en ;
   skos:broader trsp:typeGuidanceDepositor ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeGuidanceUser
-  a skos:Concept ;
+  skos:definition "A consideration for assessing guidance: user guidance, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "User Guidance"@en ;
   skos:broader trsp:typeGuidance ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeGuidanceUserDocumentation
-  a skos:Concept ;
+  skos:definition "A consideration for assessing user guidance: user guidance and documentation, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "User Guidance and Documentation"@en ;
   skos:broader trsp:typeGuidanceUser ;
   skos:inScheme trsp:checklistProceduresWorkflow .
@@ -74,12 +82,14 @@ trsp:typeGuidanceUserDocumentation
 # -------------------------------------------------------------------
 
 trsp:typeProcedure
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating procedures in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Procedures"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureVersioning
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: versioning, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Versioning"@en ;
   skos:broader trsp:typeProcedure ;
   skos:broadMatch <http://purl.org/pav/> ;
@@ -87,7 +97,8 @@ trsp:typeProcedureVersioning
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureRetention
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: retention, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Retention"@en ;
   skos:broader trsp:typeProcedure ;
   skos:broadMatch <http://linkeddata.center/kees/v1#RetentionPolicy> ;
@@ -95,31 +106,36 @@ trsp:typeProcedureRetention
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedurePreservation
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: preservation, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Preservation"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedurePersonalDataRemoval
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: personal data removal, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Personal Data Removal"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureInteroperabilty
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: interoperabilty, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Interoperabilty"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureSoftwareDevelopment
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: software development, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Software Development"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureCompliance
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: compliance, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Compliance"@en ;
   skos:broader trsp:typeProcedure ;
   skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0500023> ;
@@ -127,49 +143,57 @@ trsp:typeProcedureCompliance
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureQualityAssurance
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: quality assurance, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:broader trsp:typeProcedure ;
   skos:prefLabel "Quality Assurance"@en ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureRegisterAI
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: maintain ai-related and usage records, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:broader trsp:typeProcedure ;
   skos:prefLabel "Maintain AI-Related and Usage Records"@en ;
   skos:inScheme trsp:checklistPolicies .
 
 trsp:typeProcedurePolicyDevelopment
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: policy development, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Policy Development"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureStandardsAdoption
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: standards adoption, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Standards Adoption"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureLegalProcesses
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: legal processes, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Legal Processes"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureChangeManagement
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: change management, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Change Management"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureDataBreach
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: data breach, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Data Breach"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .
 
 trsp:typeProcedureDisasterRecovery
-  a skos:Concept ;
+  skos:definition "A consideration for assessing procedures: disaster recovery, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Disaster Recovery"@en ;
   skos:broader trsp:typeProcedure ;
   skos:inScheme trsp:checklistProceduresWorkflow .

@@ -43,7 +43,8 @@ trsp:typeTypicalLicence a skos:Concept ;
   trsp:conceptCorrespondingProperty dct:license ;
   skos:inScheme trsp:checklistPolicies .
 
-trsp:typeGeneralPolicy a skos:Concept ;
+trsp:typeGeneralPolicy skos:definition "A checklist consideration for evaluating general explicit policy in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "General Explicit Policy"@en ;
   trsp:conceptCorrespondingClass openrel:Policy, odrl:Policy, dct:Policy, dcat:Policy ;
   trsp:imperative trsp:typeRecommended ;

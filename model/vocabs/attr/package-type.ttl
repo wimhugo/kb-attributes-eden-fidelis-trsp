@@ -16,20 +16,23 @@ trsp:typePackage
   owl:versionInfo "0.2" .
 
 trsp:bagit
-  a skos:Concept ;
+  skos:definition "A category identifying bag-it in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Bag-It"@en ;
   skos:closeMatch <https://doi.org/10.25504/FAIRsharing.3224a5> ;
   rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.3224a5> ;
   skos:inScheme trsp:typePackage .
 
 trsp:ro-crate
-  a skos:Concept ;
+  skos:definition "A category identifying ro-crate in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "RO-Crate"@en ;
   skos:closeMatch <https://doi.org/10.25504/FAIRsharing.wUoZKE> ;
   rdfs:seeAlso <https://doi.org/10.25504/FAIRsharing.wUoZKE> ;
   skos:inScheme trsp:typePackage .
 
 trsp:aip
-  a skos:Concept ;
+  skos:definition "A category identifying aip in the context of research repositories and associated services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "AIP"@en ;
   skos:inScheme trsp:typePackage .

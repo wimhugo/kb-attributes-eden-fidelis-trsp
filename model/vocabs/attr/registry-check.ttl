@@ -1,3 +1,5 @@
+@prefix schema: <https://schema.org/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
@@ -21,12 +23,14 @@ trsp:checklistRegistry
 ### these should be services in the services graph
 
 trsp:institution-registry
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating institution and organisation registries in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Institution and Organisation Registries"@en ;
   skos:inScheme trsp:checklistRegistry .
 
 trsp:policy-registry
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating policy and licence registries in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Policy and Licence Registries"@en ;
   skos:inScheme trsp:checklistRegistry .
 
@@ -36,7 +40,8 @@ trsp:policy-registry
 #--------------------------------------------------------------------------------------------------------------------------
 
 trsp:institution-registry-ror
-  a skos:Concept ;
+  skos:definition "A consideration for assessing institution and organisation registries: research organisation registry, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Research Organisation Registry"@en ;
   dct:type dcat:Institution ;
   dcat:endpointURL <https://api.ror.org/v2/organizations> ;
@@ -44,7 +49,8 @@ trsp:institution-registry-ror
   skos:inScheme trsp:checklistRegistry .
 
 trsp:institution-registry-crf
-  a skos:Concept ;
+  skos:definition "A consideration for assessing institution and organisation registries: crossref funders, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Crossref Funders"@en ;
   rdfs:definition "The Funder Registry is an open registry of persistent identifiers for grant-giving organizations around the world."@en ;
   dct:type dcat:Institution ;
@@ -54,14 +60,16 @@ trsp:institution-registry-crf
   skos:inScheme trsp:checklistRegistry .
 
 trsp:policy-registry-spdx
-  a skos:Concept ;
+  skos:definition "A consideration for assessing policy and licence registries: spdx licence registry, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "SPDX Licence Registry"@en ;
   dcat:endpointURL <https://spdx.org/licenses/> ;
   skos:broader trsp:policy-registry;
   skos:inScheme trsp:checklistRegistry .
 
 trsp:policy-registry-lfs
-  a skos:Concept ;
+  skos:definition "A consideration for assessing policy and licence registries: eden licence facade registry service, including its implementation and supporting evidence."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "EDEN Licence Facade Registry Service"@en ;
   dcat:endpointURL <https://lfs.labs.dansdemo.nl/docs#/> ;
   skos:broader trsp:policy-registry;

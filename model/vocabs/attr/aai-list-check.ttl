@@ -32,7 +32,8 @@ trsp:aai-saml a skos:Concept ;
 #   skos:altLabel "[[altLabel]]"@en ;
   skos:inScheme trsp:checklistAAI .
 
-trsp:aai-oauth2 a skos:Concept ;
+trsp:aai-oauth2 skos:definition "A checklist consideration for evaluating oauth-2 in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "OAuth-2"@en ;
 # ⚠ refine: missing skos:definition
 #   skos:definition "[[definition]]"@en ;
@@ -43,7 +44,8 @@ trsp:aai-oauth2 a skos:Concept ;
 #   skos:altLabel "[[altLabel]]"@en ;
   skos:inScheme trsp:checklistAAI .
 
-trsp:aai-openid a skos:Concept ;
+trsp:aai-openid skos:definition "A checklist consideration for evaluating openidconnect in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "OpenIDConnect"@en ;
 # ⚠ refine: missing skos:definition
 #   skos:definition "[[definition]]"@en ;

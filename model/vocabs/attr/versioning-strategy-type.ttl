@@ -1,5 +1,4 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,21 +13,25 @@ trsp:typeVersioningStrategy
   owl:versionInfo "0.1" .
 
 trsp:stableCitationReference
-  a skos:Concept ;
+  skos:definition "A concept identifying stable citation/ reference in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Stable Citation/ Reference"@en ;
   skos:inScheme trsp:typeVersioningStrategy .
 
 trsp:reproducibilityAndAuthenticity
-  a skos:Concept ;
+  skos:definition "A concept identifying reproducibility and authenticity in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Reproducibility and Authenticity"@en ;
   skos:inScheme trsp:typeVersioningStrategy .
 
 trsp:contentEvolution
-  a skos:Concept ;
+  skos:definition "A concept identifying content evolution in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Content Evolution"@en ;
   skos:inScheme trsp:typeVersioningStrategy .
 
 trsp:dynamicContentGrowth
-  a skos:Concept ;
+  skos:definition "A concept identifying dynamic content growth in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Dynamic Content Growth"@en ;
   skos:inScheme trsp:typeVersioningStrategy .

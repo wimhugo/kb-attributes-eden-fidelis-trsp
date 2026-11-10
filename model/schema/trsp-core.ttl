@@ -120,7 +120,7 @@ trsp:ProfileProperty
 ## Properties used for Attributes and Profiles
 
 ## Corresponding external class
-trsp:correspondingClass, 
+trsp:correspondingClass 
     a owl:ObjectProperty ;
     rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range rdfs:Class ;
@@ -840,3 +840,13 @@ trsp:ConceptCorrespondingProperty
   a owl:AnnotationProperty ;
   rdfs:label "corresponding property"@en ;
   rdfs:comment "Links a checklist concept to an RDF property representing a corresponding predicate-level notion."@en .
+
+
+# Definition relocated from trl-type.ttl
+trsp:levelNumber
+    a owl:DatatypeProperty ;
+    rdfs:label "TRL level number"@en ;
+    rdfs:range xsd:integer ;
+    rdfs:comment "Numeric ordinal value of a Technology Readiness Level."@en ;
+    rdfs:domain trsp:ProfileProperty ;
+    skos:definition "An integer indicating the ordinal position of a technology readiness level."@en .

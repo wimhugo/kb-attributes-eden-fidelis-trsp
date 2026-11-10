@@ -18,7 +18,7 @@ trsp:typeLegislation a skos:ConceptScheme ;
   dct:modified "2026-08-24"^^xsd:dateTime ;
   prov:wasAssociatedWith  
      [ a prov:SoftwareAgent ;
-         prov:label "TRSP KB Curation Platform" .
+         prov:label "TRSP KB Curation Platform" ;
      ] ;
   dct:rights <https://spdx.org/licenses/CC0-1.0> ;
   dct:source "https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/commit/012798a9adca56feceefe68ea5644e18ee3c3c0b" ;

@@ -4,8 +4,6 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
-@prefix duo: <http://purl.obolibrary.org/obo/duo.owl> .
-
 trsp:typeRightsEncoding
   a skos:ConceptScheme ;
   skos:prefLabel "Rights Encoding Vocabulary"@en ;

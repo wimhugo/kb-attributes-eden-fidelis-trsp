@@ -1,5 +1,5 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -21,64 +21,74 @@ trsp:checklistCurationPreservationType
 # Curation Level
 #----------------------------------------------------------
 trsp:typeLORCAP
-  a skos:Concept ;
+  skos:definition "A concept identifying levels of curation and preservation in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Levels of Curation and Preservation"@en ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeDatalevelCuration
-  a skos:Concept ;
+  skos:definition "A category within levels of curation and preservation identifying data-level for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Data-level"@en ;
   skos:broader trsp:typeLORCAP ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeEnhancedCuration
-  a skos:Concept ;
+  skos:definition "A category within levels of curation and preservation identifying enhanced for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Enhanced"@en ;
-  skos:broader ttrsp:typeLORCAP ;
+  skos:broader trsp:typeLORCAP ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeBasicCuration
-  a skos:Concept ;
+  skos:definition "A category within levels of curation and preservation identifying basic for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Basic"@en ;
   skos:broader trsp:typeLORCAP ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeAsDeposited
-  a skos:Concept ;
+  skos:definition "A category within levels of curation and preservation identifying content distributed as deposited for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Content distributed as deposited"@en ;
   skos:broader trsp:typeLORCAP ;
-  skos:inScheme trsp:checklistCurationPreservationType 
+  skos:inScheme trsp:checklistCurationPreservationType .
 
 #----------------------------------------------------------
 # Automation
 #----------------------------------------------------------
 trsp:typeAutomationLevel
-  a skos:Concept ;
+  skos:definition "A concept identifying levels of automation in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Levels of Automation"@en ;
   skos:closeMatch trsp:typeAutomationLevel ;
   # mirrors trsp:typeAutomationLevel
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeManual
-  a skos:Concept ;
+  skos:definition "A category within levels of automation identifying manual curation for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Manual Curation"@en ;
   skos:broader trsp:typeAutomationLevel ; 
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeAutomated
-  a skos:Concept ;
+  skos:definition "A category within levels of automation identifying automated curation for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Automated Curation"@en ;
   skos:broader trsp:typeAutomationLevel ; 
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeAI
-  a skos:Concept ;
+  skos:definition "A category within levels of automation identifying ai-assisted curation for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "AI-assisted Curation"@en ;
   skos:broader trsp:typeAutomationLevel ; 
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeAIModerated
-  a skos:Concept ;
+  skos:definition "A category within levels of automation identifying ai with human moderated curation for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "AI with Human Moderated Curation"@en ;
   skos:broader trsp:typeAutomationLevel ; 
   skos:inScheme trsp:checklistCurationPreservationType .
@@ -87,27 +97,31 @@ trsp:typeAIModerated
 # Curation Activity
 #----------------------------------------------------------
 trsp:typeCurationActivity
-  a skos:Concept ;
+  skos:definition "A concept identifying curation activity in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Curation Activity"@en ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 # Enhancement ----------------------------------------------
 
 trsp:typeImprovementActivity
-  a skos:Concept ;
+  skos:definition "A category within curation activity identifying improvement and enhancement activity for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Improvement and Enhancement Activity"@en ;
   skos:broader trsp:typeCurationActivity ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeSemanticEnhancement
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying semantic enhancement for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Semantic Enhancement"@en ;
   skos:broader trsp:typeImprovementActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeSemanticAnnotation
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying semantic annotation for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Semantic Annotation"@en ;
   skos:broader trsp:typeImprovementActivity ;
   trsp:imperative trsp:typeRecommended ;
@@ -116,7 +130,8 @@ trsp:typeSemanticAnnotation
 # QA -------------------------------------------------------
 
 trsp:typeQualityActivity
-  a skos:Concept ;
+  skos:definition "A category within curation activity identifying improvement and enhancement activity for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Improvement and Enhancement Activity"@en ;
   skos:broader trsp:typeCurationActivity ;
   skos:inScheme trsp:checklistCurationPreservationType .
@@ -124,14 +139,16 @@ trsp:typeQualityActivity
 ## Deposit
 
 trsp:typeDepositDocumentation
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying quality assured deposit documentation for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Quality Assured Deposit Documentation"@en ;
   skos:broader trsp:typeQualityActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCompleteDocs
-  a skos:Concept ;
+  skos:definition "A category within quality assured deposit documentation identifying documentation completeness for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Documentation Completeness"@en ;
   skos:broader trsp:typeDepositDocumentation ;
   trsp:imperative trsp:typeRecommended ;
@@ -146,42 +163,48 @@ trsp:typeMandatoryMetadata
 ## Integrity/ authenticity
 
 trsp:typeIntegrityChecks
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying integrity verification for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Integrity Verification"@en ;
   skos:broader trsp:typeQualityActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForAiContent
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying checked for ai-generated content for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Checked for AI-generated Content"@en ;
   skos:broader trsp:typeQualityActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForDuplicatePublication
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying checked for duplicate publication for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Checked for Duplicate Publication"@en ;
   skos:broader trsp:typeQualityActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForIrrelevantContent
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying checked for irrelevant content for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Checked for Irrelevant Content"@en ;
   skos:broader trsp:typeQualityActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForMaliciousContent
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying checked for malicious content for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Checked for Malicious Content"@en ;
   skos:broader trsp:typeQualityActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForVirusMalware
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying virus and malware checking for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Virus and Malware Checking"@en ;
   skos:broader trsp:typeQualityActivity ;
   trsp:imperative trsp:typeRecommended ;
@@ -190,28 +213,32 @@ trsp:typeCheckedForVirusMalware
 ## Legal and ethical
 
 trsp:typeLegalEthicsChecks
-  a skos:Concept ;
+  skos:definition "A category within improvement and enhancement activity identifying legal and ethical verification for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Legal and Ethical Verification"@en ;
   skos:broader trsp:typeQualityActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForConsentForms
-  a skos:Concept ;
+  skos:definition "A category within legal and ethical verification identifying consent forms verified, linked for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Consent Forms Verified, Linked"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForIllegalContent
-  a skos:Concept ;
+  skos:definition "A category within legal and ethical verification identifying checked for illegal content for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Checked for Illegal Content"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForLicenceAssent
-  a skos:Concept ;
+  skos:definition "A category within legal and ethical verification identifying verification of licence assent for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Verification of Licence Assent"@en ;
   skos:note "Can be assented to by the depositor, data subject, and/ or end user"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
@@ -219,14 +246,16 @@ trsp:typeCheckedForLicenceAssent
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForLicenceCombination
-  a skos:Concept ;
+  skos:definition "A category within legal and ethical verification identifying licence combination supported/ verified for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Licence Combination Supported/ Verified"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeCheckedForPlagiarism
-  a skos:Concept ;
+  skos:definition "A category within legal and ethical verification identifying plagiarism verification for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Plagiarism Verification"@en ;
   skos:broader trsp:typeLegalEthicsChecks ;
   trsp:imperative trsp:typeRecommended ;
@@ -236,19 +265,22 @@ trsp:typeCheckedForPlagiarism
 # Preservation Activity
 #----------------------------------------------------------
 trsp:typePreservationActivity
-  a skos:Concept ;
+  skos:definition "A concept identifying preservation activity in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Preservation Activity"@en ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeBitLevelPreservation
-  a skos:Concept ;
+  skos:definition "A category within preservation activity identifying bit-level preservation for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Bit-Level Preservation"@en ;
   skos:broader trsp:typePreservationActivity ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistCurationPreservationType .
 
 trsp:typeFormatPreservation
-  a skos:Concept ;
+  skos:definition "A category within preservation activity identifying format preservation for research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Format Preservation"@en ;
   skos:broader trsp:typePreservationActivity ;
   trsp:imperative trsp:typeRecommended ;

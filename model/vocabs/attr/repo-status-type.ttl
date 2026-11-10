@@ -1,5 +1,4 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,26 +13,31 @@ trsp:typeRepoStatus
   owl:versionInfo "0.1" .
 
 trsp:operational
-  a skos:Concept ;
+  skos:definition "A concept identifying operational in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Operational"@en ;
   skos:inScheme trsp:typeRepoStatus .
 
 trsp:beta
-  a skos:Concept ;
+  skos:definition "A concept identifying beta in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Beta"@en ;
   skos:inScheme trsp:typeRepoStatus .
 
 trsp:planned
-  a skos:Concept ;
+  skos:definition "A concept identifying planned in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Planned"@en ;
   skos:inScheme trsp:typeRepoStatus .
 
 trsp:closed
-  a skos:Concept ;
+  skos:definition "A concept identifying closed in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Closed"@en ;
   skos:inScheme trsp:typeRepoStatus .
 
 trsp:offline
-  a skos:Concept ;
+  skos:definition "A concept identifying permanently offline in the context of research repositories and services."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Permanently Offline"@en ;
   skos:inScheme trsp:typeRepoStatus .

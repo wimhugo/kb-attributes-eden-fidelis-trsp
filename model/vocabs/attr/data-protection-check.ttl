@@ -14,19 +14,22 @@ trsp:checklistDataProtection
   owl:versionInfo "0.2" .
 
 trsp:policy
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating policy in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Policy"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:licence
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating licence in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Licence"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:monitoring
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating monitoring in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Monitoring"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:broadMatch <http://purl.obolibrary.org/obo/OBI_0000144> ;
@@ -34,24 +37,28 @@ trsp:monitoring
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:guidance
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating guidance in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Guidance"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:disclosureRiskCategorisation
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating disclosure risk categorisation in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Disclosure Risk Categorisation"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:physicalAccess
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating physical access in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Physical Access"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistDataProtection .
 
 trsp:logicalAccess
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating logical access in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Logical Access"@en ;
   skos:inScheme trsp:checklistDataProtection .

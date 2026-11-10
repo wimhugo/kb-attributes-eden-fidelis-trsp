@@ -1,5 +1,4 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -15,40 +14,46 @@ trsp:checklistMetrics
   owl:versionInfo "0.1" .
 
 trsp:citationsMetric
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating citations in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Citations"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:pageViewsMetric
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating page views in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Page Views"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:downloadsMetric
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating downloads in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Downloads"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:mentionsMetric
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating mentions in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Mentions"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:uptimeMetric
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating uptime in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Uptime"@en ;
-  skos:exactMatch eden://validator/metric/endpointAvailability ;
+  skos:exactMatch <eden://validator/metric/endpointAvailability> ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 
 trsp:availabilityMetric
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating uptime in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Uptime"@en ;
-  skos:exactMatch eden://validator/metric/validationScore ;
+  skos:exactMatch <eden://validator/metric/validationScore> ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistMetrics .
 

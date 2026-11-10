@@ -1,5 +1,4 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -14,13 +13,15 @@ trsp:checklistEthics
   owl:versionInfo "0.1" .
 
 trsp:ethicsClearance
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating ethics clearance in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Ethics Clearance"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistEthics .
 
 trsp:informedConsent
-  a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating informed consent in a research repository or related service."@en ; # definition added automatically
+    a skos:Concept ;
   skos:prefLabel "Informed Consent"@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistEthics .

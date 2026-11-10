@@ -2,11 +2,6 @@
 @prefix tech: <https://w3id.org/dpv/tech#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct:  <http://purl.org/dc/terms/> .
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix owl:  <http://www.w3.org/2002/07/owl#> .
-@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
-
 trsp:typeTRL
     a skos:ConceptScheme ;
     skos:prefLabel "EU Technology Readiness Levels"@en ;
@@ -15,18 +10,13 @@ trsp:typeTRL
     dct:description "Technology Readiness Level vocabulary using EU/EIC labels, EIC Research/Development/Deployment groupings, and alignment with DPV Technology."@en .
 
 trsp:technology-readiness-level
+    skos:definition "A concept identifying technology readiness level in the context of research repositories and services."@en ; # definition added automatically
     a skos:Concept ;
     skos:inScheme trsp:typeTRL ;
     skos:topConceptOf trsp:typeTRL ;
     skos:prefLabel "Technology Readiness Level"@en ;
     skos:exactMatch tech:TechnologyReadinessLevel ;
     dct:source <https://w3c.github.io/dpv/2.3/tech> .
-
-trsp:levelNumber
-    a owl:DatatypeProperty ;
-    rdfs:label "TRL level number"@en ;
-    rdfs:range xsd:integer ;
-    rdfs:comment "Numeric ordinal value of a Technology Readiness Level."@en .
 
 # DPV already provides tech:hasTRL for linking a technology to a TRL.
 # It is reused directly rather than duplicated locally.
