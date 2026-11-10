@@ -26,9 +26,6 @@
 ### Properties missing RDFS range (5)
 `mappingAlgorithm`, `propertyPath`, `qualifierValue`, `sourceMappedValue`, `targetMappedValue`. These may deliberately allow heterogeneous values. Define an explicit union range or use SHACL when the intended value kinds are known.
 
-### Unresolved schema reference
-`trsp:AttributeDefinition` is used as the domain/range of source-reference predicates but is not declared as a class in the supplied core file. Decide whether it is intended as an alias or subclass of `trsp:Attribute`, or a distinct class. Do not invent a class silently.
-
 ### Vocabulary and ontology semantics
 - `trsp:DateTimeInterval` is declared a subclass of `time:DateTimeInterval`, while its note describes a *single ISO 8601 interval literal*. An RDF class of interval resources and a literal-valued datatype should be modelled separately.
 - `trsp:SpatialCoverage` uses an `owl:equivalentClass` union of external classes. This is a strong equivalence claim, and the `ogc:Envelope`, `gn:Feature`, and `dpv:Region` references should be checked for accurate semantics and published namespaces.
