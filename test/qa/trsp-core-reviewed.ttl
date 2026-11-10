@@ -789,7 +789,7 @@ trsp:hasSourceReference
     rdfs:label "has source reference"@en ;
     skos:definition "Relates an attribute definition to a source reference supporting it."@en .
 
-trsp:sourceReferenceForAttribute
+trsp:hasAttributeDefinition
     a owl:ObjectProperty ;
     rdfs:domain trsp:SourceReference ;
     rdfs:range trsp:AttributeDefinition ;
