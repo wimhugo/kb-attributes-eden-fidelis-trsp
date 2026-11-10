@@ -784,7 +784,7 @@ trsp:SourceReference
 
 trsp:hasSourceReference
     a owl:ObjectProperty ;
-    rdfs:domain trsp:AttributeDefinition ;
+    rdfs:domain trsp:Attribute ;
     rdfs:range trsp:SourceReference ;
     rdfs:label "has source reference"@en ;
     skos:definition "Relates an attribute definition to a source reference supporting it."@en .
@@ -792,7 +792,7 @@ trsp:hasSourceReference
 trsp:hasAttributeDefinition
     a owl:ObjectProperty ;
     rdfs:domain trsp:SourceReference ;
-    rdfs:range trsp:AttributeDefinition ;
+    rdfs:range trsp:Attribute ;
     owl:inverseOf trsp:hasSourceReference ;
     rdfs:label "source reference for attribute"@en ;
     skos:definition "Identifies the attribute definition supported by a source reference."@en .
