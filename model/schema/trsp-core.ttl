@@ -120,7 +120,7 @@ trsp:ProfileProperty
 ## Properties used for Attributes and Profiles
 
 ## Corresponding external class
-trsp:correspondingClass
+trsp:correspondingClass, 
     a owl:ObjectProperty ;
     rdfs:domain [ a owl:Class ; owl:unionOf (trsp:Attribute trsp:ProfileProperty) ] ;
     rdfs:range rdfs:Class ;
@@ -827,12 +827,16 @@ trsp:hasAnnotation
     rdfs:label "has annotation"@en ;
     skos:definition "Relates a source reference to a Web Annotation."@en .
 
-#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+# -----------------------------------------------------------------------------------
+# Shared bridge annotations used across the TRSP classification vocabularies.
+# -----------------------------------------------------------------------------------
 
-### confirm this in trsp ProfileProperty
-# trsp:spatialCoverage
-#    a owl:ObjectProperty ;
-#    rdfs:range trsp:SpatialCoverage ;
-#    rdfs:label "spatial coverage"@en ;
-#    skos:definition
-#    "Identifies the spatial or geographic coverage of a resource."@en .
+trsp:conceptCorrespondingClass
+  a owl:AnnotationProperty ;
+  rdfs:label "corresponding class"@en ;
+  rdfs:comment "Links a checklist concept to an RDF/OWL class representing a corresponding class-level notion."@en .
+
+trsp:ConceptCorrespondingProperty
+  a owl:AnnotationProperty ;
+  rdfs:label "corresponding property"@en ;
+  rdfs:comment "Links a checklist concept to an RDF property representing a corresponding predicate-level notion."@en .

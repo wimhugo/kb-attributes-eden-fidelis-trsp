@@ -25,8 +25,8 @@ trsp:checklistPolicies a skos:ConceptScheme ;
   skos:prefLabel "Checklist of Policies and Licences"@en ;
   dct:title "Checklist of Policies and Licences"@en ;
   dct:description "Checklist of policy purposes used for repository and service assessment. Existing identifiers are retained where applicable for backward compatibility. Curation and data stewardship purposes are grouped under a common parent, related access purposes are consolidated, and legal, contractual, and regulatory purposes are maintained in a separate checklist."@en ;
-  skos:hasTopConcept trsp:typeLicence, trsp:typeExplicitPolicy,
-                     trsp:typeProcessRules, trsp:typeAccessRules,
+  skos:hasTopConcept trsp:typeTypicalLicence, trsp:typeGeneralPolicy,
+                     trsp:typeProcessRulesPolicy, trsp:typeAccessRulesPolicy,
                      trsp:typePolicyPurpose ;
   dct:creator <https://orcid.org/0000-0002-0255-5101> ;
   dct:created "2026-05-03"^^xsd:date ;
@@ -34,39 +34,32 @@ trsp:checklistPolicies a skos:ConceptScheme ;
   schema:creativeWorkStatus "Candidate" ;
   owl:versionInfo "0.6" .
 
-trsp:correspondingClass a owl:AnnotationProperty ;
-  rdfs:label "corresponding class"@en .
-
-trsp:correspondingProperty a owl:AnnotationProperty ;
-  rdfs:label "corresponding property"@en .
-
 # general checklist entries
 
-trsp:typeLicence a skos:Concept ;
+trsp:typeTypicalLicence a skos:Concept ;
   skos:prefLabel "Explicit Licence"@en ;
   skos:definition "An explicit licence for a resource such as a dataset, publication, software object, or other asset."@en ;
-  trsp:correspondingClass openrel:Licence ;
-  trsp:correspondingProperty dct:license ;
+  trsp:conceptCorrespondingClass openrel:Licence ;
+  trsp:conceptCorrespondingProperty dct:license ;
+  skos:inScheme trsp:checklistPolicies .
+
+trsp:typeGeneralPolicy a skos:Concept ;
+  skos:prefLabel "General Explicit Policy"@en ;
+  trsp:conceptCorrespondingClass openrel:Policy, odrl:Policy, dct:Policy, dcat:Policy ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
-trsp:typeExplicitPolicy a skos:Concept ;
-  skos:prefLabel "Explicit Policy"@en ;
-  trsp:correspondingClass openrel:Policy, odrl:Policy, dct:Policy, dcat:Policy ;
-  trsp:imperative trsp:typeRecommended ;
-  skos:inScheme trsp:checklistPolicies .
-
-trsp:typeAccessRules a skos:Concept ;
+trsp:typeAccessRulesPolicy a skos:Concept ;
   skos:prefLabel "Access Rules"@en ;
   skos:definition "Rules defining constraints or conditions associated with access, including citation."@en ;
-  trsp:correspondingClass openrel:AccessRules ;
+  trsp:conceptCorrespondingClass openrel:AccessRules ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
-trsp:typeProcessRules a skos:Concept ;
+trsp:typeProcessRulesPolicy a skos:Concept ;
   skos:prefLabel "Process Rules"@en ;
   skos:definition "Rules defining process formalities imposed by a software platform, infrastructure, federation, or dissemination channel."@en ;
-  trsp:correspondingClass openrel:ProcessRules ;
+  trsp:conceptCorrespondingClass openrel:ProcessRules ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 
@@ -108,7 +101,7 @@ trsp:preservationPolicy a skos:Concept ;
   skos:prefLabel "Preservation Policy"@en ;
   skos:definition "Policy governing the long-term preservation, continued accessibility, integrity, and usability of digital content."@en ;
   trsp:hasStringMapping "Preservation-policy", "Preservation_Policy", "long-term-data-preservation" ;
-  trsp:correspondingClass premis:PreservationPolicy ;
+  trsp:conceptCorrespondingClass premis:PreservationPolicy ;
   skos:broader trsp:curationPolicy ; 
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
@@ -116,7 +109,7 @@ trsp:preservationPolicy a skos:Concept ;
 trsp:sustainabilityPolicy a skos:Concept ; 
   skos:prefLabel "Sustainability Policy"@en ;
   skos:definition "Policy addressing organizational, financial, technical, or other measures intended to sustain a repository or service over time."@en ;
-  trsp:correspondingClass fairsharing:SustainabilityPolicy ;
+  trsp:conceptCorrespondingClass fairsharing:SustainabilityPolicy ;
   skos:broader trsp:typePolicyPurpose ; 
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
@@ -137,7 +130,7 @@ trsp:accessionPolicy a skos:Concept ;
                 "Acquisition Policy"@en , 
                 "Submission Policy"@en ;
   skos:definition "Policy governing the scope, selection, acquisition, development, deposit, submission, accession, acceptance, or composition of content entering or maintained as part of a repository or collection."@en ;
-  trsp:correspondingClass dct:accrualPolicy ;
+  trsp:conceptCorrespondingClass dct:accrualPolicy ;
   skos:broader trsp:curationPolicy ; 
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
@@ -196,7 +189,7 @@ trsp:persistentIdentifierPolicy a skos:Concept ;
 trsp:licencePolicy a skos:Concept ; 
   skos:prefLabel "Licence Policy"@en ;
   skos:definition "Policy governing selection, assignment, communication, or management of licences for repository content or services."@en ;
-  trsp:correspondingProperty dct:license ;
+  trsp:conceptCorrespondingProperty dct:license ;
   skos:broader trsp:curationPolicy ; 
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
@@ -213,7 +206,7 @@ trsp:preferredFormats a skos:Concept ;
 trsp:compliancePolicy a skos:Concept ; 
   skos:prefLabel "Compliance Policy"@en ;
   skos:definition "Policy governing conformance with applicable requirements, standards, specifications, legal obligations, or organizational rules."@en ;
-  trsp:correspondingProperty dct:conformsTo ;
+  trsp:conceptCorrespondingProperty dct:conformsTo ;
   skos:broader trsp:typePolicyPurpose ; 
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
@@ -251,7 +244,7 @@ trsp:dataSecurityAndIntegrityPolicy a skos:Concept ;
 trsp:qualityPolicy a skos:Concept ;
   skos:prefLabel "Quality Policy"@en ;
   skos:definition "Policy governing quality objectives, assessment, assurance, or improvement of data, metadata, repositories, or services."@en ;
-  trsp:correspondingClass dqv:QualityPolicy ;
+  trsp:conceptCorrespondingClass dqv:QualityPolicy ;
   trsp:imperative trsp:typeRecommended ;
   skos:broader trsp:typePolicyPurpose ; skos:inScheme trsp:checklistPolicies .
 

@@ -38,7 +38,7 @@ trsp:eosc-cat
   skos:prefLabel "EOSC Resource Catalogue"@en ;
   skos:inScheme trsp:checklistIndex .
 
-trsp:other
+trsp:otherIndex
   a skos:Concept ;
   skos:prefLabel "Other"@en ;
   skos:inScheme trsp:checklistIndex .

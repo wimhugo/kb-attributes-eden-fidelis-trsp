@@ -37,17 +37,6 @@ trsp:checklistLegalDocuments
   dct:modified "2026-09-17"^^xsd:date ;
   owl:versionInfo "0.5" .
 
-# Shared bridge annotations used across the TRSP classification vocabularies.
-trsp:correspondingClass
-  a owl:AnnotationProperty ;
-  rdfs:label "corresponding class"@en ;
-  rdfs:comment "Links a checklist concept to an RDF/OWL class representing a corresponding class-level notion."@en .
-
-trsp:correspondingProperty
-  a owl:AnnotationProperty ;
-  rdfs:label "corresponding property"@en ;
-  rdfs:comment "Links a checklist concept to an RDF property representing a corresponding predicate-level notion."@en .
-
 # --------------------------------------------------------------------------
 # Terms, conditions and rules governing use
 # --------------------------------------------------------------------------
@@ -69,8 +58,8 @@ trsp:termsOfUse
                 "ToU"@en ;
   skos:definition "Terms and conditions governing use of a repository, service, platform, data, facility, or other resource, including acceptable and prohibited use and user responsibilities."@en ;
   trsp:hasStringMapping "general-terms-and-conditions", "general-terms-and-conditions-use", "General-Terms-and-Contitions-of-Use", "legal-terms", "terms", "terms_of_service", "Terms_of_Service", "terms_use", "terms-and-conditions", "terms-and-policies", "terms-of-service", "terms-of-use", "terms-use-and-disclaimer", "TermsOfUse", "termsofuse" ;
-  trsp:correspondingClass dpv:TermsOfService ;
-  trsp:correspondingProperty schema:termsOfService ;
+  trsp:conceptCorrespondingClass dpv:TermsOfService ;
+  trsp:conceptCorrespondingProperty schema:termsOfService ;
   skos:closeMatch dpv:TermsOfService ;
   skos:broadMatch <http://www.data-knowledge.org/dk/hasTerms> ;
   rdfs:seeAlso <http://www.data-knowledge.org/dk/hasTerms> ;
@@ -96,7 +85,7 @@ trsp:legalAgreement
   a skos:Concept ;
   skos:prefLabel "Agreement or Contract"@en ;
   skos:definition "A legal or contractual instrument recording agreed conditions, obligations, responsibilities, permissions, prohibitions, or other terms between parties."@en ;
-  trsp:correspondingClass odrl:Agreement, 
+  trsp:conceptCorrespondingClass odrl:Agreement, 
                           dpv:LegalAgreement, 
                           ids:ContractAgreement ;
   skos:closeMatch dpv:LegalAgreement ;
@@ -131,8 +120,8 @@ trsp:transferLicenceAgreement
   skos:prefLabel "Transfer and Licence Agreement"@en ;
   skos:altLabel "Transfer and License Agreement"@en, "Deposit and Licence Agreement"@en ;
   skos:definition "An agreement governing transfer or deposit of content and the licence, permissions, rights, and responsibilities associated with its custody, preservation, publication, access, or reuse."@en ;
-  trsp:correspondingClass dpv:Licence ;
-  trsp:correspondingProperty dct:license ;
+  trsp:conceptCorrespondingClass dpv:Licence ;
+  trsp:conceptCorrespondingProperty dct:license ;
   skos:relatedMatch dpv:Licence ;
   rdfs:seeAlso ids:ContractAgreement ;
   skos:broader trsp:legalAgreement ;
@@ -158,8 +147,8 @@ trsp:privacyStatement
                 "Privacy and Data Protection Policy"@en,
                 "Data Protection Policy"@en ;
   skos:definition "Policy or notice describing privacy and personal-data processing, including relevant purposes, practices, rights, responsibilities, or safeguards."@en ;
-  trsp:correspondingClass dpv:PrivacyNotice ;
-  trsp:correspondingProperty dpv:hasNotice ;
+  trsp:conceptCorrespondingClass dpv:PrivacyNotice ;
+  trsp:conceptCorrespondingProperty dpv:hasNotice ;
   skos:closeMatch dpv:PrivacyNotice ;
   skos:broader trsp:privacyAndDataProtection ;
   trsp:imperative trsp:typeRecommended ;
@@ -229,7 +218,7 @@ trsp:rightsNotice
   skos:prefLabel "Rights or Copyright Notice"@en ;
   skos:altLabel "Copyright Notice"@en ;
   skos:definition "A notice communicating copyright, ownership, attribution, licensing, or other rights information associated with a resource or service."@en ;
-  trsp:correspondingProperty dct:rights, dct:license ;
+  trsp:conceptCorrespondingProperty dct:rights, dct:license ;
   skos:broader trsp:legalNotice ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
@@ -238,7 +227,7 @@ trsp:citationPolicy
   a skos:Concept ;
   skos:prefLabel "Citation Policy"@en ;
   skos:definition "Policy governing citation, acknowledgement, or attribution of data, services, repositories, or other research resources."@en ;
-  trsp:correspondingProperty dct:bibliographicCitation ;
+  trsp:conceptCorrespondingProperty dct:bibliographicCitation ;
   skos:broader trsp:legalTermsAndConditions ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .

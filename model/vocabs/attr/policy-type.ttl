@@ -29,21 +29,6 @@ trsp:typePolicyLicence
   owl:versionInfo "0.2" .
 
 # --------------------------------------------------------------------------
-# Shared bridge annotations. correspondingClass was introduced in the
-# service-type vocabulary; repeated here so this file can be used standalone.
-# --------------------------------------------------------------------------
-
-trsp:correspondingClass
-  a owl:AnnotationProperty ;
-  rdfs:label "corresponding class"@en ;
-  rdfs:comment "Links a classification concept to an RDF/OWL class representing a corresponding class-level notion."@en .
-
-trsp:correspondingProperty
-  a owl:AnnotationProperty ;
-  rdfs:label "corresponding property"@en ;
-  rdfs:comment "Links a classification concept to an RDF property representing a corresponding predicate-level notion."@en .
-
-# --------------------------------------------------------------------------
 # Facet: Policy form / expression type
 # --------------------------------------------------------------------------
 trsp:typePolicyForm a skos:Concept ;
@@ -55,7 +40,7 @@ trsp:typePolicyForm a skos:Concept ;
 trsp:typePolicy a skos:Concept ;
   skos:prefLabel "Policy"@en ;
   skos:definition "General policy concept encompassing explicit policies, licences, access rules, process rules, and other policy expressions."@en ;
-  trsp:correspondingClass odrl:Policy, 
+  trsp:conceptCorrespondingClass odrl:Policy, 
                           dct:Policy, 
                           dcat:Policy ;
   skos:broader trsp:typePolicyForm ; 
@@ -64,36 +49,36 @@ trsp:typePolicy a skos:Concept ;
 trsp:typeExplicitPolicy a skos:Concept ;
   skos:prefLabel "Explicit Policy"@en ;
   skos:definition "A policy represented or referenced as an identifiable policy resource, whether machine-readable, partly machine-readable, or human-readable."@en ;
-  trsp:correspondingClass openrel:Policy ;
+  trsp:conceptCorrespondingClass openrel:Policy ;
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeLicence a skos:Concept ;
   skos:prefLabel "Licence"@en ;
   skos:definition "A policy that grants or constrains rights to use an asset and is generally interpreted as a licence."@en ;
-  trsp:correspondingClass openrel:Licence ;
-  trsp:correspondingProperty dct:license ;
+  trsp:conceptCorrespondingClass openrel:Licence ;
+  trsp:conceptCorrespondingProperty dct:license ;
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeAccessRules a skos:Concept ;
   skos:prefLabel "Access Conditions"@en ; skos:altLabel "Access Rules"@en ;
   skos:definition "Policy rules defining conditions under which access to a resource or service may be obtained or exercised."@en ;
-  trsp:correspondingClass openrel:AccessRules ;
+  trsp:conceptCorrespondingClass openrel:AccessRules ;
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeProcessRules a skos:Concept ;
   skos:prefLabel "Process Rules"@en ;
   skos:definition "Policy rules defining formalities or process requirements associated with interaction with a platform, infrastructure, federation, or dissemination channel."@en ;
-  trsp:correspondingClass openrel:ProcessRules ;
+  trsp:conceptCorrespondingClass openrel:ProcessRules ;
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typePolicyCollection a skos:Concept ;
   skos:prefLabel "Policy Collection"@en ;
   skos:definition "A collection that references or combines one or more policies."@en ;
-  trsp:correspondingClass openrel:PolicyCollection ;
+  trsp:conceptCorrespondingClass openrel:PolicyCollection ;
   skos:broader trsp:typePolicyForm ; 
   skos:inScheme trsp:typePolicyLicence .
 
@@ -101,50 +86,50 @@ trsp:typePolicyCollection a skos:Concept ;
 
 trsp:typeAgreement a skos:Concept ; 
   skos:prefLabel "Agreement"@en ;
-  trsp:correspondingClass odrl:Agreement ; 
+  trsp:conceptCorrespondingClass odrl:Agreement ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeAssertion a skos:Concept ; 
   skos:prefLabel "Assertion"@en ;
-  trsp:correspondingClass odrl:Assertion ; 
+  trsp:conceptCorrespondingClass odrl:Assertion ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeOffer a skos:Concept ; 
   skos:prefLabel "Offer"@en ;
-  trsp:correspondingClass odrl:Offer ; 
+  trsp:conceptCorrespondingClass odrl:Offer ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typePrivacyPolicy a skos:Concept ; 
   skos:prefLabel "ODRL Privacy Policy"@en ;
-  trsp:correspondingClass odrl:Privacy ; 
+  trsp:conceptCorrespondingClass odrl:Privacy ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeRequest a skos:Concept ; 
   skos:prefLabel "Request"@en ;
-  trsp:correspondingClass odrl:Request ; 
+  trsp:conceptCorrespondingClass odrl:Request ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeSet a skos:Concept ; 
   skos:prefLabel "Set"@en ;
-  trsp:correspondingClass odrl:Set ; 
+  trsp:conceptCorrespondingClass odrl:Set ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeTicket a skos:Concept ; 
   skos:prefLabel "Ticket"@en ;
-  trsp:correspondingClass odrl:Ticket ; 
+  trsp:conceptCorrespondingClass odrl:Ticket ; 
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
 trsp:typeQuality a skos:Concept ;
   skos:prefLabel "Quality Policies"@en ;
   skos:note "Class-level policy notion observed in the harmonized graph; specific quality purposes should be represented in the checklist scheme."@en ;
-  trsp:correspondingClass dqv:QualityPolicy ;
+  trsp:conceptCorrespondingClass dqv:QualityPolicy ;
   skos:broader trsp:typePolicy ; 
   skos:inScheme trsp:typePolicyLicence .
 
@@ -183,7 +168,7 @@ trsp:scopeGlobal a skos:Concept ;
 trsp:typePolicyAccess a skos:Concept ;
   skos:prefLabel "Policy Access Type"@en ;
   skos:definition "The accessibility or disclosure category associated with a policy."@en ;
-  trsp:correspondingProperty openrel:accessType ;
+  trsp:conceptCorrespondingProperty openrel:accessType ;
   skos:topConceptOf trsp:typePolicyLicence ; 
   skos:inScheme trsp:typePolicyLicence .
 
@@ -209,7 +194,7 @@ trsp:accessPrivate a skos:Concept ;
 trsp:typePolicyStatus a skos:Concept ;
   skos:prefLabel "Policy Status"@en ;
   skos:definition "The lifecycle or approval status of a policy."@en ;
-  trsp:correspondingProperty openrel:policyStatus ;
+  trsp:conceptCorrespondingProperty openrel:policyStatus ;
   skos:topConceptOf trsp:typePolicyLicence ; 
   skos:inScheme trsp:typePolicyLicence .
 

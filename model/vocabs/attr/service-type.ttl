@@ -34,15 +34,6 @@ trsp:typeService
                   <https://orcid.org/0000-0002-3200-2698> ;
   owl:versionInfo "0.3" .
 
-# A lightweight property bridge from a SKOS service-type concept to an RDF/OWL class
-# with corresponding semantics. This avoids using SKOS mapping properties
-# between a concept and a class.
-
-trsp:correspondingClass
-  a owl:AnnotationProperty ;
-  rdfs:label "Corresponding Class"@en ;
-  rdfs:comment "Links a service-type concept to an RDF/OWL class that represents a corresponding class-level notion."@en .
-
 # ==========================================================================
 # Top-level facets
 # ==========================================================================
@@ -328,9 +319,9 @@ trsp:typeREST
   skos:broader trsp:typeInterface ;
   skos:inScheme trsp:typeService .
 
-trsp:typeOAIPMH
+trsp:typeProtocolOAIPMH
   a skos:Concept ;
-  skos:prefLabel "OAI-PMH"@en ;
+  skos:prefLabel "OAI-PMH Protocol"@en ;
   skos:altLabel "Open Archives Initiative Protocol for Metadata Harvesting"@en ;
   skos:definition "Service interface implementing OAI-PMH for exposing and harvesting metadata records."@en ;
   skos:broader trsp:typeInterface ;
@@ -439,7 +430,7 @@ trsp:typeSearchAction
 # Automation Level
 # ==========================================================================
 
-trsp:typeManual
+trsp:typeManualService
   a skos:Concept ;
   skos:prefLabel "Manual Service"@en ;
   skos:definition "A service whose substantive operation is performed manually by a person rather than executed automatically by a computational process."@en ;
@@ -460,7 +451,7 @@ trsp:typeSemiAutomated
   skos:broader trsp:typeAutomation ;
   skos:inScheme trsp:typeService .
 
-trsp:typeAutomated
+trsp:typeFullyAutomated
   a skos:Concept ;
   skos:prefLabel "Fully Automated Service"@en ;
   skos:altLabel "Automated Service"@en ;
@@ -558,7 +549,7 @@ trsp:typeRepositoryService
 trsp:typeCatalogueService
   a skos:Concept ;
   skos:prefLabel "Catalogue Services"@en ;
-  trsp:correspondingClass dcat:Catalog ;
+  trsp:conceptCorrespondingClass dcat:Catalog ;
   skos:broader trsp:typeRepositoryService ;
   skos:inScheme trsp:typeService .
 
@@ -572,7 +563,7 @@ trsp:typeHarvestingService
 trsp:typeDataService
   a skos:Concept ;
   skos:prefLabel "Data Services"@en ;
-  trsp:correspondingClass dcat:DataService ;
+  trsp:conceptCorrespondingClass dcat:DataService ;
   skos:related trsp:typeDataAccess ;
   skos:broader trsp:typeCatalogueService ;
   skos:inScheme trsp:typeService .
