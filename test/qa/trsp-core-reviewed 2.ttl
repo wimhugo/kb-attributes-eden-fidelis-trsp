@@ -730,9 +730,8 @@ trsp:DateTimeInterval
     rdfs:subClassOf time:DateTimeInterval ;
     rdfs:label "Date/time interval"@en ;
     skos:exactMatch dct:PeriodOfTime ;
-    skos:definition
-        "A date or time interval used to express temporal coverage or another bounded temporal extent."@en ;
-    skos:note "An ISO 8601 interval expressed as a single literal."@en .
+    skos:definition "A date or time interval used to express temporal coverage or another bounded temporal extent."@en ;
+    skos:note "Can be an ISO 8601 interval expressed as a single literal."@en .
 
 ####################################################################################################
 ## Classes and Properties Related to Orgbisations and Institutions
