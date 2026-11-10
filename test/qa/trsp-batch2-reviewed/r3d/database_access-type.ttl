@@ -1,0 +1,38 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: databaseAccessTypes
+##############################################################
+
+r3d:databaseAccessTypes a skos:ConceptScheme ;
+    skos:prefLabel "database access types"@en ;
+    skos:hasTopConcept <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/open> ;
+    skos:hasTopConcept <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/restricted> ;
+    skos:hasTopConcept <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/closed> ;
+    skos:topConceptOf r3d:databaseAccessTypes .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/open> a skos:Concept ;
+    skos:inScheme r3d:databaseAccessTypes ;
+    skos:prefLabel "open"@en ;
+    skos:definition "open"@en .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/restricted> a skos:Concept ;
+    skos:inScheme r3d:databaseAccessTypes ;
+    skos:prefLabel "restricted"@en ;
+    skos:definition "restricted"@en .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/closed> a skos:Concept ;
+    skos:inScheme r3d:databaseAccessTypes ;
+    skos:prefLabel "closed"@en ;
+    skos:definition "closed"@en .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/open> skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/restricted> .
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/restricted> skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/open> .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/open> skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/closed> .
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/closed> skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/open> .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/restricted> skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/closed> .
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/closed> skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddatabaseAccessTypes/restricted> .

@@ -1,0 +1,39 @@
+@prefix r3d: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/model/vocabs/r3d/> . ### to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: dataAccessTypes
+##############################################################
+
+r3d:dataAccessTypes a skos:ConceptScheme ;
+    skos:prefLabel "data access types"@en ;
+    skos:hasTopConcept <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/model/vocabs/r3d/dataAccessTypes/open> .
+
+r3d:open a skos:Concept ;
+    skos:inScheme r3d:dataAccessTypes ;
+    skos:prefLabel "Open"@en ;
+    skos:definition "Open Access"@en ;
+    skos:broader r3d:dataAccessTypes ;
+    skos:related <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/model/vocabs/r3d/dataAccessTypes/embargoed> .
+
+r3d:embargoed a skos:Concept ;
+    skos:inScheme r3d:dataAccessTypes ;
+    skos:prefLabel "Embargoed"@en ;
+    skos:definition "Embargoed Access"@en ;
+    skos:broader r3d:dataAccessTypes ;
+    skos:related <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/model/vocabs/r3d/dataAccessTypes/open> .
+
+r3d:restricted a skos:Concept ;
+    skos:inScheme r3d:dataAccessTypes ;
+    skos:prefLabel "Restricted"@en ;
+    skos:definition "Restricted Access"@en ;
+    skos:broader r3d:dataAccessTypes ;
+    skos:related <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/model/vocabs/r3d/dataAccessTypes/closed> .
+
+r3d:closed a skos:Concept ;
+    skos:inScheme r3d:dataAccessTypes ;
+    skos:prefLabel "Closed"@en ;
+    skos:definition "Closed Access"@en ;
+    skos:broader r3d:dataAccessTypes ;
+    skos:related <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/model/vocabs/r3d/dataAccessTypes/restricted> .

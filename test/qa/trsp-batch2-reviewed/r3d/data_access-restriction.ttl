@@ -1,0 +1,39 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: dataAccessRestrictions
+##############################################################
+
+r3d:dataAccessRestrictions a skos:ConceptScheme ;
+    skos:prefLabel "data access restrictions"@en ;
+    skos:hasTopConcept <https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/feeRequired> .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/feeRequired> a skos:Concept ;
+    skos:inScheme r3d:dataAccessRestrictions ;
+    skos:prefLabel "fee required"@en ;
+    skos:definition "fee required"@en ;
+    skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/institutionalMembership> ;
+    skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/registration> ;
+    skos:broader r3d:dataAccessRestrictions .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/institutionalMembership> a skos:Concept ;
+    skos:inScheme r3d:dataAccessRestrictions ;
+    skos:prefLabel "institutional membership"@en ;
+    skos:definition "institutional membership"@en ;
+    skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/registration> ;
+    skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/feeRequired> ;
+    skos:broader r3d:dataAccessRestrictions .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/registration> a skos:Concept ;
+    skos:inScheme r3d:dataAccessRestrictions ;
+    skos:prefLabel "registration"@en ;
+    skos:definition "registration"@en ;
+    skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/feeRequired> ;
+    skos:related <https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/institutionalMembership> ;
+    skos:broader r3d:dataAccessRestrictions .
+
+# --- deterministic fixes ---
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/institutionalMembership> skos:topConceptOf r3d:dataAccessRestrictions .
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataAccessRestrictions/registration> skos:topConceptOf r3d:dataAccessRestrictions .

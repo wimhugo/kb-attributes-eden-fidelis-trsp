@@ -1,0 +1,36 @@
+@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+##############################################################
+# Vocabulary: dataUploadTypes
+##############################################################
+
+r3d:dataUploadTypes a skos:ConceptScheme ;
+    skos:prefLabel "dataUploadTypes"@en ;
+    skos:hasTopConcept <https://schema.re3data.org/4-0/re3dataV4-0.xsddataUploadTypes/open> .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataUploadTypes/open> a skos:Concept ;
+    skos:inScheme r3d:dataUploadTypes ;
+    skos:prefLabel "open"@en ;
+    skos:definition "open"@en .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataUploadTypes/restricted> a skos:Concept ;
+    skos:inScheme r3d:dataUploadTypes ;
+    skos:prefLabel "restricted"@en ;
+    skos:definition "restricted"@en .
+
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataUploadTypes/closed> a skos:Concept ;
+    skos:inScheme r3d:dataUploadTypes ;
+    skos:prefLabel "closed"@en ;
+    skos:definition "closed"@en .
+
+# --- deterministic fixes ---
+
+r3d:dataUploadTypes skos:prefLabel "data upload types"@en .
+# topConceptOf is added for the missing links
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataUploadTypes/open> skos:topConceptOf r3d:dataUploadTypes .
+
+# Correcting asymmetry in skos:related - Adding inverse relation
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataUploadTypes/restricted> skos:topConceptOf r3d:dataUploadTypes .
+<https://schema.re3data.org/4-0/re3dataV4-0.xsddataUploadTypes/closed> skos:topConceptOf r3d:dataUploadTypes .

@@ -1,0 +1,64 @@
+@prefix trust: <https://purl.org/trsp/trust/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+trust:ConceptScheme a skos:ConceptScheme ;
+  skos:prefLabel "TRUST Principles for Digital Repositories"@en ;
+  dct:title "TRUST Principles for digital repositories"@en ;
+  dct:creator <https://doi.org/10.1038/s41597-020-0486-7> ;
+  dct:source <https://doi.org/10.1038/s41597-020-0486-7> ;
+  dct:created "2020-05-14"^^xsd:date ;
+  dct:modified "2026-05-03"^^xsd:date ;
+  owl:versionInfo "0.1" ;
+  dct:rights <https://spdx.org/licenses/CC0-1.0> ;
+  skos:definition "The TRUST Principles provide a common framework by which digital repositories can demonstrate that they are trustworthy and reliable custodians of digital objects."@en .
+
+trust:transparency a skos:Concept ;
+  skos:prefLabel "Transparency"@en ;
+  skos:notation "T" ;
+  skos:altLabel "T — Transparency"@en ;
+  skos:definition "To be transparent about specific repository services and data holdings that are verifiable by publicly accessible evidence."@en ;
+  skos:exactMatch <https://www.wikidata.org/entity/Q120327866> ;
+  rdfs:seeAlso <https://doi.org/10.1038/s41597-020-0486-7> ;
+  dct:source <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:inScheme trust:ConceptScheme .
+
+trust:responsibility a skos:Concept ;
+  skos:prefLabel "Responsibility"@en ;
+  skos:notation "R" ;
+  skos:altLabel "R — Responsibility"@en ;
+  skos:definition "To be responsible for ensuring the authenticity and integrity of data holdings and for the reliability of its service."@en ;
+  skos:exactMatch <https://www.wikidata.org/entity/Q120327867> ;
+  rdfs:seeAlso <https://doi.org/10.1038/s41597-020-0486-7> ;
+  dct:source <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:inScheme trust:ConceptScheme .
+
+trust:userFocus a skos:Concept ;
+  skos:prefLabel "User Focus"@en ;
+  skos:notation "U" ;
+  skos:altLabel "U — User Focus"@en ;
+  skos:definition "To ensure that the data management norms and expectations of target user communities are met."@en ;
+  rdfs:seeAlso <https://doi.org/10.1038/s41597-020-0486-7> ;
+  dct:source <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:inScheme trust:ConceptScheme .
+
+trust:sustainability a skos:Concept ;
+  skos:prefLabel "Sustainability"@en ;
+  skos:notation "S" ;
+  skos:altLabel "S — Sustainability"@en ;
+  skos:definition "To sustain services and preserve data holdings for the long-term, where such decisions are based on sound business planning."@en ;
+  rdfs:seeAlso <https://doi.org/10.1038/s41597-020-0486-7> ;
+  dct:source <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:inScheme trust:ConceptScheme .
+
+trust:technology a skos:Concept ;
+  skos:prefLabel "Technology"@en ;
+  skos:notation "T2" ;
+  skos:altLabel "T — Technology"@en ;
+  skos:definition "To provide infrastructure and capabilities to support secure, persistent, and reliable services."@en ;
+  rdfs:seeAlso <https://doi.org/10.1038/s41597-020-0486-7> ;
+  dct:source <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:inScheme trust:ConceptScheme .
