@@ -1,0 +1,39 @@
+IRI	Files	Distinct labels
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/correspondingClass	legal-check.ttl; policies-check.ttl; policy-type.ttl; service-type.ttl	
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/correspondingProperty	legal-check.ttl; policies-check.ttl; policy-type.ttl	
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/iso27001	info-management-check.ttl; quality-assurance-check.ttl	ISO 27001
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/other	index-check.ttl; ingest-metadata-check.ttl	Other
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeAI	community-check.ttl; curation-check.ttl	AI-assisted Curation
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeAIModerated	community-check.ttl; curation-check.ttl	AI with Human Moderated Curation
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeAccessRules	policies-check.ttl; policy-type.ttl	Access Conditions; Access Rules
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeAutomated	community-check.ttl; curation-check.ttl; service-type.ttl	Automated Curation; Fully Automated Service
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeAutomationLevel	community-check.ttl; curation-check.ttl	Levels of Automation
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeBitLevelPreservation	community-check.ttl; curation-check.ttl	Bit-Level Preservation
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForAiContent	community-check.ttl; curation-check.ttl	Checked for AI-generated Content
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForConsentForms	community-check.ttl; curation-check.ttl	Consent Forms Verified, Linked
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForDuplicatePublication	community-check.ttl; curation-check.ttl	Checked for Duplicate Publication
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForIllegalContent	community-check.ttl; curation-check.ttl	Checked for Illegal Content
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForIrrelevantContent	community-check.ttl; curation-check.ttl	Checked for Irrelevant Content
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForLicenceAssent	community-check.ttl; curation-check.ttl	Verification of Licence Assent
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForLicenceCombination	community-check.ttl; curation-check.ttl	Licence Combination Supported/ Verified
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForMaliciousContent	community-check.ttl; curation-check.ttl	Checked for Malicious Content
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForPlagiarism	community-check.ttl; curation-check.ttl	Plagiarism Verification
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCheckedForVirusMalware	community-check.ttl; curation-check.ttl	Virus and Malware Checking
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCompleteDocs	community-check.ttl; curation-check.ttl	Documentation Completeness
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeCurationActivity	community-check.ttl; curation-check.ttl	Curation Activity
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeDepositDocumentation	community-check.ttl; curation-check.ttl	Quality Assured Deposit Documentation
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeExplicitPolicy	policies-check.ttl; policy-type.ttl	Explicit Policy
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeFAIR	principles-check.ttl; quality-assurance-check.ttl	FAIR; FAIR Assessment
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeFormatPreservation	community-check.ttl; curation-check.ttl	Format Preservation
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeImprovementActivity	community-check.ttl; curation-check.ttl	Improvement and Enhancement Activity
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeIntegrityChecks	community-check.ttl; curation-check.ttl	Integrity Verification
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeLegalEthicsChecks	community-check.ttl; curation-check.ttl	Legal and Ethical Verification
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeLicence	policies-check.ttl; policy-type.ttl	Explicit Licence; Licence
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeMandatoryMetadata	community-check.ttl; curation-check.ttl	Mandatory Metadata Verified
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeManual	community-check.ttl; curation-check.ttl; service-type.ttl	Manual Curation; Manual Service
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeOAIPMH	api-list-check.ttl; service-type.ttl	OAI-PMH; OAI-PMH Harvesting Endpoint
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typePreservationActivity	community-check.ttl; curation-check.ttl	Preservation Activity
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeProcessRules	policies-check.ttl; policy-type.ttl	Process Rules
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeQualityActivity	community-check.ttl; curation-check.ttl	Improvement and Enhancement Activity
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeSemanticAnnotation	community-check.ttl; curation-check.ttl	Semantic Annotation
+https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/typeSemanticEnhancement	community-check.ttl; curation-check.ttl	Semantic Enhancement

@@ -1,0 +1,283 @@
+r3d_code	r3d_subject	previous_lexical_score	ford_code	ford_label	relation	status	rationale
+0	Multidisciplinary / General					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+1	Humanities and Social Sciences	70.6				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+11	Humanities		6	Humanities	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+111	Ancient Cultures	54.1	6.1	History and archaeology	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11101	Prehistory and World Archaeology	83.6	6.1	History and archaeology	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11102	Greek and Latin Philology	58.8	6.2	Languages and literature	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+11103	Ancient History		6.1	History and archaeology	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11104	Classical, Roman, Christian and Islamic Archaeology	55.6	6.1	History and archaeology	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11105	Egyptology and Ancient Near Eastern Studies					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+112	History		6.1	History and archaeology	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11201	Medieval History	51.4	6.1	History and archaeology	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+11202	Early Modern History		6.1	History and archaeology	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11203	Modern and Contemporary History	50.0	6.1	History and archaeology	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+11204	History of Science	61.5	6.1	History and archaeology	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+113	Art History, Music, Theatre and Media Studies					unmapped	Multiple disciplinary branches plausible; abstained
+11301	Art History					unmapped	Multiple disciplinary branches plausible; abstained
+11302	Musicology	73.7	6.4	Arts (arts, history of arts, performing arts, music)	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+11303	Theatre and Media Studies	63.8				unmapped	Interdisciplinary or ambiguous scope; abstained
+114	Linguistics		6.2	Languages and literature	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11401	General and Comparative Linguistics, Experimental Linguistics, Typology, Non-European Languages		6.2	Languages and literature	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11402	Individual Linguistics, Historical Linguistics					unmapped	Multiple disciplinary branches plausible; abstained
+11403	Applied Linguistics, Computational Linguistics		6.2	Languages and literature	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+115	Literary Studies	58.8	6.2	Languages and literature	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11501	German Medieval Studies (Medieval German Literature)	51.4	6.2	Languages and literature	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+11502	German Literary and Cultural Studies (Modern German Literature)		6.2	Languages and literature	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11503	European and American Literary and Cultural Studies		6.2	Languages and literature	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11504	General and Comparative Literary Studies; Cultural Studies		6.2	Languages and literature	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+116	Social and Cultural Anthropology, Non-European Cultures, Jewish Studies and Religious Studies		6.3	Philosophy, ethics and religion	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11601	Social and Cultural Anthropology and Ethnology	52.8				unmapped	Interdisciplinary or ambiguous scope; abstained
+11602	Asian Studies	57.1				unmapped	Interdisciplinary or ambiguous scope; abstained
+11603	African, American and Oceania Studies	54.0				unmapped	Interdisciplinary or ambiguous scope; abstained
+11604	Islamic Studies, Arabian Studies, Semitic Studies					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+11605	Religious Studies and Jewish Studies	51.4	6.3	Philosophy, ethics and religion	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+117	Theology	66.7	6.3	Philosophy, ethics and religion	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11701	Protestant Theology	58.8	6.3	Philosophy, ethics and religion	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+11702	Roman Catholic Theology	57.9	6.3	Philosophy, ethics and religion	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+118	Philosophy	50.0	6.3	Philosophy, ethics and religion	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+11801	History of Philosophy	59.1	6.3	Philosophy, ethics and religion	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+11802	Theoretical Philosophy	54.5	6.3	Philosophy, ethics and religion	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+11803	Practical Philosophy		6.3	Philosophy, ethics and religion	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12	Social and Behavioural Sciences	69.1				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+121	Educational Research	75.0	5.3	Educational sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12101	General Education and History of Education					unmapped	Multiple disciplinary branches plausible; abstained
+12102	General and Domain-Specific Teaching and Learning					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+12103	Education Systems and Educational Institutions		5.3	Educational sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12104	Educational Research on Socialisation, Welfare and Professionalism		5.3	Educational sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+122	Psychology		5.1	Psychology	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+12201	General, Cognitive and Mathematical Psychology	53.5	5.1	Psychology	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12202	Biological Psychology and Cognitive Neuroscience	53.7				unmapped	Interdisciplinary or ambiguous scope; abstained
+12203	Developmental and Educational Psychology	56.7	5.1	Psychology	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12204	Social Psychology, Industrial and Organisational Psychology		5.1	Psychology	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12205	Personality Psychology, Clinical and Medical Psychology, Methodology					unmapped	Multiple disciplinary branches plausible; abstained
+123	Social Sciences		5	Social sciences	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+12301	Sociological Theory	64.3	5.4	Sociology	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12302	Empirical Social Research	57.1	5.4	Sociology	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12303	Communication Sciences	76.2	5.8	Media and communications	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12304	Political Science		5.6	Political science	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+124	Economics	58.1	5.2	Economics and business	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12401	Economic Theory	59.1	5.2	Economics and business	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12402	Economic Policy, Applied Economics	50.9	5.2	Economics and business	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12403	Accounting und Finance	50.9	5.2	Economics and business	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12404	Management and Marketing	54.2	5.2	Economics and business	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12405	Operations Management and Computer Science for Business Administration					unmapped	Multiple disciplinary branches plausible; abstained
+12406	Statistics and Econometrics	53.6	5.2	Economics and business	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+12407	Economic and Social History	65.3				unmapped	Interdisciplinary or ambiguous scope; abstained
+125	Jurisprudence					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+12501	Principles of Law and Jurisprudence		5.5	Law	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12502	Private Law		5.5	Law	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12503	Public Law		5.5	Law	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12504	Criminal Law		5.5	Law	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+12505	Criminology	70.0	5.5	Law	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+2	Life Sciences	71.4				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+21	Biology	75.0	1.6	Biological sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+211	Basic Research in Biology and Medicine	53.8	1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+21101	Biochemistry		1.4	Chemical sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21102	Biophysics	51.9				unmapped	Interdisciplinary or ambiguous scope; abstained
+21103	Cell Biology	66.7	1.6	Biological sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21104	Structural Biology	68.2	1.6	Biological sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21105	General Genetics and Functional Genome Biology	52.8	1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21106	Developmental Biology	70.8	1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21107	Bioinformatics and Theoretical Biology	53.1				unmapped	Multiple disciplinary branches plausible; abstained
+212	Plant Sciences	75.9	1.6	Biological sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21201	Evolution and Systematics of Plants and Fungi		1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21202	Ecology and Biodiversity of Plants and Ecosystems		1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21203	Organismic Interactions, Chemical Ecology and Microbiomes of Plant Systems					unmapped	Multiple disciplinary branches plausible; abstained
+21204	Plant Physiology	58.1	3.1	Basic medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21205	Plant Biochemistry and Biophysics	53.7				unmapped	Multiple disciplinary branches plausible; abstained
+21206	Plant Cell and Developmental Biology	57.1	1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21207	Plant Genetics and Genomics	52.6	1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+213	Zoology	75.0	1.6	Biological sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21301	Systematics and Morphology (Zoology)	50.0	1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21302	Evolution, Anthropology	57.1				unmapped	Interdisciplinary or ambiguous scope; abstained
+21303	Ecology and Biodiversity of Animals and Ecosystems, Organismic Interactions		1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21304	Sensory and Behavioural Biology	63.0	1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+21305	Animal Physiology and Biochemistry					unmapped	Multiple disciplinary branches plausible; abstained
+21306	Evolutionary Cell and Developmental Biology (Zoology)	51.3	1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22	Medicine	72.7				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+221	Microbiology, Virology and Immunology					unmapped	Multiple disciplinary branches plausible; abstained
+22101	Metabolism, Biochemistry and Genetics of Microorganisms					unmapped	Multiple disciplinary branches plausible; abstained
+22102	Microbial Ecology and Applied Microbiology		1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22103	Medical Microbiology and Mycology, Hygiene, Molecular Infection Biology		1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22104	Virology	70.6	3.1	Basic medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22105	Immunology	63.2	3.1	Basic medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22106	Parasitology and Biology of Tropical Infectious Disease Pathogens		1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+222	Medicine	72.7				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+22201	Epidemiology and Medical Biometry/Statistics	50.7				unmapped	Multiple disciplinary branches plausible; abstained
+22202	Public Heatlh, Healthcare Research, Social and Occupational Medicine					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+22203	Human Genetics	66.7				unmapped	Multiple disciplinary branches plausible; abstained
+22204	Anatomy and Physiology	62.2	3.1	Basic medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22205	Nutritional Sciences	80.0	3.3	Health sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22206	Pathology	73.7	3.1	Basic medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22207	Medical Informatics and Medical Bioinformatics	54.8				unmapped	Multiple disciplinary branches plausible; abstained
+22208	Pharmacy					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+22209	Pharmacology	63.6	3.1	Basic medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22210	Toxicology, Laboratory Medicine	51.1	3.1	Basic medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22211	Anaesthesiology	60.0	3.2	Clinical medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22212	Cardiology, Angiology	51.4	3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22213	Pneumology, Thoracic Surgery		3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22214	Hematology, Oncology	61.5	3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22215	Gastroenterology	58.1	3.2	Clinical medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22216	Nephrology	70.0	3.2	Clinical medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22217	Endocrinology, Diabetology, Metabolism					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+22218	Rheumatology	56.2	3.2	Clinical medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22219	Dermatology	53.8	3.2	Clinical medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22220	Pediatric and Adolescent Medicine	56.7	3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22221	Gynaecology and Obstetrics	54.2				unmapped	Multiple disciplinary branches plausible; abstained
+22222	Clinical Immunology and Allergology	52.5				unmapped	Multiple disciplinary branches plausible; abstained
+22223	Reproductive Medicine, Urology					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+22224	Biogerontology and Geriatric Medicine	51.0	3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22225	General and Visceral Surgery	53.8	3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22226	Cardiac and Vascular Surgery	50.0	3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22227	Orthopaedics, Traumatology, Reconstructive Surgery		3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22228	Dentistry, Oral Surgery		3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22229	Otolaryngology, Phoniatrics and Audiology					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+22230	Radiology	66.7	3.2	Clinical medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22231	Clinical Infectiology and Tropical Medicine	56.7	3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22232	Medical Physics, Biomedical Technology	63.2				unmapped	Interdisciplinary or ambiguous scope; abstained
+22233	Nuclear Medicine, Radiotherapy, Radiobiology		1.6	Biological sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+223	Neurosciences	75.9	3.1	Basic medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22301	Developmental Neurobiology	64.2				unmapped	Multiple disciplinary branches plausible; abstained
+22302	Molecular Biology and Physiology of Neurons and Glial Cells					unmapped	Multiple disciplinary branches plausible; abstained
+22303	Experimental and Theoretical Network Neuroscience	57.9	3.1	Basic medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22304	Cognitive, Systems and Behavioural Neurobiology					unmapped	Multiple disciplinary branches plausible; abstained
+22305	Experimental Models for the Understanding of Nervous System Diseases					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+22306	Molecular and Cellular Neurology and Neuropathology		3.1	Basic medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22307	Clinical Neurology; Neurosurgery and Neuroradiology		3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22308	Human Cognitive and Systems Neuroscience	53.1	3.1	Basic medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22309	Biological Psychiatry	70.0				unmapped	Interdisciplinary or ambiguous scope; abstained
+22310	Clinical Psychiatry, Psychotherapy, Child and Adolescent Psychiatry		3.2	Clinical medicine	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+22311	Ophthalmology	60.9	3.2	Clinical medicine	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+23	Agriculture, Forestry and Veterinary Medicine	74.4				unmapped	Multiple disciplinary branches plausible; abstained
+231	Agriculture, Forestry and Veterinary Medicine	74.4				unmapped	Multiple disciplinary branches plausible; abstained
+23101	Soil Sciences	92.9				unmapped	Interdisciplinary or ambiguous scope; abstained
+23102	Plant Breeding and Plant Pathology	60.0				unmapped	Multiple disciplinary branches plausible; abstained
+23103	Plant Cultivation, Plant Nutrition, Agricultural Technology	55.4				unmapped	Multiple disciplinary branches plausible; abstained
+23104	Ecology of Land Use	58.5				unmapped	Multiple disciplinary branches plausible; abstained
+23105	Agricultural Economics, Agricultural Policy, Agricultural Sociology					unmapped	Multiple disciplinary branches plausible; abstained
+23106	Forestry		4.1	Agriculture, forestry, and fisheries	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+23107	Animal Breeding, Animal Nutrition, Animal Husbandry		3.3	Health sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+23108	Veterinary Medical Science	81.8	4.3	Veterinary science	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+3	Natural Sciences		1	Natural sciences	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+31	Chemistry	50.0	1.4	Chemical sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+311	Molecular Chemistry		1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+31101	Inorganic Molecular Chemistry - Synthesis and Characterisation		1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+31102	Organic Molecular Chemistry - Synthesis and Characterisation		1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+312	Chemical Solid State and Surface Research	55.2	1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+31201	Solid State and Surface Chemistry, Material Synthesis	50.0	1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+31202	Physical Chemistry of Solids and Surfaces, Material Characterisation					unmapped	Multiple disciplinary branches plausible; abstained
+313	Physical Chemistry	68.6				unmapped	Multiple disciplinary branches plausible; abstained
+31301	Physical Chemistry of Molecules, Liquids and Interfaces, Biophysical Chemistry					unmapped	Multiple disciplinary branches plausible; abstained
+314	Analytical Chemistry	50.0	1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+31401	Analytical Chemistry	50.0	1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+315	Biological Chemistry and Food Chemistry	58.6				unmapped	Multiple disciplinary branches plausible; abstained
+31501	Biological and Biomimetic Chemistry	59.3				unmapped	Multiple disciplinary branches plausible; abstained
+31502	Food Chemistry		1.4	Chemical sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+316	Polymer Research					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+31601	Preparatory and Physical Chemistry of Polymers					unmapped	Multiple disciplinary branches plausible; abstained
+31602	Experimental and Theoretical Physics of Polymers	50.7				unmapped	Interdisciplinary or ambiguous scope; abstained
+31603	Polymer Materials	54.5	2.5	Materials engineering	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+317	Theoretical Chemistry	60.5	1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+31701	Theoretical Chemistry: Electron Structure, Dynamics, Simulation		1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+31702	Theoretical Chemistry: Molecules, Materials, Surfaces					unmapped	Multiple disciplinary branches plausible; abstained
+32	Physics	58.3	1.3	Physical sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+321	Condensed Matter Physics		1.3	Physical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+32101	Experimental Condensed Matter Physics		1.3	Physical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+32102	Theoretical Condensed Matter Physics	51.7	1.3	Physical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+322	Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter, Biological Physics					unmapped	Multiple disciplinary branches plausible; abstained
+32201	Statistical Physics, Nonlinear Dynamics, Complex Systems, Soft and Fluid Matter, Biological Physics					unmapped	Multiple disciplinary branches plausible; abstained
+323	Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas		1.3	Physical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+32301	Optics, Quantum Optics and Physics of Atoms, Molecules and Plasmas		1.3	Physical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+324	Particles, Nuclei and Fields	55.7	1.3	Physical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+32401	Nuclear and Elementary Particle Physics, Quantum Mechanics, Relativity, Fields					unmapped	Multiple disciplinary branches plausible; abstained
+325	Astrophysics and Astronomy	57.1	1.3	Physical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+32501	Astrophysics and Astronomy	57.1	1.3	Physical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+33	Mathematics		1.1	Mathematics	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+331	Mathematics		1.1	Mathematics	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+33101	Mathematics		1.1	Mathematics	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+34	Geosciences	69.2	1.5	Earth and related environmental sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+341	Atmospheric Science, Oceanography and Climate Research		1.5	Earth and related environmental sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+34101	Atmospheric Science	68.3	1.5	Earth and related environmental sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+34102	Oceanography	53.7	1.5	Earth and related environmental sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+342	Geology and Palaeontology	62.5	1.5	Earth and related environmental sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+34201	Geology	62.5	1.5	Earth and related environmental sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+34202	Palaeontology	57.1	1.5	Earth and related environmental sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+343	Geophysics and Geodesy	56.4				unmapped	Multiple disciplinary branches plausible; abstained
+34301	Geophysics	51.9				unmapped	Multiple disciplinary branches plausible; abstained
+34302	Geodesy, Photogrammetry, Remote Sensing, Geoinformatics, Cartography					unmapped	Multiple disciplinary branches plausible; abstained
+344	Mineralogy, Petrology and Geochemistry		1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+34401	Mineralogy, Petrology and Geochemistry		1.4	Chemical sciences	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+345	Geography					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+34501	Physical Geography	59.6				unmapped	Multiple disciplinary branches plausible; abstained
+34502	Human Geography	54.5	5.7	Social and economic geography	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+346	Water Research					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+34601	Hydrogeology, Hydrology, Limnology, Urban Water Management, Water Chemistry, Integrated Water Resources Management					unmapped	Multiple disciplinary branches plausible; abstained
+4	Engineering Sciences	68.4				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+41	Mechanical and Industrial Engineering	74.6	2.3	Mechanical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+411	Production Technology	66.7	2.3	Mechanical engineering	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+41101	Metal-Cutting and Abrasive Manufacturing Engineering	52.9	2.3	Mechanical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+41102	Primary Shaping and Reshaping Technology, Additive Manufacturing		2.3	Mechanical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+41103	Joining and Separation Technology	67.8				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+41104	Plastics Engineering	78.0	2.5	Materials engineering	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+41105	Production Systems, Operations Management, Quality Management and Factory Planning		5.2	Economics and business	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+41106	Production Automation and Assembly Technology	53.5				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+412	Mechanics and Constructive Mechanical Engineering	62.0	2.3	Mechanical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+41201	Engineering Design, Machine Elements, Product Development					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+41202	Mechanics	60.0	2.3	Mechanical engineering	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+41203	Lightweight Construction, Textile Technology	54.3	2.1	Civil engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+41204	Acoustics	50.0				unmapped	Interdisciplinary or ambiguous scope; abstained
+42	Thermal Engineering/Process Engineering	63.0	2.4	Chemical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+421	Process Engineering, Technical Chemistry	63.0				unmapped	Multiple disciplinary branches plausible; abstained
+42101	Chemical and Thermal Process Engineering	66.7				unmapped	Multiple disciplinary branches plausible; abstained
+42102	Technical Chemistry	58.5				unmapped	Multiple disciplinary branches plausible; abstained
+42103	Mechanical Process Engineering	84.6				unmapped	Multiple disciplinary branches plausible; abstained
+42104	Biological Process Engineering	65.3				unmapped	Multiple disciplinary branches plausible; abstained
+42105	Systems Process Engineering	66.7	2.4	Chemical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+422	Fluid Mechanics, Technical Thermodynamics and Thermal Energy Engineering	50.0	2.3	Mechanical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+42201	Energy Process Engineering	66.7	2.4	Chemical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+42202	Technical Thermodynamics	53.7	2.3	Mechanical engineering	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+42203	Fluid Mechanics		2.3	Mechanical engineering	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+42204	Hydraulic and Turbo Engines and Piston Engines	52.5	2.3	Mechanical engineering	skos:broadMatch	proposed - requires expert review	Explicit disciplinary review of label and scope
+43	Materials Science and Engineering	77.8	2.5	Materials engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+431	Materials Engineering		2.5	Materials engineering	skos:exactMatch	proposed - requires expert review	Identical discipline label, subject to hierarchy compatibility
+43101	Metallurgical, Thermal and Thermomechanical Treatment of Materials					unmapped	Multiple disciplinary branches plausible; abstained
+43102	Materials in Sintering Processes and Generative Manufacturing Processes	50.0				unmapped	Multiple disciplinary branches plausible; abstained
+43103	Coating and Surface Technology	64.3	2.5	Materials engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+43104	Mechanical Properties of Metallic Materials and their Microstructural Origins					unmapped	Multiple disciplinary branches plausible; abstained
+43105	Glass, Ceramics and Derived Composites					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+43106	Polymeric and Biogenic Materials and Derived Composites	50.0	2.5	Materials engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+432	Materials Science	78.8	2.5	Materials engineering	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+43201	Synthesis and Properties of Functional Materials		2.5	Materials engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+43202	Biomaterials	54.5	2.5	Materials engineering	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+43203	Thermodynamics and Kinetics as well as Properties of Phases and Microstructure of Materials					unmapped	Multiple disciplinary branches plausible; abstained
+43204	Computer-Aided Design of Materials and Simulation of Materials Behaviour from Atomic to Microscopic Scale		2.5	Materials engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+44	Computer Science, Systems and Electrical Engineering	57.5				unmapped	Interdisciplinary or ambiguous scope; abstained
+441	Systems Engineering	75.0				unmapped	No sufficiently unambiguous correspondence; retained unmapped
+44101	Automation, Mechatronics, Control Systems, Intelligent Technical Systems, Robotics					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+44102	Measurement Systems					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+44103	Microsystems					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+44104	Traffic and Transport Systems, Intelligent and Automated Traffic					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+44105	Human Factors, Ergonomics, Human-Machine Systems	50.0				unmapped	Interdisciplinary or ambiguous scope; abstained
+44106	Biomedical Systems Technology	61.2	2.6	Medical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+442	Electrical Engineering and Information Technology	69.3	2.2	Electrical engineering, electronic engineering, information engineering	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+44201	Electronic Semiconductors, Components and Circuits, Integrated Systems, Sensor Technology, Theoretical Electrical Engineering		2.2	Electrical engineering, electronic engineering, information engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+44202	Communication Technology and Networks, High-Frequency Technology and Photonic Systems, Signnal Processing and Machine Learning for Information Technology					unmapped	Multiple disciplinary branches plausible; abstained
+44203	Electrical Energy Systems, Power Management, Power Electronics, Electrical Machines and Drives	55.0				unmapped	Multiple disciplinary branches plausible; abstained
+44204	Hardware Systems and Architectures for Information Technology and Artificial Intelligence, Quantum Engineering Systems					unmapped	Multiple disciplinary branches plausible; abstained
+443	Computer Science	65.3	1.2	Computer and information sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+44301	Theoretical Computer Science	68.0	1.2	Computer and information sciences	skos:closeMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+44302	Software Engineering and Programming Languages	62.5				unmapped	Multiple disciplinary branches plausible; abstained
+44303	Security and Dependability, Operating, Communication and Distributed Systems		5.8	Media and communications	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+44304	Artificial Intelligence and Machine Learning Methods					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+44305	Image and Language Processing, Computer Graphics and Visualisation, Human Computer Interaction, Ubiquitous and Wearable Computing		6.2	Languages and literature	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+44306	Data Management, Data-Intensive Systems, Computer Science Methods in Business Informatics					unmapped	Multiple disciplinary branches plausible; abstained
+44307	Computer Architecture, Embedded and Massively Parallel Systems		2.1	Civil engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+45	Construction Engineering and Architecture	64.0	2.1	Civil engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+451	Construction Engineering and Architecture	64.0				unmapped	Interdisciplinary or ambiguous scope; abstained
+45101	Architecture, Building and Construction History, Construction Research, Sustainable Building Technology					unmapped	Multiple disciplinary branches plausible; abstained
+45102	Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning					unmapped	No sufficiently unambiguous correspondence; retained unmapped
+45103	Construction Material Sciences, Chemistry, Building Physics					unmapped	Multiple disciplinary branches plausible; abstained
+45104	Structural Engineering, Building Informatics and Construction Operation	59.0				unmapped	Multiple disciplinary branches plausible; abstained
+45105	Applied Mechanics, Statics and Dynamics		2.3	Mechanical engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch
+45106	Geotechnics, Hydraulic Engineering	72.7	2.1	Civil engineering	skos:broadMatch	proposed - requires expert review	Discipline-specific terminology supports this FORD branch

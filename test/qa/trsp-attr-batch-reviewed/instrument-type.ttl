@@ -1,0 +1,48 @@
+@prefix trsp: <https://example.org/rdmi/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+trsp:typeInstrumentRelationship
+    a skos:ConceptScheme ;
+    skos:prefLabel "Instrument relationship type"@en ;
+    skos:definition "Types of relationship describing how an entity engages with, applies, conforms to, or receives formal recognition against a principle, declaration, manifesto, standard, framework, specification, best practice, or comparable instrument."@en ;
+    skos:hasTopConcept
+        trsp:typeEndorsement ,
+        trsp:typeAdoption ,
+        trsp:typeImplementation ,
+        trsp:typeConformance ,
+        trsp:typeCertification .
+
+trsp:typeEndorsement
+    a skos:Concept ;
+    skos:inScheme trsp:typeInstrumentRelationship ;
+    skos:topConceptOf trsp:typeInstrumentRelationship ;
+    skos:prefLabel "Endorsement"@en ;
+    skos:definition "A relationship in which an entity expresses formal or public support for an instrument, its objectives, or its principles, without necessarily asserting adoption, implementation, or conformance."@en .
+
+trsp:typeAdoption
+    a skos:Concept ;
+    skos:inScheme trsp:typeInstrumentRelationship ;
+    skos:topConceptOf trsp:typeInstrumentRelationship ;
+    skos:prefLabel "Adoption"@en ;
+    skos:definition "A relationship in which an entity has formally selected an instrument, or applicable provisions of it, for use in its policies, governance, processes, systems, or practices."@en .
+
+trsp:typeImplementation
+    a skos:Concept ;
+    skos:inScheme trsp:typeInstrumentRelationship ;
+    skos:topConceptOf trsp:typeInstrumentRelationship ;
+    skos:prefLabel "Implementation"@en ;
+    skos:definition "A relationship in which an entity has put applicable provisions, requirements, recommendations, or practices of an instrument into operational practice."@en .
+
+trsp:typeConformance
+    a skos:Concept ;
+    skos:inScheme trsp:typeInstrumentRelationship ;
+    skos:topConceptOf trsp:typeInstrumentRelationship ;
+    skos:prefLabel "Conformance"@en ;
+    skos:definition "A relationship in which an entity satisfies applicable requirements or criteria specified by an instrument, as established by declaration, assessment, or other evidence of conformance."@en .
+
+trsp:typeCertification
+    a skos:Concept ;
+    skos:inScheme trsp:typeInstrumentRelationship ;
+    skos:topConceptOf trsp:typeInstrumentRelationship ;
+    skos:prefLabel "Certification"@en ;
+    skos:definition "A relationship in which an entity's conformance with applicable requirements or criteria has been formally recognized through a defined certification process."@en .

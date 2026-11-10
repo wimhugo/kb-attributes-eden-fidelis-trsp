@@ -1,0 +1,32 @@
+@prefix trsp: <https://example.org/rdmi/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+trsp:typeGovernance
+    a skos:ConceptScheme ;
+    skos:prefLabel "Repository Governance Type type"@en ;
+    skos:definition "Types of governance and oversight applicable to a repository."@en ;
+    .
+
+trsp:typeCommercial
+    a skos:Concept ;
+    skos:inScheme trsp:typeGovernance ;
+    skos:prefLabel "Commercially Motivated"@en ;
+    skos:definition "Commercial governance - for listed companies, board and regulatory oversight, for private companies, regulatory oversight."@en .
+
+trsp:typeCommunity
+    a skos:Concept ;
+    skos:inScheme trsp:typeGovernance ;
+    skos:prefLabel "Community Governance"@en ;
+    skos:definition "Community governance - community representation in steering board or periodic review."@en .
+
+trsp:typeConsortium
+    a skos:Concept ;
+    skos:inScheme trsp:typeGovernance ;
+    skos:prefLabel "Consortium Governance"@en ;
+    skos:definition "Consortium governance - consortium member governance."@en .
+
+trsp:typeInstitutional
+    a skos:Concept ;
+    skos:inScheme trsp:typeGovernance ;
+    skos:prefLabel "Institutional Governance"@en ;
+    skos:definition "Institutional governance - oversight follows institutional norms."@en .

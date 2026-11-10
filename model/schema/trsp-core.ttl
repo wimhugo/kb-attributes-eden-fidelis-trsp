@@ -830,9 +830,9 @@ trsp:hasAnnotation
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
 ### confirm this in trsp ProfileProperty
-#trsp:spatialCoverage
+# trsp:spatialCoverage
 #    a owl:ObjectProperty ;
 #    rdfs:range trsp:SpatialCoverage ;
 #    rdfs:label "spatial coverage"@en ;
 #    skos:definition
-#        "Identifies the spatial or geographic coverage of a resource."@en .
+#    "Identifies the spatial or geographic coverage of a resource."@en .
