@@ -71,7 +71,7 @@ trsp:typeInclusivity
   dct:source <https://openscholarlyinfrastructure.org/>, <https://www.gida-global.org/care> ;
   skos:inScheme trsp:checklistCommunityEngagement .
 
-trsp:typeInclusivityRepresentation
+trsp:typeRepresentation
   a skos:Concept ;
   skos:prefLabel "Representative Participation"@en ;
   skos:definition "Include representatives of affected and underserved communities in consultation, governance, and decision-making, with meaningful opportunities to influence outcomes."@en ;
@@ -79,7 +79,7 @@ trsp:typeInclusivityRepresentation
   skos:broader trsp:typeInclusivity ;
   skos:inScheme trsp:checklistCommunityEngagement .
 
-trsp:typeInclusivityAccessibility
+trsp:typeAccessibility
   a skos:Concept ;
   skos:prefLabel "Accessible Participation and Services"@en ;
   skos:definition "Reduce technical, financial, linguistic, physical, and procedural barriers to participation and use of infrastructure services."@en ;
@@ -87,7 +87,7 @@ trsp:typeInclusivityAccessibility
   skos:broader trsp:typeInclusivity ;
   skos:inScheme trsp:checklistCommunityEngagement .
 
-trsp:typeInclusivityEquity
+trsp:typeEquity
   a skos:Concept ;
   skos:prefLabel "Equitable Distribution of Benefits"@en ;
   skos:definition "Assess and address disparities in access, influence, resources, and benefits across participating communities."@en ;
@@ -95,7 +95,7 @@ trsp:typeInclusivityEquity
   skos:broader trsp:typeInclusivity ;
   skos:inScheme trsp:checklistCommunityEngagement .
 
-trsp:typeInclusivityCulturalRespect
+trsp:typeCulturalRespect
   a skos:Concept ;
   skos:prefLabel "Cultural and Contextual Respect"@en ;
   skos:definition "Respect community-specific knowledge practices, languages, values, and expectations, including Indigenous rights and interests where applicable."@en ;
@@ -103,13 +103,17 @@ trsp:typeInclusivityCulturalRespect
   skos:broader trsp:typeInclusivity ;
   skos:inScheme trsp:checklistCommunityEngagement .
 
-trsp:typeInclusivityAccountability
+trsp:typeAccountability
   a skos:Concept ;
   skos:prefLabel "Inclusive Governance Accountability"@en ;
   skos:definition "Document participation, provide accessible feedback and grievance mechanisms, and report how community input influences decisions."@en ;
   dct:source <https://openscholarlyinfrastructure.org/>, <https://doi.org/10.1038/s41597-020-0486-7> ;
   skos:broader trsp:typeInclusivity ;
   skos:inScheme trsp:checklistCommunityEngagement .
+
+#----------------------------------------------------------
+# User Needs
+#----------------------------------------------------------
 
 trsp:typeUserNeeds
   a skos:Concept ;
