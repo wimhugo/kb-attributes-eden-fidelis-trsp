@@ -121,8 +121,6 @@ trsp:Evidence a rdfs:Class ;
 # Attribute/ Property Definition
 # trsp:PropertyDefinition
 
-
-
 ##################################################################
 # Properties that require values from controlled vocabulary
 ##################################################################

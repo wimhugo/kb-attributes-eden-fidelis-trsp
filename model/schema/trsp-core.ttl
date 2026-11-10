@@ -210,57 +210,6 @@ trsp:hasBenchmark
     rdfs:comment
         "When associated with an Attribute, the benchmark represents recommended or best-practice guidance. When associated with a Profile Property, it may specify a requirement of the applicable profile."@en .
 
-# ------------------------------------------------------------------
-## SHACL-based Type Constraints for Attribute and Profile Properties
-
-## Cardinality type constraint
-trsp:CardinalityTypePropertyShape
-    a sh:PropertyShape ;
-    sh:path trsp:hasCardinalityType ;
-    sh:nodeKind sh:IRI ;
-    sh:class skos:Concept ;
-    sh:node [
-        a sh:NodeShape ;
-        sh:property [
-            sh:path skos:inScheme ;
-            sh:hasValue trsp:cardinalityTypes
-        ]
-    ] ;
-    sh:message
-        "The value of trsp:hasCardinalityType must be a SKOS Concept in the TRSP Cardinality Types concept scheme."@en .
-
-## Measurement type constraint
-trsp:MeasurementTypePropertyShape
-    a sh:PropertyShape ;
-    sh:path trsp:hasMeasurementType ;
-    sh:nodeKind sh:IRI ;
-    sh:class skos:Concept ;
-    sh:node [
-        a sh:NodeShape ;
-        sh:property [
-            sh:path skos:inScheme ;
-            sh:hasValue trsp:measurementTypes
-        ]
-    ] ;
-    sh:message
-        "The value of trsp:hasMeasurementType must be a SKOS Concept in the TRSP Measurement Types concept scheme."@en .
-
-## Benchmark constraint
-trsp:BenchmarkPropertyShape
-    a sh:PropertyShape ;
-    sh:path trsp:hasBenchmark ;
-    sh:nodeKind sh:IRI ;
-    sh:class skos:Concept ;
-    sh:node [
-        a sh:NodeShape ;
-        sh:property [
-            sh:path skos:inScheme ;
-            sh:hasValue trsp:benchmarkTypes
-        ]
-    ] ;
-    sh:message
-        "The value of trsp:hasBenchmark must be a SKOS Concept in the TRSP Benchmark Types concept scheme."@en .
-
 ####################################################################################################################################
 ## Constraint-Related Classes and Properties
 ####################################################################################################################################
@@ -302,10 +251,8 @@ trsp:nodeKind
     rdfs:domain trsp:Constraint ;
     rdfs:range sh:NodeKind ;
     rdfs:label "node kind"@en ;
-    skos:definition
-        "Identifies the required RDF node kind for an attribute or property value."@en ;
-    rdfs:comment
-        "Values normally use SHACL node-kind resources such as sh:IRI, sh:Literal, sh:BlankNode, sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, and sh:IRIOrLiteral."@en .
+    skos:definition "Identifies the required RDF node kind for an attribute or property value."@en ;
+    rdfs:comment "Values normally use SHACL node-kind resources such as sh:IRI, sh:Literal, sh:BlankNode, sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, and sh:IRIOrLiteral."@en .
 
 ## data type
 trsp:datatype
@@ -313,10 +260,8 @@ trsp:datatype
     rdfs:domain trsp:Constraint ;
     rdfs:range rdfs:Datatype ;
     rdfs:label "datatype"@en ;
-    skos:definition
-        "Identifies the RDF datatype required for a literal value."@en ;
-    rdfs:comment
-        "Examples include xsd:string, xsd:boolean, xsd:integer, xsd:date, xsd:dateTime, and xsd:anyURI."@en .
+    skos:definition "Identifies the RDF datatype required for a literal value."@en ;
+    rdfs:comment "Examples include xsd:string, xsd:boolean, xsd:integer, xsd:date, xsd:dateTime, and xsd:anyURI."@en .
 
 ## value class
 trsp:valueClass
@@ -324,8 +269,7 @@ trsp:valueClass
     rdfs:domain trsp:Constraint ;
     rdfs:range rdfs:Class ;
     rdfs:label "value class"@en ;
-    skos:definition
-        "Identifies the class of which a resource value is required or expected to be an instance."@en .
+    skos:definition "Identifies the class of which a resource value is required or expected to be an instance."@en .
 
 ## concept scheme/ vocabulary
 trsp:conceptScheme
@@ -333,8 +277,7 @@ trsp:conceptScheme
     rdfs:domain trsp:Constraint ;
     rdfs:range skos:ConceptScheme ;
     rdfs:label "Concept Scheme"@en ;
-    skos:definition
-        "Identifies a SKOS Concept Scheme from which an applicable value, set of values, or checklist is drawn."@en .
+    skos:definition "Identifies a SKOS Concept Scheme from which an applicable value, set of values, or checklist is drawn."@en .
 
 ## concept scheme/ vocabulary
 trsp:registry
@@ -342,8 +285,7 @@ trsp:registry
     rdfs:domain trsp:Constraint ;
     rdfs:range skos:ConceptScheme ;
     rdfs:label "Registry"@en ;
-    skos:definition
-        "Identifies a Registry from which an applicable value or set of values are returned as IRIs."@en .
+    skos:definition "Identifies a Registry from which an applicable value or set of values are returned as IRIs."@en .
 
 
 ## value must be a specific concept
@@ -352,8 +294,7 @@ trsp:concept
     rdfs:domain trsp:Constraint ;
     rdfs:range skos:Concept ;
     rdfs:label "concept"@en ;
-    skos:definition
-        "Identifies a specific SKOS Concept required or otherwise used by the constraint."@en .
+    skos:definition "Identifies a specific SKOS Concept required or otherwise used by the constraint."@en .
 
 # ---------------------------------------------
 ## Computed / aggregation constraint parameters
@@ -364,61 +305,15 @@ trsp:aggregationType
     rdfs:domain trsp:Constraint ;
     rdfs:range skos:Concept ;
     rdfs:label "aggregation type"@en ;
-    skos:definition
-        "Identifies the aggregation, transformation, or computed evaluation operation applied by the constraint."@en ;
-    rdfs:comment
-        "The value is expected to be a concept in the trsp:typeAggregation concept scheme. Scheme membership should be enforced using SHACL."@en .
+    skos:definition "Identifies the aggregation, transformation, or computed evaluation operation applied by the constraint."@en ;
+    rdfs:comment "The value is expected to be a concept in the trsp:typeAggregation concept scheme. Scheme membership should be enforced using SHACL."@en .
 
 trsp:sourceAttribute
     a owl:ObjectProperty ;
     rdfs:domain trsp:Constraint ;
     rdfs:range trsp:Attribute ;
     rdfs:label "source attribute"@en ;
-    skos:definition
-        "Identifies an Attribute whose value or values provide input to a computed constraint, transformation, or aggregation."@en .
-
-
-# ---------------------------------------------
-## SHACL shapes limiting constraintType and aggregationType to their vocabularies
-
-trsp:ConstraintTypePropertyShape
-    a sh:PropertyShape ;
-    sh:path trsp:constraintType ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    sh:nodeKind sh:IRI ;
-    sh:class skos:Concept ;
-    sh:node [
-        a sh:NodeShape ;
-        sh:property [
-            sh:path skos:inScheme ;
-            sh:hasValue trsp:typeConstraint
-        ]
-    ] ;
-    sh:message "A Constraint must have exactly one constraint type from the TRSP Constraint Types concept scheme."@en .
-
-## Values of aggregationType property must come from trsp:typeAggregation
-trsp:AggregationTypePropertyShape
-    a sh:PropertyShape ;
-    sh:path trsp:aggregationType ;
-    sh:nodeKind sh:IRI ;
-    sh:class skos:Concept ;
-    sh:node [
-        a sh:NodeShape ;
-        sh:property [
-            sh:path skos:inScheme ;
-            sh:hasValue trsp:typeAggregation
-        ]
-    ] ;
-    sh:message
-        "The value of trsp:aggregationType must be a SKOS Concept in the TRSP Aggregation Types concept scheme."@en .
-
-## constraint 
-trsp:ConstraintShape
-    a sh:NodeShape ;
-    sh:targetClass trsp:Constraint ;
-    sh:property trsp:ConstraintTypePropertyShape ;
-    sh:property trsp:AggregationTypePropertyShape .
+    skos:definition "Identifies an Attribute whose value or values provide input to a computed constraint, transformation, or aggregation."@en .
 
 #################################################################
 # Classes and Properties related to Mappings
@@ -672,36 +567,27 @@ trsp:qualifierValue
 trsp:Evidence
     a owl:Class ;
     rdfs:label "Evidence"@en ;
-    skos:definition
-        "A resource reference that provides evidence supporting an assertion, assessment, requirement, checklist item, or other claim."@en ;
-    rdfs:comment
-        "An Evidence instance represents one evidence resource so that properties describing that resource, including machine actionability, are unambiguous. The Evidence class can be used to represent qualified identifiers, allowing definition of the scheme, the IRI value, and a title if need be."@en .
+    skos:definition "A resource reference that provides evidence supporting an assertion, assessment, requirement, checklist item, or other claim."@en ;
+    rdfs:comment "An Evidence instance represents one evidence resource so that properties describing that resource, including machine actionability, are unambiguous. The Evidence class can be used to represent qualified identifiers, allowing definition of the scheme, the IRI value, and a title if need be."@en .
 
 trsp:Checklist
     a owl:Class ;
     rdfs:label "Checklist"@en ;
-    skos:definition
-        "A structured collection of checklist items evaluated against a specified controlled checklist vocabulary."@en .
+    skos:definition "A structured collection of checklist items evaluated against a specified controlled checklist vocabulary."@en .
 
 trsp:ChecklistItem
     a owl:Class ;
     rdfs:subClassOf trsp:Evidence ;
     rdfs:label "Checklist Item"@en ;
-    skos:definition
-        "An Evidence instance associated with a specific concept in the controlled checklist vocabulary identified by the containing Checklist."@en ;
-    rdfs:comment
-        "ChecklistItem inherits the evidence resource properties of Evidence and adds checklistIRI, whose value is contextually constrained by the checklistSource of the containing Checklist."@en .
+    skos:definition "An Evidence instance associated with a specific concept in the controlled checklist vocabulary identified by the containing Checklist."@en ;
+    rdfs:comment "ChecklistItem inherits the evidence resource properties of Evidence and adds checklistIRI, whose value is contextually constrained by the checklistSource of the containing Checklist."@en .
 
 trsp:QualityAssertion
     a owl:Class ;
     rdfs:subClassOf trsp:Evidence ;
     rdfs:label "Quality Assertion Item"@en ;
-    skos:definition
-        "An Evidence instance associated with a specific concept in the controlled checklist specific to quality assertions, and having additional properties."@en ;
-    rdfs:comment
-        "ChecklistItem inherits the evidence resource properties of ChecklistItem and adds quality-related properties."@en .
-
-
+    skos:definition "An Evidence instance associated with a specific concept in the controlled checklist specific to quality assertions, and having additional properties."@en ;
+    rdfs:comment "ChecklistItem inherits the evidence resource properties of ChecklistItem and adds quality-related properties."@en .
 
 # -------------------------------------------------
 ## Evidence Properties
@@ -712,10 +598,8 @@ trsp:evidenceTitle
     rdfs:domain trsp:Evidence ;
     rdfs:range xsd:string ;
     rdfs:label "Evidence Title"@en ;
-    skos:definition
-        "The title of the evidence item."@en ;
-    rdfs:comment
-        "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
+    skos:definition "The title of the evidence item."@en ;
+    rdfs:comment "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
 
 ## evidence interval
 trsp:evidenceInterval
@@ -723,10 +607,8 @@ trsp:evidenceInterval
     rdfs:domain trsp:Evidence ;
     rdfs:range trsp:DateTimeInterval ;
     rdfs:label "Evidence Duration"@en ;
-    skos:definition
-        "The interval/ duration for which the evidence applies."@en ;
-    rdfs:comment
-        "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
+    skos:definition "The interval/ duration for which the evidence applies."@en ;
+    rdfs:comment "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
 
 ## evidence type
 trsp:evidenceType
@@ -734,10 +616,8 @@ trsp:evidenceType
     rdfs:domain trsp:Evidence ;
     rdfs:range skos:Concept ;
     rdfs:label "Evidence Type"@en ;
-    skos:definition
-        "Classifies the type of evidence using a concept from a controlled vocabulary."@en ;
-    rdfs:comment
-        "The concept may come from any appropriate controlled vocabulary; no single ConceptScheme is prescribed by the ontology."@en .
+    skos:definition "Classifies the type of evidence using a concept from a controlled vocabulary."@en ;
+    rdfs:comment "The concept may come from any appropriate controlled vocabulary; no single ConceptScheme is prescribed by the ontology."@en .
 
 ## evidence IRI
 trsp:evidenceIRI
@@ -745,10 +625,8 @@ trsp:evidenceIRI
     rdfs:domain trsp:Evidence ;
     rdfs:range rdfs:Resource ;
     rdfs:label "Evidence IRI"@en ;
-    skos:definition
-        "Identifies the resource that constitutes or provides the evidence."@en ;
-    rdfs:comment
-        "SHACL requires this value to be an RDF IRI. Each Evidence instance identifies exactly one evidence resource."@en .
+    skos:definition "Identifies the resource that constitutes or provides the evidence."@en ;
+    rdfs:comment "SHACL requires this value to be an RDF IRI. Each Evidence instance identifies exactly one evidence resource."@en .
 
 ## machine actionability
 trsp:machineActionable
@@ -756,8 +634,7 @@ trsp:machineActionable
     rdfs:domain trsp:Evidence ;
     rdfs:range xsd:boolean ;
     rdfs:label "Machine Actionable"@en ;
-    skos:definition
-        "Indicates whether the resource identified by evidenceIRI can be processed or evaluated automatically by a machine."@en .
+    skos:definition "Indicates whether the resource identified by evidenceIRI can be processed or evaluated automatically by a machine."@en .
 
 # dct:conformsTo is reused directly.
 # Its value may be any valid IRI, including an IRI identifying a standard in the separate TRSP Standards Registry graph.
@@ -806,135 +683,8 @@ trsp:checklistIRI
 ## trsp:qualityMeasureEndDate -> trsp:evidenceInterval
 ## trsp:qualityMeasureAuthority -> trsp:Organisation
 ## trsp:qualityMeasureType
-## 
-
-
-# -------------------------------------------------
-## SHACL — Evidence property constraints
-
-## Evidence Shape and Constraints
-trsp:EvidenceShape
-    a sh:NodeShape ;
-    sh:targetClass trsp:Evidence ;
-    sh:property [
-        sh:path trsp:evidenceType ;
-        sh:nodeKind sh:IRI ;
-        sh:class skos:Concept ;
-        sh:maxCount 1 ;
-        sh:message
-            "evidenceType, when supplied, must be one IRI identifying a skos:Concept."@en
-    ] ;
-    sh:property [
-        sh:path trsp:evidenceIRI ;
-        sh:nodeKind sh:IRI ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:message
-            "Each Evidence instance must identify exactly one evidence resource using evidenceIRI, and the value must be an IRI."@en
-    ] ;
-    sh:property [
-        sh:path dct:conformsTo ;
-        sh:nodeKind sh:IRI ;
-        sh:message
-            "Each conformsTo value must be an IRI. It may identify any applicable specification, including a standard in the Standards Registry."@en
-    ] ;
-    sh:property [
-        sh:path trsp:machineActionable ;
-        sh:datatype xsd:boolean ;
-        sh:maxCount 1 ;
-        sh:message
-            "machineActionable, when supplied, must be a single xsd:boolean value."@en
-    ] .
-
-# -------------------------------------------------
-## SHACL — Checklist property constraints
-
-## Checklist Shape and Constraints
-trsp:ChecklistShape
-    a sh:NodeShape ;
-    sh:targetClass trsp:Checklist ;
-    sh:property [
-        sh:path trsp:checklistSource ;
-        sh:nodeKind sh:IRI ;
-        sh:class skos:ConceptScheme ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:message
-            "A Checklist must identify exactly one checklistSource, which must be an IRI identifying a skos:ConceptScheme."@en
-    ] ;
-    sh:property [
-        sh:path trsp:checkItem ;
-        sh:class trsp:ChecklistItem ;
-        sh:node trsp:ChecklistItemShape ;
-        sh:message
-            "Each checkItem must conform to the ChecklistItem shape."@en
-    ] ;
-    # Context-dependent validation:
-    # for every checkItem, checklistIRI must be in this Checklist's checklistSource.
-    sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message
-            "Each checklistIRI must identify a concept belonging to the ConceptScheme identified by this Checklist's checklistSource."@en ;
-        sh:select """
-            PREFIX trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/>
-            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
-            SELECT $this ?item ?concept ?scheme
-            WHERE {
-                $this trsp:checklistSource ?scheme ;
-                      trsp:checkItem ?item .
-                ?item trsp:checklistIRI ?concept .
-
-                FILTER NOT EXISTS {
-                    ?concept skos:inScheme ?scheme .
-                }
-            }
-        """
-    ] .
-
-# -------------------------------------------------
-## SHACL — Checklist Item property constraints
-
-## Evidence Shape and Constraints
-trsp:ChecklistItemShape
-    a sh:NodeShape ;
-    sh:targetClass trsp:ChecklistItem ;
-    # ChecklistItem is an Evidence subclass. These properties are repeated here
-    # explicitly so that validation does not depend on an RDFS/OWL reasoner
-    # materialising the superclass type before SHACL validation.
-    sh:property [
-        sh:path trsp:evidenceIRI ;
-        sh:nodeKind sh:IRI ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:message
-            "Each ChecklistItem must identify exactly one evidence resource using evidenceIRI."@en
-    ] ;
-    sh:property [
-        sh:path dct:conformsTo ;
-        sh:nodeKind sh:IRI ;
-        sh:message
-            "Each conformsTo value on a ChecklistItem must be an IRI."@en
-    ] ;
-    sh:property [
-        sh:path trsp:machineActionable ;
-        sh:datatype xsd:boolean ;
-        sh:maxCount 1 ;
-        sh:message
-            "machineActionable, when supplied, must be a single xsd:boolean value."@en
-    ] ;
-    sh:property [
-        sh:path trsp:checklistIRI ;
-        sh:nodeKind sh:IRI ;
-        sh:class skos:Concept ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:message
-            "Each ChecklistItem must identify exactly one checklist concept using checklistIRI."@en
-    ] .
-
 
 ## Special Classes in TRSP that are used as ranges (values) for Profile Properties
-
 
 trsp:SpatialCoverage
     a owl:Class ;
@@ -975,7 +725,6 @@ trsp:Organisation
 
 ## Organisations have many properties defined in the Attribute Concept Scheme and in individual profiles such as the TRSP profile
 
-
 #####################################################################################################################
 # Classes that have Profile Properties
 # These classes are mostly implemented as blank nodes serving as wrappers for properties defined in the TRSP Profile
@@ -1006,6 +755,53 @@ trsp:Discipline
     rdfs:label "Discipline"@en ;
     skos:definition "Scientific discipline or domain, subject applicable to resources."@en .
 
+#####################################################################################################################
+# Classes for Annotations, References, and Sources
+# These classes are mostly implemented as blank nodes serving as wrappers for properties defined in the TRSP Profile
+# Could be reused in any Profile
+#####################################################################################################################
+
+#----------------------------------------------------------------
+# Source Reference Classes
+#----------------------------------------------------------------
+
+trsp:SourceReference
+    a owl:Class ;
+    rdfs:label "Source reference"@en ;
+    skos:definition	"A contextual reference showing that a source, optionally including a specific annotation, supports or motivates one or more attribute definitions."@en ;
+    rdfs:isDefinedBy trsp: ;
+    skos:note
+    rdfs:comment ""@en .
+
+#----------------------------------------------------------------
+# Source Reference Properties
+#----------------------------------------------------------------
+
+trsp:hasSourceReference
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:AttributeDefinition ;
+    rdfs:range trsp:SourceReference ;
+    rdfs:label "has source reference"@en .
+
+trsp:hasAttribute
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range trsp:AttributeDefinition ;
+    owl:inverseOf trsp:hasSourceReference ;
+    rdfs:label "has attribute"@en .
+
+trsp:hasProfileSource
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "profile source"@en ;
+    skos:definition	 "The profile, framework, checklist, vocabulary, or other structured source context from which this reference arose."@en .
+
+trsp:hasAnnotation
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range oa:Annotation ;
+    rdfs:label "has annotation"@en .
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
 
@@ -1016,5 +812,3 @@ trsp:Discipline
 #    rdfs:label "spatial coverage"@en ;
 #    skos:definition
 #        "Identifies the spatial or geographic coverage of a resource."@en .
-
-
