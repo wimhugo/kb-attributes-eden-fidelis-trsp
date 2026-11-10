@@ -1,4 +1,4 @@
-@prefix r3d: <https://schema.re3data.org/4-0/re3dataV4-0.xsd> . ## to be updated
+@prefix r3d: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/model/vocabs/r3d/> . ### to be updated
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -10,43 +10,30 @@ r3d:dataAccessTypes a skos:ConceptScheme ;
     skos:prefLabel "data access types"@en ;
     skos:hasTopConcept r3d:dataAccessTypes/open .
 
-r3d:dataAccessTypes/open a skos:Concept ;
+r3d:open a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
     skos:prefLabel "Open"@en ;
-    skos:definition "Open Access"@en .
+    skos:definition "Open Access"@en ;
     skos:broader r3d:dataAccessTypes ;
     skos:related r3d:dataAccessTypes/embargoed .
 
-r3d:dataAccessTypes/embargoed a skos:Concept ;
+r3d:embargoed a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
     skos:prefLabel "Embargoed"@en ;
-    skos:definition "Embargoed Access"@en .
+    skos:definition "Embargoed Access"@en ;
     skos:broader r3d:dataAccessTypes ;
     skos:related r3d:dataAccessTypes/open .
 
-r3d:dataAccessTypes/restricted a skos:Concept ;
+r3d:restricted a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
     skos:prefLabel "Restricted"@en ;
-    skos:definition "Restricted Access"@en .
+    skos:definition "Restricted Access"@en ;
     skos:broader r3d:dataAccessTypes ;
     skos:related r3d:dataAccessTypes/closed .
 
-r3d:dataAccessTypes/closed a skos:Concept ;
+r3d:closed a skos:Concept ;
     skos:inScheme r3d:dataAccessTypes ;
     skos:prefLabel "Closed"@en ;
-    skos:definition "Closed Access"@en .
+    skos:definition "Closed Access"@en ;
     skos:broader r3d:dataAccessTypes ;
     skos:related r3d:dataAccessTypes/restricted .
-
-# --- deterministic fixes ---
-r3d:dataAccessTypes skos:prefLabel "data access types"@en .
-r3d:dataAccessTypes/open skos:prefLabel "open"@en .
-r3d:dataAccessTypes/embargoed skos:prefLabel "embargoed"@en .
-r3d:dataAccessTypes/restricted skos:prefLabel "restricted"@en .
-r3d:dataAccessTypes/closed skos:prefLabel "closed"@en .
-r3d:dataAccessTypes skos:narrower . .
-
-r3d:dataAccessTypes/open skos:related r3d:dataAccessTypes/embargoed .
-r3d:dataAccessTypes/embargoed skos:related r3d:dataAccessTypes/open .
-r3d:dataAccessTypes/restricted skos:related r3d:dataAccessTypes/closed .
-r3d:dataAccessTypes/closed skos:related r3d:dataAccessTypes/restricted .
