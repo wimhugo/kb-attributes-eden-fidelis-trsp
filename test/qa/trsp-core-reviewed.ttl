@@ -1,0 +1,822 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+@prefix dct:  <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix sh:   <http://www.w3.org/ns/shacl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix schema: <https://schema.org/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix gn: <https://www.geonames.org/ontology#> .
+@prefix ogc: <http://www.opengis.net/ont/geosparql#> .
+@prefix dpv: <https://w3id.org/dpv#> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix time: <http://www.w3.org/2006/time#>  .
+
+trsp:Ontology
+    a owl:Ontology ;
+    dct:title "TRSP Ontology"@en ;
+    dct:description "TRSP Ontology: Schema definition, concept schemes, and constraints for Attributes, Profiles, Repositories, and Services. Used by TRSP WG, EOSC EDEN, and EOSC FIDELIS."@en ;
+    dct:created "2026-04-29T00:00:00+00:00"^^xsd:dateTime;
+    dct:modified "2026-10-04T00:00:00+00:00"^^xsd:dateTime;
+    dct:creator <https://orcid.org/0000-0002-0255-5101>;
+    dct:contributor <https://orcid.org/0000-0003-1106-8441> .
+
+# Deployment note: several SHACL constraints refer to controlled vocabularies maintained
+# in separate TRSP vocabulary graphs (including constraint, aggregation, cardinality,
+# measurement, and benchmark types). Validation that checks skos:inScheme membership
+# requires the relevant vocabulary graph(s) to be present in the validation dataset.
+
+####################################################################################################################################
+# Core Classes
+####################################################################################################################################
+
+## Repository
+trsp:Repository
+    a owl:Class ;
+    rdfs:label "Repository"@en ;
+    trsp:correspondingClass dcat:Catalog ;
+    skos:definition "An archive, repository, or other managed collection of digital resources, including its supporting services and functionalities."@en .
+
+## Service
+trsp:Service
+    a owl:Class ;
+    rdfs:subClassOf schema:Service ;
+    rdfs:label "Service"@en ;
+    skos:definition "A capability or activity provided for the benefit of one or more consumers, which may be performed manually, automatically, or through a combination of manual and automated processes."@en .
+
+## API Service
+trsp:APIService
+    a owl:Class ;
+    rdfs:subClassOf trsp:Service ;
+    rdfs:label "API Service"@en ;
+    skos:definition "A service that provides a machine-accessible application programming interface through which operations or functionality can be invoked. A repository or other agent may provide or consume one or more API services."@en .
+
+
+####################################################################################################################################
+# Classes used for Attributes and Profiles
+####################################################################################################################################
+
+## Attribute
+trsp:Attribute
+    a owl:Class ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:label "Attribute"@en ;
+    skos:definition
+        "A consolidated characteristic of a repository or service used as a neutral semantic reference for mapping and comparison."@en .
+
+## Profile
+trsp:Profile
+    a owl:Class ;
+    rdfs:label "Profile"@en ;
+    skos:definition "A specification defining a set of properties and associated constraints applicable to the description of a resource."@en .
+
+## Repository Profile
+trsp:RepositoryProfile
+    a owl:Class ;
+    rdfs:subClassOf trsp:Profile ;
+    rdfs:label "Repository Profile"@en ;
+    skos:definition "A profile defining a set of properties and associated constraints that may be used to describe a repository."@en .
+
+# Service Profile
+trsp:ServiceProfile
+    a owl:Class ;
+    rdfs:subClassOf trsp:Profile ;
+    rdfs:label "Service Profile"@en ;
+    skos:definition "A profile defining a set of properties and associated constraints that may be used to describe a service."@en .
+
+# Source Profile
+trsp:SourceProfile
+    a owl:Class ;
+    rdfs:subClassOf trsp:Profile ;
+    rdfs:label "Source Profile"@en ;
+    skos:definition "A profile derived from an authoritative source that defines actions, attributes, characteristics, functions, or other descriptive requirements applicable to repositories or services."@en .
+
+# Standard Profile
+trsp:StandardProfile
+    a owl:Class ;
+    rdfs:subClassOf trsp:Profile ;
+    rdfs:label "Standards Profile"@en ;
+    skos:definition "A profile derived from a standard or specification that defines classes, properties, constraints, or other requirements applicable to repositories or services."@en .
+
+# Community Profile
+trsp:CommunityProfile
+    a owl:Class ;
+    rdfs:subClassOf trsp:Profile ;
+    rdfs:label "Community Profile"@en ;
+    skos:definition "A profile defining a set of properties and associated constraints selected or defined by a community for describing repositories or services."@en .
+
+## Profile Property Association
+trsp:ProfileProperty
+    a owl:Class ;
+    rdfs:label "Profile Property"@en ;
+    skos:definition "A definition of the use of an RDF property within a particular profile, including any constraints, mappings, or other characteristics applicable to that use."@en .
+
+# -------------------------------------------
+## Properties used for Attributes and Profiles
+
+## Corresponding external class
+trsp:correspondingClass
+    a owl:ObjectProperty ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "corresponding class"@en ;
+    skos:definition "Relates a TRSP class to an external RDF class representing a closely corresponding kind of resource without asserting formal subclass or equivalence semantics."@en .
+
+## Attribute → RDF property
+trsp:correspondingProperty
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Attribute ;
+    rdfs:range rdf:Property ;
+    rdfs:label "corresponding property"@en ;
+    skos:definition
+        "Relates a TRSP Attribute to an RDF property that can be used to represent that characteristic in encoded data."@en .
+
+## ProfileProperty → Attribute
+trsp:hasAttribute
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileProperty ;
+    rdfs:range trsp:Attribute ;
+    rdfs:label "has attribute"@en ;
+    skos:definition
+        "Relates a profile-specific property definition to the TRSP Attribute representing the characteristic described by that property."@en .
+
+## has profile
+trsp:hasProfile
+    a owl:ObjectProperty ;
+    rdfs:label "has profile"@en ;
+    rdfs:range trsp:Profile ;
+    skos:definition "Relates a resource to a profile that defines a set of properties and associated constraints applicable to the description of that resource."@en .
+
+## has profile type
+trsp:hasProfileType
+    a owl:ObjectProperty ;
+    rdfs:label "has profile type"@en ;
+    rdfs:range [ a owl:Class ; owl:unionOf (trsp:Profile trsp:Repository trsp:Service) ] ;
+    skos:definition "Relates a resource to a profile that defines a set of properties and associated constraints applicable to the description of that resource."@en .
+
+
+## has property
+trsp:hasProperty
+    a owl:ObjectProperty ;
+    rdfs:label "has property"@en ;
+    rdfs:domain trsp:Profile ;
+    rdfs:range trsp:ProfileProperty ;
+    skos:definition "Relates a profile to a profile property defining the use of an RDF property within that profile."@en .
+
+## property definition
+trsp:property
+    a owl:ObjectProperty ;
+    rdfs:label "property"@en ;
+    rdfs:domain trsp:ProfileProperty ;
+    rdfs:range rdf:Property ;
+    skos:definition "Identifies the RDF property represented by a profile property."@en .
+
+## optional intrinsic property path
+trsp:propertyPath
+    a rdf:Property ;
+    rdfs:domain trsp:ProfileProperty ;
+    rdfs:label "property path"@en ;
+    skos:definition "Identifies an intrinsic SHACL-compatible property path used by a Profile Property when its representation requires traversal more complex than a single RDF predicate."@en ;
+    rdfs:comment "For a simple direct predicate, trsp:property is sufficient. propertyPath is Profile metadata and must not be confused with pairwise sourcePath or targetPath mapping properties."@en .
+
+# -----------------------------------------------------------------------------------------------------
+## Properties used for Attribute Recommendations and Best Practices, Profile Property Specifications
+
+## cardinality type
+trsp:hasCardinalityType
+    a owl:ObjectProperty ;
+    rdfs:label "has cardinality type"@en ;
+    rdfs:range skos:Concept ;
+    skos:definition
+        "Identifies the cardinality type associated with an Attribute or Profile Property, indicating the expected or specified minimum and maximum number of values."@en ;
+    rdfs:comment
+        "When associated with an Attribute, the cardinality type represents a recommended or default cardinality. When associated with a Profile Property, it represents the cardinality specified by that profile."@en .
+
+## measurement type
+trsp:hasMeasurementType
+    a owl:ObjectProperty ;
+    rdfs:label "has measurement type"@en ;
+    rdfs:range skos:Concept ;
+    skos:definition
+        "Identifies the measurement type associated with an Attribute or Profile Property, indicating the general form of value or observation through which the characteristic is represented or assessed."@en ;
+    rdfs:comment
+        "When associated with an Attribute, the measurement type represents recommended or default guidance. When associated with a Profile Property, it specifies the measurement type applicable within that profile."@en .
+
+## benchmark type
+trsp:hasBenchmark
+    a owl:ObjectProperty ;
+    rdfs:label "has benchmark"@en ;
+    rdfs:range skos:Concept;
+    skos:definition
+        "Identifies the benchmark associated with an Attribute or Profile Property, indicating the type of criterion against which a value or assessment result can be evaluated."@en ;
+    rdfs:comment
+        "When associated with an Attribute, the benchmark represents recommended or best-practice guidance. When associated with a Profile Property, it may specify a requirement of the applicable profile."@en .
+
+####################################################################################################################################
+## Constraint-Related Classes and Properties
+####################################################################################################################################
+
+## Constraint
+trsp:Constraint
+    a owl:Class ;
+    rdfs:label "Constraint"@en ;
+    skos:definition
+        "A parameterised specification of a restriction, expectation, evaluation, transformation, or aggregation applicable to the value of an Attribute or Profile Property."@en ;
+    rdfs:comment
+        "A Constraint may express simple declarative restrictions such as node kind, datatype, class, concept scheme, or required concept. Where computation or aggregation is required, the Constraint can identify an aggregation operation and its source Attribute."@en .
+
+## Association with Attribute or ProfileProperty
+trsp:hasConstraint
+    a owl:ObjectProperty ;
+    rdfs:range trsp:Constraint ;
+    rdfs:label "has constraint"@en ;
+    skos:definition
+        "Relates an Attribute or Profile Property to a constraint applicable to its value or evaluation."@en ;
+    rdfs:comment
+        "No RDFS domain is asserted because this property is intended for use with both trsp:Attribute and trsp:ProfileProperty."@en .
+
+## Constraint classification
+trsp:constraintType
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:Concept ;
+    rdfs:label "constraint type"@en ;
+    skos:definition "Identifies the general type of constraint represented by a Constraint."@en ;
+    rdfs:comment "The value is expected to be a concept in the separately maintained trsp:typeConstraint concept scheme."@en .
+
+# ---------------------------------------------
+## Simple declarative constraint parameters
+
+## node kind (associated with SHACL)
+trsp:nodeKind
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range sh:NodeKind ;
+    rdfs:label "node kind"@en ;
+    skos:definition "Identifies the required RDF node kind for an attribute or property value."@en ;
+    rdfs:comment "Values normally use SHACL node-kind resources such as sh:IRI, sh:Literal, sh:BlankNode, sh:BlankNodeOrIRI, sh:BlankNodeOrLiteral, and sh:IRIOrLiteral."@en .
+
+## data type
+trsp:datatype
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range rdfs:Datatype ;
+    rdfs:label "datatype"@en ;
+    skos:definition "Identifies the RDF datatype required for a literal value."@en ;
+    rdfs:comment "Examples include xsd:string, xsd:boolean, xsd:integer, xsd:date, xsd:dateTime, and xsd:anyURI."@en .
+
+## value class
+trsp:valueClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "value class"@en ;
+    skos:definition "Identifies the class of which a resource value is required or expected to be an instance."@en .
+
+## concept scheme/ vocabulary
+trsp:conceptScheme
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "Concept Scheme"@en ;
+    skos:definition "Identifies a SKOS Concept Scheme from which an applicable value, set of values, or checklist is drawn."@en .
+
+## concept scheme/ vocabulary
+trsp:registry
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "Registry"@en ;
+    skos:definition "Identifies a Registry from which an applicable value or set of values are returned as IRIs."@en .
+
+
+## value must be a specific concept
+trsp:concept
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:Concept ;
+    rdfs:label "concept"@en ;
+    skos:definition "Identifies a specific SKOS Concept required or otherwise used by the constraint."@en .
+
+# ---------------------------------------------
+## Computed / aggregation constraint parameters
+
+## aggregation type
+trsp:aggregationType
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range skos:Concept ;
+    rdfs:label "aggregation type"@en ;
+    skos:definition "Identifies the aggregation, transformation, or computed evaluation operation applied by the constraint."@en ;
+    rdfs:comment "The value is expected to be a concept in the trsp:typeAggregation concept scheme. Scheme membership should be enforced using SHACL."@en .
+
+trsp:sourceAttribute
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Constraint ;
+    rdfs:range trsp:Attribute ;
+    rdfs:label "source attribute"@en ;
+    skos:definition "Identifies an Attribute whose value or values provide input to a computed constraint, transformation, or aggregation."@en .
+
+#################################################################
+# Classes and Properties related to Mappings
+#################################################################
+
+## Mapping a profile
+trsp:ProfileMapping
+    a owl:Class ;
+    rdfs:label "Profile Mapping"@en ;
+    skos:definition
+        "A mapping specification relating representations defined by a source Profile and a target Profile."@en ;
+    rdfs:comment
+        "A Profile Mapping groups the class, property, value, and structural mappings required to translate or compare data represented according to two Profiles."@en .
+
+## Mapping a class
+trsp:ClassMapping
+    a owl:Class ;
+    rdfs:label "Class Mapping"@en ;
+    skos:definition
+        "A mapping specification relating a class or class-like structure in a source Profile to a class or class-like structure in a target Profile."@en .
+
+## Mapping a property
+trsp:PropertyMapping
+    a owl:Class ;
+    rdfs:label "Property Mapping"@en ;
+    skos:definition
+        "A pairwise mapping specification relating a source Profile Property to a target Profile Property that normally describe a common Attribute."@en ;
+    rdfs:comment
+        "The mapping belongs to the source-target pairing because the required transformation may differ for each pair of Profile Properties."@en .
+
+## Mapping a value
+trsp:ValueMapping
+    a owl:Class ;
+    rdfs:label "Value Mapping"@en ;
+    skos:definition
+        "A mapping specification relating a source value, concept, or value pattern to a target value or concept."@en .
+
+## Mapping qualifier
+trsp:MappingQualifier
+    a owl:Class ;
+    rdfs:label "Mapping Qualifier"@en ;
+    skos:definition
+        "A fixed value or additional assertion introduced by a mapping when the target representation requires information that is implicit or absent in the source representation."@en .
+
+# -----------------------------------------------------------------
+# Mapping structure
+
+trsp:sourceProfile
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileMapping ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "source profile"@en ;
+    skos:definition "Identifies the source Profile of a Profile Mapping."@en .
+
+trsp:targetProfile
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileMapping ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "target profile"@en ;
+    skos:definition "Identifies the target Profile of a Profile Mapping."@en .
+
+trsp:hasClassMapping
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileMapping ;
+    rdfs:range trsp:ClassMapping ;
+    rdfs:label "has class mapping"@en ;
+    skos:definition "Relates a Profile Mapping to a class-level mapping specification."@en .
+
+trsp:hasPropertyMapping
+    a owl:ObjectProperty ;
+    rdfs:range trsp:PropertyMapping ;
+    rdfs:label "has property mapping"@en ;
+    skos:definition
+        "Relates a Profile Mapping or Class Mapping to a property-level mapping specification."@en ;
+    rdfs:comment
+        "No RDFS domain is asserted because the property can be used from both ProfileMapping and ClassMapping."@en .
+
+trsp:sourceClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ClassMapping ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "source class"@en ;
+    skos:definition "Identifies the source class represented by a Class Mapping."@en .
+
+trsp:targetClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ClassMapping ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "target class"@en ;
+    skos:definition "Identifies the target class represented by a Class Mapping."@en .
+
+trsp:sourceProfileProperty
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "source profile property"@en ;
+    skos:definition "Identifies the source Profile Property in a pairwise Property Mapping."@en .
+
+trsp:targetProfileProperty
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "target profile property"@en ;
+    skos:definition "Identifies the target Profile Property in a pairwise Property Mapping."@en .
+
+trsp:sourceValue
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "source profile value"@en ;
+    skos:definition "Identifies the source Profile Property value in a pairwise Property Mapping."@en .
+
+trsp:targetValue
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "target profile value"@en ;
+    skos:definition "Identifies the target Profile Property value in a pairwise Property Mapping."@en .
+
+trsp:targetLanguageTagLiteral
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "target profile language tag"@en ;
+    skos:definition "Identifies the target Profile Property that must be tagged with a language ."@en .
+
+trsp:sourceLanguageTag
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "source profile language tag value"@en ;
+    skos:definition "Identifies the source Profile Property that supplies the language value."@en .
+
+trsp:sourceLanguageVocab
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:ProfileProperty ;
+    rdfs:label "source profile language tag vocabulary"@en ;
+    skos:definition "Identifies the source language value vocabulary."@en .
+
+trsp:mappedAttribute
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:PropertyMapping ;
+    rdfs:range trsp:Attribute ;
+    rdfs:label "mapped attribute"@en ;
+    skos:definition
+        "Identifies the common TRSP Attribute that provides the semantic pivot for the source and target Profile Properties."@en ;
+    rdfs:comment
+        "This property can be stated explicitly for convenience even where the Attribute can also be reached through trsp:hasAttribute on both Profile Properties."@en .
+
+# ---------------------------------------------------------------
+# Mapping method and structural information
+
+## Mapping type
+trsp:mappingType
+    a owl:ObjectProperty ;
+    rdfs:range skos:Concept ;
+    rdfs:label "mapping type"@en ;
+    skos:definition
+        "Classifies the kind of correspondence or transformation represented by a mapping."@en ;
+    rdfs:comment
+        "A controlled vocabulary for mapping types can distinguish identity, rename, class conversion, vocabulary/value mapping, structural transformation, constant insertion, aggregation, and other mapping patterns."@en .
+
+## Mapping type
+trsp:mappingAlgorithm
+    a owl:ObjectProperty ;
+    rdfs:label "mapping algorithm"@en ;
+    skos:definition
+        "Identifies a reusable algorithm or transformation definition applicable to this particular mapping."@en ;
+    rdfs:comment
+        "The algorithm belongs to the pairwise mapping rather than to the common Attribute because different profile pairings can require different transformations."@en .
+
+# ---------------------------------------------------------------
+# Value/concept mappings
+
+## has value mapping
+trsp:hasValueMapping
+    a owl:ObjectProperty ;
+    rdfs:range trsp:ValueMapping ;
+    rdfs:label "has value mapping"@en ;
+    skos:definition
+        "Relates a mapping to a value- or concept-level correspondence used by that mapping."@en .
+
+## has string/ label mapping
+trsp:hasStringMapping
+    a owl:ObjectProperty ;
+    rdfs:range trsp:ValueMapping ;
+    rdfs:label "has string mapping"@en ;
+    skos:definition
+        "Relates a mapping to a string or altLabel-level correspondence - often in the title or IRI of the source."@en .
+
+## source value
+trsp:sourceMappedValue
+    a rdf:Property ;
+    rdfs:domain trsp:ValueMapping ;
+    rdfs:label "source value"@en ;
+    skos:definition "Identifies the source value, concept, or value pattern in a Value Mapping."@en .
+
+## target value
+trsp:targetMappedValue
+    a rdf:Property ;
+    rdfs:domain trsp:ValueMapping ;
+    rdfs:label "target value"@en ;
+    skos:definition "Identifies the target value or concept in a Value Mapping."@en .
+
+## source concept scheme
+trsp:sourceConceptScheme
+    a owl:ObjectProperty ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "source concept scheme"@en ;
+    skos:definition "Identifies the source SKOS Concept Scheme relevant to a mapping."@en .
+
+## target concept scheme
+trsp:targetConceptScheme
+    a owl:ObjectProperty ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "target concept scheme"@en ;
+    skos:definition "Identifies the target SKOS Concept Scheme relevant to a mapping."@en .
+
+# ---------------------------------------------------------------
+# Fixed target assertions / qualifiers
+
+## has qualifier
+trsp:hasQualifier
+    a owl:ObjectProperty ;
+    rdfs:range trsp:MappingQualifier ;
+    rdfs:label "has qualifier"@en ;
+    skos:definition
+        "Relates a mapping to an additional fixed assertion introduced in the target representation."@en .
+
+## has qualifier property
+trsp:qualifierProperty
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:MappingQualifier ;
+    rdfs:range rdf:Property ;
+    rdfs:label "qualifier property"@en ;
+    skos:definition "Identifies the RDF property used for an additional target assertion."@en .
+
+## qualifier
+trsp:qualifierValue
+    a rdf:Property ;
+    rdfs:domain trsp:MappingQualifier ;
+    rdfs:label "qualifier value"@en ;
+    skos:definition "Identifies the fixed RDF term or literal supplied as the value of an additional target assertion."@en .
+
+
+####################################################################################################
+# Classes and Properties Related to Evidence and Checklists
+####################################################################################################
+
+trsp:Evidence
+    a owl:Class ;
+    rdfs:label "Evidence"@en ;
+    skos:definition "A resource reference that provides evidence supporting an assertion, assessment, requirement, checklist item, or other claim."@en ;
+    rdfs:comment "An Evidence instance represents one evidence resource so that properties describing that resource, including machine actionability, are unambiguous. The Evidence class can be used to represent qualified identifiers, allowing definition of the scheme, the IRI value, and a title if need be."@en .
+
+trsp:Checklist
+    a owl:Class ;
+    rdfs:label "Checklist"@en ;
+    skos:definition "A structured collection of checklist items evaluated against a specified controlled checklist vocabulary."@en .
+
+trsp:ChecklistItem
+    a owl:Class ;
+    rdfs:subClassOf trsp:Evidence ;
+    rdfs:label "Checklist Item"@en ;
+    skos:definition "An Evidence instance associated with a specific concept in the controlled checklist vocabulary identified by the containing Checklist."@en ;
+    rdfs:comment "ChecklistItem inherits the evidence resource properties of Evidence and adds checklistIRI, whose value is contextually constrained by the checklistSource of the containing Checklist."@en .
+
+trsp:QualityAssertion
+    a owl:Class ;
+    rdfs:subClassOf trsp:Evidence ;
+    rdfs:label "Quality Assertion Item"@en ;
+    skos:definition "An Evidence instance associated with a specific concept in the controlled checklist specific to quality assertions, and having additional properties."@en ;
+    rdfs:comment "ChecklistItem inherits the evidence resource properties of ChecklistItem and adds quality-related properties."@en .
+
+# -------------------------------------------------
+## Evidence Properties
+
+## evidence title
+trsp:evidenceTitle
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Evidence ;
+    rdfs:range xsd:string ;
+    rdfs:label "Evidence Title"@en ;
+    skos:definition "The title of the evidence item."@en ;
+    rdfs:comment "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
+
+## evidence interval
+trsp:evidenceInterval
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Evidence ;
+    rdfs:range trsp:DateTimeInterval ;
+    rdfs:label "Evidence Duration"@en ;
+    skos:definition "The interval/ duration for which the evidence applies."@en ;
+    rdfs:comment "Typically the name of a policy, title of a web page offered as evidence, name of an API, and so on."@en .
+
+## evidence type
+trsp:evidenceType
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Evidence ;
+    rdfs:range skos:Concept ;
+    rdfs:label "Evidence Type"@en ;
+    skos:definition "Classifies the type of evidence using a concept from a controlled vocabulary."@en ;
+    rdfs:comment "The concept may come from any appropriate controlled vocabulary; no single ConceptScheme is prescribed by the ontology."@en .
+
+## evidence IRI
+trsp:evidenceIRI
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Evidence ;
+    rdfs:range rdfs:Resource ;
+    rdfs:label "Evidence IRI"@en ;
+    skos:definition "Identifies the resource that constitutes or provides the evidence."@en ;
+    rdfs:comment "SHACL requires this value to be an RDF IRI. Each Evidence instance identifies exactly one evidence resource."@en .
+
+## machine actionability
+trsp:machineActionable
+    a owl:DatatypeProperty ;
+    rdfs:domain trsp:Evidence ;
+    rdfs:range xsd:boolean ;
+    rdfs:label "Machine Actionable"@en ;
+    skos:definition "Indicates whether the resource identified by evidenceIRI can be processed or evaluated automatically by a machine."@en .
+
+# dct:conformsTo is reused directly.
+# Its value may be any valid IRI, including an IRI identifying a standard in the separate TRSP Standards Registry graph.
+
+# -------------------------------------------------
+## Checklist Properties
+
+## checklist source
+trsp:checklistSource
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Checklist ;
+    rdfs:range skos:ConceptScheme ;
+    rdfs:label "checklist source"@en ;
+    skos:definition
+        "Identifies the controlled checklist vocabulary whose concepts define the permitted items of this Checklist."@en .
+
+## checklist item
+trsp:checkItem
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:Checklist ;
+    rdfs:range trsp:ChecklistItem ;
+    rdfs:label "check item"@en ;
+    skos:definition
+        "Associates a Checklist with a ChecklistItem, a specialised Evidence instance representing one checklist item."@en .
+
+## checklist IRI
+trsp:checklistIRI
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ChecklistItem ;
+    rdfs:range skos:Concept ;
+    rdfs:label "checklist IRI"@en ;
+    skos:definition
+        "Identifies the controlled checklist concept represented by this ChecklistItem."@en ;
+    rdfs:comment
+        "The value must belong to the ConceptScheme identified by checklistSource on the Checklist containing this item."@en .
+
+# -------------------------------------------------
+## Quality Assertion Properties
+
+## These are included in the TRSP profiles and map to specific Attributes
+## trsp:qualityMeasureName -> trsp:evidenceTitle
+## trsp:qualityMeasureStatus
+## trsp:qualityMeasureURL - trsp:evidenceIRI
+## trsp:qualityMeasureWidget
+## trsp:qualityMeasureStartDate -> trsp:evidenceInterval
+## trsp:qualityMeasureEndDate -> trsp:evidenceInterval
+## trsp:qualityMeasureAuthority -> trsp:Organisation
+## trsp:qualityMeasureType
+
+## Special Classes in TRSP that are used as ranges (values) for Profile Properties
+
+trsp:SpatialCoverage
+    a owl:Class ;
+    rdfs:label "Spatial Coverage"@en ;
+    skos:definition
+        "A spatial entity that may be used to express the spatial coverage of a resource."@en ;
+    owl:equivalentClass [
+        a owl:Class ;
+        owl:unionOf (
+            dct:Location
+            schema:Place
+            geo:Feature
+            gn:Feature
+            ogc:Envelope
+            dpv:Region
+        )
+    ] .
+
+trsp:DateTimeInterval
+    a owl:Class ;
+    rdfs:subClassOf time:DateTimeInterval ;
+    rdfs:label "Date/time interval"@en ;
+    skos:exactMatch dct:PeriodOfTime ;
+    skos:definition
+        "A date or time interval used to express temporal coverage or another bounded temporal extent."@en ;
+    skos:note "An ISO 8601 interval expressed as a single literal."@en .
+
+####################################################################################################
+## Classes and Properties Related to Orgbisations and Institutions
+####################################################################################################
+
+## Organisation
+trsp:Organisation
+    a owl:Class ;
+    rdfs:subClassOf dcat:Resource ;
+    rdfs:label "Organisation"@en ;
+    skos:definition "An organisation is typically a general catehgory for institutions, commercial companies, international organisations and standards bodies, and government departments or agencies."@en .
+
+## Organisations have many properties defined in the Attribute Concept Scheme and in individual profiles such as the TRSP profile
+
+#####################################################################################################################
+# Classes that have Profile Properties
+# These classes are mostly implemented as blank nodes serving as wrappers for properties defined in the TRSP Profile
+# Could be reused in any Profile
+#####################################################################################################################
+
+trsp:ResourceObject
+    a owl:Class ;
+    rdfs:subClassOf dcat:Resource ;
+    rdfs:label "Resource Object"@en ;
+    skos:definition "A resource object that serves as an input or output of a research task or workflow."@en .
+
+trsp:Identifier
+    a owl:Class ;
+    rdfs:subClassOf dcat:Resource ;
+    rdfs:label "Qualified Identifier"@en ;
+    skos:definition "An identifier (compact identifier, URL, or PID) that is qualified by type."@en .
+
+trsp:Contact
+    a owl:Class ;
+    rdfs:subClassOf vcard:Kind ;
+    rdfs:label "Contact Person or Resource"@en ;
+    skos:definition "Information about contact details, which can include a person or a service."@en .
+
+trsp:Discipline
+    a owl:Class ;
+    rdfs:subClassOf schema:DefinedTerm ;
+    rdfs:label "Discipline"@en ;
+    skos:definition "Scientific discipline or domain, subject applicable to resources."@en .
+
+#####################################################################################################################
+# Classes for Annotations, References, and Sources
+# These classes are mostly implemented as blank nodes serving as wrappers for properties defined in the TRSP Profile
+# Could be reused in any Profile
+#####################################################################################################################
+
+#----------------------------------------------------------------
+# Source Reference Classes
+#----------------------------------------------------------------
+
+trsp:SourceReference
+    a owl:Class ;
+    rdfs:label "Source reference"@en ;
+    skos:definition	"A contextual reference showing that a source, optionally including a specific annotation, supports or motivates one or more attribute definitions."@en ;
+    rdfs:isDefinedBy trsp: ;
+    skos:note "The source reference may identify an annotation or other contextual evidence."@en .
+
+#----------------------------------------------------------------
+# Source Reference Properties
+#----------------------------------------------------------------
+
+trsp:hasSourceReference
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:AttributeDefinition ;
+    rdfs:range trsp:SourceReference ;
+    rdfs:label "has source reference"@en ;
+    skos:definition "Relates an attribute definition to a source reference supporting it."@en .
+
+trsp:sourceReferenceForAttribute
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range trsp:AttributeDefinition ;
+    owl:inverseOf trsp:hasSourceReference ;
+    rdfs:label "source reference for attribute"@en ;
+    skos:definition "Identifies the attribute definition supported by a source reference."@en .
+
+trsp:hasProfileSource
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "profile source"@en ;
+    skos:definition	 "The profile, framework, checklist, vocabulary, or other structured source context from which this reference arose."@en .
+
+trsp:hasAnnotation
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:SourceReference ;
+    rdfs:range oa:Annotation ;
+    rdfs:label "has annotation"@en ;
+    skos:definition "Relates a source reference to a Web Annotation."@en .
+
+#~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~`
+
+### confirm this in trsp ProfileProperty
+#trsp:spatialCoverage
+#    a owl:ObjectProperty ;
+#    rdfs:range trsp:SpatialCoverage ;
+#    rdfs:label "spatial coverage"@en ;
+#    skos:definition
+#        "Identifies the spatial or geographic coverage of a resource."@en .

@@ -1,0 +1,274 @@
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+#################################
+# Attribute shape
+#################################
+
+trsp:AttributeShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Attribute ;
+    sh:property [
+        sh:path skos:prefLabel ;
+        sh:minCount 1 ;
+    ] .
+
+#################################
+# Repository shape
+#################################
+
+trsp:RepositoryShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Repository ;
+    sh:property [
+        sh:path dct:title ;
+        sh:minCount 1 ;
+    ] .
+
+#################################
+# Service shape
+#################################
+
+trsp:ServiceShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Service ;
+    sh:property [
+        sh:path dct:title ;
+        sh:minCount 1 ;
+    ] .
+
+
+# ------------------------------------------------------------------
+## SHACL-based Type Constraints for Attribute and Profile Properties
+
+## Cardinality type constraint
+trsp:CardinalityTypePropertyShape
+    a sh:PropertyShape ;
+    sh:path trsp:hasCardinalityType ;
+    sh:nodeKind sh:IRI ;
+    sh:class skos:Concept ;
+    sh:node [
+        a sh:NodeShape ;
+        sh:property [
+            sh:path skos:inScheme ;
+            sh:hasValue trsp:cardinalityTypes
+        ]
+    ] ;
+    sh:message
+        "The value of trsp:hasCardinalityType must be a SKOS Concept in the TRSP Cardinality Types concept scheme."@en .
+
+## Measurement type constraint
+trsp:MeasurementTypePropertyShape
+    a sh:PropertyShape ;
+    sh:path trsp:hasMeasurementType ;
+    sh:nodeKind sh:IRI ;
+    sh:class skos:Concept ;
+    sh:node [
+        a sh:NodeShape ;
+        sh:property [
+            sh:path skos:inScheme ;
+            sh:hasValue trsp:measurementTypes
+        ]
+    ] ;
+    sh:message
+        "The value of trsp:hasMeasurementType must be a SKOS Concept in the TRSP Measurement Types concept scheme."@en .
+
+## Benchmark constraint
+trsp:BenchmarkPropertyShape
+    a sh:PropertyShape ;
+    sh:path trsp:hasBenchmark ;
+    sh:nodeKind sh:IRI ;
+    sh:class skos:Concept ;
+    sh:node [
+        a sh:NodeShape ;
+        sh:property [
+            sh:path skos:inScheme ;
+            sh:hasValue trsp:benchmarkTypes
+        ]
+    ] ;
+    sh:message
+        "The value of trsp:hasBenchmark must be a SKOS Concept in the TRSP Benchmark Types concept scheme."@en .
+
+# ---------------------------------------------
+## SHACL shapes limiting constraintType and aggregationType to their vocabularies
+
+trsp:ConstraintTypePropertyShape
+    a sh:PropertyShape ;
+    sh:path trsp:constraintType ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    sh:nodeKind sh:IRI ;
+    sh:class skos:Concept ;
+    sh:node [
+        a sh:NodeShape ;
+        sh:property [
+            sh:path skos:inScheme ;
+            sh:hasValue trsp:typeConstraint
+        ]
+    ] ;
+    sh:message "A Constraint must have exactly one constraint type from the TRSP Constraint Types concept scheme."@en .
+
+## Values of aggregationType property must come from trsp:typeAggregation
+trsp:AggregationTypePropertyShape
+    a sh:PropertyShape ;
+    sh:path trsp:aggregationType ;
+    sh:nodeKind sh:IRI ;
+    sh:class skos:Concept ;
+    sh:node [
+        a sh:NodeShape ;
+        sh:property [
+            sh:path skos:inScheme ;
+            sh:hasValue trsp:typeAggregation
+        ]
+    ] ;
+    sh:message
+        "The value of trsp:aggregationType must be a SKOS Concept in the TRSP Aggregation Types concept scheme."@en .
+
+## constraint 
+trsp:ConstraintShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Constraint ;
+    sh:property trsp:ConstraintTypePropertyShape ;
+    sh:property trsp:AggregationTypePropertyShape .
+
+# -------------------------------------------------
+## SHACL — Evidence property constraints
+
+## Evidence Shape and Constraints
+trsp:EvidenceShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Evidence ;
+    sh:property [
+        sh:path trsp:evidenceType ;
+        sh:nodeKind sh:IRI ;
+        sh:class skos:Concept ;
+        sh:maxCount 1 ;
+        sh:message
+            "evidenceType, when supplied, must be one IRI identifying a skos:Concept."@en
+    ] ;
+    sh:property [
+        sh:path trsp:evidenceIRI ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message
+            "Each Evidence instance must identify exactly one evidence resource using evidenceIRI, and the value must be an IRI."@en
+    ] ;
+    sh:property [
+        sh:path dct:conformsTo ;
+        sh:nodeKind sh:IRI ;
+        sh:message
+            "Each conformsTo value must be an IRI. It may identify any applicable specification, including a standard in the Standards Registry."@en
+    ] ;
+    sh:property [
+        sh:path trsp:machineActionable ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+        sh:message
+            "machineActionable, when supplied, must be a single xsd:boolean value."@en
+    ] .
+
+# -------------------------------------------------
+## SHACL — Checklist property constraints
+
+## Checklist Shape and Constraints
+trsp:ChecklistShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Checklist ;
+    sh:property [
+        sh:path trsp:checklistSource ;
+        sh:nodeKind sh:IRI ;
+        sh:class skos:ConceptScheme ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message
+            "A Checklist must identify exactly one checklistSource, which must be an IRI identifying a skos:ConceptScheme."@en
+    ] ;
+    sh:property [
+        sh:path trsp:checkItem ;
+        sh:class trsp:ChecklistItem ;
+        sh:node trsp:ChecklistItemShape ;
+        sh:message
+            "Each checkItem must conform to the ChecklistItem shape."@en
+    ] ;
+    # Context-dependent validation:
+    # for every checkItem, checklistIRI must be in this Checklist's checklistSource.
+    sh:sparql [
+        a sh:SPARQLConstraint ;
+        sh:message
+            "Each checklistIRI must identify a concept belonging to the ConceptScheme identified by this Checklist's checklistSource."@en ;
+        sh:select """
+            PREFIX trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/>
+            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+            SELECT $this ?item ?concept ?scheme
+            WHERE {
+                $this trsp:checklistSource ?scheme ;
+                      trsp:checkItem ?item .
+                ?item trsp:checklistIRI ?concept .
+
+                FILTER NOT EXISTS {
+                    ?concept skos:inScheme ?scheme .
+                }
+            }
+        """
+    ] .
+
+# -------------------------------------------------
+## SHACL — Checklist Item property constraints
+
+## Evidence Shape and Constraints
+trsp:ChecklistItemShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:ChecklistItem ;
+    # ChecklistItem is an Evidence subclass. These properties are repeated here
+    # explicitly so that validation does not depend on an RDFS/OWL reasoner
+    # materialising the superclass type before SHACL validation.
+    sh:property [
+        sh:path trsp:evidenceIRI ;
+        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message
+            "Each ChecklistItem must identify exactly one evidence resource using evidenceIRI."@en
+    ] ;
+    sh:property [
+        sh:path dct:conformsTo ;
+        sh:nodeKind sh:IRI ;
+        sh:message
+            "Each conformsTo value on a ChecklistItem must be an IRI."@en
+    ] ;
+    sh:property [
+        sh:path trsp:machineActionable ;
+        sh:datatype xsd:boolean ;
+        sh:maxCount 1 ;
+        sh:message
+            "machineActionable, when supplied, must be a single xsd:boolean value."@en
+    ] ;
+    sh:property [
+        sh:path trsp:checklistIRI ;
+        sh:nodeKind sh:IRI ;
+        sh:class skos:Concept ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:message
+            "Each ChecklistItem must identify exactly one checklist concept using checklistIRI."@en
+    ] .
+# Attach reusable property shapes to the classes on which they are applicable.
+# These properties are valid on both Attributes and Profile Properties.
+trsp:AttributeTypeConstraintsShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:Attribute ;
+    sh:property trsp:CardinalityTypePropertyShape,
+                trsp:MeasurementTypePropertyShape,
+                trsp:BenchmarkPropertyShape .
+
+trsp:ProfilePropertyTypeConstraintsShape
+    a sh:NodeShape ;
+    sh:targetClass trsp:ProfileProperty ;
+    sh:property trsp:CardinalityTypePropertyShape,
+                trsp:MeasurementTypePropertyShape,
+                trsp:BenchmarkPropertyShape .
