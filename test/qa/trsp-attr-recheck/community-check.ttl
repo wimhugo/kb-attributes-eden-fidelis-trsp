@@ -8,16 +8,16 @@
 
 trsp:checklistCommunityEngagement
   a skos:ConceptScheme ;
-  skos:prefLabel "Community Engagement."@en ;
+  skos:prefLabel "Community Engagement"@en ;
   dct:title "Community Engagement"@en ;
   skos:definition "Checklist for documentation and evidence on community engagement"@en ;
   dct:created "2026-05-07"^^xsd:date ;
-  dct:modified "2026-05-07"^^xsd:date ;
+  dct:modified "2026-11-10"^^xsd:date ;
   skos:hasTopConcept trsp:typeBenefit ,
                      trsp:typeResponsible ,
                      trsp:typeInclusivity ,
                      trsp:typeUserNeeds ;
-  owl:versionInfo "0.1" .
+  owl:versionInfo "0.2" .
 
 #----------------------------------------------------------
 # Community Benefits
@@ -26,35 +26,134 @@ trsp:typeBenefit
   a skos:Concept ;
   skos:prefLabel "Community Benefit"@en ;
   skos:definition "Active measures to ensure community benefit, aligned with CARE."@en ;
-  skos:inScheme trsp:typeBenefit .
+  dct:source <https://www.gida-global.org/care> ;
+  skos:inScheme trsp:checklistCommunityEngagement .
 
 trsp:typeBenefitCapability
   a skos:Concept ;
   skos:prefLabel "Expand Capability and Capacity"@en ;
   skos:relatedMatch care:collectiveBenefit ;
-  skos:inScheme trsp:typeBenefit .
+  skos:broader trsp:typeBenefit ;
+  skos:inScheme trsp:checklistCommunityEngagement .
 
 trsp:typeBenefitEquitable
   a skos:Concept ;
   skos:prefLabel "Engagement is Equitable"@en ;
   skos:relatedMatch care:collectiveBenefit, care:C3 ;
-  skos:inScheme trsp:typeBenefit .
+  skos:broader trsp:typeBenefit ;
+  skos:inScheme trsp:checklistCommunityEngagement .
 
 #----------------------------------------------------------
 # Respect and Responsibility
 #----------------------------------------------------------
 trsp:typeResponsible
   a skos:Concept ;
-  skos:prefLabel "Community Benefit"@en ;
-  skos:definition "Active measures to ensure community benefit, aligned with CARE."@en ;
-  skos:inScheme trsp:typeBenefit .
+  skos:prefLabel "Respect and Responsibility"@en ;
+  skos:definition "Measures that establish respectful relationships and accountability to the communities affected by an infrastructure or service."@en ;
+  dct:source <https://www.gida-global.org/care> ;
+  skos:inScheme trsp:checklistCommunityEngagement .
 
 trsp:typeBenefitRespect
   a skos:Concept ;
   skos:prefLabel "Positive Respectful Relations"@en ;
   skos:relatedMatch care:responsibility, care:R1 ;
-  skos:inScheme trsp:typeResponsible .
+  skos:broader trsp:typeResponsible ;
+  skos:inScheme trsp:checklistCommunityEngagement .
 
 #----------------------------------------------------------
 # Inclusivity
 #----------------------------------------------------------
+
+trsp:typeInclusivity
+  a skos:Concept ;
+  skos:prefLabel "Inclusivity"@en ;
+  skos:definition "Measures to ensure that diverse communities can participate meaningfully and equitably in the governance, design, and use of research infrastructure."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/>, <https://www.gida-global.org/care> ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeInclusivityRepresentation
+  a skos:Concept ;
+  skos:prefLabel "Representative Participation"@en ;
+  skos:definition "Include representatives of affected and underserved communities in consultation, governance, and decision-making, with meaningful opportunities to influence outcomes."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/>, <https://www.gida-global.org/care> ;
+  skos:broader trsp:typeInclusivity ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeInclusivityAccessibility
+  a skos:Concept ;
+  skos:prefLabel "Accessible Participation and Services"@en ;
+  skos:definition "Reduce technical, financial, linguistic, physical, and procedural barriers to participation and use of infrastructure services."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/> ;
+  skos:broader trsp:typeInclusivity ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeInclusivityEquity
+  a skos:Concept ;
+  skos:prefLabel "Equitable Distribution of Benefits"@en ;
+  skos:definition "Assess and address disparities in access, influence, resources, and benefits across participating communities."@en ;
+  dct:source <https://www.gida-global.org/care> ;
+  skos:broader trsp:typeInclusivity ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeInclusivityCulturalRespect
+  a skos:Concept ;
+  skos:prefLabel "Cultural and Contextual Respect"@en ;
+  skos:definition "Respect community-specific knowledge practices, languages, values, and expectations, including Indigenous rights and interests where applicable."@en ;
+  dct:source <https://www.gida-global.org/care> ;
+  skos:broader trsp:typeInclusivity ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeInclusivityAccountability
+  a skos:Concept ;
+  skos:prefLabel "Inclusive Governance Accountability"@en ;
+  skos:definition "Document participation, provide accessible feedback and grievance mechanisms, and report how community input influences decisions."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/>, <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:broader trsp:typeInclusivity ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeUserNeeds
+  a skos:Concept ;
+  skos:prefLabel "User Needs"@en ;
+  skos:definition "Processes for identifying, prioritising, addressing, and reviewing the needs of current and prospective users and affected communities."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/>, <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeUserNeedsDiscovery
+  a skos:Concept ;
+  skos:prefLabel "Systematic Needs Assessment"@en ;
+  skos:definition "Gather evidence of user requirements through consultation, research, and analysis across different user groups and usage contexts."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/> ;
+  skos:broader trsp:typeUserNeeds ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeUserNeedsCoDesign
+  a skos:Concept ;
+  skos:prefLabel "Participatory Service Design"@en ;
+  skos:definition "Involve users and affected communities in designing, testing, and improving infrastructure services and policies."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/>, <https://www.gida-global.org/care> ;
+  skos:broader trsp:typeUserNeeds ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeUserNeedsFitness
+  a skos:Concept ;
+  skos:prefLabel "Fitness for Purpose"@en ;
+  skos:definition "Evaluate whether services meet documented user needs, including usability, reliability, interoperability, and support for intended research workflows."@en ;
+  dct:source <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:broader trsp:typeUserNeeds ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeUserNeedsFeedback
+  a skos:Concept ;
+  skos:prefLabel "Feedback and Continuous Improvement"@en ;
+  skos:definition "Maintain accessible channels for user feedback and complaints, and use documented evidence to guide service improvements."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/>, <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:broader trsp:typeUserNeeds ;
+  skos:inScheme trsp:checklistCommunityEngagement .
+
+trsp:typeUserNeedsSustainability
+  a skos:Concept ;
+  skos:prefLabel "Long-Term User Support and Continuity"@en ;
+  skos:definition "Plan for sustainable service provision, transparent change management, and continuity arrangements that protect users' long-term interests."@en ;
+  dct:source <https://openscholarlyinfrastructure.org/>, <https://doi.org/10.1038/s41597-020-0486-7> ;
+  skos:broader trsp:typeUserNeeds ;
+  skos:inScheme trsp:checklistCommunityEngagement .
