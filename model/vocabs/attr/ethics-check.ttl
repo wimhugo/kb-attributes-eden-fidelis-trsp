@@ -13,15 +13,58 @@ trsp:checklistEthics
   owl:versionInfo "0.1" .
 
 trsp:ethicsClearance
-  skos:definition "A checklist consideration for evaluating ethics clearance in a research repository or related service."@en ; # definition added automatically
     a skos:Concept ;
   skos:prefLabel "Ethics Clearance"@en ;
+  skos:definition "Confirming ethics clearance for research producing the deposit."@en ; 
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistEthics .
 
-trsp:informedConsent
-  skos:definition "A checklist consideration for evaluating informed consent in a research repository or related service."@en ; # definition added automatically
+trsp:informedConsentCheck
     a skos:Concept ;
   skos:prefLabel "Informed Consent"@en ;
+  skos:definition "Confirming that informed consent was obtained for the research."@en ;
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistEthics .
+
+trsp:plagiarismCheck
+    a skos:Concept ;
+  skos:prefLabel "Plagiarism Verification"@en ;
+  skos:definition "A verification that none of the content was plagiarised."@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistEthics .
+
+trsp:duplicateCheck
+    a skos:Concept ;
+  skos:prefLabel "Duplicates Verification"@en ;
+  skos:definition "A verification that none of the content was published elsewhere."@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistEthics .
+
+trsp:maliciousCheck
+    a skos:Concept ;
+  skos:prefLabel "Checked for Malicious Content"@en ;
+  skos:definition "Checked for malicious content in the context of authenticity."@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistEthics .
+
+trsp:irrelevanceCheck
+    a skos:Concept ;
+  skos:prefLabel "Checked for Irrelevant Content"@en ;
+  skos:definition "Checked for irrelevant content in the context of authenticity."@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistEthics .
+
+trsp:legalityCheck
+    a skos:Concept ;
+  skos:prefLabel "Checked for Illegal Content"@en ;
+  skos:definition "Checked for illegal content."@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistEthics .
+
+trsp:aiCheck
+    a skos:Concept ;
+  skos:prefLabel "Checked for AI Content"@en ;
+  skos:definition "Checked for AI-generated content."@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistEthics .
+	

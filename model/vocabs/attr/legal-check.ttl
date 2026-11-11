@@ -115,6 +115,15 @@ trsp:dataUseAgreement
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistLegalDocuments .
 
+trsp:serviceLevelAgreement
+  a skos:Concept ;
+  skos:prefLabel "Service Level Agreement"@en ;
+  skos:definition "An agreement defining levels of service and issue resolution procedures, including response time."@en ;
+  rdfs:seeAlso ids:ContractAgreement ;
+  skos:broader trsp:legalAgreement ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:checklistLegalDocuments .
+
 trsp:transferLicenceAgreement
   a skos:Concept ;
   skos:prefLabel "Transfer and Licence Agreement"@en ;

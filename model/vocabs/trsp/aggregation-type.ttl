@@ -161,4 +161,19 @@ trsp:aggregationMap a skos:Concept ;
 trsp:aggregationMatch a skos:Concept ;
     skos:inScheme trsp:typeAggregation ;
     skos:prefLabel "Matches Benchmark"@en ;
-    skos:definition "Exactly one value in the return array is selected if it matches a benchmark ."@en .
+    skos:definition "Exactly one value in the return array is returned if it matches a benchmark ."@en .
+
+trsp:aggregationIncluded a skos:Concept ;
+    skos:inScheme trsp:typeAggregation ;
+    skos:prefLabel "Included In"@en ;
+    skos:definition "Exactly one value in the return array matches a benchmark ."@en .
+
+trsp:aggregationSubset a skos:Concept ;
+    skos:inScheme trsp:typeAggregation ;
+    skos:prefLabel "Subset of the Array"@en ;
+    skos:definition "An array is filtered to produce a subset."@en .
+
+trsp:aggregationProperty a skos:Concept ;
+    skos:inScheme trsp:typeAggregation ;
+    skos:prefLabel "Subset of the Array Property"@en ;
+    skos:definition "An array is filtered to produce a subset, and a specific property is returned as a list."@en .

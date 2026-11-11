@@ -18,54 +18,54 @@ trsp:checklistAPI
   owl:versionInfo "0.1" .
 
 trsp:typeHarvesterAPI
-  skos:definition "A checklist consideration for evaluating harvesting endpoints in a research repository or related service."@en ; # definition added automatically
+  skos:definition "A checklist item defining harvesting endpoints in a research repository or related service."@en ;
     a skos:Concept ;
   skos:prefLabel "Harvesting Endpoints"@en ;
   skos:inScheme trsp:checklistAPI .
 
 trsp:typeOAIPMH
-  skos:definition "A consideration for assessing harvesting endpoints: oai-pmh harvesting endpoint, including its implementation and supporting evidence."@en ; # definition added automatically
+  skos:definition "A checklist item defining a oai-pmh harvesting endpoint, including its implementation and supporting evidence."@en ;
     a skos:Concept ;
   skos:prefLabel "OAI-PMH Harvesting Endpoint"@en ;
   skos:broader trsp:typeHarvesterAPI ;
   skos:inScheme trsp:checklistAPI .
 
 trsp:typeCSW
-  skos:definition "A consideration for assessing harvesting endpoints: ogc cs/w harvesting endpoint, including its implementation and supporting evidence."@en ; # definition added automatically
+  skos:definition "A checklist item defining a ogc cs/w harvesting endpoint, including its implementation and supporting evidence."@en ;
     a skos:Concept ;
   skos:prefLabel "OGC CS/W Harvesting Endpoint"@en ;
   skos:broader trsp:typeHarvesterAPI ;
   skos:inScheme trsp:checklistAPI .
 
 trsp:typeAPI
-  skos:definition "A checklist consideration for evaluating endpoint types in a research repository or related service."@en ; # definition added automatically
+  skos:definition "A checklist item identifying API endpoints."@en ;
     a skos:Concept ;
   skos:prefLabel "Endpoint Types"@en ;
   skos:inScheme trsp:checklistAPI .
 
 trsp:typeNoAPI
-  skos:definition "A consideration for assessing endpoint types: no api, including its implementation and supporting evidence."@en ; # definition added automatically
+  skos:definition "A checklist item defining an automated service with no api"@en ;
     a skos:Concept ;
   skos:prefLabel "No API"@en ;
   skos:broader trsp:typeAPI ;
   skos:inScheme trsp:checklistAPI .
 
 trsp:typeRestAPI
-  skos:definition "A consideration for assessing endpoint types: rest api, including its implementation and supporting evidence."@en ; # definition added automatically
+  skos:definition "A checklist item defining a rest api, including its implementation and supporting evidence."@en ;
     a skos:Concept ;
   skos:prefLabel "REST API"@en ;
   skos:broader trsp:typeAPI ;
   skos:inScheme trsp:checklistAPI .
 
 trsp:typeSparqlAPI
-  skos:definition "A consideration for assessing endpoint types: sparql endpoint, including its implementation and supporting evidence."@en ; # definition added automatically
+  skos:definition "A checklist item defining a sparql endpoint, including its implementation and supporting evidence."@en ;
     a skos:Concept ;
   skos:prefLabel "SPARQL Endpoint"@en ;
   skos:broader trsp:typeAPI ;
   skos:inScheme trsp:checklistAPI .
 
 trsp:typeGraphqlAPI
-  skos:definition "A consideration for assessing endpoint types: graphql endpoint, including its implementation and supporting evidence."@en ; # definition added automatically
+  skos:definition "A checklist item defining a graphql endpoint, including its implementation and supporting evidence."@en ;
     a skos:Concept ;
   skos:prefLabel "GraphQL Endpoint"@en ;
   skos:broader trsp:typeAPI ;

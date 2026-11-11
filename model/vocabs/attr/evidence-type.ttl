@@ -41,7 +41,7 @@ trsp:typeGuidanceDocs a skos:Concept ;
   skos:inScheme trsp:typeEvidence .
 
 # --------------------------------------------------------------------------
-# Individual Documents
+# Governance Documents
 # --------------------------------------------------------------------------
 
 trsp:typeContinuityPlan a skos:Concept ;
@@ -63,7 +63,7 @@ trsp:typeMandate a skos:Concept ;
   skos:inScheme trsp:typeEvidence .
 
 # --------------------------------------------------------------------------
-# Guidance Documents
+# General Guidance Documents (site-level guidance)
 # --------------------------------------------------------------------------
 
 trsp:typeFAQs a skos:Concept ;

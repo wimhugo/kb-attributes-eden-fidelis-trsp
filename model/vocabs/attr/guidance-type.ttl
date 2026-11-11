@@ -1,0 +1,56 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+
+trsp:typeGuidance
+  a skos:ConceptScheme ;
+  skos:prefLabel "Guidance Support"@en ;
+  dct:title "Guidance Documentation and Support Types"@en ;
+  dct:created "2026-05-03"^^xsd:date ;
+  dct:modified "2026-11-11"^^xsd:date ;
+  owl:versionInfo "0.1" .
+
+trsp:ethicsGuidance
+  a skos:Concept ;
+  skos:prefLabel "Ethics Guidance"@en ;
+  skos:definition "Provide ethics-related guidance to depositors and end users. "@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:typeGuidance .
+
+trsp:userGuidance
+  a skos:Concept ;
+  skos:prefLabel "User Guidance"@en ;
+  skos:definition "Documented information explaining guidelines and support and how it is implemented or applied. "@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:typeGuidance .
+
+trsp:formatGuidance
+  a skos:Concept ;
+  skos:prefLabel "File Format Guidance"@en ;
+  skos:definition "Documented recommendations or instructions that assist users or staff with file format. "@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:typeGuidance .
+
+trsp:repoGuidance
+  a skos:Concept ;
+  skos:prefLabel "Guidance on Repository Selection"@en ;
+  skos:definition "Documented recommendations or instructions that assist users or staff with repository selection. "@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:typeGuidance .
+
+trsp:granularityGuidance
+  a skos:Concept ;
+  skos:prefLabel "Guidance on Dataset Granularity"@en ;
+  skos:definition "Documented recommendations or instructions that assist users or staff with format  granularity. "@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:typeGuidance .
+
+trsp:licenceGuidance
+  a skos:Concept ;
+  skos:prefLabel "Licence Selection Guidance"@en ;
+  skos:definition "Documented recommendations or instructions that assist users or staff with licence selection. "@en ;
+  trsp:imperative trsp:typeRecommended ;
+  skos:inScheme trsp:typeGuidance .
+	

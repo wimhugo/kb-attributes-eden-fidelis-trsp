@@ -11,27 +11,27 @@ trsp:typeChecklistDepositDocumentation
   skos:prefLabel "Checklist for Deposit Documentation"@en ;
   dct:title "Checklist for Deposit Documentation"@en ;
   dct:created "2026-05-03"^^xsd:date ;
-  dct:modified "2026-05-03"^^xsd:date ;
-  owl:versionInfo "0.2" .
+  dct:modified "2026-11-11"^^xsd:date ;
+  owl:versionInfo "0.3" .
 
 trsp:typeAccurateMetadata
-  skos:definition "A checklist consideration for evaluating accurate metadata in a research repository or related service."@en ; # definition added automatically
     a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating accurate metadata in a research repository or related service."@en ; # definition added automatically
   skos:prefLabel "Accurate Metadata"@en ;
   skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
   skos:inScheme trsp:typeChecklistDepositDocumentation .
 
 trsp:typeTechnicalValidation
-  skos:definition "A checklist consideration for evaluating technical validation in a research repository or related service."@en ; # definition added automatically
     a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating technical validation in a research repository or related service."@en ; # definition added automatically
   skos:prefLabel "Technical Validation"@en ;
   skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
   skos:inScheme trsp:typeChecklistDepositDocumentation .
   ### possibly move to curation checklist
 
 trsp:typeDataValidation
-  skos:definition "A checklist consideration for evaluating data validation in a research repository or related service."@en ; # definition added automatically
     a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating data validation in a research repository or related service."@en ; # definition added automatically
   skos:prefLabel "Data Validation"@en ;
   skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
   skos:exactMatch wd:Q3306762 ;
@@ -40,15 +40,15 @@ trsp:typeDataValidation
   ### possibly move to curation checklist
 
 trsp:typeCompleteMetadata
-  skos:definition "A checklist consideration for evaluating complete metadata in a research repository or related service."@en ; # definition added automatically
     a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating complete metadata in a research repository or related service."@en ; # definition added automatically
   skos:prefLabel "Complete Metadata"@en ;
   skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
   skos:inScheme trsp:typeChecklistDepositDocumentation .
 
 trsp:typeCompletePackage
-  skos:definition "A checklist consideration for evaluating complete package in a research repository or related service."@en ; # definition added automatically
     a skos:Concept ;
+  skos:definition "A checklist consideration for evaluating complete package in a research repository or related service."@en ; # definition added automatically
   skos:prefLabel "Complete Package"@en ;
   skos:broader trsp:typeDepositDocumentation ; # links to a concept in curation checklist as a subset
   skos:inScheme trsp:typeChecklistDepositDocumentation .
