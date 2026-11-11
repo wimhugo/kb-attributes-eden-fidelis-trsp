@@ -74,237 +74,6 @@ trsp:typeSpecialisation
   skos:inScheme trsp:typeService .
 
 # ==========================================================================
-# EOSC-aligned Service Purpose
-# ==========================================================================
-
-trsp:typeEoscPurpose
-  skos:definition "A type of service purpose characterised by eosc service types in the context of research infrastructure services."@en ; # definition added automatically
-    a skos:Concept ;
-  skos:prefLabel "EOSC Service Types"@en ;
-  skos:note "EOSC-aligned service-purpose grouping retained from version 0.1."@en ;
-  skos:broader trsp:typePurpose ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeEoscPublishDiscover
-  a skos:Concept ;
-  skos:prefLabel "Publishing & Discovery"@en ;
-  skos:definition "Catch-all repositories (e.g., Zenodo-like), data repositories (e.g., PANGAEA), software repositories, scientific data collections (Copernicus, biobanks), metadata aggregators/catalogues, SKGs, service catalogues, instrument registries, etc.; both APIs and web portals, semantic artefact catalogues (e.g. OntoPortal-based SAC, EBI-based catalogues or TIB Terminology services)."@en ;
-  skos:broader trsp:typeEoscPurpose ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeEoscAssessMonitor
-  a skos:Concept ;
-  skos:prefLabel "Research Assessment & Monitoring"@en ;
-  skos:definition "FAIR validators, Open Science monitoring tools, research impact and evaluation systems."@en ;
-  skos:broader trsp:typeEoscPurpose ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeEoscDataCuration
-  a skos:Concept ;
-  skos:prefLabel "Data Management & Curation"@en ;
-  skos:definition "Data management plan tools (DMP tools), metadata editors, curation/annotation platforms, data policy management."@en ;
-  skos:broader trsp:typeEoscPurpose ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeEoscProcessingAnalysis
-  a skos:Concept ;
-  skos:prefLabel "Data Processing & Analysis"@en ;
-  skos:definition "Jupyter notebooks, workflow engines, analysis platforms, AI/ML services, statistical tools."@en ;
-  skos:broader trsp:typeEoscPurpose ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeEoscComputeService
-  a skos:Concept ;
-  skos:prefLabel "Compute Services"@en ;
-  skos:definition "HPC clusters, cloud compute (IaaS), virtual machines, container orchestration (Kubernetes)."@en ;
-  skos:broader trsp:typeEoscPurpose ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeEoscStorageService
-  a skos:Concept ;
-  skos:prefLabel "Storage Services"@en ;
-  skos:definition "Object storage (S3), archival storage, file systems, backup services, long-term preservation platforms, security storage services."@en ;
-  skos:broader trsp:typeEoscPurpose ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeEoscNetworkService
-  a skos:Concept ;
-  skos:prefLabel "Networking Services"@en ;
-  skos:definition "Research networks (NRENs), VPNs, high-speed data transfer services, federated connectivity."@en ;
-  skos:broader trsp:typeEoscPurpose ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeEoscScienceGateway
-  a skos:Concept ;
-  skos:prefLabel "Science Gateway"@en ;
-  skos:definition "Web-based research platforms, such as virtual labs or Virtual Research Environments."@en ;
-  skos:broader trsp:typeEoscPurpose ;
-  skos:inScheme trsp:typeService .
-
-# Operational purpose concepts supplementing the broad EOSC categories.
-
-trsp:typeMetadataHarvesting
-  a skos:Concept ;
-  skos:prefLabel "Metadata Harvesting"@en ;
-  skos:definition "Retrieval of metadata records from one or more sources for aggregation, indexing, discovery, synchronisation, or reuse."@en ;
-  skos:broader trsp:typeEoscPublishDiscover ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeMetadataDiscovery
-  a skos:Concept ;
-  skos:prefLabel "Metadata Discovery"@en ;
-  skos:definition "Search or discovery of metadata describing research resources, services, or other entities."@en ;
-  skos:broader trsp:typeEoscPublishDiscover ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeMetadataPublication
-  a skos:Concept ;
-  skos:prefLabel "Metadata Publication"@en ;
-  skos:definition "Publication or exposure of metadata for access, harvesting, indexing, or reuse."@en ;
-  skos:broader trsp:typeEoscPublishDiscover ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeDataAccess
-  a skos:Concept ;
-  skos:prefLabel "Data Access"@en ;
-  skos:definition "Provision of access to research data through a service interface."@en ;
-  skos:broader trsp:typeEoscPublishDiscover ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeMetadataEditing
-  a skos:Concept ;
-  skos:prefLabel "Metadata Editing"@en ;
-  skos:definition "Creation, modification, correction, or enrichment of metadata records."@en ;
-  skos:broader trsp:typeEoscDataCuration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeMetadataTransformation
-  a skos:Concept ;
-  skos:prefLabel "Metadata Transformation or Crosswalk"@en ;
-  skos:definition "Transformation or mapping of metadata from one schema, profile, representation, or vocabulary to another."@en ;
-  skos:broader trsp:typeEoscDataCuration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeAnnotation
-  a skos:Concept ;
-  skos:prefLabel "Annotation"@en ;
-  skos:definition "Creation, management, or application of annotations to research objects, metadata, or related resources."@en ;
-  skos:broader trsp:typeEoscDataCuration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeFileValidation
-  a skos:Concept ;
-  skos:prefLabel "File Validation"@en ;
-  skos:definition "Assessment of a file against expected structural, syntactic, format, or integrity requirements."@en ;
-  skos:broader trsp:typeEoscDataCuration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeFileFormatIdentification
-  a skos:Concept ;
-  skos:prefLabel "File Format Identification"@en ;
-  skos:definition "Identification of the format or technical type of a digital file."@en ;
-  skos:broader trsp:typeEoscDataCuration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeFileConversion
-  a skos:Concept ;
-  skos:prefLabel "File Conversion"@en ;
-  skos:definition "Transformation of a file from one format or encoding to another."@en ;
-  skos:broader trsp:typeEoscDataCuration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeFileRepair
-  a skos:Concept ;
-  skos:prefLabel "File Repair"@en ;
-  skos:definition "Correction or reconstruction of a damaged, malformed, incomplete, or otherwise unusable digital file."@en ;
-  skos:broader trsp:typeEoscDataCuration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typePreservationAction
-  a skos:Concept ;
-  skos:prefLabel "Preservation Action"@en ;
-  skos:definition "Execution of an action intended to maintain the accessibility, authenticity, integrity, or usability of digital content over time."@en ;
-  skos:broader trsp:typeEoscDataCuration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeRegistration
-  a skos:Concept ;
-  skos:prefLabel "Registration"@en ;
-  skos:definition "Registration, minting, or recording of an entity in a registry or authoritative information service."@en ;
-  skos:broader trsp:typeEoscPublishDiscover ;
-  skos:inScheme trsp:typeService .
-
-trsp:typePIDRegistration
-  a skos:Concept ;
-  skos:prefLabel "Persistent Identifier Registration"@en ;
-  skos:definition "Registration or minting of a persistent identifier and its associated record."@en ;
-  skos:broader trsp:typeRegistration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeRepositoryRegistration
-  a skos:Concept ;
-  skos:prefLabel "Repository Registration"@en ;
-  skos:definition "Registration or maintenance of a repository record in a repository registry."@en ;
-  skos:broader trsp:typeRegistration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeLicenceRegistration
-  a skos:Concept ;
-  skos:prefLabel "Licence or Policy Registration"@en ;
-  skos:definition "Registration or maintenance of a licence or policy description in a registry or catalogue."@en ;
-  skos:broader trsp:typeRegistration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeSchemaRegistration
-  a skos:Concept ;
-  skos:prefLabel "Metadata Schema Registration"@en ;
-  skos:definition "Registration or maintenance of a metadata schema or application profile in a registry."@en ;
-  skos:broader trsp:typeRegistration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeVocabularyRegistration
-  a skos:Concept ;
-  skos:prefLabel "Vocabulary Registration"@en ;
-  skos:definition "Registration or maintenance of a controlled vocabulary, ontology, terminology, or other semantic artefact."@en ;
-  skos:broader trsp:typeRegistration ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeAssessment
-  a skos:Concept ;
-  skos:prefLabel "Assessment or Validation"@en ;
-  skos:definition "Assessment, testing, or validation of a resource or service against defined criteria, requirements, or quality expectations."@en ;
-  skos:broader trsp:typeEoscAssessMonitor ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeFAIRAssessment
-  a skos:Concept ;
-  skos:prefLabel "FAIR Assessment"@en ;
-  skos:definition "Assessment of a digital resource, repository, or service against FAIR-related criteria or indicators."@en ;
-  skos:broader trsp:typeAssessment ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeRepositoryAssessment
-  a skos:Concept ;
-  skos:prefLabel "Repository Assessment"@en ;
-  skos:definition "Assessment of a repository against defined trustworthiness, quality, capability, or conformance criteria."@en ;
-  skos:broader trsp:typeAssessment ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeMetadataQualityAssessment
-  a skos:Concept ;
-  skos:prefLabel "Metadata Quality Assessment"@en ;
-  skos:definition "Assessment of metadata against defined quality characteristics, rules, or expectations."@en ;
-  skos:broader trsp:typeAssessment ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeConformanceValidation
-  a skos:Concept ;
-  skos:prefLabel "Conformance Validation"@en ;
-  skos:definition "Validation of a resource or service against a specification, profile, schema, policy, or other defined conformance target."@en ;
-  skos:broader trsp:typeAssessment ;
-  skos:inScheme trsp:typeService .
-
-# ==========================================================================
 # Service Interface / Protocol
 # Concepts below include the unique service-interface values observed in the
 # harmonized source graph. They are normalized concepts, not assertions that
@@ -358,6 +127,7 @@ trsp:typeSWORD
   skos:prefLabel "SWORD"@en ;
   skos:definition "Service interface using SWORD conventions for depositing digital resources into repositories or related systems."@en ;
   skos:broader trsp:typeInterface ;
+  skos:broader trsp:submissionService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeAtom
@@ -492,6 +262,265 @@ trsp:typeHumanInTheLoop
   skos:inScheme trsp:typeService .
 
 # ==========================================================================
+# EOSC-aligned Service Purpose
+# ==========================================================================
+
+trsp:typeEoscPurpose
+  skos:definition "A type of service purpose characterised by eosc service types in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
+  skos:prefLabel "EOSC Service Types"@en ;
+  skos:note "EOSC-aligned service-purpose grouping retained from version 0.1."@en ;
+  skos:broader trsp:typePurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscPublishDiscover
+  a skos:Concept ;
+  skos:prefLabel "Publishing & Discovery"@en ;
+  skos:definition "Catch-all repositories (e.g., Zenodo-like), data repositories (e.g., PANGAEA), software repositories, scientific data collections (Copernicus, biobanks), metadata aggregators/catalogues, SKGs, service catalogues, instrument registries, etc.; both APIs and web portals, semantic artefact catalogues (e.g. OntoPortal-based SAC, EBI-based catalogues or TIB Terminology services)."@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscAssessMonitor
+  a skos:Concept ;
+  skos:prefLabel "Research Assessment & Monitoring"@en ;
+  skos:definition "FAIR validators, Open Science monitoring tools, research impact and evaluation systems."@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscDataCuration
+  a skos:Concept ;
+  skos:prefLabel "Data Management & Curation"@en ;
+  skos:definition "Data management plan tools (DMP tools), metadata editors, curation/annotation platforms, data policy management."@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscProcessingAnalysis
+  a skos:Concept ;
+  skos:prefLabel "Data Processing & Analysis"@en ;
+  skos:definition "Jupyter notebooks, workflow engines, analysis platforms, AI/ML services, statistical tools."@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscComputeService
+  a skos:Concept ;
+  skos:prefLabel "Compute Services"@en ;
+  skos:definition "HPC clusters, cloud compute (IaaS), virtual machines, container orchestration (Kubernetes)."@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscStorageService
+  a skos:Concept ;
+  skos:prefLabel "Storage Services"@en ;
+  skos:definition "Object storage (S3), archival storage, file systems, backup services, long-term preservation platforms, security storage services."@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscNetworkService
+  a skos:Concept ;
+  skos:prefLabel "Networking Services"@en ;
+  skos:definition "Research networks (NRENs), VPNs, high-speed data transfer services, federated connectivity."@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeEoscScienceGateway
+  a skos:Concept ;
+  skos:prefLabel "Science Gateway"@en ;
+  skos:definition "Web-based research platforms, such as virtual labs or Virtual Research Environments."@en ;
+  skos:broader trsp:typeEoscPurpose ;
+  skos:inScheme trsp:typeService .
+
+# Operational purpose concepts supplementing the broad EOSC categories
+
+trsp:submissionService
+    a skos:Concept ;
+  skos:prefLabel "Submission Service"@en ;
+  skos:definition "A service that allows depoit and submission of research outputs to a repository."@en ; 
+  skos:broader trsp:curationService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeMetadataHarvesting
+  a skos:Concept ;
+  skos:prefLabel "Metadata Harvesting"@en ;
+  skos:definition "Retrieval of metadata records from one or more sources for aggregation, indexing, discovery, synchronisation, or reuse."@en ;
+  skos:broader trsp:typeEoscPublishDiscover ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeMetadataDiscovery
+  a skos:Concept ;
+  skos:prefLabel "Metadata Discovery"@en ;
+  skos:definition "Search or discovery of metadata describing research resources, services, or other entities."@en ;
+  skos:broader trsp:typeEoscPublishDiscover ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileMetadataDiscovery
+  a skos:Concept ;
+  skos:prefLabel "File Metadata Discovery"@en ;
+  skos:definition "Search or discovery of metadata describing files in a dataset."@en ;
+  skos:broader trsp:typeEoscPublishDiscover ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeMetadataPublication
+  a skos:Concept ;
+  skos:prefLabel "Metadata Publication"@en ;
+  skos:definition "Publication or exposure of metadata for access, harvesting, indexing, or reuse."@en ;
+  skos:broader trsp:typeEoscPublishDiscover ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeDataAccess
+  a skos:Concept ;
+  skos:prefLabel "Data Access"@en ;
+  skos:definition "Provision of access to research data through a service interface."@en ;
+  skos:broader trsp:typeEoscPublishDiscover ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeMetadataEditing
+  a skos:Concept ;
+  skos:prefLabel "Metadata Editing"@en ;
+  skos:definition "Creation, modification, correction, or enrichment of metadata records."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeMetadataTransformation
+  a skos:Concept ;
+  skos:prefLabel "Metadata Transformation or Crosswalk"@en ;
+  skos:definition "Transformation or mapping of metadata from one schema, profile, representation, or vocabulary to another."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeAnnotation
+  a skos:Concept ;
+  skos:prefLabel "Annotation"@en ;
+  skos:definition "Creation, management, or application of annotations to research objects, metadata, or related resources."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileValidation
+  a skos:Concept ;
+  skos:prefLabel "File Validation"@en ;
+  skos:definition "Assessment of a file against expected structural, syntactic, format, or integrity requirements."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileFormatIdentification
+  a skos:Concept ;
+  skos:prefLabel "File Format Identification"@en ;
+  skos:definition "Identification of the format or technical type of a digital file."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileConversion
+  a skos:Concept ;
+  skos:prefLabel "File Conversion"@en ;
+  skos:definition "Transformation of a file from one format or encoding to another."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileRepair
+  a skos:Concept ;
+  skos:prefLabel "File Repair"@en ;
+  skos:definition "Correction or reconstruction of a damaged, malformed, incomplete, or otherwise unusable digital file."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeNER
+  a skos:Concept ;
+  skos:prefLabel "Named Entity Recognition"@en ;
+  skos:definition "Matching metadata elements to formal semantics."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeCitation
+  a skos:Concept ;
+  skos:prefLabel "Citation Export"@en ;
+  skos:definition "Citation Export and Formatting Service."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typePreservationAction
+  a skos:Concept ;
+  skos:prefLabel "Preservation Action"@en ;
+  skos:definition "Execution of an action intended to maintain the accessibility, authenticity, integrity, or usability of digital content over time."@en ;
+  skos:broader trsp:typeEoscDataCuration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeRegistration
+  a skos:Concept ;
+  skos:prefLabel "Registration"@en ;
+  skos:definition "Registration, minting, or recording of an entity in a registry or authoritative information service."@en ;
+  skos:broader trsp:typeEoscPublishDiscover ;
+  skos:inScheme trsp:typeService .
+
+trsp:typePIDRegistration
+  a skos:Concept ;
+  skos:prefLabel "Persistent Identifier Registration"@en ;
+  skos:definition "Registration or minting of a persistent identifier and its associated record."@en ;
+  skos:broader trsp:typeRegistration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeRepositoryRegistration
+  a skos:Concept ;
+  skos:prefLabel "Repository Registration"@en ;
+  skos:definition "Registration or maintenance of a repository record in a repository registry."@en ;
+  skos:broader trsp:typeRegistration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeLicenceRegistration
+  a skos:Concept ;
+  skos:prefLabel "Licence or Policy Registration"@en ;
+  skos:definition "Registration or maintenance of a licence or policy description in a registry or catalogue."@en ;
+  skos:broader trsp:typeRegistration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeSchemaRegistration
+  a skos:Concept ;
+  skos:prefLabel "Metadata Schema Registration"@en ;
+  skos:definition "Registration or maintenance of a metadata schema or application profile in a registry."@en ;
+  skos:broader trsp:typeRegistration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeVocabularyRegistration
+  a skos:Concept ;
+  skos:prefLabel "Vocabulary Registration"@en ;
+  skos:definition "Registration or maintenance of a controlled vocabulary, ontology, terminology, or other semantic artefact."@en ;
+  skos:broader trsp:typeRegistration ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeAssessment
+  a skos:Concept ;
+  skos:prefLabel "Assessment or Validation"@en ;
+  skos:definition "Assessment, testing, or validation of a resource or service against defined criteria, requirements, or quality expectations."@en ;
+  skos:broader trsp:typeEoscAssessMonitor ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFAIRAssessment
+  a skos:Concept ;
+  skos:prefLabel "FAIR Assessment"@en ;
+  skos:definition "Assessment of a digital resource, repository, or service against FAIR-related criteria or indicators."@en ;
+  skos:broader trsp:typeAssessment ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeRepositoryAssessment
+  a skos:Concept ;
+  skos:prefLabel "Repository Assessment"@en ;
+  skos:definition "Assessment of a repository against defined trustworthiness, quality, capability, or conformance criteria."@en ;
+  skos:broader trsp:typeAssessment ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeMetadataQualityAssessment
+  a skos:Concept ;
+  skos:prefLabel "Metadata Quality Assessment"@en ;
+  skos:definition "Assessment of metadata against defined quality characteristics, rules, or expectations."@en ;
+  skos:broader trsp:typeAssessment ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeConformanceValidation
+  a skos:Concept ;
+  skos:prefLabel "Conformance Validation"@en ;
+  skos:definition "Validation of a resource or service against a specification, profile, schema, policy, or other defined conformance target."@en ;
+  skos:broader trsp:typeAssessment ;
+  skos:inScheme trsp:typeService .
+
+# ==========================================================================
 # EDEN Service Specialisation
 # Retained and lightly normalized from version 0.1.
 # ==========================================================================
@@ -518,10 +547,57 @@ trsp:typeWebsiteService
   skos:inScheme trsp:typeService .
 
 trsp:typeGuidanceService
-  skos:definition "A type of service specialisation characterised by guidance services in the context of research infrastructure services."@en ; # definition added automatically
+  skos:definition "File format and type guidance is available from an API."@en ; # definition added automatically
     a skos:Concept ;
   skos:prefLabel "Guidance Services"@en ;
   skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFormatGuidanceAPI
+  skos:definition "A type of file/data-related services characterised by format guidance api in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
+  skos:prefLabel "Format Guidance API"@en ;
+  skos:broader trsp:typeFileService ;
+  owl:deprecated true ;
+  skos:exactMatch trsp:typeGuidanceService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileFormatConversion
+  skos:definition "A type of file/data-related services characterised by file format conversion service in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
+  skos:prefLabel "File Format Conversion Service"@en ;
+  skos:related trsp:typeFileConversion ;
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileFormatValidation
+  skos:definition "A type of file/data-related services characterised by file format validation service in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
+  skos:prefLabel "File Format Validation Service"@en ;
+  skos:related trsp:typeFileValidation ;
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeFileRepairService
+  skos:definition "A type of file/data-related services characterised by file repair service in the context of research infrastructure services."@en ; # definition added automatically
+    a skos:Concept ;
+  skos:prefLabel "File Repair Service"@en ;
+  skos:related trsp:typeFileRepair ;
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typePackageValidation
+    a skos:Concept ;
+  skos:prefLabel "Package Validation Service"@en ;
+  skos:definition "Package is validated (specification-compliant) prior to ingest."@en ; 
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typePackageVerification
+    a skos:Concept ;
+  skos:prefLabel "Package Verification Service"@en ;
+  skos:definition "Package is verified for content completeness prior to ingest."@en ; 
+  skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
 trsp:typeAssessmentService
@@ -642,37 +718,6 @@ trsp:typeFileFormatRegistry
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
-trsp:typeFormatGuidanceAPI
-  skos:definition "A type of file/data-related services characterised by format guidance api in the context of research infrastructure services."@en ; # definition added automatically
-    a skos:Concept ;
-  skos:prefLabel "Format Guidance API"@en ;
-  skos:broader trsp:typeFileService ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeFileFormatConversion
-  skos:definition "A type of file/data-related services characterised by file format conversion service in the context of research infrastructure services."@en ; # definition added automatically
-    a skos:Concept ;
-  skos:prefLabel "File Format Conversion Service"@en ;
-  skos:related trsp:typeFileConversion ;
-  skos:broader trsp:typeFileService ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeFileFormatValidation
-  skos:definition "A type of file/data-related services characterised by file format validation service in the context of research infrastructure services."@en ; # definition added automatically
-    a skos:Concept ;
-  skos:prefLabel "File Format Validation Service"@en ;
-  skos:related trsp:typeFileValidation ;
-  skos:broader trsp:typeFileService ;
-  skos:inScheme trsp:typeService .
-
-trsp:typeFileRepairService
-  skos:definition "A type of file/data-related services characterised by file repair service in the context of research infrastructure services."@en ; # definition added automatically
-    a skos:Concept ;
-  skos:prefLabel "File Repair Service"@en ;
-  skos:related trsp:typeFileRepair ;
-  skos:broader trsp:typeFileService ;
-  skos:inScheme trsp:typeService .
-
 # --------------------------------------------------------------------------
 # Foundational EOSC Federation service specialisations
 # Added in revision 0.3. These are EOSC EDEN additions rather than concepts
@@ -698,6 +743,14 @@ trsp:typeHelpdeskService
   skos:prefLabel "Helpdesk Service"@en ;
   skos:altLabel "Support Service"@en ;
   skos:definition "A service that receives, manages, and responds to user requests for assistance, incident reports, questions, or other support concerning services or resources."@en ;
+  skos:broader trsp:typeSpecialisation ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeRegisteredEOSC
+  a skos:Concept ;
+  skos:prefLabel "EOSC Service"@en ;
+  skos:altLabel "EOSC Regsietered Service"@en ;
+  skos:definition "A service that has been registered in an EOSC Node service catalogue."@en ;
   skos:broader trsp:typeSpecialisation ;
   skos:inScheme trsp:typeService .
 
