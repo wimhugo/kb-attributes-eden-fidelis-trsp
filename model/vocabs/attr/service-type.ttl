@@ -335,7 +335,7 @@ trsp:submissionService
     a skos:Concept ;
   skos:prefLabel "Submission Service"@en ;
   skos:definition "A service that allows depoit and submission of research outputs to a repository."@en ; 
-  skos:broader trsp:curationService ;
+  skos:broader trsp:typeEoscDataCuration ;
   skos:inScheme trsp:typeService .
 
 trsp:typeMetadataHarvesting
