@@ -153,7 +153,7 @@ trsp:accessPolicy a skos:Concept ;
                 "Data Availability Policy"@en ;
   skos:definition "Policy governing access to, availability of, sharing of, dissemination of, citation of, or onward provision of data and other resources, including open access and the eligibility, conditions, timing, assessment, approval, or other decisions associated with requests for access."@en ;
   trsp:hasStringMapping "data-availability-policy", "citationpage" ;
-  skos:broader trsp:typePolicyPurpose ; 
+  skos:broader trsp:typeAccessRulesPolicy ; 
   trsp:imperative trsp:typeRecommended ;
   skos:inScheme trsp:checklistPolicies .
 

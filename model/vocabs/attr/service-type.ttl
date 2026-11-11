@@ -450,6 +450,20 @@ trsp:typeRegistration
   skos:broader trsp:typeEoscPublishDiscover ;
   skos:inScheme trsp:typeService .
 
+trsp:typeLargeFileTransfer
+  a skos:Concept ;
+  skos:prefLabel "Large File Transfer Service"@en ;
+  skos:definition "Services to support large file transfers."@en ;
+  skos:broader trsp:typeEoscNetworkService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typeTapeColdStorage
+  a skos:Concept ;
+  skos:prefLabel "Tape and/ or Cold Storage and Retrieval Service"@en ;
+  skos:definition "Services to support cold or tape storage and retrieval."@en ;
+  skos:broader trsp:typeEoscNetworkService ;
+  skos:inScheme trsp:typeService .
+
 trsp:typePIDRegistration
   a skos:Concept ;
   skos:prefLabel "Persistent Identifier Registration"@en ;
@@ -597,6 +611,13 @@ trsp:typePackageVerification
     a skos:Concept ;
   skos:prefLabel "Package Verification Service"@en ;
   skos:definition "Package is verified for content completeness prior to ingest."@en ; 
+  skos:broader trsp:typeFileService ;
+  skos:inScheme trsp:typeService .
+
+trsp:typePackageSerialisation
+    a skos:Concept ;
+  skos:prefLabel "Package Serialisation Service"@en ;
+  skos:definition "Package is serialised for export and exchange."@en ; 
   skos:broader trsp:typeFileService ;
   skos:inScheme trsp:typeService .
 
