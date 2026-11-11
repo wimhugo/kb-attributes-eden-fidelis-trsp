@@ -58,7 +58,25 @@ trsp:typeMission a skos:Concept ;
 
 trsp:typeMandate a skos:Concept ;
   skos:prefLabel "Mandate"@en ;
-  skos:definition "The mandate  for the organisation or repository."@en ;
+  skos:definition "The mandate for the organisation or repository."@en ;
+  skos:broader trsp:typeGovernanceDocs ;
+  skos:inScheme trsp:typeEvidence .
+
+trsp:typeStakeholders a skos:Concept ;
+  skos:prefLabel "Stakeholders"@en ;
+  skos:definition "A document detailing the management and nature of stakeholder dependencies - end user groupings, depositors, funders, service users and aggregators, including statements of intent in respect of partnership and stakeholder management and its improvement."@en ;
+  skos:broader trsp:typeGovernanceDocs ;
+  skos:inScheme trsp:typeEvidence .
+
+trsp:typeEngagement a skos:Concept ;
+  skos:prefLabel "Engagement"@en ;
+  skos:definition "Documented information explaining community engagement and how it is implemented or applied."@en ;
+  skos:broader trsp:typeGovernanceDocs ;
+  skos:inScheme trsp:typeEvidence .
+
+trsp:typeImpact a skos:Concept ;
+  skos:prefLabel "Impact"@en ;
+  skos:definition "Information on impact of repsoitory services on the designated community and stakeholders."@en ;
   skos:broader trsp:typeGovernanceDocs ;
   skos:inScheme trsp:typeEvidence .
 
