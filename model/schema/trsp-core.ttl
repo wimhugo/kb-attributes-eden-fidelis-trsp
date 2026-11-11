@@ -195,6 +195,16 @@ trsp:propertyPath
     skos:definition "Identifies an intrinsic SHACL-compatible property path used by a Profile Property when its representation requires traversal more complex than a single RDF predicate."@en ;
     rdfs:comment "For a simple direct predicate, trsp:property is sufficient. propertyPath is Profile metadata and must not be confused with pairwise sourcePath or targetPath mapping properties."@en .
 
+## profile coverage metric
+
+trsp:minimumCoverage
+    a rdf:Property ;
+    rdfs:domain trsp:ProfileProperty ;
+    rdfs:label "minimum coverage path"@en ;
+    skos:definition "the fraction of profile properties that have to be met to signify alignment."@en ;
+    rdfs:comment "This is intended to assist with evaluating alignment as an approximation. Proifles should ideally indicate mandatory and optional properties."@en .
+
+
 # -----------------------------------------------------------------------------------------------------
 ## Properties used for Attribute Recommendations and Best Practices, Profile Property Specifications
 # -----------------------------------------------------------------------------------------------------
