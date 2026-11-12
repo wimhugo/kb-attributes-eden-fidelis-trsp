@@ -34,7 +34,6 @@ trsp:repoGraph {
     # --- Repository nodes are inserted here ---
 
 
-
 }
 
 # ==================================================================================================================
@@ -64,7 +63,7 @@ trsp:institutionsGraph {
 
 }
 
-# --- 4c: Checklists (openrel checklist objects) ---
+# --- 4c: Concept schemes (vocabulary and checklist objects) ---
 trsp:checklistGraph {
     # --- Checklist nodes are inserted here ---
 }

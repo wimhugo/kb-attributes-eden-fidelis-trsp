@@ -1,0 +1,179 @@
+@prefix fidelisconcept: <https://eden-fidelis.eu/vocab/fidelis-concept#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+# FIDELIS provisional concept schemes; each scheme is followed by its concepts.
+
+# typeApisAvailable
+fidelisconcept:typeApisAvailable a skos:ConceptScheme ;
+    skos:prefLabel "apisAvailable types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:apisAvailable. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typeApisAvailable-NoApisAvailable a skos:Concept ;
+    skos:prefLabel "No APIs available"@en ;
+    skos:inScheme fidelisconcept:typeApisAvailable .
+
+fidelisconcept:typeApisAvailable-OaiPmh a skos:Concept ;
+    skos:prefLabel "OAI-PMH"@en ;
+    skos:inScheme fidelisconcept:typeApisAvailable .
+
+fidelisconcept:typeApisAvailable-RestApi a skos:Concept ;
+    skos:prefLabel "REST API"@en ;
+    skos:inScheme fidelisconcept:typeApisAvailable .
+
+fidelisconcept:typeApisAvailable-RestApiOaiPmh a skos:Concept ;
+    skos:prefLabel "REST API, OAI-PMH"@en ;
+    skos:inScheme fidelisconcept:typeApisAvailable .
+
+fidelisconcept:typeApisAvailable-SparqlEndpoint a skos:Concept ;
+    skos:prefLabel "SPARQL endpoint"@en ;
+    skos:inScheme fidelisconcept:typeApisAvailable .
+
+
+# typeCoretrustsealCertificationStatus
+fidelisconcept:typeCoretrustsealCertificationStatus a skos:ConceptScheme ;
+    skos:prefLabel "coretrustsealCertificationStatus types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:coretrustsealCertificationStatus. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typeCoretrustsealCertificationStatus-Certified a skos:Concept ;
+    skos:prefLabel "Certified"@en ;
+    skos:inScheme fidelisconcept:typeCoretrustsealCertificationStatus .
+
+fidelisconcept:typeCoretrustsealCertificationStatus-InProgress a skos:Concept ;
+    skos:prefLabel "In progress"@en ;
+    skos:inScheme fidelisconcept:typeCoretrustsealCertificationStatus .
+
+fidelisconcept:typeCoretrustsealCertificationStatus-NotCertified a skos:Concept ;
+    skos:prefLabel "Not certified"@en ;
+    skos:inScheme fidelisconcept:typeCoretrustsealCertificationStatus .
+
+
+# typeEndorsedTrustPrinciples
+fidelisconcept:typeEndorsedTrustPrinciples a skos:ConceptScheme ;
+    skos:prefLabel "endorsedTrustPrinciples types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:endorsedTrustPrinciples. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typeEndorsedTrustPrinciples-No a skos:Concept ;
+    skos:prefLabel "No"@en ;
+    skos:inScheme fidelisconcept:typeEndorsedTrustPrinciples .
+
+fidelisconcept:typeEndorsedTrustPrinciples-Yes a skos:Concept ;
+    skos:prefLabel "Yes"@en ;
+    skos:inScheme fidelisconcept:typeEndorsedTrustPrinciples .
+
+
+# typeFundingModel
+fidelisconcept:typeFundingModel a skos:ConceptScheme ;
+    skos:prefLabel "fundingModel types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:fundingModel. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typeFundingModel-GrantFunded a skos:Concept ;
+    skos:prefLabel "Grant funded"@en ;
+    skos:inScheme fidelisconcept:typeFundingModel .
+
+fidelisconcept:typeFundingModel-InstitutionalSupport a skos:Concept ;
+    skos:prefLabel "Institutional support"@en ;
+    skos:inScheme fidelisconcept:typeFundingModel .
+
+fidelisconcept:typeFundingModel-MembershipFee a skos:Concept ;
+    skos:prefLabel "Membership fee"@en ;
+    skos:inScheme fidelisconcept:typeFundingModel .
+
+
+# typeGovernanceModel
+fidelisconcept:typeGovernanceModel a skos:ConceptScheme ;
+    skos:prefLabel "governanceModel types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:governanceModel. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typeGovernanceModel-Commercial a skos:Concept ;
+    skos:prefLabel "Commercial"@en ;
+    skos:inScheme fidelisconcept:typeGovernanceModel .
+
+fidelisconcept:typeGovernanceModel-CommunityDriven a skos:Concept ;
+    skos:prefLabel "Community-driven"@en ;
+    skos:inScheme fidelisconcept:typeGovernanceModel .
+
+fidelisconcept:typeGovernanceModel-Consortium a skos:Concept ;
+    skos:prefLabel "Consortium"@en ;
+    skos:inScheme fidelisconcept:typeGovernanceModel .
+
+fidelisconcept:typeGovernanceModel-Institutional a skos:Concept ;
+    skos:prefLabel "Institutional"@en ;
+    skos:inScheme fidelisconcept:typeGovernanceModel .
+
+
+# typeLicence
+fidelisconcept:typeLicence a skos:ConceptScheme ;
+    skos:prefLabel "licence types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:licence. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typeLicence-Cc0 a skos:Concept ;
+    skos:prefLabel "CC0"@en ;
+    skos:inScheme fidelisconcept:typeLicence .
+
+fidelisconcept:typeLicence-CcBy a skos:Concept ;
+    skos:prefLabel "CC-BY"@en ;
+    skos:inScheme fidelisconcept:typeLicence .
+
+fidelisconcept:typeLicence-Other a skos:Concept ;
+    skos:prefLabel "Other"@en ;
+    skos:inScheme fidelisconcept:typeLicence .
+
+
+# typePersistentIdentifierSystem
+fidelisconcept:typePersistentIdentifierSystem a skos:ConceptScheme ;
+    skos:prefLabel "persistentIdentifierSystem types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:persistentIdentifierSystem. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typePersistentIdentifierSystem-Doi a skos:Concept ;
+    skos:prefLabel "DOI"@en ;
+    skos:inScheme fidelisconcept:typePersistentIdentifierSystem .
+
+fidelisconcept:typePersistentIdentifierSystem-Handle a skos:Concept ;
+    skos:prefLabel "Handle"@en ;
+    skos:inScheme fidelisconcept:typePersistentIdentifierSystem .
+
+fidelisconcept:typePersistentIdentifierSystem-Other a skos:Concept ;
+    skos:prefLabel "Other"@en ;
+    skos:inScheme fidelisconcept:typePersistentIdentifierSystem .
+
+
+# typePrimaryResearchDomains
+fidelisconcept:typePrimaryResearchDomains a skos:ConceptScheme ;
+    skos:prefLabel "primaryResearchDomains types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:primaryResearchDomains. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typePrimaryResearchDomains-LifeSciences a skos:Concept ;
+    skos:prefLabel "Life Sciences"@en ;
+    skos:inScheme fidelisconcept:typePrimaryResearchDomains .
+
+fidelisconcept:typePrimaryResearchDomains-MultipleGeneral a skos:Concept ;
+    skos:prefLabel "Multiple/General"@en ;
+    skos:inScheme fidelisconcept:typePrimaryResearchDomains .
+
+fidelisconcept:typePrimaryResearchDomains-PhysicalSciences a skos:Concept ;
+    skos:prefLabel "Physical Sciences"@en ;
+    skos:inScheme fidelisconcept:typePrimaryResearchDomains .
+
+fidelisconcept:typePrimaryResearchDomains-SocialSciencesHumanities a skos:Concept ;
+    skos:prefLabel "Social Sciences & Humanities"@en ;
+    skos:inScheme fidelisconcept:typePrimaryResearchDomains .
+
+
+# typeTypeOfRepository
+fidelisconcept:typeTypeOfRepository a skos:ConceptScheme ;
+    skos:prefLabel "typeOfRepository types"@en ;
+    skos:definition "Distinct values observed in the FIDELIS raw data for fidelis:typeOfRepository. Provisional extraction; not yet normalised or mapped."@en .
+
+fidelisconcept:typeTypeOfRepository-Disciplinary a skos:Concept ;
+    skos:prefLabel "Disciplinary"@en ;
+    skos:inScheme fidelisconcept:typeTypeOfRepository .
+
+fidelisconcept:typeTypeOfRepository-General a skos:Concept ;
+    skos:prefLabel "General"@en ;
+    skos:inScheme fidelisconcept:typeTypeOfRepository .
+
+fidelisconcept:typeTypeOfRepository-Institutional a skos:Concept ;
+    skos:prefLabel "Institutional"@en ;
+    skos:inScheme fidelisconcept:typeTypeOfRepository .
+
