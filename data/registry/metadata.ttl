@@ -13,6 +13,12 @@
 @prefix schema: <https://schema.org/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+mscreg:MSCService
+    a owl:Class ;
+    rdfs:label "Metadata Schema and Crosswalks"@en ;
+    rdfs:comment "A registry if metadata schema and crosswalks, developed on behalf of RDA."@en .
+
+
 msc:c25 a msct:c ;
     mscp:sourceId "25" ;
     mscp:sourceSection "c" .

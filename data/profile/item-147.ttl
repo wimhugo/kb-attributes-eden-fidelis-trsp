@@ -14,7 +14,7 @@
 # @prefix ogc: <http://www.opengis.net/def/> .
 @prefix qudt: <http://qudt.org/schema/qudt/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-
+ 
 trsp:profile.1EE89F448D a trsp:Profile ;
     dct:title "TRSP" @en ;
     dct:description "The Trusted Repository Service Provider (TRSP) Research Data Alliance (RDA) Working Group (WG)" @en ;

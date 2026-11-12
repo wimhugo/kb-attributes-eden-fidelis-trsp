@@ -5,7 +5,7 @@
 @prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <https://schema.org/> .
 @prefix dcat:   <http://www.w3.org/ns/dcat#> .
-
+ 
 
 trsp:profile.6BF0A22CB5 a trsp:Profile ;
     dct:title "DRAWG" @en ;

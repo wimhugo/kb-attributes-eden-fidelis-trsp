@@ -633,18 +633,108 @@ trsp:levelNumber
 # Mappings
 # ====================================================================================================================
 
-#################################################################
-# Classes and Properties related to Mappings
-#################################################################
+# Classes
 
-### Mapping a profile
 trsp:ProfileMapping
     a owl:Class ;
     rdfs:label "Profile Mapping"@en ;
-    skos:definition
-        "A mapping specification relating representations defined by a source Profile and a target Profile."@en ;
-    rdfs:comment
-        "A Profile Mapping groups the class, property, value, and structural mappings required to translate or compare data represented according to two Profiles."@en .
+    skos:definition "A mapping specification relating representations defined by a source Profile and a target Profile."@en ;
+    rdfs:comment "A Profile Mapping groups the class, property, value, and structural mappings required to translate or compare data represented according to two Profiles."@en .
+
+trsp:ConceptMapping
+    a owl:Class ;
+    rdfs:label "Concept Mapping"@en ;
+    skos:definition "A mapping specification relating attributes to one another."@en ;
+    rdfs:comment "A Concept Mapping establishes correspondence between attribute concepts based on a number of transformation or equivalence types."@en .
+
+trsp:LookupMapping
+    a owl:Class ;
+    rdfs:label "Lookup Mapping"@en ;
+    skos:definition "A mapping specification transforming literal property values to IRIs."@en ;
+    rdfs:comment "A Lookup Mapping looks up one or more literals (such a s text-based scientific disciplines) in a registry or concept scheme and returns an IRI
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    ."@en .
+
+
+# Properties
+
+trsp:sourceProfile
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileMapping ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "source profile"@en ;
+    skos:definition "Identifies the source Profile of a Profile Mapping."@en .
+
+trsp:targetProfile
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileMapping ;
+    rdfs:range trsp:Profile ;
+    rdfs:label "target profile"@en ;
+    skos:definition "Identifies the target Profile of a Profile Mapping."@en .
+
+trsp:sourceClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ClassMapping ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "source class"@en ;
+    skos:definition "Identifies the source class represented by a Class Mapping."@en .
+
+trsp:targetClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ClassMapping ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "target class"@en ;
+    skos:definition "Identifies the target class represented by a Class Mapping."@en .
+
+trsp:virtualClass
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ClassMapping ;
+    rdfs:range rdfs:Class ;
+    rdfs:label "virtual target class"@en ;
+    skos:definition "The target class is this mapping is virtual (e.g. a wrapper or implied element)."@en .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ====================================================================================================================
+
+#################################################################
+# Classes and Properties related to Mappings
+#################################################################
 
 ## Mapping a class
 trsp:ClassMapping
@@ -679,22 +769,6 @@ trsp:MappingQualifier
 # -----------------------------------------------------------------
 # Mapping structure
 
-###
-trsp:sourceProfile
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:ProfileMapping ;
-    rdfs:range trsp:Profile ;
-    rdfs:label "source profile"@en ;
-    skos:definition "Identifies the source Profile of a Profile Mapping."@en .
-
-###
-trsp:targetProfile
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:ProfileMapping ;
-    rdfs:range trsp:Profile ;
-    rdfs:label "target profile"@en ;
-    skos:definition "Identifies the target Profile of a Profile Mapping."@en .
-
 trsp:hasClassMapping
     a owl:ObjectProperty ;
     rdfs:domain trsp:ProfileMapping ;
@@ -710,20 +784,6 @@ trsp:hasPropertyMapping
         "Relates a Profile Mapping or Class Mapping to a property-level mapping specification."@en ;
     rdfs:comment
         "No RDFS domain is asserted because the property can be used from both ProfileMapping and ClassMapping."@en .
-
-trsp:sourceClass
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:ClassMapping ;
-    rdfs:range rdfs:Class ;
-    rdfs:label "source class"@en ;
-    skos:definition "Identifies the source class represented by a Class Mapping."@en .
-
-trsp:targetClass
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:ClassMapping ;
-    rdfs:range rdfs:Class ;
-    rdfs:label "target class"@en ;
-    skos:definition "Identifies the target class represented by a Class Mapping."@en .
 
 trsp:sourceProfileProperty
     a owl:ObjectProperty ;
