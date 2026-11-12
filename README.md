@@ -14,17 +14,24 @@ EOSC EDEN Project, EOSC FIDELIS Project
 
 The conceptual model is described in detail in a companion document, which can be found [here](https://docs.google.com/document/d/198cbhUy5cQpYxjHuxGeBCLMDrTM8w1RUA0hzsoAU2qk/edit?usp=sharing). In summary, the conceptual model covers the following:
 
-- It identifies four main entities: **Attributes**, **Profiles**, **Repositories**, and **Services**. Repositories and Services are specialisations of Profiles. Profiles are used to define the relationship between Attributes and Repositories, Services, or other types of Profiles.
-- In addition, a **Profile** is also a *constraint* on the full set of attributes (identifies only those attributes applicable in the context), while optionally specifying an alternative *IRI* and or *benchmark* for each attribute.
-- The model defines a number of properties that are unique to the TRSP encodings, and are used in addition to well-known properties defined by DCAT, schema.org, RDF, SKOS, wikidata, and similar sources.
-- An important aspect of the model deals with the complexity of attribute representation, as follows:
-  - Repositories and Services can have ***values*** for an attribute, and these values can be obtained in various ways - by manually providing it, by harvesting it from a registry such as re3data or FAIRSharing, by reading it from a FAIRiCAT implementation, or as a formal and automated test result. (To avoid conflicts with reserved terms, we call this property a ***measurement*** rather than a ***value***).
-  - Repositories and Services can also have local ***benchmarks*** for a specific attribute, defining the valid values that such a measurement should or must have. These benchmarks and associated properties are captured in a ***Profile***, which serves as a validator for the measurement(s) of that attribute for a specific Repository or Service.
-  - There can be other sources of Profiles, each with a specific benchmark for each Attribute. This allows one to encode, for example, the benchmarks that will indicate compliance or alignment with a standard (such as ISO), a community profile (such as CoreTrustSeal, CPP, or the FIDELIS network), or a specification (for example compliance with the OpenAIRE quality criteria for repository harvesting).
-  - Measurements and benchmarks must be categorised as a one of several ***measurement types***, and this determines additional details (such as indicating a vocabulary from which a term must be selected, or a registry that serves as a source of valid IRIs). Custom benchmarks defined in a profile often indicate vocabularies or code lists that are not available as machine-readable web resources with term definitions, and for these, the knowledge base makes additional provisions - see below for more detail.
-- Attributes, moreover, often have more than one stable IRI and definition in the web from well-knowm and established sources. Several Repository or Service attributes have, for example, definitions in schema.org, DCAT or DCAT-AP, and in Dublin Core. The conceptual model provides a mechanism for mapping these attributes to one another, and to select or indicate a default IRI that should be used by preference to identify the attribute in encodings.
+- It identifies four main classes: **Attributes**, **Profiles**, **Repositories**, and **Services**. Repositories are associated with dcat:Catalogue, indicated via a semantic relationship, and a Service is a subclass of schema:Service. Profiles are used to define the relationship between Attributes, their Properties, and Repositories, Services, or other types of Profiles.
+- Attributes are base definitions of the characteristics and functions of repositories and services, and are the result of a wide range of input information that is described in detail [here](https://docs.google.com/document/d/198cbhUy5cQpYxjHuxGeBCLMDrTM8w1RUA0hzsoAU2qk/edit?usp=sharing). It is presented and managed as a cocnept scheme, and is effectively a taxonomy of terms. The Attributes are classified into a hierarchy that loosely follows the TRUST principles, with the addition of elements not covered by TRUST, and elaboration through other widely adopted and cited classifications.
+- Attributes also identify a set of common properties as a baseline, such as :
+  - typical cardinality,
+  - the type of data (range) expected for the attribute if it is used as a property;
+  - a recommended benchmark, which in many cases involve a vocabulary or a vocabulary-related checklist.
+- The vocabularies and checklists are implemented as SKOS Concept Schemes, but checklists are further supported by specialised classes (**Checklist**, **ChecklistItem**, and **Evidence**) since a large number of attributes require some form of evidence for validation and assessment purposes.
+- A **Profile** is a set of properties (**ProfileProperty**) that (ideally)links to an Attribute as its source of definition, but some Profiles could define properties for which there are no equivalents in the Attribute concept scheme. Since the linked Attribute can serve as a mapping pivot for crosswalks between many Profiles, it is worthwhile to extend and refine the Attributes vocabulary over time to acccommodate new properties.
+- In addition, a **Profile** is also a *constraint* on the full set of attributes and profile properties (identifies only those attributes applicable in the context), while optionally specifying an alternative *IRI*, *cardinality*, and or *benchmark* for each attribute. In cases where the benchmark is a vocabulary or a checklist, formal definition of the custom concept scheme is a good practice, and provision of mapping support between the concepts schemes will significantly improve crosswalk efficicency.
+- The model defines a number of properties (trsp: predicates) that are unique to the TRSP encodings, and are used in addition to well-known properties defined by DCAT, schema.org, RDF, SKOS, wikidata, and similar sources. 
+- An important aspect of the model deals with the complexity of attribute and property representation, as follows:
+  - Repositories and Services can have ***values*** for a property, and these values can be obtained in various ways - by manually providing it, by harvesting it from a registry such as re3data or FAIRSharing, by reading it from a FAIRiCAT implementation, or as a formal and automated test result. (To avoid conflicts with reserved terms, we call these results a ***measurement*** rather than a ***value***).
+  - Repositories and Services can also have local ***benchmarks*** for a specific property, defining the valid values that such a measurement should or must have. These benchmarks and associated properties are captured in a ***Profile***, which serves as a validator for the measurement(s) of that property for a specific Repository or Service.
+  - There can be other sources of Profiles, each with a specific benchmark for each ProfileProperty. This allows one to encode, for example, the benchmarks that will indicate compliance or alignment with a standard (such as ISO), a community profile (such as CoreTrustSeal, CPP, or the FIDELIS network), or a specification (for example compliance with the OpenAIRE quality criteria for repository harvesting).
+  - Measurements and benchmarks must be categorised as a one of several ***measurement types***, and this determines additional details (such as indicating a vocabulary from which a term must be selected, or a registry that serves as a source of valid IRIs). Custom benchmarks defined in a profile often indicate vocabularies or code lists that are not available as machine-readable web resources with term definitions, and for these, the knowledge base makes additional provisions in some cases - see below for more detail.
+- Attributes and/or ProfileProperties, moreover, often have more than one stable IRI and definition in the web from well-knowm and established sources. Several Repository or Service attributes have, for example, definitions in schema.org, DCAT or DCAT-AP, and in Dublin Core. The conceptual model provides a mechanism for mapping these attributes to one another, and to select or indicate a default IRI that should be used by preference to identify the attribute in encodings.
 
-## Examples of Complexity
+## Examples of Complex Benchmarks
 
 | Attribute | Repository Measurement (Value) | Repository Benchmark | Community Benchmark |
 | ----------- | ----------- | ----------- | ----------- |
@@ -35,13 +42,13 @@ The conceptual model is described in detail in a companion document, which can b
 
 The Knowledge Base contains building blocks for a graph, together with test and example data. The layout of the KB source is indicated below.
 
+## WORK IN PROGRESS FROM HERE DOWN
+
 ```
-trsp-model/
-├── configs/
-│   └── ontology/
-│   │   └── trsp-core.ttl
-│   └── shacl/
-│   │   └── trsp-shapes.ttl
+trsp/
+├── app/
+│   └── api/
+│   └── kb/
 │   └── templates/
 │   │   └── jsonld/
 │   │       ├── attribute-template.jsonld
@@ -55,29 +62,42 @@ trsp-model/
 │      │   ├── identifier-usages.ttl
 │      │   └── cardinality-type.ttl
 │      └── re3d/
-├── examples/
-│   ├── example-attributes.jsonld
-│   ├── example-repositories.jsonld
-│   ├── example-services.jsonld
-│   ├── example-profiles.jsonld
 ├── data/
-│   ├── attrib/
-│   │   ├── index.json
-│   │   └── <attributeIRI>.jsonld
-│   └──profile/
-│   │   ├── index.json
-│   │   └── <profileIRI>.jsonld
-│   └──service/
-│   │   ├── index.json
-│   │   └── <serviceIRI>.jsonld
+│   ├── att/
+│   │   └── (to be removed)
+│   ├── graph/
+│   │   └── (working examples)
+│   ├── profile/
+│   │   └── (work in progress)
+├── docs/
+│   ├── api/
+│   │   └── (work in progress)
+│   ├── apps/
+│   │   └── (work in progress)
+│   ├── curation/
+│   │   └── (work in progress)
+│   ├── examples/
+│   │   └── (work in progress)
+│   ├── guide/
+│   │   └── (work in progress)
+│   ├── api/
+│   │   └── (work in progress)
 │   └──repository/
 │       ├── index.json
 │       └── <repositoryIRI>.jsonld
-├── test/
-│   ├── index.json
-│   └── <objectIRI>.jsonld
-└── import/
-    └── import-all.ttl
+├── model/
+│   └── schema/
+│   └── templates/
+│   └── vocabs/
+│      └── attr/
+│      └── coar/
+│      └── eosc/
+│      └── iso/
+│      └── principles/
+│      └── r3d/
+│      └── trsp/
+└── test/
+    └── (can be ignored)
 ```
 
 # Vocabularies #
