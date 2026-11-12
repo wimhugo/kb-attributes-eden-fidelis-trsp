@@ -91,6 +91,7 @@ trsp:typeREST
 trsp:typeProtocolOAIPMH
   a skos:Concept ;
   skos:prefLabel "OAI-PMH Protocol"@en ;
+  skos:altLabel "OAI", "OAI-PMH" ;
   skos:altLabel "Open Archives Initiative Protocol for Metadata Harvesting"@en ;
   skos:definition "Service interface implementing OAI-PMH for exposing and harvesting metadata records."@en ;
   skos:broader trsp:typeInterface ;

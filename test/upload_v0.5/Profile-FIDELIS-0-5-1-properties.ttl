@@ -1,0 +1,376 @@
+# Generated from Profile-FIDELIS-0-5-1.tsv; 29 property definitions.
+# Source values preserved. rdf:Label retained as supplied (not rdfs:label).
+# Unqualified mappingPredicate column represented as trsp:mappingPredicate.
+# Namespace bases for fidelis: and trsp: should be confirmed against authoritative definitions.
+@prefix fidelis: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/profile/item-61.ttl> .
+@prefix fidelisconcept: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/profile/item-61.-concept#> .
+@prefix trsp: <https://w3id.org/trsp/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+fidelis:purpose
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Purpose" ;
+    dct:description "Brief Description of Purpose" ;
+    trsp:mappingPredicate skos:closeMatch ;
+    trsp:hasAttribute trsp:att.035ACCB10D ;
+    trsp:linkedProperty trsp:approvedPublicMissionStatement ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:governanceStructure
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Governance Structure" ;
+    dct:description "A description of the governance structure of the repository" ;
+    trsp:mappingPredicate skos:closeMatch ;
+    trsp:hasAttribute trsp:att.7C68DBB456 ;
+    trsp:linkedProperty trsp:governanceDescription ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:keyStakeholders
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Key Stakeholders" ;
+    dct:description "The key stakeholders and the nature of the mutual dependency" ;
+    trsp:mappingPredicate skos:closeMatch ;
+    trsp:hasAttribute trsp:att.01D16EFB9B ;
+    trsp:linkedProperty trsp:managedStakeholderDependencies ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:memberships
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Memberships" ;
+    dct:description "Any initiatives, networks, or infrastructures that the repository is a member of" ;
+    trsp:mappingPredicate skos:closeMatch ;
+    trsp:hasAttribute trsp:att.241E6C58DF ;
+    trsp:linkedProperty trsp:networkMembership ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:coretrustsealCertificationStatus
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "CoreTrustSeal Certification Status" ;
+    dct:description "Certfiied by CoreTrustSeal" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.27C898E8A0 ;
+    trsp:linkedProperty trsp:listCertifications ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark fidelisconcept:typeCoretrustsealCertificationStatus ;
+    trsp:hasMapping trsp:mapping.000FB9AF ;
+    owl:version "0.5" .
+
+fidelis:endorsedTrustPrinciples
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Endorsed TRUST Principles?" ;
+    dct:description "Has the repository endorsed the TRUST principles?" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.78CC017229 ;
+    trsp:linkedProperty trsp:listEndorsements ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark fidelisconcept:typeEndorsedTrustPrinciples ;
+    trsp:hasMapping trsp:mapping.00642236 ;
+    owl:version "0.5" .
+
+fidelis:certifications
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Certifications" ;
+    dct:description "Any certifications that the repository has obtained" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.27C898E8A0 ;
+    trsp:linkedProperty trsp:listCertifications ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark xsd:string ;
+    trsp:hasMapping trsp:mapping.01F9FDFE ;
+    owl:version "0.5" .
+
+fidelis:yearEstablished
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Year Established" ;
+    dct:description "Year in which the repository was established" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.48BF7E1522 ;
+    trsp:imperative trsp:typeMandatory ;
+    trsp:linkedProperty trsp:commencementYear ;
+    trsp:hasCardinalityType trsp:cardinality1_1 ;
+    trsp:hasBenchmark xsd:dateTime ;
+    owl:version "0.5" .
+
+fidelis:url
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "URL" ;
+    dct:description "An endpoint URL for the repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.7470DA5BBA ;
+    trsp:imperative trsp:typeMandatory ;
+    trsp:linkedProperty trsp:url ;
+    trsp:hasCardinalityType trsp:cardinality1_1 ;
+    trsp:hasBenchmark xsd:anyURL ;
+    owl:version "0.5" .
+
+fidelis:repositoryName
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Repository name" ;
+    dct:description "The name or title of the repository or service" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.64DA341B5F ;
+    trsp:imperative trsp:typeMandatory ;
+    trsp:linkedProperty trsp:repositoryName ;
+    trsp:hasCardinalityType trsp:cardinality1_1 ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:fileFormats
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "File Formats" ;
+    dct:description "List of file formats supported by the repository - can be categorised as 'Preferred', 'Dissemination', and 'Preservation' formats." ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.1BF23E39F5 ;
+    trsp:linkedProperty trsp:submissionPreferredFormats ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark xsd:string ;
+    trsp:hasMapping trsp:mapping.0234DE1C ;
+    owl:version "0.5" .
+
+fidelis:vocabulariesUsed
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Vocabularies Used" ;
+    dct:description "List of vocabularies and semantic artefacts supported by the repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.6AF56A372D ;
+    trsp:linkedProperty trsp:listVocabularies ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:persistentIdentifierSystem
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Persistent Identifier System" ;
+    dct:description "List of persistent identifiers supported by the repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.2F993B25AD ;
+    trsp:linkedProperty trsp:listPersistentIdentifiers ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark fidelisconcept:typePersistentIdentifierSystem ;
+    trsp:hasMapping trsp:mapping.017E2796 ;
+    owl:version "0.5" .
+
+fidelis:licence
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Licence" ;
+    dct:description "List of licences supported by the repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.543A727F84 ;
+    trsp:linkedProperty trsp:listLicences ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark fidelisconcept:typeLicence ;
+    trsp:hasMapping trsp:mapping.00F75F36 ;
+    owl:version "0.5" .
+
+fidelis:hostingInstitutionOrganisation
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Hosting Institution/ Organisation" ;
+    dct:description "Organisation(s) hosting the repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.41F4454A97 ;
+    trsp:imperative trsp:typeMandatory ;
+    trsp:linkedProperty trsp:organisation ;
+    trsp:hasCardinalityType trsp:cardinality1_n ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:governanceModel
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Governance Model" ;
+    dct:description "Type of governance and management model" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.494B22C440 ;
+    trsp:linkedProperty trsp:governanceModel ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark fidelisconcept:typeGovernanceModel ;
+    trsp:hasMapping trsp:mapping.0039E30E ;
+    owl:version "0.5" .
+
+fidelis:dataAccessPolicy
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Data Access Policy" ;
+    dct:description "The repository has a Data Access Policy" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.6B7CED5897 ;
+    trsp:linkedProperty trsp:policyAssessmentAccess ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:preservationPolicy
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Preservation Policy" ;
+    dct:description "The repository has a Preservation Policy" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.768DAFA0DB ;
+    trsp:linkedProperty trsp:listPreservationSupportServices ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:depositPolicy
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Deposit Policy" ;
+    dct:description "The repository has a Deposit/ Accession Policy" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.521A4A9E17 ;
+    trsp:linkedProperty trsp:depositTerms ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:dataRetentionPolicy
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Data Retention Policy" ;
+    dct:description "The repository has a Data Retention Policy" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.1D00720769 ;
+    trsp:linkedProperty trsp:policyRecordsRetention ;
+    trsp:hasCardinalityType trsp:cardinality0_1 ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:countryCoverage
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Country/Region" ;
+    dct:description "Country coverage of the repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.34D1282F11 ;
+    trsp:linkedProperty trsp:country ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:primaryResearchDomains
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Primary Research Domains" ;
+    dct:description "Primary research domain(s)" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.3B633179C5 ;
+    trsp:linkedProperty trsp:researchArea ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark fidelisconcept:typePrimaryResearchDomains ;
+    owl:version "0.5" .
+
+fidelis:eoscNodeParticipation
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "EOSC Node Participation" ;
+    dct:description "Part of current or aspiring EOSC Node?" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.394BC515E7 ;
+    trsp:linkedProperty trsp:eoscNodeService ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark xsd:boolean ;
+    owl:version "0.5" .
+
+fidelis:fundingModel
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Funding Model" ;
+    dct:description "What is the basis of revenue generation for paid servies?" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.076A4C2950 ;
+    trsp:linkedProperty trsp:revenueSource ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark fidelisconcept:typeFundingModel ;
+    owl:version "0.5" .
+
+fidelis:dataTypesAccepted
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Data Types Accepted" ;
+    dct:description "A list of object types accepted by the repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.54317F78CB ;
+    trsp:linkedProperty trsp:coverageObject ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:apisAvailable
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "APIs Available" ;
+    dct:description "List of API service types/ protocols available" ;
+    trsp:mappingPredicate skos:closeMatch ;
+    trsp:hasAttribute trsp:att.7298144E24 ;
+    trsp:linkedProperty trsp:listAPIServices ;
+    trsp:hasCardinalityType trsp:cardinality0_n ;
+    trsp:hasBenchmark fidelisconcept:typeApisAvailable ;
+    trsp:hasMapping trsp:mapping.00AE8D46 ;
+    owl:version "0.5" .
+
+fidelis:countryRegion
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Country/Region" ;
+    dct:description "Country in which the repository is located" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.4570870110 ;
+    trsp:imperative trsp:typeMandatory ;
+    trsp:linkedProperty trsp:country ;
+    trsp:hasCardinalityType trsp:cardinality1_n ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .
+
+fidelis:typeOfRepository
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Type of Repository" ;
+    dct:description "Type of repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.6A715E3A22 ;
+    trsp:imperative trsp:typeMandatory ;
+    trsp:linkedProperty trsp:repositoryType ;
+    trsp:hasCardinalityType trsp:cardinality1_n ;
+    trsp:hasBenchmark fidelisconcept:typeTypeOfRepository ;
+    owl:version "0.5" .
+
+fidelis:listMetadata
+    a trsp:ProfileProperty, skos:Concept ;
+    trsp:profile trsp:profile.3C2D6C1C37 ;
+    rdf:Label "Metadata Schema Supported" ;
+    dct:description "The metadata schema and profiles supported by the repository" ;
+    trsp:mappingPredicate skos:exactMatch ;
+    trsp:hasAttribute trsp:att.6C03AB58B8 ;
+    trsp:imperative trsp:typeMandatory ;
+    trsp:linkedProperty trsp:listMetadataSchema ;
+    trsp:hasCardinalityType trsp:cardinality1_n ;
+    trsp:hasBenchmark xsd:string ;
+    owl:version "0.5" .

@@ -142,8 +142,7 @@ trsp:hasAttribute
     rdfs:domain trsp:ProfileProperty ;
     rdfs:range trsp:Attribute ;
     rdfs:label "has attribute"@en ;
-    skos:definition
-        "Relates a profile-specific property definition to the TRSP Attribute representing the characteristic described by that property."@en .
+    skos:definition "Relates a profile-specific property definition to the TRSP Attribute representing the characteristic described by that property."@en .
 
 ## has profile
 trsp:hasProfile
@@ -182,10 +181,17 @@ trsp:linkedProperty
     a owl:ObjectProperty ;
     rdfs:domain trsp:ProfileProperty ;
     rdfs:range rdf:Property ;
-    rdfs:subPropertyOf trsp:property ;
     rdfs:label "linked property"@en ;
     skos:definition "Identifies an RDF predicate used to encode the characteristic specified by a Profile Property."@en ;
     skos:note "trsp:property is the canonical general predicate. This more specific predicate is retained for compatibility with profile instance data."@en .
+
+trsp:mappingPredicate
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ProfileProperty ;
+    rdfs:range skos:Concept ;
+    rdfs:label "link semantics"@en ;
+    skos:definition "Defines the semantic relationship between a ProfileProperty and properties or acttributes in another namepsace."@en ;
+    skos:note "For example skos:exactMatch, skos:broadMatch, ...."@en .
 
 ## optional intrinsic property path
 trsp:propertyPath
@@ -471,6 +477,15 @@ trsp:checklistIRI
     rdfs:comment
         "The value must belong to the ConceptScheme identified by checklistSource on the Checklist containing this item."@en .
 
+## checklist Object
+trsp:checklistEvidence
+    a owl:ObjectProperty ;
+    rdfs:domain trsp:ChecklistItem ;
+    rdfs:range trsp:Evidence ;
+    rdfs:label "checklist Evidence"@en ;
+    skos:definition
+        "Identifies the evidence required by this ChecklistItem."@en .
+
 # -------------------------------------------------
 ## Quality Assertion Properties
 
@@ -647,37 +662,26 @@ trsp:ConceptMapping
     skos:definition "A mapping specification relating attributes to one another."@en ;
     rdfs:comment "A Concept Mapping establishes correspondence between attribute concepts based on a number of transformation or equivalence types."@en .
 
+trsp:RegistryMapping
+    a owl:Class ;
+    rdfs:label "Registry Mapping"@en ;
+    skos:definition "A mapping specification for finding literal property value IRIs in an external registry."@en ;
+    rdfs:comment "A Registry Mapping looks up one or more literals (such a s text-based scientific disciplines) in an external registry or concept scheme and returns an IRI"@en .
+    
 trsp:LookupMapping
     a owl:Class ;
     rdfs:label "Lookup Mapping"@en ;
     skos:definition "A mapping specification transforming literal property values to IRIs."@en ;
-    rdfs:comment "A Lookup Mapping looks up one or more literals (such a s text-based scientific disciplines) in a registry or concept scheme and returns an IRI
+    rdfs:comment "A Lookup Mapping looks up one or more literals (such a s text-based scientific disciplines) in a local registry or concept scheme and returns an IRI"@en .
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    ."@en .
+trsp:CustomMapping
+    a owl:Class ;
+    rdfs:label "Custom Mapping"@en ;
+    skos:definition "A mapping specification transforming literal property values into node."@en ;
+    rdfs:comment "A Custom Mapping takes literals (such a s text-based scientific disciplines) as an input and returns a set of populated predicates for a specific node class."@en .
+      
+
+
 
 
 # Properties
