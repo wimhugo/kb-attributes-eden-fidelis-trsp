@@ -1,0 +1,249 @@
+# Generated from Mappings.tsv; only (include)=Yes.
+ # Each source row is one mapping block; repeated subjects intentionally retained.
+# Unresolved pidreg: and trust: namespaces are explicitly provisional.
+# The fidelis: namespace is reused from the supplied FIDELIS profile source.
+@prefix trsp: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/> .
+@prefix fidelis: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/profile/item-61.ttl> .
+@prefix sp: <http://spinrdf.org/sp#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pidreg: <urn:unresolved-prefix:pidreg:> .
+@prefix trust: <urn:unresolved-prefix:trust:> .
+
+<urn:trsp:graph:profile-mappings> {
+    trsp:mapping.00AE8D46 a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:apisAvailable ;
+        trsp:sourceValue fidelis:apisAvailable ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listAPIServices ;
+        trsp:targetRange trsp:APIService ;
+        trsp:rangeProperty trsp:apiName ;
+        trsp:targetValue fidelis:apisAvailable .
+    trsp:mapping.00AE8D46 a trsp:ConceptMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:apisAvailable ;
+        trsp:sourceValue fidelis:apisAvailable ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listAPIServices ;
+        trsp:targetRange trsp:APIService ;
+        trsp:rangeProperty trsp:typeAPI ;
+        trsp:mappingSource trsp:typeService ;
+        trsp:targetValue trsp:queryServiceType .
+    trsp:mapping.017E2796 a trsp:LookupMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:persistentIdentifierSystem ;
+        trsp:sourceValue fidelis:persistentIdentifierSystem ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listPersistentIdentifiers ;
+        trsp:targetRange trsp:APIService ;
+        trsp:rangeProperty trsp:identifierAPI ;
+        trsp:mappingSource pidreg:PIDService .
+    trsp:mapping.017E2796 a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:persistentIdentifierSystem ;
+        trsp:sourceValue fidelis:persistentIdentifierSystem ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listPersistentIdentifiers ;
+        trsp:targetRange trsp:APIService ;
+        trsp:rangeProperty trsp:apiName ;
+        trsp:targetValue fidelis:persistentIdentifierSystem .
+    trsp:mapping.017E2796 a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:persistentIdentifierSystem ;
+        trsp:sourceValue "[Blank]" ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listPersistentIdentifiers ;
+        trsp:targetRange trsp:APIService ;
+        trsp:rangeProperty trsp:typeAPI ;
+        trsp:targetValue trsp:typePIDRegistration .
+    trsp:mapping.00F75F36 a trsp:RegistryMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:licence ;
+        trsp:sourceValue fidelis:licence ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listLicences ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceIRI ;
+        trsp:mappingSource <https://lfs.labs.dansdemo.nl/docs#/> .
+    trsp:mapping.00F75F36 a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:licence ;
+        trsp:sourceValue fidelis:licence ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listLicences ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceName ;
+        trsp:targetValue fidelis:licence .
+    trsp:mapping.00F75F36 a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:licence ;
+        trsp:sourceValue "[Blank]" ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listLicences ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceType ;
+        trsp:targetValue trsp:typeLicenceRegistration .
+    trsp:mapping.0234DE1C a trsp:RegistryMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:fileFormats ;
+        trsp:sourceValue fidelis:fileFormats ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:supportedFormats ;
+        trsp:targetRange xsd:literal ;
+        trsp:mappingSource <https://type.labs.dans.knaw.nl/dans-formats> .
+    trsp:mapping.000FB9AF a trsp:CustomMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:coretrustsealCertificationStatus ;
+        trsp:sourceValue "Yes" ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listCertifications ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceIRI ;
+        trsp:targetValue "{{CTS Lookup Service}}" .
+    trsp:mapping.000FB9AF a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:coretrustsealCertificationStatus ;
+        trsp:sourceValue "[Blank]" ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listCertifications ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceName ;
+        trsp:targetValue "CoreTrustSeal" .
+    trsp:mapping.000FB9AF a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:coretrustsealCertificationStatus ;
+        trsp:sourceValue "[Blank]" ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listCertifications ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceType ;
+        trsp:targetValue trsp:cts .
+    trsp:mapping.00642236 a trsp:CustomMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:endorsedTrustPrinciples ;
+        trsp:sourceValue "Yes" ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listEndorsements ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceIRI ;
+        trsp:targetValue "{{Endorsement Lookup Service}}" .
+    trsp:mapping.00642236 a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:endorsedTrustPrinciples ;
+        trsp:sourceValue "[Blank]" ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listEndorsements ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceName ;
+        trsp:targetValue "TRUST Principles" .
+    trsp:mapping.00642236 a trsp:LookupMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:endorsedTrustPrinciples ;
+        trsp:sourceValue "[Blank]" ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listEndorsements ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceType ;
+        trsp:targetValue trust:trustPrinciples .
+    trsp:mapping.0039E30E a trsp:ConceptMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:governanceModel ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:governanceModel ;
+        trsp:targetRange skos:Concept ;
+        trsp:mappingSource trsp:typeGovernance .
+    trsp:mapping.01F9FDFE a trsp:CustomMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:certifications ;
+        trsp:sourceValue fidelis:certifications ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listCertifications ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceIRI ;
+        trsp:targetValue "{{Certification IRI Lookup Service}}" .
+    trsp:mapping.01F9FDFE a trsp:ProfileMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:certifications ;
+        trsp:sourceValue fidelis:certifications ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listCertifications ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceName ;
+        trsp:targetValue fidelis:certifications .
+    trsp:mapping.01F9FDFE a trsp:LookupMapping ;
+        trsp:sourceProfile trsp:profile.3C2D6C1C37 ;
+        trsp:sourceClass fidelis:Registry ;
+        trsp:virtualClass true ;
+        trsp:sourceProfileProperty fidelis:certifications ;
+        trsp:sourceValue fidelis:certifications ;
+        trsp:targetProfile trsp:profile.1EE89F448D ;
+        trsp:targetProfileProperty trsp:listCertifications ;
+        trsp:targetRange trsp:Evidence ;
+        trsp:rangeProperty trsp:evidenceType ;
+        trsp:mappingSource "trsp:typeQualitytrsp:checklistQualityAssurance" .
+
+
+    # Example: reusable SPARQL lookup template for service types.
+    trsp:lookupServiceType
+        a trsp:LookupMapping ;
+        trsp:sparqlQuery trsp:queryServiceType .
+
+    trsp:queryServiceType
+        a sp:Select ;
+        sp:text """
+            PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+            SELECT DISTINCT ?inputValue ?concept
+            WHERE {
+                VALUES ?inputValue {
+                    {{INPUT_VALUES}}
+                }
+
+                ?concept a skos:Concept ;
+                         skos:inScheme {{CONCEPT_SCHEME}} ;
+                         (skos:prefLabel|skos:altLabel) ?label .
+
+                FILTER(
+                    LCASE(STR(?label)) =
+                    LCASE(STR(?inputValue))
+                )
+            }
+        """ .
+}

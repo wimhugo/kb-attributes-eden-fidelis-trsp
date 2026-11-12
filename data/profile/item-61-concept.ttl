@@ -47,7 +47,6 @@ fidelisconcept:typeCoretrustsealCertificationStatus-NotCertified a skos:Concept 
     skos:prefLabel "Not certified"@en ;
     skos:inScheme fidelisconcept:typeCoretrustsealCertificationStatus .
 
-
 # typeEndorsedTrustPrinciples
 fidelisconcept:typeEndorsedTrustPrinciples a skos:ConceptScheme ;
     skos:prefLabel "endorsedTrustPrinciples types"@en ;

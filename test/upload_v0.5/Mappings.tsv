@@ -1,0 +1,52 @@
+(#)	(include)	node	trsp:mappingClass	trsp:sourceProfile	trsp:sourceClass	trsp:virtualClass	trsp:sourceProfileProperty	(rdf:Label)	trsp:sourceValue	trsp:targetProfile	trsp:targetProfileProperty	trsp:targetRange	trsp:rangeProperty	trsp:mappingSource	trsp:targetValue
+1		trsp:mapping.001F6217													
+5		trsp:mapping.9097A3C6	trsp:ProfileMapping	trsp:profile.6BF0A22CB5	drawg:Organisation	true	drawg:organization	Organization	drawg:organization	trsp:profile.1EE89F448D	trsp:organisationName	trsp:Organisation			
+6		trsp:mapping.9097A3C6	trsp:ProfileMapping	trsp:profile.6BF0A22CB5	drawg:Organisation	true		(None)		trsp:profile.1EE89F448D	trsp:typeOrganisation	trsp:Organisation			trsp:hostInstitution
+7		trsp:mapping.20318F4A	trsp:ProfileMapping	trsp:profile.6BF0A22CB5	drawg:Contact	true	drawg:contact	Contact	drawg:contact	trsp:profile.1EE89F448D	ns2:hasEmail	ns2:Kind			
+8		trsp:mapping.791AC0F2	trsp:LookupMapping	trsp:profile.6BF0A22CB5			drawg:persistent-identifiers	Persistent Identifiers	drawg:persistent-identifiers	trsp:profile.1EE89F448D	trsp:listPersistentIdentifiers	trsp:Evidence		pidreg:PIDService	
+9		trsp:mapping.00AE8D46	trsp:ProfileMapping	trsp:profile.6BF0A22CB5	drawg:Service	true	drawg:machine-interoperability	Machine Interoperability	drawg:machine-interoperability	trsp:profile.1EE89F448D	trsp:evidenceIRI	trsp:APIService			
+12		trsp:mapping.00B70CDD	trsp:LookupMapping	trsp:profile.6BF0A22CB5			drawg:metadata	Metadata	drawg:metadata	trsp:profile.1EE89F448D	trsp:evidenceIRI	trsp:Evidence		mscreg:MSCService	
+13		trsp:mapping.0207CDA5	trsp:ProfileMapping	trsp:profile.6BF0A22CB5			drawg:curation	Curation	drawg:curation	trsp:profile.1EE89F448D	trsp:serviceName	trsp:Service			
+14		trsp:mapping.0207CDA5	trsp:ProfileMapping	trsp:profile.6BF0A22CB5				(None)		trsp:profile.1EE89F448D	trsp:serviceIRI	trsp:Service			
+15		trsp:mapping.0207CDA5	trsp:ProfileMapping	trsp:profile.6BF0A22CB5			drawg:curation	Curation		trsp:profile.1EE89F448D	trsp:serviceType	trsp:Service			trsp:typeEoscDataCuration
+16		trsp:mapping.019D2CE8	trsp:ProfileMapping	trsp:profile.6BF0A22CB5			drawg:terms-of-deposit	Terms of Deposit	drawg:terms-of-deposit	trsp:profile.1EE89F448D	trsp:evidenceIRI	trsp:Evidence			
+17		trsp:mapping.019D2CE8	trsp:ProfileMapping	trsp:profile.6BF0A22CB5				(None)		trsp:profile.1EE89F448D	trsp:evidenceType	trsp:Evidence			trsp:termsOfDeposit
+20		trsp:mapping.00919AA5	trsp:ProfileMapping	trsp:profile.6BF0A22CB5			drawg:terms-of-access	Terms of Access	drawg:terms-of-access	trsp:profile.1EE89F448D	trsp:evidenceIRI	trsp:Evidence			
+21		trsp:mapping.00919AA5	trsp:ProfileMapping	trsp:profile.6BF0A22CB5							trsp:evidenceType	trsp:Evidence			trsp:accessPolicy
+22		trsp:mapping.00298BA9	trsp:ProfileMapping	trsp:profile.6BF0A22CB5			drawg:dataset-use-license	Dataset Use License	drawg:dataset-use-license	trsp:profile.1EE89F448D	trsp:evidenceIRI	trsp:Evidence			
+23		trsp:mapping.00298BA9	trsp:ProfileMapping	trsp:profile.6BF0A22CB5							trsp:evidenceType	trsp:Evidence			trsp:licencePolicy
+24		trsp:mapping.025BB0F5	trsp:ProfileMapping	trsp:profile.6BF0A22CB5			drawg:certification	Certification	drawg:certification	trsp:profile.1EE89F448D	trsp:evidenceIRI	trsp:Evidence			
+25		trsp:mapping.025BB0F5	trsp:ProfileMapping	trsp:profile.6BF0A22CB5							trsp:evidenceType	trsp:Evidence			trsp:infoSecurity,trsp:processQuality, trsp:softwareQuality, trsp:qualityRDMI ;
+26		trsp:mapping.00330515	trsp:ProfileMapping	trsp:profile.6BF0A22CB5			drawg:preservation	Preservation	drawg:preservation	trsp:profile.1EE89F448D	trsp:evidenceIRI	trsp:Evidence			
+27		trsp:mapping.00330515	trsp:ProfileMapping	trsp:profile.6BF0A22CB5							trsp:evidenceType	trsp:Evidence			trsp:preservationPolicy
+29	Yes	trsp:mapping.00AE8D46	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:apisAvailable	APIs Available	fidelis:apisAvailable	trsp:profile.1EE89F448D	trsp:listAPIServices	trsp:APIService	trsp:apiName		fidelis:apisAvailable
+30	Yes	trsp:mapping.00AE8D46	trsp:ConceptMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:apisAvailable	APIs Available	fidelis:apisAvailable	trsp:profile.1EE89F448D	trsp:listAPIServices	trsp:APIService	trsp:typeAPI	trsp:typeService	trsp:queryServiceType
+31	Yes	trsp:mapping.017E2796	trsp:LookupMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:persistentIdentifierSystem	Persistent Identifier System	fidelis:persistentIdentifierSystem	trsp:profile.1EE89F448D	trsp:listPersistentIdentifiers	trsp:APIService	trsp:identifierAPI	pidreg:PIDService	
+32	Yes	trsp:mapping.017E2796	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:persistentIdentifierSystem	Persistent Identifier System	fidelis:persistentIdentifierSystem	trsp:profile.1EE89F448D	trsp:listPersistentIdentifiers	trsp:APIService	trsp:apiName		fidelis:persistentIdentifierSystem
+33	Yes	trsp:mapping.017E2796	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:persistentIdentifierSystem	Persistent Identifier System	[Blank]	trsp:profile.1EE89F448D	trsp:listPersistentIdentifiers	trsp:APIService	trsp:typeAPI		trsp:typePIDRegistration
+34	Yes	trsp:mapping.00F75F36	trsp:RegistryMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:licence	Licence	fidelis:licence	trsp:profile.1EE89F448D	trsp:listLicences	trsp:Evidence	trsp:evidenceIRI	<https://lfs.labs.dansdemo.nl/docs#/>	
+35	Yes	trsp:mapping.00F75F36	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:licence	Licence	fidelis:licence	trsp:profile.1EE89F448D	trsp:listLicences	trsp:Evidence	trsp:evidenceName		fidelis:licence
+36	Yes	trsp:mapping.00F75F36	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:licence	Licence	[Blank]	trsp:profile.1EE89F448D	trsp:listLicences	trsp:Evidence	trsp:evidenceType		trsp:typeLicenceRegistration
+36	Yes	trsp:mapping.0234DE1C	trsp:RegistryMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:fileFormats	File Formats	fidelis:fileFormats	trsp:profile.1EE89F448D	trsp:supportedFormats	xsd:literal		<https://type.labs.dans.knaw.nl/dans-formats>	
+38	Yes	trsp:mapping.000FB9AF	trsp:CustomMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:coretrustsealCertificationStatus	CoreTrustSeal Certification Status	"Yes"	trsp:profile.1EE89F448D	trsp:listCertifications	trsp:Evidence	trsp:evidenceIRI		{{CTS Lookup Service}}
+39	Yes	trsp:mapping.000FB9AF	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:coretrustsealCertificationStatus	CoreTrustSeal Certification Status	[Blank]	trsp:profile.1EE89F448D	trsp:listCertifications	trsp:Evidence	trsp:evidenceName		"CoreTrustSeal"
+40	Yes	trsp:mapping.000FB9AF	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:coretrustsealCertificationStatus	CoreTrustSeal Certification Status	[Blank]	trsp:profile.1EE89F448D	trsp:listCertifications	trsp:Evidence	trsp:evidenceType		trsp:cts
+41	Yes	trsp:mapping.00642236	trsp:CustomMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:endorsedTrustPrinciples	Endorsed TRUST Principles?	"Yes"	trsp:profile.1EE89F448D	trsp:listEndorsements	trsp:Evidence	trsp:evidenceIRI		{{Endorsement Lookup Service}}
+42	Yes	trsp:mapping.00642236	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:endorsedTrustPrinciples	Endorsed TRUST Principles?	[Blank]	trsp:profile.1EE89F448D	trsp:listEndorsements	trsp:Evidence	trsp:evidenceName		"TRUST Principles"
+43	Yes	trsp:mapping.00642236	trsp:LookupMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:endorsedTrustPrinciples	Endorsed TRUST Principles?	[Blank]	trsp:profile.1EE89F448D	trsp:listEndorsements	trsp:Evidence	trsp:evidenceType		trust:trustPrinciples
+43		trsp:mapping.01340C6C		trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:licence	Licence		trsp:profile.1EE89F448D	trsp:listLicences				
+44		trsp:mapping.01340C6C		trsp:profile.3C2D6C1C37	fidelis:Registry	true				trsp:profile.1EE89F448D					
+45	Yes	trsp:mapping.0039E30E	trsp:ConceptMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:governanceModel	Governance Model		trsp:profile.1EE89F448D	trsp:governanceModel	skos:Concept		trsp:typeGovernance	
+46		trsp:mapping.0185BE15		trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:primaryResearchDomains	Primary Research Domains		trsp:profile.1EE89F448D	trsp:researchArea				
+47		trsp:mapping.0185BE15		trsp:profile.3C2D6C1C37	fidelis:Registry	true				trsp:profile.1EE89F448D					
+48		trsp:mapping.005C60A4		trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:fundingModel	Funding Model		trsp:profile.1EE89F448D	trsp:revenueSource				
+49		trsp:mapping.005C60A4		trsp:profile.3C2D6C1C37	fidelis:Registry	true				trsp:profile.1EE89F448D					
+50		trsp:mapping.00E10A91		trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:typeOfRepository	Type of Repository		trsp:profile.1EE89F448D	trsp:repositoryType				
+51		trsp:mapping.00E10A91		trsp:profile.3C2D6C1C37	fidelis:Registry	true				trsp:profile.1EE89F448D					
+52	Yes	trsp:mapping.01F9FDFE	trsp:CustomMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:certifications	Certifications	fidelis:certifications	trsp:profile.1EE89F448D	trsp:listCertifications	trsp:Evidence	trsp:evidenceIRI		{{Certification IRI Lookup Service}}
+53	Yes	trsp:mapping.01F9FDFE	trsp:ProfileMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:certifications	Certifications	fidelis:certifications	trsp:profile.1EE89F448D	trsp:listCertifications	trsp:Evidence	trsp:evidenceName		fidelis:certifications
+54	Yes	trsp:mapping.01F9FDFE	trsp:LookupMapping	trsp:profile.3C2D6C1C37	fidelis:Registry	true	fidelis:certifications	Certifications	fidelis:certifications	trsp:profile.1EE89F448D	trsp:listCertifications	trsp:Evidence	trsp:evidenceType	trsp:typeQualitytrsp:checklistQualityAssurance	
+55											fidelis:dataAccessPolicy				
+56											fidelis:preservationPolicy				
+57											fidelis:depositPolicy				
+58											fidelis:dataRetentionPolicy				

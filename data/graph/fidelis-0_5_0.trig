@@ -1,6 +1,18 @@
 @prefix fidelis: <https://github.com/wimhugo/kb-attributes-eden-fidelis-trsp/blob/main/data/profile/item-61.ttl> .
 @prefix graph: <urn:trsp:graph:> .
 
+# ==================================================================================================================
+# SECTION 1: PROVENANCE AND METADATA
+# Describes the dataset itself — who generated it, when, and how.
+# ==================================================================================================================
+
+# ==================================================================================================================
+# SECTION 2: MAIN NODES (Repository Nodes)
+# Primary entities being curated. Each main node references
+# support nodes by IRI (contacts, institutions, services, checklists, etc.).
+# Populated from TTL source files containing repository, person, institution, checklists, etc. properties.
+# ==================================================================================================================
+
 graph:fidelis-raw {
     fidelis:graph.00006B54 fidelis:apisAvailable "OAI-PMH" ;
         fidelis:certifications "None" ;

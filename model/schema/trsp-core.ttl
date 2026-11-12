@@ -679,10 +679,6 @@ trsp:CustomMapping
     rdfs:label "Custom Mapping"@en ;
     skos:definition "A mapping specification transforming literal property values into node."@en ;
     rdfs:comment "A Custom Mapping takes literals (such a s text-based scientific disciplines) as an input and returns a set of populated predicates for a specific node class."@en .
-      
-
-
-
 
 # Properties
 
@@ -719,75 +715,7 @@ trsp:virtualClass
     rdfs:domain trsp:ClassMapping ;
     rdfs:range rdfs:Class ;
     rdfs:label "virtual target class"@en ;
-    skos:definition "The target class is this mapping is virtual (e.g. a wrapper or implied element)."@en .
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# ====================================================================================================================
-
-#################################################################
-# Classes and Properties related to Mappings
-#################################################################
-
-## Mapping a class
-trsp:ClassMapping
-    a owl:Class ;
-    rdfs:label "Class Mapping"@en ;
-    skos:definition
-        "A mapping specification relating a class or class-like structure in a source Profile to a class or class-like structure in a target Profile."@en .
-
-## Mapping a property
-trsp:PropertyMapping
-    a owl:Class ;
-    rdfs:label "Property Mapping"@en ;
-    skos:definition
-        "A pairwise mapping specification relating a source Profile Property to a target Profile Property that normally describe a common Attribute."@en ;
-    rdfs:comment
-        "The mapping belongs to the source-target pairing because the required transformation may differ for each pair of Profile Properties."@en .
-
-## Mapping a value
-trsp:ValueMapping
-    a owl:Class ;
-    rdfs:label "Value Mapping"@en ;
-    skos:definition
-        "A mapping specification relating a source value, concept, or value pattern to a target value or concept."@en .
-
-## Mapping qualifier
-trsp:MappingQualifier
-    a owl:Class ;
-    rdfs:label "Mapping Qualifier"@en ;
-    skos:definition
-        "A fixed value or additional assertion introduced by a mapping when the target representation requires information that is implicit or absent in the source representation."@en .
-
-# -----------------------------------------------------------------
-# Mapping structure
-
-trsp:hasClassMapping
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:ProfileMapping ;
-    rdfs:range trsp:ClassMapping ;
-    rdfs:label "has class mapping"@en ;
-    skos:definition "Relates a Profile Mapping to a class-level mapping specification."@en .
-
-trsp:hasPropertyMapping
-    a owl:ObjectProperty ;
-    rdfs:range trsp:PropertyMapping ;
-    rdfs:label "has property mapping"@en ;
-    skos:definition
-        "Relates a Profile Mapping or Class Mapping to a property-level mapping specification."@en ;
-    rdfs:comment
-        "No RDFS domain is asserted because the property can be used from both ProfileMapping and ClassMapping."@en .
+    skos:definition "The target class in this mapping is virtual (e.g. a wrapper or implied element)."@en .
 
 trsp:sourceProfileProperty
     a owl:ObjectProperty ;
@@ -815,128 +743,22 @@ trsp:targetValue
     rdfs:label "target profile value"@en ;
     skos:definition "Identifies the target Profile Property value in a pairwise Property Mapping."@en .
 
-trsp:targetLanguageTagLiteral
+trsp:targetRange
     a owl:ObjectProperty ;
     rdfs:domain trsp:PropertyMapping ;
-    rdfs:range trsp:ProfileProperty ;
-    rdfs:label "target profile language tag"@en ;
-    skos:definition "Identifies the target Profile Property that must be tagged with a language ."@en .
+    rdfs:label "target profile property range"@en ;
+    skos:definition "Identifies the target Profile Property range in the mapping."@en .
 
-trsp:sourceLanguageTag
+trsp:rangeProperty
     a owl:ObjectProperty ;
     rdfs:domain trsp:PropertyMapping ;
-    rdfs:range trsp:ProfileProperty ;
-    rdfs:label "source profile language tag value"@en ;
-    skos:definition "Identifies the source Profile Property that supplies the language value."@en .
+    rdfs:label "target profile range property"@en ;
+    skos:definition "Identifies the target Profile Property predicate in the target range."@en .
 
-trsp:sourceLanguageVocab
+trsp:mappingSource
     a owl:ObjectProperty ;
     rdfs:domain trsp:PropertyMapping ;
-    rdfs:range trsp:ProfileProperty ;
-    rdfs:label "source profile language tag vocabulary"@en ;
-    skos:definition "Identifies the source language value vocabulary."@en .
+    rdfs:label "target profile mapping source"@en ;
+    skos:definition "The source of mapping matches - can be a concept scheme, a local registry, an extermnal registry, or a custom API/ library function/ SPARQL query."@en .
 
-trsp:mappedAttribute
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:PropertyMapping ;
-    rdfs:range trsp:Attribute ;
-    rdfs:label "mapped attribute"@en ;
-    skos:definition
-        "Identifies the common TRSP Attribute that provides the semantic pivot for the source and target Profile Properties."@en ;
-    rdfs:comment
-        "This property can be stated explicitly for convenience even where the Attribute can also be reached through trsp:hasAttribute on both Profile Properties."@en .
 
-# ---------------------------------------------------------------
-# Mapping method and structural information
-
-## Mapping type
-trsp:mappingType
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:PropertyMapping ;
-    rdfs:range skos:Concept ;
-    rdfs:label "mapping type"@en ;
-    skos:definition "Classifies the kind of correspondence or transformation represented by a mapping."@en ;
-    rdfs:comment "A controlled vocabulary for mapping types can distinguish identity, rename, class conversion, vocabulary/value mapping, structural transformation, constant insertion, aggregation, and other mapping patterns."@en .
-
-## Mapping type
-trsp:mappingAlgorithm
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:PropertyMapping ;
-    rdfs:label "mapping algorithm"@en ;
-    skos:definition
-        "Identifies a reusable algorithm or transformation definition applicable to this particular mapping."@en ;
-    rdfs:comment
-        "The algorithm belongs to the pairwise mapping rather than to the common Attribute because different profile pairings can require different transformations."@en .
-
-# ---------------------------------------------------------------
-# Value/concept mappings
-
-## has value mapping
-trsp:hasValueMapping
-    a owl:ObjectProperty ;
-    rdfs:range trsp:ValueMapping ;
-    rdfs:label "has value mapping"@en ;
-    skos:definition
-        "Relates a mapping to a value- or concept-level correspondence used by that mapping."@en .
-
-## has string/ label mapping
-trsp:hasStringMapping
-    a owl:ObjectProperty ;
-    rdfs:range trsp:ValueMapping ;
-    rdfs:label "has string mapping"@en ;
-    skos:definition
-        "Relates a mapping to a string or altLabel-level correspondence - often in the title or IRI of the source."@en .
-
-## source value
-trsp:sourceMappedValue
-    a rdf:Property ;
-    rdfs:domain trsp:ValueMapping ;
-    rdfs:label "source value"@en ;
-    skos:definition "Identifies the source value, concept, or value pattern in a Value Mapping."@en .
-
-## target value
-trsp:targetMappedValue
-    a rdf:Property ;
-    rdfs:domain trsp:ValueMapping ;
-    rdfs:label "target value"@en ;
-    skos:definition "Identifies the target value or concept in a Value Mapping."@en .
-
-## source concept scheme
-trsp:sourceConceptScheme
-    a owl:ObjectProperty ;
-    rdfs:range skos:ConceptScheme ;
-    rdfs:label "source concept scheme"@en ;
-    skos:definition "Identifies the source SKOS Concept Scheme relevant to a mapping."@en .
-
-## target concept scheme
-trsp:targetConceptScheme
-    a owl:ObjectProperty ;
-    rdfs:range skos:ConceptScheme ;
-    rdfs:label "target concept scheme"@en ;
-    skos:definition "Identifies the target SKOS Concept Scheme relevant to a mapping."@en .
-
-# ---------------------------------------------------------------
-# Fixed target assertions / qualifiers
-
-## has qualifier
-trsp:hasQualifier
-    a owl:ObjectProperty ;
-    rdfs:range trsp:MappingQualifier ;
-    rdfs:label "has qualifier"@en ;
-    skos:definition
-        "Relates a mapping to an additional fixed assertion introduced in the target representation."@en .
-
-## has qualifier property
-trsp:qualifierProperty
-    a owl:ObjectProperty ;
-    rdfs:domain trsp:MappingQualifier ;
-    rdfs:range rdf:Property ;
-    rdfs:label "qualifier property"@en ;
-    skos:definition "Identifies the RDF property used for an additional target assertion."@en .
-
-## qualifier
-trsp:qualifierValue
-    a rdf:Property ;
-    rdfs:domain trsp:MappingQualifier ;
-    rdfs:label "qualifier value"@en ;
-    skos:definition "Identifies the fixed RDF term or literal supplied as the value of an additional target assertion."@en .
